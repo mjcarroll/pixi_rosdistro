@@ -5,6 +5,9 @@
       "-GNinja",
       "--no-warn-unused-cli",
       "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
+      # There are issues with BFD in conda
+      "-DSTACK_DETAILS_AUTO_DETECT:bool=FALSE",
+      "-DSTACK_DETAILS_BFD:bool=FALSE"
     ],
     "event-handlers": [
       "console_cohesion+",

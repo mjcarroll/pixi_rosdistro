@@ -14,10 +14,16 @@ test = {cmd = "helper.py colcon test"}
 clean = {cmd = "helper.py clean"}
 
 [dependencies]
-colcon-defaults = "0.2.8.*"
+tinyxml2 = "9.0.0.*"
+zlib = "1.2.13.*"
 
 [build-dependencies]
+ninja = "1.11.1.*"
+make = "4.3.*"
 cmake = "3.27.6.*"
 git = "2.42.0.*"
 vcstool = "0.3.0.*"
 colcon-common-extensions = "0.3.0.*"
+
+[target.linux-64.dependencies]
+libacl = "2.3.1.*"
