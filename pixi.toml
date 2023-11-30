@@ -1,0 +1,23 @@
+[project]
+name = "pixi_rosdistro"
+version = "0.1.0"
+description = "Add a short description here"
+authors = ["Michael Carroll <mjcarroll@intrinsic.ai>"]
+channels = ["conda-forge"]
+platforms = ["linux-64", "win-64", "osx-64", "osx-arm64", "linux-aarch64"]
+
+[tasks]
+sync = {cmd = "helper.py sync"}
+colcon = {cmd = "helper.py colcon"}
+build = {cmd = "helper.py colcon build"}
+test = {cmd = "helper.py colcon test"}
+clean = {cmd = "helper.py clean"}
+
+[dependencies]
+colcon-defaults = "0.2.8.*"
+
+[build-dependencies]
+cmake = "3.27.6.*"
+git = "2.42.0.*"
+vcstool = "0.3.0.*"
+colcon-common-extensions = "0.3.0.*"
