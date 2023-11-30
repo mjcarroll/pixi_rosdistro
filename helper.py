@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# Copyright 2023 Michael Carroll 
+# Copyright 2023 Michael Carroll
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -23,6 +23,7 @@ Mostly this holds a common default configuration in ros.toml.
 import argparse
 import os
 import shutil
+import sys
 import tomllib
 import urllib.request
 
@@ -36,14 +37,14 @@ def sync(args, rem_args):
             f'{args.distro}_ws/ros2.repos')
 
     argv = ['import', '--input', f'{args.distro}_ws/ros2.repos', *rem_args, f'{args.distro}_ws/src']
-    vcs_main(argv)
+    return vcs_main(argv)
 
 
 def colcon(args, rem_args):
     from colcon_core.command import main as colcon_main
     os.environ["COLCON_DEFAULTS_FILE"] = os.path.join(args.curdir, args.colcon_defaults)
     os.chdir(os.path.join(args.curdir, f'{args.distro}_ws'))
-    colcon_main(argv=rem_args)
+    return colcon_main(argv=rem_args)
 
 
 def clean(args, rem_args):
@@ -79,4 +80,4 @@ if __name__ == "__main__":
 
     args, rem_args = parser.parse_known_args()
     args.curdir = os.path.abspath(os.path.curdir)
-    args.func(args, rem_args)
+    sys.exit(args.func(args, rem_args))
