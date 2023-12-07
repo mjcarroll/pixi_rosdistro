@@ -1,0 +1,17 @@
+name: Pixi-based CI
+on: [push, pull_request]
+
+jobs:
+  default:
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: prefix-dev/setup-pixi@v0.4.1
+        with:
+          pixi-version: v0.9.1
+          cache: true
+      - run: pixi run sync
+      - run: pixi run build
