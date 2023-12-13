@@ -7,6 +7,11 @@ jobs:
       matrix:
         os: [ubuntu-latest]
     runs-on: ${{ matrix.os }}
+    env:
+      BUILDCACHE_MAX_CACHE_SIZE: 2000000000                        # optional: Need a bigger cache?
+      # BUILDCACHE_LOG_FILE: ${{ matrix.label }}.buildcache.log    # optional: include log output
+      # BUILDCACHE_DEBUG: 2                                        # optional: debug level, less is more
+      BUILDCACHE_DIRECT_MODE: true                                 # optional: Allow direct caching
     steps:
       - uses: actions/checkout@v4
       - uses: prefix-dev/setup-pixi@v0.4.1
@@ -15,7 +20,7 @@ jobs:
           cache: true
       - uses: mjcarroll/buildcache-action@v2
         with:
-          cache-key: ${{ matrix.label }}
+          cache_key: ${{ matrix.label }}
           upload_buildcache_log: 'false'
           zero_buildcache_stats: 'true'
       - run: pixi run sync
