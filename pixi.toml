@@ -7,11 +7,11 @@ channels = ["conda-forge"]
 platforms = ["linux-64", "win-64", "osx-64", "osx-arm64", "linux-aarch64"]
 
 [tasks]
-sync = {cmd = "helper.py sync"}
-colcon = {cmd = "helper.py colcon"}
-build = {cmd = "helper.py colcon build"}
-test = {cmd = "helper.py colcon test"}
-clean = {cmd = "helper.py clean"}
+sync = {cmd = "python helper.py sync"}
+colcon = {cmd = "python helper.py colcon"}
+build = {cmd = "python helper.py colcon build"}
+test = {cmd = "python helper.py colcon test"}
+clean = {cmd = "python helper.py clean"}
 
 [dependencies]
 tinyxml2 = "9.0.0.*"

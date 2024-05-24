@@ -1,20 +1,20 @@
 {
   "build": {
     "merge-install": true,
+    "executor": "sequential",
     "cmake-args": [
       "-GNinja",
       "--no-warn-unused-cli",
-      "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
-      "-DCMAKE_BUILD_WITH_INSTALL_RPATH=ON",
-      # Use buildcache
-      "-DCMAKE_C_COMPILER_LAUNCHER=buildcache",
-      "-DCMAKE_CXX_COMPILER_LAUNCHER=buildcache",
+      "-DCMAKE_BUILD_TYPE=Release",
+      "-DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE",
+      "-DCMAKE_C_COMPILER_LAUNCHER:string=buildcache",
+      "-DCMAKE_CXX_COMPILER_LAUNCHER:string=buildcache",
       # There are issues with BFD in conda
       "-DSTACK_DETAILS_AUTO_DETECT:bool=FALSE",
       "-DSTACK_DETAILS_BFD:bool=FALSE"
     ],
     "event-handlers": [
-      "console_cohesion+",
+      "console_direct+",
       "console_package_list+",
     ]
   },
