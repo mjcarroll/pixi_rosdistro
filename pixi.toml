@@ -82,3 +82,21 @@ colcon-ros-domain-id-coordinator = "*"
 colcon-test-result            = "*"
 empy                          = "==3.3.4"
 lark                          = "*"
+
+# ==============================================================================
+# Platform-specific: compilers and compiler caches
+# ==============================================================================
+[target.linux-64.dependencies]
+# conda-forge 'compilers' meta-package pulls gcc/g++/gfortran for the platform
+compilers = "*"
+ccache    = "*"
+pkg-config = "*"
+
+[target.osx-arm64.dependencies]
+# On macOS the 'compilers' package pulls clang from Xcode toolchain wrappers
+compilers = "*"
+ccache    = "*"
+
+[target.win-64.dependencies]
+compilers = "*"
+sccache   = "*"
