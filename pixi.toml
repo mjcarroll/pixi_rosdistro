@@ -11,8 +11,11 @@ platforms = ["win-64", "linux-64", "osx-arm64"]
 # ==============================================================================
 
 # Point colcon to our defaults file on all platforms
+# and set ccache as default compiler launcher (overridden to sccache on Windows)
 [activation.env]
-COLCON_DEFAULTS_FILE = "$PIXI_PROJECT_ROOT/colcon_defaults.yaml"
+COLCON_DEFAULTS_FILE        = "$PIXI_PROJECT_ROOT/colcon_defaults.yaml"
+CMAKE_C_COMPILER_LAUNCHER   = "ccache"
+CMAKE_CXX_COMPILER_LAUNCHER = "ccache"
 
 # ==============================================================================
 # Windows-specific activation environment
@@ -50,18 +53,26 @@ fetch = "cmd /c \"if not exist src mkdir src\" && vcs import --recursive src < r
 # All other deps will be added incrementally once colcon graph is analysed.
 # ==============================================================================
 [dependencies]
-python  = ">=3.12"
-cmake   = "*"
-ninja   = "*"
-git     = "*"
-curl    = "*"
+python    = ">=3.12"
+cmake     = "*"
+ninja     = "*"
+git       = "*"
+curl      = "*"
+
+# ==============================================================================
+# Tier 3: system libs needed by vendor packages and first C++ packages
+# (spdlog_vendor, yaml_cpp_vendor, console_bridge_vendor, libyaml_vendor, rcutils)
+# ==============================================================================
+spdlog          = "*"
+yaml-cpp        = "*"
+console_bridge  = "*"
 
 # ==============================================================================
 # Bootstrap Python tools (via pip)
 # vcstool + colcon and its minimal plugins — pure Python, best from PyPI
 # ==============================================================================
 [pypi-dependencies]
-vcstool                       = "*"
+vcs2l = { git = "https://github.com/ros-infrastructure/vcs2l" }
 catkin-pkg                    = "*"
 colcon-core                   = "*"
 colcon-cmake                  = "*"

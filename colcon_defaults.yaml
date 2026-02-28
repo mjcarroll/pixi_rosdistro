@@ -1,17 +1,15 @@
 build:
   merge-install: true
   executor: sequential
-  # Tier 1+2: pure CMake/Python foundation up to ament_cmake
-  # Expand this incrementally as we add more system dependencies.
+  # Tier 3: first C++ packages up to rcutils
+  # Expand incrementally as more system deps are verified.
   packages-up-to:
-    - ament_cmake
+    - rcutils
   cmake-args:
     - -GNinja
     - --no-warn-unused-cli
     - -DCMAKE_BUILD_TYPE=Release
     - -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE
-    - -DCMAKE_C_COMPILER_LAUNCHER:string=ccache
-    - -DCMAKE_CXX_COMPILER_LAUNCHER:string=ccache
     # Avoid BFD linker issues in conda environments
     - -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE
     - -DSTACK_DETAILS_BFD:bool=FALSE
