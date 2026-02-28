@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "ROS 2 Rolling source build workspace with Pixi"
 authors = []
 channels = ["conda-forge"]
-platforms = ["win-64", "linux-64", "osx-64", "osx-arm64"]
+platforms = ["win-64", "linux-64", "osx-arm64"]
 
 # ==============================================================================
 # Tasks
@@ -26,30 +26,24 @@ CMAKE_C_COMPILER_LAUNCHER   = "sccache"
 CMAKE_CXX_COMPILER_LAUNCHER = "sccache"
 
 [tasks]
-# Fetch all ROS 2 source repositories
-fetch = "vcs import --recursive src < ros2.repos"
-
-# Show package dependency graph (useful for planning incremental builds)
+# List / graph tasks work without sources (colcon reads src/)
 graph = "colcon graph"
-
-# List all packages in the workspace
-list = "colcon list"
+list  = "colcon list"
 
 # Build / test — options controlled via colcon_defaults.yaml
 build = "colcon build"
 test  = "colcon test"
 
+# Fetch: platform-specific to ensure src/ exists first
 [target.linux-64.tasks]
-clean = "rm -rf build install log"
-
-[target.osx-64.tasks]
-clean = "rm -rf build install log"
+fetch = "mkdir -p src && vcs import --recursive src < ros2.repos"
 
 [target.osx-arm64.tasks]
-clean = "rm -rf build install log"
+fetch = "mkdir -p src && vcs import --recursive src < ros2.repos"
 
 [target.win-64.tasks]
-clean = "cmd /c \"if exist build rmdir /s /q build && if exist install rmdir /s /q install && if exist log rmdir /s /q log\""
+fetch = "cmd /c \"if not exist src mkdir src\" && vcs import --recursive src < ros2.repos"
+
 
 # ==============================================================================
 # Minimal bootstrap dependencies (conda-forge)
