@@ -1,6 +1,10 @@
 build:
   merge-install: true
   executor: sequential
+  # Tier 1+2: pure CMake/Python foundation up to ament_cmake
+  # Expand this incrementally as we add more system dependencies.
+  packages-up-to:
+    - ament_cmake
   cmake-args:
     - -GNinja
     - --no-warn-unused-cli
