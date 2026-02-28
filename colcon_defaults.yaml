@@ -1,0 +1,21 @@
+build:
+  merge-install: true
+  executor: sequential
+  cmake-args:
+    - -GNinja
+    - --no-warn-unused-cli
+    - -DCMAKE_BUILD_TYPE=Release
+    - -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE
+    - -DCMAKE_C_COMPILER_LAUNCHER:string=ccache
+    - -DCMAKE_CXX_COMPILER_LAUNCHER:string=ccache
+    # Avoid BFD linker issues in conda environments
+    - -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE
+    - -DSTACK_DETAILS_BFD:bool=FALSE
+  event-handlers:
+    - console_direct+
+    - console_package_list+
+
+test:
+  merge-install: true
+  event-handlers:
+    - console_direct+

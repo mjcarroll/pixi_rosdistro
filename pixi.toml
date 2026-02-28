@@ -1,0 +1,90 @@
+[workspace]
+name = "ros2_rolling"
+version = "0.1.0"
+description = "ROS 2 Rolling source build workspace with Pixi"
+authors = []
+channels = ["conda-forge"]
+platforms = ["win-64", "linux-64", "osx-64", "osx-arm64"]
+
+# ==============================================================================
+# Tasks
+# ==============================================================================
+
+# Point colcon to our defaults file on all platforms
+[activation.env]
+COLCON_DEFAULTS_FILE = "$PIXI_PROJECT_ROOT/colcon_defaults.yaml"
+
+# ==============================================================================
+# Windows-specific activation environment
+# (COLCON_DEFAULTS_FILE is also set above in [target.win-64.activation.env])
+# ==============================================================================
+[target.win-64.activation.env]
+QT_QPA_PLATFORM_PLUGIN_PATH = "%cd%\\.pixi\\envs\\default\\Library\\plugins\\platforms"
+COLCON_DEFAULTS_FILE = "%PIXI_PROJECT_ROOT%\\colcon_defaults.yaml"
+# On Windows use sccache instead of ccache (overrides colcon_defaults.yaml)
+CMAKE_C_COMPILER_LAUNCHER   = "sccache"
+CMAKE_CXX_COMPILER_LAUNCHER = "sccache"
+
+[tasks]
+# Fetch all ROS 2 source repositories
+fetch = "vcs import --recursive src < ros2.repos"
+
+# Show package dependency graph (useful for planning incremental builds)
+graph = "colcon graph"
+
+# List all packages in the workspace
+list = "colcon list"
+
+# Build / test — options controlled via colcon_defaults.yaml
+build = "colcon build"
+test  = "colcon test"
+
+[target.linux-64.tasks]
+clean = "rm -rf build install log"
+
+[target.osx-64.tasks]
+clean = "rm -rf build install log"
+
+[target.osx-arm64.tasks]
+clean = "rm -rf build install log"
+
+[target.win-64.tasks]
+clean = "cmd /c \"if exist build rmdir /s /q build && if exist install rmdir /s /q install && if exist log rmdir /s /q log\""
+
+# ==============================================================================
+# Minimal bootstrap dependencies (conda-forge)
+# All other deps will be added incrementally once colcon graph is analysed.
+# ==============================================================================
+[dependencies]
+python  = ">=3.12"
+cmake   = "*"
+ninja   = "*"
+git     = "*"
+curl    = "*"
+
+# ==============================================================================
+# Bootstrap Python tools (via pip)
+# vcstool + colcon and its minimal plugins — pure Python, best from PyPI
+# ==============================================================================
+[pypi-dependencies]
+vcstool                       = "*"
+catkin-pkg                    = "*"
+colcon-core                   = "*"
+colcon-cmake                  = "*"
+colcon-defaults               = "*"
+colcon-library-path           = "*"
+colcon-metadata               = "*"
+colcon-mixin                  = "*"
+colcon-output                 = "*"
+colcon-package-information    = "*"
+colcon-package-selection      = "*"
+colcon-parallel-executor      = "*"
+colcon-pkg-config             = "*"
+colcon-powershell             = "*"
+colcon-python-setup-py        = "*"
+colcon-recursive-crawl        = "*"
+colcon-ros                    = "*"
+colcon-ros-domain-id-coordinator = "*"
+colcon-test-result            = "*"
+empy                          = "==3.3.4"
+lark                          = "*"

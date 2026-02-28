@@ -1,0 +1,29 @@
+# ROS 2 workspace build artifacts
+build/
+install/
+log/
+
+# Pixi environment (can be reproduced from pixi.lock)
+.pixi/
+
+# Source repos (fetched via pixi run fetch)
+src/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+
+# Editor / OS
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
