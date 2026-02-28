@@ -1,0 +1,60 @@
+name: CI
+
+on:
+  push:
+    branches: [main, rolling]
+  pull_request:
+    branches: [main, rolling]
+
+jobs:
+  build:
+    name: Build (${{ matrix.os }})
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            pixi-platform: linux-64
+            cache-tool: ccache
+            cache-dir: ~/.ccache
+          - os: windows-latest
+            pixi-platform: win-64
+            cache-tool: sccache
+            cache-dir: C:\Users\runneradmin\AppData\Local\Mozilla\sccache
+          - os: macos-13
+            pixi-platform: osx-64
+            cache-tool: ccache
+            cache-dir: ~/.ccache
+          - os: macos-latest
+            pixi-platform: osx-arm64
+            cache-tool: ccache
+            cache-dir: ~/.ccache
+
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      # Install Pixi
+      - uses: prefix-dev/setup-pixi@v0.8.1
+        with:
+          pixi-version: latest
+          cache: true        # caches .pixi based on pixi.lock
+
+      # Compiler cache
+      - name: Cache ${{ matrix.cache-tool }}
+        uses: actions/cache@v4
+        with:
+          path: ${{ matrix.cache-dir }}
+          key: ${{ matrix.pixi-platform }}-${{ matrix.cache-tool }}-${{ github.sha }}
+          restore-keys: |
+            ${{ matrix.pixi-platform }}-${{ matrix.cache-tool }}-
+
+      # Fetch ROS 2 sources
+      - name: Fetch sources
+        run: pixi run fetch
+
+      # Build
+      - name: Build
+        run: pixi run build
