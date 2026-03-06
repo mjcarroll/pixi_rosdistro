@@ -23,6 +23,8 @@ COLCON_DEFAULTS_FILE        = "$PIXI_PROJECT_ROOT/colcon_defaults.yaml"
 # ccache is the default compiler launcher; overridden to sccache on Windows
 CMAKE_C_COMPILER_LAUNCHER   = "ccache"
 CMAKE_CXX_COMPILER_LAUNCHER = "ccache"
+# sccache also supports Rust — routes rustc through the cache for zenoh_c_vendor etc.
+RUSTC_WRAPPER               = "sccache"
 # ROS environment variables required by some generators at build time
 ROS_DISTRO                  = "rolling"
 ROS_VERSION                 = "2"
@@ -32,6 +34,7 @@ QT_QPA_PLATFORM_PLUGIN_PATH = "%cd%\\.pixi\\envs\\default\\Library\\plugins\\pla
 COLCON_DEFAULTS_FILE        = "%PIXI_PROJECT_ROOT%\\colcon_defaults.yaml"
 CMAKE_C_COMPILER_LAUNCHER   = "sccache"
 CMAKE_CXX_COMPILER_LAUNCHER = "sccache"
+RUSTC_WRAPPER               = "sccache"
 
 # ==============================================================================
 # Tasks (available in the default/build environment)
