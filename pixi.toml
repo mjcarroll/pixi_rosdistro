@@ -20,9 +20,9 @@ runtime = { features = ["runtime"], solve-group = "default" }
 # ==============================================================================
 [activation.env]
 COLCON_DEFAULTS_FILE        = "$PIXI_PROJECT_ROOT/colcon_defaults.yaml"
-# ccache is the default compiler launcher; overridden to sccache on Windows
-CMAKE_C_COMPILER_LAUNCHER   = "ccache"
-CMAKE_CXX_COMPILER_LAUNCHER = "ccache"
+# sccache is used on all platforms for C/C++ and Rust caching
+CMAKE_C_COMPILER_LAUNCHER   = "sccache"
+CMAKE_CXX_COMPILER_LAUNCHER = "sccache"
 # sccache also supports Rust — routes rustc through the cache for zenoh_c_vendor etc.
 RUSTC_WRAPPER               = "sccache"
 # ROS environment variables required by some generators at build time
@@ -31,10 +31,8 @@ ROS_VERSION                 = "2"
 
 [target.win-64.activation.env]
 QT_QPA_PLATFORM_PLUGIN_PATH = "%cd%\\.pixi\\envs\\default\\Library\\plugins\\platforms"
+# Windows needs a different path syntax for COLCON_DEFAULTS_FILE
 COLCON_DEFAULTS_FILE        = "%PIXI_PROJECT_ROOT%\\colcon_defaults.yaml"
-CMAKE_C_COMPILER_LAUNCHER   = "sccache"
-CMAKE_CXX_COMPILER_LAUNCHER = "sccache"
-RUSTC_WRAPPER               = "sccache"
 
 # ==============================================================================
 # Tasks (available in the default/build environment)
@@ -88,6 +86,8 @@ numpy         = "*"
 [feature.runtime.target.linux-64.dependencies]
 # lttng is a runtime tracing library used by tracetools
 lttng-ust = "*"
+# iceoryx_hoofs requires sys/acl.h (POSIX ACL — Linux only)
+libacl    = "*"
 
 # ==============================================================================
 # BUILD FEATURE
@@ -130,12 +130,12 @@ lark                             = "*"
 # ==============================================================================
 [feature.build.target.linux-64.dependencies]
 compilers  = "*"
-ccache     = "*"
+sccache    = "*"
 pkg-config = "*"
 
 [feature.build.target.osx-arm64.dependencies]
 compilers = "*"
-ccache    = "*"
+sccache   = "*"
 
 [feature.build.target.win-64.dependencies]
 compilers = "*"
