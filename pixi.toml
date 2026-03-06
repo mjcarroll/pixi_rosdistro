@@ -7,37 +7,41 @@ channels = ["conda-forge"]
 platforms = ["win-64", "linux-64", "osx-arm64"]
 
 # ==============================================================================
-# Tasks
+# Environments
+# - default: runtime + build (what you need to build and run)
+# - runtime: runtime-only (what a binary artifact consumer needs)
 # ==============================================================================
+[environments]
+default = { features = ["runtime", "build"], solve-group = "default" }
+runtime = { features = ["runtime"], solve-group = "default" }
 
-# Point colcon to our defaults file on all platforms
-# and set ccache as default compiler launcher (overridden to sccache on Windows)
+# ==============================================================================
+# Activation environment variables (applies to all environments)
+# ==============================================================================
 [activation.env]
 COLCON_DEFAULTS_FILE        = "$PIXI_PROJECT_ROOT/colcon_defaults.yaml"
+# ccache is the default compiler launcher; overridden to sccache on Windows
 CMAKE_C_COMPILER_LAUNCHER   = "ccache"
 CMAKE_CXX_COMPILER_LAUNCHER = "ccache"
+# ROS environment variables required by some generators at build time
+ROS_DISTRO                  = "rolling"
+ROS_VERSION                 = "2"
 
-# ==============================================================================
-# Windows-specific activation environment
-# (COLCON_DEFAULTS_FILE is also set above in [target.win-64.activation.env])
-# ==============================================================================
 [target.win-64.activation.env]
 QT_QPA_PLATFORM_PLUGIN_PATH = "%cd%\\.pixi\\envs\\default\\Library\\plugins\\platforms"
-COLCON_DEFAULTS_FILE = "%PIXI_PROJECT_ROOT%\\colcon_defaults.yaml"
-# On Windows use sccache instead of ccache (overrides colcon_defaults.yaml)
+COLCON_DEFAULTS_FILE        = "%PIXI_PROJECT_ROOT%\\colcon_defaults.yaml"
 CMAKE_C_COMPILER_LAUNCHER   = "sccache"
 CMAKE_CXX_COMPILER_LAUNCHER = "sccache"
 
+# ==============================================================================
+# Tasks (available in the default/build environment)
+# ==============================================================================
 [tasks]
-# List / graph tasks work without sources (colcon reads src/)
 graph = "colcon graph"
 list  = "colcon list"
-
-# Build / test — options controlled via colcon_defaults.yaml
 build = "colcon build"
 test  = "colcon test"
 
-# Fetch: platform-specific to ensure src/ exists first
 [target.linux-64.tasks]
 fetch = "mkdir -p src && vcs import --recursive src < ros2.repos"
 
@@ -46,68 +50,90 @@ fetch = "mkdir -p src && vcs import --recursive src < ros2.repos"
 
 [target.win-64.tasks]
 fetch = "cmd /c \"if not exist src mkdir src\" && vcs import --recursive src < ros2.repos"
+clean = "cmd /c \"if exist build rmdir /s /q build && if exist install rmdir /s /q install && if exist log rmdir /s /q log\""
 
+[target.linux-64.tasks.clean]
+cmd = "rm -rf build install log"
 
-# ==============================================================================
-# Minimal bootstrap dependencies (conda-forge)
-# All other deps will be added incrementally once colcon graph is analysed.
-# ==============================================================================
-[dependencies]
-python    = ">=3.12"
-cmake     = "*"
-ninja     = "*"
-git       = "*"
-curl      = "*"
+[target.osx-arm64.tasks.clean]
+cmd = "rm -rf build install log"
 
 # ==============================================================================
-# Tier 3: system libs needed by vendor packages and first C++ packages
-# (spdlog_vendor, yaml_cpp_vendor, console_bridge_vendor, libyaml_vendor, rcutils)
+# RUNTIME FEATURE
+# Libraries needed to run built ROS 2 artifacts.
+# These go into a deployable runtime image / end-user environment.
 # ==============================================================================
-spdlog          = "*"
-yaml-cpp        = "*"
-console_bridge  = "*"
+[feature.runtime.dependencies]
+python = ">=3.12"
+
+# Tier 3: C++ libraries used by rcutils and friends
+spdlog         = "*"
+yaml-cpp       = "*"
+console_bridge = "*"
+
+# Tier 4: additional runtime C++ libraries
+tinyxml2      = "*"
+asio          = "*"
+nlohmann_json = "*"
+yaml          = "*"
+# rosidl_generator_py requires numpy headers at configure time
+numpy         = "*"
 
 # ==============================================================================
-# Bootstrap Python tools (via pip)
-# vcstool + colcon and its minimal plugins — pure Python, best from PyPI
+# Platform-specific runtime deps
 # ==============================================================================
-[pypi-dependencies]
-vcs2l = { git = "https://github.com/ros-infrastructure/vcs2l" }
-catkin-pkg                    = "*"
-colcon-core                   = "*"
-colcon-cmake                  = "*"
-colcon-defaults               = "*"
-colcon-library-path           = "*"
-colcon-metadata               = "*"
-colcon-mixin                  = "*"
-colcon-output                 = "*"
-colcon-package-information    = "*"
-colcon-package-selection      = "*"
-colcon-parallel-executor      = "*"
-colcon-pkg-config             = "*"
-colcon-powershell             = "*"
-colcon-python-setup-py        = "*"
-colcon-recursive-crawl        = "*"
-colcon-ros                    = "*"
+[feature.runtime.target.linux-64.dependencies]
+# lttng is a runtime tracing library used by tracetools
+lttng-ust = "*"
+
+# ==============================================================================
+# BUILD FEATURE
+# Tools needed to compile ROS 2 from source.
+# Not required to run already-compiled artifacts.
+# ==============================================================================
+[feature.build.dependencies]
+cmake  = "*"
+ninja  = "*"
+git    = "*"
+curl   = "*"
+# rust/cargo required by zenoh_cpp_vendor (rmw_zenoh_cpp)
+rust   = "*"
+
+[feature.build.pypi-dependencies]
+vcs2l                            = { git = "https://github.com/ros-infrastructure/vcs2l" }
+catkin-pkg                       = "*"
+colcon-core                      = "*"
+colcon-cmake                     = "*"
+colcon-defaults                  = "*"
+colcon-library-path              = "*"
+colcon-metadata                  = "*"
+colcon-mixin                     = "*"
+colcon-output                    = "*"
+colcon-package-information       = "*"
+colcon-package-selection         = "*"
+colcon-parallel-executor         = "*"
+colcon-pkg-config                = "*"
+colcon-powershell                = "*"
+colcon-python-setup-py           = "*"
+colcon-recursive-crawl           = "*"
+colcon-ros                       = "*"
 colcon-ros-domain-id-coordinator = "*"
-colcon-test-result            = "*"
-empy                          = "==3.3.4"
-lark                          = "*"
+colcon-test-result               = "*"
+empy                             = "==3.3.4"
+lark                             = "*"
 
 # ==============================================================================
-# Platform-specific: compilers and compiler caches
+# Platform-specific build deps (compilers and compiler caches)
 # ==============================================================================
-[target.linux-64.dependencies]
-# conda-forge 'compilers' meta-package pulls gcc/g++/gfortran for the platform
-compilers = "*"
-ccache    = "*"
+[feature.build.target.linux-64.dependencies]
+compilers  = "*"
+ccache     = "*"
 pkg-config = "*"
 
-[target.osx-arm64.dependencies]
-# On macOS the 'compilers' package pulls clang from Xcode toolchain wrappers
+[feature.build.target.osx-arm64.dependencies]
 compilers = "*"
 ccache    = "*"
 
-[target.win-64.dependencies]
+[feature.build.target.win-64.dependencies]
 compilers = "*"
 sccache   = "*"

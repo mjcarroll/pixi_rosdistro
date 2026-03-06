@@ -1,10 +1,9 @@
 build:
   merge-install: true
   executor: sequential
-  # Tier 3: first C++ packages up to rcutils
-  # Expand incrementally as more system deps are verified.
+  # Tier 4: rcpputils, rosidl generators, rmw up to rcl_yaml_param_parser
   packages-up-to:
-    - rcutils
+    - rcl_yaml_param_parser
   cmake-args:
     - -GNinja
     - --no-warn-unused-cli
