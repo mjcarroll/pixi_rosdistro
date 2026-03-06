@@ -1,12 +1,9 @@
 build:
   merge-install: true
   executor: sequential
-  # Tier 6: rclcpp_action, rclcpp_lifecycle, rclcpp_components, ros2cli, ros2node, etc.
+  # Tier 4: rcl
   packages-up-to:
-    - rclcpp_action
-    - rclcpp_lifecycle
-    - rclcpp_components
-    - ros2cli
+    - rcl
   cmake-args:
     - -GNinja
     - --no-warn-unused-cli
