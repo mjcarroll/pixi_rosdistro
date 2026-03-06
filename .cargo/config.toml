@@ -1,0 +1,10 @@
+# Cargo workspace configuration for ROS 2 Rolling pixi build
+#
+# This file lives at the workspace root so Cargo picks it up when
+# zenoh_cpp_vendor fetches and compiles zenoh-c as an ExternalProject.
+
+[patch.crates-io]
+# static_init 1.0.1–1.0.3 has a bug where debug_assertions inadvertently
+# enable the parking_lot feature, causing E0433 with Rust >= 1.82.
+# Fixed in 1.0.4: https://github.com/alexandre-ricciardi/static-init/issues
+static_init = { version = "1.0.4" }

@@ -15,16 +15,16 @@ jobs:
         include:
           - os: ubuntu-latest
             pixi-platform: linux-64
-            cache-tool: ccache
-            cache-dir: ~/.ccache
+            cache-tool: sccache
+            cache-dir: ~/.cache/sccache
           - os: windows-latest
             pixi-platform: win-64
             cache-tool: sccache
             cache-dir: C:\Users\runneradmin\AppData\Local\Mozilla\sccache
           - os: macos-latest
             pixi-platform: osx-arm64
-            cache-tool: ccache
-            cache-dir: ~/.ccache
+            cache-tool: sccache
+            cache-dir: ~/Library/Caches/Mozilla.sccache
 
     runs-on: ${{ matrix.os }}
     steps:
@@ -41,14 +41,14 @@ jobs:
           pixi-version: latest
           cache: false
 
-      # Compiler cache (sccache on Windows, ccache on Linux/macOS)
-      - name: Cache ${{ matrix.cache-tool }}
+      # Compiler cache — sccache on all platforms (C/C++ and Rust)
+      - name: Cache sccache
         uses: actions/cache@v4
         with:
           path: ${{ matrix.cache-dir }}
-          key: ${{ matrix.pixi-platform }}-${{ matrix.cache-tool }}-${{ github.sha }}
+          key: ${{ matrix.pixi-platform }}-sccache-${{ github.sha }}
           restore-keys: |
-            ${{ matrix.pixi-platform }}-${{ matrix.cache-tool }}-
+            ${{ matrix.pixi-platform }}-sccache-
 
       # Fetch ROS 2 sources
       - name: Fetch sources
