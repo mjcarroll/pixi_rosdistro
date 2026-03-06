@@ -25,9 +25,6 @@ CMAKE_C_COMPILER_LAUNCHER   = "sccache"
 CMAKE_CXX_COMPILER_LAUNCHER = "sccache"
 # sccache also supports Rust — routes rustc through the cache for zenoh_c_vendor etc.
 RUSTC_WRAPPER               = "sccache"
-# Point Cargo at our workspace .cargo dir so [patch.crates-io] in .cargo/config.toml
-# is found even when cargo runs from an ExternalProject subdirectory
-CARGO_HOME                  = "$PIXI_PROJECT_ROOT/.cargo"
 # ROS environment variables required by some generators at build time
 ROS_DISTRO                  = "rolling"
 ROS_VERSION                 = "2"
@@ -40,9 +37,12 @@ COLCON_DEFAULTS_FILE        = "%PIXI_PROJECT_ROOT%\\colcon_defaults.yaml"
 # conda-forge sets -Wl,--as-needed globally which causes pthread_once to be
 # dropped when referenced only via C++ template instantiation (e.g. rclcpp).
 # Override with --no-as-needed on Linux so pthread and similar are always linked.
+# Also disable debug_assertions in dev profile to prevent static_init 1.0.3 bug
+# where debug_assertions inadvertently enables parking_lot feature (E0433 on Rust>=1.82).
 [target.linux-64.activation.env]
-CMAKE_EXE_LINKER_FLAGS    = "-Wl,--no-as-needed"
-CMAKE_SHARED_LINKER_FLAGS = "-Wl,--no-as-needed"
+CMAKE_EXE_LINKER_FLAGS              = "-Wl,--no-as-needed"
+CMAKE_SHARED_LINKER_FLAGS           = "-Wl,--no-as-needed"
+CARGO_PROFILE_DEV_DEBUG_ASSERTIONS  = "false"
 
 # ==============================================================================
 # Tasks (available in the default/build environment)
