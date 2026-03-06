@@ -37,6 +37,13 @@ QT_QPA_PLATFORM_PLUGIN_PATH = "%cd%\\.pixi\\envs\\default\\Library\\plugins\\pla
 # Windows needs a different path syntax for COLCON_DEFAULTS_FILE
 COLCON_DEFAULTS_FILE        = "%PIXI_PROJECT_ROOT%\\colcon_defaults.yaml"
 
+# conda-forge sets -Wl,--as-needed globally which causes pthread_once to be
+# dropped when referenced only via C++ template instantiation (e.g. rclcpp).
+# Override with --no-as-needed on Linux so pthread and similar are always linked.
+[target.linux-64.activation.env]
+CMAKE_EXE_LINKER_FLAGS    = "-Wl,--no-as-needed"
+CMAKE_SHARED_LINKER_FLAGS = "-Wl,--no-as-needed"
+
 # ==============================================================================
 # Tasks (available in the default/build environment)
 # ==============================================================================
@@ -82,6 +89,8 @@ nlohmann_json = "*"
 yaml          = "*"
 # rosidl_generator_py requires numpy headers at configure time
 numpy         = "*"
+# rclpy requires pybind11 to build the Python bindings
+pybind11      = "*"
 
 # ==============================================================================
 # Platform-specific runtime deps
