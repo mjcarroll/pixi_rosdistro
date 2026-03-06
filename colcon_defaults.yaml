@@ -1,9 +1,10 @@
 build:
   merge-install: true
   executor: sequential
-  # Tier 4: rcpputils, rosidl generators, rmw up to rcl_yaml_param_parser
+  # Tier 5: rcl → rcl_action/rcl_lifecycle → rclcpp, rclpy
   packages-up-to:
-    - rcl_yaml_param_parser
+    - rclcpp
+    - rclpy
   cmake-args:
     - -GNinja
     - --no-warn-unused-cli

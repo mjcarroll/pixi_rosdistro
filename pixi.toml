@@ -25,6 +25,9 @@ CMAKE_C_COMPILER_LAUNCHER   = "sccache"
 CMAKE_CXX_COMPILER_LAUNCHER = "sccache"
 # sccache also supports Rust — routes rustc through the cache for zenoh_c_vendor etc.
 RUSTC_WRAPPER               = "sccache"
+# Point Cargo at our workspace .cargo dir so [patch.crates-io] in .cargo/config.toml
+# is found even when cargo runs from an ExternalProject subdirectory
+CARGO_HOME                  = "$PIXI_PROJECT_ROOT/.cargo"
 # ROS environment variables required by some generators at build time
 ROS_DISTRO                  = "rolling"
 ROS_VERSION                 = "2"
