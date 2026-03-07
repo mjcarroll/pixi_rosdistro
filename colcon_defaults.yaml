@@ -9,12 +9,14 @@ build:
     - --no-warn-unused-cli
     - -DCMAKE_BUILD_TYPE=Release
     - -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE
+    # Suppress CMake deprecation warnings (e.g. cmake_minimum_required < 3.10)
+    # so they don't appear as stderr output via console_cohesion+
+    - -Wno-deprecated
     # Avoid BFD linker issues in conda environments
     - -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE
     - -DSTACK_DETAILS_BFD:bool=FALSE
   event-handlers:
-    - console_direct+
-    - console_package_list+
+    - console_cohesion+
 
 test:
   merge-install: true
