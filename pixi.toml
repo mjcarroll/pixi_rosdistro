@@ -19,7 +19,7 @@ runtime = { features = ["runtime"], solve-group = "default" }
 # Activation environment variables (applies to all environments)
 # ==============================================================================
 [activation.env]
-COLCON_DEFAULTS_FILE        = "$PIXI_PROJECT_ROOT/colcon_defaults.yaml"
+COLCON_DEFAULTS_FILE        = "colcon_defaults.yaml"
 # sccache is used on all platforms for C/C++ and Rust caching
 CMAKE_C_COMPILER_LAUNCHER   = "sccache"
 CMAKE_CXX_COMPILER_LAUNCHER = "sccache"
@@ -51,7 +51,7 @@ CARGO_PROFILE_DEV_DEBUG_ASSERTIONS  = "false"
 [tasks]
 graph = "colcon graph"
 list  = "colcon list"
-build = "colcon build --defaults-file colcon_defaults.yaml"
+build = "colcon build"
 test  = "colcon test"
 
 [target.linux-64.tasks]
