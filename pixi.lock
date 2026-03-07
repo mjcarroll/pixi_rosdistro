@@ -200,6 +200,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/libintl-0.25.1-h493aca8_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/liblapack-3.11.0-5_hd9741b5_openblas.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/libllvm19-19.1.7-h8e0c9ce_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/osx-arm64/libllvm22-22.1.0-h89af1be_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/liblzma-5.8.2-h8088a28_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/libmpdec-4.0.0-h84a0fba_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/libnghttp2-1.67.0-hc438710_0.conda
@@ -211,6 +212,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/libxml2-16-2.15.1-h5ef1a60_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/libxml2-2.15.1-h8d039ee_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/libzlib-1.3.1-h8359307_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/osx-arm64/lld-22.1.0-h1f0a5af_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/llvm-openmp-22.1.0-hc7d1edf_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/llvm-tools-19-19.1.7-h91fd4e7_2.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/llvm-tools-19.1.7-h855ad52_2.conda
@@ -2681,6 +2683,21 @@ packages:
   purls: []
   size: 55363
   timestamp: 1757353124091
+- conda: https://conda.anaconda.org/conda-forge/osx-arm64/libllvm22-22.1.0-h89af1be_0.conda
+  sha256: 19e2c69bd90cffc66a9fd9feff2bfe6093cda8bf69aa01a6e1c41cbc0a5c24a0
+  md5: 620fe27ebf89177446fb7cc3c26c9cc0
+  depends:
+  - __osx >=11.0
+  - libcxx >=19
+  - libxml2
+  - libxml2-16 >=2.14.6
+  - libzlib >=1.3.1,<2.0a0
+  - zstd >=1.5.7,<1.6.0a0
+  license: Apache-2.0 WITH LLVM-exception
+  license_family: Apache
+  purls: []
+  size: 30060199
+  timestamp: 1771978789197
 - conda: https://conda.anaconda.org/conda-forge/linux-64/liblzma-5.8.2-hb03c661_0.conda
   sha256: 755c55ebab181d678c12e49cced893598f2bab22d582fbbf4d8b83c18be207eb
   md5: c7c83eecbb72d88b940c249af56c8b17
@@ -3154,6 +3171,22 @@ packages:
   purls: []
   size: 55476
   timestamp: 1727963768015
+- conda: https://conda.anaconda.org/conda-forge/osx-arm64/lld-22.1.0-h1f0a5af_0.conda
+  sha256: 745d96188dfd7d9fd3e3ea79c8a0cb1f886d17d395b790c7eb28d3af59ff2da8
+  md5: 858087746b28617a1ef9a2daf1bf4a13
+  depends:
+  - __osx >=11.0
+  - libcxx >=19.1.7
+  - libllvm22 >=22.1.0,<22.2.0a0
+  - libzlib >=1.3.1,<2.0a0
+  - zstd >=1.5.7,<1.6.0a0
+  constrains:
+  - llvm ==22.1.0
+  license: Apache-2.0 WITH LLVM-exception
+  license_family: APACHE
+  purls: []
+  size: 5088651
+  timestamp: 1772018909430
 - conda: https://conda.anaconda.org/conda-forge/win-64/lld-22.1.0-hc465015_0.conda
   sha256: 1e283a0890b3c974b157b27be0792695c39a1db89ba85f6ba662dfd0f037b5a7
   md5: 701ef18f10ba4f05061fd8777a15bfb4

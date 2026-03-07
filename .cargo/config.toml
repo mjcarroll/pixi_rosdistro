@@ -22,3 +22,7 @@ linker = "rust-lld.exe"
 # mold is significantly faster than GNU ld for large Rust workloads.
 [target.x86_64-unknown-linux-gnu]
 rustflags = ["-C", "link-arg=-fuse-ld=mold"]
+
+# Use lld on macOS for the Rust link step.
+[target.aarch64-apple-darwin]
+rustflags = ["-C", "link-arg=-fuse-ld=lld"]
