@@ -27,10 +27,9 @@ jobs:
     env:
       # sccache — GCS remote backend
       # One shared bucket, per-OS key prefix (no cross-OS hits but no collisions either).
-      # Requires the following GitHub Actions secrets to be set:
-      #   SCCACHE_GCS_BUCKET          — GCS bucket name, e.g. "my-sccache"
-      #   GCP_SA_KEY                  — Service account JSON key (base64-encoded or raw JSON)
-      SCCACHE_GCS_BUCKET: ${{ secrets.SCCACHE_GCS_BUCKET }}
+      # Requires the following GitHub Actions secret:
+      #   GCP_SA_KEY  — Service account JSON key (raw JSON, needs storage.objectAdmin on bucket)
+      SCCACHE_GCS_BUCKET: pixi-rosdistro-sccache
       SCCACHE_GCS_KEY_PREFIX: ${{ matrix.sccache-prefix }}
       SCCACHE_GCS_RW_MODE: READ_WRITE
       # Ensure sccache is used for all Rust compilations (including ament_vendor/ExternalProject)
