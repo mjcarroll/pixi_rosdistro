@@ -1,13 +1,6 @@
 build:
   merge-install: true
   executor: parallel
-  # Tier 6: rclcpp, rclpy, ros2cli and dependents
-  packages-up-to:
-    - rclcpp_action
-    - rclcpp_lifecycle
-    - rclcpp_components
-    - rclpy
-    - ros2cli
   cmake-args:
     - -GNinja
     - --no-warn-unused-cli
