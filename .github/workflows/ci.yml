@@ -54,13 +54,18 @@ jobs:
       - name: Fetch sources
         run: pixi run fetch
 
+      # Show sccache stats before build (zero on first run, hits on subsequent)
+      - name: sccache stats (pre-build)
+        run: pixi run -e default sccache --show-stats
+
       # Build
       - name: Build
         run: pixi run build
 
-      # Stop sccache daemon so it releases file locks before post-job cleanup.
-      # Without this, sccache.exe holds open handles in .pixi/envs/default/bin
-      # and Windows refuses to rmdir the locked path (EBUSY).
-      - name: Stop sccache
+      # Show final cache hit/miss stats, then stop daemon to release file locks
+      # before post-job cleanup (otherwise Windows EBUSY on .pixi/envs/default/bin).
+      - name: sccache stats (post-build) + stop
         if: always()
-        run: pixi run -e default sccache --stop-server || true
+        run: |
+          pixi run -e default sccache --show-stats || true
+          pixi run -e default sccache --stop-server || true
