@@ -96,11 +96,9 @@ numpy         = "*"
 pybind11      = "*"
 
 # Vendor package system replacements — skip building from source:
-#   foonathan_memory_vendor: auto-skips ExternalProject if foonathan_memory is findable
 #   google_benchmark_vendor: skips if find_package(benchmark) >= 1.8.3 (shared)
 #   uncrustify_vendor: skips if uncrustify binary >= 0.78 is found in PATH
 benchmark          = ">=1.8.3"
-foonathan_memory   = "*"
 uncrustify         = ">=0.78"
 
 # ==============================================================================
@@ -111,6 +109,9 @@ uncrustify         = ">=0.78"
 lttng-ust = "*"
 # iceoryx_hoofs requires sys/acl.h (POSIX ACL — Linux only)
 libacl    = "*"
+# foonathan_memory_vendor: skip ExternalProject build if found in system
+# (not available on win-64 or osx-arm64 in conda-forge)
+foonathan_memory = "*"
 
 # ==============================================================================
 # BUILD FEATURE
