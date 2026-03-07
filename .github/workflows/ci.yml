@@ -69,10 +69,19 @@ jobs:
       - name: sccache stats (pre-build)
         run: pixi run -e default sccache --show-stats
 
-      # Build
+      # Build — pipe output through sed to emit GitHub Actions group markers so
+      # each package appears as a collapsible section in the CI log.
+      # Starting >>> pkg  →  ::group::pkg
+      # Finished <<< pkg  →  ::endgroup::
+      # All other lines pass through unchanged (compiler errors, timing, summary).
       - name: Build
         shell: bash
-        run: pixi run build 2>&1 | tee build.log
+        run: |
+          pixi run build 2>&1 | tee build.log | sed -u \
+            -e 's/^.*Starting >>> \(.*\)$/::group::\1/' \
+            -e 's/^.*Finished <<< .*/::endgroup::/' \
+            -e 's/^.*Failed <<< .*/::endgroup::/' |
+          cat  # force line-buffered output through the pipe
 
       # Scan build log for package durations and compiler warnings, then write to job summary.
       # Uses bash on all platforms (Git Bash on Windows).

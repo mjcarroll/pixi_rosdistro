@@ -31,7 +31,7 @@ ROS_VERSION                 = "2"
 
 [target.win-64.activation.env]
 QT_QPA_PLATFORM_PLUGIN_PATH = "%cd%\\.pixi\\envs\\default\\Library\\plugins\\platforms"
-# Windows needs a different path syntax for COLCON_DEFAULTS_FILE
+# Windows needs different path expansion
 COLCON_DEFAULTS_FILE        = "%PIXI_PROJECT_ROOT%\\colcon_defaults.yaml"
 
 # conda-forge sets -Wl,--as-needed globally which causes pthread_once to be
@@ -51,7 +51,7 @@ CARGO_PROFILE_DEV_DEBUG_ASSERTIONS  = "false"
 [tasks]
 graph = "colcon graph"
 list  = "colcon list"
-build = "colcon build"
+build = "colcon build --defaults-file colcon_defaults.yaml"
 test  = "colcon test"
 
 [target.linux-64.tasks]
