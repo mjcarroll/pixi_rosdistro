@@ -62,6 +62,38 @@ jobs:
       - name: Build
         run: pixi run build
 
+      # Scan colcon per-package logs for compiler warnings and write to job summary.
+      # Uses bash on all platforms (Git Bash on Windows). Matches:
+      #   GCC/Clang:  "file.cpp:42:10: warning: ..."
+      #   MSVC:       "file.cpp(42): warning C4xxx: ..."
+      - name: Report compiler warnings
+        if: always()
+        shell: bash
+        run: |
+          {
+            echo "## 🔔 Compiler Warnings"
+            echo ""
+            mapfile -t warnings < <(
+              grep -rh --include="stdout_stderr.log" \
+                -e ": warning:" -e ": warning C" \
+                log/ 2>/dev/null \
+              | sort -u
+            )
+            if [ ${#warnings[@]} -eq 0 ]; then
+              echo "_No compiler warnings found._"
+            else
+              echo "| # | Warning |"
+              echo "|---|---------|"
+              n=1
+              for w in "${warnings[@]}"; do
+                echo "| $n | \`${w}\` |"
+                n=$((n + 1))
+              done
+              echo ""
+              echo "**Total unique warnings: $((n - 1))**"
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+
       # Show final cache hit/miss stats, then stop daemon to release file locks
       # before post-job cleanup (otherwise Windows EBUSY on .pixi/envs/default/bin).
       - name: sccache stats (post-build) + stop
