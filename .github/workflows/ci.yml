@@ -94,7 +94,8 @@ jobs:
               echo "### 🔔 Compiler Warnings"
               echo ""
               warnings_found=false
-              # Grep build.log for GCC/Clang and MSVC warnings
+              # Warnings are in per-package colcon log files (console_cohesion+ doesn't stream them to stdout)
+              latest_build=$(ls -dt log/build_* 2>/dev/null | head -1)
               while IFS= read -r line; do
                 if [ -n "$line" ]; then
                   if ! $warnings_found; then
@@ -106,7 +107,7 @@ jobs:
                   echo "| $n | \`${line}\` |"
                   n=$((n + 1))
                 fi
-              done < <(grep -a -e ": warning:" -e ": warning C" build.log | sort -u)
+              done < <(grep -rha -e ": warning:" -e ": warning C" "${latest_build}" 2>/dev/null | sort -u)
               
               if ! $warnings_found; then
                 echo "_No compiler warnings found in the build log._"
