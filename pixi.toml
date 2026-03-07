@@ -25,6 +25,8 @@ CMAKE_C_COMPILER_LAUNCHER   = "sccache"
 CMAKE_CXX_COMPILER_LAUNCHER = "sccache"
 # sccache also supports Rust — routes rustc through the cache for zenoh_c_vendor etc.
 RUSTC_WRAPPER               = "sccache"
+# Rust incremental compilation is not cacheable by sccache
+CARGO_INCREMENTAL           = "0"
 # ROS environment variables required by some generators at build time
 ROS_DISTRO                  = "rolling"
 ROS_VERSION                 = "2"
@@ -40,8 +42,8 @@ COLCON_DEFAULTS_FILE        = "%PIXI_PROJECT_ROOT%\\colcon_defaults.yaml"
 # Also disable debug_assertions in dev profile to prevent static_init 1.0.3 bug
 # where debug_assertions inadvertently enables parking_lot feature (E0433 on Rust>=1.82).
 [target.linux-64.activation.env]
-CMAKE_EXE_LINKER_FLAGS              = "-Wl,--no-as-needed"
-CMAKE_SHARED_LINKER_FLAGS           = "-Wl,--no-as-needed"
+CMAKE_EXE_LINKER_FLAGS              = "-fuse-ld=mold -Wl,--no-as-needed"
+CMAKE_SHARED_LINKER_FLAGS           = "-fuse-ld=mold -Wl,--no-as-needed"
 LDFLAGS                             = "-Wl,--no-as-needed"
 CARGO_PROFILE_DEV_DEBUG_ASSERTIONS  = "false"
 
@@ -92,6 +94,14 @@ yaml          = "*"
 numpy         = "*"
 # rclpy requires pybind11 to build the Python bindings
 pybind11      = "*"
+
+# Vendor package system replacements — skip building from source:
+#   foonathan_memory_vendor: auto-skips ExternalProject if foonathan_memory is findable
+#   google_benchmark_vendor: skips if find_package(benchmark) >= 1.8.3 (shared)
+#   uncrustify_vendor: skips if uncrustify binary >= 0.78 is found in PATH
+benchmark          = ">=1.8.3"
+foonathan_memory   = "*"
+uncrustify         = ">=0.78"
 
 # ==============================================================================
 # Platform-specific runtime deps
@@ -145,6 +155,8 @@ lark                             = "*"
 compilers  = "*"
 sccache    = "*"
 pkg-config = "*"
+# mold: faster linker for Linux C/C++ (2-10x vs GNU ld); also used by Rust via .cargo/config.toml
+mold       = "*"
 
 [feature.build.target.osx-arm64.dependencies]
 compilers = "*"

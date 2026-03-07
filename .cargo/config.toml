@@ -17,3 +17,8 @@ debug-assertions = false
 # faster than MSVC link.exe for large workloads.
 [target.x86_64-pc-windows-msvc]
 linker = "rust-lld.exe"
+
+# Use mold on Linux for the Rust link step (zenoh-c and friends).
+# mold is significantly faster than GNU ld for large Rust workloads.
+[target.x86_64-unknown-linux-gnu]
+rustflags = ["-C", "link-arg=-fuse-ld=mold"]
