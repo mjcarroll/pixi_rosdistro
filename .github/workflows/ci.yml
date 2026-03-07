@@ -15,29 +15,26 @@ jobs:
         include:
           - os: ubuntu-latest
             pixi-platform: linux-64
-            cache-tool: sccache
-            cache-dir: ~/.cache/sccache
+            sccache-prefix: linux
           - os: windows-latest
             pixi-platform: win-64
-            cache-tool: sccache
-            cache-dir: C:\Users\runneradmin\AppData\Local\Mozilla\sccache
+            sccache-prefix: windows
           - os: macos-latest
             pixi-platform: osx-arm64
-            cache-tool: sccache
-            cache-dir: ~/Library/Caches/Mozilla.sccache
+            sccache-prefix: macos
 
     runs-on: ${{ matrix.os }}
     env:
-      SCCACHE_DIR: ${{ matrix.cache-dir }}
+      # sccache — GCS remote backend
+      # One shared bucket, per-OS key prefix (no cross-OS hits but no collisions either).
+      # Requires the following GitHub Actions secrets to be set:
+      #   SCCACHE_GCS_BUCKET          — GCS bucket name, e.g. "my-sccache"
+      #   GCP_SA_KEY                  — Service account JSON key (base64-encoded or raw JSON)
+      SCCACHE_GCS_BUCKET: ${{ secrets.SCCACHE_GCS_BUCKET }}
+      SCCACHE_GCS_KEY_PREFIX: ${{ matrix.sccache-prefix }}
+      SCCACHE_GCS_RW_MODE: READ_WRITE
       # Ensure sccache is used for all Rust compilations (including ament_vendor/ExternalProject)
       RUSTC_WRAPPER: sccache
-      # Potential remote backend (uncomment and set secrets to use S3/GCS/Azure)
-      # SCCACHE_BUCKET: ${{ secrets.SCCACHE_BUCKET }}
-      # SCCACHE_REGION: ${{ secrets.SCCACHE_REGION }}
-      # GCS_BUCKET: ${{ secrets.GCS_BUCKET }}
-      # AZURE_STORAGE_ACCOUNT: ${{ secrets.AZURE_STORAGE_ACCOUNT }}
-      # AZURE_STORAGE_KEY: ${{ secrets.AZURE_STORAGE_KEY }}
-      # AZURE_STORAGE_CONTAINER: ${{ secrets.AZURE_STORAGE_CONTAINER }}
 
     steps:
       - uses: actions/checkout@v4
@@ -53,14 +50,17 @@ jobs:
           pixi-version: latest
           cache: false
 
-      # Compiler cache — sccache on all platforms (C/C++ and Rust)
-      - name: Cache sccache
-        uses: actions/cache@v4
-        with:
-          path: ${{ matrix.cache-dir }}
-          key: ${{ matrix.pixi-platform }}-sccache-${{ github.sha }}
-          restore-keys: |
-            ${{ matrix.pixi-platform }}-sccache-
+      # Write GCP service account key so sccache can authenticate with GCS.
+      # The secret GCP_SA_KEY should contain the raw JSON key for the SA.
+      # The SA needs roles/storage.objectAdmin on SCCACHE_GCS_BUCKET.
+      - name: Authenticate sccache with GCS
+        if: ${{ env.SCCACHE_GCS_BUCKET != '' }}
+        shell: bash
+        env:
+          GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
+        run: |
+          echo "$GCP_SA_KEY" > /tmp/gcp-sa-key.json
+          echo "GOOGLE_APPLICATION_CREDENTIALS=/tmp/gcp-sa-key.json" >> "$GITHUB_ENV"
 
       # Fetch ROS 2 sources
       - name: Fetch sources
