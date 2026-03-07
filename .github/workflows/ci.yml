@@ -32,15 +32,6 @@ jobs:
         with:
           fetch-depth: 1
 
-      # Avoid EBUSY on Windows by ensuring no lingering sccache/ninja processes
-      - name: Windows Cleanup
-        if: runner.os == 'Windows'
-        shell: powershell
-        run: |
-          Get-Process -Name sccache -ErrorAction SilentlyContinue | Stop-Process -Force
-          Get-Process -Name ninja -ErrorAction SilentlyContinue | Stop-Process -Force
-          if (Test-Path .pixi) { Remove-Item -Recurse -Force .pixi }
-
       # Install Pixi
       # cache: false avoids EBUSY on Windows — the pixi env dir gets locked by
       # subprocesses (ninja, sccache, cl.exe) during build and Windows refuses
@@ -66,3 +57,10 @@ jobs:
       # Build
       - name: Build
         run: pixi run build
+
+      # Stop sccache daemon so it releases file locks before post-job cleanup.
+      # Without this, sccache.exe holds open handles in .pixi/envs/default/bin
+      # and Windows refuses to rmdir the locked path (EBUSY).
+      - name: Stop sccache
+        if: always()
+        run: pixi run -e default sccache --stop-server || true
