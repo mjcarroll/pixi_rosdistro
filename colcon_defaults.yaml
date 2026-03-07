@@ -16,9 +16,12 @@ build:
     - -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE
     - -DSTACK_DETAILS_BFD:bool=FALSE
   event-handlers:
-    - console_cohesion+
+    # Only print Starting >>> / Finished <<< / Failed <<< lines.
+    # No build output is shown for successful packages.
+    - console_start_end+
 
 test:
   merge-install: true
   event-handlers:
-    - console_direct+
+    - console_start_end+
+    - console_cohesion+
