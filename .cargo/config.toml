@@ -9,3 +9,11 @@
 # where debug_assertions inadvertently activates the parking_lot feature,
 # causing E0433 with Rust >= 1.82. Fixed upstream in static_init 1.0.4.
 debug-assertions = false
+
+# Use rust-lld on Windows instead of MSVC link.exe.
+# sccache only caches compiler (rustc) invocations, not the linker.
+# For a large Rust project like zenoh-c (~100+ crates), the link step
+# dominates build time. rust-lld ships with rustc >= 1.71 and is 3-4x
+# faster than MSVC link.exe for large workloads.
+[target.x86_64-pc-windows-msvc]
+linker = "rust-lld.exe"
