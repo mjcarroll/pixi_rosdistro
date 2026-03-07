@@ -27,6 +27,18 @@ jobs:
             cache-dir: ~/Library/Caches/Mozilla.sccache
 
     runs-on: ${{ matrix.os }}
+    env:
+      SCCACHE_DIR: ${{ matrix.cache-dir }}
+      # Ensure sccache is used for all Rust compilations (including ament_vendor/ExternalProject)
+      RUSTC_WRAPPER: sccache
+      # Potential remote backend (uncomment and set secrets to use S3/GCS/Azure)
+      # SCCACHE_BUCKET: ${{ secrets.SCCACHE_BUCKET }}
+      # SCCACHE_REGION: ${{ secrets.SCCACHE_REGION }}
+      # GCS_BUCKET: ${{ secrets.GCS_BUCKET }}
+      # AZURE_STORAGE_ACCOUNT: ${{ secrets.AZURE_STORAGE_ACCOUNT }}
+      # AZURE_STORAGE_KEY: ${{ secrets.AZURE_STORAGE_KEY }}
+      # AZURE_STORAGE_CONTAINER: ${{ secrets.AZURE_STORAGE_CONTAINER }}
+
     steps:
       - uses: actions/checkout@v4
         with:
