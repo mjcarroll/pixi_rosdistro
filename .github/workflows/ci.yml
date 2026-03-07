@@ -60,37 +60,48 @@ jobs:
 
       # Build
       - name: Build
-        run: pixi run build
+        shell: bash
+        run: pixi run build 2>&1 | tee build.log
 
-      # Scan colcon per-package logs for compiler warnings and write to job summary.
-      # Uses bash on all platforms (Git Bash on Windows). Matches:
-      #   GCC/Clang:  "file.cpp:42:10: warning: ..."
-      #   MSVC:       "file.cpp(42): warning C4xxx: ..."
-      - name: Report compiler warnings
+      # Scan build log for package durations and compiler warnings, then write to job summary.
+      # Uses bash on all platforms (Git Bash on Windows).
+      - name: Report Build Results
         if: always()
         shell: bash
         run: |
           {
-            echo "## 🔔 Compiler Warnings"
+            echo "## 📊 Build Report"
             echo ""
-            mapfile -t warnings < <(
-              grep -rh --include="stdout_stderr.log" \
-                -e ": warning:" -e ": warning C" \
-                log/ 2>/dev/null \
-              | sort -u
-            )
-            if [ ${#warnings[@]} -eq 0 ]; then
-              echo "_No compiler warnings found._"
-            else
-              echo "| # | Warning |"
-              echo "|---|---------|"
-              n=1
-              for w in "${warnings[@]}"; do
-                echo "| $n | \`${w}\` |"
-                n=$((n + 1))
-              done
+            if [ -f build.log ]; then
+              echo "### ⏱️ Package Durations"
+              echo "| Package | Duration |"
+              echo "|---------|----------|"
+              # Format: Finished <<< package_name [X.Ys]
+              grep "Finished <<<" build.log | sed -E 's/.*Finished <<< ([^ ]+) \[(.+)\]/| \1 | \2 |/' | sort | uniq
               echo ""
-              echo "**Total unique warnings: $((n - 1))**"
+
+              echo "### 🔔 Compiler Warnings"
+              echo ""
+              warnings_found=false
+              # Grep build.log for GCC/Clang and MSVC warnings
+              while IFS= read -r line; do
+                if [ -n "$line" ]; then
+                  if ! $warnings_found; then
+                    echo "| # | Warning |"
+                    echo "|---|---------|"
+                    warnings_found=true
+                    n=1
+                  fi
+                  echo "| $n | \`${line}\` |"
+                  n=$((n + 1))
+                fi
+              done < <(grep -a -e ": warning:" -e ": warning C" build.log | sort -u)
+              
+              if ! $warnings_found; then
+                echo "_No compiler warnings found in the build log._"
+              fi
+            else
+              echo "_Build log not found._"
             fi
           } >> "$GITHUB_STEP_SUMMARY"
 
