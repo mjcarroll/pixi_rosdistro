@@ -65,7 +65,7 @@ COLCON_DEFAULTS_FILE      = "$PIXI_PROJECT_ROOT/colcon_defaults_linux.yaml"
 [tasks]
 graph = "colcon graph"
 list  = "colcon list"
-patch = { cmd = "cd src/ros2/rviz && git apply --ignore-whitespace --ignore-space-change ../../../patches/rviz_ogre_vendor_policy.patch", depends-on = ["fetch"] }
+patch = { cmd = "python patches/patch_ogre.py", depends-on = ["fetch"] }
 build = { cmd = "colcon build", depends-on = ["patch"] }
 test  = "colcon test"
 fetch = "mkdir -p src && vcs import --recursive src < ros2.repos"
