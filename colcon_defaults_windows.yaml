@@ -20,7 +20,7 @@ build:
     - -DCMAKE_POLICY_VERSION_MINIMUM=3.5
     - -Wno-deprecated
     # MSVC parallel build fixes
-    - -DCMAKE_CXX_FLAGS=/FS /MP
+    - -DCMAKE_CXX_FLAGS=/FS /MP /EHsc
     - -DCMAKE_C_FLAGS=/FS /MP
     # Avoid BFD linker issues in conda environments
     - -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE
