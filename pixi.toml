@@ -65,18 +65,19 @@ COLCON_DEFAULTS_FILE      = "$PIXI_PROJECT_ROOT/colcon_defaults_linux.yaml"
 [tasks]
 graph = "colcon graph"
 list  = "colcon list"
-patch = "git apply --directory=src/ros2/rviz patches/rviz_ogre_vendor_policy.patch"
-build = "colcon build"
+patch = { cmd = "cd src/ros2/rviz && git apply ../../../patches/rviz_ogre_vendor_policy.patch", depends-on = ["fetch"] }
+build = { cmd = "colcon build", depends-on = ["patch"] }
 test  = "colcon test"
+fetch = "mkdir -p src && vcs import --recursive src < ros2.repos"
 
 [target.linux-64.tasks]
-fetch = { cmd = "mkdir -p src && vcs import --recursive src < ros2.repos", depends-on = ["patch"] }
+# Using global fetch
 
 [target.osx-arm64.tasks]
-fetch = { cmd = "mkdir -p src && vcs import --recursive src < ros2.repos", depends-on = ["patch"] }
+# Using global fetch
 
 [target.win-64.tasks]
-fetch = { cmd = "cmd /c \"if not exist src mkdir src\" && vcs import --recursive src < ros2.repos", depends-on = ["patch"] }
+fetch = "cmd /c \"if not exist src mkdir src\" && vcs import --recursive src < ros2.repos"
 clean = "cmd /c \"if exist build rmdir /s /q build && if exist install rmdir /s /q install && if exist log rmdir /s /q log\""
 
 [target.linux-64.tasks.clean]
