@@ -1,0 +1,24 @@
+build:
+  merge-install: true
+  executor: parallel
+  # lttngpy requires lttng-ctl which is often missing or hard to find in conda
+  # If you want to build it on Linux, ensure lttng-tools is available.
+  # For now, we keep it enabled on Linux but it might fail if lttng-ctl is missing.
+  cmake-args:
+    - -GNinja
+    - --no-warn-unused-cli
+    - -DCMAKE_BUILD_TYPE=Release
+    - -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE
+    # CMake 4.x requires cmake_minimum_required >= 3.5
+    - -DCMAKE_POLICY_VERSION_MINIMUM=3.5
+    - -Wno-deprecated
+    - -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE
+    - -DSTACK_DETAILS_BFD:bool=FALSE
+  event-handlers:
+    - console_start_end+
+
+test:
+  merge-install: true
+  event-handlers:
+    - console_start_end+
+    - console_cohesion+

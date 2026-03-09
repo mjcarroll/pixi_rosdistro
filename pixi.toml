@@ -19,7 +19,7 @@ runtime = { features = ["runtime"], solve-group = "default" }
 # Activation environment variables (applies to all environments)
 # ==============================================================================
 [activation.env]
-COLCON_DEFAULTS_FILE        = "colcon_defaults.yaml"
+# COLCON_DEFAULTS_FILE is set per-platform below
 # sccache is used on all platforms for C/C++ and Rust caching
 CMAKE_C_COMPILER_LAUNCHER   = "sccache"
 CMAKE_CXX_COMPILER_LAUNCHER = "sccache"
@@ -33,8 +33,8 @@ ROS_VERSION                 = "2"
 
 [target.win-64.activation.env]
 QT_QPA_PLATFORM_PLUGIN_PATH = "%cd%\\.pixi\\envs\\default\\Library\\plugins\\platforms"
-# Windows needs different path expansion
-COLCON_DEFAULTS_FILE        = "%PIXI_PROJECT_ROOT%\\colcon_defaults.yaml"
+# Windows needs different path expansion and its own skip list
+COLCON_DEFAULTS_FILE        = "%PIXI_PROJECT_ROOT%\\colcon_defaults_windows.yaml"
 
 # conda-forge sets -Wl,--as-needed globally which causes pthread_once to be
 # dropped when referenced only via C++ template instantiation (e.g. rclcpp).
@@ -45,7 +45,8 @@ COLCON_DEFAULTS_FILE        = "%PIXI_PROJECT_ROOT%\\colcon_defaults.yaml"
 CMAKE_EXE_LINKER_FLAGS              = "-fuse-ld=mold -Wl,--no-as-needed"
 CMAKE_SHARED_LINKER_FLAGS           = "-fuse-ld=mold -Wl,--no-as-needed"
 LDFLAGS                             = "-Wl,--no-as-needed"
-CARGO_PROFILE_DEV_DEBUG_ASSERTIONS  = "false"
+# Use Linux-specific defaults (allows skipping or configuring Linux-only bits)
+COLCON_DEFAULTS_FILE        = "$PIXI_PROJECT_ROOT/colcon_defaults_linux.yaml"
 # mcap_vendor's Findlz4.cmake reads lz4_ROOT_DIR env var for nonstandard install paths.
 # The lz4-c conda package installs to the conda prefix, not /usr, so cmake can't find
 # the library without this hint.
@@ -56,6 +57,7 @@ lz4_ROOT_DIR                        = "$CONDA_PREFIX"
 [target.osx-arm64.activation.env]
 CMAKE_EXE_LINKER_FLAGS    = "-fuse-ld=lld"
 CMAKE_SHARED_LINKER_FLAGS = "-fuse-ld=lld"
+COLCON_DEFAULTS_FILE      = "$PIXI_PROJECT_ROOT/colcon_defaults_linux.yaml"
 
 # ==============================================================================
 # Tasks (available in the default/build environment)
@@ -112,15 +114,21 @@ benchmark          = ">=1.8.3"
 uncrustify         = ">=0.78"
 # Explicitly include lz4-c so cmake's find_library can find liblz4 (via lz4_ROOT_DIR env var on Linux)
 lz4-c              = "*"
+# Gazebo Ionic libraries to satisfy gz_*_vendor packages
+libgz-cmake        = "*"
+libgz-math         = "*"
+libgz-utils        = "*"
+# Dependency for gz_utils_vendor
+cli11              = "*"
 
 # ==============================================================================
 # Platform-specific runtime deps
 # ==============================================================================
 [feature.runtime.target.linux-64.dependencies]
-# lttng is a runtime tracing library used by tracetools
-lttng-ust = "*"
+# lttng-ust: userspace tracing library (tracetools)
+lttng-ust   = "*"
 # iceoryx_hoofs requires sys/acl.h (POSIX ACL — Linux only)
-libacl    = "*"
+libacl      = "*"
 
 # ==============================================================================
 # BUILD FEATURE

@@ -1,20 +1,31 @@
 build:
   merge-install: true
   executor: parallel
+  # These packages are Linux-only (LTTng based) and fail on Windows/MacOS
+  packages-skip:
+    - lttngpy
+    - tracetools_trace
+    - ros2trace
+    - tracetools_launch
+    - test_ros2trace
+    - test_tracetools
+    - test_tracetools_launch
+    - tracetools_test
   cmake-args:
     - -GNinja
     - --no-warn-unused-cli
     - -DCMAKE_BUILD_TYPE=Release
     - -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE
-    # Suppress CMake deprecation warnings (e.g. cmake_minimum_required < 3.10)
-    # so they don't appear as stderr output via console_cohesion+
+    # CMake 4.x requires cmake_minimum_required >= 3.5
+    - -DCMAKE_POLICY_VERSION_MINIMUM=3.5
     - -Wno-deprecated
+    # MSVC parallel build fixes
+    - -DCMAKE_CXX_FLAGS=/FS /MP
+    - -DCMAKE_C_FLAGS=/FS /MP
     # Avoid BFD linker issues in conda environments
     - -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE
     - -DSTACK_DETAILS_BFD:bool=FALSE
   event-handlers:
-    # Only print Starting >>> / Finished <<< / Failed <<< lines.
-    # No build output is shown for successful packages.
     - console_start_end+
 
 test:
