@@ -118,6 +118,10 @@ uncrustify         = ">=0.78"
 lz4-c              = "*"
 # Qt6 for RViz
 qt6-main           = "*"
+# Ogre dependencies (shared across platforms)
+freetype           = "*"
+freeimage          = "*"
+zziplib            = "*"
 
 # ==============================================================================
 # Platform-specific runtime deps
@@ -127,6 +131,18 @@ qt6-main           = "*"
 lttng-ust   = "*"
 # iceoryx_hoofs requires sys/acl.h (POSIX ACL — Linux only)
 libacl      = "*"
+# Ogre/X11 dependencies for Linux
+mesalib         = "*"
+libgl-devel     = "*"
+libgles-devel   = "*"
+libglu          = "*"
+xorg-libx11     = "*"
+xorg-libxext    = "*"
+xorg-libxrandr  = "*"
+xorg-libxaw     = "*"
+xorg-libxt      = "*"
+xorg-libice     = "*"
+xorg-libsm      = "*"
 
 # ==============================================================================
 # BUILD FEATURE
