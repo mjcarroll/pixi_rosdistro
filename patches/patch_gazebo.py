@@ -40,9 +40,9 @@ list(APPEND CMAKE_PREFIX_PATH "${{@PROJECT_NAME@_PREFIX}}")
 if __name__ == "__main__":
     base_path = "src/gazebo-release"
     packages = [
-        ("gz_cmake_vendor", "gz-cmake5"),
-        ("gz_utils_vendor", "gz-utils4"),
-        ("gz_math_vendor", "gz-math9")
+        ("gz_cmake_vendor", "gz-cmake"),
+        ("gz_utils_vendor", "gz-utils"),
+        ("gz_math_vendor", "gz-math")
     ]
     
     for pkg, vendored in packages:
