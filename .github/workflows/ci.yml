@@ -34,6 +34,8 @@ jobs:
       SCCACHE_GCS_RW_MODE: READ_WRITE
       # Ensure sccache is used for all Rust compilations (including ament_vendor/ExternalProject)
       RUSTC_WRAPPER: sccache
+      # Explicitly build Gazebo from source as requested, relaxation of version checks
+      GZ_BUILD_FROM_SOURCE: "1"
 
     steps:
       - uses: actions/checkout@v4
