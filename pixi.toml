@@ -35,6 +35,8 @@ ROS_VERSION                 = "2"
 QT_QPA_PLATFORM_PLUGIN_PATH = "%cd%\\.pixi\\envs\\default\\Library\\plugins\\platforms"
 # Windows needs different path expansion and its own skip list
 COLCON_DEFAULTS_FILE        = "%PIXI_PROJECT_ROOT%\\colcon_defaults_windows.yaml"
+CFLAGS                      = "/MP /FS"
+CXXFLAGS                    = "/MP /FS /EHsc"
 
 # conda-forge sets -Wl,--as-needed globally which causes pthread_once to be
 # dropped when referenced only via C++ template instantiation (e.g. rclcpp).
@@ -198,11 +200,9 @@ pkg-config = "*"
 mold       = "*"
 
 [feature.build.target.osx-arm64.dependencies]
-compilers = "*"
 sccache   = "*"
 # lld: faster linker for macOS (pairs with -fuse-ld=lld in activation env)
 lld       = "*"
 
 [feature.build.target.win-64.dependencies]
-compilers = "*"
 sccache   = "*"
