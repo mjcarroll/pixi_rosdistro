@@ -55,6 +55,8 @@ COLCON_DEFAULTS_FILE        = "$PIXI_PROJECT_ROOT/colcon_defaults_linux.yaml"
 # The lz4-c conda package installs to the conda prefix, not /usr, so cmake can't find
 # the library without this hint.
 lz4_ROOT_DIR                        = "$CONDA_PREFIX"
+# Ensure Qt6 is found in the conda prefix
+Qt6_DIR                             = "$CONDA_PREFIX/lib/cmake/Qt6"
 
 # Use lld (from conda-forge llvm) on macOS as the linker for C/C++ and Rust.
 # macOS clang supports -fuse-ld=lld when lld is installed.
@@ -62,6 +64,8 @@ lz4_ROOT_DIR                        = "$CONDA_PREFIX"
 CMAKE_EXE_LINKER_FLAGS    = "-fuse-ld=lld"
 CMAKE_SHARED_LINKER_FLAGS = "-fuse-ld=lld"
 COLCON_DEFAULTS_FILE      = "$PIXI_PROJECT_ROOT/colcon_defaults_linux.yaml"
+# Ensure Qt6 is found in the conda prefix
+Qt6_DIR                   = "$CONDA_PREFIX/lib/cmake/Qt6"
 
 # ==============================================================================
 # Tasks (available in the default/build environment)
@@ -69,7 +73,7 @@ COLCON_DEFAULTS_FILE      = "$PIXI_PROJECT_ROOT/colcon_defaults_linux.yaml"
 [tasks]
 graph = "colcon graph"
 list  = "colcon list"
-patch = { cmd = "python patches/patch_ogre.py && python patches/patch_gazebo.py && python patches/patch_rcl.py && python patches/patch_class_loader.py", depends-on = ["fetch"] }
+patch = { cmd = "python patches/patch_ogre.py && python patches/patch_gazebo.py && python patches/patch_rcl.py && python patches/patch_class_loader.py && python patches/patch_qt.py", depends-on = ["fetch"] }
 build = { cmd = "colcon build", depends-on = ["patch"] }
 test  = "colcon test"
 fetch = "mkdir -p src && vcs import --recursive src < ros2.repos"
