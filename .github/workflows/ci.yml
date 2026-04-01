@@ -36,6 +36,8 @@ jobs:
       RUSTC_WRAPPER: sccache
       # Explicitly build Gazebo from source as requested, relaxation of version checks
       GZ_BUILD_FROM_SOURCE: "1"
+      # Opt-in to Node.js 24 for actions
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
 
     steps:
       - uses: actions/checkout@v4
@@ -46,7 +48,7 @@ jobs:
       # cache: false avoids EBUSY on Windows — the pixi env dir gets locked by
       # subprocesses (ninja, sccache, cl.exe) during build and Windows refuses
       # to rmdir a locked path. pixi install from pixi.lock is fast enough (~1min).
-      - uses: prefix-dev/setup-pixi@v0.8.1
+      - uses: prefix-dev/setup-pixi@v0.14.0
         with:
           pixi-version: latest
           cache: false
@@ -73,19 +75,40 @@ jobs:
       - name: sccache stats (pre-build)
         run: pixi run -e default sccache --show-stats
 
-      # Build — pipe output through sed to emit GitHub Actions group markers so
-      # each package appears as a collapsible section in the CI log.
-      # Starting >>> pkg  →  ::group::pkg
-      # Finished <<< pkg  →  ::endgroup::
-      # All other lines pass through unchanged (compiler errors, timing, summary).
+      # Build — Capture all output to build.log, but only show summary/failures in console.
       - name: Build
         shell: bash
         run: |
-          pixi run build 2>&1 | tee build.log | sed -u \
-            -e 's/^.*Starting >>> \(.*\)$/::group::\1/' \
-            -e 's/^.*Finished <<< .*/::endgroup::/' \
-            -e 's/^.*Failed <<< .*/::endgroup::/' |
-          cat  # force line-buffered output through the pipe
+          # Use --event-handlers summary+ console_package_list- to reduce console noise.
+          # colcon stores individual package logs in log/latest_build/<pkg>/
+          pixi run build -- --event-handlers summary+ console_package_list- 2>&1 | tee build.log
+          
+          # PIPESTATUS[0] is the exit code of pixi run build
+          if [ ${PIPESTATUS[0]} -ne 0 ]; then
+            echo "::error::Build failed. See logs of failed packages below."
+            # Find packages that failed in the build log
+            FAILED_PKGS=$(grep "Failed   <<<" build.log | sed -E 's/.*Failed   <<< ([^ ]+).*/\1/' | sort | uniq)
+            for PKG in $FAILED_PKGS; do
+              echo "::group::Output of failed package: $PKG"
+              if [ -d "log/latest_build/$PKG" ]; then
+                [ -f "log/latest_build/$PKG/stdout.log" ] && cat "log/latest_build/$PKG/stdout.log"
+                [ -f "log/latest_build/$PKG/stderr.log" ] && cat "log/latest_build/$PKG/stderr.log"
+              else
+                echo "Log directory for $PKG not found in log/latest_build/"
+              fi
+              echo "::endgroup::"
+            done
+            exit 1
+          fi
+
+      # Upload colcon logs as an artifact for debugging.
+      - name: Upload logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: colcon-logs-${{ matrix.os }}
+          path: log/
+          if-no-files-found: ignore
 
       # Scan build log for package durations and compiler warnings, then write to job summary.
       # Uses bash on all platforms (Git Bash on Windows).

@@ -22,8 +22,6 @@ build:
     # Avoid BFD linker issues in conda environments
     - -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE
     - -DSTACK_DETAILS_BFD:bool=FALSE
-  event-handlers:
-    - console_cohesion+
 
 test:
   merge-install: true
