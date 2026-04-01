@@ -81,18 +81,22 @@ jobs:
         run: |
           # Use --event-handlers summary+ console_package_list- to reduce console noise.
           # colcon stores individual package logs in log/latest_build/<pkg>/
+          # We force color output so the logs remain readable.
           pixi run build -- --event-handlers summary+ console_package_list- 2>&1 | tee build.log
           
           # PIPESTATUS[0] is the exit code of pixi run build
           if [ ${PIPESTATUS[0]} -ne 0 ]; then
             echo "::error::Build failed. See logs of failed packages below."
-            # Find packages that failed in the build log
-            FAILED_PKGS=$(grep "Failed   <<<" build.log | sed -E 's/.*Failed   <<< ([^ ]+).*/\1/' | sort | uniq)
+            # Find packages that failed in the build log. 
+            # Look for lines like "Failed   <<< package_name [time]"
+            FAILED_PKGS=$(grep "Failed   <<<" build.log | awk '{print $3}' | sort | uniq)
             for PKG in $FAILED_PKGS; do
               echo "::group::Output of failed package: $PKG"
-              if [ -d "log/latest_build/$PKG" ]; then
-                [ -f "log/latest_build/$PKG/stdout.log" ] && cat "log/latest_build/$PKG/stdout.log"
-                [ -f "log/latest_build/$PKG/stderr.log" ] && cat "log/latest_build/$PKG/stderr.log"
+              # Find the most recent log for this package
+              PKG_LOG_DIR=$(ls -dt log/latest_build/$PKG 2>/dev/null | head -1)
+              if [ -n "$PKG_LOG_DIR" ]; then
+                [ -f "$PKG_LOG_DIR/stdout.log" ] && cat "$PKG_LOG_DIR/stdout.log"
+                [ -f "$PKG_LOG_DIR/stderr.log" ] && cat "$PKG_LOG_DIR/stderr.log"
               else
                 echo "Log directory for $PKG not found in log/latest_build/"
               fi
@@ -117,7 +121,7 @@ jobs:
         shell: bash
         run: |
           {
-            echo "## 📊 Build Report"
+            echo "## 📊 Build Report (${{ matrix.os }})"
             echo ""
             if [ -f build.log ]; then
               echo "### ⏱️ Package Durations"
@@ -126,28 +130,6 @@ jobs:
               # Format: Finished <<< package_name [X.Ys]
               grep "Finished <<<" build.log | sed -E 's/.*Finished <<< ([^ ]+) \[(.+)\]/| \1 | \2 |/' | sort | uniq
               echo ""
-
-              echo "### 🔔 Compiler Warnings"
-              echo ""
-              warnings_found=false
-              # Warnings are in per-package colcon log files (console_cohesion+ doesn't stream them to stdout)
-              latest_build=$(ls -dt log/build_* 2>/dev/null | head -1)
-              while IFS= read -r line; do
-                if [ -n "$line" ]; then
-                  if ! $warnings_found; then
-                    echo "| # | Warning |"
-                    echo "|---|---------|"
-                    warnings_found=true
-                    n=1
-                  fi
-                  echo "| $n | \`${line}\` |"
-                  n=$((n + 1))
-                fi
-              done < <(grep -rha -e ": warning:" -e ": warning C" "${latest_build}" 2>/dev/null | sort -u)
-              
-              if ! $warnings_found; then
-                echo "_No compiler warnings found in the build log._"
-              fi
             else
               echo "_Build log not found._"
             fi
