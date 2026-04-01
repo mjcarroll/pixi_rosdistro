@@ -59,7 +59,6 @@ list(APPEND CMAKE_PREFIX_PATH "${{@PROJECT_NAME@_PREFIX}}/share")
 
 if(WIN32)
   # Add bin to PATH for DLL discovery
-  # Use standard CMake list operations if ament macro is missing
   if(COMMAND ament_prepend_variable_by_name)
     ament_prepend_variable_by_name(PATH "${{@PROJECT_NAME@_PREFIX}}/bin")
   else()
@@ -74,8 +73,10 @@ set(_gz_config_dir "${{@PROJECT_NAME@_PREFIX}}/share/cmake/{pkg_basename}")
 # Function to create a relay file
 macro(create_relay_file _name _target_dir)
   if(NOT EXISTS "${{_relay_dir}}/${{_name}}Config.cmake")
+    # Ensure target dir uses forward slashes for CMake
+    file(TO_CMAKE_PATH "${{_target_dir}}" _cmake_target_dir)
     file(WRITE "${{_relay_dir}}/${{_name}}Config.cmake"
-      "set(${{_name}}_DIR \\"${{_target_dir}}\\")\\n"
+      "set(${{_name}}_DIR \\"${{_cmake_target_dir}}\\")\\n"
       "find_package(${{_name}} REQUIRED NO_DEFAULT_PATH)\\n"
     )
   endif()
