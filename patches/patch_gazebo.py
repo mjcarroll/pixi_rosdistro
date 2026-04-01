@@ -45,27 +45,36 @@ def patch_gz_vendor(package_path):
     if "CONFIG_EXTRAS" not in content:
         content = content.replace("ament_package()", f"ament_package(\n  CONFIG_EXTRAS \"{extras_file}\"\n)")
 
-    # 3. Windows fix: Use Embedded PDBs for vendored builds
-    # ONLY apply these on Windows or via conditional CMake
-    if "CMAKE_ARGS" in content and "CMAKE_MSVC_DEBUG_INFORMATION_FORMAT" not in content:
-        win_fix = """if(WIN32)
-        list(APPEND EXTRA_CMAKE_ARGS
-          -DCMAKE_MSVC_DEBUG_INFORMATION_FORMAT=Embedded
-          -DCMAKE_CXX_FLAGS="/MP /FS"
-          -DCMAKE_C_FLAGS="/MP /FS"
-        )
-      endif()"""
-        
-        # We need to find a place to insert this and then use EXTRA_CMAKE_ARGS
-        # But a simpler way is to use a conditional block in the CMAKE_ARGS list if supported,
-        # or just use the generator expression if we are sure it's evaluated.
-        # Actually, let's just use a string replacement that is safe for all platforms.
-        
-        content = content.replace(
-            "CMAKE_ARGS",
-            'CMAKE_ARGS\n      $<$<PLATFORM_ID:Windows>:-DCMAKE_MSVC_DEBUG_INFORMATION_FORMAT=Embedded>\n      $<$<PLATFORM_ID:Windows>:-DCMAKE_CXX_FLAGS="/MP /FS">\n      $<$<PLATFORM_ID:Windows>:-DCMAKE_C_FLAGS="/MP /FS">'
-        )
-        print(f"Added conditional Embedded PDB and /FS fix to {cmakelists_path}")
+    # 3. Windows fix: Use Embedded PDBs and /FS for vendored builds
+    # Remove any existing unconditional fixes first to clean up
+    content = content.replace('      -DCMAKE_MSVC_DEBUG_INFORMATION_FORMAT=Embedded\n', '')
+    content = content.replace('      -DCMAKE_MSVC_DEBUG_INFORMATION_FORMAT=Embedded', '')
+    
+    if "if(WIN32)\n  list(APPEND EXTRA_GZ_CMAKE_ARGS" not in content:
+        win_fix = """
+if(WIN32)
+  list(APPEND EXTRA_GZ_CMAKE_ARGS
+    "-DCMAKE_MSVC_DEBUG_INFORMATION_FORMAT=Embedded"
+    "-DCMAKE_CXX_FLAGS=/MP /FS /EHsc"
+    "-DCMAKE_C_FLAGS=/MP /FS"
+  )
+endif()
+"""
+        # Find a good place to insert: before ament_vendor or ament_cmake_vendor_package
+        inserted = False
+        for macro in ["ament_vendor(", "ament_cmake_vendor_package("]:
+            if macro in content:
+                content = content.replace(macro, win_fix + "\n" + macro)
+                # Add the variable to CMAKE_ARGS
+                if "CMAKE_ARGS" in content:
+                    if "${EXTRA_GZ_CMAKE_ARGS}" not in content:
+                        content = content.replace("CMAKE_ARGS", "CMAKE_ARGS\n      ${EXTRA_GZ_CMAKE_ARGS}")
+                else:
+                    content = content.replace(macro, macro + "\n  CMAKE_ARGS ${EXTRA_GZ_CMAKE_ARGS}")
+                inserted = True
+                break
+        if inserted:
+            print(f"Added conditional Windows fixes to {cmakelists_path}")
 
     with open(cmakelists_path, "wb") as f:
         f.write(content.encode('utf-8').replace(b'\r\n', b'\n'))
