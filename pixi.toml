@@ -37,6 +37,8 @@ QT_QPA_PLATFORM_PLUGIN_PATH = "%cd%\\.pixi\\envs\\default\\Library\\plugins\\pla
 COLCON_DEFAULTS_FILE        = "%PIXI_PROJECT_ROOT%\\colcon_defaults_windows.yaml"
 CFLAGS                      = "/MP /FS"
 CXXFLAGS                    = "/MP /FS /EHsc"
+CC                          = "cl.exe"
+CXX                         = "cl.exe"
 
 # conda-forge sets -Wl,--as-needed globally which causes pthread_once to be
 # dropped when referenced only via C++ template instantiation (e.g. rclcpp).
@@ -67,7 +69,7 @@ COLCON_DEFAULTS_FILE      = "$PIXI_PROJECT_ROOT/colcon_defaults_linux.yaml"
 [tasks]
 graph = "colcon graph"
 list  = "colcon list"
-patch = { cmd = "python patches/patch_ogre.py && python patches/patch_gazebo.py", depends-on = ["fetch"] }
+patch = { cmd = "python patches/patch_ogre.py && python patches/patch_gazebo.py && python patches/patch_rcl.py", depends-on = ["fetch"] }
 build = { cmd = "colcon build", depends-on = ["patch"] }
 test  = "colcon test"
 fetch = "mkdir -p src && vcs import --recursive src < ros2.repos"
@@ -205,4 +207,5 @@ sccache   = "*"
 lld       = "*"
 
 [feature.build.target.win-64.dependencies]
+compilers = "*"
 sccache   = "*"
