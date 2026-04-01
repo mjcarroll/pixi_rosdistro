@@ -96,7 +96,7 @@ cmd = "rm -rf build install log"
 # These go into a deployable runtime image / end-user environment.
 # ==============================================================================
 [feature.runtime.dependencies]
-python = ">=3.12"
+python = "3.12.*"
 
 # Tier 3: C++ libraries used by rcutils and friends
 spdlog         = "*"
@@ -115,7 +115,6 @@ numpy         = "*"
 # rclpy requires pybind11 to build the Python bindings
 pybind11      = "*"
 pyqt6         = "*"
-pyqt          = "*"
 
 # Vendor package system replacements — skip building from source:
 #   google_benchmark_vendor: skips if find_package(benchmark) >= 1.8.3 (shared)
@@ -133,7 +132,6 @@ zziplib            = "*"
 zlib               = "*"
 
 [feature.runtime.target.osx-arm64.dependencies]
-qt-main = "*"
 
 # ==============================================================================
 # Platform-specific runtime deps
@@ -159,7 +157,6 @@ xorg-libsm      = "*"
 cli11           = "*"
 libxml2         = "*"
 bzip2           = "*"
-qt-main         = "*"
 
 # ==============================================================================
 # BUILD FEATURE

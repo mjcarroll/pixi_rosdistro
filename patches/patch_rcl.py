@@ -10,51 +10,84 @@ def patch_rcl_yaml_param_parser(file_path):
     with open(file_path, 'r', encoding='utf-8') as f:
         content = f.read()
 
-    # 1. Update include
-    # Using more flexible regex to find the include block
-    include_pattern = r'#ifdef _WIN32\s+#include <windows\.h>\s+#else\s+#include <threads\.h>\s+#endif'
-    include_replacement = '#ifdef _WIN32\n#include <windows.h>\n#elif defined(__APPLE__)\n#include <pthread.h>\n#else\n#include <threads.h>\n#endif'
-    
-    if re.search(include_pattern, content):
-        content = re.sub(include_pattern, include_replacement, content)
+    # 1. Update include block
+    # Target:
+    # #ifdef _WIN32
+    # #include <windows.h>
+    # #else
+    # #include <threads.h>
+    # #endif
+    include_old = '#ifdef _WIN32\n#include <windows.h>\n#else\n#include <threads.h>\n#endif'
+    include_new = '#ifdef _WIN32\n#include <windows.h>\n#elif defined(__APPLE__)\n#include <pthread.h>\n#else\n#include <threads.h>\n#endif'
+    if include_old in content:
+        content = content.replace(include_old, include_new)
         print(f"Patched include block in {file_path}")
-    elif '#include <threads.h>' in content and '#elif defined(__APPLE__)' not in content:
-        # Fallback for direct string replacement if regex fails
-        content = content.replace(
-            '#ifdef _WIN32\n#include <windows.h>\n#else\n#include <threads.h>\n#endif',
-            include_replacement
-        )
-        print(f"Patched include block (fallback) in {file_path}")
 
-    # 2. Update once_flag definition
-    once_flag_pattern = r'#else\s+static once_flag c_locale_once_flag = ONCE_FLAG_INIT;\s+#endif'
-    once_flag_replacement = '#elif defined(__APPLE__)\nstatic pthread_once_t c_locale_once_flag = PTHREAD_ONCE_INIT;\n#else\nstatic once_flag c_locale_once_flag = ONCE_FLAG_INIT;\n#endif'
+    # 2. Update locale initialization block
+    # Target:
+    # #else
+    # static locale_t c_locale = 0;
+    # static once_flag c_locale_once_flag = ONCE_FLAG_INIT;
+    # 
+    # static void init_c_locale()
+    # {
+    #   c_locale = newlocale(LC_NUMERIC_MASK, "C", 0);
+    # }
+    # #endif
     
-    if re.search(once_flag_pattern, content):
-        content = re.sub(once_flag_pattern, once_flag_replacement, content)
-        print(f"Patched once_flag definition in {file_path}")
-    elif 'static once_flag c_locale_once_flag = ONCE_FLAG_INIT;' in content and '#elif defined(__APPLE__)' not in content:
-        content = content.replace(
-            '#else\nstatic once_flag c_locale_once_flag = ONCE_FLAG_INIT;\n#endif',
-            once_flag_replacement
-        )
-        print(f"Patched once_flag definition (fallback) in {file_path}")
+    # We'll use a more flexible replacement for the POSIX part
+    posix_old = '#else\nstatic locale_t c_locale = 0;\nstatic once_flag c_locale_once_flag = ONCE_FLAG_INIT;\n\nstatic void init_c_locale()\n{\n  c_locale = newlocale(LC_NUMERIC_MASK, "C", 0);\n}\n#endif'
+    posix_new = """#elif defined(__APPLE__)
+static locale_t c_locale = 0;
+static pthread_once_t c_locale_once_flag = PTHREAD_ONCE_INIT;
 
-    # 3. Update call_once execution
-    call_once_pattern = r'#else\s+call_once\(&c_locale_once_flag, init_c_locale\);\s+#endif'
-    call_once_replacement = '#elif defined(__APPLE__)\n  pthread_once(&c_locale_once_flag, init_c_locale);\n#else\n  call_once(&c_locale_once_flag, init_c_locale);\n#endif'
-    
-    if re.search(call_once_pattern, content):
-        content = re.sub(call_once_pattern, call_once_replacement, content)
-        print(f"Patched call_once execution in {file_path}")
-    elif 'call_once(&c_locale_once_flag, init_c_locale);' in content and 'pthread_once' not in content:
-        # Use a more targeted replacement if it's within the block
-        content = content.replace(
-            '#else\n  call_once(&c_locale_once_flag, init_c_locale);\n#endif',
-            call_once_replacement
-        )
-        print(f"Patched call_once execution (fallback) in {file_path}")
-        
+static void init_c_locale()
+{
+  c_locale = newlocale(LC_NUMERIC_MASK, "C", 0);
+}
+#else
+static locale_t c_locale = 0;
+static once_flag c_locale_once_flag = ONCE_FLAG_INIT;
+
+static void init_c_locale()
+{
+  c_locale = newlocale(LC_NUMERIC_MASK, "C", 0);
+}
+#endif"""
+    if posix_old in content:
+        content = content.replace(posix_old, posix_new)
+        print(f"Patched locale initialization block in {file_path}")
+    else:
+        # Try a version with potentially different whitespace/newlines
+        pattern = r'#else\s+static locale_t c_locale = 0;\s+static once_flag c_locale_once_flag = ONCE_FLAG_INIT;\s+static void init_c_locale\(\)\s+\{\s+c_locale = newlocale\(LC_NUMERIC_MASK, "C", 0\);\s+\}\s+#endif'
+        if re.search(pattern, content):
+            content = re.sub(pattern, posix_new, content)
+            print(f"Patched locale initialization block (regex) in {file_path}")
+
+    # 3. Update call_once usage
+    # Target:
+    # #else
+    #   call_once(&c_locale_once_flag, init_c_locale);
+    # 
+    #   if (0 == c_locale) {
+    call_usage_old = '#else\n  call_once(&c_locale_once_flag, init_c_locale);\n\n  if (0 == c_locale) {'
+    call_usage_new = """#elif defined(__APPLE__)
+  pthread_once(&c_locale_once_flag, init_c_locale);
+
+  if (0 == c_locale) {
+#else
+  call_once(&c_locale_once_flag, init_c_locale);
+
+  if (0 == c_locale) {"""
+    if call_usage_old in content:
+        content = content.replace(call_usage_old, call_usage_new)
+        print(f"Patched call_once usage in {file_path}")
+    else:
+        pattern = r'#else\s+call_once\(&c_locale_once_flag, init_c_locale\);\s+if \(0 == c_locale\) \{'
+        if re.search(pattern, content):
+            content = re.sub(pattern, call_usage_new, content)
+            print(f"Patched call_once usage (regex) in {file_path}")
+
     with open(file_path, 'wb') as f:
         f.write(content.encode('utf-8').replace(b'\r\n', b'\n'))
     

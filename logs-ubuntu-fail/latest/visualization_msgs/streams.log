@@ -1,0 +1,652 @@
+[4.684s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/visualization_msgs': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/common_interfaces/visualization_msgs -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[4.748s] Not searching for unused variables given on the command line.
+[4.748s] -- The C compiler identification is GNU 14.3.0
+[4.855s] -- The CXX compiler identification is GNU 14.3.0
+[4.864s] -- Detecting C compiler ABI info
+[5.027s] -- Detecting C compiler ABI info - done
+[5.047s] -- Check for working C compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
+[5.047s] -- Detecting C compile features
+[5.048s] -- Detecting C compile features - done
+[5.061s] -- Detecting CXX compiler ABI info
+[5.235s] -- Detecting CXX compiler ABI info - done
+[5.257s] -- Check for working CXX compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
+[5.257s] -- Detecting CXX compile features
+[5.258s] -- Detecting CXX compile features - done
+[5.269s] -- Found ament_cmake: 2.8.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake/cmake)
+[5.527s] -- Found builtin_interfaces: 2.4.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/builtin_interfaces/cmake)
+[5.552s] -- Found rosidl_generator_c: 5.1.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_c/cmake)
+[5.561s] -- Found rosidl_generator_cpp: 5.1.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_cpp/cmake)
+[5.578s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.593s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.612s] -- Found geometry_msgs: 5.9.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/geometry_msgs/cmake)
+[5.675s] -- Found rosidl_default_generators: 1.8.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_default_generators/cmake)
+[5.693s] -- Found rosidl_adapter: 5.1.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_adapter/cmake)
+[5.700s] -- Found sensor_msgs: 5.9.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/sensor_msgs/cmake)
+[5.929s] -- Found Python3: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/python3 (found version "3.14.3") found components: Interpreter
+[6.571s] -- Found ament_cmake_cppcheck: 0.20.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_cppcheck/cmake)
+[6.572s] -- Found ament_cmake_cpplint: 0.20.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_cpplint/cmake)
+[6.577s] -- Found ament_cmake_uncrustify: 0.20.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_uncrustify/cmake)
+[6.579s] -- Found ament_cmake_ros_core: 0.15.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_ros_core/cmake)
+[7.419s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.741s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.394s] -- Found Python3: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/python3 (found version "3.14.3") found components: Interpreter Development NumPy Development.Module Development.Embed
+[8.440s] -- Found ament_cmake_flake8: 0.20.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_flake8/cmake)
+[8.445s] -- Found ament_cmake_pep257: 0.20.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_pep257/cmake)
+[8.447s] -- Found ament_cmake_mypy: 0.20.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_mypy/cmake)
+[8.490s] -- Found Python3: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/python3 (found version "3.14.3") found components: Interpreter
+[8.504s] -- Configuring done (3.8s)
+[8.619s] -- Generating done (0.1s)
+[8.664s] -- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/visualization_msgs
+[8.682s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/visualization_msgs' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/common_interfaces/visualization_msgs -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[8.686s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/visualization_msgs': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/visualization_msgs -- -j4 -l4
+[10.699s] [1/157] Generating type hashes for ROS interfaces
+[13.266s] [2/157] Generating C code for ROS interfaces
+[13.567s] [3/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_c.dir/rosidl_generator_c/visualization_msgs/msg/detail/image_marker__description.c.o
+[13.728s] [4/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_c.dir/rosidl_generator_c/visualization_msgs/msg/detail/image_marker__functions.c.o
+[13.941s] [5/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_c.dir/rosidl_generator_c/visualization_msgs/msg/detail/image_marker__type_support.c.o
+[14.134s] [6/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_c.dir/rosidl_generator_c/visualization_msgs/msg/detail/interactive_marker__description.c.o
+[14.317s] [7/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_c.dir/rosidl_generator_c/visualization_msgs/msg/detail/interactive_marker__functions.c.o
+[14.468s] [8/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_c.dir/rosidl_generator_c/visualization_msgs/msg/detail/interactive_marker__type_support.c.o
+[14.622s] [9/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_c.dir/rosidl_generator_c/visualization_msgs/msg/detail/interactive_marker_control__description.c.o
+[14.793s] [10/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_c.dir/rosidl_generator_c/visualization_msgs/msg/detail/interactive_marker_control__functions.c.o
+[14.967s] [11/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_c.dir/rosidl_generator_c/visualization_msgs/msg/detail/interactive_marker_control__type_support.c.o
+[15.167s] [12/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_c.dir/rosidl_generator_c/visualization_msgs/msg/detail/interactive_marker_feedback__description.c.o
+[15.343s] [13/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_c.dir/rosidl_generator_c/visualization_msgs/msg/detail/interactive_marker_feedback__functions.c.o
+[15.517s] [14/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_c.dir/rosidl_generator_c/visualization_msgs/msg/detail/interactive_marker_feedback__type_support.c.o
+[15.700s] [15/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_c.dir/rosidl_generator_c/visualization_msgs/msg/detail/interactive_marker_init__description.c.o
+[15.891s] [16/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_c.dir/rosidl_generator_c/visualization_msgs/msg/detail/interactive_marker_init__functions.c.o
+[16.064s] [17/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_c.dir/rosidl_generator_c/visualization_msgs/msg/detail/interactive_marker_init__type_support.c.o
+[16.241s] [18/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_c.dir/rosidl_generator_c/visualization_msgs/msg/detail/interactive_marker_pose__description.c.o
+[16.425s] [19/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_c.dir/rosidl_generator_c/visualization_msgs/msg/detail/interactive_marker_pose__functions.c.o
+[16.597s] [20/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_c.dir/rosidl_generator_c/visualization_msgs/msg/detail/interactive_marker_pose__type_support.c.o
+[16.804s] [21/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_c.dir/rosidl_generator_c/visualization_msgs/msg/detail/interactive_marker_update__description.c.o
+[16.977s] [22/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_c.dir/rosidl_generator_c/visualization_msgs/msg/detail/interactive_marker_update__functions.c.o
+[17.142s] [23/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_c.dir/rosidl_generator_c/visualization_msgs/msg/detail/interactive_marker_update__type_support.c.o
+[17.345s] [24/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_c.dir/rosidl_generator_c/visualization_msgs/msg/detail/marker__description.c.o
+[17.610s] [25/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_c.dir/rosidl_generator_c/visualization_msgs/msg/detail/marker__functions.c.o
+[17.774s] [26/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_c.dir/rosidl_generator_c/visualization_msgs/msg/detail/marker__type_support.c.o
+[18.001s] [27/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_c.dir/rosidl_generator_c/visualization_msgs/msg/detail/marker_array__description.c.o
+[18.243s] [28/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_c.dir/rosidl_generator_c/visualization_msgs/msg/detail/marker_array__functions.c.o
+[18.407s] [29/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_c.dir/rosidl_generator_c/visualization_msgs/msg/detail/marker_array__type_support.c.o
+[18.579s] [30/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_c.dir/rosidl_generator_c/visualization_msgs/msg/detail/menu_entry__description.c.o
+[18.723s] [31/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_c.dir/rosidl_generator_c/visualization_msgs/msg/detail/menu_entry__functions.c.o
+[18.858s] [32/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_c.dir/rosidl_generator_c/visualization_msgs/msg/detail/menu_entry__type_support.c.o
+[19.055s] [33/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_c.dir/rosidl_generator_c/visualization_msgs/msg/detail/mesh_file__description.c.o
+[19.229s] [34/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_c.dir/rosidl_generator_c/visualization_msgs/msg/detail/mesh_file__functions.c.o
+[19.360s] [35/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_c.dir/rosidl_generator_c/visualization_msgs/msg/detail/mesh_file__type_support.c.o
+[19.494s] [36/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_c.dir/rosidl_generator_c/visualization_msgs/msg/detail/uv_coordinate__description.c.o
+[19.640s] [37/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_c.dir/rosidl_generator_c/visualization_msgs/msg/detail/uv_coordinate__functions.c.o
+[19.789s] [38/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_c.dir/rosidl_generator_c/visualization_msgs/msg/detail/uv_coordinate__type_support.c.o
+[19.936s] [39/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_c.dir/rosidl_generator_c/visualization_msgs/srv/detail/get_interactive_markers__description.c.o
+[20.134s] [40/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_c.dir/rosidl_generator_c/visualization_msgs/srv/detail/get_interactive_markers__functions.c.o
+[20.300s] [41/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_c.dir/rosidl_generator_c/visualization_msgs/srv/detail/get_interactive_markers__type_support.c.o
+[23.277s] [42/157] Generating C type support for eProsima Fast-RTPS
+[25.822s] [43/157] Generating C++ code for ROS interfaces
+[28.133s] [44/157] Generating C++ type support for eProsima Fast-RTPS
+[30.894s] [45/157] Generating C introspection for ROS interfaces
+[32.911s] [46/157] Generating C type support dispatch for ROS interfaces
+[34.647s] [47/157] Generating C++ introspection for ROS interfaces
+[36.466s] [48/157] Generating C++ type support dispatch for ROS interfaces
+[36.503s] [49/157] Linking C shared library libvisualization_msgs__rosidl_generator_c.so
+[36.866s] [50/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/visualization_msgs/msg/detail/image_marker__type_support_c.cpp.o
+[37.175s] [51/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/visualization_msgs/msg/detail/interactive_marker__type_support_c.cpp.o
+[37.500s] [52/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/visualization_msgs/msg/detail/interactive_marker_control__type_support_c.cpp.o
+[37.893s] [53/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/visualization_msgs/msg/detail/interactive_marker_feedback__type_support_c.cpp.o
+[38.279s] [54/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/visualization_msgs/msg/detail/interactive_marker_init__type_support_c.cpp.o
+[38.653s] [55/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/visualization_msgs/msg/detail/interactive_marker_pose__type_support_c.cpp.o
+[39.050s] [56/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/visualization_msgs/msg/detail/interactive_marker_update__type_support_c.cpp.o
+[39.361s] [57/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/visualization_msgs/msg/detail/marker__type_support_c.cpp.o
+[39.740s] [58/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/visualization_msgs/msg/detail/marker_array__type_support_c.cpp.o
+[40.342s] [59/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/visualization_msgs/msg/detail/menu_entry__type_support_c.cpp.o
+[40.736s] [60/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/visualization_msgs/msg/detail/mesh_file__type_support_c.cpp.o
+[41.133s] [61/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/visualization_msgs/msg/detail/uv_coordinate__type_support_c.cpp.o
+[41.509s] [62/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/visualization_msgs/srv/detail/get_interactive_markers__type_support_c.cpp.o
+[41.668s] [63/157] Building C object CMakeFiles/visualization_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/visualization_msgs/msg/detail/image_marker__type_support.c.o
+[41.840s] [64/157] Building C object CMakeFiles/visualization_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/visualization_msgs/msg/detail/interactive_marker__type_support.c.o
+[42.013s] [65/157] Building C object CMakeFiles/visualization_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/visualization_msgs/msg/detail/interactive_marker_control__type_support.c.o
+[42.198s] [66/157] Building C object CMakeFiles/visualization_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/visualization_msgs/msg/detail/interactive_marker_feedback__type_support.c.o
+[42.373s] [67/157] Building C object CMakeFiles/visualization_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/visualization_msgs/msg/detail/interactive_marker_init__type_support.c.o
+[42.550s] [68/157] Building C object CMakeFiles/visualization_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/visualization_msgs/msg/detail/interactive_marker_pose__type_support.c.o
+[42.766s] [69/157] Building C object CMakeFiles/visualization_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/visualization_msgs/msg/detail/interactive_marker_update__type_support.c.o
+[42.955s] [70/157] Building C object CMakeFiles/visualization_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/visualization_msgs/msg/detail/marker__type_support.c.o
+[43.123s] [71/157] Building C object CMakeFiles/visualization_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/visualization_msgs/msg/detail/marker_array__type_support.c.o
+[43.286s] [72/157] Building C object CMakeFiles/visualization_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/visualization_msgs/msg/detail/menu_entry__type_support.c.o
+[43.443s] [73/157] Building C object CMakeFiles/visualization_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/visualization_msgs/msg/detail/mesh_file__type_support.c.o
+[43.624s] [74/157] Building C object CMakeFiles/visualization_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/visualization_msgs/msg/detail/uv_coordinate__type_support.c.o
+[43.800s] [75/157] Building C object CMakeFiles/visualization_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/visualization_msgs/srv/detail/get_interactive_markers__type_support.c.o
+[43.987s] [76/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/visualization_msgs/msg/image_marker__type_support.cpp.o
+[44.168s] [77/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/visualization_msgs/msg/interactive_marker__type_support.cpp.o
+[44.358s] [78/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/visualization_msgs/msg/interactive_marker_control__type_support.cpp.o
+[44.546s] [79/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/visualization_msgs/msg/interactive_marker_feedback__type_support.cpp.o
+[44.745s] [80/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/visualization_msgs/msg/interactive_marker_init__type_support.cpp.o
+[44.925s] [81/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/visualization_msgs/msg/interactive_marker_pose__type_support.cpp.o
+[45.114s] [82/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/visualization_msgs/msg/interactive_marker_update__type_support.cpp.o
+[45.302s] [83/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/visualization_msgs/msg/marker__type_support.cpp.o
+[45.521s] [84/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/visualization_msgs/msg/marker_array__type_support.cpp.o
+[45.700s] [85/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/visualization_msgs/msg/menu_entry__type_support.cpp.o
+[45.880s] [86/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/visualization_msgs/msg/mesh_file__type_support.cpp.o
+[46.070s] [87/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/visualization_msgs/msg/uv_coordinate__type_support.cpp.o
+[46.256s] [88/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/visualization_msgs/srv/get_interactive_markers__type_support.cpp.o
+[46.650s] [89/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/visualization_msgs/msg/detail/dds_fastrtps/image_marker__type_support.cpp.o
+[47.050s] [90/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/visualization_msgs/msg/detail/dds_fastrtps/interactive_marker__type_support.cpp.o
+[47.449s] [91/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/visualization_msgs/msg/detail/dds_fastrtps/interactive_marker_control__type_support.cpp.o
+[47.839s] [92/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/visualization_msgs/msg/detail/dds_fastrtps/interactive_marker_feedback__type_support.cpp.o
+[48.157s] [93/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/visualization_msgs/msg/detail/dds_fastrtps/interactive_marker_init__type_support.cpp.o
+[48.474s] [94/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/visualization_msgs/msg/detail/dds_fastrtps/interactive_marker_pose__type_support.cpp.o
+[48.808s] [95/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/visualization_msgs/msg/detail/dds_fastrtps/interactive_marker_update__type_support.cpp.o
+[49.226s] [96/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/visualization_msgs/msg/detail/dds_fastrtps/marker__type_support.cpp.o
+[49.622s] [97/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/visualization_msgs/msg/detail/dds_fastrtps/marker_array__type_support.cpp.o
+[49.989s] [98/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/visualization_msgs/msg/detail/dds_fastrtps/menu_entry__type_support.cpp.o
+[50.347s] [99/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/visualization_msgs/msg/detail/dds_fastrtps/mesh_file__type_support.cpp.o
+[50.713s] [100/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/visualization_msgs/msg/detail/dds_fastrtps/uv_coordinate__type_support.cpp.o
+[51.116s] [101/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/visualization_msgs/srv/detail/dds_fastrtps/get_interactive_markers__type_support.cpp.o
+[51.429s] [102/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/visualization_msgs/msg/detail/image_marker__type_support.cpp.o
+[51.829s] [103/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/visualization_msgs/msg/detail/interactive_marker__type_support.cpp.o
+[52.431s] [104/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/visualization_msgs/msg/detail/interactive_marker_control__type_support.cpp.o
+[52.951s] [105/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/visualization_msgs/msg/detail/interactive_marker_feedback__type_support.cpp.o
+[53.631s] [106/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/visualization_msgs/msg/detail/interactive_marker_init__type_support.cpp.o
+[54.284s] [107/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/visualization_msgs/msg/detail/interactive_marker_pose__type_support.cpp.o
+[54.780s] [108/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/visualization_msgs/msg/detail/interactive_marker_update__type_support.cpp.o
+[55.633s] [109/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/visualization_msgs/msg/detail/marker__type_support.cpp.o
+[55.997s] [110/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/visualization_msgs/msg/detail/marker_array__type_support.cpp.o
+[56.627s] [111/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/visualization_msgs/msg/detail/menu_entry__type_support.cpp.o
+[57.175s] [112/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/visualization_msgs/msg/detail/mesh_file__type_support.cpp.o
+[57.695s] [113/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/visualization_msgs/msg/detail/uv_coordinate__type_support.cpp.o
+[58.408s] [114/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/visualization_msgs/srv/detail/get_interactive_markers__type_support.cpp.o
+[59.054s] [115/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/visualization_msgs/msg/image_marker__type_support.cpp.o
+[59.547s] [116/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/visualization_msgs/msg/interactive_marker__type_support.cpp.o
+[60.215s] [117/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/visualization_msgs/msg/interactive_marker_control__type_support.cpp.o
+[60.615s] [118/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/visualization_msgs/msg/interactive_marker_feedback__type_support.cpp.o
+[61.332s] [119/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/visualization_msgs/msg/interactive_marker_init__type_support.cpp.o
+[61.689s] [120/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/visualization_msgs/msg/interactive_marker_pose__type_support.cpp.o
+[62.003s] [121/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/visualization_msgs/msg/interactive_marker_update__type_support.cpp.o
+[62.335s] [122/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/visualization_msgs/msg/marker__type_support.cpp.o
+[62.798s] [123/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/visualization_msgs/msg/marker_array__type_support.cpp.o
+[63.372s] [124/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/visualization_msgs/msg/menu_entry__type_support.cpp.o
+[63.671s] [125/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/visualization_msgs/msg/mesh_file__type_support.cpp.o
+[63.913s] [126/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/visualization_msgs/msg/uv_coordinate__type_support.cpp.o
+[64.275s] [127/157] Building CXX object CMakeFiles/visualization_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/visualization_msgs/srv/get_interactive_markers__type_support.cpp.o
+[64.349s] [128/157] Linking CXX shared library libvisualization_msgs__rosidl_typesupport_fastrtps_c.so
+[64.428s] [129/157] Linking CXX shared library libvisualization_msgs__rosidl_typesupport_fastrtps_cpp.so
+[64.462s] [130/157] Linking C shared library libvisualization_msgs__rosidl_typesupport_introspection_c.so
+[64.530s] [131/157] Linking CXX shared library libvisualization_msgs__rosidl_typesupport_c.so
+[64.602s] [132/157] Linking CXX shared library libvisualization_msgs__rosidl_typesupport_introspection_cpp.so
+[64.663s] [133/157] Linking CXX shared library libvisualization_msgs__rosidl_typesupport_cpp.so
+[69.835s] [134/157] Generating Python code for ROS interfaces
+[73.789s] [135/157] Generating Rust code for ROS interfaces
+[74.355s] [136/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_py.dir/rosidl_generator_py/visualization_msgs/msg/_image_marker_s.c.o
+[74.854s] [137/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_py.dir/rosidl_generator_py/visualization_msgs/msg/_interactive_marker_s.c.o
+[75.435s] [138/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_py.dir/rosidl_generator_py/visualization_msgs/msg/_interactive_marker_control_s.c.o
+[76.035s] [139/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_py.dir/rosidl_generator_py/visualization_msgs/msg/_interactive_marker_feedback_s.c.o
+[76.545s] [140/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_py.dir/rosidl_generator_py/visualization_msgs/msg/_interactive_marker_init_s.c.o
+[77.088s] [141/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_py.dir/rosidl_generator_py/visualization_msgs/msg/_interactive_marker_pose_s.c.o
+[77.788s] [142/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_py.dir/rosidl_generator_py/visualization_msgs/msg/_interactive_marker_update_s.c.o
+[78.310s] [143/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_py.dir/rosidl_generator_py/visualization_msgs/msg/_marker_s.c.o
+[78.829s] [144/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_py.dir/rosidl_generator_py/visualization_msgs/msg/_marker_array_s.c.o
+[79.313s] [145/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_py.dir/rosidl_generator_py/visualization_msgs/msg/_menu_entry_s.c.o
+[79.747s] [146/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_py.dir/rosidl_generator_py/visualization_msgs/msg/_mesh_file_s.c.o
+[80.164s] [147/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_py.dir/rosidl_generator_py/visualization_msgs/msg/_uv_coordinate_s.c.o
+[80.672s] [148/157] Building C object CMakeFiles/visualization_msgs__rosidl_generator_py.dir/rosidl_generator_py/visualization_msgs/srv/_get_interactive_markers_s.c.o
+[80.783s] [149/157] Linking C shared library libvisualization_msgs__rosidl_generator_py.so
+[81.245s] [150/157] Building C object CMakeFiles/visualization_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/visualization_msgs/_visualization_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o
+[81.771s] [151/157] Building C object CMakeFiles/visualization_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/visualization_msgs/_visualization_msgs_s.ep.rosidl_typesupport_introspection_c.c.o
+[82.215s] [152/157] Building C object CMakeFiles/visualization_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/visualization_msgs/_visualization_msgs_s.ep.rosidl_typesupport_c.c.o
+[82.247s] [153/157] cd /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/visualization_msgs && /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake -E copy_directory /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/visualization_msgs/rosidl_generator_py/visualization_msgs /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/visualization_msgs/ament_cmake_python/visualization_msgs/visualization_msgs
+[82.354s] [154/157] Linking C shared module rosidl_generator_py/visualization_msgs/visualization_msgs_s__rosidl_typesupport_fastrtps_c.so
+[82.428s] [155/157] Linking C shared module rosidl_generator_py/visualization_msgs/visualization_msgs_s__rosidl_typesupport_introspection_c.so
+[82.487s] [156/157] Linking C shared module rosidl_generator_py/visualization_msgs/visualization_msgs_s__rosidl_typesupport_c.so
+[82.984s] [157/157] cd /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/visualization_msgs/ament_cmake_python/visualization_msgs && /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/python3 setup.py egg_info
+[82.984s] running egg_info
+[82.984s] creating visualization_msgs.egg-info
+[82.984s] writing visualization_msgs.egg-info/PKG-INFO
+[82.985s] writing dependency_links to visualization_msgs.egg-info/dependency_links.txt
+[82.985s] writing top-level names to visualization_msgs.egg-info/top_level.txt
+[82.985s] writing manifest file 'visualization_msgs.egg-info/SOURCES.txt'
+[82.985s] reading manifest file 'visualization_msgs.egg-info/SOURCES.txt'
+[82.985s] writing manifest file 'visualization_msgs.egg-info/SOURCES.txt'
+[82.987s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/visualization_msgs' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages ROS_DOMAIN_ID=226 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/visualization_msgs -- -j4 -l4
+[82.988s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/visualization_msgs': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages ROS_DOMAIN_ID=226 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/visualization_msgs
+[83.005s] -- Install configuration: "Release"
+[83.010s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/rosidl_interfaces/visualization_msgs
+[83.010s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/msg/ImageMarker.json
+[83.013s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/msg/InteractiveMarker.json
+[83.013s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/msg/InteractiveMarkerControl.json
+[83.013s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/msg/InteractiveMarkerFeedback.json
+[83.013s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/msg/InteractiveMarkerInit.json
+[83.013s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/msg/InteractiveMarkerPose.json
+[83.014s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/msg/InteractiveMarkerUpdate.json
+[83.014s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/msg/Marker.json
+[83.014s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/msg/MarkerArray.json
+[83.014s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/msg/MenuEntry.json
+[83.014s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/msg/MeshFile.json
+[83.014s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/msg/UVCoordinate.json
+[83.014s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/srv/GetInteractiveMarkers.json
+[83.014s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs
+[83.014s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/srv
+[83.015s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/srv/get_interactive_markers.h
+[83.015s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/srv/detail
+[83.015s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/srv/detail/get_interactive_markers__functions.c
+[83.015s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/srv/detail/get_interactive_markers__type_support.c
+[83.015s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/srv/detail/get_interactive_markers__type_support.h
+[83.016s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/srv/detail/get_interactive_markers__functions.h
+[83.017s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/srv/detail/get_interactive_markers__description.c
+[83.017s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/srv/detail/get_interactive_markers__struct.h
+[83.017s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg
+[83.019s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/interactive_marker_init.h
+[83.019s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/mesh_file.h
+[83.019s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/rosidl_generator_c__visibility_control.h
+[83.019s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/interactive_marker_feedback.h
+[83.022s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/image_marker.h
+[83.022s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/interactive_marker_pose.h
+[83.023s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/menu_entry.h
+[83.024s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/marker.h
+[83.024s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/interactive_marker.h
+[83.024s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/uv_coordinate.h
+[83.024s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/interactive_marker_control.h
+[83.025s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/interactive_marker_update.h
+[83.025s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail
+[83.025s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_control__struct.h
+[83.025s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/marker_array__type_support.h
+[83.025s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/marker__functions.c
+[83.025s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker__functions.h
+[83.025s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_control__type_support.c
+[83.025s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_feedback__functions.c
+[83.025s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_control__description.c
+[83.028s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/mesh_file__type_support.c
+[83.028s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_feedback__type_support.c
+[83.028s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/menu_entry__type_support.h
+[83.029s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/uv_coordinate__functions.c
+[83.029s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_init__type_support.c
+[83.032s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/marker__functions.h
+[83.032s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker__functions.c
+[83.032s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker__type_support.c
+[83.032s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/uv_coordinate__description.c
+[83.033s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_update__type_support.h
+[83.033s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_pose__functions.c
+[83.033s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_pose__struct.h
+[83.033s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_init__struct.h
+[83.034s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/marker_array__type_support.c
+[83.037s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_init__description.c
+[83.037s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/menu_entry__struct.h
+[83.037s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/image_marker__struct.h
+[83.037s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_feedback__struct.h
+[83.037s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/mesh_file__struct.h
+[83.038s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_control__functions.c
+[83.038s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker__type_support.h
+[83.038s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/marker__description.c
+[83.038s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_feedback__description.c
+[83.038s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_update__functions.h
+[83.038s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/marker_array__struct.h
+[83.038s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/marker__struct.h
+[83.039s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/image_marker__description.c
+[83.039s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/image_marker__functions.c
+[83.039s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/mesh_file__functions.h
+[83.040s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_init__type_support.h
+[83.043s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/uv_coordinate__type_support.c
+[83.043s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker__description.c
+[83.043s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_control__type_support.h
+[83.043s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_update__description.c
+[83.044s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/image_marker__type_support.h
+[83.044s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/mesh_file__description.c
+[83.044s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/menu_entry__functions.h
+[83.044s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/mesh_file__type_support.h
+[83.044s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_update__struct.h
+[83.044s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/marker_array__functions.h
+[83.045s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_update__functions.c
+[83.048s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/uv_coordinate__struct.h
+[83.048s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_feedback__type_support.h
+[83.048s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/menu_entry__description.c
+[83.048s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/mesh_file__functions.c
+[83.052s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/image_marker__type_support.c
+[83.052s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/menu_entry__functions.c
+[83.052s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/marker_array__functions.c
+[83.052s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker__struct.h
+[83.052s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_pose__type_support.h
+[83.053s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_init__functions.c
+[83.053s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/marker__type_support.h
+[83.053s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/menu_entry__type_support.c
+[83.053s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_feedback__functions.h
+[83.053s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/marker__type_support.c
+[83.053s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_pose__functions.h
+[83.053s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/marker_array__description.c
+[83.053s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_pose__description.c
+[83.054s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_pose__type_support.c
+[83.055s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/uv_coordinate__functions.h
+[83.055s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_update__type_support.c
+[83.055s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_init__functions.h
+[83.056s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_control__functions.h
+[83.056s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/uv_coordinate__type_support.h
+[83.056s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/image_marker__functions.h
+[83.057s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/marker_array.h
+[83.059s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/environment/library_path.sh
+[83.059s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/environment/library_path.dsv
+[83.059s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libvisualization_msgs__rosidl_generator_c.so
+[83.060s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs
+[83.060s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/srv
+[83.060s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/srv/detail
+[83.060s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/srv/detail/get_interactive_markers__rosidl_typesupport_fastrtps_c.h
+[83.061s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg
+[83.061s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[83.061s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail
+[83.061s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/mesh_file__rosidl_typesupport_fastrtps_c.h
+[83.061s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_pose__rosidl_typesupport_fastrtps_c.h
+[83.064s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_init__rosidl_typesupport_fastrtps_c.h
+[83.065s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/marker__rosidl_typesupport_fastrtps_c.h
+[83.065s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/image_marker__rosidl_typesupport_fastrtps_c.h
+[83.065s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/uv_coordinate__rosidl_typesupport_fastrtps_c.h
+[83.066s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/menu_entry__rosidl_typesupport_fastrtps_c.h
+[83.066s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_feedback__rosidl_typesupport_fastrtps_c.h
+[83.066s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_update__rosidl_typesupport_fastrtps_c.h
+[83.066s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/marker_array__rosidl_typesupport_fastrtps_c.h
+[83.066s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_control__rosidl_typesupport_fastrtps_c.h
+[83.066s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker__rosidl_typesupport_fastrtps_c.h
+[83.071s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libvisualization_msgs__rosidl_typesupport_fastrtps_c.so
+[83.071s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs
+[83.071s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/srv
+[83.071s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/srv/detail
+[83.071s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/srv/detail/get_interactive_markers__builder.hpp
+[83.072s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/srv/detail/get_interactive_markers__struct.hpp
+[83.072s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/srv/detail/get_interactive_markers__traits.hpp
+[83.072s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/srv/detail/get_interactive_markers__type_support.hpp
+[83.072s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/srv/get_interactive_markers.hpp
+[83.073s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg
+[83.073s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/interactive_marker_pose.hpp
+[83.073s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/interactive_marker_control.hpp
+[83.073s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/mesh_file.hpp
+[83.073s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/interactive_marker.hpp
+[83.073s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/image_marker.hpp
+[83.073s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[83.073s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/interactive_marker_feedback.hpp
+[83.073s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/interactive_marker_update.hpp
+[83.074s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/menu_entry.hpp
+[83.074s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/marker.hpp
+[83.074s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/marker_array.hpp
+[83.074s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/uv_coordinate.hpp
+[83.075s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/interactive_marker_init.hpp
+[83.076s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail
+[83.076s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_update__builder.hpp
+[83.076s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_update__traits.hpp
+[83.076s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/menu_entry__traits.hpp
+[83.077s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_control__type_support.hpp
+[83.079s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_control__builder.hpp
+[83.079s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_feedback__type_support.hpp
+[83.081s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/image_marker__struct.hpp
+[83.081s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/marker_array__struct.hpp
+[83.081s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_init__type_support.hpp
+[83.082s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/marker_array__type_support.hpp
+[83.082s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_pose__type_support.hpp
+[83.082s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_feedback__traits.hpp
+[83.082s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/menu_entry__struct.hpp
+[83.082s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker__struct.hpp
+[83.082s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/uv_coordinate__builder.hpp
+[83.083s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker__traits.hpp
+[83.083s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/marker_array__builder.hpp
+[83.083s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/marker__struct.hpp
+[83.087s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_update__struct.hpp
+[83.089s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/image_marker__builder.hpp
+[83.089s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_control__traits.hpp
+[83.089s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/image_marker__type_support.hpp
+[83.090s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/mesh_file__traits.hpp
+[83.090s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_pose__struct.hpp
+[83.090s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker__builder.hpp
+[83.090s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_pose__builder.hpp
+[83.090s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_init__struct.hpp
+[83.090s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_init__traits.hpp
+[83.090s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/mesh_file__struct.hpp
+[83.090s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/marker__traits.hpp
+[83.090s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_pose__traits.hpp
+[83.091s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_update__type_support.hpp
+[83.092s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/marker__builder.hpp
+[83.093s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/menu_entry__builder.hpp
+[83.093s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/uv_coordinate__type_support.hpp
+[83.093s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/image_marker__traits.hpp
+[83.094s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/marker__type_support.hpp
+[83.094s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/uv_coordinate__traits.hpp
+[83.094s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/marker_array__traits.hpp
+[83.095s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_feedback__struct.hpp
+[83.095s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_init__builder.hpp
+[83.100s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_control__struct.hpp
+[83.100s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_feedback__builder.hpp
+[83.100s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/mesh_file__type_support.hpp
+[83.100s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/menu_entry__type_support.hpp
+[83.100s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/mesh_file__builder.hpp
+[83.101s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker__type_support.hpp
+[83.101s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/uv_coordinate__struct.hpp
+[83.101s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs
+[83.101s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/srv
+[83.101s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/srv/detail
+[83.101s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/srv/detail/get_interactive_markers__rosidl_typesupport_fastrtps_cpp.hpp
+[83.102s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/srv/detail/dds_fastrtps
+[83.105s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg
+[83.106s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[83.106s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail
+[83.106s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker__rosidl_typesupport_fastrtps_cpp.hpp
+[83.106s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/mesh_file__rosidl_typesupport_fastrtps_cpp.hpp
+[83.106s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/menu_entry__rosidl_typesupport_fastrtps_cpp.hpp
+[83.106s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/uv_coordinate__rosidl_typesupport_fastrtps_cpp.hpp
+[83.106s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/marker_array__rosidl_typesupport_fastrtps_cpp.hpp
+[83.106s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_pose__rosidl_typesupport_fastrtps_cpp.hpp
+[83.106s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/image_marker__rosidl_typesupport_fastrtps_cpp.hpp
+[83.106s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_update__rosidl_typesupport_fastrtps_cpp.hpp
+[83.107s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_init__rosidl_typesupport_fastrtps_cpp.hpp
+[83.107s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/marker__rosidl_typesupport_fastrtps_cpp.hpp
+[83.107s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_feedback__rosidl_typesupport_fastrtps_cpp.hpp
+[83.107s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_control__rosidl_typesupport_fastrtps_cpp.hpp
+[83.107s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/dds_fastrtps
+[83.108s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libvisualization_msgs__rosidl_typesupport_fastrtps_cpp.so
+[83.108s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs
+[83.108s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/srv
+[83.109s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/srv/detail
+[83.109s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/srv/detail/get_interactive_markers__type_support.c
+[83.109s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/srv/detail/get_interactive_markers__rosidl_typesupport_introspection_c.h
+[83.109s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg
+[83.109s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[83.112s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail
+[83.112s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_update__rosidl_typesupport_introspection_c.h
+[83.113s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_control__type_support.c
+[83.113s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/image_marker__rosidl_typesupport_introspection_c.h
+[83.113s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/mesh_file__type_support.c
+[83.113s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_feedback__type_support.c
+[83.115s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker__rosidl_typesupport_introspection_c.h
+[83.115s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_init__type_support.c
+[83.116s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker__type_support.c
+[83.116s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_init__rosidl_typesupport_introspection_c.h
+[83.117s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/uv_coordinate__rosidl_typesupport_introspection_c.h
+[83.118s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/marker_array__type_support.c
+[83.118s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_pose__rosidl_typesupport_introspection_c.h
+[83.118s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_feedback__rosidl_typesupport_introspection_c.h
+[83.118s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/uv_coordinate__type_support.c
+[83.119s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_control__rosidl_typesupport_introspection_c.h
+[83.119s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/menu_entry__rosidl_typesupport_introspection_c.h
+[83.121s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/marker_array__rosidl_typesupport_introspection_c.h
+[83.121s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/mesh_file__rosidl_typesupport_introspection_c.h
+[83.122s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/marker__rosidl_typesupport_introspection_c.h
+[83.123s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/image_marker__type_support.c
+[83.123s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/menu_entry__type_support.c
+[83.123s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/marker__type_support.c
+[83.123s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_pose__type_support.c
+[83.125s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_update__type_support.c
+[83.125s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libvisualization_msgs__rosidl_typesupport_introspection_c.so
+[83.125s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libvisualization_msgs__rosidl_typesupport_c.so
+[83.125s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs
+[83.126s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/srv
+[83.126s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/srv/detail
+[83.126s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/srv/detail/get_interactive_markers__type_support.cpp
+[83.132s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/srv/detail/get_interactive_markers__rosidl_typesupport_introspection_cpp.hpp
+[83.132s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg
+[83.132s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail
+[83.132s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker__rosidl_typesupport_introspection_cpp.hpp
+[83.133s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_feedback__rosidl_typesupport_introspection_cpp.hpp
+[83.133s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_pose__rosidl_typesupport_introspection_cpp.hpp
+[83.133s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_update__rosidl_typesupport_introspection_cpp.hpp
+[83.133s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/uv_coordinate__type_support.cpp
+[83.133s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker__type_support.cpp
+[83.133s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/menu_entry__rosidl_typesupport_introspection_cpp.hpp
+[83.133s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/mesh_file__rosidl_typesupport_introspection_cpp.hpp
+[83.133s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_pose__type_support.cpp
+[83.133s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_init__rosidl_typesupport_introspection_cpp.hpp
+[83.133s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_update__type_support.cpp
+[83.133s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_feedback__type_support.cpp
+[83.134s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_control__rosidl_typesupport_introspection_cpp.hpp
+[83.137s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/marker_array__type_support.cpp
+[83.137s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/uv_coordinate__rosidl_typesupport_introspection_cpp.hpp
+[83.137s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_control__type_support.cpp
+[83.137s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/marker__type_support.cpp
+[83.138s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/interactive_marker_init__type_support.cpp
+[83.138s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/marker_array__rosidl_typesupport_introspection_cpp.hpp
+[83.138s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/image_marker__rosidl_typesupport_introspection_cpp.hpp
+[83.138s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/menu_entry__type_support.cpp
+[83.138s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/image_marker__type_support.cpp
+[83.138s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/marker__rosidl_typesupport_introspection_cpp.hpp
+[83.138s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/visualization_msgs/visualization_msgs/msg/detail/mesh_file__type_support.cpp
+[83.138s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libvisualization_msgs__rosidl_typesupport_introspection_cpp.so
+[83.138s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libvisualization_msgs__rosidl_typesupport_cpp.so
+[83.143s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/environment/pythonpath.sh
+[83.143s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/environment/pythonpath.dsv
+[83.143s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/visualization_msgs_s__rosidl_typesupport_fastrtps_c.so
+[83.143s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/visualization_msgs_s__rosidl_typesupport_introspection_c.so
+[83.143s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/visualization_msgs_s__rosidl_typesupport_c.so
+[83.144s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libvisualization_msgs__rosidl_generator_py.so
+[83.144s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/rust_packages/visualization_msgs
+[83.144s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/rust
+[83.145s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/rust/Cargo.toml
+[83.148s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/rust/build.rs
+[83.148s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/rust/src
+[83.148s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/rust/src/srv
+[83.148s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/rust/src/srv/rmw.rs
+[83.149s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/rust/src/msg.rs
+[83.149s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/rust/src/msg
+[83.149s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/rust/src/msg/rmw.rs
+[83.149s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/rust/src/lib.rs
+[83.149s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/rust/src/srv.rs
+[83.149s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/msg/ImageMarker.idl
+[83.149s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/msg/InteractiveMarker.idl
+[83.149s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/msg/InteractiveMarkerControl.idl
+[83.153s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/msg/InteractiveMarkerFeedback.idl
+[83.153s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/msg/InteractiveMarkerInit.idl
+[83.153s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/msg/InteractiveMarkerPose.idl
+[83.153s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/msg/InteractiveMarkerUpdate.idl
+[83.154s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/msg/Marker.idl
+[83.154s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/msg/MarkerArray.idl
+[83.154s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/msg/MenuEntry.idl
+[83.154s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/msg/MeshFile.idl
+[83.154s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/msg/UVCoordinate.idl
+[83.154s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/srv/GetInteractiveMarkers.idl
+[83.154s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/msg/ImageMarker.msg
+[83.160s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/msg/InteractiveMarker.msg
+[83.160s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/msg/InteractiveMarkerControl.msg
+[83.160s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/msg/InteractiveMarkerFeedback.msg
+[83.160s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/msg/InteractiveMarkerInit.msg
+[83.161s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/msg/InteractiveMarkerPose.msg
+[83.161s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/msg/InteractiveMarkerUpdate.msg
+[83.161s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/msg/Marker.msg
+[83.161s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/msg/MarkerArray.msg
+[83.161s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/msg/MenuEntry.msg
+[83.161s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/msg/MeshFile.msg
+[83.161s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/msg/UVCoordinate.msg
+[83.161s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/srv/GetInteractiveMarkers.srv
+[83.161s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/package_run_dependencies/visualization_msgs
+[83.161s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/parent_prefix_path/visualization_msgs
+[83.164s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/environment/ament_prefix_path.sh
+[83.164s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/environment/ament_prefix_path.dsv
+[83.164s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/environment/path.sh
+[83.164s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/environment/path.dsv
+[83.165s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/local_setup.bash
+[83.166s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/local_setup.fish
+[83.166s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/local_setup.sh
+[83.166s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/local_setup.zsh
+[83.166s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/local_setup.dsv
+[83.167s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/package.dsv
+[83.167s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/packages/visualization_msgs
+[83.167s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/cmake/export_visualization_msgs__rosidl_generator_cExport.cmake
+[83.169s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/cmake/export_visualization_msgs__rosidl_generator_cExport-release.cmake
+[83.170s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/cmake/export_visualization_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[83.170s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/cmake/export_visualization_msgs__rosidl_typesupport_fastrtps_cExport-release.cmake
+[83.170s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/cmake/export_visualization_msgs__rosidl_generator_cppExport.cmake
+[83.171s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/cmake/export_visualization_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[83.171s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/cmake/export_visualization_msgs__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[83.171s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/cmake/visualization_msgs__rosidl_typesupport_introspection_cExport.cmake
+[83.172s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/cmake/visualization_msgs__rosidl_typesupport_introspection_cExport-release.cmake
+[83.172s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/cmake/visualization_msgs__rosidl_typesupport_cExport.cmake
+[83.177s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/cmake/visualization_msgs__rosidl_typesupport_cExport-release.cmake
+[83.177s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/cmake/visualization_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[83.177s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/cmake/visualization_msgs__rosidl_typesupport_introspection_cppExport-release.cmake
+[83.178s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/cmake/visualization_msgs__rosidl_typesupport_cppExport.cmake
+[83.178s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/cmake/visualization_msgs__rosidl_typesupport_cppExport-release.cmake
+[83.178s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/cmake/export_visualization_msgs__rosidl_generator_pyExport.cmake
+[83.180s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/cmake/export_visualization_msgs__rosidl_generator_pyExport-release.cmake
+[83.180s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs-5.9.1-py3.14.egg-info
+[83.180s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs-5.9.1-py3.14.egg-info/dependency_links.txt
+[83.180s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs-5.9.1-py3.14.egg-info/top_level.txt
+[83.180s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs-5.9.1-py3.14.egg-info/PKG-INFO
+[83.182s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs-5.9.1-py3.14.egg-info/SOURCES.txt
+[83.182s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs
+[83.182s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/__init__.py
+[83.182s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/srv
+[83.183s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/srv/__init__.py
+[83.185s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/srv/_get_interactive_markers_s.c
+[83.185s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/srv/_get_interactive_markers.py
+[83.185s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/_visualization_msgs_s.ep.rosidl_typesupport_c.c
+[83.186s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/msg
+[83.186s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/msg/_interactive_marker_control_s.c
+[83.186s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/msg/_interactive_marker_init_s.c
+[83.186s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/msg/__init__.py
+[83.186s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/msg/_marker_array_s.c
+[83.186s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/msg/_uv_coordinate_s.c
+[83.186s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/msg/_interactive_marker.py
+[83.186s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/msg/_uv_coordinate.py
+[83.186s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/msg/_image_marker.py
+[83.186s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/msg/_interactive_marker_update_s.c
+[83.187s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/msg/_image_marker_s.c
+[83.189s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/msg/_interactive_marker_s.c
+[83.189s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/msg/_interactive_marker_feedback.py
+[83.189s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/msg/_marker_array.py
+[83.190s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/msg/_menu_entry_s.c
+[83.190s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/msg/_mesh_file.py
+[83.190s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/msg/_mesh_file_s.c
+[83.190s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/msg/_marker.py
+[83.195s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/msg/_interactive_marker_init.py
+[83.195s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/msg/_interactive_marker_pose_s.c
+[83.195s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/msg/_marker_s.c
+[83.196s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/msg/_interactive_marker_update.py
+[83.196s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/msg/_menu_entry.py
+[83.196s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/msg/_interactive_marker_feedback_s.c
+[83.198s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/msg/_interactive_marker_pose.py
+[83.198s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/msg/_interactive_marker_control.py
+[83.198s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/py.typed
+[83.198s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/visualization_msgs_s__rosidl_typesupport_c.so
+[83.198s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/visualization_msgs_s__rosidl_typesupport_introspection_c.so
+[83.198s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/visualization_msgs_s__rosidl_typesupport_fastrtps_c.so
+[83.199s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/_visualization_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[83.199s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/_visualization_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[83.447s] Listing '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs'...
+[83.447s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/__init__.py'...
+[83.447s] Listing '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/msg'...
+[83.447s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/msg/__init__.py'...
+[83.447s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/msg/_image_marker.py'...
+[83.448s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/msg/_interactive_marker.py'...
+[83.448s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/msg/_interactive_marker_control.py'...
+[83.448s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/msg/_interactive_marker_feedback.py'...
+[83.448s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/msg/_interactive_marker_init.py'...
+[83.448s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/msg/_interactive_marker_pose.py'...
+[83.448s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/msg/_interactive_marker_update.py'...
+[83.448s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/msg/_marker.py'...
+[83.448s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/msg/_marker_array.py'...
+[83.448s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/msg/_menu_entry.py'...
+[83.448s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/msg/_mesh_file.py'...
+[83.448s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/msg/_uv_coordinate.py'...
+[83.449s] Listing '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/srv'...
+[83.449s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/srv/__init__.py'...
+[83.449s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/visualization_msgs/srv/_get_interactive_markers.py'...
+[83.465s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/cmake/rosidl_cmake-extras.cmake
+[83.466s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[83.467s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[83.467s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[83.468s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[83.468s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[83.469s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[83.469s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[83.470s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/cmake/visualization_msgsConfig.cmake
+[83.470s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/cmake/visualization_msgsConfig-version.cmake
+[83.471s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/package.xml
+[83.473s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/visualization_msgs' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages ROS_DOMAIN_ID=226 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/visualization_msgs
