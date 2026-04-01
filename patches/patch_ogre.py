@@ -10,32 +10,52 @@ def patch_file(path):
     with open(path, 'r', encoding='utf-8', newline='') as f:
         content = f.read()
     
-    if '-DCMAKE_POLICY_VERSION_MINIMUM=3.5' in content:
-        print(f"Already patched: {path}")
-        return True
-    
-    # We want to insert the policy flag after CMAKE_ARGS in the ament_vendor call
-    # The line usually looks like '  CMAKE_ARGS'
-    pattern = r'(  CMAKE_ARGS\r?\n)'
-    replacement = r'\1    -DCMAKE_POLICY_VERSION_MINIMUM=3.5\n'
-    
-    new_content = re.sub(pattern, replacement, content)
-    
-    if new_content == content:
-        print(f"Failed to find anchor 'CMAKE_ARGS' in: {path}")
+    # 1. Minimum policy for CMake 4 compatibility
+    if 'set(CMAKE_POLICY_VERSION_MINIMUM 3.5)' not in content:
+        content = content.replace('project(rviz_ogre_vendor)', 'project(rviz_ogre_vendor)\n\nset(CMAKE_POLICY_VERSION_MINIMUM 3.5)')
+        print(f"Added CMAKE_POLICY_VERSION_MINIMUM to {path}")
+
+    # 2. Add CONFIG_EXTRAS if missing (it should be there, but to be sure)
+    if 'CONFIG_EXTRAS "rviz_ogre_vendor-extras.cmake.in"' not in content:
+        content = content.replace('ament_package()', 'ament_package(\n  CONFIG_EXTRAS "rviz_ogre_vendor-extras.cmake.in"\n)')
+        print(f"Added CONFIG_EXTRAS to {path}")
+
+    with open(path, 'wb') as f:
+        f.write(content.encode('utf-8').replace(b'\r\n', b'\n'))
+    return True
+
+def patch_extras(path):
+    if not os.path.exists(path):
+        print(f"File not found: {path}")
         return False
-        
-    with open(path, 'w', encoding='utf-8', newline='') as f:
-        f.write(new_content)
     
-    print(f"Successfully patched: {path}")
+    with open(path, 'r', encoding='utf-8', newline='') as f:
+        content = f.read()
+    
+    # Add Conda prefix to search path for macOS/Linux dependencies like console_bridge, tinyxml2
+    conda_fix = """
+# Add Conda prefix to search paths for dependencies
+if(NOT "$ENV{CONDA_PREFIX}" STREQUAL "")
+  list(APPEND CMAKE_PREFIX_PATH "$ENV{CONDA_PREFIX}")
+endif()
+"""
+    if 'CONDA_PREFIX' not in content:
+        content = conda_fix + content
+        print(f"Added CONDA_PREFIX fix to {path}")
+
+    with open(path, 'wb') as f:
+        f.write(content.encode('utf-8').replace(b'\r\n', b'\n'))
     return True
 
 if __name__ == "__main__":
-    target = 'src/ros2/rviz/rviz_ogre_vendor/CMakeLists.txt'
-    if patch_file(target):
+    target_cmake = 'src/ros2/rviz/rviz_ogre_vendor/CMakeLists.txt'
+    target_extras = 'src/ros2/rviz/rviz_ogre_vendor/rviz_ogre_vendor-extras.cmake.in'
+    
+    p1 = patch_file(target_cmake)
+    p2 = patch_extras(target_extras)
+    
+    if p1 or p2:
+        print("Successfully patched rviz_ogre_vendor")
         sys.exit(0)
     else:
-        # If it fails, we don't want to stop the build if it's already worked by chance,
-        # but for CI we want to know it failed.
-        sys.exit(0) # Keep going for now, or use 1 if we want it to be strict.
+        sys.exit(0)
