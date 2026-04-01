@@ -1,0 +1,617 @@
+[5.215s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/nav_msgs': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/common_interfaces/nav_msgs -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[5.341s] Not searching for unused variables given on the command line.
+[5.341s] -- The C compiler identification is GNU 14.3.0
+[5.566s] -- The CXX compiler identification is GNU 14.3.0
+[5.586s] -- Detecting C compiler ABI info
+[5.979s] -- Detecting C compiler ABI info - done
+[6.026s] -- Check for working C compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
+[6.026s] -- Detecting C compile features
+[6.028s] -- Detecting C compile features - done
+[6.064s] -- Detecting CXX compiler ABI info
+[6.652s] -- Detecting CXX compiler ABI info - done
+[6.715s] -- Check for working CXX compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
+[6.716s] -- Detecting CXX compile features
+[6.720s] -- Detecting CXX compile features - done
+[6.739s] -- Found ament_cmake: 2.8.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake/cmake)
+[7.197s] -- Found builtin_interfaces: 2.4.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/builtin_interfaces/cmake)
+[7.254s] -- Found rosidl_generator_c: 5.1.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_c/cmake)
+[7.280s] -- Found rosidl_generator_cpp: 5.1.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_cpp/cmake)
+[7.309s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.351s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.368s] -- Found geometry_msgs: 5.9.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/geometry_msgs/cmake)
+[7.451s] -- Found rosidl_default_generators: 1.8.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_default_generators/cmake)
+[7.487s] -- Found rosidl_adapter: 5.1.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_adapter/cmake)
+[7.670s] -- Found Python3: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/python3 (found version "3.14.3") found components: Interpreter
+[8.814s] -- Found ament_cmake_cppcheck: 0.20.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_cppcheck/cmake)
+[8.818s] -- Found ament_cmake_cpplint: 0.20.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_cpplint/cmake)
+[8.820s] -- Found ament_cmake_uncrustify: 0.20.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_uncrustify/cmake)
+[8.825s] -- Found ament_cmake_ros_core: 0.15.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_ros_core/cmake)
+[10.037s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[10.453s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[11.388s] -- Found Python3: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/python3 (found version "3.14.3") found components: Interpreter Development NumPy Development.Module Development.Embed
+[11.497s] -- Found ament_cmake_flake8: 0.20.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_flake8/cmake)
+[11.503s] -- Found ament_cmake_pep257: 0.20.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_pep257/cmake)
+[11.505s] -- Found ament_cmake_mypy: 0.20.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_mypy/cmake)
+[11.544s] -- Found Python3: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/python3 (found version "3.14.3") found components: Interpreter
+[11.556s] -- Configuring done (6.3s)
+[11.659s] -- Generating done (0.1s)
+[11.726s] -- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/nav_msgs
+[11.764s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/nav_msgs' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages ROS_DOMAIN_ID=99 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/common_interfaces/nav_msgs -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[11.764s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/nav_msgs': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages ROS_DOMAIN_ID=99 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/nav_msgs -- -j4 -l4
+[13.516s] [1/147] Generating type hashes for ROS interfaces
+[16.570s] [2/147] Generating C code for ROS interfaces
+[17.115s] [3/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/msg/detail/goals__description.c.o
+[17.278s] [4/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/msg/detail/goals__functions.c.o
+[17.821s] [5/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/msg/detail/goals__type_support.c.o
+[18.217s] [6/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/msg/detail/grid_cells__description.c.o
+[18.736s] [7/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/msg/detail/grid_cells__functions.c.o
+[19.147s] [8/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/msg/detail/grid_cells__type_support.c.o
+[19.488s] [9/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/msg/detail/map_meta_data__description.c.o
+[19.978s] [10/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/msg/detail/map_meta_data__functions.c.o
+[20.457s] [11/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/msg/detail/map_meta_data__type_support.c.o
+[21.085s] [12/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/msg/detail/occupancy_grid__description.c.o
+[21.567s] [13/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/msg/detail/occupancy_grid__functions.c.o
+[21.943s] [14/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/msg/detail/occupancy_grid__type_support.c.o
+[22.361s] [15/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/msg/detail/odometry__description.c.o
+[22.953s] [16/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/msg/detail/odometry__functions.c.o
+[23.425s] [17/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/msg/detail/odometry__type_support.c.o
+[23.970s] [18/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/msg/detail/path__description.c.o
+[24.489s] [19/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/msg/detail/path__functions.c.o
+[25.002s] [20/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/msg/detail/path__type_support.c.o
+[25.506s] [21/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/msg/detail/trajectory__description.c.o
+[25.897s] [22/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/msg/detail/trajectory__functions.c.o
+[26.317s] [23/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/msg/detail/trajectory__type_support.c.o
+[26.817s] [24/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/msg/detail/trajectory_point__description.c.o
+[27.411s] [25/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/msg/detail/trajectory_point__functions.c.o
+[27.866s] [26/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/msg/detail/trajectory_point__type_support.c.o
+[28.342s] [27/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/srv/detail/get_map__description.c.o
+[29.250s] [28/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/srv/detail/get_map__functions.c.o
+[29.358s] [29/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/srv/detail/get_map__type_support.c.o
+[29.941s] [30/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/srv/detail/get_plan__description.c.o
+[30.512s] [31/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/srv/detail/get_plan__functions.c.o
+[30.657s] [32/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/srv/detail/get_plan__type_support.c.o
+[30.873s] [33/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/srv/detail/load_map__description.c.o
+[31.119s] [34/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/srv/detail/load_map__functions.c.o
+[31.287s] [35/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/srv/detail/load_map__type_support.c.o
+[31.475s] [36/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/srv/detail/set_map__description.c.o
+[31.589s] [37/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/srv/detail/set_map__functions.c.o
+[31.734s] [38/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/srv/detail/set_map__type_support.c.o
+[33.633s] [39/147] Generating C type support for eProsima Fast-RTPS
+[35.515s] [40/147] Generating C++ code for ROS interfaces
+[37.149s] [41/147] Generating C++ type support for eProsima Fast-RTPS
+[38.306s] [42/147] Generating C introspection for ROS interfaces
+[39.274s] [43/147] Generating C type support dispatch for ROS interfaces
+[40.694s] [44/147] Generating C++ introspection for ROS interfaces
+[42.006s] [45/147] Generating C++ type support dispatch for ROS interfaces
+[42.039s] [46/147] Linking C shared library libnav_msgs__rosidl_generator_c.so
+[42.360s] [47/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nav_msgs/msg/detail/goals__type_support_c.cpp.o
+[42.646s] [48/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nav_msgs/msg/detail/grid_cells__type_support_c.cpp.o
+[42.941s] [49/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nav_msgs/msg/detail/map_meta_data__type_support_c.cpp.o
+[43.264s] [50/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nav_msgs/msg/detail/occupancy_grid__type_support_c.cpp.o
+[43.555s] [51/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nav_msgs/msg/detail/odometry__type_support_c.cpp.o
+[43.840s] [52/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nav_msgs/msg/detail/path__type_support_c.cpp.o
+[44.103s] [53/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nav_msgs/msg/detail/trajectory__type_support_c.cpp.o
+[44.383s] [54/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nav_msgs/msg/detail/trajectory_point__type_support_c.cpp.o
+[44.686s] [55/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nav_msgs/srv/detail/get_map__type_support_c.cpp.o
+[44.977s] [56/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nav_msgs/srv/detail/get_plan__type_support_c.cpp.o
+[45.275s] [57/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nav_msgs/srv/detail/load_map__type_support_c.cpp.o
+[45.579s] [58/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nav_msgs/srv/detail/set_map__type_support_c.cpp.o
+[45.722s] [59/147] Building C object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nav_msgs/msg/detail/goals__type_support.c.o
+[45.852s] [60/147] Building C object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nav_msgs/msg/detail/grid_cells__type_support.c.o
+[45.993s] [61/147] Building C object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nav_msgs/msg/detail/map_meta_data__type_support.c.o
+[46.126s] [62/147] Building C object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nav_msgs/msg/detail/occupancy_grid__type_support.c.o
+[46.265s] [63/147] Building C object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nav_msgs/msg/detail/odometry__type_support.c.o
+[46.392s] [64/147] Building C object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nav_msgs/msg/detail/path__type_support.c.o
+[46.542s] [65/147] Building C object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nav_msgs/msg/detail/trajectory__type_support.c.o
+[46.753s] [66/147] Building C object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nav_msgs/msg/detail/trajectory_point__type_support.c.o
+[46.905s] [67/147] Building C object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nav_msgs/srv/detail/get_map__type_support.c.o
+[47.036s] [68/147] Building C object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nav_msgs/srv/detail/get_plan__type_support.c.o
+[47.174s] [69/147] Building C object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nav_msgs/srv/detail/load_map__type_support.c.o
+[47.311s] [70/147] Building C object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nav_msgs/srv/detail/set_map__type_support.c.o
+[47.450s] [71/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/nav_msgs/msg/goals__type_support.cpp.o
+[47.597s] [72/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/nav_msgs/msg/grid_cells__type_support.cpp.o
+[47.749s] [73/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/nav_msgs/msg/map_meta_data__type_support.cpp.o
+[47.877s] [74/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/nav_msgs/msg/occupancy_grid__type_support.cpp.o
+[48.017s] [75/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/nav_msgs/msg/odometry__type_support.cpp.o
+[48.160s] [76/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/nav_msgs/msg/path__type_support.cpp.o
+[48.300s] [77/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/nav_msgs/msg/trajectory__type_support.cpp.o
+[48.445s] [78/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/nav_msgs/msg/trajectory_point__type_support.cpp.o
+[48.592s] [79/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/nav_msgs/srv/get_map__type_support.cpp.o
+[48.745s] [80/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/nav_msgs/srv/get_plan__type_support.cpp.o
+[48.890s] [81/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/nav_msgs/srv/load_map__type_support.cpp.o
+[49.052s] [82/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/nav_msgs/srv/set_map__type_support.cpp.o
+[49.358s] [83/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nav_msgs/msg/detail/dds_fastrtps/goals__type_support.cpp.o
+[49.664s] [84/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nav_msgs/msg/detail/dds_fastrtps/grid_cells__type_support.cpp.o
+[49.977s] [85/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nav_msgs/msg/detail/dds_fastrtps/map_meta_data__type_support.cpp.o
+[50.313s] [86/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nav_msgs/msg/detail/dds_fastrtps/occupancy_grid__type_support.cpp.o
+[50.591s] [87/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nav_msgs/msg/detail/dds_fastrtps/odometry__type_support.cpp.o
+[50.907s] [88/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nav_msgs/msg/detail/dds_fastrtps/path__type_support.cpp.o
+[51.244s] [89/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nav_msgs/msg/detail/dds_fastrtps/trajectory__type_support.cpp.o
+[51.561s] [90/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nav_msgs/msg/detail/dds_fastrtps/trajectory_point__type_support.cpp.o
+[51.827s] [91/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nav_msgs/srv/detail/dds_fastrtps/get_map__type_support.cpp.o
+[52.136s] [92/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nav_msgs/srv/detail/dds_fastrtps/get_plan__type_support.cpp.o
+[52.470s] [93/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nav_msgs/srv/detail/dds_fastrtps/load_map__type_support.cpp.o
+[52.746s] [94/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nav_msgs/srv/detail/dds_fastrtps/set_map__type_support.cpp.o
+[52.988s] [95/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nav_msgs/msg/detail/goals__type_support.cpp.o
+[53.216s] [96/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nav_msgs/msg/detail/grid_cells__type_support.cpp.o
+[53.442s] [97/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nav_msgs/msg/detail/map_meta_data__type_support.cpp.o
+[53.702s] [98/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nav_msgs/msg/detail/occupancy_grid__type_support.cpp.o
+[53.938s] [99/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nav_msgs/msg/detail/odometry__type_support.cpp.o
+[54.171s] [100/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nav_msgs/msg/detail/path__type_support.cpp.o
+[54.403s] [101/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nav_msgs/msg/detail/trajectory__type_support.cpp.o
+[54.635s] [102/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nav_msgs/msg/detail/trajectory_point__type_support.cpp.o
+[54.855s] [103/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nav_msgs/srv/detail/get_map__type_support.cpp.o
+[55.032s] [104/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nav_msgs/srv/detail/get_plan__type_support.cpp.o
+[55.265s] [105/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nav_msgs/srv/detail/load_map__type_support.cpp.o
+[55.461s] [106/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nav_msgs/srv/detail/set_map__type_support.cpp.o
+[55.688s] [107/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nav_msgs/msg/goals__type_support.cpp.o
+[55.929s] [108/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nav_msgs/msg/grid_cells__type_support.cpp.o
+[56.127s] [109/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nav_msgs/msg/map_meta_data__type_support.cpp.o
+[56.412s] [110/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nav_msgs/msg/occupancy_grid__type_support.cpp.o
+[56.678s] [111/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nav_msgs/msg/odometry__type_support.cpp.o
+[56.882s] [112/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nav_msgs/msg/path__type_support.cpp.o
+[57.137s] [113/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nav_msgs/msg/trajectory__type_support.cpp.o
+[57.388s] [114/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nav_msgs/msg/trajectory_point__type_support.cpp.o
+[57.655s] [115/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nav_msgs/srv/get_map__type_support.cpp.o
+[57.883s] [116/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nav_msgs/srv/get_plan__type_support.cpp.o
+[58.134s] [117/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nav_msgs/srv/load_map__type_support.cpp.o
+[58.424s] [118/147] Building CXX object CMakeFiles/nav_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nav_msgs/srv/set_map__type_support.cpp.o
+[58.497s] [119/147] Linking CXX shared library libnav_msgs__rosidl_typesupport_fastrtps_c.so
+[58.573s] [120/147] Linking CXX shared library libnav_msgs__rosidl_typesupport_fastrtps_cpp.so
+[58.601s] [121/147] Linking C shared library libnav_msgs__rosidl_typesupport_introspection_c.so
+[58.664s] [122/147] Linking CXX shared library libnav_msgs__rosidl_typesupport_c.so
+[58.731s] [123/147] Linking CXX shared library libnav_msgs__rosidl_typesupport_introspection_cpp.so
+[58.779s] [124/147] Linking CXX shared library libnav_msgs__rosidl_typesupport_cpp.so
+[62.026s] [125/147] Generating Python code for ROS interfaces
+[63.198s] [126/147] Generating Rust code for ROS interfaces
+[63.416s] [127/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_py.dir/rosidl_generator_py/nav_msgs/msg/_goals_s.c.o
+[63.645s] [128/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_py.dir/rosidl_generator_py/nav_msgs/msg/_grid_cells_s.c.o
+[63.860s] [129/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_py.dir/rosidl_generator_py/nav_msgs/msg/_map_meta_data_s.c.o
+[64.091s] [130/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_py.dir/rosidl_generator_py/nav_msgs/msg/_occupancy_grid_s.c.o
+[64.323s] [131/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_py.dir/rosidl_generator_py/nav_msgs/msg/_odometry_s.c.o
+[64.559s] [132/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_py.dir/rosidl_generator_py/nav_msgs/msg/_path_s.c.o
+[64.789s] [133/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_py.dir/rosidl_generator_py/nav_msgs/msg/_trajectory_s.c.o
+[65.020s] [134/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_py.dir/rosidl_generator_py/nav_msgs/msg/_trajectory_point_s.c.o
+[65.248s] [135/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_py.dir/rosidl_generator_py/nav_msgs/srv/_get_map_s.c.o
+[65.458s] [136/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_py.dir/rosidl_generator_py/nav_msgs/srv/_get_plan_s.c.o
+[65.707s] [137/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_py.dir/rosidl_generator_py/nav_msgs/srv/_load_map_s.c.o
+[65.977s] [138/147] Building C object CMakeFiles/nav_msgs__rosidl_generator_py.dir/rosidl_generator_py/nav_msgs/srv/_set_map_s.c.o
+[66.016s] [139/147] Linking C shared library libnav_msgs__rosidl_generator_py.so
+[66.230s] [140/147] Building C object CMakeFiles/nav_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/nav_msgs/_nav_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o
+[66.461s] [141/147] Building C object CMakeFiles/nav_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/nav_msgs/_nav_msgs_s.ep.rosidl_typesupport_introspection_c.c.o
+[66.729s] [142/147] Building C object CMakeFiles/nav_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/nav_msgs/_nav_msgs_s.ep.rosidl_typesupport_c.c.o
+[66.739s] [143/147] cd /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/nav_msgs && /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake -E copy_directory /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/nav_msgs/rosidl_generator_py/nav_msgs /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/nav_msgs/ament_cmake_python/nav_msgs/nav_msgs
+[66.767s] [144/147] Linking C shared module rosidl_generator_py/nav_msgs/nav_msgs_s__rosidl_typesupport_fastrtps_c.so
+[66.794s] [145/147] Linking C shared module rosidl_generator_py/nav_msgs/nav_msgs_s__rosidl_typesupport_introspection_c.so
+[66.820s] [146/147] Linking C shared module rosidl_generator_py/nav_msgs/nav_msgs_s__rosidl_typesupport_c.so
+[67.110s] [147/147] cd /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/nav_msgs/ament_cmake_python/nav_msgs && /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/python3 setup.py egg_info
+[67.110s] running egg_info
+[67.110s] creating nav_msgs.egg-info
+[67.110s] writing nav_msgs.egg-info/PKG-INFO
+[67.110s] writing dependency_links to nav_msgs.egg-info/dependency_links.txt
+[67.110s] writing top-level names to nav_msgs.egg-info/top_level.txt
+[67.110s] writing manifest file 'nav_msgs.egg-info/SOURCES.txt'
+[67.110s] reading manifest file 'nav_msgs.egg-info/SOURCES.txt'
+[67.110s] writing manifest file 'nav_msgs.egg-info/SOURCES.txt'
+[67.114s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/nav_msgs' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages ROS_DOMAIN_ID=99 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/nav_msgs -- -j4 -l4
+[67.115s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/nav_msgs': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages ROS_DOMAIN_ID=99 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/nav_msgs
+[67.123s] -- Install configuration: "Release"
+[67.123s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/rosidl_interfaces/nav_msgs
+[67.123s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/msg/Goals.json
+[67.123s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/msg/GridCells.json
+[67.124s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/msg/MapMetaData.json
+[67.124s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/msg/OccupancyGrid.json
+[67.124s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/msg/Odometry.json
+[67.124s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/msg/Path.json
+[67.124s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/msg/Trajectory.json
+[67.124s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/msg/TrajectoryPoint.json
+[67.125s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/srv/GetMap.json
+[67.126s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/srv/GetPlan.json
+[67.126s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/srv/LoadMap.json
+[67.126s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/srv/SetMap.json
+[67.126s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs
+[67.127s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv
+[67.127s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/get_plan.h
+[67.127s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/get_map.h
+[67.127s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/set_map.h
+[67.127s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/load_map.h
+[67.127s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail
+[67.127s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/get_plan__functions.h
+[67.127s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/get_map__description.c
+[67.127s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/get_plan__type_support.c
+[67.127s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/load_map__type_support.c
+[67.127s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/set_map__description.c
+[67.127s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/load_map__functions.c
+[67.127s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/load_map__description.c
+[67.128s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/set_map__type_support.c
+[67.128s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/get_map__type_support.c
+[67.128s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/get_map__functions.h
+[67.128s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/get_map__type_support.h
+[67.128s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/set_map__functions.h
+[67.128s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/load_map__functions.h
+[67.129s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/load_map__struct.h
+[67.129s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/get_plan__description.c
+[67.129s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/set_map__functions.c
+[67.129s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/get_map__functions.c
+[67.130s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/set_map__struct.h
+[67.130s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/get_plan__struct.h
+[67.130s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/get_plan__functions.c
+[67.130s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/set_map__type_support.h
+[67.130s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/get_map__struct.h
+[67.130s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/load_map__type_support.h
+[67.130s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/get_plan__type_support.h
+[67.130s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg
+[67.130s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/goals.h
+[67.130s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/odometry.h
+[67.130s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/rosidl_generator_c__visibility_control.h
+[67.130s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/trajectory_point.h
+[67.132s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/map_meta_data.h
+[67.132s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/path.h
+[67.132s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/grid_cells.h
+[67.132s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail
+[67.133s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/goals__type_support.c
+[67.133s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/path__type_support.c
+[67.133s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/trajectory__functions.c
+[67.133s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/odometry__description.c
+[67.133s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/path__functions.h
+[67.133s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/goals__struct.h
+[67.133s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/grid_cells__functions.c
+[67.133s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__type_support.c
+[67.133s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__functions.c
+[67.133s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/trajectory__functions.h
+[67.133s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/path__type_support.h
+[67.133s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__functions.h
+[67.133s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/odometry__functions.h
+[67.133s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/goals__functions.h
+[67.134s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__functions.c
+[67.134s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/trajectory_point__description.c
+[67.134s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/trajectory_point__type_support.c
+[67.134s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.h
+[67.134s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/trajectory__struct.h
+[67.134s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/path__description.c
+[67.134s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/goals__description.c
+[67.134s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.h
+[67.134s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.c
+[67.134s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/odometry__functions.c
+[67.134s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/trajectory__type_support.c
+[67.135s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/trajectory_point__functions.h
+[67.135s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/trajectory_point__struct.h
+[67.135s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/grid_cells__type_support.c
+[67.137s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/path__functions.c
+[67.137s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__type_support.h
+[67.138s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__type_support.h
+[67.138s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/trajectory_point__functions.c
+[67.138s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/grid_cells__description.c
+[67.138s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/grid_cells__struct.h
+[67.138s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/path__struct.h
+[67.138s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__struct.h
+[67.138s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__struct.h
+[67.138s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/goals__type_support.h
+[67.138s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/trajectory__description.c
+[67.138s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/goals__functions.c
+[67.139s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/trajectory__type_support.h
+[67.139s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/grid_cells__functions.h
+[67.139s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/grid_cells__type_support.h
+[67.139s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/trajectory_point__type_support.h
+[67.139s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__type_support.c
+[67.139s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__description.c
+[67.141s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__functions.h
+[67.141s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__description.c
+[67.141s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/trajectory.h
+[67.142s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/occupancy_grid.h
+[67.142s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/environment/library_path.sh
+[67.142s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/environment/library_path.dsv
+[67.142s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libnav_msgs__rosidl_generator_c.so
+[67.142s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs
+[67.142s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv
+[67.142s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail
+[67.142s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/get_plan__rosidl_typesupport_fastrtps_c.h
+[67.142s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/get_map__rosidl_typesupport_fastrtps_c.h
+[67.142s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/set_map__rosidl_typesupport_fastrtps_c.h
+[67.142s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/load_map__rosidl_typesupport_fastrtps_c.h
+[67.142s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg
+[67.142s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[67.142s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail
+[67.142s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/odometry__rosidl_typesupport_fastrtps_c.h
+[67.143s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__rosidl_typesupport_fastrtps_c.h
+[67.143s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/goals__rosidl_typesupport_fastrtps_c.h
+[67.143s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/path__rosidl_typesupport_fastrtps_c.h
+[67.143s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__rosidl_typesupport_fastrtps_c.h
+[67.143s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/grid_cells__rosidl_typesupport_fastrtps_c.h
+[67.143s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/trajectory__rosidl_typesupport_fastrtps_c.h
+[67.143s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/trajectory_point__rosidl_typesupport_fastrtps_c.h
+[67.143s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libnav_msgs__rosidl_typesupport_fastrtps_c.so
+[67.143s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs
+[67.143s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv
+[67.143s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/set_map.hpp
+[67.147s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/get_plan.hpp
+[67.148s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/load_map.hpp
+[67.148s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/get_map.hpp
+[67.148s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail
+[67.149s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/get_plan__builder.hpp
+[67.149s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/set_map__traits.hpp
+[67.149s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/get_map__traits.hpp
+[67.149s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/set_map__builder.hpp
+[67.149s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/get_plan__struct.hpp
+[67.149s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/load_map__struct.hpp
+[67.149s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/get_plan__type_support.hpp
+[67.149s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/load_map__builder.hpp
+[67.149s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/get_map__type_support.hpp
+[67.149s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/get_map__struct.hpp
+[67.149s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/get_map__builder.hpp
+[67.149s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/set_map__struct.hpp
+[67.149s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/get_plan__traits.hpp
+[67.149s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/set_map__type_support.hpp
+[67.149s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/load_map__type_support.hpp
+[67.150s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/load_map__traits.hpp
+[67.150s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg
+[67.150s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/occupancy_grid.hpp
+[67.150s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/odometry.hpp
+[67.150s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/path.hpp
+[67.150s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/goals.hpp
+[67.150s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/grid_cells.hpp
+[67.150s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[67.150s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/map_meta_data.hpp
+[67.150s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/trajectory_point.hpp
+[67.150s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/trajectory.hpp
+[67.150s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail
+[67.150s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/grid_cells__builder.hpp
+[67.150s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/goals__builder.hpp
+[67.150s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/trajectory__type_support.hpp
+[67.150s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__builder.hpp
+[67.150s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/trajectory_point__traits.hpp
+[67.150s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/trajectory__traits.hpp
+[67.151s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/odometry__builder.hpp
+[67.151s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__builder.hpp
+[67.151s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/path__traits.hpp
+[67.151s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/trajectory__builder.hpp
+[67.151s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__struct.hpp
+[67.151s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/trajectory_point__builder.hpp
+[67.151s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/goals__traits.hpp
+[67.151s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/path__struct.hpp
+[67.151s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/trajectory__struct.hpp
+[67.151s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__struct.hpp
+[67.151s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__traits.hpp
+[67.151s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/goals__struct.hpp
+[67.154s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__traits.hpp
+[67.154s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__type_support.hpp
+[67.155s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/grid_cells__type_support.hpp
+[67.155s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/odometry__traits.hpp
+[67.155s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/trajectory_point__type_support.hpp
+[67.155s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/goals__type_support.hpp
+[67.155s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/trajectory_point__struct.hpp
+[67.155s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/path__type_support.hpp
+[67.155s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/path__builder.hpp
+[67.155s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.hpp
+[67.155s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/grid_cells__struct.hpp
+[67.155s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp
+[67.156s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__type_support.hpp
+[67.156s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/grid_cells__traits.hpp
+[67.156s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs
+[67.158s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv
+[67.158s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail
+[67.158s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/load_map__rosidl_typesupport_fastrtps_cpp.hpp
+[67.159s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/get_plan__rosidl_typesupport_fastrtps_cpp.hpp
+[67.159s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/get_map__rosidl_typesupport_fastrtps_cpp.hpp
+[67.159s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/set_map__rosidl_typesupport_fastrtps_cpp.hpp
+[67.159s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/dds_fastrtps
+[67.159s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg
+[67.159s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[67.159s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail
+[67.159s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__rosidl_typesupport_fastrtps_cpp.hpp
+[67.159s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/trajectory__rosidl_typesupport_fastrtps_cpp.hpp
+[67.159s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/trajectory_point__rosidl_typesupport_fastrtps_cpp.hpp
+[67.159s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/odometry__rosidl_typesupport_fastrtps_cpp.hpp
+[67.159s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/path__rosidl_typesupport_fastrtps_cpp.hpp
+[67.160s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/goals__rosidl_typesupport_fastrtps_cpp.hpp
+[67.160s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/grid_cells__rosidl_typesupport_fastrtps_cpp.hpp
+[67.160s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__rosidl_typesupport_fastrtps_cpp.hpp
+[67.160s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/dds_fastrtps
+[67.160s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libnav_msgs__rosidl_typesupport_fastrtps_cpp.so
+[67.160s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs
+[67.160s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv
+[67.160s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail
+[67.160s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/get_plan__type_support.c
+[67.160s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/load_map__type_support.c
+[67.160s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/set_map__rosidl_typesupport_introspection_c.h
+[67.160s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/get_map__rosidl_typesupport_introspection_c.h
+[67.160s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/set_map__type_support.c
+[67.160s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/get_map__type_support.c
+[67.160s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/get_plan__rosidl_typesupport_introspection_c.h
+[67.161s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/load_map__rosidl_typesupport_introspection_c.h
+[67.161s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg
+[67.162s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[67.162s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail
+[67.162s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/goals__type_support.c
+[67.162s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/path__type_support.c
+[67.162s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/grid_cells__rosidl_typesupport_introspection_c.h
+[67.162s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/trajectory__rosidl_typesupport_introspection_c.h
+[67.162s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__type_support.c
+[67.162s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/trajectory_point__type_support.c
+[67.162s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.c
+[67.162s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/trajectory__type_support.c
+[67.162s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/grid_cells__type_support.c
+[67.162s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__rosidl_typesupport_introspection_c.h
+[67.162s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/goals__rosidl_typesupport_introspection_c.h
+[67.163s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/odometry__rosidl_typesupport_introspection_c.h
+[67.163s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__type_support.c
+[67.163s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__rosidl_typesupport_introspection_c.h
+[67.163s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/path__rosidl_typesupport_introspection_c.h
+[67.163s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/trajectory_point__rosidl_typesupport_introspection_c.h
+[67.163s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libnav_msgs__rosidl_typesupport_introspection_c.so
+[67.165s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libnav_msgs__rosidl_typesupport_c.so
+[67.165s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs
+[67.165s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv
+[67.166s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail
+[67.166s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/load_map__type_support.cpp
+[67.166s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/get_map__rosidl_typesupport_introspection_cpp.hpp
+[67.166s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/set_map__type_support.cpp
+[67.166s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/get_plan__rosidl_typesupport_introspection_cpp.hpp
+[67.166s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/get_map__type_support.cpp
+[67.166s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/load_map__rosidl_typesupport_introspection_cpp.hpp
+[67.166s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/get_plan__type_support.cpp
+[67.166s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/srv/detail/set_map__rosidl_typesupport_introspection_cpp.hpp
+[67.166s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg
+[67.166s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail
+[67.166s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/path__type_support.cpp
+[67.166s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__type_support.cpp
+[67.167s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/trajectory__type_support.cpp
+[67.167s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__rosidl_typesupport_introspection_cpp.hpp
+[67.167s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/trajectory__rosidl_typesupport_introspection_cpp.hpp
+[67.167s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/grid_cells__type_support.cpp
+[67.167s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/odometry__rosidl_typesupport_introspection_cpp.hpp
+[67.167s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__rosidl_typesupport_introspection_cpp.hpp
+[67.167s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/goals__rosidl_typesupport_introspection_cpp.hpp
+[67.167s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.cpp
+[67.169s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/trajectory_point__type_support.cpp
+[67.169s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/goals__type_support.cpp
+[67.169s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/path__rosidl_typesupport_introspection_cpp.hpp
+[67.170s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/grid_cells__rosidl_typesupport_introspection_cpp.hpp
+[67.170s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/trajectory_point__rosidl_typesupport_introspection_cpp.hpp
+[67.170s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__type_support.cpp
+[67.170s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libnav_msgs__rosidl_typesupport_introspection_cpp.so
+[67.170s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libnav_msgs__rosidl_typesupport_cpp.so
+[67.170s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/environment/pythonpath.sh
+[67.170s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/environment/pythonpath.dsv
+[67.170s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/nav_msgs_s__rosidl_typesupport_fastrtps_c.so
+[67.170s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/nav_msgs_s__rosidl_typesupport_introspection_c.so
+[67.170s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/nav_msgs_s__rosidl_typesupport_c.so
+[67.170s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libnav_msgs__rosidl_generator_py.so
+[67.173s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/rust_packages/nav_msgs
+[67.173s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/rust
+[67.173s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/rust/Cargo.toml
+[67.173s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/rust/build.rs
+[67.174s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/rust/src
+[67.174s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/rust/src/srv
+[67.174s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/rust/src/srv/rmw.rs
+[67.174s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/rust/src/msg.rs
+[67.174s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/rust/src/msg
+[67.174s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/rust/src/msg/rmw.rs
+[67.174s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/rust/src/lib.rs
+[67.174s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/rust/src/srv.rs
+[67.174s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/msg/Goals.idl
+[67.174s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/msg/GridCells.idl
+[67.174s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/msg/MapMetaData.idl
+[67.175s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/msg/OccupancyGrid.idl
+[67.175s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/msg/Odometry.idl
+[67.175s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/msg/Path.idl
+[67.175s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/msg/Trajectory.idl
+[67.175s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/msg/TrajectoryPoint.idl
+[67.175s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/srv/GetMap.idl
+[67.175s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/srv/GetPlan.idl
+[67.175s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/srv/LoadMap.idl
+[67.175s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/srv/SetMap.idl
+[67.175s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/msg/Goals.msg
+[67.175s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/msg/GridCells.msg
+[67.176s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/msg/MapMetaData.msg
+[67.176s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/msg/OccupancyGrid.msg
+[67.176s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/msg/Odometry.msg
+[67.176s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/msg/Path.msg
+[67.176s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/msg/Trajectory.msg
+[67.176s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/msg/TrajectoryPoint.msg
+[67.176s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/srv/GetMap.srv
+[67.176s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/srv/GetPlan.srv
+[67.176s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/srv/LoadMap.srv
+[67.176s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/srv/SetMap.srv
+[67.176s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/package_run_dependencies/nav_msgs
+[67.176s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/parent_prefix_path/nav_msgs
+[67.176s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/environment/ament_prefix_path.sh
+[67.176s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/environment/ament_prefix_path.dsv
+[67.177s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/environment/path.sh
+[67.177s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/environment/path.dsv
+[67.177s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/local_setup.bash
+[67.177s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/local_setup.fish
+[67.177s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/local_setup.sh
+[67.177s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/local_setup.zsh
+[67.177s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/local_setup.dsv
+[67.177s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/package.dsv
+[67.177s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/packages/nav_msgs
+[67.177s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/cmake/export_nav_msgs__rosidl_generator_cExport.cmake
+[67.179s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/cmake/export_nav_msgs__rosidl_generator_cExport-release.cmake
+[67.179s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/cmake/export_nav_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[67.179s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/cmake/export_nav_msgs__rosidl_typesupport_fastrtps_cExport-release.cmake
+[67.179s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/cmake/export_nav_msgs__rosidl_generator_cppExport.cmake
+[67.180s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/cmake/export_nav_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[67.180s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/cmake/export_nav_msgs__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[67.180s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/cmake/nav_msgs__rosidl_typesupport_introspection_cExport.cmake
+[67.180s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/cmake/nav_msgs__rosidl_typesupport_introspection_cExport-release.cmake
+[67.180s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/cmake/nav_msgs__rosidl_typesupport_cExport.cmake
+[67.180s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/cmake/nav_msgs__rosidl_typesupport_cExport-release.cmake
+[67.180s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/cmake/nav_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[67.180s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/cmake/nav_msgs__rosidl_typesupport_introspection_cppExport-release.cmake
+[67.180s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/cmake/nav_msgs__rosidl_typesupport_cppExport.cmake
+[67.180s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/cmake/nav_msgs__rosidl_typesupport_cppExport-release.cmake
+[67.181s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/cmake/export_nav_msgs__rosidl_generator_pyExport.cmake
+[67.181s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/cmake/export_nav_msgs__rosidl_generator_pyExport-release.cmake
+[67.181s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs-5.9.1-py3.14.egg-info
+[67.181s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs-5.9.1-py3.14.egg-info/dependency_links.txt
+[67.181s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs-5.9.1-py3.14.egg-info/top_level.txt
+[67.181s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs-5.9.1-py3.14.egg-info/PKG-INFO
+[67.183s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs-5.9.1-py3.14.egg-info/SOURCES.txt
+[67.183s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs
+[67.183s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/nav_msgs_s__rosidl_typesupport_c.so
+[67.184s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/_nav_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[67.184s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/__init__.py
+[67.184s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/srv
+[67.184s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/srv/__init__.py
+[67.184s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/srv/_load_map.py
+[67.184s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/srv/_get_map_s.c
+[67.184s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/srv/_load_map_s.c
+[67.184s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/srv/_get_plan_s.c
+[67.184s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/srv/_set_map.py
+[67.184s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/srv/_get_plan.py
+[67.185s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/srv/_set_map_s.c
+[67.185s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/srv/_get_map.py
+[67.185s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/_nav_msgs_s.ep.rosidl_typesupport_c.c
+[67.185s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/_nav_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[67.185s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/msg
+[67.185s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/msg/_odometry_s.c
+[67.185s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/msg/__init__.py
+[67.185s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/msg/_map_meta_data_s.c
+[67.185s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/msg/_path_s.c
+[67.185s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/msg/_map_meta_data.py
+[67.186s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/msg/_path.py
+[67.186s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/msg/_occupancy_grid_s.c
+[67.186s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/msg/_grid_cells_s.c
+[67.186s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/msg/_trajectory.py
+[67.186s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/msg/_goals.py
+[67.186s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/msg/_trajectory_point_s.c
+[67.186s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/msg/_grid_cells.py
+[67.188s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/msg/_odometry.py
+[67.188s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/msg/_goals_s.c
+[67.188s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/msg/_trajectory_s.c
+[67.188s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/msg/_trajectory_point.py
+[67.189s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/msg/_occupancy_grid.py
+[67.189s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/py.typed
+[67.189s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/nav_msgs_s__rosidl_typesupport_introspection_c.so
+[67.189s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/nav_msgs_s__rosidl_typesupport_fastrtps_c.so
+[67.293s] Listing '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs'...
+[67.293s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/__init__.py'...
+[67.293s] Listing '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/msg'...
+[67.294s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/msg/__init__.py'...
+[67.294s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/msg/_goals.py'...
+[67.294s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/msg/_grid_cells.py'...
+[67.294s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/msg/_map_meta_data.py'...
+[67.294s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/msg/_occupancy_grid.py'...
+[67.294s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/msg/_odometry.py'...
+[67.294s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/msg/_path.py'...
+[67.294s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/msg/_trajectory.py'...
+[67.294s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/msg/_trajectory_point.py'...
+[67.294s] Listing '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/srv'...
+[67.294s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/srv/__init__.py'...
+[67.294s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/srv/_get_map.py'...
+[67.294s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/srv/_get_plan.py'...
+[67.294s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/srv/_load_map.py'...
+[67.294s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/nav_msgs/srv/_set_map.py'...
+[67.301s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/cmake/rosidl_cmake-extras.cmake
+[67.301s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[67.302s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[67.302s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[67.303s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[67.303s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[67.303s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[67.303s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[67.304s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/cmake/nav_msgsConfig.cmake
+[67.304s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/cmake/nav_msgsConfig-version.cmake
+[67.305s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/nav_msgs/package.xml
+[67.307s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/nav_msgs' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages ROS_DOMAIN_ID=99 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/nav_msgs

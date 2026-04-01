@@ -1,0 +1,270 @@
+[4.125s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rclpy': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rclpy/rclpy -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[4.188s] Not searching for unused variables given on the command line.
+[4.189s] -- The C compiler identification is GNU 14.3.0
+[4.310s] -- The CXX compiler identification is GNU 14.3.0
+[4.318s] -- Detecting C compiler ABI info
+[4.463s] -- Detecting C compiler ABI info - done
+[4.493s] -- Check for working C compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
+[4.493s] -- Detecting C compile features
+[4.493s] -- Detecting C compile features - done
+[4.509s] -- Detecting CXX compiler ABI info
+[4.679s] -- Detecting CXX compiler ABI info - done
+[4.709s] -- Check for working CXX compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
+[4.710s] -- Detecting CXX compile features
+[4.711s] -- Detecting CXX compile features - done
+[4.725s] -- Found ament_cmake: 2.8.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake/cmake)
+[4.941s] -- Found lifecycle_msgs: 2.4.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/lifecycle_msgs/cmake)
+[4.979s] -- Found rosidl_generator_c: 5.1.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_c/cmake)
+[4.987s] -- Found rosidl_generator_cpp: 5.1.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_cpp/cmake)
+[5.003s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.020s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.099s] -- Found rcl: 10.4.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/cmake)
+[5.146s] -- Found rmw_implementation_cmake: 7.9.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation_cmake/cmake)
+[5.150s] -- Found rmw_fastrtps_cpp: 9.4.5 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_fastrtps_cpp/cmake)
+[5.193s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.227s] -- Found rcl_action: 10.4.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_action/cmake)
+[5.280s] -- Found rcl_lifecycle: 10.4.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_lifecycle/cmake)
+[5.471s] -- Found Python3: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/python3 (found version "3.14.3") found components: Interpreter Development Development.Module Development.Embed
+[5.507s] -- Performing Test HAS_FLTO_AUTO
+[5.730s] -- Performing Test HAS_FLTO_AUTO - Success
+[5.730s] -- Found pybind11: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include (found version "3.0.2")
+[5.855s] -- Found ament_lint_auto: 0.20.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_lint_auto/cmake)
+[6.018s] -- Found gtest sources under '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[6.022s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[6.169s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[6.169s] -- Check if compiler accepts -pthread
+[6.313s] -- Check if compiler accepts -pthread - yes
+[6.314s] -- Found Threads: TRUE
+[14.967s] -- Added test 'copyright' to check source files copyright and LICENSE
+[14.978s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[14.980s] -- Configured cpplint exclude dirs and/or files: 
+[14.981s] -- Added test 'flake8' to check Python code syntax and style conventions
+[14.981s] -- Configured 'flake8' exclude dirs and/or files: 
+[14.984s] -- Added test 'lint_cmake' to check CMake code style
+[14.989s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[14.997s] -- Added test 'uncrustify' to check C / C++ code style
+[14.997s] -- Configured uncrustify additional arguments: 
+[15.000s] -- Added test 'xmllint' to check XML markup files
+[15.002s] -- Configuring done (10.9s)
+[15.041s] -- Generating done (0.0s)
+[15.082s] -- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rclpy
+[15.096s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rclpy' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rclpy/rclpy -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[15.097s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rclpy': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rclpy -- -j4 -l4
+[15.606s] [1/46] Building CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[15.927s] [2/46] Building CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[16.660s] [3/46] Building CXX object CMakeFiles/_rclpy_pybind11.dir/src/rclpy/_rclpy_logging.cpp.o
+[17.426s] [4/46] Building CXX object CMakeFiles/_rclpy_pybind11.dir/src/rclpy/_rclpy_pybind11.cpp.o
+[18.198s] [5/46] Building CXX object CMakeFiles/_rclpy_pybind11.dir/src/rclpy/action_client.cpp.o
+[18.975s] [6/46] Building CXX object CMakeFiles/_rclpy_pybind11.dir/src/rclpy/action_goal_handle.cpp.o
+[19.835s] [7/46] Building CXX object CMakeFiles/_rclpy_pybind11.dir/src/rclpy/action_server.cpp.o
+[20.516s] [8/46] Building CXX object CMakeFiles/_rclpy_pybind11.dir/src/rclpy/client.cpp.o
+[21.215s] [9/46] Building CXX object CMakeFiles/_rclpy_pybind11.dir/src/rclpy/clock.cpp.o
+[21.836s] [10/46] Building CXX object CMakeFiles/_rclpy_pybind11.dir/src/rclpy/context.cpp.o
+[22.462s] [11/46] Building CXX object CMakeFiles/_rclpy_pybind11.dir/src/rclpy/destroyable.cpp.o
+[23.168s] [12/46] Building CXX object CMakeFiles/_rclpy_pybind11.dir/src/rclpy/duration.cpp.o
+[23.898s] [13/46] Building CXX object CMakeFiles/_rclpy_pybind11.dir/src/rclpy/clock_event.cpp.o
+[24.150s] [14/46] Building CXX object CMakeFiles/_rclpy_pybind11.dir/src/rclpy/events_executor/delayed_event_thread.cpp.o
+[24.903s] [15/46] Building CXX object CMakeFiles/_rclpy_pybind11.dir/src/rclpy/events_executor/events_executor.cpp.o
+[25.262s] [16/46] Building CXX object CMakeFiles/_rclpy_pybind11.dir/src/rclpy/events_executor/events_queue.cpp.o
+[25.879s] [17/46] Building CXX object CMakeFiles/_rclpy_pybind11.dir/src/rclpy/events_executor/rcl_support.cpp.o
+[26.747s] [18/46] Building CXX object CMakeFiles/_rclpy_pybind11.dir/src/rclpy/events_executor/timers_manager.cpp.o
+[26.986s] [19/46] Building CXX object CMakeFiles/_rclpy_pybind11.dir/src/rclpy/exceptions.cpp.o
+[27.695s] [20/46] Building CXX object CMakeFiles/_rclpy_pybind11.dir/src/rclpy/graph.cpp.o
+[28.305s] [21/46] Building CXX object CMakeFiles/_rclpy_pybind11.dir/src/rclpy/guard_condition.cpp.o
+[29.114s] [22/46] Building CXX object CMakeFiles/_rclpy_pybind11.dir/src/rclpy/lifecycle.cpp.o
+[29.719s] [23/46] Building CXX object CMakeFiles/_rclpy_pybind11.dir/src/rclpy/logging.cpp.o
+[30.533s] [24/46] Building CXX object CMakeFiles/_rclpy_pybind11.dir/src/rclpy/names.cpp.o
+[31.294s] [25/46] Building CXX object CMakeFiles/_rclpy_pybind11.dir/src/rclpy/node.cpp.o
+[32.079s] [26/46] Building CXX object CMakeFiles/_rclpy_pybind11.dir/src/rclpy/publisher.cpp.o
+[32.832s] [27/46] Building CXX object CMakeFiles/_rclpy_pybind11.dir/src/rclpy/qos.cpp.o
+[33.500s] [28/46] Building CXX object CMakeFiles/_rclpy_pybind11.dir/src/rclpy/event_handle.cpp.o
+[34.101s] [29/46] Building CXX object CMakeFiles/_rclpy_pybind11.dir/src/rclpy/serialization.cpp.o
+[34.728s] [30/46] Building CXX object CMakeFiles/_rclpy_pybind11.dir/src/rclpy/service.cpp.o
+[35.347s] [31/46] Building CXX object CMakeFiles/_rclpy_pybind11.dir/src/rclpy/service_info.cpp.o
+[35.941s] [32/46] Building CXX object CMakeFiles/_rclpy_pybind11.dir/src/rclpy/service_introspection.cpp.o
+[36.791s] [33/46] Building CXX object CMakeFiles/_rclpy_pybind11.dir/src/rclpy/signal_handler.cpp.o
+[37.483s] [34/46] Building CXX object CMakeFiles/_rclpy_pybind11.dir/src/rclpy/subscription.cpp.o
+[38.243s] [35/46] Building CXX object CMakeFiles/_rclpy_pybind11.dir/src/rclpy/time_point.cpp.o
+[39.032s] [36/46] Building CXX object CMakeFiles/_rclpy_pybind11.dir/src/rclpy/timer.cpp.o
+[39.692s] [37/46] Building CXX object CMakeFiles/_rclpy_pybind11.dir/src/rclpy/type_description_service.cpp.o
+[40.460s] [38/46] Building CXX object CMakeFiles/_rclpy_pybind11.dir/src/rclpy/utils.cpp.o
+[41.167s] [39/46] Building CXX object CMakeFiles/_rclpy_pybind11.dir/src/rclpy/wait_set.cpp.o
+[41.622s] [40/46] Building CXX object CMakeFiles/test_python_allocator.dir/test/test_python_allocator.cpp.o
+[41.631s] [41/46] cd /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rclpy && /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake -E copy_directory /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rclpy/rclpy/rclpy /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rclpy/ament_cmake_python/rclpy/rclpy
+[41.645s] [42/46] Linking CXX static library gtest/libgtest.a
+[41.653s] [43/46] Linking CXX static library gtest/libgtest_main.a
+[59.345s] [44/46] Linking CXX shared module test_rclpy/_rclpy_pybind11.cpython-314-x86_64-linux-gnu.so
+[59.406s] [45/46] Linking CXX executable test_python_allocator
+[59.640s] [46/46] cd /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rclpy/ament_cmake_python/rclpy && /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/python3 setup.py egg_info
+[59.640s] running egg_info
+[59.641s] creating rclpy.egg-info
+[59.641s] writing rclpy.egg-info/PKG-INFO
+[59.641s] writing dependency_links to rclpy.egg-info/dependency_links.txt
+[59.641s] writing top-level names to rclpy.egg-info/top_level.txt
+[59.641s] writing manifest file 'rclpy.egg-info/SOURCES.txt'
+[59.641s] reading manifest file 'rclpy.egg-info/SOURCES.txt'
+[59.641s] writing manifest file 'rclpy.egg-info/SOURCES.txt'
+[59.643s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rclpy' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages ROS_DOMAIN_ID=71 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rclpy -- -j4 -l4
+[59.646s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rclpy': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages ROS_DOMAIN_ID=71 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rclpy
+[59.653s] -- Install configuration: "Release"
+[59.653s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclpy/environment/pythonpath.sh
+[59.654s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclpy/environment/pythonpath.dsv
+[59.654s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/_rclpy_pybind11.cpython-314-x86_64-linux-gnu.so
+[59.654s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclpy/environment/library_path.sh
+[59.655s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclpy/environment/library_path.dsv
+[59.655s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/package_run_dependencies/rclpy
+[59.655s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/parent_prefix_path/rclpy
+[59.655s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclpy/environment/ament_prefix_path.sh
+[59.656s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclpy/environment/ament_prefix_path.dsv
+[59.656s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclpy/environment/path.sh
+[59.656s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclpy/environment/path.dsv
+[59.656s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclpy/local_setup.bash
+[59.656s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclpy/local_setup.fish
+[59.656s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclpy/local_setup.sh
+[59.657s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclpy/local_setup.zsh
+[59.657s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclpy/local_setup.dsv
+[59.657s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclpy/package.dsv
+[59.657s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/packages/rclpy
+[59.657s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy-10.0.7-py3.14.egg-info
+[59.658s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy-10.0.7-py3.14.egg-info/dependency_links.txt
+[59.658s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy-10.0.7-py3.14.egg-info/top_level.txt
+[59.658s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy-10.0.7-py3.14.egg-info/PKG-INFO
+[59.658s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy-10.0.7-py3.14.egg-info/SOURCES.txt
+[59.658s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy
+[59.659s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/time_source.py
+[59.660s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/action
+[59.660s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/action/__init__.py
+[59.660s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/action/graph.py
+[59.660s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/action/client.py
+[59.660s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/action/server.py
+[59.660s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/__init__.py
+[59.660s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/validate_full_topic_name.py
+[59.660s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/constants.py
+[59.661s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/service_introspection.py
+[59.661s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/endpoint_info.py
+[59.661s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/publisher.py
+[59.661s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/validate_node_name.py
+[59.661s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/exceptions.py
+[59.661s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/utilities.py
+[59.661s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/qos_overriding_options.py
+[59.661s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/guard_condition.py
+[59.662s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/type_support.py
+[59.662s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/executors.py
+[59.662s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/py.typed
+[59.662s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/subscription.py
+[59.662s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/topic_or_service_is_hidden.py
+[59.662s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/expand_topic_name.py
+[59.662s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/time.py
+[59.662s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/logging.py
+[59.662s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/serialization.py
+[59.662s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/event_handler.py
+[59.663s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/wait_for_message.py
+[59.663s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/clock.py
+[59.663s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/impl
+[59.663s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/impl/__init__.py
+[59.663s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/impl/implementation_singleton.pyi
+[59.663s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/impl/logging_severity.py
+[59.663s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/impl/implementation_singleton.py
+[59.663s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/impl/rcutils_logger.py
+[59.663s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/impl/service_introspection.pyi
+[59.664s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/impl/_rclpy_pybind11.pyi
+[59.664s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/client.py
+[59.664s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/signals.py
+[59.664s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/callback_groups.py
+[59.664s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/logging_service.py
+[59.664s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/node.py
+[59.664s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/type_hash.py
+[59.664s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/parameter_event_handler.py
+[59.664s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/waitable.py
+[59.664s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/context.py
+[59.664s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/subscription_content_filter_options.py
+[59.665s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/duration.py
+[59.665s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/type_description_service.py
+[59.665s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/parameter.py
+[59.665s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/clock_type.py
+[59.665s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/task.py
+[59.665s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/validate_namespace.py
+[59.665s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/experimental
+[59.666s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/experimental/__init__.py
+[59.666s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/experimental/events_executor.py
+[59.666s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/parameter_client.py
+[59.666s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/service.py
+[59.666s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/lifecycle
+[59.666s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/lifecycle/__init__.py
+[59.666s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/lifecycle/publisher.py
+[59.666s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/lifecycle/managed_entity.py
+[59.666s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/lifecycle/node.py
+[59.666s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/validate_topic_name.py
+[59.666s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/parameter_service.py
+[59.666s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/validate_parameter_name.py
+[59.667s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/timer.py
+[59.667s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/qos.py
+[59.848s] Listing '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy'...
+[59.848s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/__init__.py'...
+[59.848s] Listing '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/action'...
+[59.849s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/action/__init__.py'...
+[59.849s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/action/client.py'...
+[59.849s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/action/graph.py'...
+[59.849s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/action/server.py'...
+[59.849s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/callback_groups.py'...
+[59.849s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/client.py'...
+[59.849s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/clock.py'...
+[59.849s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/clock_type.py'...
+[59.849s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/constants.py'...
+[59.849s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/context.py'...
+[59.849s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/duration.py'...
+[59.849s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/endpoint_info.py'...
+[59.849s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/event_handler.py'...
+[59.849s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/exceptions.py'...
+[59.849s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/executors.py'...
+[59.850s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/expand_topic_name.py'...
+[59.850s] Listing '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/experimental'...
+[59.850s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/experimental/__init__.py'...
+[59.850s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/experimental/events_executor.py'...
+[59.850s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/guard_condition.py'...
+[59.850s] Listing '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/impl'...
+[59.850s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/impl/__init__.py'...
+[59.850s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/impl/implementation_singleton.py'...
+[59.850s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/impl/logging_severity.py'...
+[59.850s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/impl/rcutils_logger.py'...
+[59.850s] Listing '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/lifecycle'...
+[59.850s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/lifecycle/__init__.py'...
+[59.850s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/lifecycle/managed_entity.py'...
+[59.850s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/lifecycle/node.py'...
+[59.850s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/lifecycle/publisher.py'...
+[59.850s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/logging.py'...
+[59.851s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/logging_service.py'...
+[59.851s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/node.py'...
+[59.851s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/parameter.py'...
+[59.851s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/parameter_client.py'...
+[59.851s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/parameter_event_handler.py'...
+[59.851s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/parameter_service.py'...
+[59.851s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/publisher.py'...
+[59.851s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/qos.py'...
+[59.851s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/qos_overriding_options.py'...
+[59.851s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/serialization.py'...
+[59.854s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/service.py'...
+[59.854s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/service_introspection.py'...
+[59.854s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/signals.py'...
+[59.854s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/subscription.py'...
+[59.855s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/subscription_content_filter_options.py'...
+[59.855s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/task.py'...
+[59.855s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/time.py'...
+[59.855s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/time_source.py'...
+[59.855s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/timer.py'...
+[59.855s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/topic_or_service_is_hidden.py'...
+[59.855s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/type_description_service.py'...
+[59.855s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/type_hash.py'...
+[59.855s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/type_support.py'...
+[59.855s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/utilities.py'...
+[59.855s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/validate_full_topic_name.py'...
+[59.855s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/validate_namespace.py'...
+[59.855s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/validate_node_name.py'...
+[59.855s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/validate_parameter_name.py'...
+[59.855s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/validate_topic_name.py'...
+[59.856s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/wait_for_message.py'...
+[59.856s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/rclpy/waitable.py'...
+[59.863s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclpy/cmake/rclpyConfig.cmake
+[59.863s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclpy/cmake/rclpyConfig-version.cmake
+[59.863s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclpy/package.xml
+[59.864s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rclpy' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages ROS_DOMAIN_ID=71 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rclpy

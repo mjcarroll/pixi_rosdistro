@@ -69,7 +69,7 @@ COLCON_DEFAULTS_FILE      = "$PIXI_PROJECT_ROOT/colcon_defaults_linux.yaml"
 [tasks]
 graph = "colcon graph"
 list  = "colcon list"
-patch = { cmd = "python patches/patch_ogre.py && python patches/patch_gazebo.py && python patches/patch_rcl.py", depends-on = ["fetch"] }
+patch = { cmd = "python patches/patch_ogre.py && python patches/patch_gazebo.py && python patches/patch_rcl.py && python patches/patch_class_loader.py", depends-on = ["fetch"] }
 build = { cmd = "colcon build", depends-on = ["patch"] }
 test  = "colcon test"
 fetch = "mkdir -p src && vcs import --recursive src < ros2.repos"
@@ -130,6 +130,9 @@ freeimage          = "*"
 zziplib            = "*"
 zlib               = "*"
 
+[feature.runtime.target.osx-arm64.dependencies]
+qt-main = "*"
+
 # ==============================================================================
 # Platform-specific runtime deps
 # ==============================================================================
@@ -154,6 +157,7 @@ xorg-libsm      = "*"
 cli11           = "*"
 libxml2         = "*"
 bzip2           = "*"
+qt-main         = "*"
 
 # ==============================================================================
 # BUILD FEATURE

@@ -1,0 +1,224 @@
+[8.407s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_storage_sqlite3': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages ROS_DOMAIN_ID=27 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rosbag2/rosbag2_storage_sqlite3 -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[8.560s] Not searching for unused variables given on the command line.
+[8.560s] -- The C compiler identification is GNU 14.3.0
+[8.806s] -- The CXX compiler identification is GNU 14.3.0
+[8.828s] -- Detecting C compiler ABI info
+[9.505s] -- Detecting C compiler ABI info - done
+[9.573s] -- Check for working C compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
+[9.574s] -- Detecting C compile features
+[9.574s] -- Detecting C compile features - done
+[9.607s] -- Detecting CXX compiler ABI info
+[10.184s] -- Detecting CXX compiler ABI info - done
+[10.257s] -- Check for working CXX compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
+[10.257s] -- Detecting CXX compile features
+[10.262s] -- Detecting CXX compile features - done
+[10.286s] -- Found ament_cmake: 2.8.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake/cmake)
+[10.750s] -- Found pluginlib: 5.8.4 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/pluginlib/cmake)
+[10.802s] -- Found rosbag2_storage: 0.33.0 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage/cmake)
+[10.871s] -- Found rosidl_generator_c: 5.1.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_c/cmake)
+[10.891s] -- Found rosidl_generator_cpp: 5.1.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_cpp/cmake)
+[10.926s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[10.955s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[11.093s] -- Found rmw_implementation_cmake: 7.9.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation_cmake/cmake)
+[11.100s] -- Found rmw_fastrtps_cpp: 9.4.5 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_fastrtps_cpp/cmake)
+[11.148s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[12.119s] -- Found SQLite3: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/libsqlite3.so (found version "3.52.0")
+[12.124s] -- Found yaml-cpp: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/cmake/yaml-cpp/yaml-cpp-config.cmake (found version "0.8.0")
+[12.315s] -- Found ament_cmake_gmock: 2.8.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_gmock/cmake)
+[12.318s] -- Found ament_lint_auto: 0.20.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_lint_auto/cmake)
+[12.320s] -- Found rosbag2_test_common: 0.33.0 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_test_common/cmake)
+[12.441s] -- Found std_msgs: 5.9.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/std_msgs/cmake)
+[12.616s] -- Found gmock sources under '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[12.622s] -- Found ament_cmake_gtest: 2.8.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_gtest/cmake)
+[12.623s] -- Found gtest sources under '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[12.634s] -- Added test 'copyright' to check source files copyright and LICENSE
+[12.637s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[12.637s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rosbag2/rosbag2_storage_sqlite3/include>
+[12.637s] -- Configured cppcheck exclude dirs and/or files: 
+[12.640s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[12.640s] -- Configured cpplint exclude dirs and/or files: 
+[12.641s] -- Added test 'flake8' to check Python code syntax and style conventions
+[12.641s] -- Configured 'flake8' exclude dirs and/or files: 
+[12.642s] -- Added test 'lint_cmake' to check CMake code style
+[12.643s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[12.645s] -- Added test 'uncrustify' to check C / C++ code style
+[12.645s] -- Configured uncrustify additional arguments: 
+[12.646s] -- Added test 'xmllint' to check XML markup files
+[12.649s] -- Configuring done (4.2s)
+[12.656s] CMake Warning (dev) at CMakeLists.txt:40 (target_link_libraries):
+[12.656s]   The library that is being linked to, SQLite::SQLite3, is marked as being
+[12.656s]   deprecated by the owner.  The message provided by the developer is:
+[12.656s] 
+[12.656s]   The target name SQLite::SQLite3 is deprecated.  Please use SQLite3::SQLite3
+[12.656s]   instead.
+[12.656s] 
+[12.656s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[12.656s] 
+[12.656s] CMake Warning (dev) at CMakeLists.txt:40 (target_link_libraries):
+[12.656s]   The library that is being linked to, SQLite::SQLite3, is marked as being
+[12.656s]   deprecated by the owner.  The message provided by the developer is:
+[12.656s] 
+[12.656s]   The target name SQLite::SQLite3 is deprecated.  Please use SQLite3::SQLite3
+[12.657s]   instead.
+[12.657s] 
+[12.657s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[12.657s] 
+[12.657s] CMake Warning (dev) at CMakeLists.txt:40 (target_link_libraries):
+[12.657s]   The library that is being linked to, SQLite::SQLite3, is marked as being
+[12.657s]   deprecated by the owner.  The message provided by the developer is:
+[12.657s] 
+[12.657s]   The target name SQLite::SQLite3 is deprecated.  Please use SQLite3::SQLite3
+[12.657s]   instead.
+[12.657s] 
+[12.657s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[12.657s] 
+[12.660s] CMake Warning (dev) at CMakeLists.txt:40 (target_link_libraries):
+[12.660s]   The library that is being linked to, SQLite::SQLite3, is marked as being
+[12.660s]   deprecated by the owner.  The message provided by the developer is:
+[12.660s] 
+[12.660s]   The target name SQLite::SQLite3 is deprecated.  Please use SQLite3::SQLite3
+[12.660s]   instead.
+[12.660s] 
+[12.660s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[12.660s] 
+[12.660s] CMake Warning (dev) at CMakeLists.txt:40 (target_link_libraries):
+[12.660s]   The library that is being linked to, SQLite::SQLite3, is marked as being
+[12.661s]   deprecated by the owner.  The message provided by the developer is:
+[12.661s] 
+[12.661s]   The target name SQLite::SQLite3 is deprecated.  Please use SQLite3::SQLite3
+[12.661s]   instead.
+[12.661s] 
+[12.661s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[12.661s] 
+[12.661s] CMake Warning (dev) at CMakeLists.txt:40 (target_link_libraries):
+[12.661s]   The library that is being linked to, SQLite::SQLite3, is marked as being
+[12.661s]   deprecated by the owner.  The message provided by the developer is:
+[12.661s] 
+[12.661s]   The target name SQLite::SQLite3 is deprecated.  Please use SQLite3::SQLite3
+[12.661s]   instead.
+[12.662s] 
+[12.662s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[12.662s] 
+[12.662s] CMake Warning (dev) at CMakeLists.txt:40 (target_link_libraries):
+[12.662s]   The library that is being linked to, SQLite::SQLite3, is marked as being
+[12.662s]   deprecated by the owner.  The message provided by the developer is:
+[12.662s] 
+[12.662s]   The target name SQLite::SQLite3 is deprecated.  Please use SQLite3::SQLite3
+[12.662s]   instead.
+[12.662s] 
+[12.662s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[12.662s] 
+[12.662s] CMake Warning (dev) at CMakeLists.txt:40 (target_link_libraries):
+[12.662s]   The library that is being linked to, SQLite::SQLite3, is marked as being
+[12.662s]   deprecated by the owner.  The message provided by the developer is:
+[12.662s] 
+[12.663s]   The target name SQLite::SQLite3 is deprecated.  Please use SQLite3::SQLite3
+[12.663s]   instead.
+[12.663s] 
+[12.663s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[12.663s] 
+[12.663s] CMake Warning (dev) at CMakeLists.txt:40 (target_link_libraries):
+[12.663s]   The library that is being linked to, SQLite::SQLite3, is marked as being
+[12.663s]   deprecated by the owner.  The message provided by the developer is:
+[12.663s] 
+[12.663s]   The target name SQLite::SQLite3 is deprecated.  Please use SQLite3::SQLite3
+[12.663s]   instead.
+[12.663s] 
+[12.663s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[12.663s] 
+[12.663s] CMake Warning (dev) at CMakeLists.txt:40 (target_link_libraries):
+[12.663s]   The library that is being linked to, SQLite::SQLite3, is marked as being
+[12.663s]   deprecated by the owner.  The message provided by the developer is:
+[12.664s] 
+[12.664s]   The target name SQLite::SQLite3 is deprecated.  Please use SQLite3::SQLite3
+[12.664s]   instead.
+[12.664s] 
+[12.665s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[12.665s] 
+[12.665s] CMake Warning (dev) at CMakeLists.txt:40 (target_link_libraries):
+[12.665s]   The library that is being linked to, SQLite::SQLite3, is marked as being
+[12.665s]   deprecated by the owner.  The message provided by the developer is:
+[12.665s] 
+[12.665s]   The target name SQLite::SQLite3 is deprecated.  Please use SQLite3::SQLite3
+[12.665s]   instead.
+[12.665s] 
+[12.665s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[12.665s] 
+[12.705s] -- Generating done (0.1s)
+[12.763s] -- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_storage_sqlite3
+[12.779s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_storage_sqlite3' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages ROS_DOMAIN_ID=27 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rosbag2/rosbag2_storage_sqlite3 -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[12.780s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_storage_sqlite3': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages ROS_DOMAIN_ID=27 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_storage_sqlite3 -- -j4 -l4
+[21.495s] [1/17] Building CXX object CMakeFiles/rosbag2_storage_sqlite3.dir/src/rosbag2_storage_sqlite3/sqlite_wrapper.cpp.o
+[47.851s] [2/17] Building CXX object CMakeFiles/rosbag2_storage_sqlite3.dir/src/rosbag2_storage_sqlite3/sqlite_storage.cpp.o
+[50.194s] [3/17] Building CXX object CMakeFiles/rosbag2_storage_sqlite3.dir/src/rosbag2_storage_sqlite3/sqlite_statement_wrapper.cpp.o
+[50.830s] [4/17] Building CXX object gmock/CMakeFiles/gmock.dir/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor/src/gtest-all.cc.o
+[51.449s] [5/17] Building CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
+[51.939s] [6/17] Building CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
+[52.190s] [7/17] Linking CXX shared library librosbag2_storage_sqlite3.so
+[64.175s] [8/17] Building CXX object CMakeFiles/test_sqlite_wrapper.dir/test/rosbag2_storage_sqlite3/test_sqlite_wrapper.cpp.o
+[77.786s] [9/17] Building CXX object CMakeFiles/test_sqlite_storage.dir/test/rosbag2_storage_sqlite3/test_sqlite_storage.cpp.o
+[86.792s] [10/17] Building CXX object CMakeFiles/test_sqlite_topic_filter.dir/test/rosbag2_storage_sqlite3/test_sqlite_topic_filter.cpp.o
+[86.802s] [11/17] cd /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_storage_sqlite3 && /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake -E copy_directory /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rosbag2/rosbag2_storage_sqlite3/ros2bag_sqlite3_cli /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_storage_sqlite3/ament_cmake_python/ros2bag_sqlite3_cli/ros2bag_sqlite3_cli && /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake -E copy_if_different /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rosbag2/rosbag2_storage_sqlite3/setup.cfg /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_storage_sqlite3/ament_cmake_python/ros2bag_sqlite3_cli/setup.cfg
+[86.827s] [12/17] Linking CXX static library gmock/libgmock.a
+[86.842s] [13/17] Linking CXX static library gmock/libgmock_main.a
+[87.035s] [14/17] Linking CXX executable test_sqlite_wrapper
+[87.227s] [15/17] Linking CXX executable test_sqlite_storage
+[87.404s] [16/17] Linking CXX executable test_sqlite_topic_filter
+[87.735s] [17/17] cd /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_storage_sqlite3/ament_cmake_python/ros2bag_sqlite3_cli && /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/python3 setup.py egg_info
+[87.735s] running egg_info
+[87.735s] creating ros2bag_sqlite3_cli.egg-info
+[87.735s] writing ros2bag_sqlite3_cli.egg-info/PKG-INFO
+[87.735s] writing dependency_links to ros2bag_sqlite3_cli.egg-info/dependency_links.txt
+[87.735s] writing entry points to ros2bag_sqlite3_cli.egg-info/entry_points.txt
+[87.735s] writing top-level names to ros2bag_sqlite3_cli.egg-info/top_level.txt
+[87.736s] writing manifest file 'ros2bag_sqlite3_cli.egg-info/SOURCES.txt'
+[87.736s] reading manifest file 'ros2bag_sqlite3_cli.egg-info/SOURCES.txt'
+[87.736s] writing manifest file 'ros2bag_sqlite3_cli.egg-info/SOURCES.txt'
+[87.741s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_storage_sqlite3' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages ROS_DOMAIN_ID=27 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_storage_sqlite3 -- -j4 -l4
+[87.742s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_storage_sqlite3': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages ROS_DOMAIN_ID=27 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_storage_sqlite3
+[87.748s] -- Install configuration: "Release"
+[87.748s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_sqlite3/environment/pythonpath.sh
+[87.749s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_sqlite3/environment/pythonpath.dsv
+[87.749s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_sqlite3/plugin_description.xml
+[87.749s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_storage_sqlite3
+[87.749s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_storage_sqlite3/rosbag2_storage_sqlite3
+[87.749s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_storage_sqlite3/rosbag2_storage_sqlite3/visibility_control.hpp
+[87.750s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_storage_sqlite3/rosbag2_storage_sqlite3/sqlite_statement_wrapper.hpp
+[87.750s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_storage_sqlite3/rosbag2_storage_sqlite3/sqlite_wrapper.hpp
+[87.750s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_storage_sqlite3/rosbag2_storage_sqlite3/sqlite_pragmas.hpp
+[87.751s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_storage_sqlite3/rosbag2_storage_sqlite3/sqlite_exception.hpp
+[87.751s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_storage_sqlite3/rosbag2_storage_sqlite3/sqlite_storage.hpp
+[87.753s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/librosbag2_storage_sqlite3.so
+[87.753s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_sqlite3/environment/library_path.sh
+[87.753s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_sqlite3/environment/library_path.dsv
+[87.753s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/package_run_dependencies/rosbag2_storage_sqlite3
+[87.753s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/parent_prefix_path/rosbag2_storage_sqlite3
+[87.753s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_sqlite3/environment/ament_prefix_path.sh
+[87.753s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_sqlite3/environment/ament_prefix_path.dsv
+[87.754s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_sqlite3/environment/path.sh
+[87.754s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_sqlite3/environment/path.dsv
+[87.754s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_sqlite3/local_setup.bash
+[87.755s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_sqlite3/local_setup.fish
+[87.755s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_sqlite3/local_setup.sh
+[87.756s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_sqlite3/local_setup.zsh
+[87.756s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_sqlite3/local_setup.dsv
+[87.758s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_sqlite3/package.dsv
+[87.758s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/packages/rosbag2_storage_sqlite3
+[87.758s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/rosbag2_storage__pluginlib__plugin/rosbag2_storage_sqlite3
+[87.758s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/ros2bag_sqlite3_cli-0.33.0-py3.14.egg-info
+[87.758s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/ros2bag_sqlite3_cli-0.33.0-py3.14.egg-info/entry_points.txt
+[87.758s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/ros2bag_sqlite3_cli-0.33.0-py3.14.egg-info/dependency_links.txt
+[87.758s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/ros2bag_sqlite3_cli-0.33.0-py3.14.egg-info/top_level.txt
+[87.759s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/ros2bag_sqlite3_cli-0.33.0-py3.14.egg-info/PKG-INFO
+[87.759s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/ros2bag_sqlite3_cli-0.33.0-py3.14.egg-info/SOURCES.txt
+[87.759s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/ros2bag_sqlite3_cli
+[87.759s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/ros2bag_sqlite3_cli/__init__.py
+[87.823s] Listing '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/ros2bag_sqlite3_cli'...
+[87.823s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages/ros2bag_sqlite3_cli/__init__.py'...
+[87.834s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_sqlite3/cmake/ament_cmake_export_include_directories-extras.cmake
+[87.834s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_sqlite3/cmake/ament_cmake_export_libraries-extras.cmake
+[87.835s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_sqlite3/cmake/ament_cmake_export_dependencies-extras.cmake
+[87.837s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_sqlite3/cmake/rosbag2_storage_sqlite3Config.cmake
+[87.837s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_sqlite3/cmake/rosbag2_storage_sqlite3Config-version.cmake
+[87.837s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_sqlite3/package.xml
+[87.838s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_storage_sqlite3' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages ROS_DOMAIN_ID=27 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_storage_sqlite3
