@@ -1,0 +1,116 @@
+[4.691s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/laser_geometry': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros-perception/laser_geometry -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[4.762s] Not searching for unused variables given on the command line.
+[4.762s] -- The C compiler identification is GNU 14.3.0
+[4.867s] -- The CXX compiler identification is GNU 14.3.0
+[4.874s] -- Detecting C compiler ABI info
+[4.996s] -- Detecting C compiler ABI info - done
+[5.024s] -- Check for working C compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
+[5.026s] -- Detecting C compile features
+[5.026s] -- Detecting C compile features - done
+[5.042s] -- Detecting CXX compiler ABI info
+[5.226s] -- Detecting CXX compiler ABI info - done
+[5.258s] -- Check for working CXX compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
+[5.258s] -- Detecting CXX compile features
+[5.258s] -- Detecting CXX compile features - done
+[5.269s] -- Found ament_cmake: 2.8.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake/cmake)
+[5.541s] -- Found rclcpp: 31.0.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclcpp/cmake)
+[5.575s] -- Found rosidl_generator_c: 5.1.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_c/cmake)
+[5.588s] -- Found rosidl_generator_cpp: 5.1.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_cpp/cmake)
+[5.602s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.620s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.731s] -- Found rmw_implementation_cmake: 7.9.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation_cmake/cmake)
+[5.733s] -- Found rmw_fastrtps_cpp: 9.4.5 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_fastrtps_cpp/cmake)
+[5.779s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.889s] -- Found sensor_msgs: 5.9.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/sensor_msgs/cmake)
+[5.993s] -- Found tf2: 0.45.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2/cmake)
+[5.998s] -- Found eigen3_cmake_module: 0.5.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/eigen3_cmake_module/cmake)
+[6.004s] -- Found Eigen3: TRUE (found version "5.0.1")
+[6.162s] -- Found ament_lint_auto: 0.20.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_lint_auto/cmake)
+[6.318s] -- Found gtest sources under '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[6.321s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[6.482s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[6.483s] -- Check if compiler accepts -pthread
+[6.645s] -- Check if compiler accepts -pthread - yes
+[6.646s] -- Found Threads: TRUE
+[6.851s] -- Added test 'copyright' to check source files copyright and LICENSE
+[6.854s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[6.854s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros-perception/laser_geometry/include>
+[6.857s] -- Configured cppcheck exclude dirs and/or files: 
+[6.859s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[6.859s] -- Configured cpplint exclude dirs and/or files: 
+[6.861s] -- Added test 'flake8' to check Python code syntax and style conventions
+[6.861s] -- Configured 'flake8' exclude dirs and/or files: 
+[6.863s] -- Added test 'lint_cmake' to check CMake code style
+[6.864s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[6.869s] -- Added test 'uncrustify' to check C / C++ code style
+[6.872s] -- Configured uncrustify additional arguments: 
+[6.872s] -- Added test 'xmllint' to check XML markup files
+[6.874s] -- Configuring done (2.2s)
+[6.913s] -- Generating done (0.0s)
+[6.961s] -- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/laser_geometry
+[6.975s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/laser_geometry' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros-perception/laser_geometry -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[6.976s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/laser_geometry': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/laser_geometry -- -j4 -l4
+[10.738s] [1/10] Building CXX object CMakeFiles/laser_geometry.dir/src/laser_geometry.cpp.o
+[11.300s] [2/10] Building CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[11.633s] [3/10] Building CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[11.713s] [4/10] Linking CXX shared library liblaser_geometry.so
+[19.982s] [5/10] Building CXX object CMakeFiles/projection_test.dir/test/projection_test.cpp.o
+[19.990s] [6/10] cd /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/laser_geometry && /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake -E copy_directory /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros-perception/laser_geometry/src/laser_geometry /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/laser_geometry/ament_cmake_python/laser_geometry/laser_geometry
+[20.009s] [7/10] Linking CXX static library gtest/libgtest.a
+[20.019s] [8/10] Linking CXX static library gtest/libgtest_main.a
+[20.147s] [9/10] Linking CXX executable projection_test
+[20.384s] [10/10] cd /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/laser_geometry/ament_cmake_python/laser_geometry && /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/python3 setup.py egg_info
+[20.384s] running egg_info
+[20.384s] creating laser_geometry.egg-info
+[20.384s] writing laser_geometry.egg-info/PKG-INFO
+[20.384s] writing dependency_links to laser_geometry.egg-info/dependency_links.txt
+[20.385s] writing top-level names to laser_geometry.egg-info/top_level.txt
+[20.385s] writing manifest file 'laser_geometry.egg-info/SOURCES.txt'
+[20.385s] reading manifest file 'laser_geometry.egg-info/SOURCES.txt'
+[20.385s] writing manifest file 'laser_geometry.egg-info/SOURCES.txt'
+[20.387s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/laser_geometry' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/laser_geometry -- -j4 -l4
+[20.388s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/laser_geometry': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/laser_geometry
+[20.395s] -- Install configuration: "Release"
+[20.395s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/laser_geometry/environment/pythonpath.sh
+[20.396s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/laser_geometry/environment/pythonpath.dsv
+[20.396s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/laser_geometry/environment/library_path.sh
+[20.396s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/laser_geometry/environment/library_path.dsv
+[20.396s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/liblaser_geometry.so
+[20.396s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/laser_geometry
+[20.397s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/laser_geometry/laser_geometry
+[20.397s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/laser_geometry/laser_geometry/visibility_control.hpp
+[20.397s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/laser_geometry/laser_geometry/laser_geometry.hpp
+[20.397s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/package_run_dependencies/laser_geometry
+[20.397s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/parent_prefix_path/laser_geometry
+[20.397s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/laser_geometry/environment/ament_prefix_path.sh
+[20.398s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/laser_geometry/environment/ament_prefix_path.dsv
+[20.398s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/laser_geometry/environment/path.sh
+[20.398s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/laser_geometry/environment/path.dsv
+[20.398s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/laser_geometry/local_setup.bash
+[20.398s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/laser_geometry/local_setup.fish
+[20.398s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/laser_geometry/local_setup.sh
+[20.399s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/laser_geometry/local_setup.zsh
+[20.399s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/laser_geometry/local_setup.dsv
+[20.399s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/laser_geometry/package.dsv
+[20.399s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/packages/laser_geometry
+[20.399s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/laser_geometry-2.11.3-py3.12.egg-info
+[20.400s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/laser_geometry-2.11.3-py3.12.egg-info/dependency_links.txt
+[20.400s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/laser_geometry-2.11.3-py3.12.egg-info/top_level.txt
+[20.400s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/laser_geometry-2.11.3-py3.12.egg-info/PKG-INFO
+[20.400s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/laser_geometry-2.11.3-py3.12.egg-info/SOURCES.txt
+[20.400s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/laser_geometry
+[20.400s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/laser_geometry/__init__.py
+[20.400s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/laser_geometry/laser_geometry.py
+[20.448s] Listing '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/laser_geometry'...
+[20.448s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/laser_geometry/__init__.py'...
+[20.448s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/laser_geometry/laser_geometry.py'...
+[20.455s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/laser_geometry/cmake/laser_geometryExport.cmake
+[20.457s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/laser_geometry/cmake/laser_geometryExport-release.cmake
+[20.457s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/laser_geometry/cmake/ament_cmake_export_include_directories-extras.cmake
+[20.458s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/laser_geometry/cmake/ament_cmake_export_libraries-extras.cmake
+[20.459s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/laser_geometry/cmake/ament_cmake_export_targets-extras.cmake
+[20.459s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/laser_geometry/cmake/ament_cmake_export_dependencies-extras.cmake
+[20.459s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/laser_geometry/cmake/laser_geometryConfig.cmake
+[20.459s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/laser_geometry/cmake/laser_geometryConfig-version.cmake
+[20.459s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/laser_geometry/package.xml
+[20.459s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/laser_geometry' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/laser_geometry

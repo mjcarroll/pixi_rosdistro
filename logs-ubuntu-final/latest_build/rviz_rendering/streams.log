@@ -1,0 +1,266 @@
+[5.546s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_rendering': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=63 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_rendering -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[5.604s] Not searching for unused variables given on the command line.
+[5.604s] -- The C compiler identification is GNU 14.3.0
+[5.693s] -- The CXX compiler identification is GNU 14.3.0
+[5.705s] -- Detecting C compiler ABI info
+[5.865s] -- Detecting C compiler ABI info - done
+[5.888s] -- Check for working C compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
+[5.888s] -- Detecting C compile features
+[5.888s] -- Detecting C compile features - done
+[5.901s] -- Detecting CXX compiler ABI info
+[6.081s] -- Detecting CXX compiler ABI info - done
+[6.112s] -- Check for working CXX compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
+[6.113s] -- Detecting CXX compile features
+[6.115s] -- Detecting CXX compile features - done
+[6.125s] -- Found ament_cmake_ros: 0.15.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_ros/cmake)
+[6.375s] -- Found rviz_ogre_vendor: 15.1.19 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_ogre_vendor/cmake)
+[6.375s] -- Setting OGRE_DIR to: '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[6.376s] -- Found OGRE
+[6.376s] --   static     : OFF
+[6.376s] --   components : MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[6.376s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI;Codec_FreeImage
+[6.377s] --   media      : /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/rviz_ogre_vendor/share/OGRE/Media
+[6.377s] -- OGRE_LIBRARIES: OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[6.377s] -- OGRE_LIBRARY_DIRS: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/rviz_ogre_vendor/lib
+[6.377s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI;Codec_FreeImage
+[6.377s] -- OGRE_PLUGIN_DIR: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/rviz_ogre_vendor/lib/OGRE
+[6.377s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[6.377s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[6.378s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[6.378s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[6.406s] -- Found ZLIB: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/libz.so (found version "1.3.2")
+[6.419s] -- Found OpenGL: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/libGL.so
+[6.508s] -- Found X11: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include
+[6.508s] -- Looking for XOpenDisplay in /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/libX11.so;/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/libXext.so
+[6.684s] -- Looking for XOpenDisplay in /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/libX11.so;/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/libXext.so - found
+[6.684s] -- Looking for gethostbyname
+[6.902s] -- Looking for gethostbyname - found
+[6.902s] -- Looking for connect
+[7.129s] -- Looking for connect - found
+[7.129s] -- Looking for remove
+[7.285s] -- Looking for remove - found
+[7.285s] -- Looking for shmat
+[7.446s] -- Looking for shmat - found
+[7.446s] -- Looking for IceConnectionNumber in ICE
+[7.601s] -- Looking for IceConnectionNumber in ICE - found
+[7.835s] -- Check if compiler accepts -pthread
+[7.996s] -- Check if compiler accepts -pthread - yes
+[8.015s] -- Performing Test HAVE_STDATOMIC
+[8.220s] -- Performing Test HAVE_STDATOMIC - Success
+[8.800s] -- Found ament_index_cpp: 1.13.2 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index_cpp/cmake)
+[8.805s] -- Found eigen3_cmake_module: 0.5.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/eigen3_cmake_module/cmake)
+[8.810s] -- Found Eigen3: TRUE (found version "5.0.1")
+[8.817s] -- Found resource_retriever: 3.9.2 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/resource_retriever/cmake)
+[8.826s] -- Found ament_lint_auto: 0.20.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_lint_auto/cmake)
+[9.005s] -- Found gmock sources under '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[9.012s] -- Found gtest sources under '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[9.027s] -- Added test 'copyright' to check source files copyright and LICENSE
+[9.035s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[9.035s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_rendering/include>
+[9.035s] -- Configured cppcheck exclude dirs and/or files: 
+[9.045s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[9.045s] -- Configured cpplint exclude dirs and/or files: 
+[9.047s] -- Added test 'lint_cmake' to check CMake code style
+[9.055s] -- Added test 'uncrustify' to check C / C++ code style
+[9.055s] -- Configured uncrustify additional arguments: 
+[9.057s] -- Added test 'xmllint' to check XML markup files
+[9.062s] -- Configuring done (3.5s)
+[9.173s] -- Generating done (0.1s)
+[9.231s] -- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_rendering
+[9.249s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_rendering' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=63 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_rendering -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[9.249s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_rendering': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=63 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_rendering -- -j4 -l4
+[9.272s] [1/67] Generating include/rviz_rendering/moc_render_window.cpp
+[9.833s] [2/67] Building CXX object CMakeFiles/rviz_rendering.dir/include/rviz_rendering/moc_render_window.cpp.o
+[10.156s] [3/67] Building CXX object CMakeFiles/rviz_rendering.dir/src/rviz_rendering/apply_visibility_bits.cpp.o
+[10.588s] [4/67] Building CXX object CMakeFiles/rviz_rendering.dir/src/rviz_rendering/geometry.cpp.o
+[11.103s] [5/67] Building CXX object CMakeFiles/rviz_rendering.dir/src/rviz_rendering/viewport_projection_finder.cpp.o
+[11.411s] [6/67] Building CXX object CMakeFiles/rviz_rendering.dir/src/rviz_rendering/logging.cpp.o
+[11.831s] [7/67] Building CXX object CMakeFiles/rviz_rendering.dir/src/rviz_rendering/material_manager.cpp.o
+[12.508s] [8/67] Building CXX object CMakeFiles/rviz_rendering.dir/src/rviz_rendering/mesh_loader.cpp.o
+[12.903s] [9/67] Building CXX object CMakeFiles/rviz_rendering.dir/src/rviz_rendering/objects/mesh_shape.cpp.o
+[13.268s] [10/67] Building CXX object CMakeFiles/rviz_rendering.dir/src/rviz_rendering/ogre_logging.cpp.o
+[14.041s] [11/67] Building CXX object CMakeFiles/rviz_rendering.dir/src/rviz_rendering/ogre_render_window_impl.cpp.o
+[14.478s] [12/67] Building CXX object CMakeFiles/rviz_rendering.dir/src/rviz_rendering/orthographic.cpp.o
+[15.238s] [13/67] Building CXX object CMakeFiles/rviz_rendering.dir/src/rviz_rendering/render_system.cpp.o
+[15.879s] [14/67] Building CXX object CMakeFiles/rviz_rendering.dir/src/rviz_rendering/render_window.cpp.o
+[16.071s] [15/67] Building CXX object CMakeFiles/rviz_rendering.dir/src/rviz_rendering/resource_config.cpp.o
+[16.633s] [16/67] Building CXX object CMakeFiles/rviz_rendering.dir/src/rviz_rendering/mesh_loader_helpers/assimp_loader.cpp.o
+[16.907s] [17/67] Building CXX object CMakeFiles/rviz_rendering.dir/src/rviz_rendering/string_helper.cpp.o
+[17.317s] [18/67] Building CXX object CMakeFiles/rviz_rendering.dir/src/rviz_rendering/objects/arrow.cpp.o
+[17.674s] [19/67] Building CXX object CMakeFiles/rviz_rendering.dir/src/rviz_rendering/objects/axes.cpp.o
+[18.098s] [20/67] Building CXX object CMakeFiles/rviz_rendering.dir/src/rviz_rendering/objects/billboard_line.cpp.o
+[18.719s] [21/67] Building CXX object CMakeFiles/rviz_rendering.dir/src/rviz_rendering/objects/covariance_visual.cpp.o
+[19.118s] [22/67] Building CXX object CMakeFiles/rviz_rendering.dir/src/rviz_rendering/objects/effort_visual.cpp.o
+[19.548s] [23/67] Building CXX object CMakeFiles/rviz_rendering.dir/src/rviz_rendering/objects/grid.cpp.o
+[19.883s] [24/67] Building CXX object CMakeFiles/rviz_rendering.dir/src/rviz_rendering/objects/line.cpp.o
+[20.252s] [25/67] Building CXX object CMakeFiles/rviz_rendering.dir/src/rviz_rendering/objects/movable_text.cpp.o
+[20.651s] [26/67] Building CXX object CMakeFiles/rviz_rendering.dir/src/rviz_rendering/objects/object.cpp.o
+[21.091s] [27/67] Building CXX object CMakeFiles/rviz_rendering.dir/src/rviz_rendering/objects/point_cloud.cpp.o
+[21.531s] [28/67] Building CXX object CMakeFiles/rviz_rendering.dir/src/rviz_rendering/objects/point_cloud_renderable.cpp.o
+[21.979s] [29/67] Building CXX object CMakeFiles/rviz_rendering.dir/src/rviz_rendering/objects/screw_visual.cpp.o
+[22.401s] [30/67] Building CXX object CMakeFiles/rviz_rendering.dir/src/rviz_rendering/objects/shape.cpp.o
+[22.757s] [31/67] Building CXX object CMakeFiles/rviz_rendering.dir/src/rviz_rendering/objects/triangle_polygon.cpp.o
+[23.100s] [32/67] Building CXX object CMakeFiles/rviz_rendering.dir/src/rviz_rendering/objects/wrench_visual.cpp.o
+[23.460s] [33/67] Linking CXX shared library librviz_rendering.so
+[24.189s] [34/67] Building CXX object CMakeFiles/rviz_rendering_test_utils.dir/test/rviz_rendering/ogre_testing_environment.cpp.o
+[24.613s] [35/67] Building CXX object CMakeFiles/rviz_rendering_test_utils.dir/test/rviz_rendering/scene_graph_introspection.cpp.o
+[25.159s] [36/67] Building CXX object gmock/CMakeFiles/gmock.dir/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor/src/gtest-all.cc.o
+[25.538s] [37/67] Building CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
+[25.931s] [38/67] Building CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
+[26.234s] [39/67] Linking CXX shared library librviz_rendering_test_utils.so
+[26.719s] [40/67] Building CXX object CMakeFiles/string_helper_test.dir/test/rviz_rendering/string_helper_test.cpp.o
+[27.593s] [41/67] Building CXX object CMakeFiles/point_cloud_test_target.dir/test/rviz_rendering/objects/point_cloud_test.cpp.o
+[28.140s] [42/67] Building CXX object CMakeFiles/point_cloud_renderable_test_target.dir/test/rviz_rendering/objects/point_cloud_renderable_test.cpp.o
+[28.576s] [43/67] Building CXX object CMakeFiles/billboard_line_test_target.dir/test/rviz_rendering/objects/billboard_line_test.cpp.o
+[29.453s] [44/67] Building CXX object CMakeFiles/covariance_visual_test_target.dir/test/rviz_rendering/objects/covariance_visual_test.cpp.o
+[30.035s] [45/67] Building CXX object CMakeFiles/effort_visual_test_target.dir/test/rviz_rendering/objects/effort_visual_test.cpp.o
+[30.565s] [46/67] Building CXX object CMakeFiles/grid_test_target.dir/test/rviz_rendering/objects/grid_test.cpp.o
+[31.111s] [47/67] Building CXX object CMakeFiles/movable_text_test_target.dir/test/rviz_rendering/objects/movable_text_test.cpp.o
+[31.669s] [48/67] Building CXX object CMakeFiles/line_test_target.dir/test/rviz_rendering/objects/line_test.cpp.o
+[32.285s] [49/67] Building CXX object CMakeFiles/screw_visual_test_target.dir/test/rviz_rendering/objects/screw_visual_test.cpp.o
+[32.881s] [50/67] Building CXX object CMakeFiles/triangle_polygon_visual_test_target.dir/test/rviz_rendering/objects/triangle_polygon_test.cpp.o
+[33.432s] [51/67] Building CXX object CMakeFiles/wrench_visual_test_target.dir/test/rviz_rendering/objects/wrench_visual_test.cpp.o
+[33.966s] [52/67] Building CXX object CMakeFiles/mesh_shape_visual_test_target.dir/test/rviz_rendering/mesh_shape_test.cpp.o
+[33.990s] [53/67] Linking CXX static library gmock/libgmock.a
+[34.000s] [54/67] Linking CXX static library gmock/libgmock_main.a
+[34.511s] [55/67] Linking CXX executable string_helper_test
+[34.997s] [56/67] Linking CXX executable point_cloud_test_target
+[35.472s] [57/67] Linking CXX executable point_cloud_renderable_test_target
+[35.867s] [58/67] Linking CXX executable billboard_line_test_target
+[36.357s] [59/67] Linking CXX executable covariance_visual_test_target
+[36.836s] [60/67] Linking CXX executable effort_visual_test_target
+[37.302s] [61/67] Linking CXX executable grid_test_target
+[37.774s] [62/67] Linking CXX executable movable_text_test_target
+[38.203s] [63/67] Linking CXX executable line_test_target
+[38.671s] [64/67] Linking CXX executable screw_visual_test_target
+[39.121s] [65/67] Linking CXX executable triangle_polygon_visual_test_target
+[39.566s] [66/67] Linking CXX executable wrench_visual_test_target
+[40.068s] [67/67] Linking CXX executable mesh_shape_visual_test_target
+[40.070s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_rendering' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=63 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_rendering -- -j4 -l4
+[40.078s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_rendering': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=63 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_rendering
+[40.091s] -- Install configuration: "Release"
+[40.091s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/environment/library_path.sh
+[40.091s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/environment/library_path.dsv
+[40.092s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/librviz_rendering.so
+[40.092s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_rendering
+[40.092s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_rendering/rviz_rendering
+[40.092s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_rendering/rviz_rendering/resource_config.hpp
+[40.092s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_rendering/rviz_rendering/viewport_projection_finder.hpp
+[40.092s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_rendering/rviz_rendering/objects
+[40.092s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_rendering/rviz_rendering/objects/mesh_shape.hpp
+[40.092s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_rendering/rviz_rendering/objects/axes.hpp
+[40.092s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_rendering/rviz_rendering/objects/billboard_line.hpp
+[40.092s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_rendering/rviz_rendering/objects/triangle_polygon.hpp
+[40.092s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_rendering/rviz_rendering/objects/line.hpp
+[40.092s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_rendering/rviz_rendering/objects/point_cloud.hpp
+[40.092s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_rendering/rviz_rendering/objects/movable_text.hpp
+[40.093s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_rendering/rviz_rendering/objects/object.hpp
+[40.093s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_rendering/rviz_rendering/objects/grid.hpp
+[40.093s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_rendering/rviz_rendering/objects/arrow.hpp
+[40.093s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_rendering/rviz_rendering/objects/covariance_visual.hpp
+[40.094s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_rendering/rviz_rendering/objects/point_cloud_renderable.hpp
+[40.094s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_rendering/rviz_rendering/objects/screw_visual.hpp
+[40.094s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_rendering/rviz_rendering/objects/shape.hpp
+[40.095s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_rendering/rviz_rendering/objects/effort_visual.hpp
+[40.095s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_rendering/rviz_rendering/objects/wrench_visual.hpp
+[40.095s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_rendering/rviz_rendering/ogre_logging.hpp
+[40.095s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_rendering/rviz_rendering/visibility_control.hpp
+[40.096s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_rendering/rviz_rendering/rviz_rendering.hpp
+[40.096s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_rendering/rviz_rendering/mesh_loader.hpp
+[40.096s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_rendering/rviz_rendering/logging.hpp
+[40.096s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_rendering/rviz_rendering/material_manager.hpp
+[40.098s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_rendering/rviz_rendering/render_window.hpp
+[40.098s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_rendering/rviz_rendering/custom_parameter_indices.hpp
+[40.098s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_rendering/rviz_rendering/geometry.hpp
+[40.098s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_rendering/rviz_rendering/orthographic.hpp
+[40.099s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_rendering/rviz_rendering/render_system.hpp
+[40.099s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_rendering/rviz_rendering/apply_visibility_bits.hpp
+[40.099s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_rendering/rviz_rendering/logging_handler.hpp
+[40.099s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/cmake
+[40.099s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/cmake/register_rviz_ogre_media_exports_hook.cmake
+[40.099s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/cmake/register_rviz_ogre_media_exports_hook-extras.cmake
+[40.099s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/cmake/register_rviz_ogre_media_exports.cmake
+[40.099s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media
+[40.099s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/textures
+[40.099s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/textures/no_image.png
+[40.100s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/textures/test_20x20.png
+[40.100s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/models
+[40.100s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/models/rviz_cone.mesh
+[40.100s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/models/rviz_sphere.mesh
+[40.100s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/models/rviz_cube.mesh
+[40.101s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/models/rviz_cylinder.mesh
+[40.101s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/materials
+[40.101s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/materials/scripts120
+[40.101s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/materials/scripts120/point_cloud_square.material
+[40.102s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/materials/scripts120/point_cloud_sphere.material
+[40.102s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/materials/scripts120/point_cloud_box.material
+[40.102s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/materials/scripts120/point_cloud_flat_square.material
+[40.103s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/materials/scripts
+[40.103s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/materials/scripts/point_cloud_tile.material
+[40.103s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/materials/scripts/default_pick_and_depth.material
+[40.103s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/materials/scripts/point_cloud_point.material
+[40.103s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/materials/scripts/indexed_8bit_image.material
+[40.104s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/materials/glsl120
+[40.104s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/materials/glsl120/pickcolor_circle.frag
+[40.104s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/materials/glsl120/depth.vert
+[40.104s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/materials/glsl120/depth.frag
+[40.104s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/materials/glsl120/flat_color.frag
+[40.105s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/materials/glsl120/include
+[40.105s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/materials/glsl120/include/pass_depth.vert
+[40.105s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/materials/glsl120/include/pack_depth.frag
+[40.105s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/materials/glsl120/include/circle_impl.frag
+[40.108s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/materials/glsl120/indexed_8bit_image.vert
+[40.108s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/materials/glsl120/black.frag
+[40.108s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/materials/glsl120/nogp
+[40.109s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/materials/glsl120/nogp/billboard.vert
+[40.109s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/materials/glsl120/nogp/billboard_tile.vert
+[40.109s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/materials/glsl120/nogp/box.frag
+[40.109s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/materials/glsl120/nogp/nogp.program
+[40.109s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/materials/glsl120/nogp/box.vert
+[40.109s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/materials/glsl120/point.vert
+[40.109s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/materials/glsl120/indexed_8bit_image.frag
+[40.109s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/materials/glsl120/pass_color.frag
+[40.109s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/materials/glsl120/shaded_circle.frag
+[40.109s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/materials/glsl120/test_glsl.sh
+[40.109s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/materials/glsl120/glsl120.program
+[40.109s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/materials/glsl120/smooth_square.frag
+[40.109s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/materials/glsl120/depth_circle.frag
+[40.109s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/materials/glsl120/pickcolor.frag
+[40.110s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/materials/glsl120/flat_color_circle.frag
+[40.110s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/materials/glsl120/pass_color_circle.frag
+[40.110s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/fonts
+[40.110s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/fonts/liberation_sans.fontdef
+[40.110s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/fonts/README.md
+[40.110s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/fonts/liberation-sans
+[40.110s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/fonts/liberation-sans/LiberationSans-BoldItalic.ttf
+[40.110s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/fonts/liberation-sans/LiberationSans-Italic.ttf
+[40.111s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/fonts/liberation-sans/LiberationSans-Bold.ttf
+[40.112s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/fonts/liberation-sans/SIL Open Font License.txt
+[40.112s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/fonts/liberation-sans/LiberationSans-Regular.ttf
+[40.112s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/ogre_media/plugins.cfg
+[40.113s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/package_run_dependencies/rviz_rendering
+[40.113s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/parent_prefix_path/rviz_rendering
+[40.114s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/environment/ament_prefix_path.sh
+[40.114s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/environment/ament_prefix_path.dsv
+[40.114s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/environment/path.sh
+[40.115s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/environment/path.dsv
+[40.115s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/local_setup.bash
+[40.115s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/local_setup.fish
+[40.116s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/local_setup.sh
+[40.116s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/local_setup.zsh
+[40.118s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/local_setup.dsv
+[40.118s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/package.dsv
+[40.118s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/packages/rviz_rendering
+[40.118s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/cmake/rviz_renderingExport.cmake
+[40.119s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/cmake/rviz_renderingExport-release.cmake
+[40.119s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/cmake/rviz_rendering-extras.cmake
+[40.119s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/cmake/register_rviz_ogre_media_exports_hook-extras.cmake
+[40.119s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/cmake/register_rviz_ogre_media_exports.cmake
+[40.119s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/cmake/ament_cmake_export_dependencies-extras.cmake
+[40.119s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/cmake/ament_cmake_export_include_directories-extras.cmake
+[40.119s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/cmake/ament_cmake_export_libraries-extras.cmake
+[40.119s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/cmake/ament_cmake_export_targets-extras.cmake
+[40.119s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/cmake/rviz_renderingConfig.cmake
+[40.119s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/cmake/rviz_renderingConfig-version.cmake
+[40.119s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/package.xml
+[40.124s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_rendering' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=63 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_rendering

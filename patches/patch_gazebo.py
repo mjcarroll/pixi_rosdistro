@@ -45,13 +45,14 @@ def patch_gz_vendor(package_path):
     if "CONFIG_EXTRAS" not in content:
         content = content.replace("ament_package()", f"ament_package(\n  CONFIG_EXTRAS \"{extras_file}\"\n)")
 
-    # 3. Windows fix: Use Embedded PDBs for vendored builds to avoid EBUSY/C1041
-    if "VCS_URL" in content and "CMAKE_ARGS" in content and "CMAKE_MSVC_DEBUG_INFORMATION_FORMAT" not in content:
+    # 3. Windows fix: Use Embedded PDBs for vendored builds
+    # Be more aggressive with finding CMAKE_ARGS
+    if "CMAKE_ARGS" in content and "CMAKE_MSVC_DEBUG_INFORMATION_FORMAT" not in content:
         content = content.replace(
             "CMAKE_ARGS",
-            "CMAKE_ARGS\n      -DCMAKE_MSVC_DEBUG_INFORMATION_FORMAT=Embedded"
+            "CMAKE_ARGS\n      -DCMAKE_MSVC_DEBUG_INFORMATION_FORMAT=Embedded\n      -DCMAKE_CXX_FLAGS=\"/MP /FS\"\n      -DCMAKE_C_FLAGS=\"/MP /FS\""
         )
-        print(f"Added Embedded PDB fix to {cmakelists_path}")
+        print(f"Added Embedded PDB and /FS fix to {cmakelists_path}")
 
     with open(cmakelists_path, "wb") as f:
         f.write(content.encode('utf-8').replace(b'\r\n', b'\n'))
@@ -83,6 +84,12 @@ macro(create_relay_file _name _target_dir)
     file(WRITE "${{_relay_dir}}/${{_name}}Config.cmake"
       "set(${{_name}}_DIR \\"${{_cmake_target_dir}}\\")\\n"
       "find_package(${{_name}} REQUIRED NO_DEFAULT_PATH)\\n"
+      "if(${{_name}}_FOUND AND NOT TARGET ${{_name}}::core AND TARGET {versioned_name}::core)\\n"
+      "  add_library(${{_name}}::core ALIAS {versioned_name}::core)\\n"
+      "endif()\\n"
+      "if(${{_name}}_FOUND AND NOT TARGET {pkg_basename}::{pkg_basename} AND TARGET {versioned_name}::{versioned_name})\\n"
+      "  add_library({pkg_basename}::{pkg_basename} ALIAS {versioned_name}::{versioned_name})\\n"
+      "endif()\\n"
     )
   endif()
 endmacro()
@@ -103,6 +110,9 @@ if(NOT {versioned_name}_FOUND)
         set({versioned_name}_FOUND ON)
         set({versioned_name}_INCLUDE_DIRS ${{{unversioned_name}_INCLUDE_DIRS}})
         set({versioned_name}_LIBRARIES ${{{unversioned_name}_LIBRARIES}})
+        if(TARGET {unversioned_name}::core AND NOT TARGET {versioned_name}::core)
+          add_library({versioned_name}::core ALIAS {unversioned_name}::core)
+        endif()
     endif()
 endif()
 """
