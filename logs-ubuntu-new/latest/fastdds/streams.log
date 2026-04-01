@@ -1,0 +1,653 @@
+[3.200s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/fastdds': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/eProsima/Fast-DDS -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[3.282s] Not searching for unused variables given on the command line.
+[3.282s] -- The C compiler identification is GNU 14.3.0
+[3.555s] -- The CXX compiler identification is GNU 14.3.0
+[3.587s] -- Detecting C compiler ABI info
+[4.621s] -- Detecting C compiler ABI info - done
+[4.695s] -- Check for working C compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
+[4.695s] -- Detecting C compile features
+[4.696s] -- Detecting C compile features - done
+[4.731s] -- Detecting CXX compiler ABI info
+[5.028s] -- Detecting CXX compiler ABI info - done
+[5.103s] -- Check for working CXX compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
+[5.103s] -- Detecting CXX compile features
+[5.108s] -- Detecting CXX compile features - done
+[5.132s] -- Version: 3.4.2.0
+[5.142s] -- Performing Test SUPPORTS_NOTFOUND
+[5.441s] -- Performing Test SUPPORTS_NOTFOUND - Success
+[5.441s] -- Enforced cxx_std_11 CMake feature
+[5.441s] -- Setting warnings as errors...
+[5.447s] -- Found fastcdr
+[5.471s] -- Found Asio 1.36.0: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include
+[5.471s] -- Found Asio
+[5.472s] -- Found TinyXML2: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/cmake/tinyxml2
+[5.472s] -- Found TinyXML2
+[5.474s] -- Found foonathan_memory: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/foonathan_memory/cmake
+[5.479s] -- Looking for pthread.h
+[5.773s] -- Looking for pthread.h - found
+[5.774s] -- Looking for pthread_kill
+[6.061s] -- Looking for pthread_kill - not found
+[6.061s] -- Looking for pthread_create in pthreads
+[6.242s] -- Looking for pthread_create in pthreads - not found
+[6.242s] -- Looking for pthread_create in pthread
+[6.516s] -- Looking for pthread_create in pthread - found
+[6.521s] -- Found Threads: TRUE
+[7.658s] -- Thirdparty/boost compiled OK
+[8.806s] -- Found OpenSSL: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/libcrypto.so (found version "3.6.1")
+[8.806s] -- OpenSSL library 3.6.1 found...
+[8.806s] -- Not using a GNU compiler on Windows.
+[8.814s] -- Performing Test ATOMIC_WITHOUT_LIB
+[9.375s] -- Performing Test ATOMIC_WITHOUT_LIB - Success
+[10.569s] -- Forcing third party shared_mutex
+[10.576s] -- Performing Test HAS_VERSION_SCRIPT_SUPPORT
+[10.908s] -- Performing Test HAS_VERSION_SCRIPT_SUPPORT - Success
+[10.911s] -- Using linker version script to select exported symbols
+[10.933s] -- Enforced cxx_std_14 CMake feature
+[10.988s] -- EPROSIMA_TEST_DNS_NOT_SET_UP: '2'
+[10.993s] -- Configuring done (7.8s)
+[11.167s] -- Generating done (0.2s)
+[11.194s] -- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/fastdds
+[11.206s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/fastdds' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages ROS_DOMAIN_ID=92 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/eProsima/Fast-DDS -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[11.207s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/fastdds': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages ROS_DOMAIN_ID=92 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/fastdds -- -j4 -l4
+[11.533s] [1/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/topic/DDSSQLFilter/DDSFilterCompoundCondition.cpp.o
+[12.366s] [2/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/topic/DDSSQLFilter/DDSFilterExpression.cpp.o
+[13.542s] [3/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/topic/DDSSQLFilter/DDSFilterExpressionParser.cpp.o
+[15.005s] [4/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/topic/DDSSQLFilter/DDSFilterFactory.cpp.o
+[15.845s] [5/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/topic/DDSSQLFilter/DDSFilterField.cpp.o
+[16.604s] [6/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/topic/DDSSQLFilter/DDSFilterParameter.cpp.o
+[16.955s] [7/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/topic/DDSSQLFilter/DDSFilterPredicate.cpp.o
+[17.415s] [8/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/topic/DDSSQLFilter/DDSFilterValue.cpp.o
+[18.014s] [9/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/builtin/type_lookup_service/detail/rpc_typesPubSubTypes.cxx.o
+[18.624s] [10/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/builtin/type_lookup_service/detail/TypeLookupTypesPubSubTypes.cxx.o
+[19.448s] [11/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/builtin/type_lookup_service/TypeLookupManager.cpp.o
+[20.190s] [12/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/builtin/type_lookup_service/TypeLookupRequestListener.cpp.o
+[20.965s] [13/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/builtin/type_lookup_service/TypeLookupReplyListener.cpp.o
+[21.378s] [14/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/core/condition/Condition.cpp.o
+[21.928s] [15/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/core/condition/ConditionNotifier.cpp.o
+[22.913s] [16/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/core/condition/GuardCondition.cpp.o
+[23.338s] [17/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/core/condition/StatusCondition.cpp.o
+[23.881s] [18/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/core/condition/StatusConditionImpl.cpp.o
+[24.529s] [19/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/core/condition/WaitSet.cpp.o
+[25.140s] [20/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/core/condition/WaitSetImpl.cpp.o
+[25.636s] [21/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/core/Entity.cpp.o
+[26.111s] [22/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/core/policy/ParameterList.cpp.o
+[26.487s] [23/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/core/policy/QosPolicyUtils.cpp.o
+[27.012s] [24/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/core/Time_t.cpp.o
+[28.044s] [25/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/domain/DomainParticipant.cpp.o
+[29.462s] [26/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/domain/DomainParticipantFactory.cpp.o
+[31.631s] [27/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/domain/DomainParticipantImpl.cpp.o
+[32.074s] [28/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/domain/qos/DomainParticipantFactoryQos.cpp.o
+[32.578s] [29/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/domain/qos/DomainParticipantQos.cpp.o
+[33.139s] [30/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/log/FileConsumer.cpp.o
+[33.672s] [31/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/log/Log.cpp.o
+[34.216s] [32/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/log/OStreamConsumer.cpp.o
+[34.578s] [33/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/log/StdoutConsumer.cpp.o
+[35.060s] [34/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/log/StdoutErrConsumer.cpp.o
+[36.079s] [35/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/publisher/DataWriter.cpp.o
+[36.707s] [36/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/publisher/DataWriterHistory.cpp.o
+[38.208s] [37/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/publisher/DataWriterImpl.cpp.o
+[39.192s] [38/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/publisher/Publisher.cpp.o
+[40.640s] [39/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/publisher/PublisherImpl.cpp.o
+[41.233s] [40/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/publisher/qos/DataWriterQos.cpp.o
+[41.790s] [41/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/publisher/qos/PublisherQos.cpp.o
+[42.481s] [42/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/publisher/qos/WriterQos.cpp.o
+[43.164s] [43/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/rpc/ServiceImpl.cpp.o
+[44.594s] [44/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/rpc/ReplierImpl.cpp.o
+[45.340s] [45/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/rpc/RequesterImpl.cpp.o
+[46.061s] [46/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/rpc/RPCTypeObjectSupport.cpp.o
+[46.888s] [47/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/rpc/ServiceTypeSupport.cpp.o
+[47.413s] [48/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/subscriber/DataReader.cpp.o
+[48.475s] [49/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/subscriber/DataReaderImpl.cpp.o
+[49.641s] [50/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/subscriber/history/DataReaderHistory.cpp.o
+[50.124s] [51/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/subscriber/qos/DataReaderQos.cpp.o
+[50.591s] [52/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/subscriber/qos/ReaderQos.cpp.o
+[51.249s] [53/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/subscriber/qos/SubscriberQos.cpp.o
+[51.761s] [54/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/subscriber/ReadCondition.cpp.o
+[52.290s] [55/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/subscriber/Subscriber.cpp.o
+[52.937s] [56/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/subscriber/SubscriberImpl.cpp.o
+[53.580s] [57/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/topic/ContentFilteredTopic.cpp.o
+[54.316s] [58/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/topic/ContentFilteredTopicImpl.cpp.o
+[55.436s] [59/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/topic/qos/TopicQos.cpp.o
+[55.929s] [60/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/topic/Topic.cpp.o
+[56.574s] [61/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/topic/TopicImpl.cpp.o
+[57.176s] [62/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/topic/TopicProxyFactory.cpp.o
+[57.911s] [63/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/topic/TypeSupport.cpp.o
+[58.509s] [64/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/utils/QosConverters.cpp.o
+[58.988s] [65/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/utils/TypePropagation.cpp.o
+[59.327s] [66/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/xtypes/dynamic_types/AnnotationDescriptorImpl.cpp.o
+[59.659s] [67/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/xtypes/dynamic_types/DynamicDataFactory.cpp.o
+[60.223s] [68/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/xtypes/dynamic_types/DynamicDataImpl.cpp.o
+[60.634s] [69/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/xtypes/dynamic_types/DynamicDataFactoryImpl.cpp.o
+[61.470s] [70/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/xtypes/dynamic_types/DynamicPubSubType.cpp.o
+[61.805s] [71/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/xtypes/dynamic_types/DynamicTypeImpl.cpp.o
+[62.330s] [72/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/xtypes/dynamic_types/DynamicTypeBuilderFactory.cpp.o
+[62.717s] [73/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/xtypes/dynamic_types/DynamicTypeBuilderImpl.cpp.o
+[64.704s] [74/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/xtypes/dynamic_types/DynamicTypeBuilderFactoryImpl.cpp.o
+[65.090s] [75/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/xtypes/dynamic_types/DynamicTypeMemberImpl.cpp.o
+[65.861s] [76/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/xtypes/dynamic_types/MemberDescriptorImpl.cpp.o
+[66.322s] [77/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/xtypes/dynamic_types/TypeDescriptorImpl.cpp.o
+[66.826s] [78/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/xtypes/dynamic_types/VerbatimTextDescriptorImpl.cpp.o
+[67.204s] [79/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/xtypes/exception/Exception.cpp.o
+[67.693s] [80/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/xtypes/serializers/idl/dynamic_type_idl.cpp.o
+[68.488s] [81/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/xtypes/serializers/json/dynamic_data_json.cpp.o
+[69.159s] [82/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/xtypes/serializers/json/json_dynamic_data.cpp.o
+[69.815s] [83/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/xtypes/type_representation/dds_xtypes_typeobjectPubSubTypes.cxx.o
+[70.436s] [84/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/xtypes/type_representation/TypeObjectRegistry.cpp.o
+[71.157s] [85/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/xtypes/type_representation/TypeObjectUtils.cpp.o
+[71.816s] [86/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/fastdds/xtypes/utils.cpp.o
+[72.255s] [87/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/attributes/EndpointSecurityAttributes.cpp.o
+[72.553s] [88/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/attributes/PropertyPolicy.cpp.o
+[73.239s] [89/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/attributes/RTPSParticipantAttributes.cpp.o
+[73.759s] [90/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/attributes/ServerAttributes.cpp.o
+[74.101s] [91/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/attributes/ThreadSettings.cpp.o
+[74.968s] [92/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/builtin/BuiltinProtocols.cpp.o
+[75.514s] [93/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/builtin/data/ParticipantBuiltinTopicData.cpp.o
+[76.771s] [94/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/builtin/data/ParticipantProxyData.cpp.o
+[77.372s] [95/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/builtin/data/PublicationBuiltinTopicData.cpp.o
+[78.011s] [96/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/builtin/data/SubscriptionBuiltinTopicData.cpp.o
+[78.842s] [97/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/builtin/data/ReaderProxyData.cpp.o
+[79.533s] [98/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/builtin/data/WriterProxyData.cpp.o
+[80.642s] [99/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/builtin/discovery/database/backup/SharedBackupFunctions.cpp.o
+[81.681s] [100/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/builtin/discovery/database/DiscoveryDataBase.cpp.o
+[82.286s] [101/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/builtin/discovery/database/DiscoveryParticipantInfo.cpp.o
+[82.760s] [102/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/builtin/discovery/database/DiscoveryParticipantsAckStatus.cpp.o
+[83.478s] [103/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/builtin/discovery/database/DiscoverySharedInfo.cpp.o
+[84.608s] [104/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/builtin/discovery/endpoint/EDP.cpp.o
+[85.397s] [105/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/builtin/discovery/endpoint/EDPClient.cpp.o
+[86.495s] [106/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/builtin/discovery/endpoint/EDPServer.cpp.o
+[87.398s] [107/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/builtin/discovery/endpoint/EDPServerListeners.cpp.o
+[88.268s] [108/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/builtin/discovery/endpoint/EDPSimple.cpp.o
+[89.121s] [109/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/builtin/discovery/endpoint/EDPSimpleListeners.cpp.o
+[90.052s] [110/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/builtin/discovery/endpoint/EDPStatic.cpp.o
+[90.853s] [111/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/builtin/discovery/participant/DirectMessageSender.cpp.o
+[92.316s] [112/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/builtin/discovery/participant/PDP.cpp.o
+[93.386s] [113/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/builtin/discovery/participant/PDPClient.cpp.o
+[94.539s] [114/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/builtin/discovery/participant/PDPClientListener.cpp.o
+[95.415s] [115/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/builtin/discovery/participant/PDPListener.cpp.o
+[96.606s] [116/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/builtin/discovery/participant/PDPServer.cpp.o
+[97.701s] [117/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/builtin/discovery/participant/PDPServerListener.cpp.o
+[98.588s] [118/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/builtin/discovery/participant/PDPSimple.cpp.o
+[99.509s] [119/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/builtin/discovery/participant/simple/PDPStatelessWriter.cpp.o
+[100.349s] [120/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/builtin/discovery/participant/timedevent/DSClientEvent.cpp.o
+[101.327s] [121/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/builtin/discovery/participant/timedevent/DServerEvent.cpp.o
+[102.163s] [122/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/builtin/liveliness/WLP.cpp.o
+[102.826s] [123/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/builtin/liveliness/WLPListener.cpp.o
+[103.442s] [124/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/common/GuidPrefix_t.cpp.o
+[103.791s] [125/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/common/SerializedPayload.cpp.o
+[104.223s] [126/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/common/LocatorWithMask.cpp.o
+[104.891s] [127/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/common/Time_t.cpp.o
+[105.209s] [128/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/common/Token.cpp.o
+[108.104s] [129/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/DataSharing/DataSharingListener.cpp.o
+[109.409s] [130/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/DataSharing/DataSharingNotification.cpp.o
+[110.477s] [131/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/DataSharing/DataSharingPayloadPool.cpp.o
+[110.832s] [132/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/exceptions/Exception.cpp.o
+[111.073s] [133/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/flowcontrol/FlowControllerConsts.cpp.o
+[112.037s] [134/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/flowcontrol/FlowControllerFactory.cpp.o
+[112.715s] [135/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/history/CacheChangePool.cpp.o
+[113.510s] [136/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/history/History.cpp.o
+[115.092s] [137/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/history/ReaderHistory.cpp.o
+[115.464s] [138/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/history/TopicPayloadPool.cpp.o
+[115.995s] [139/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/history/TopicPayloadPoolRegistry.cpp.o
+[116.918s] [140/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/history/WriterHistory.cpp.o
+[117.333s] [141/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/messages/CDRMessage.cpp.o
+[117.904s] [142/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/messages/MessageReceiver.cpp.o
+[118.526s] [143/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/messages/RTPSGapBuilder.cpp.o
+[119.002s] [144/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/messages/RTPSMessageCreator.cpp.o
+[119.661s] [145/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/messages/RTPSMessageGroup.cpp.o
+[120.326s] [146/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/messages/SendBuffersManager.cpp.o
+[121.385s] [147/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/network/NetworkBuffer.cpp.o
+[121.825s] [148/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/network/NetworkConfiguration.cpp.o
+[123.145s] [149/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/network/NetworkFactory.cpp.o
+[123.984s] [150/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/network/ReceiverResource.cpp.o
+[124.693s] [151/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/network/utils/external_locators.cpp.o
+[125.360s] [152/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/network/utils/netmask_filter.cpp.o
+[125.941s] [153/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/network/utils/network.cpp.o
+[126.619s] [154/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/participant/RTPSParticipant.cpp.o
+[128.134s] [155/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/participant/RTPSParticipantImpl.cpp.o
+[128.831s] [156/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/persistence/PersistenceFactory.cpp.o
+[130.112s] [157/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/reader/BaseReader.cpp.o
+[130.705s] [158/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/reader/reader_utils.cpp.o
+[132.438s] [159/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/reader/RTPSReader.cpp.o
+[133.432s] [160/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/reader/StatefulPersistentReader.cpp.o
+[134.528s] [161/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/reader/StatefulReader.cpp.o
+[135.558s] [162/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/reader/StatelessPersistentReader.cpp.o
+[136.874s] [163/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/reader/StatelessReader.cpp.o
+[137.708s] [164/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/reader/WriterProxy.cpp.o
+[138.305s] [165/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/resources/ResourceEvent.cpp.o
+[138.852s] [166/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/resources/TimedEvent.cpp.o
+[140.162s] [167/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/resources/TimedEventImpl.cpp.o
+[142.105s] [168/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/domain/RTPSDomain.cpp.o
+[142.598s] [169/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/transport/ChainingTransport.cpp.o
+[143.089s] [170/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/transport/ChannelResource.cpp.o
+[143.579s] [171/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/transport/network/NetmaskFilterKind.cpp.o
+[143.990s] [172/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/transport/network/NetworkInterface.cpp.o
+[144.501s] [173/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/transport/network/NetworkInterfaceWithFilter.cpp.o
+[144.761s] [174/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/transport/PortBasedTransportDescriptor.cpp.o
+[145.285s] [175/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/transport/shared_mem/SharedMemTransportDescriptor.cpp.o
+[146.564s] [176/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/transport/tcp/RTCPMessageManager.cpp.o
+[146.951s] [177/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/transport/tcp/TCPControlMessage.cpp.o
+[148.101s] [178/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/transport/TCPAcceptor.cpp.o
+[149.407s] [179/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/transport/TCPAcceptorBasic.cpp.o
+[150.733s] [180/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/transport/TCPChannelResource.cpp.o
+[152.191s] [181/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/transport/TCPChannelResourceBasic.cpp.o
+[153.805s] [182/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/transport/TCPTransportInterface.cpp.o
+[155.181s] [183/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/transport/TCPv4Transport.cpp.o
+[157.583s] [184/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/transport/TCPv6Transport.cpp.o
+[158.562s] [185/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/transport/test_UDPv4Transport.cpp.o
+[158.999s] [186/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/transport/TransportInterface.cpp.o
+[160.025s] [187/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/transport/UDPChannelResource.cpp.o
+[161.132s] [188/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/transport/UDPTransportInterface.cpp.o
+[162.857s] [189/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/transport/UDPv4Transport.cpp.o
+[164.047s] [190/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/transport/UDPv6Transport.cpp.o
+[165.307s] [191/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/writer/BaseWriter.cpp.o
+[165.872s] [192/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/writer/LivelinessManager.cpp.o
+[166.491s] [193/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/writer/LocatorSelectorSender.cpp.o
+[167.810s] [194/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/writer/PersistentWriter.cpp.o
+[169.033s] [195/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/writer/ReaderLocator.cpp.o
+[170.078s] [196/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/writer/ReaderProxy.cpp.o
+[170.795s] [197/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/writer/RTPSWriter.cpp.o
+[171.439s] [198/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/writer/StatefulPersistentWriter.cpp.o
+[172.883s] [199/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/writer/StatefulWriter.cpp.o
+[173.527s] [200/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/writer/StatelessPersistentWriter.cpp.o
+[174.610s] [201/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/writer/StatelessWriter.cpp.o
+[175.325s] [202/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/statistics/fastdds/domain/DomainParticipant.cpp.o
+[175.997s] [203/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/statistics/fastdds/publisher/qos/DataWriterQos.cpp.o
+[176.444s] [204/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/statistics/fastdds/subscriber/qos/DataReaderQos.cpp.o
+[176.789s] [205/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/utils/Host.cpp.o
+[177.204s] [206/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/utils/IPFinder.cpp.o
+[178.234s] [207/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/utils/IPLocator.cpp.o
+[178.546s] [208/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/utils/md5.cpp.o
+[178.808s] [209/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/utils/StringMatching.cpp.o
+[179.507s] [210/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/utils/SystemInfo.cpp.o
+[179.983s] [211/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/utils/TimedConditionVariable.cpp.o
+[180.634s] [212/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/utils/UnitsParser.cpp.o
+[181.994s] [213/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/xmlparser/attributes/TopicAttributes.cpp.o
+[182.701s] [214/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/xmlparser/XMLDynamicParser.cpp.o
+[184.346s] [215/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/xmlparser/XMLElementParser.cpp.o
+[184.888s] [216/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/xmlparser/XMLEndpointParser.cpp.o
+[185.615s] [217/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/xmlparser/XMLParser.cpp.o
+[185.870s] [218/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/xmlparser/XMLParserCommon.cpp.o
+[186.473s] [219/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/xmlparser/XMLProfileManager.cpp.o
+[189.800s] [220/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/statistics/fastdds/domain/DomainParticipantImpl.cpp.o
+[190.515s] [221/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/statistics/fastdds/domain/DomainParticipantStatisticsListener.cpp.o
+[191.395s] [222/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/statistics/rtps/monitor-service/MonitorService.cpp.o
+[191.943s] [223/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/statistics/rtps/monitor-service/MonitorServiceListener.cpp.o
+[192.453s] [224/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/statistics/rtps/reader/StatisticsReaderImpl.cpp.o
+[193.018s] [225/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/statistics/rtps/StatisticsBase.cpp.o
+[193.558s] [226/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/statistics/rtps/writer/StatisticsWriterImpl.cpp.o
+[194.129s] [227/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/statistics/types/monitorservice_typesPubSubTypes.cxx.o
+[194.839s] [228/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/statistics/types/monitorservice_typesTypeObjectSupport.cxx.o
+[195.566s] [229/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/statistics/types/typesPubSubTypes.cxx.o
+[196.201s] [230/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/statistics/types/typesTypeObjectSupport.cxx.o
+[198.128s] [231/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/transport/shared_mem/test_SharedMemTransport.cpp.o
+[199.915s] [232/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/transport/shared_mem/SharedMemTransport.cpp.o
+[201.716s] [233/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/transport/TCPChannelResourceSecure.cpp.o
+[203.390s] [234/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/transport/TCPAcceptorSecure.cpp.o
+[204.186s] [235/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/persistence/SQLite3PersistenceService.cpp.o
+[205.231s] [236/243] Building C object src/cpp/CMakeFiles/fastdds.dir/rtps/persistence/sqlite3.c.o
+[206.576s] [237/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/rtps/domain/RTPSDomainExtras.cpp.o
+[207.257s] [238/243] Building CXX object src/cpp/CMakeFiles/fastdds.dir/xmlparser/XMLParserExtras.cpp.o
+[208.810s] [239/243] Linking CXX shared library src/cpp/libfastdds.so.3.4.2.0
+[208.829s] [240/243] Creating library symlink src/cpp/libfastdds.so.3.4 src/cpp/libfastdds.so
+[209.462s] [241/243] Building CXX object tools/fds/CMakeFiles/fast-discovery-server.dir/CliDiscoveryEntrypoint.cpp.o
+[210.112s] [242/243] Building CXX object tools/fds/CMakeFiles/fast-discovery-server.dir/CliDiscoveryManager.cpp.o
+[210.445s] [243/243] Linking CXX executable tools/fds/fast-discovery-server-1.0.1
+[210.448s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/fastdds' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages ROS_DOMAIN_ID=92 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/fastdds -- -j4 -l4
+[210.452s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/fastdds': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages ROS_DOMAIN_ID=92 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/fastdds
+[210.469s] -- Install configuration: "Release"
+[210.470s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds
+[210.473s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/statistics
+[210.473s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/statistics/topic_names.hpp
+[210.473s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/statistics/IListeners.hpp
+[210.473s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/statistics/rtps
+[210.474s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/statistics/rtps/StatisticsCommon.hpp
+[210.474s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/statistics/rtps/monitor_service
+[210.474s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/statistics/rtps/monitor_service/connections_fwd.hpp
+[210.474s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/statistics/dds
+[210.474s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/statistics/dds/publisher
+[210.474s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/statistics/dds/publisher/qos
+[210.474s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/statistics/dds/publisher/qos/DataWriterQos.hpp
+[210.474s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/statistics/dds/subscriber
+[210.474s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/statistics/dds/subscriber/qos
+[210.474s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/statistics/dds/subscriber/qos/DataReaderQos.hpp
+[210.474s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/statistics/dds/domain
+[210.475s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/statistics/dds/domain/DomainParticipant.hpp
+[210.475s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/fastdds_auto_link.hpp
+[210.475s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/config
+[210.476s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/config/doxygen_modules.hpp
+[210.476s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps
+[210.476s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/common
+[210.477s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/common/PortParameters.hpp
+[210.479s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/common/GuidPrefix_t.hpp
+[210.479s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/common/SerializedPayload.hpp
+[210.479s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/common/OriginalWriterInfo.hpp
+[210.479s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/common/LocatorList.hpp
+[210.479s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/common/ProductVersion_t.hpp
+[210.480s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/common/EntityId_t.hpp
+[210.480s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/common/Types.hpp
+[210.480s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/common/BinaryProperty.hpp
+[210.480s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/common/SampleIdentity.hpp
+[210.480s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/common/Time_t.hpp
+[210.480s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/common/Property.hpp
+[210.480s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/common/LocatorListComparisons.hpp
+[210.480s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/common/CDRMessage_t.hpp
+[210.482s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/common/FragmentNumber.hpp
+[210.482s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/common/Guid.hpp
+[210.482s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/common/RemoteLocators.hpp
+[210.482s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/common/Token.hpp
+[210.483s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/common/VendorId_t.hpp
+[210.483s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/common/CdrSerialization.hpp
+[210.483s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/common/LocatorSelector.hpp
+[210.483s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/common/SequenceNumber.hpp
+[210.483s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/common/WriteParams.hpp
+[210.486s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/common/LocatorSelectorEntry.hpp
+[210.486s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/common/Locator.hpp
+[210.486s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/common/InstanceHandle.hpp
+[210.486s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/common/LocatorWithMask.hpp
+[210.486s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/common/LocatorsIterator.hpp
+[210.486s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/common/CacheChange.hpp
+[210.487s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/common/ChangeKind_t.hpp
+[210.487s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/common/MatchingInfo.hpp
+[210.487s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/messages
+[210.487s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/messages/RTPSMessageSenderInterface.hpp
+[210.487s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/messages/RTPS_messages.hpp
+[210.487s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/writer
+[210.487s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/writer/WriterDiscoveryStatus.hpp
+[210.487s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/writer/WriterListener.hpp
+[210.488s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/writer/RTPSWriter.hpp
+[210.488s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/history
+[210.488s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/history/ReaderHistory.hpp
+[210.488s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/history/History.hpp
+[210.488s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/history/WriterHistory.hpp
+[210.488s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/history/IPayloadPool.hpp
+[210.488s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/history/IChangePool.hpp
+[210.488s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/transport
+[210.488s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/transport/TransportReceiverInterface.hpp
+[210.488s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/transport/UDPTransportDescriptor.hpp
+[210.488s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/transport/TransportInterface.hpp
+[210.491s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/transport/ChainingTransportDescriptor.hpp
+[210.491s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/transport/test_UDPv4TransportDescriptor.hpp
+[210.491s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/transport/TCPTransportDescriptor.hpp
+[210.491s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/transport/PortBasedTransportDescriptor.hpp
+[210.491s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/transport/UDPv6TransportDescriptor.hpp
+[210.491s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/transport/TransportDescriptorInterface.hpp
+[210.491s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/transport/UDPv4TransportDescriptor.hpp
+[210.492s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/transport/TCPv4TransportDescriptor.hpp
+[210.492s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/transport/SenderResource.hpp
+[210.492s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/transport/network
+[210.492s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/transport/network/NetworkInterface.hpp
+[210.492s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/transport/network/NetmaskFilterKind.hpp
+[210.492s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/transport/network/NetworkInterfaceWithFilter.hpp
+[210.492s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/transport/network/AllowedNetworkInterface.hpp
+[210.493s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/transport/network/BlockedNetworkInterface.hpp
+[210.493s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/transport/NetworkBuffer.hpp
+[210.493s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/transport/shared_mem
+[210.493s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/transport/shared_mem/test_SharedMemTransportDescriptor.hpp
+[210.493s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/transport/shared_mem/SharedMemTransportDescriptor.hpp
+[210.496s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/transport/ChainingTransport.hpp
+[210.496s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/transport/TCPv6TransportDescriptor.hpp
+[210.496s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/transport/SocketTransportDescriptor.hpp
+[210.496s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/builtin
+[210.496s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/builtin/data
+[210.496s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/builtin/data/BuiltinEndpoints.hpp
+[210.496s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/builtin/data/BuiltinTopicKey.hpp
+[210.497s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/builtin/data/PublicationBuiltinTopicData.hpp
+[210.497s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/builtin/data/ParticipantBuiltinTopicData.hpp
+[210.497s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/builtin/data/TopicDescription.hpp
+[210.497s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/builtin/data/ContentFilterProperty.hpp
+[210.497s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/builtin/data/SubscriptionBuiltinTopicData.hpp
+[210.497s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/reader
+[210.497s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/reader/RTPSReader.hpp
+[210.497s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/reader/ReaderDiscoveryStatus.hpp
+[210.498s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/reader/ReaderListener.hpp
+[210.498s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/Endpoint.hpp
+[210.498s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/attributes
+[210.498s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/attributes/ReaderAttributes.hpp
+[210.498s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/attributes/ResourceManagement.hpp
+[210.498s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/attributes/HistoryAttributes.hpp
+[210.501s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/attributes/EndpointAttributes.hpp
+[210.501s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/attributes/RTPSParticipantAllocationAttributes.hpp
+[210.501s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/attributes/PropertyPolicy.hpp
+[210.501s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/attributes/EndpointSecurityAttributes.hpp
+[210.501s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/attributes/RTPSParticipantAttributes.hpp
+[210.502s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/attributes/BuiltinTransports.hpp
+[210.502s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/attributes/ExternalLocators.hpp
+[210.502s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/attributes/ThreadSettings.hpp
+[210.502s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/attributes/WriterAttributes.hpp
+[210.502s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/interfaces
+[210.503s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/interfaces/IReaderDataFilter.hpp
+[210.503s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/RTPSDomain.hpp
+[210.503s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/flowcontrol
+[210.503s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/flowcontrol/FlowControllerDescriptor.hpp
+[210.503s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/flowcontrol/FlowControllerSchedulerPolicy.hpp
+[210.503s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/flowcontrol/FlowControllerConsts.hpp
+[210.504s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/participant
+[210.504s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/participant/RTPSParticipantListener.hpp
+[210.506s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/participant/ParticipantDiscoveryInfo.hpp
+[210.506s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/rtps/participant/RTPSParticipant.hpp
+[210.506s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/LibrarySettings.hpp
+[210.506s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/fastdds_dll.hpp
+[210.507s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/utils
+[210.507s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/utils/IPFinder.hpp
+[210.507s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/utils/md5.hpp
+[210.507s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/utils/IPLocator.hpp
+[210.507s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/utils/fixed_size_bitmap.hpp
+[210.507s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/utils/collections
+[210.508s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/utils/collections/ResourceLimitedVector.hpp
+[210.508s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/utils/collections/ResourceLimitedContainerConfig.hpp
+[210.508s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/utils/TimedConditionVariable.hpp
+[210.508s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/utils/TimedMutex.hpp
+[210.510s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds
+[210.510s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/common
+[210.510s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/common/InstanceHandle.hpp
+[210.510s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/log
+[210.510s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/log/StdoutErrConsumer.hpp
+[210.511s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/log/OStreamConsumer.hpp
+[210.511s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/log/Log.hpp
+[210.511s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/log/StdoutConsumer.hpp
+[210.511s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/log/Colors.hpp
+[210.511s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/log/FileConsumer.hpp
+[210.511s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/publisher
+[210.511s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/publisher/Publisher.hpp
+[210.512s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/publisher/qos
+[210.512s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/publisher/qos/WriterQos.hpp
+[210.512s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/publisher/qos/DataWriterQos.hpp
+[210.513s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/publisher/qos/PublisherQos.hpp
+[210.513s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/publisher/PublisherListener.hpp
+[210.513s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/publisher/DataWriter.hpp
+[210.513s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/publisher/DataWriterListener.hpp
+[210.513s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/subscriber
+[210.516s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/subscriber/Subscriber.hpp
+[210.516s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/subscriber/SampleInfo.hpp
+[210.516s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/subscriber/qos
+[210.516s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/subscriber/qos/SubscriberQos.hpp
+[210.517s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/subscriber/qos/ReaderQos.hpp
+[210.517s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/subscriber/qos/DataReaderQos.hpp
+[210.517s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/subscriber/SampleState.hpp
+[210.517s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/subscriber/ReadCondition.hpp
+[210.517s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/subscriber/ViewState.hpp
+[210.517s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/subscriber/InstanceState.hpp
+[210.517s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/subscriber/SubscriberListener.hpp
+[210.518s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/subscriber/DataReader.hpp
+[210.518s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/subscriber/DataReaderListener.hpp
+[210.518s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/core
+[210.518s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/core/Entity.hpp
+[210.521s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/core/LoanableArray.hpp
+[210.521s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/core/LoanableSequence.hpp
+[210.521s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/core/Types.hpp
+[210.521s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/core/Time_t.hpp
+[210.522s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/core/StackAllocatedSequence.hpp
+[210.522s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/core/UserAllocatedSequence.hpp
+[210.522s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/core/policy
+[210.522s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/core/policy/WriterDataLifecycleQosPolicy.hpp
+[210.522s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/core/policy/QosPolicies.hpp
+[210.522s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/core/policy/ReaderResourceLimitsQos.hpp
+[210.522s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/core/policy/ReaderDataLifecycleQosPolicy.hpp
+[210.523s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/core/policy/RTPSReliableWriterQos.hpp
+[210.523s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/core/policy/ParameterTypes.hpp
+[210.523s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/core/policy/RTPSReliableReaderQos.hpp
+[210.523s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/core/LoanableCollection.hpp
+[210.523s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/core/condition
+[210.523s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/core/condition/StatusCondition.hpp
+[210.523s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/core/condition/Condition.hpp
+[210.524s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/core/condition/WaitSet.hpp
+[210.524s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/core/condition/GuardCondition.hpp
+[210.526s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/core/LoanableTypedCollection.hpp
+[210.526s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/core/ReturnCode.hpp
+[210.526s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/core/status
+[210.526s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/core/status/DeadlineMissedStatus.hpp
+[210.527s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/core/status/BaseStatus.hpp
+[210.527s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/core/status/SampleRejectedStatus.hpp
+[210.527s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/core/status/StatusMask.hpp
+[210.527s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/core/status/SubscriptionMatchedStatus.hpp
+[210.527s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/core/status/MatchedStatus.hpp
+[210.527s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/core/status/IncompatibleQosStatus.hpp
+[210.528s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/core/status/LivelinessChangedStatus.hpp
+[210.528s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/core/status/PublicationMatchedStatus.hpp
+[210.528s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/core/detail
+[210.528s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/core/detail/DDSSecurityReturnCode.hpp
+[210.531s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/core/detail/DDSReturnCode.hpp
+[210.531s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/builtin
+[210.531s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/builtin/topic
+[210.531s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/builtin/topic/BuiltinTopicKey.hpp
+[210.531s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/builtin/topic/PublicationBuiltinTopicData.hpp
+[210.532s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/builtin/topic/ParticipantBuiltinTopicData.hpp
+[210.532s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/builtin/topic/TopicBuiltinTopicData.hpp
+[210.532s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/builtin/topic/SubscriptionBuiltinTopicData.hpp
+[210.532s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/domain
+[210.532s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/domain/DomainParticipant.hpp
+[210.532s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/domain/DomainParticipantListener.hpp
+[210.533s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/domain/qos
+[210.533s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/domain/qos/RequesterQos.hpp
+[210.533s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/domain/qos/DomainParticipantQos.hpp
+[210.533s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/domain/qos/ReplierQos.hpp
+[210.533s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/domain/qos/DomainParticipantFactoryQos.hpp
+[210.533s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/domain/qos/DomainParticipantExtendedQos.hpp
+[210.533s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/domain/DomainParticipantFactory.hpp
+[210.534s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/rpc
+[210.536s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/rpc/RPCEntity.hpp
+[210.536s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/rpc/Service.hpp
+[210.536s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/rpc/Requester.hpp
+[210.536s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/rpc/Replier.hpp
+[210.536s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/rpc/RequestInfo.hpp
+[210.537s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/rpc/RPCTypeObjectSupport.hpp
+[210.537s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/rpc/RemoteExceptionCode_t.hpp
+[210.537s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/rpc/interfaces.hpp
+[210.537s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/rpc/exceptions
+[210.537s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/rpc/exceptions/RemoteUnknownOperationError.hpp
+[210.537s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/rpc/exceptions/RemoteUnsupportedError.hpp
+[210.537s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/rpc/exceptions/RpcOperationError.hpp
+[210.538s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/rpc/exceptions/RpcTimeoutException.hpp
+[210.538s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/rpc/exceptions/RpcBrokenPipeException.hpp
+[210.538s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/rpc/exceptions/RemoteInvalidArgumentError.hpp
+[210.538s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/rpc/exceptions/RpcRemoteException.hpp
+[210.538s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/rpc/exceptions/RpcFeedCancelledException.hpp
+[210.538s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/rpc/exceptions/RemoteUnknownExceptionError.hpp
+[210.538s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/rpc/exceptions/RpcException.hpp
+[210.538s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/rpc/exceptions/RemoteOutOfResourcesError.hpp
+[210.539s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/rpc/interfaces
+[210.540s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/rpc/interfaces/RpcStatusCode.hpp
+[210.540s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/rpc/interfaces/RpcFuture.hpp
+[210.542s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/rpc/interfaces/RpcRequest.hpp
+[210.542s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/rpc/interfaces/RpcServer.hpp
+[210.542s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/rpc/interfaces/RpcServerSchedulingStrategy.hpp
+[210.542s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/rpc/ServiceTypeSupport.hpp
+[210.542s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/rpc/exceptions.hpp
+[210.543s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/topic
+[210.543s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/topic/IContentFilterFactory.hpp
+[210.543s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/topic/Topic.hpp
+[210.543s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/topic/TopicDescription.hpp
+[210.546s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/topic/qos
+[210.546s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/topic/qos/TopicQos.hpp
+[210.546s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/topic/ContentFilteredTopic.hpp
+[210.546s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/topic/TopicDataType.hpp
+[210.546s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/topic/IContentFilter.hpp
+[210.547s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/topic/TypeSupport.hpp
+[210.547s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/topic/TopicListener.hpp
+[210.547s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/xtypes
+[210.547s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/xtypes/dynamic_types
+[210.547s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/xtypes/dynamic_types/type_traits.hpp
+[210.547s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/xtypes/dynamic_types/MemberDescriptor.hpp
+[210.547s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/xtypes/dynamic_types/Types.hpp
+[210.548s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/xtypes/dynamic_types/DynamicTypeMember.hpp
+[210.548s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/xtypes/dynamic_types/TypeDescriptor.hpp
+[210.548s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/xtypes/dynamic_types/AnnotationDescriptor.hpp
+[210.548s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/xtypes/dynamic_types/DynamicType.hpp
+[210.548s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/xtypes/dynamic_types/VerbatimTextDescriptor.hpp
+[210.548s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/xtypes/dynamic_types/DynamicDataFactory.hpp
+[210.549s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/xtypes/dynamic_types/DynamicTypeBuilder.hpp
+[210.551s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/xtypes/dynamic_types/DynamicData.hpp
+[210.551s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/xtypes/dynamic_types/DynamicPubSubType.hpp
+[210.551s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/xtypes/dynamic_types/DynamicTypeBuilderFactory.hpp
+[210.551s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/xtypes/dynamic_types/detail
+[210.551s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/xtypes/dynamic_types/detail/type_traits.hpp
+[210.551s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/xtypes/dynamic_types/detail/dynamic_language_binding.hpp
+[210.552s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/xtypes/type_representation
+[210.552s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/xtypes/type_representation/TypeObjectUtils.hpp
+[210.552s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/xtypes/type_representation/ITypeObjectRegistry.hpp
+[210.552s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/xtypes/type_representation/TypeObject.hpp
+[210.552s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/xtypes/type_representation/detail
+[210.552s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/xtypes/type_representation/detail/dds_xtypes_typeobject.hpp
+[210.553s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/xtypes/type_representation/detail/dds_xtypes_typeobjectCdrAux.hpp
+[210.553s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/xtypes/type_representation/detail/dds_xtypes_typeobjectPubSubTypes.hpp
+[210.553s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/xtypes/utils.hpp
+[210.553s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/xtypes/common.hpp
+[210.553s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/xtypes/exception
+[210.553s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/dds/xtypes/exception/Exception.hpp
+[210.556s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/config.hpp
+[210.556s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/statistics
+[210.556s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/statistics/monitorservice_types.idl
+[210.556s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/statistics/types.idl
+[210.556s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/statistics/rtps
+[210.556s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/statistics/rtps/monitor_service
+[210.556s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/statistics/dds
+[210.556s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/statistics/dds/publisher
+[210.557s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/statistics/dds/publisher/qos
+[210.557s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/statistics/dds/subscriber
+[210.557s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/statistics/dds/subscriber/qos
+[210.557s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/statistics/dds/domain
+[210.557s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libfastdds.so.3.4.2.0
+[210.575s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libfastdds.so.3.4
+[210.580s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libfastdds.so
+[210.580s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/fastdds/cmake/fastdds-shared-targets.cmake
+[210.580s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/fastdds/cmake/fastdds-shared-targets-release.cmake
+[210.580s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/fastdds/cmake/fastdds-config.cmake
+[210.581s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/fastdds/cmake/fastdds-config-version.cmake
+[210.581s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/thirdparty/optionparser
+[210.581s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/thirdparty/optionparser/optionparser.hpp
+[210.581s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/thirdparty/optionparser/optionparser
+[210.581s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/fastdds/thirdparty/optionparser/optionparser/optionparser.h
+[210.581s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/fastdds/cmake/optionparser-targets.cmake
+[210.581s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin/fast-discovery-server-1.0.1
+[210.587s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/tools/fastdds
+[210.587s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/tools/fastdds/discovery
+[210.587s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/tools/fastdds/discovery/parser.py
+[210.587s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/tools/fastdds/discovery/fastdds_daemon
+[210.588s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/tools/fastdds/discovery/fastdds_daemon/node
+[210.588s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/tools/fastdds/discovery/fastdds_daemon/node/__init__.py
+[210.590s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/tools/fastdds/discovery/fastdds_daemon/node/daemon_node.py
+[210.590s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/tools/fastdds/discovery/fastdds_daemon/daemon
+[210.590s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/tools/fastdds/discovery/fastdds_daemon/daemon/daemonize.py
+[210.590s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/tools/fastdds/discovery/fastdds_daemon/daemon/__init__.py
+[210.591s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/tools/fastdds/discovery/fastdds_daemon/xmlrpc_local
+[210.591s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/tools/fastdds/discovery/fastdds_daemon/xmlrpc_local/__init__.py
+[210.591s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/tools/fastdds/discovery/fastdds_daemon/xmlrpc_local/local_client.py
+[210.591s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/tools/fastdds/discovery/fastdds_daemon/xmlrpc_local/local_server.py
+[210.591s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/tools/fastdds/discovery/fastdds_daemon/helpers.py
+[210.591s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/tools/fastdds/discovery/fastdds_daemon/process_handler
+[210.592s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/tools/fastdds/discovery/fastdds_daemon/process_handler/__init__.py
+[210.592s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/tools/fastdds/discovery/fastdds_daemon/process_handler/process_handler.py
+[210.592s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/tools/fastdds/fastdds.py
+[210.592s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/tools/fastdds/shm
+[210.592s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/tools/fastdds/shm/parser.py
+[210.592s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/tools/fastdds/shm/clean.py
+[210.592s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/tools/fastdds/xml_ci
+[210.593s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/tools/fastdds/xml_ci/parser.py
+[210.595s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/tools/fastdds/xml_ci/validate.py
+[210.595s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin
+[210.595s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin/fastdds
+[210.595s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin/ros-discovery
+[210.596s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/fastdds/LICENSE
+[210.596s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/fastdds/fastdds_profiles.xsd
+[210.598s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/fastdds/fastdds_static_discovery.xsd
+[210.599s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/fastdds' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.14/site-packages ROS_DOMAIN_ID=92 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/fastdds
