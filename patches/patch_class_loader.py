@@ -12,6 +12,10 @@ def patch_class_loader(file_path):
     # Fix const correctness issue in multi_library_class_loader.hpp
     # Error: cannot initialize a variable of type 'ClassLoader *' with an rvalue of type 'const ClassLoader *'
     
+    if 'const ClassLoader * loader = getClassLoaderForLibrary(library_path);' in content:
+        print(f"Already patched in {file_path}")
+        return True
+
     old_code = """  template<class Base>
   std::vector<std::string> getAvailableClassesForLibrary(const std::string & library_path) const
   {
