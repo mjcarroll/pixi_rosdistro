@@ -35,7 +35,7 @@ ROS_VERSION                 = "2"
 QT_QPA_PLATFORM_PLUGIN_PATH = "%cd%\\.pixi\\envs\\default\\Library\\plugins\\platforms"
 # Windows needs different path expansion and its own skip list
 COLCON_DEFAULTS_FILE        = "%PIXI_PROJECT_ROOT%\\colcon_defaults_windows.yaml"
-CFLAGS                      = "/MP /FS"
+CFLAGS                      = "/MP /FS /EHsc"
 CXXFLAGS                    = "/MP /FS /EHsc"
 CC                          = "cl.exe"
 CXX                         = "cl.exe"

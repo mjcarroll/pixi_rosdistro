@@ -46,13 +46,26 @@ def patch_gz_vendor(package_path):
         content = content.replace("ament_package()", f"ament_package(\n  CONFIG_EXTRAS \"{extras_file}\"\n)")
 
     # 3. Windows fix: Use Embedded PDBs for vendored builds
-    # Be more aggressive with finding CMAKE_ARGS
+    # ONLY apply these on Windows or via conditional CMake
     if "CMAKE_ARGS" in content and "CMAKE_MSVC_DEBUG_INFORMATION_FORMAT" not in content:
+        win_fix = """if(WIN32)
+        list(APPEND EXTRA_CMAKE_ARGS
+          -DCMAKE_MSVC_DEBUG_INFORMATION_FORMAT=Embedded
+          -DCMAKE_CXX_FLAGS="/MP /FS"
+          -DCMAKE_C_FLAGS="/MP /FS"
+        )
+      endif()"""
+        
+        # We need to find a place to insert this and then use EXTRA_CMAKE_ARGS
+        # But a simpler way is to use a conditional block in the CMAKE_ARGS list if supported,
+        # or just use the generator expression if we are sure it's evaluated.
+        # Actually, let's just use a string replacement that is safe for all platforms.
+        
         content = content.replace(
             "CMAKE_ARGS",
-            "CMAKE_ARGS\n      -DCMAKE_MSVC_DEBUG_INFORMATION_FORMAT=Embedded\n      -DCMAKE_CXX_FLAGS=\"/MP /FS\"\n      -DCMAKE_C_FLAGS=\"/MP /FS\""
+            'CMAKE_ARGS\n      $<$<PLATFORM_ID:Windows>:-DCMAKE_MSVC_DEBUG_INFORMATION_FORMAT=Embedded>\n      $<$<PLATFORM_ID:Windows>:-DCMAKE_CXX_FLAGS="/MP /FS">\n      $<$<PLATFORM_ID:Windows>:-DCMAKE_C_FLAGS="/MP /FS">'
         )
-        print(f"Added Embedded PDB and /FS fix to {cmakelists_path}")
+        print(f"Added conditional Embedded PDB and /FS fix to {cmakelists_path}")
 
     with open(cmakelists_path, "wb") as f:
         f.write(content.encode('utf-8').replace(b'\r\n', b'\n'))
