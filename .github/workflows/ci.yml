@@ -48,7 +48,7 @@ jobs:
       # cache: false avoids EBUSY on Windows — the pixi env dir gets locked by
       # subprocesses (ninja, sccache, cl.exe) during build and Windows refuses
       # to rmdir a locked path. pixi install from pixi.lock is fast enough (~1min).
-      - uses: prefix-dev/setup-pixi@v0.13.0
+      - uses: prefix-dev/setup-pixi@v0.8.1
         with:
           pixi-version: latest
           cache: false
