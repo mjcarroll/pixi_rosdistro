@@ -1,0 +1,97 @@
+[4.012s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rmw_implementation': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rmw_implementation/rmw_implementation -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[4.087s] Not searching for unused variables given on the command line.
+[4.087s] -- The C compiler identification is GNU 14.3.0
+[4.181s] -- The CXX compiler identification is GNU 14.3.0
+[4.194s] -- Detecting C compiler ABI info
+[4.311s] -- Detecting C compiler ABI info - done
+[4.351s] -- Check for working C compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
+[4.353s] -- Detecting C compile features
+[4.354s] -- Detecting C compile features - done
+[4.370s] -- Detecting CXX compiler ABI info
+[4.531s] -- Detecting CXX compiler ABI info - done
+[4.556s] -- Check for working CXX compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
+[4.556s] -- Detecting CXX compile features
+[4.557s] -- Detecting CXX compile features - done
+[4.567s] -- Found ament_cmake: 2.8.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake/cmake)
+[4.816s] -- Found rmw: 7.9.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw/cmake)
+[4.832s] -- Found rmw_implementation_cmake: 7.9.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation_cmake/cmake)
+[4.836s] -- Found ament_lint_auto: 0.20.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_lint_auto/cmake)
+[5.366s] -- Found rmw_fastrtps_cpp: 9.4.5 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_fastrtps_cpp/cmake)
+[5.395s] -- Found rosidl_generator_c: 5.1.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_c/cmake)
+[5.406s] -- Found rosidl_generator_cpp: 5.1.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_cpp/cmake)
+[5.416s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.429s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.465s] -- 
+[5.465s] -- Default rmw implementation: 'rmw_fastrtps_cpp'
+[5.465s] -- 
+[5.466s] -- Runtime selection of RMW enabled
+[5.468s] -- Found ament_index_cpp: 1.13.2 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index_cpp/cmake)
+[5.473s] -- Found gtest sources under '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.476s] -- Check if compiler accepts -pthread
+[5.615s] -- Check if compiler accepts -pthread - yes
+[5.617s] -- Found Threads: TRUE
+[5.644s] -- Creating API tests for 'rmw_cyclonedds_cpp'
+[5.646s] -- Performance tests are disabled by default, so Google Benchmark tests will be skipped. To enable these tests, set the CMake variable 'AMENT_RUN_PERFORMANCE_TESTS'.
+[5.650s] -- Creating API tests for 'rmw_fastrtps_cpp'
+[5.661s] -- Creating API tests for 'rmw_fastrtps_dynamic_cpp'
+[5.665s] -- Creating API tests for 'rmw_zenoh_cpp'
+[5.671s] -- Added test 'copyright' to check source files copyright and LICENSE
+[5.674s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.675s] -- Configured cppcheck include dirs: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include
+[5.675s] -- Configured cppcheck exclude dirs and/or files: 
+[5.678s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[5.678s] -- Configured cpplint exclude dirs and/or files: 
+[5.680s] -- Added test 'lint_cmake' to check CMake code style
+[5.683s] -- Added test 'uncrustify' to check C / C++ code style
+[5.683s] -- Configured uncrustify additional arguments: 
+[5.684s] -- Added test 'xmllint' to check XML markup files
+[5.689s] -- Configuring done (1.7s)
+[5.729s] -- Generating done (0.0s)
+[5.757s] -- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rmw_implementation
+[5.766s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rmw_implementation' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=61 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rmw_implementation/rmw_implementation -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[5.767s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rmw_implementation': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=61 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rmw_implementation -- -j4 -l4
+[6.068s] [1/16] Building CXX object CMakeFiles/rmw_implementation.dir/src/functions.cpp.o
+[6.617s] [2/16] Building CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[6.950s] [3/16] Building CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[7.016s] [4/16] Linking CXX shared library librmw_implementation.so
+[7.390s] [5/16] Building CXX object CMakeFiles/test_functions.dir/test/test_functions.cpp.o
+[7.762s] [6/16] Building CXX object CMakeFiles/benchmark_symbols__rmw_cyclonedds_cpp.dir/test/benchmark/benchmark_symbols.cpp.o
+[8.122s] [7/16] Building CXX object CMakeFiles/benchmark_symbols__rmw_fastrtps_cpp.dir/test/benchmark/benchmark_symbols.cpp.o
+[8.470s] [8/16] Building CXX object CMakeFiles/benchmark_symbols__rmw_fastrtps_dynamic_cpp.dir/test/benchmark/benchmark_symbols.cpp.o
+[8.783s] [9/16] Building CXX object CMakeFiles/benchmark_symbols__rmw_zenoh_cpp.dir/test/benchmark/benchmark_symbols.cpp.o
+[8.809s] [10/16] Linking CXX static library gtest/libgtest.a
+[8.821s] [11/16] Linking CXX static library gtest/libgtest_main.a
+[8.920s] [12/16] Linking CXX executable test_functions
+[8.980s] [13/16] Linking CXX executable benchmark_symbols__rmw_cyclonedds_cpp
+[9.048s] [14/16] Linking CXX executable benchmark_symbols__rmw_fastrtps_cpp
+[9.113s] [15/16] Linking CXX executable benchmark_symbols__rmw_fastrtps_dynamic_cpp
+[9.173s] [16/16] Linking CXX executable benchmark_symbols__rmw_zenoh_cpp
+[9.174s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rmw_implementation' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=61 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rmw_implementation -- -j4 -l4
+[9.176s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rmw_implementation': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=61 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rmw_implementation
+[9.185s] -- Install configuration: "Release"
+[9.185s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/librmw_implementation.so
+[9.186s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/rmw_typesupport_c/rmw_implementation
+[9.186s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/rmw_typesupport_cpp/rmw_implementation
+[9.187s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/rmw_typesupport/rmw_implementation
+[9.187s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/package_run_dependencies/rmw_implementation
+[9.187s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/parent_prefix_path/rmw_implementation
+[9.188s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation/environment/ament_prefix_path.sh
+[9.188s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation/environment/ament_prefix_path.dsv
+[9.188s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation/environment/path.sh
+[9.188s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation/environment/path.dsv
+[9.189s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation/local_setup.bash
+[9.189s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation/local_setup.fish
+[9.190s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation/local_setup.sh
+[9.190s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation/local_setup.zsh
+[9.191s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation/local_setup.dsv
+[9.192s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation/package.dsv
+[9.192s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/packages/rmw_implementation
+[9.192s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation/cmake/export_rmw_implementationExport.cmake
+[9.192s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation/cmake/export_rmw_implementationExport-release.cmake
+[9.193s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation/cmake/rmw_implementation-extras.cmake
+[9.193s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation/cmake/ament_cmake_export_targets-extras.cmake
+[9.193s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation/cmake/ament_cmake_export_dependencies-extras.cmake
+[9.194s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation/cmake/rmw_implementationConfig.cmake
+[9.194s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation/cmake/rmw_implementationConfig-version.cmake
+[9.194s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation/package.xml
+[9.196s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rmw_implementation' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=61 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rmw_implementation

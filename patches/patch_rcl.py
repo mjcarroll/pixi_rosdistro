@@ -10,36 +10,36 @@ def patch_rcl_yaml_param_parser(file_path):
     with open(file_path, 'r', encoding='utf-8') as f:
         content = f.read()
 
-    # 1. Update include block
-    # We find the specific pattern and replace the entire if/else/endif block
-    include_pattern = r'#ifdef _WIN32\s+#include <windows\.h>\s+#else\s+#include <threads\.h>\s+#endif'
-    include_replacement = """#ifdef _WIN32
+    # We will use a more robust way to patch. 
+    # We will look for the specific problematic lines and replace them with platform-specific ones.
+    
+    # 1. Include block
+    # Original:
+    # #ifdef _WIN32
+    # #include <windows.h>
+    # #else
+    # #include <threads.h>
+    # #endif
+    if '#include <threads.h>' in content and 'pthread.h' not in content:
+        # Use regex to replace the whole block regardless of whitespace
+        pattern = r'#ifdef _WIN32\s+#include <windows\.h>\s+#else\s+#include <threads\.h>\s+#endif'
+        replacement = """#ifdef _WIN32
 #include <windows.h>
 #elif defined(__APPLE__)
 #include <pthread.h>
 #else
 #include <threads.h>
 #endif"""
-    if re.search(include_pattern, content):
-        content = re.sub(include_pattern, include_replacement, content)
+        content = re.sub(pattern, replacement, content)
         print(f"Patched include block in {file_path}")
 
-    # 2. Update locale initialization block
-    # This block is larger and has more variation. We'll target the #else...#endif part of the _WIN32 check.
-    # The original looks like:
-    # #else
-    # static locale_t c_locale = 0;
-    # static once_flag c_locale_once_flag = ONCE_FLAG_INIT;
-    # 
-    # static void init_c_locale()
-    # {
-    #   c_locale = newlocale(LC_NUMERIC_MASK, "C", 0);
-    # }
-    # #endif
-    
-    locale_block_pattern = r'#else\s+static locale_t c_locale = 0;\s+static once_flag c_locale_once_flag = ONCE_FLAG_INIT;\s+static void init_c_locale\(\)\s+\{\s+c_locale = newlocale\(LC_NUMERIC_MASK, "C", 0\);\s+\}\s+#endif'
-    
-    locale_block_replacement = """#elif defined(__APPLE__)
+    # 2. Locale initialization block
+    # We'll look for the static once_flag line and the surrounding context
+    if 'static once_flag c_locale_once_flag = ONCE_FLAG_INIT;' in content and 'pthread_once_t' not in content:
+        # We'll replace the POSIX part of the block
+        # Look for the #else ... #endif that contains our target
+        pattern = r'#else\s+static locale_t c_locale = 0;\s+static once_flag c_locale_once_flag = ONCE_FLAG_INIT;\s+static void init_c_locale\(\)\s+\{\s+c_locale = newlocale\(LC_NUMERIC_MASK, "C", 0\);\s+\}\s+#endif'
+        replacement = """#elif defined(__APPLE__)
 static locale_t c_locale = 0;
 static pthread_once_t c_locale_once_flag = PTHREAD_ONCE_INIT;
 
@@ -56,50 +56,24 @@ static void init_c_locale()
   c_locale = newlocale(LC_NUMERIC_MASK, "C", 0);
 }
 #endif"""
-
-    if re.search(locale_block_pattern, content):
-        content = re.sub(locale_block_pattern, locale_block_replacement, content)
+        content = re.sub(pattern, replacement, content)
         print(f"Patched locale block in {file_path}")
-    else:
-        # Try a slightly different pattern if the above fails (e.g. extra newlines)
-        # We'll just look for the static once_flag line and the surrounding context
-        if 'static once_flag c_locale_once_flag = ONCE_FLAG_INIT;' in content and 'pthread_once_t' not in content:
-             # Find the #else before it and the #endif after it
-             # This is risky but we can try to be specific
-             content = content.replace(
-                 'static once_flag c_locale_once_flag = ONCE_FLAG_INIT;',
-                 'static once_flag c_locale_once_flag = ONCE_FLAG_INIT;' # No-op just to find it
-             )
-             # Let's use a very targeted replacement for the lines we know are there
-             content = content.replace(
-                 '#else\nstatic locale_t c_locale = 0;\nstatic once_flag c_locale_once_flag = ONCE_FLAG_INIT;',
-                 '#elif defined(__APPLE__)\nstatic locale_t c_locale = 0;\nstatic pthread_once_t c_locale_once_flag = PTHREAD_ONCE_INIT;\n#else\nstatic locale_t c_locale = 0;\nstatic once_flag c_locale_once_flag = ONCE_FLAG_INIT;'
-             )
-             print(f"Patched locale block (fallback) in {file_path}")
 
-    # 3. Update call_once usage
-    # Original:
-    # #else
-    #   call_once(&c_locale_once_flag, init_c_locale);
-    # #endif
-    call_once_pattern = r'#else\s+call_once\(&c_locale_once_flag, init_c_locale\);\s+#endif'
-    call_once_replacement = """#elif defined(__APPLE__)
+    # 3. call_once usage
+    if 'call_once(&c_locale_once_flag, init_c_locale);' in content and 'pthread_once' not in content:
+        pattern = r'#else\s+call_once\(&c_locale_once_flag, init_c_locale\);\s+#endif'
+        replacement = """#elif defined(__APPLE__)
   pthread_once(&c_locale_once_flag, init_c_locale);
 #else
   call_once(&c_locale_once_flag, init_c_locale);
 #endif"""
-
-    if re.search(call_once_pattern, content):
-        content = re.sub(call_once_pattern, call_once_replacement, content)
+        content = re.sub(pattern, replacement, content)
         print(f"Patched call_once usage in {file_path}")
-    else:
-        # Targeted string replacement
-        if 'call_once(&c_locale_once_flag, init_c_locale);' in content and 'pthread_once' not in content:
-            content = content.replace(
-                '#else\n  call_once(&c_locale_once_flag, init_c_locale);\n#endif',
-                call_once_replacement
-            )
-            print(f"Patched call_once usage (fallback) in {file_path}")
+
+    # Final sanity check: make sure we didn't end up with #elif after #else
+    # This can happen if we did multiple replacements or if the file was already partially patched.
+    # We'll just fix it by ensuring only one #else exists in these blocks.
+    # Actually, the regex approach above should prevent this if it matches correctly.
 
     with open(file_path, 'wb') as f:
         f.write(content.encode('utf-8').replace(b'\r\n', b'\n'))

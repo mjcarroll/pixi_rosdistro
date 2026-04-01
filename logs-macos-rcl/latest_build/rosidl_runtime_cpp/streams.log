@@ -1,0 +1,88 @@
+[0.447s] Invoking command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosidl_runtime_cpp': AMENT_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/mimick_vendor/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rosidl/rosidl_runtime_cpp -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[0.645s] Not searching for unused variables given on the command line.
+[0.645s] -- The C compiler identification is AppleClang 17.0.0.17000013
+[0.787s] -- The CXX compiler identification is AppleClang 17.0.0.17000013
+[0.832s] -- Detecting C compiler ABI info
+[1.173s] -- Detecting C compiler ABI info - done
+[1.214s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.214s] -- Detecting C compile features
+[1.214s] -- Detecting C compile features - done
+[1.218s] -- Detecting CXX compiler ABI info
+[1.601s] -- Detecting CXX compiler ABI info - done
+[1.636s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.637s] -- Detecting CXX compile features
+[1.637s] -- Detecting CXX compile features - done
+[1.645s] -- Found ament_cmake: 2.8.6 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake/cmake)
+[1.936s] -- Found rosidl_runtime_c: 5.1.3 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_runtime_c/cmake)
+[1.958s] -- Found ament_lint_auto: 0.20.3 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_lint_auto/cmake)
+[1.964s] -- Found performance_test_fixture: 0.4.1 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/cmake)
+[2.483s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[2.486s] -- Found Threads: TRUE
+[2.488s] -- Performance tests are disabled by default, so Google Benchmark tests will be skipped. To enable these tests, set the CMake variable 'AMENT_RUN_PERFORMANCE_TESTS'.
+[2.494s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.497s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.497s] -- Configured cppcheck include dirs: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include;$<BUILD_INTERFACE:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rosidl/rosidl_runtime_cpp/include>
+[2.497s] -- Configured cppcheck exclude dirs and/or files: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rosidl/rosidl_runtime_cpp/include/rosidl_runtime_cpp/type_description/field__struct.hpp;/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rosidl/rosidl_runtime_cpp/include/rosidl_runtime_cpp/type_description/field_type__struct.hpp;/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rosidl/rosidl_runtime_cpp/include/rosidl_runtime_cpp/type_description/individual_type_description__struct.hpp;/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rosidl/rosidl_runtime_cpp/include/rosidl_runtime_cpp/type_description/key_value__struct.hpp;/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rosidl/rosidl_runtime_cpp/include/rosidl_runtime_cpp/type_description/type_description__struct.hpp;/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rosidl/rosidl_runtime_cpp/include/rosidl_runtime_cpp/type_description/type_source__struct.hpp
+[2.499s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.499s] -- Configured cpplint exclude dirs and/or files: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rosidl/rosidl_runtime_cpp/include/rosidl_runtime_cpp/type_description/field__struct.hpp;/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rosidl/rosidl_runtime_cpp/include/rosidl_runtime_cpp/type_description/field_type__struct.hpp;/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rosidl/rosidl_runtime_cpp/include/rosidl_runtime_cpp/type_description/individual_type_description__struct.hpp;/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rosidl/rosidl_runtime_cpp/include/rosidl_runtime_cpp/type_description/key_value__struct.hpp;/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rosidl/rosidl_runtime_cpp/include/rosidl_runtime_cpp/type_description/type_description__struct.hpp;/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rosidl/rosidl_runtime_cpp/include/rosidl_runtime_cpp/type_description/type_source__struct.hpp
+[2.500s] -- Added test 'lint_cmake' to check CMake code style
+[2.503s] -- Added test 'uncrustify' to check C / C++ code style
+[2.503s] -- Configured uncrustify additional arguments: 
+[2.503s] -- Added test 'xmllint' to check XML markup files
+[2.507s] -- Configuring done (2.0s)
+[2.536s] -- Generating done (0.0s)
+[2.543s] -- Build files have been written to: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosidl_runtime_cpp
+[2.545s] Invoked command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosidl_runtime_cpp' returned '0': AMENT_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/mimick_vendor/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rosidl/rosidl_runtime_cpp -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[2.548s] Invoking command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosidl_runtime_cpp': AMENT_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/mimick_vendor/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosidl_runtime_cpp -- -j3 -l3
+[3.207s] [1/8] Building CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[3.548s] [2/8] Building CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[4.012s] [3/8] Building CXX object CMakeFiles/test_bounded_vector.dir/test/test_bounded_vector.cpp.o
+[4.334s] [4/8] Building CXX object CMakeFiles/benchmark_bounded_vector.dir/test/benchmark/benchmark_bounded_vector.cpp.o
+[4.418s] [5/8] Linking CXX static library gtest/libgtest.a
+[4.494s] [6/8] Linking CXX static library gtest/libgtest_main.a
+[4.558s] [7/8] Linking CXX executable test_bounded_vector
+[4.618s] [8/8] Linking CXX executable benchmark_bounded_vector
+[4.619s] Invoked command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosidl_runtime_cpp' returned '0': AMENT_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/mimick_vendor/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=99 SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosidl_runtime_cpp -- -j3 -l3
+[4.621s] Invoking command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosidl_runtime_cpp': AMENT_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/mimick_vendor/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=99 SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosidl_runtime_cpp
+[4.635s] -- Install configuration: "Release"
+[4.635s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/rosidl_runtime_packages/rosidl_runtime_cpp
+[4.635s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosidl_runtime_cpp
+[4.636s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosidl_runtime_cpp/rosidl_typesupport_cpp
+[4.636s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp
+[4.636s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp
+[4.636s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/action_type_support.hpp
+[4.636s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosidl_runtime_cpp/rosidl_runtime_cpp
+[4.636s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_initialization.hpp
+[4.637s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp
+[4.637s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp
+[4.637s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosidl_runtime_cpp/rosidl_runtime_cpp/type_description
+[4.637s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosidl_runtime_cpp/rosidl_runtime_cpp/type_description/type_description__struct.hpp
+[4.637s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosidl_runtime_cpp/rosidl_runtime_cpp/type_description/field__struct.hpp
+[4.637s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosidl_runtime_cpp/rosidl_runtime_cpp/type_description/field_type__struct.hpp
+[4.638s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosidl_runtime_cpp/rosidl_runtime_cpp/type_description/type_source__struct.hpp
+[4.638s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosidl_runtime_cpp/rosidl_runtime_cpp/type_description/individual_type_description__struct.hpp
+[4.638s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosidl_runtime_cpp/rosidl_runtime_cpp/type_description/key_value__struct.hpp
+[4.638s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosidl_runtime_cpp/rosidl_runtime_cpp/action_type_support_decl.hpp
+[4.639s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp
+[4.639s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosidl_runtime_cpp/rosidl_runtime_cpp/bounded_vector.hpp
+[4.639s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/package_run_dependencies/rosidl_runtime_cpp
+[4.639s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/parent_prefix_path/rosidl_runtime_cpp
+[4.640s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_runtime_cpp/environment/ament_prefix_path.sh
+[4.640s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_runtime_cpp/environment/ament_prefix_path.dsv
+[4.640s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_runtime_cpp/environment/path.sh
+[4.640s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_runtime_cpp/environment/path.dsv
+[4.641s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_runtime_cpp/local_setup.bash
+[4.641s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_runtime_cpp/local_setup.fish
+[4.641s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_runtime_cpp/local_setup.sh
+[4.641s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_runtime_cpp/local_setup.zsh
+[4.642s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_runtime_cpp/local_setup.dsv
+[4.642s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_runtime_cpp/package.dsv
+[4.642s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/packages/rosidl_runtime_cpp
+[4.642s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_runtime_cpp/cmake/rosidl_runtime_cppExport.cmake
+[4.643s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_runtime_cpp/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.643s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_runtime_cpp/cmake/ament_cmake_export_targets-extras.cmake
+[4.643s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_runtime_cpp/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.643s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_runtime_cpp/cmake/rosidl_runtime_cppConfig.cmake
+[4.643s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_runtime_cpp/cmake/rosidl_runtime_cppConfig-version.cmake
+[4.644s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_runtime_cpp/package.xml
+[4.646s] Invoked command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosidl_runtime_cpp' returned '0': AMENT_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/mimick_vendor/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=99 SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosidl_runtime_cpp
