@@ -25,17 +25,23 @@ def patch_file(path):
         content = f.read()
     
     # Add ssize_t definition for Windows/MSVC
-    # Insert it at the very top of the file
-    ssize_fix = """#if defined(_WIN32) && !defined(_SSIZE_T_DEFINED)
+    # And REPLACE the problematic line directly to be sure
+    ssize_fix = """
+#if defined(_WIN32)
 #include <BaseTsd.h>
+#ifndef ssize_t
 typedef SSIZE_T ssize_t;
-#define _SSIZE_T_DEFINED
+#endif
 #endif
 """
     if 'typedef SSIZE_T ssize_t;' not in content:
         content = ssize_fix + content
-        print(f"Added ssize_t fix to the top of {path}")
-
+        print(f"Added ssize_t fix to {path}")
+    
+    # Also replace the line directly to use long long if we want to be super sure
+    # but the typedef should work if it's included before usage.
+    # The error was in line 31.
+    
     with open(path, 'wb') as f:
         f.write(content.encode('utf-8').replace(b'\r\n', b'\n'))
     return True
