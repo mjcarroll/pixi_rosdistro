@@ -1,0 +1,121 @@
+Not searching for unused variables given on the command line.
+-- The C compiler identification is AppleClang 17.0.0.17000013
+-- The CXX compiler identification is AppleClang 17.0.0.17000013
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake_ros: 0.15.6 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_ros/cmake)
+-- Found action_msgs: 2.4.3 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/action_msgs/cmake)
+-- Found rosidl_generator_c: 5.1.3 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 5.1.3 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rcl: 10.4.1 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/cmake)
+-- Found rmw_implementation_cmake: 7.9.1 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 9.4.5 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found ament_lint_auto: 0.20.3 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_lint_auto/cmake)
+-- Found test_msgs: 2.4.3 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/test_msgs/cmake)
+-- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Creating tests for 'rmw_cyclonedds_cpp'
+-- Creating tests for 'rmw_fastrtps_cpp'
+-- Creating tests for 'rmw_fastrtps_dynamic_cpp'
+-- Creating tests for 'rmw_zenoh_cpp'
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl_action/include>;/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl_action/src
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (4.2s)
+-- Generating done (0.1s)
+-- Build files have been written to: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rcl_action
+[1/35] Generating rcl_action/version.h
+[2/35] Building C object CMakeFiles/rcl_action.dir/src/rcl_action/action_client.c.o
+[3/35] Building C object CMakeFiles/rcl_action.dir/src/rcl_action/action_server.c.o
+[4/35] Building C object CMakeFiles/rcl_action.dir/src/rcl_action/goal_handle.c.o
+[5/35] Building C object CMakeFiles/rcl_action.dir/src/rcl_action/goal_state_machine.c.o
+[6/35] Building C object CMakeFiles/rcl_action.dir/src/rcl_action/graph.c.o
+[7/35] Building C object CMakeFiles/rcl_action.dir/src/rcl_action/names.c.o
+[8/35] Building C object CMakeFiles/rcl_action.dir/src/rcl_action/types.c.o
+[9/35] Building CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[10/35] Building CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[11/35] Linking C shared library librcl_action.dylib
+[12/35] Building CXX object CMakeFiles/test_action_client.dir/test/rcl_action/test_action_client.cpp.o
+[13/35] Building CXX object CMakeFiles/test_action_communication.dir/test/rcl_action/test_action_communication.cpp.o
+[14/35] Building CXX object CMakeFiles/test_action_interaction.dir/test/rcl_action/test_action_interaction.cpp.o
+[15/35] Building CXX object CMakeFiles/test_graph.dir/test/rcl_action/test_graph.cpp.o
+[16/35] Building CXX object CMakeFiles/test_action_server.dir/test/rcl_action/test_action_server.cpp.o
+[17/35] Building CXX object CMakeFiles/test_goal_handle.dir/test/rcl_action/test_goal_handle.cpp.o
+[18/35] Building CXX object CMakeFiles/test_goal_state_machine.dir/test/rcl_action/test_goal_state_machine.cpp.o
+[19/35] Building CXX object CMakeFiles/test_types.dir/test/rcl_action/test_types.cpp.o
+[20/35] Building CXX object CMakeFiles/test_names.dir/test/rcl_action/test_names.cpp.o
+[21/35] Building CXX object CMakeFiles/test_wait.dir/test/rcl_action/test_wait.cpp.o
+[22/35] Building CXX object CMakeFiles/test_action_name_remapping.dir/test/rcl_action/test_action_name_remapping.cpp.o
+[23/35] Linking CXX static library gtest/libgtest.a
+[24/35] Linking CXX static library gtest/libgtest_main.a
+[25/35] Linking CXX executable test_action_client
+[26/35] Linking CXX executable test_action_communication
+[27/35] Linking CXX executable test_action_interaction
+[28/35] Linking CXX executable test_graph
+[29/35] Linking CXX executable test_action_server
+[30/35] Linking CXX executable test_goal_handle
+[31/35] Linking CXX executable test_goal_state_machine
+[32/35] Linking CXX executable test_types
+[33/35] Linking CXX executable test_names
+[34/35] Linking CXX executable test_wait
+[35/35] Linking CXX executable test_action_name_remapping
+-- Install configuration: "Release"
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl_action
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl_action/rcl_action
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl_action/rcl_action/action_client.h
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl_action/rcl_action/goal_state_machine.h
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl_action/rcl_action/types.h
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl_action/rcl_action/wait.h
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl_action/rcl_action/goal_handle.h
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl_action/rcl_action/visibility_control.h
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl_action/rcl_action/graph.h
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl_action/rcl_action/names.h
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl_action/rcl_action/default_qos.h
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl_action/rcl_action/rcl_action.h
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl_action/rcl_action/action_server.h
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/librcl_action.dylib
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_action/environment/library_path.sh
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_action/environment/library_path.dsv
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl_action/rcl_action/version.h
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/package_run_dependencies/rcl_action
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/parent_prefix_path/rcl_action
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_action/environment/ament_prefix_path.sh
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_action/environment/ament_prefix_path.dsv
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_action/environment/path.sh
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_action/environment/path.dsv
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_action/local_setup.bash
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_action/local_setup.fish
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_action/local_setup.sh
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_action/local_setup.zsh
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_action/local_setup.dsv
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_action/package.dsv
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/packages/rcl_action
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_action/cmake/rcl_actionExport.cmake
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_action/cmake/rcl_actionExport-release.cmake
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_action/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_action/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_action/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_action/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_action/cmake/rcl_actionConfig.cmake
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_action/cmake/rcl_actionConfig-version.cmake
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_action/package.xml

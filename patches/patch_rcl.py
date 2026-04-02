@@ -1,5 +1,6 @@
 import os
 import re
+import subprocess
 import sys
 
 def git_reset(path):
@@ -12,7 +13,7 @@ def git_reset(path):
         pkg_dir = next_dir
     if pkg_dir:
         rel_path = os.path.relpath(path, pkg_dir)
-        os.system(f"cd {pkg_dir} && git checkout -- {rel_path} 2>/dev/null")
+        subprocess.run(["git", "checkout", "--", rel_path], cwd=pkg_dir, capture_output=True)
 
 def patch_rcl_yaml_param_parser(file_path):
     if not os.path.exists(file_path):
@@ -29,7 +30,6 @@ def patch_rcl_yaml_param_parser(file_path):
     new_include = '#ifdef _WIN32\n#include <windows.h>\n#elif defined(__APPLE__)\n#include <pthread.h>\n#else\n#include <threads.h>\n#endif'
     if old_include in content:
         content = content.replace(old_include, new_include)
-        print(f"Patched include in {file_path}")
 
     # 2. Locale init block
     old_init = """#else
@@ -61,7 +61,6 @@ static void init_c_locale()
 #endif"""
     if old_init in content:
         content = content.replace(old_init, new_init)
-        print(f"Patched init block in {file_path}")
 
     # 3. Call site in strtod_locale_independent
     old_call = """#else
@@ -112,11 +111,11 @@ static void init_c_locale()
 
     if old_call in content:
         content = content.replace(old_call, new_call)
-        print(f"Patched call block in {file_path}")
 
     with open(file_path, 'wb') as f:
         f.write(content.encode('utf-8').replace(b'\r\n', b'\n'))
     
+    print(f"Patched {file_path}")
     return True
 
 if __name__ == "__main__":

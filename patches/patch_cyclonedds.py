@@ -1,4 +1,6 @@
 import os
+import re
+import subprocess
 import sys
 
 def git_reset(path):
@@ -12,7 +14,7 @@ def git_reset(path):
     
     if pkg_dir:
         rel_path = os.path.relpath(path, pkg_dir)
-        os.system(f"cd {pkg_dir} && git checkout -- {rel_path} 2>/dev/null")
+        subprocess.run(["git", "checkout", "--", rel_path], cwd=pkg_dir, capture_output=True)
 
 def patch_file(path):
     if not os.path.exists(path):
@@ -24,13 +26,12 @@ def patch_file(path):
     with open(path, 'r', encoding='utf-8') as f:
         content = f.read()
     
-    # 1. Add intptr_t/ssize_t fix
+    # Standardize the intptr_t/ssize_t fix
     if '#include <stdint.h>' not in content:
         # Prepend it after the header guard
         content = content.replace('#ifndef FILE_H\n#define FILE_H', '#ifndef FILE_H\n#define FILE_H\n\n#include <stdint.h>')
     
-    # 2. Brute force replacement of the problematic #if WIN32 block
-    # Upstream has a buggy #if WIN32 without underscore
+    # Fix buggy WIN32 block
     old_block = """#if WIN32
 # include <basetsd.h>
 typedef SSIZE_T ssize_t;
@@ -46,18 +47,17 @@ typedef SSIZE_T ssize_t;
 
     if old_block in content:
         content = content.replace(old_block, new_block)
-        print(f"Fixed buggy WIN32 block in {path}")
     
-    # 3. Handle the function signature
+    # Handle the function signature
     old_line = 'IDL_EXPORT ssize_t idl_untaint_path(char *path);'
     new_line = '#ifdef _WIN32\nIDL_EXPORT intptr_t idl_untaint_path(char *path);\n#else\nIDL_EXPORT ssize_t idl_untaint_path(char *path);\n#endif'
     
     if old_line in content:
         content = content.replace(old_line, new_line)
-        print(f"Patched function signature in {path}")
 
     with open(path, 'wb') as f:
         f.write(content.encode('utf-8').replace(b'\r\n', b'\n'))
+    print(f"Patched {path}")
     return True
 
 if __name__ == "__main__":
