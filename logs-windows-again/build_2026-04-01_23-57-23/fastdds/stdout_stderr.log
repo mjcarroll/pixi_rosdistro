@@ -1,0 +1,66 @@
+Not searching for unused variables given on the command line.
+-- The C compiler identification is MSVC 19.44.35225.0
+-- The CXX compiler identification is MSVC 19.44.35225.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Version: 3.4.2.0
+-- Enforced cxx_std_11 CMake feature
+-- Setting warnings as errors...
+-- Found fastcdr
+-- Found Asio 1.36.0: D:/a/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/Library/include
+-- Found Asio
+-- Found TinyXML2: D:/a/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/Library/lib/cmake/tinyxml2
+-- Found TinyXML2
+-- Found foonathan_memory: D:/a/pixi_rosdistro/pixi_rosdistro/install/share/foonathan_memory/cmake
+-- Looking for pthread.h
+-- Looking for pthread.h - not found
+-- Found Threads: TRUE
+-- Change Dir: 'D:/a/pixi_rosdistro/pixi_rosdistro/build/fastdds/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): D:/a/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/Library/bin/ninja.exe -v cmTC_2cde7
+[1/2] sccache C:\PROGRA~1\MICROS~2\2022\ENTERP~1\VC\Tools\MSVC\1444~1.352\bin\Hostx64\x64\cl.exe  /nologo /TP -D_MBCS -ID:\a\pixi_rosdistro\pixi_rosdistro\src\eProsima\Fast-DDS\cmake\modules\..\..\thirdparty\boost\include -ID:\a\pixi_rosdistro\pixi_rosdistro\src\eProsima\Fast-DDS\cmake\modules\..\..\src\cpp "/MP /FS /EHsc" /W4  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\cmTC_2cde7.dir\ThirdpartyBoostCompile_test.cpp.obj /FdCMakeFiles\cmTC_2cde7.dir\ /FS -c D:\a\pixi_rosdistro\pixi_rosdistro\src\eProsima\Fast-DDS\thirdparty\boost\test\ThirdpartyBoostCompile_test.cpp
+D:\a\pixi_rosdistro\pixi_rosdistro\src\eProsima\Fast-DDS\thirdparty\boost\include\boost/interprocess/detail/win32_api.hpp(1896): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+[2/2] C:\Windows\system32\cmd.exe /C "cd . && D:\a\pixi_rosdistro\pixi_rosdistro\.pixi\envs\default\Library\bin\cmake.exe -E vs_link_exe --msvc-ver=1944 --intdir=CMakeFiles\cmTC_2cde7.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests  -- C:\PROGRA~1\MICROS~2\2022\ENTERP~1\VC\Tools\MSVC\1444~1.352\bin\Hostx64\x64\link.exe /nologo CMakeFiles\cmTC_2cde7.dir\ThirdpartyBoostCompile_test.cpp.obj  /out:cmTC_2cde7.exe /implib:cmTC_2cde7.lib /pdb:cmTC_2cde7.pdb /version:0.0 /machine:x64  -Wl,-defaultlib:D:/a/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/clang/19/lib/windows/clang_rt.builtins-x86_64.lib  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+FAILED: [code=4294967295] cmTC_2cde7.exe 
+C:\Windows\system32\cmd.exe /C "cd . && D:\a\pixi_rosdistro\pixi_rosdistro\.pixi\envs\default\Library\bin\cmake.exe -E vs_link_exe --msvc-ver=1944 --intdir=CMakeFiles\cmTC_2cde7.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests  -- C:\PROGRA~1\MICROS~2\2022\ENTERP~1\VC\Tools\MSVC\1444~1.352\bin\Hostx64\x64\link.exe /nologo CMakeFiles\cmTC_2cde7.dir\ThirdpartyBoostCompile_test.cpp.obj  /out:cmTC_2cde7.exe /implib:cmTC_2cde7.lib /pdb:cmTC_2cde7.pdb /version:0.0 /machine:x64  -Wl,-defaultlib:D:/a/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/clang/19/lib/windows/clang_rt.builtins-x86_64.lib  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+LINK Pass 1: command "C:\PROGRA~1\MICROS~2\2022\ENTERP~1\VC\Tools\MSVC\1444~1.352\bin\Hostx64\x64\link.exe /nologo CMakeFiles\cmTC_2cde7.dir\ThirdpartyBoostCompile_test.cpp.obj /out:cmTC_2cde7.exe /implib:cmTC_2cde7.lib /pdb:cmTC_2cde7.pdb /version:0.0 /machine:x64 -Wl,-defaultlib:D:/a/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/clang/19/lib/windows/clang_rt.builtins-x86_64.lib /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_2cde7.dir/intermediate.manifest CMakeFiles\cmTC_2cde7.dir/manifest.res" failed (exit code 1120) with the following output:
+LINK : warning LNK4044: unrecognized option '/Wl,-defaultlib:D:/a/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/clang/19/lib/windows/clang_rt.builtins-x86_64.lib' ignored
+ThirdpartyBoostCompile_test.cpp.obj : error LNK2019: unresolved external symbol "void __cdecl boost::throw_exception(class std::exception const &)" (?throw_exception@boost@@YAXAEBVexception@std@@@Z) referenced in function "public: __cdecl boost::gregorian::date::date(class boost::gregorian::greg_year,class boost::gregorian::greg_month,class boost::gregorian::greg_day)" (??0date@gregorian@boost@@QEAA@Vgreg_year@12@Vgreg_month@12@Vgreg_day@12@@Z)
+cmTC_2cde7.exe : fatal error LNK1120: 1 unresolved externals
+ninja: build stopped: subcommand failed.
+
+
+Couldn't compile thirdparty/boost. SHM Transport feature will be disabled!!!
+
+-- Found OpenSSL: D:/a/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/Library/lib/libcrypto.lib (found version "3.6.1")
+-- OpenSSL library 3.6.1 found...
+-- Not using a GNU compiler on Windows.
+-- Performing Test ATOMIC_WITHOUT_LIB
+-- Performing Test ATOMIC_WITHOUT_LIB - Success
+-- Framework's shared_mutex is PTHREAD_RWLOCK_PREFER_WRITER_NONRECURSIVE_NP
+-- Forcing third party shared_mutex
+-- Enforced cxx_std_14 CMake feature
+-- EPROSIMA_TEST_DNS_NOT_SET_UP: '1'
+-- Configuring done (13.3s)
+-- Generating done (0.2s)
+-- Build files have been written to: D:/a/pixi_rosdistro/pixi_rosdistro/build/fastdds
+[1/241] Building CXX object src\cpp\CMakeFiles\fastdds.dir\fastdds\topic\DDSSQLFilter\DDSFilterCompoundCondition.cpp.obj
+[2/241] Building CXX object src\cpp\CMakeFiles\fastdds.dir\fastdds\topic\DDSSQLFilter\DDSFilterExpression.cpp.obj
+FAILED: [code=2] src/cpp/CMakeFiles/fastdds.dir/fastdds/topic/DDSSQLFilter/DDSFilterExpression.cpp.obj 
+sccache C:\PROGRA~1\MICROS~2\2022\ENTERP~1\VC\Tools\MSVC\1444~1.352\bin\Hostx64\x64\cl.exe  /nologo /TP -DASIO_DISABLE_VISIBILITY -DASIO_STANDALONE -DBOOST_ASIO_STANDALONE -DEPROSIMA_USER_DLL_EXPORT -DFASTCDR_DYN_LINK -DFASTCDR_NO_LIB -DFASTDDS_DYN_LINK -DFASTDDS_SHM_TRANSPORT_DISABLED -DFASTDDS_SOURCE -DFOONATHAN_MEMORY=1 -DFOONATHAN_MEMORY_VERSION_MAJOR=0 -DFOONATHAN_MEMORY_VERSION_MINOR=7 -DFOONATHAN_MEMORY_VERSION_PATCH=4 -DNOMINMAX -DSHM_TRANSPORT_BUILTIN -DSQLITE_WIN32_GETVERSIONEX=0 -DSTDOUTERR_LOG_CONSUMER -DTINYXML2_IMPORT -D_ENABLE_ATOMIC_ALIGNMENT_FIX -D_FILE_OFFSET_BITS=64 -D_WIN32_WINNT=0x0601 -Dfastdds_EXPORTS -ID:\a\pixi_rosdistro\pixi_rosdistro\src\eProsima\Fast-DDS\thirdparty\nlohmann-json -ID:\a\pixi_rosdistro\pixi_rosdistro\src\eProsima\Fast-DDS\thirdparty\filewatch -ID:\a\pixi_rosdistro\pixi_rosdistro\src\eProsima\Fast-DDS\include -ID:\a\pixi_rosdistro\pixi_rosdistro\build\fastdds\include -ID:\a\pixi_rosdistro\pixi_rosdistro\build\fastdds\include\fastdds -ID:\a\pixi_rosdistro\pixi_rosdistro\src\eProsima\Fast-DDS\src\cpp -ID:\a\pixi_rosdistro\pixi_rosdistro\src\eProsima\Fast-DDS\cmake\modules\..\..\thirdparty\boost\include -ID:\a\pixi_rosdistro\pixi_rosdistro\src\eProsima\Fast-DDS\thirdparty\taocpp-pegtl -external:ID:\a\pixi_rosdistro\pixi_rosdistro\.pixi\envs\default\Library\include -external:ID:\a\pixi_rosdistro\pixi_rosdistro\install\include -external:W0 "/MP /FS /EHsc" /W4 /O2 /Ob2 /DNDEBUG -MD /w34101 /w34189 /w34555 /w34715 /w35038 /w44100 /bigobj /WX /showIncludes /Fosrc\cpp\CMakeFiles\fastdds.dir\fastdds\topic\DDSSQLFilter\DDSFilterExpression.cpp.obj /Fdsrc\cpp\CMakeFiles\fastdds.dir\ /FS -c D:\a\pixi_rosdistro\pixi_rosdistro\src\eProsima\Fast-DDS\src\cpp\fastdds\topic\DDSSQLFilter\DDSFilterExpression.cpp
+D:\a\pixi_rosdistro\pixi_rosdistro\src\eProsima\Fast-DDS\include\fastdds/rtps/common/GuidPrefix_t.hpp(176): error C2220: the following warning is treated as an error
+D:\a\pixi_rosdistro\pixi_rosdistro\src\eProsima\Fast-DDS\include\fastdds/rtps/common/GuidPrefix_t.hpp(176): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+[3/241] Building CXX object src\cpp\CMakeFiles\fastdds.dir\fastdds\topic\DDSSQLFilter\DDSFilterExpressionParser.cpp.obj
+FAILED: [code=2] src/cpp/CMakeFiles/fastdds.dir/fastdds/topic/DDSSQLFilter/DDSFilterExpressionParser.cpp.obj 
+sccache C:\PROGRA~1\MICROS~2\2022\ENTERP~1\VC\Tools\MSVC\1444~1.352\bin\Hostx64\x64\cl.exe  /nologo /TP -DASIO_DISABLE_VISIBILITY -DASIO_STANDALONE -DBOOST_ASIO_STANDALONE -DEPROSIMA_USER_DLL_EXPORT -DFASTCDR_DYN_LINK -DFASTCDR_NO_LIB -DFASTDDS_DYN_LINK -DFASTDDS_SHM_TRANSPORT_DISABLED -DFASTDDS_SOURCE -DFOONATHAN_MEMORY=1 -DFOONATHAN_MEMORY_VERSION_MAJOR=0 -DFOONATHAN_MEMORY_VERSION_MINOR=7 -DFOONATHAN_MEMORY_VERSION_PATCH=4 -DNOMINMAX -DSHM_TRANSPORT_BUILTIN -DSQLITE_WIN32_GETVERSIONEX=0 -DSTDOUTERR_LOG_CONSUMER -DTINYXML2_IMPORT -D_ENABLE_ATOMIC_ALIGNMENT_FIX -D_FILE_OFFSET_BITS=64 -D_WIN32_WINNT=0x0601 -Dfastdds_EXPORTS -ID:\a\pixi_rosdistro\pixi_rosdistro\src\eProsima\Fast-DDS\thirdparty\nlohmann-json -ID:\a\pixi_rosdistro\pixi_rosdistro\src\eProsima\Fast-DDS\thirdparty\filewatch -ID:\a\pixi_rosdistro\pixi_rosdistro\src\eProsima\Fast-DDS\include -ID:\a\pixi_rosdistro\pixi_rosdistro\build\fastdds\include -ID:\a\pixi_rosdistro\pixi_rosdistro\build\fastdds\include\fastdds -ID:\a\pixi_rosdistro\pixi_rosdistro\src\eProsima\Fast-DDS\src\cpp -ID:\a\pixi_rosdistro\pixi_rosdistro\src\eProsima\Fast-DDS\cmake\modules\..\..\thirdparty\boost\include -ID:\a\pixi_rosdistro\pixi_rosdistro\src\eProsima\Fast-DDS\thirdparty\taocpp-pegtl -external:ID:\a\pixi_rosdistro\pixi_rosdistro\.pixi\envs\default\Library\include -external:ID:\a\pixi_rosdistro\pixi_rosdistro\install\include -external:W0 "/MP /FS /EHsc" /W4 /O2 /Ob2 /DNDEBUG -MD /w34101 /w34189 /w34555 /w34715 /w35038 /w44100 /bigobj /WX /showIncludes /Fosrc\cpp\CMakeFiles\fastdds.dir\fastdds\topic\DDSSQLFilter\DDSFilterExpressionParser.cpp.obj /Fdsrc\cpp\CMakeFiles\fastdds.dir\ /FS -c D:\a\pixi_rosdistro\pixi_rosdistro\src\eProsima\Fast-DDS\src\cpp\fastdds\topic\DDSSQLFilter\DDSFilterExpressionParser.cpp
+D:\a\pixi_rosdistro\pixi_rosdistro\src\eProsima\Fast-DDS\include\fastdds/rtps/common/GuidPrefix_t.hpp(176): error C2220: the following warning is treated as an error
+D:\a\pixi_rosdistro\pixi_rosdistro\src\eProsima\Fast-DDS\include\fastdds/rtps/common/GuidPrefix_t.hpp(176): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+ninja: build stopped: subcommand failed.
