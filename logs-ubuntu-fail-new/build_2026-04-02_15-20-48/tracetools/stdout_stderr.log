@@ -1,0 +1,99 @@
+Not searching for unused variables given on the command line.
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.8.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake/cmake)
+-- Found ament_cmake_ros_core: 0.15.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_ros_core/cmake)
+-- Found PkgConfig: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/pkg-config (found version "0.29.2")
+-- Checking for module 'lttng-ust'
+--   Found lttng-ust, version 2.13.9
+-- Found ament_lint_auto: 0.20.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_lint_auto/cmake)
+-- Found gtest sources under '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Check if compiler accepts -pthread
+-- Check if compiler accepts -pthread - yes
+-- Found Threads: TRUE
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include;$<BUILD_INTERFACE:/home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/ros2_tracing/tracetools/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (2.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tracetools
+[1/16] Generating tracetools/version.h
+[2/16] Building CXX object CMakeFiles/tracetools.dir/Unity/unity_0_cxx.cxx.o
+[3/16] Building C object CMakeFiles/tracetools.dir/Unity/unity_0_c.c.o
+[4/16] Linking CXX shared library libtracetools.so
+[5/16] Building C object CMakeFiles/tracetools_status.dir/Unity/unity_0_c.c.o
+[6/16] Building CXX object gtest/CMakeFiles/gtest.dir/Unity/unity_0_cxx.cxx.o
+[7/16] Building CXX object gtest/CMakeFiles/gtest_main.dir/Unity/unity_0_cxx.cxx.o
+[8/16] Building C object CMakeFiles/tracetools_provider.dir/Unity/unity_0_c.c.o
+[9/16] Linking C shared library libtracetools_status.so
+[10/16] Building C object CMakeFiles/status.dir/Unity/unity_0_c.c.o
+[11/16] Building CXX object CMakeFiles/test_status.dir/Unity/unity_0_cxx.cxx.o
+[12/16] Linking CXX static library gtest/libgtest.a
+[13/16] Linking CXX static library gtest/libgtest_main.a
+[14/16] Linking C shared library libtracetools_provider.so
+[15/16] Linking C executable status
+FAILED: [code=1] status 
+: && /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include -O3 -DNDEBUG -Wl,--no-as-needed -Wl,--dependency-file=CMakeFiles/status.dir/link.d CMakeFiles/status.dir/Unity/unity_0_c.c.o -o status  libtracetools_status.so  libtracetools.so  -rdynamic  -ldl && :
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___rcl_timer_init'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___rclcpp_service_callback_added'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___rclcpp_publish'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___rcl_publisher_init'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___rcl_subscription_init'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___rcl_init'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___rcl_service_init'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___rmw_publisher_init'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___rmw_subscription_init'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___rcl_node_init'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___rclcpp_ring_buffer_enqueue'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___rclcpp_ring_buffer_clear'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___rmw_take_request'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___rclcpp_executor_get_next_ready'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___rmw_client_init'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___rmw_take'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___rclcpp_ring_buffer_dequeue'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___rclcpp_timer_link_node'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___rclcpp_ipb_to_subscription'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___callback_end'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___message_link_periodic_async'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___rclcpp_subscription_init'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___rclcpp_callback_register'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___rcl_lifecycle_transition'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___rmw_send_request'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___rcl_lifecycle_state_machine_init'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___rclcpp_executor_execute'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___callback_start'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___rcl_client_init'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___message_link_partial_sync'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___rclcpp_executor_wait_for_work'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___rclcpp_intra_publish'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___rclcpp_timer_callback_added'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___rclcpp_take'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___rmw_publish'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___rmw_take_response'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___rcl_take'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___rclcpp_buffer_to_ipb'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___rcl_publish'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___rclcpp_construct_ring_buffer'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___rclcpp_subscription_callback_added'
+/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: libtracetools.so: undefined reference to `lttng_ust_tracepoint_ros2___rmw_send_response'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.

@@ -27,7 +27,7 @@ build:
     - -DCMAKE_MSVC_DEBUG_INFORMATION_FORMAT=Embedded
     - -DCMAKE_CXX_FLAGS=/MP /FS /EHsc
     - -DCMAKE_C_FLAGS=/MP /FS
-    - -DCMAKE_UNITY_BUILD=ON
+    - -DBUILD_TESTING=OFF
 
 test:
   merge-install: true

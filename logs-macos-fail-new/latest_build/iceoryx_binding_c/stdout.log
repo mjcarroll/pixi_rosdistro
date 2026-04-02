@@ -1,0 +1,83 @@
+Not searching for unused variables given on the command line.
+-- The C compiler identification is AppleClang 17.0.0.17000013
+-- The CXX compiler identification is AppleClang 17.0.0.17000013
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- [i] <<<<<<<<<<<<< Start iceoryx_posh configuration: >>>>>>>>>>>>>
+-- [i] Using m:n communication!
+-- [i] IOX_MAX_PUBLISHERS:512
+-- [i] IOX_MAX_SUBSCRIBERS:1024
+-- [i] IOX_MAX_INTERFACE_NUMBER:4
+-- [i] IOX_MAX_SUBSCRIBERS_PER_PUBLISHER:256
+-- [i] IOX_MAX_CHUNKS_ALLOCATED_PER_PUBLISHER_SIMULTANEOUSLY:8
+-- [i] IOX_MAX_PUBLISHER_HISTORY:16
+-- [i] IOX_MAX_CHUNKS_HELD_PER_SUBSCRIBER_SIMULTANEOUSLY:256
+-- [i] <<<<<<<<<<<<<< End iceoryx_posh configuration: >>>>>>>>>>>>>>
+-- Configuring done (1.4s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/iceoryx_binding_c
+[1/4] Building CXX object CMakeFiles/iceoryx_binding_c.dir/Unity/unity_2_cxx.cxx.o
+[2/4] Building CXX object CMakeFiles/iceoryx_binding_c.dir/Unity/unity_1_cxx.cxx.o
+[3/4] Building CXX object CMakeFiles/iceoryx_binding_c.dir/Unity/unity_0_cxx.cxx.o
+FAILED: [code=1] CMakeFiles/iceoryx_binding_c.dir/Unity/unity_0_cxx.cxx.o 
+sccache /usr/bin/c++ -Diceoryx_binding_c_EXPORTS -I/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/eclipse-iceoryx/iceoryx/iceoryx_binding_c/include -I/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/iceoryx_binding_c/generated/iceoryx/include -isystem /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6 -O3 -DNDEBUG -std=gnu++17 -arch arm64 -fPIC -W -Wall -Wextra -Wuninitialized -Wpedantic -Wstrict-aliasing -Wcast-align -Wno-noexcept-type -Wconversion -MD -MT CMakeFiles/iceoryx_binding_c.dir/Unity/unity_0_cxx.cxx.o -MF CMakeFiles/iceoryx_binding_c.dir/Unity/unity_0_cxx.cxx.o.d -o CMakeFiles/iceoryx_binding_c.dir/Unity/unity_0_cxx.cxx.o -c /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/iceoryx_binding_c/CMakeFiles/iceoryx_binding_c.dir/Unity/unity_0_cxx.cxx
+In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/iceoryx_binding_c/CMakeFiles/iceoryx_binding_c.dir/Unity/unity_0_cxx.cxx:13:
+/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/eclipse-iceoryx/iceoryx/iceoryx_binding_c/source/c_listener.cpp:62:76: error: reference to 'internal' is ambiguous
+   62 |                                     NotificationCallback<cpp2c_Subscriber, internal::NoType_t>{callback, nullptr});
+      |                                                                            ^
+/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/popo/listener.hpp:38:11: note: candidate found by name lookup is 'iox::popo::internal'
+   38 | namespace internal
+      |           ^
+/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_hoofs/internal/cxx/method_callback.inl:25:11: note: candidate found by name lookup is 'iox::cxx::internal'
+   25 | namespace internal
+      |           ^
+In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/iceoryx_binding_c/CMakeFiles/iceoryx_binding_c.dir/Unity/unity_0_cxx.cxx:13:
+/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/eclipse-iceoryx/iceoryx/iceoryx_binding_c/source/c_listener.cpp:101:75: error: reference to 'internal' is ambiguous
+  101 |         self->attachEvent(*userTrigger, NotificationCallback<UserTrigger, internal::NoType_t>{callback, nullptr});
+      |                                                                           ^
+/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/popo/listener.hpp:38:11: note: candidate found by name lookup is 'iox::popo::internal'
+   38 | namespace internal
+      |           ^
+/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_hoofs/internal/cxx/method_callback.inl:25:11: note: candidate found by name lookup is 'iox::cxx::internal'
+   25 | namespace internal
+      |           ^
+In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/iceoryx_binding_c/CMakeFiles/iceoryx_binding_c.dir/Unity/unity_0_cxx.cxx:13:
+/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/eclipse-iceoryx/iceoryx/iceoryx_binding_c/source/c_listener.cpp:176:67: error: reference to 'internal' is ambiguous
+  176 |         NotificationCallback<std::remove_pointer_t<iox_client_t>, internal::NoType_t>{callback, nullptr});
+      |                                                                   ^
+/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/popo/listener.hpp:38:11: note: candidate found by name lookup is 'iox::popo::internal'
+   38 | namespace internal
+      |           ^
+/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_hoofs/internal/cxx/method_callback.inl:25:11: note: candidate found by name lookup is 'iox::cxx::internal'
+   25 | namespace internal
+      |           ^
+In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/iceoryx_binding_c/CMakeFiles/iceoryx_binding_c.dir/Unity/unity_0_cxx.cxx:13:
+/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/eclipse-iceoryx/iceoryx/iceoryx_binding_c/source/c_listener.cpp:223:67: error: reference to 'internal' is ambiguous
+  223 |         NotificationCallback<std::remove_pointer_t<iox_server_t>, internal::NoType_t>{callback, nullptr});
+      |                                                                   ^
+/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/popo/listener.hpp:38:11: note: candidate found by name lookup is 'iox::popo::internal'
+   38 | namespace internal
+      |           ^
+/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_hoofs/internal/cxx/method_callback.inl:25:11: note: candidate found by name lookup is 'iox::cxx::internal'
+   25 | namespace internal
+      |           ^
+In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/iceoryx_binding_c/CMakeFiles/iceoryx_binding_c.dir/Unity/unity_0_cxx.cxx:13:
+/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/eclipse-iceoryx/iceoryx/iceoryx_binding_c/source/c_listener.cpp:269:76: error: reference to 'internal' is ambiguous
+  269 |                                     NotificationCallback<ServiceDiscovery, internal::NoType_t>{callback, nullptr});
+      |                                                                            ^
+/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/popo/listener.hpp:38:11: note: candidate found by name lookup is 'iox::popo::internal'
+   38 | namespace internal
+      |           ^
+/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_hoofs/internal/cxx/method_callback.inl:25:11: note: candidate found by name lookup is 'iox::cxx::internal'
+   25 | namespace internal
+      |           ^
+5 errors generated.
+ninja: build stopped: subcommand failed.

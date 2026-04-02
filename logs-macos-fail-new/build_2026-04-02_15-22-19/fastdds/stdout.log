@@ -1,0 +1,101 @@
+Not searching for unused variables given on the command line.
+-- The C compiler identification is AppleClang 17.0.0.17000013
+-- The CXX compiler identification is AppleClang 17.0.0.17000013
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Version: 3.4.2.0
+-- Performing Test SUPPORTS_NOTFOUND
+-- Performing Test SUPPORTS_NOTFOUND - Success
+-- Enforced cxx_std_11 CMake feature
+-- Setting warnings as errors...
+-- Found fastcdr
+-- Found Asio 1.36.0: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include
+-- Found Asio
+-- Found TinyXML2: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/cmake/tinyxml2
+-- Found TinyXML2
+-- Found foonathan_memory: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/foonathan_memory/cmake
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_kill
+-- Looking for pthread_kill - found
+-- Found Threads: TRUE
+-- Thirdparty/boost compiled OK
+-- Found OpenSSL: /opt/homebrew/Cellar/openssl@3/3.6.1/lib/libcrypto.dylib (found version "3.6.1")
+-- OpenSSL library 3.6.1 found...
+-- Not using a GNU compiler on Windows.
+-- Performing Test ATOMIC_WITHOUT_LIB
+-- Performing Test ATOMIC_WITHOUT_LIB - Success
+-- Forcing third party shared_mutex
+-- Performing Test HAS_VERSION_SCRIPT_SUPPORT
+-- Performing Test HAS_VERSION_SCRIPT_SUPPORT - Failed
+-- Enforced cxx_std_14 CMake feature
+-- EPROSIMA_TEST_DNS_NOT_SET_UP: '1'
+-- Configuring done (7.3s)
+-- Generating done (0.1s)
+-- Build files have been written to: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/fastdds
+[1/35] Building CXX object src/cpp/CMakeFiles/fastdds.dir/Unity/unity_29_cxx.cxx.o
+[2/35] Building CXX object src/cpp/CMakeFiles/fastdds.dir/Unity/unity_28_cxx.cxx.o
+[3/35] Building CXX object src/cpp/CMakeFiles/fastdds.dir/Unity/unity_27_cxx.cxx.o
+FAILED: [code=1] src/cpp/CMakeFiles/fastdds.dir/Unity/unity_27_cxx.cxx.o 
+sccache /usr/bin/c++ -DASIO_DISABLE_VISIBILITY -DASIO_STANDALONE -DBOOST_ASIO_STANDALONE -DEPROSIMA_USER_DLL_EXPORT -DFASTCDR_DYN_LINK -DFASTDDS_DYN_LINK -DFASTDDS_SOURCE -DFOONATHAN_MEMORY=1 -DFOONATHAN_MEMORY_VERSION_MAJOR=0 -DFOONATHAN_MEMORY_VERSION_MINOR=7 -DFOONATHAN_MEMORY_VERSION_PATCH=4 -DSHM_TRANSPORT_BUILTIN -DSQLITE_WIN32_GETVERSIONEX=0 -DSTDOUTERR_LOG_CONSUMER -DTINYXML2_IMPORT -D_FILE_OFFSET_BITS=64 -Dfastdds_EXPORTS -I/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/eProsima/Fast-DDS/thirdparty/nlohmann-json -I/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/eProsima/Fast-DDS/thirdparty/filewatch -I/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/eProsima/Fast-DDS/include -I/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/fastdds/include -I/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/fastdds/include/fastdds -I/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/eProsima/Fast-DDS/src/cpp -I/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/eProsima/Fast-DDS/cmake/modules/../../thirdparty/boost/include -I/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/eProsima/Fast-DDS/thirdparty/taocpp-pegtl -isystem /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include -isystem /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include -isystem /opt/homebrew/Cellar/openssl@3/3.6.1/include -Wall -Wpedantic -Wextra -Wno-unknown-pragmas -Wno-error=deprecated-declarations -Wno-switch-bool -Wno-deprecated-builtins -Werror -O3 -DNDEBUG -std=gnu++11 -arch arm64 -fPIC -MD -MT src/cpp/CMakeFiles/fastdds.dir/Unity/unity_27_cxx.cxx.o -MF src/cpp/CMakeFiles/fastdds.dir/Unity/unity_27_cxx.cxx.o.d -o src/cpp/CMakeFiles/fastdds.dir/Unity/unity_27_cxx.cxx.o -c /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/fastdds/src/cpp/CMakeFiles/fastdds.dir/Unity/unity_27_cxx.cxx
+In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/fastdds/src/cpp/CMakeFiles/fastdds.dir/Unity/unity_27_cxx.cxx:19:
+/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/eProsima/Fast-DDS/src/cpp/statistics/rtps/monitor-service/MonitorService.cpp:431:98: error: no member named 'Duration_t' in namespace 'eprosima::fastdds::statistics::dds'
+  431 |                 std::chrono::microseconds(fastdds::rtps::TimeConv::Time_t2MicroSecondsInt64(dds::Duration_t()));
+      |                                                                                             ~~~~~^
+/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/eProsima/Fast-DDS/src/cpp/statistics/rtps/monitor-service/MonitorService.cpp:471:5: error: no type named 'HistoryQosPolicy' in namespace 'eprosima::fastdds::statistics::dds'; did you mean '::eprosima::fastdds::dds::HistoryQosPolicy'?
+  471 |     dds::HistoryQosPolicy hqos;
+      |     ^~~~~~~~~~~~~~~~~~~~~
+      |     ::eprosima::fastdds::dds::HistoryQosPolicy
+/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/eProsima/Fast-DDS/include/fastdds/dds/core/policy/QosPolicies.hpp:1672:7: note: '::eprosima::fastdds::dds::HistoryQosPolicy' declared here
+ 1672 | class HistoryQosPolicy : public Parameter_t, public QosPolicy
+      |       ^
+In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/fastdds/src/cpp/CMakeFiles/fastdds.dir/Unity/unity_27_cxx.cxx:19:
+/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/eProsima/Fast-DDS/src/cpp/statistics/rtps/monitor-service/MonitorService.cpp:472:17: error: no member named 'KEEP_LAST_HISTORY_QOS' in namespace 'eprosima::fastdds::statistics::dds'; did you mean '::eprosima::fastdds::dds::KEEP_LAST_HISTORY_QOS'?
+  472 |     hqos.kind = dds::KEEP_LAST_HISTORY_QOS;
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                 ::eprosima::fastdds::dds::KEEP_LAST_HISTORY_QOS
+/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/eProsima/Fast-DDS/include/fastdds/dds/core/policy/QosPolicies.hpp:1650:5: note: '::eprosima::fastdds::dds::KEEP_LAST_HISTORY_QOS' declared here
+ 1650 |     KEEP_LAST_HISTORY_QOS,
+      |     ^
+In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/fastdds/src/cpp/CMakeFiles/fastdds.dir/Unity/unity_27_cxx.cxx:19:
+/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/eProsima/Fast-DDS/src/cpp/statistics/rtps/monitor-service/MonitorService.cpp:477:5: error: no type named 'ResourceLimitsQosPolicy' in namespace 'eprosima::fastdds::statistics::dds'; did you mean '::eprosima::fastdds::dds::ResourceLimitsQosPolicy'?
+  477 |     dds::ResourceLimitsQosPolicy rl_qos;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |     ::eprosima::fastdds::dds::ResourceLimitsQosPolicy
+/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/eProsima/Fast-DDS/include/fastdds/dds/core/policy/QosPolicies.hpp:1724:7: note: '::eprosima::fastdds::dds::ResourceLimitsQosPolicy' declared here
+ 1724 | class ResourceLimitsQosPolicy : public Parameter_t, public QosPolicy
+      |       ^
+In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/fastdds/src/cpp/CMakeFiles/fastdds.dir/Unity/unity_27_cxx.cxx:19:
+/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/eProsima/Fast-DDS/src/cpp/statistics/rtps/monitor-service/MonitorService.cpp:511:35: error: no member named 'RELIABLE_RELIABILITY_QOS' in namespace 'eprosima::fastdds::statistics::dds'; did you mean '::eprosima::fastdds::dds::RELIABLE_RELIABILITY_QOS'?
+  511 |         wqos.m_reliability.kind = dds::RELIABLE_RELIABILITY_QOS;
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                   ::eprosima::fastdds::dds::RELIABLE_RELIABILITY_QOS
+/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/eProsima/Fast-DDS/include/fastdds/dds/core/policy/QosPolicies.hpp:561:5: note: '::eprosima::fastdds::dds::RELIABLE_RELIABILITY_QOS' declared here
+  561 |     RELIABLE_RELIABILITY_QOS = 0x02
+      |     ^
+In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/fastdds/src/cpp/CMakeFiles/fastdds.dir/Unity/unity_27_cxx.cxx:19:
+/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/eProsima/Fast-DDS/src/cpp/statistics/rtps/monitor-service/MonitorService.cpp:512:34: error: no member named 'TRANSIENT_LOCAL_DURABILITY_QOS' in namespace 'eprosima::fastdds::statistics::dds'; did you mean '::eprosima::fastdds::dds::TRANSIENT_LOCAL_DURABILITY_QOS'?
+  512 |         wqos.m_durability.kind = dds::TRANSIENT_LOCAL_DURABILITY_QOS;
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                  ::eprosima::fastdds::dds::TRANSIENT_LOCAL_DURABILITY_QOS
+/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/eProsima/Fast-DDS/include/fastdds/dds/core/policy/QosPolicies.hpp:255:5: note: '::eprosima::fastdds::dds::TRANSIENT_LOCAL_DURABILITY_QOS' declared here
+  255 |     TRANSIENT_LOCAL_DURABILITY_QOS,
+      |     ^
+In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/fastdds/src/cpp/CMakeFiles/fastdds.dir/Unity/unity_27_cxx.cxx:19:
+/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/eProsima/Fast-DDS/src/cpp/statistics/rtps/monitor-service/MonitorService.cpp:599:32: error: no member named 'NEXT_QOS_POLICY_ID' in namespace 'eprosima::fastdds::statistics::dds'; did you mean '::eprosima::fastdds::dds::NEXT_QOS_POLICY_ID'?
+  599 |     for (uint32_t id = 1; id < dds::NEXT_QOS_POLICY_ID; ++id)
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~
+      |                                ::eprosima::fastdds::dds::NEXT_QOS_POLICY_ID
+/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/eProsima/Fast-DDS/include/fastdds/dds/core/policy/QosPolicies.hpp:101:5: note: '::eprosima::fastdds::dds::NEXT_QOS_POLICY_ID' declared here
+  101 |     NEXT_QOS_POLICY_ID                              //< Keep always the last element. For internal use only
+      |     ^
+7 errors generated.
+ninja: build stopped: subcommand failed.
