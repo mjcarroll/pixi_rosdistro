@@ -10,7 +10,7 @@ def patch_rcl_yaml_param_parser(file_path):
         content = f.read()
 
     # 1. Update include block
-    # Simple and direct
+    # We find the specific pattern and replace it
     old_include = '#ifdef _WIN32\n#include <windows.h>\n#else\n#include <threads.h>\n#endif'
     new_include = '#ifdef _WIN32\n#include <windows.h>\n#elif defined(__APPLE__)\n#include <pthread.h>\n#else\n#include <threads.h>\n#endif'
     if old_include in content:
@@ -18,7 +18,7 @@ def patch_rcl_yaml_param_parser(file_path):
         print(f"Patched include in {file_path}")
 
     # 2. Update locale init block
-    # The ahcorde branch has this specific block
+    # Replace the #else part of the locale init
     old_init = """#else
 static locale_t c_locale = 0;
 static once_flag c_locale_once_flag = ONCE_FLAG_INIT;
@@ -48,25 +48,59 @@ static void init_c_locale()
 #endif"""
     if old_init in content:
         content = content.replace(old_init, new_init)
-        print(f"Patched init in {file_path}")
+        print(f"Patched init block in {file_path}")
 
-    # 3. Update call site
-    old_call = """#else
+    # 3. Update call site in strtod_locale_independent
+    # Replace the #else part of the call site
+    old_call_block = """#else
   call_once(&c_locale_once_flag, init_c_locale);
 
-  if (0 == c_locale) {"""
-    
-    new_call = """#elif defined(__APPLE__)
+  if (0 == c_locale) {
+    if (NULL != endptr) {
+      *endptr = (char *)nptr;
+    }
+    return 0.;
+  }
+
+  locale_t old_locale = uselocale(c_locale);
+  double result = strtod(nptr, endptr);
+  uselocale(old_locale);
+  return result;
+#endif"""
+
+    new_call_block = """#elif defined(__APPLE__)
   pthread_once(&c_locale_once_flag, init_c_locale);
 
   if (0 == c_locale) {
+    if (NULL != endptr) {
+      *endptr = (char *)nptr;
+    }
+    return 0.;
+  }
+
+  locale_t old_locale = uselocale(c_locale);
+  double result = strtod(nptr, endptr);
+  uselocale(old_locale);
+  return result;
 #else
   call_once(&c_locale_once_flag, init_c_locale);
 
-  if (0 == c_locale) {"""
-    if old_call in content:
-        content = content.replace(old_call, new_call)
-        print(f"Patched call site in {file_path}")
+  if (0 == c_locale) {
+    if (NULL != endptr) {
+      *endptr = (char *)nptr;
+    }
+    return 0.;
+  }
+
+  locale_t old_locale = uselocale(c_locale);
+  double result = strtod(nptr, endptr);
+  uselocale(old_locale);
+  return result;
+#endif"""
+
+    if old_call_block in content:
+        content = content.replace(old_call_block, new_call_block)
+        print(f"Patched call block in {file_path}")
 
     with open(file_path, 'wb') as f:
         f.write(content.encode('utf-8').replace(b'\r\n', b'\n'))
