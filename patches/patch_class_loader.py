@@ -26,7 +26,7 @@ def patch_file(file_path):
     with open(file_path, 'r', encoding='utf-8') as f:
         content = f.read()
 
-    # 1. Fix the library path comparison logic
+    # 1. Library path comparison (stricmp for Windows)
     old_code = """    for (auto& it : classes_available_map) {
       if (it.second == library_path) {
         classes.push_back(it.first);
@@ -47,17 +47,14 @@ def patch_file(file_path):
     if old_code in content:
         content = content.replace(old_code, new_code)
 
-    # 2. Fix the const-correctness issue causing macOS failure
-    # Error: cannot initialize a variable of type 'ClassLoader *' with an rvalue of type 'const ClassLoader *'
-    old_loader = "ClassLoader * loader = getClassLoaderForLibrary(library_path);"
-    new_loader = "const ClassLoader * loader = getClassLoaderForLibrary(library_path);"
-    
-    if old_loader in content:
-        content = content.replace(old_loader, new_loader)
-        print(f"Fixed const-correctness in {file_path}")
+    # 2. Const-correctness for ClassLoader pointers
+    # Use regex to find all occurrences of ClassLoader * loader = getClassLoaderForLibrary(...)
+    pattern = r"(ClassLoader\s*\*\s*loader\s*=\s*getClassLoaderForLibrary\s*\(\s*library_path\s*\)\s*;)"
+    content = re.sub(pattern, r"const \1", content)
 
     with open(file_path, 'wb') as f:
         f.write(content.encode('utf-8').replace(b'\r\n', b'\n'))
+    
     print(f"Patched {file_path}")
     return True
 

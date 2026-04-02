@@ -27,17 +27,23 @@ def patch_file(file_path):
         content = f.read()
 
     # Add unistd.h for getpid()
-    old_code = '#include <rclcpp/rclcpp.hpp>'
-    new_code = '#include <rclcpp/rclcpp.hpp>\n#ifndef _WIN32\n# include <unistd.h>\n#endif'
+    # We'll insert it at the beginning of the file (after comments) to be safe
+    if 'unistd.h' not in content:
+        # Look for the end of the comment block or first include
+        match = re.search(r'#include', content)
+        if match:
+            pos = match.start()
+            new_include = '#ifndef _WIN32\n# include <unistd.h>\n#endif\n'
+            content = content[:pos] + new_include + content[pos:]
+            print(f"Inserted unistd.h into {file_path}")
+        else:
+            # Fallback
+            content = '#ifndef _WIN32\n# include <unistd.h>\n#endif\n' + content
+            print(f"Prepended unistd.h to {file_path}")
 
-    if old_code in content and 'unistd.h' not in content:
-        content = content.replace(old_code, new_code)
-        with open(file_path, 'wb') as f:
-            f.write(content.encode('utf-8').replace(b'\r\n', b'\n'))
-        print(f"Patched {file_path} with unistd.h")
-        return True
-    
-    return False
+    with open(file_path, 'wb') as f:
+        f.write(content.encode('utf-8').replace(b'\r\n', b'\n'))
+    return True
 
 if __name__ == "__main__":
     target = 'src/ros-visualization/rqt/rqt_gui_cpp/src/rqt_gui_cpp/nodelet_plugin_provider.cpp'

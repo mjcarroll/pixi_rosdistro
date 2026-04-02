@@ -1,0 +1,52 @@
+Not searching for unused variables given on the command line.
+-- The C compiler identification is MSVC 19.44.35225.0
+-- The CXX compiler identification is MSVC 19.44.35225.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.8.6 (D:/a/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake/cmake)
+-- Found console_bridge_vendor: 1.9.1 (D:/a/pixi_rosdistro/pixi_rosdistro/install/share/console_bridge_vendor/cmake)
+-- Found rcpputils: 2.14.3 (D:/a/pixi_rosdistro/pixi_rosdistro/install/share/rcpputils/cmake)
+-- Checking to see if CXX compiler accepts flag -Wl,--version-script,"D:/a/pixi_rosdistro/pixi_rosdistro/build/class_loader/test/class_loader_hide_library_symbols__class_loader_TestPlugins1.script"
+-- Checking to see if CXX compiler accepts flag -Wl,--version-script,"D:/a/pixi_rosdistro/pixi_rosdistro/build/class_loader/test/class_loader_hide_library_symbols__class_loader_TestPlugins1.script" - no
+-- Found gtest sources under 'D:/a/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:D:/a/pixi_rosdistro/pixi_rosdistro/src/ros/class_loader/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (5.1s)
+-- Generating done (0.1s)
+-- Build files have been written to: D:/a/pixi_rosdistro/pixi_rosdistro/build/class_loader
+[1/29] Building CXX object CMakeFiles\class_loader.dir\src\class_loader.cpp.obj
+[2/29] Building CXX object CMakeFiles\class_loader.dir\src\class_loader_core.cpp.obj
+[3/29] Building CXX object CMakeFiles\class_loader.dir\src\meta_object.cpp.obj
+[4/29] Building CXX object CMakeFiles\class_loader.dir\src\multi_library_class_loader.cpp.obj
+[5/29] Building CXX object test\fviz_case_study\CMakeFiles\class_loader_Test_Fviz.dir\fviz.cpp.obj
+[6/29] Linking CXX shared library class_loader.dll
+[7/29] Linking CXX shared library test\fviz_case_study\class_loader_Test_Fviz.dll
+[8/29] Building CXX object test\fviz_case_study\CMakeFiles\class_loader_Test_Fviz_Main.dir\fviz_main.cpp.obj
+[9/29] Building CXX object test\CMakeFiles\class_loader_TestPlugins1.dir\plugins1.cpp.obj
+[10/29] Building CXX object test\CMakeFiles\class_loader_TestPlugins2.dir\plugins2.cpp.obj
+[11/29] Building CXX object test\CMakeFiles\class_loader_TestPlugins3.dir\plugins3.cpp.obj
+[12/29] Building CXX object test\CMakeFiles\class_loader_TestGlobalPlugins.dir\global_plugins.cpp.obj
+[13/29] Building CXX object gtest\CMakeFiles\gtest.dir\src\gtest-all.cc.obj
+[14/29] Building CXX object gtest\CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj
+[15/29] Linking CXX executable test\fviz_case_study\class_loader_Test_Fviz_Main.exe
+FAILED: [code=4294967295] test/fviz_case_study/class_loader_Test_Fviz_Main.exe 
+C:\Windows\system32\cmd.exe /C "cd . && D:\a\pixi_rosdistro\pixi_rosdistro\.pixi\envs\default\Library\bin\cmake.exe -E vs_link_exe --msvc-ver=1944 --intdir=test\fviz_case_study\CMakeFiles\class_loader_Test_Fviz_Main.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests  -- C:\PROGRA~1\MICROS~2\2022\ENTERP~1\VC\Tools\MSVC\1444~1.352\bin\Hostx64\x64\link.exe /nologo test\fviz_case_study\CMakeFiles\class_loader_Test_Fviz_Main.dir\fviz_main.cpp.obj  /out:test\fviz_case_study\class_loader_Test_Fviz_Main.exe /implib:test\fviz_case_study\class_loader_Test_Fviz_Main.lib /pdb:test\fviz_case_study\class_loader_Test_Fviz_Main.pdb /version:0.0 /machine:x64  -Wl,-defaultlib:D:/a/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/clang/19/lib/windows/clang_rt.builtins-x86_64.lib /INCREMENTAL:NO /subsystem:console  class_loader.lib  test\fviz_case_study\class_loader_Test_Fviz.lib  D:\a\pixi_rosdistro\pixi_rosdistro\.pixi\envs\default\Library\lib\console_bridge.lib  D:\a\pixi_rosdistro\pixi_rosdistro\install\lib\rcpputils.lib  D:\a\pixi_rosdistro\pixi_rosdistro\install\lib\rcutils.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+LINK: command "C:\PROGRA~1\MICROS~2\2022\ENTERP~1\VC\Tools\MSVC\1444~1.352\bin\Hostx64\x64\link.exe /nologo test\fviz_case_study\CMakeFiles\class_loader_Test_Fviz_Main.dir\fviz_main.cpp.obj /out:test\fviz_case_study\class_loader_Test_Fviz_Main.exe /implib:test\fviz_case_study\class_loader_Test_Fviz_Main.lib /pdb:test\fviz_case_study\class_loader_Test_Fviz_Main.pdb /version:0.0 /machine:x64 -Wl,-defaultlib:D:/a/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/clang/19/lib/windows/clang_rt.builtins-x86_64.lib /INCREMENTAL:NO /subsystem:console class_loader.lib test\fviz_case_study\class_loader_Test_Fviz.lib D:\a\pixi_rosdistro\pixi_rosdistro\.pixi\envs\default\Library\lib\console_bridge.lib D:\a\pixi_rosdistro\pixi_rosdistro\install\lib\rcpputils.lib D:\a\pixi_rosdistro\pixi_rosdistro\install\lib\rcutils.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST:EMBED,ID=1" failed (exit code 1181) with the following output:
+LINK : warning LNK4044: unrecognized option '/Wl,-defaultlib:D:/a/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/clang/19/lib/windows/clang_rt.builtins-x86_64.lib'; ignored
+LINK : fatal error LNK1181: cannot open input file 'test\fviz_case_study\class_loader_Test_Fviz.lib'
+ninja: build stopped: subcommand failed.
