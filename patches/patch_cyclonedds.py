@@ -12,7 +12,8 @@ def git_reset(path):
     
     if pkg_dir:
         rel_path = os.path.relpath(path, pkg_dir)
-        os.system(f"cd {pkg_dir} && git checkout {rel_path}")
+        # Use a more robust git checkout
+        os.system(f"cd {pkg_dir} && git checkout -- {rel_path} 2>/dev/null")
 
 def patch_file(path):
     if not os.path.exists(path):
@@ -24,24 +25,18 @@ def patch_file(path):
     with open(path, 'r', encoding='utf-8') as f:
         content = f.read()
     
-    # Add ssize_t definition for Windows/MSVC
-    # And REPLACE the problematic line directly to be sure
-    ssize_fix = """
-#if defined(_WIN32)
-#include <BaseTsd.h>
-#ifndef ssize_t
-typedef SSIZE_T ssize_t;
-#endif
-#endif
-"""
-    if 'typedef SSIZE_T ssize_t;' not in content:
-        content = ssize_fix + content
-        print(f"Added ssize_t fix to {path}")
+    # Add intptr_t/ssize_t fix
+    if '#include <stdint.h>' not in content:
+        content = content.replace('#include <stddef.h>', '#include <stddef.h>\n#include <stdint.h>')
     
-    # Also replace the line directly to use long long if we want to be super sure
-    # but the typedef should work if it's included before usage.
-    # The error was in line 31.
+    # Use a simpler replacement for the problematic line
+    old_line = 'IDL_EXPORT ssize_t idl_untaint_path(char *path);'
+    new_line = '#ifdef _WIN32\nIDL_EXPORT intptr_t idl_untaint_path(char *path);\n#else\nIDL_EXPORT ssize_t idl_untaint_path(char *path);\n#endif'
     
+    if old_line in content:
+        content = content.replace(old_line, new_line)
+        print(f"Patched {path} with intptr_t for Windows")
+
     with open(path, 'wb') as f:
         f.write(content.encode('utf-8').replace(b'\r\n', b'\n'))
     return True

@@ -3,7 +3,7 @@ import os
 import re
 
 def git_reset(path):
-    pkg_dir = path if os.path.isdir(path) else os.path.dirname(path)
+    pkg_dir = os.path.dirname(path)
     while pkg_dir and not os.path.exists(os.path.join(pkg_dir, '.git')):
         next_dir = os.path.dirname(pkg_dir)
         if next_dir == pkg_dir:
@@ -13,7 +13,7 @@ def git_reset(path):
     
     if pkg_dir:
         rel_path = os.path.relpath(path, pkg_dir)
-        os.system(f"cd {pkg_dir} && git checkout {rel_path}")
+        os.system(f"cd {pkg_dir} && git checkout -- {rel_path} 2>/dev/null")
 
 def patch_file(path):
     if not os.path.exists(path):
@@ -31,16 +31,23 @@ def patch_file(path):
         print(f"Added CMAKE_POLICY_VERSION_MINIMUM to {path}")
 
     # 2. Fix macOS sysroot issue
-    # Aggressively replace "macosx" architectures line
-    content = content.replace(
-        'list(APPEND OGRE_CMAKE_ARGS -DCMAKE_OSX_ARCHITECTURES=arm64;x86_64)',
-        'list(APPEND OGRE_CMAKE_ARGS -DCMAKE_OSX_ARCHITECTURES=arm64;x86_64)\n  list(APPEND OGRE_CMAKE_ARGS -DCMAKE_OSX_SYSROOT="")'
-    )
-    
-    # Also replace any direct -isysroot macosx if found (unlikely but to be safe)
-    content = content.replace('-isysroot macosx', '')
-    
-    print(f"Patched rviz_ogre_vendor for macOS sysroot in {path}")
+    # We'll use a more robust way to find the SDK path on macOS
+    apple_block = """if(APPLE)
+  list(APPEND OGRE_CMAKE_ARGS -DOGRE_ENABLE_PRECOMPILED_HEADERS:BOOL=OFF)
+  list(APPEND OGRE_CMAKE_ARGS -DCMAKE_OSX_ARCHITECTURES=arm64;x86_64)
+endif()"""
+
+    new_apple_block = """if(APPLE)
+  list(APPEND OGRE_CMAKE_ARGS -DOGRE_ENABLE_PRECOMPILED_HEADERS:BOOL=OFF)
+  list(APPEND OGRE_CMAKE_ARGS -DCMAKE_OSX_ARCHITECTURES=arm64;x86_64)
+  # Find actual SDK path to avoid "macosx" broken default
+  execute_process(COMMAND xcrun --show-sdk-path OUTPUT_VARIABLE SDK_PATH OUTPUT_STRIP_TRAILING_WHITESPACE)
+  list(APPEND OGRE_CMAKE_ARGS "-DCMAKE_OSX_SYSROOT=${SDK_PATH}")
+endif()"""
+
+    if apple_block in content:
+        content = content.replace(apple_block, new_apple_block)
+        print(f"Fixed macOS sysroot in {path}")
 
     with open(path, 'wb') as f:
         f.write(content.encode('utf-8').replace(b'\r\n', b'\n'))

@@ -12,7 +12,7 @@ def git_reset(path):
     
     if pkg_dir:
         rel_path = os.path.relpath(path, pkg_dir)
-        os.system(f"cd {pkg_dir} && git checkout {rel_path}")
+        os.system(f"cd {pkg_dir} && git checkout -- {rel_path} 2>/dev/null")
 
 def get_major_version(cmakelists_path):
     if not os.path.exists(cmakelists_path):
@@ -143,7 +143,7 @@ if(EXISTS "${{_gz_config_dir}}/cmake{major_version if major_version else ""}")
   create_relay_file("{versioned_name}" "${{_gz_config_dir}}/cmake{major_version if major_version else ""}")
 endif()
 
-# Fallback aliasing for direct find_package
+# Fallback aliasing
 if(NOT {versioned_name}_FOUND)
     find_package({unversioned_name} QUIET)
     if({unversioned_name}_FOUND)
@@ -156,8 +156,7 @@ if(NOT {versioned_name}_FOUND)
     endif()
 endif()
 """
-    extras_path = os.path.join(package_path, extras_file)
-    with open(extras_path, "wb") as f:
+    with open(os.path.join(package_path, extras_file), "wb") as f:
         f.write(extras_content.encode('utf-8').replace(b'\r\n', b'\n'))
     print(f"Patched {pkg_name}")
 

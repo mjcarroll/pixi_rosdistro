@@ -1,0 +1,841 @@
+[1.013s] Invoking command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rclcpp': AMENT_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/mimick_vendor/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_PYTHON_VERSION=3 SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rclcpp/rclcpp -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[1.202s] Not searching for unused variables given on the command line.
+[1.202s] -- The C compiler identification is AppleClang 17.0.0.17000013
+[1.327s] -- The CXX compiler identification is AppleClang 17.0.0.17000013
+[1.361s] -- Detecting C compiler ABI info
+[1.680s] -- Detecting C compiler ABI info - done
+[1.718s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.718s] -- Detecting C compile features
+[1.718s] -- Detecting C compile features - done
+[1.721s] -- Detecting CXX compiler ABI info
+[2.032s] -- Detecting CXX compiler ABI info - done
+[2.066s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.067s] -- Detecting CXX compile features
+[2.067s] -- Detecting CXX compile features - done
+[2.069s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.365s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.365s] -- Found Threads: TRUE
+[2.373s] -- Found ament_cmake_ros: 0.15.6 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_ros/cmake)
+[2.735s] -- Found ament_index_cpp: 1.13.2 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index_cpp/cmake)
+[2.742s] -- Found builtin_interfaces: 2.4.3 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/builtin_interfaces/cmake)
+[2.811s] -- Found rosidl_generator_c: 5.1.3 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_c/cmake)
+[2.842s] -- Found rosidl_generator_cpp: 5.1.3 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_cpp/cmake)
+[2.877s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.914s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.963s] -- Found libstatistics_collector: 2.1.1 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/libstatistics_collector/cmake)
+[3.086s] -- Found rmw_implementation_cmake: 7.9.1 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation_cmake/cmake)
+[3.094s] -- Found rmw_fastrtps_cpp: 9.4.5 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_fastrtps_cpp/cmake)
+[3.159s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.226s] -- Found rosgraph_msgs: 2.4.3 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosgraph_msgs/cmake)
+[3.259s] -- Found tracetools: 8.10.1 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tracetools/cmake)
+[3.394s] -- Found Python3: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/python3 (found version "3.12.13") found components: Interpreter
+[3.408s] -- Found ament_lint_auto: 0.20.3 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_lint_auto/cmake)
+[3.651s] -- Found rosidl_adapter: 5.1.3 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_adapter/cmake)
+[3.725s] -- Performance tests are disabled by default, so Google Benchmark tests will be skipped. To enable these tests, set the CMake variable 'AMENT_RUN_PERFORMANCE_TESTS'.
+[4.955s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.216s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.692s] -- Found Python3: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/python3 (found version "3.12.13") found components: Interpreter Development NumPy Development.Module Development.Embed
+[5.727s] -- Found Python3: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/python3 (found version "3.12.13") found components: Interpreter
+[5.736s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.739s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.741s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.743s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.745s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.747s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.749s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.751s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.753s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.754s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.756s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.762s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.762s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.763s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.765s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.767s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.769s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.771s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.781s] -- Found gmock sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[5.783s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.783s] -- Found gmock sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[5.784s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.785s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.787s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.789s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.792s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.793s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.795s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.797s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.799s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.801s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.803s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.806s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.808s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.810s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.813s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.815s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.817s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.820s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.822s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.824s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.826s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.828s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.831s] -- Found gmock sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[5.831s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.832s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.834s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.836s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.838s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.842s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.844s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.846s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.849s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.851s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.854s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.856s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.859s] -- Found gmock sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[5.859s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.860s] -- Found gmock sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[5.860s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.861s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.863s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.865s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.867s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.869s] -- Found gmock sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[5.869s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.869s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.872s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.873s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.875s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.877s] -- Found gmock sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[5.878s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.878s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.881s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.883s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.885s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.887s] -- Found gmock sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[5.887s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.888s] -- Found gmock sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[5.888s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.889s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.891s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.893s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.895s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.898s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.900s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.902s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.904s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.906s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.908s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.910s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.912s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.914s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.915s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.917s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.919s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.921s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.923s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.925s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.927s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.929s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.931s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.932s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.935s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.937s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.940s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.942s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.946s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.947s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.949s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.951s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.952s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.954s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.956s] -- Found gmock sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[5.956s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[6.029s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[6.039s] -- Added test 'copyright' to check source files copyright and LICENSE
+[6.118s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[6.118s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rclcpp/rclcpp/include>
+[6.119s] -- Configured cppcheck exclude dirs and/or files: 
+[6.146s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[6.146s] -- Configured cpplint exclude dirs and/or files: 
+[6.156s] -- Added test 'lint_cmake' to check CMake code style
+[6.181s] -- Added test 'uncrustify' to check C / C++ code style
+[6.181s] -- Configured uncrustify additional arguments: 
+[6.185s] -- Added test 'xmllint' to check XML markup files
+[6.192s] -- Configuring done (5.2s)
+[6.611s] -- Generating done (0.4s)
+[6.848s] -- Build files have been written to: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rclcpp
+[6.860s] Invoked command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rclcpp' returned '0': AMENT_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/mimick_vendor/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_PYTHON_VERSION=3 SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rclcpp/rclcpp -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[6.863s] Invoking command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rclcpp': AMENT_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/mimick_vendor/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_PYTHON_VERSION=3 SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rclcpp -- -j3 -l3
+[7.096s] [1/422] Generating type hashes for ROS interfaces
+[7.420s] [2/422] Generating C code for ROS interfaces
+[7.618s] [3/422] Building C object test/rclcpp/CMakeFiles/rclcpp_test_msgs__rosidl_generator_c.dir/rosidl_generator_c/rclcpp/msg/detail/header__description.c.o
+[7.834s] [4/422] Building C object test/rclcpp/CMakeFiles/rclcpp_test_msgs__rosidl_generator_c.dir/rosidl_generator_c/rclcpp/msg/detail/header__functions.c.o
+[7.984s] [5/422] Building C object test/rclcpp/CMakeFiles/rclcpp_test_msgs__rosidl_generator_c.dir/rosidl_generator_c/rclcpp/msg/detail/header__type_support.c.o
+[8.178s] [6/422] Building C object test/rclcpp/CMakeFiles/rclcpp_test_msgs__rosidl_generator_c.dir/rosidl_generator_c/rclcpp/msg/detail/large_message__description.c.o
+[8.335s] [7/422] Building C object test/rclcpp/CMakeFiles/rclcpp_test_msgs__rosidl_generator_c.dir/rosidl_generator_c/rclcpp/msg/detail/large_message__functions.c.o
+[8.501s] [8/422] Building C object test/rclcpp/CMakeFiles/rclcpp_test_msgs__rosidl_generator_c.dir/rosidl_generator_c/rclcpp/msg/detail/large_message__type_support.c.o
+[8.649s] [9/422] Building C object test/rclcpp/CMakeFiles/rclcpp_test_msgs__rosidl_generator_c.dir/rosidl_generator_c/rclcpp/msg/detail/message_with_header__description.c.o
+[8.818s] [10/422] Building C object test/rclcpp/CMakeFiles/rclcpp_test_msgs__rosidl_generator_c.dir/rosidl_generator_c/rclcpp/msg/detail/message_with_header__functions.c.o
+[8.974s] [11/422] Building C object test/rclcpp/CMakeFiles/rclcpp_test_msgs__rosidl_generator_c.dir/rosidl_generator_c/rclcpp/msg/detail/message_with_header__type_support.c.o
+[9.124s] [12/422] Building C object test/rclcpp/CMakeFiles/rclcpp_test_msgs__rosidl_generator_c.dir/rosidl_generator_c/rclcpp/msg/detail/string__description.c.o
+[9.281s] [13/422] Building C object test/rclcpp/CMakeFiles/rclcpp_test_msgs__rosidl_generator_c.dir/rosidl_generator_c/rclcpp/msg/detail/string__functions.c.o
+[9.428s] [14/422] Building C object test/rclcpp/CMakeFiles/rclcpp_test_msgs__rosidl_generator_c.dir/rosidl_generator_c/rclcpp/msg/detail/string__type_support.c.o
+[9.739s] [15/422] Generating C type support for eProsima Fast-RTPS
+[10.048s] [16/422] Generating C++ code for ROS interfaces
+[10.323s] [17/422] Generating C++ type support for eProsima Fast-RTPS
+[10.561s] [18/422] Generating C introspection for ROS interfaces
+[10.773s] [19/422] Generating C type support dispatch for ROS interfaces
+[11.004s] [20/422] Generating C++ introspection for ROS interfaces
+[11.219s] [21/422] Generating C++ type support dispatch for ROS interfaces
+[11.245s] [22/422] Generating rclcpp/version.h
+[11.303s] [23/422] Linking C shared library test/rclcpp/librclcpp__rosidl_generator_c.dylib
+[11.303s] ld: warning: -undefined error is deprecated
+[11.563s] [24/422] Building CXX object test/rclcpp/CMakeFiles/rclcpp_test_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rclcpp/msg/detail/header__type_support_c.cpp.o
+[11.831s] [25/422] Building CXX object test/rclcpp/CMakeFiles/rclcpp_test_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rclcpp/msg/detail/large_message__type_support_c.cpp.o
+[12.143s] [26/422] Building CXX object test/rclcpp/CMakeFiles/rclcpp_test_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rclcpp/msg/detail/message_with_header__type_support_c.cpp.o
+[12.390s] [27/422] Building CXX object test/rclcpp/CMakeFiles/rclcpp_test_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rclcpp/msg/detail/string__type_support_c.cpp.o
+[12.544s] [28/422] Building C object test/rclcpp/CMakeFiles/rclcpp_test_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rclcpp/msg/detail/header__type_support.c.o
+[12.695s] [29/422] Building C object test/rclcpp/CMakeFiles/rclcpp_test_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rclcpp/msg/detail/large_message__type_support.c.o
+[12.847s] [30/422] Building C object test/rclcpp/CMakeFiles/rclcpp_test_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rclcpp/msg/detail/message_with_header__type_support.c.o
+[13.072s] [31/422] Building C object test/rclcpp/CMakeFiles/rclcpp_test_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rclcpp/msg/detail/string__type_support.c.o
+[13.230s] [32/422] Building CXX object test/rclcpp/CMakeFiles/rclcpp_test_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/rclcpp/msg/header__type_support.cpp.o
+[13.397s] [33/422] Building CXX object test/rclcpp/CMakeFiles/rclcpp_test_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/rclcpp/msg/large_message__type_support.cpp.o
+[13.567s] [34/422] Building CXX object test/rclcpp/CMakeFiles/rclcpp_test_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/rclcpp/msg/message_with_header__type_support.cpp.o
+[13.728s] [35/422] Building CXX object test/rclcpp/CMakeFiles/rclcpp_test_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/rclcpp/msg/string__type_support.cpp.o
+[14.105s] [36/422] Building CXX object test/rclcpp/CMakeFiles/rclcpp_test_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rclcpp/msg/detail/dds_fastrtps/header__type_support.cpp.o
+[14.402s] [37/422] Building CXX object test/rclcpp/CMakeFiles/rclcpp_test_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rclcpp/msg/detail/dds_fastrtps/large_message__type_support.cpp.o
+[14.672s] [38/422] Building CXX object test/rclcpp/CMakeFiles/rclcpp_test_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rclcpp/msg/detail/dds_fastrtps/message_with_header__type_support.cpp.o
+[14.934s] [39/422] Building CXX object test/rclcpp/CMakeFiles/rclcpp_test_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rclcpp/msg/detail/dds_fastrtps/string__type_support.cpp.o
+[15.168s] [40/422] Building CXX object test/rclcpp/CMakeFiles/rclcpp_test_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rclcpp/msg/detail/header__type_support.cpp.o
+[15.416s] [41/422] Building CXX object test/rclcpp/CMakeFiles/rclcpp_test_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rclcpp/msg/detail/large_message__type_support.cpp.o
+[15.668s] [42/422] Building CXX object test/rclcpp/CMakeFiles/rclcpp_test_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rclcpp/msg/detail/message_with_header__type_support.cpp.o
+[15.905s] [43/422] Building CXX object test/rclcpp/CMakeFiles/rclcpp_test_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rclcpp/msg/detail/string__type_support.cpp.o
+[16.182s] [44/422] Building CXX object test/rclcpp/CMakeFiles/rclcpp_test_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rclcpp/msg/header__type_support.cpp.o
+[16.450s] [45/422] Building CXX object test/rclcpp/CMakeFiles/rclcpp_test_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rclcpp/msg/large_message__type_support.cpp.o
+[16.776s] [46/422] Building CXX object test/rclcpp/CMakeFiles/rclcpp_test_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rclcpp/msg/message_with_header__type_support.cpp.o
+[17.037s] [47/422] Building CXX object test/rclcpp/CMakeFiles/rclcpp_test_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rclcpp/msg/string__type_support.cpp.o
+[17.106s] [48/422] Expanding interface_traits.hpp.em into node_base_interface_traits.hpp
+[17.172s] [49/422] Expanding get_interface.hpp.em into get_/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rclcpp/rclcpp/include/rclcpp/node_interfaces/node_base_interface.hpp.hpp
+[17.238s] [50/422] Expanding interface_traits.hpp.em into node_clock_interface_traits.hpp
+[17.302s] [51/422] Expanding get_interface.hpp.em into get_/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rclcpp/rclcpp/include/rclcpp/node_interfaces/node_clock_interface.hpp.hpp
+[17.370s] [52/422] Expanding interface_traits.hpp.em into node_graph_interface_traits.hpp
+[17.437s] [53/422] Expanding get_interface.hpp.em into get_/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rclcpp/rclcpp/include/rclcpp/node_interfaces/node_graph_interface.hpp.hpp
+[17.498s] [54/422] Expanding interface_traits.hpp.em into node_logging_interface_traits.hpp
+[17.557s] [55/422] Expanding get_interface.hpp.em into get_/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rclcpp/rclcpp/include/rclcpp/node_interfaces/node_logging_interface.hpp.hpp
+[17.615s] [56/422] Expanding interface_traits.hpp.em into node_parameters_interface_traits.hpp
+[17.679s] [57/422] Expanding get_interface.hpp.em into get_/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rclcpp/rclcpp/include/rclcpp/node_interfaces/node_parameters_interface.hpp.hpp
+[17.740s] [58/422] Expanding interface_traits.hpp.em into node_services_interface_traits.hpp
+[17.800s] [59/422] Expanding get_interface.hpp.em into get_/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rclcpp/rclcpp/include/rclcpp/node_interfaces/node_services_interface.hpp.hpp
+[17.859s] [60/422] Expanding interface_traits.hpp.em into node_time_source_interface_traits.hpp
+[17.928s] [61/422] Expanding get_interface.hpp.em into get_/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rclcpp/rclcpp/include/rclcpp/node_interfaces/node_time_source_interface.hpp.hpp
+[17.991s] [62/422] Expanding interface_traits.hpp.em into node_timers_interface_traits.hpp
+[18.051s] [63/422] Expanding get_interface.hpp.em into get_/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rclcpp/rclcpp/include/rclcpp/node_interfaces/node_timers_interface.hpp.hpp
+[18.110s] [64/422] Expanding interface_traits.hpp.em into node_topics_interface_traits.hpp
+[18.173s] [65/422] Expanding get_interface.hpp.em into get_/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rclcpp/rclcpp/include/rclcpp/node_interfaces/node_topics_interface.hpp.hpp
+[18.236s] [66/422] Expanding interface_traits.hpp.em into node_type_descriptions_interface_traits.hpp
+[18.294s] [67/422] Expanding get_interface.hpp.em into get_/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rclcpp/rclcpp/include/rclcpp/node_interfaces/node_type_descriptions_interface.hpp.hpp
+[18.351s] [68/422] Expanding interface_traits.hpp.em into node_waitables_interface_traits.hpp
+[18.410s] [69/422] Expanding get_interface.hpp.em into get_/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rclcpp/rclcpp/include/rclcpp/node_interfaces/node_waitables_interface.hpp.hpp
+[18.472s] [70/422] Linking CXX shared library test/rclcpp/librclcpp__rosidl_typesupport_fastrtps_c.dylib
+[18.472s] ld: warning: -undefined error is deprecated
+[18.531s] [71/422] Linking CXX shared library test/rclcpp/librclcpp__rosidl_typesupport_fastrtps_cpp.dylib
+[18.531s] ld: warning: -undefined error is deprecated
+[18.592s] [72/422] Linking C shared library test/rclcpp/librclcpp__rosidl_typesupport_introspection_c.dylib
+[18.592s] ld: warning: -undefined error is deprecated
+[18.653s] [73/422] Linking CXX shared library test/rclcpp/librclcpp__rosidl_typesupport_c.dylib
+[18.653s] ld: warning: -undefined error is deprecated
+[18.712s] [74/422] Linking CXX shared library test/rclcpp/librclcpp__rosidl_typesupport_introspection_cpp.dylib
+[18.712s] ld: warning: -undefined error is deprecated
+[18.769s] [75/422] Linking CXX shared library test/rclcpp/librclcpp__rosidl_typesupport_cpp.dylib
+[18.769s] ld: warning: -undefined error is deprecated
+[19.169s] [76/422] Generating Python code for ROS interfaces
+[19.365s] [77/422] Generating Rust code for ROS interfaces
+[19.732s] [78/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/any_executable.cpp.o
+[20.062s] [79/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/callback_group.cpp.o
+[20.406s] [80/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/client.cpp.o
+[20.789s] [81/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/clock.cpp.o
+[21.155s] [82/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/context.cpp.o
+[21.485s] [83/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/contexts/default_context.cpp.o
+[21.839s] [84/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/create_generic_client.cpp.o
+[22.127s] [85/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/detail/add_guard_condition_to_rcl_wait_set.cpp.o
+[22.404s] [86/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/detail/resolve_intra_process_buffer_type.cpp.o
+[22.712s] [87/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/detail/resolve_parameter_overrides.cpp.o
+[22.900s] [88/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/detail/rmw_implementation_specific_payload.cpp.o
+[23.101s] [89/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/detail/rmw_implementation_specific_publisher_payload.cpp.o
+[23.273s] [90/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/detail/rmw_implementation_specific_subscription_payload.cpp.o
+[23.556s] [91/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/detail/utilities.cpp.o
+[23.871s] [92/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/duration.cpp.o
+[24.183s] [93/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/dynamic_typesupport/dynamic_message.cpp.o
+[24.477s] [94/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/dynamic_typesupport/dynamic_message_type.cpp.o
+[24.823s] [95/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/dynamic_typesupport/dynamic_message_type_builder.cpp.o
+[25.111s] [96/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/dynamic_typesupport/dynamic_message_type_support.cpp.o
+[25.423s] [97/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/dynamic_typesupport/dynamic_serialization_support.cpp.o
+[25.635s] [98/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/event.cpp.o
+[25.928s] [99/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/exceptions/exceptions.cpp.o
+[26.263s] [100/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/executable_list.cpp.o
+[26.728s] [101/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/executor.cpp.o
+[27.080s] [102/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/executor_options.cpp.o
+[27.562s] [103/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/executors.cpp.o
+[27.973s] [104/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/executors/executor_entities_collection.cpp.o
+[28.413s] [105/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/executors/executor_entities_collector.cpp.o
+[28.748s] [106/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/executors/executor_notify_waitable.cpp.o
+[29.115s] [107/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/executors/multi_threaded_executor.cpp.o
+[29.551s] [108/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/executors/single_threaded_executor.cpp.o
+[29.918s] [109/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/expand_topic_or_service_name.cpp.o
+[30.412s] [110/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/experimental/executors/events_executor/events_executor.cpp.o
+[30.779s] [111/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/experimental/timers_manager.cpp.o
+[31.016s] [112/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/future_return_code.cpp.o
+[31.353s] [113/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/generic_client.cpp.o
+[31.681s] [114/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/generic_publisher.cpp.o
+[32.051s] [115/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/generic_service.cpp.o
+[32.493s] [116/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/generic_subscription.cpp.o
+[32.824s] [117/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/graph_listener.cpp.o
+[33.129s] [118/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/guard_condition.cpp.o
+[33.413s] [119/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/init_options.cpp.o
+[33.793s] [120/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/intra_process_manager.cpp.o
+[34.166s] [121/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/logger.cpp.o
+[34.400s] [122/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/logging_mutex.cpp.o
+[34.784s] [123/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/memory_strategies.cpp.o
+[35.141s] [124/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/memory_strategy.cpp.o
+[35.314s] [125/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/message_info.cpp.o
+[35.627s] [126/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/network_flow_endpoint.cpp.o
+[36.024s] [127/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/node.cpp.o
+[36.374s] [128/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/node_interfaces/node_base.cpp.o
+[36.756s] [129/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/node_interfaces/node_clock.cpp.o
+[37.142s] [130/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/node_interfaces/node_graph.cpp.o
+[37.507s] [131/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/node_interfaces/node_logging.cpp.o
+[37.968s] [132/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/node_interfaces/node_parameters.cpp.o
+[38.344s] [133/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/node_interfaces/node_services.cpp.o
+[38.779s] [134/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/node_interfaces/node_time_source.cpp.o
+[39.154s] [135/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/node_interfaces/node_timers.cpp.o
+[39.524s] [136/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/node_interfaces/node_topics.cpp.o
+[39.936s] [137/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/node_interfaces/node_type_descriptions.cpp.o
+[40.255s] [138/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/node_interfaces/node_waitables.cpp.o
+[40.609s] [139/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/node_options.cpp.o
+[41.175s] [140/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/parameter.cpp.o
+[41.759s] [141/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/parameter_client.cpp.o
+[42.202s] [142/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/parameter_descriptor_wrapper.cpp.o
+[42.573s] [143/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/parameter_event_handler.cpp.o
+[42.899s] [144/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/parameter_events_filter.cpp.o
+[43.221s] [145/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/parameter_map.cpp.o
+[43.567s] [146/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/parameter_service.cpp.o
+[43.868s] [147/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/parameter_value.cpp.o
+[44.344s] [148/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/publisher_base.cpp.o
+[44.668s] [149/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/qos.cpp.o
+[44.977s] [150/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/event_handler.cpp.o
+[45.261s] [151/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/qos_overriding_options.cpp.o
+[45.580s] [152/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/rate.cpp.o
+[45.897s] [153/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/serialization.cpp.o
+[46.251s] [154/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/serialized_message.cpp.o
+[46.641s] [155/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/service.cpp.o
+[46.936s] [156/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/signal_handler.cpp.o
+[47.292s] [157/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/subscription_base.cpp.o
+[47.627s] [158/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/subscription_intra_process_base.cpp.o
+[47.897s] [159/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/time.cpp.o
+[48.440s] [160/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/time_source.cpp.o
+[48.741s] [161/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/timer.cpp.o
+[49.040s] [162/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/type_support.cpp.o
+[49.383s] [163/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/typesupport_helpers.cpp.o
+[49.740s] [164/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/utilities.cpp.o
+[50.083s] [165/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.cpp.o
+[50.356s] [166/422] Building CXX object CMakeFiles/rclcpp.dir/src/rclcpp/waitable.cpp.o
+[50.597s] [167/422] Building C object test/rclcpp/CMakeFiles/rclcpp_test_msgs__rosidl_generator_py.dir/rosidl_generator_py/rclcpp/msg/_header_s.c.o
+[50.774s] [168/422] Building C object test/rclcpp/CMakeFiles/rclcpp_test_msgs__rosidl_generator_py.dir/rosidl_generator_py/rclcpp/msg/_large_message_s.c.o
+[50.948s] [169/422] Building C object test/rclcpp/CMakeFiles/rclcpp_test_msgs__rosidl_generator_py.dir/rosidl_generator_py/rclcpp/msg/_message_with_header_s.c.o
+[51.143s] [170/422] Building C object test/rclcpp/CMakeFiles/rclcpp_test_msgs__rosidl_generator_py.dir/rosidl_generator_py/rclcpp/msg/_string_s.c.o
+[51.738s] [171/422] Building CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[52.016s] [172/422] Building CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[52.466s] [173/422] Building CXX object gmock/CMakeFiles/gmock.dir/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor/src/gtest-all.cc.o
+[52.814s] [174/422] Building CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
+[53.126s] [175/422] Building CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
+[53.210s] [176/422] Linking CXX shared library librclcpp.dylib
+[53.720s] [177/422] Building CXX object test/CMakeFiles/test_rclcpp_gtest_macros.dir/utils/test_rclcpp_gtest_macros.cpp.o
+[54.181s] [178/422] Building CXX object test/benchmark/CMakeFiles/benchmark_client.dir/benchmark_client.cpp.o
+[54.673s] [179/422] Building CXX object test/benchmark/CMakeFiles/benchmark_executor.dir/benchmark_executor.cpp.o
+[55.081s] [180/422] Building CXX object test/benchmark/CMakeFiles/benchmark_init_shutdown.dir/benchmark_init_shutdown.cpp.o
+[55.434s] [181/422] Building CXX object test/benchmark/CMakeFiles/benchmark_node.dir/benchmark_node.cpp.o
+[55.851s] [182/422] Building CXX object test/benchmark/CMakeFiles/benchmark_node_parameters_interface.dir/benchmark_node_parameters_interface.cpp.o
+[56.222s] [183/422] Building CXX object test/benchmark/CMakeFiles/benchmark_parameter_client.dir/benchmark_parameter_client.cpp.o
+[56.638s] [184/422] Building CXX object test/benchmark/CMakeFiles/benchmark_service.dir/benchmark_service.cpp.o
+[56.709s] [185/422] Linking C shared library test/rclcpp/librclcpp_test_msgs__rosidl_generator_py.dylib
+[56.709s] ld: warning: -undefined error is deprecated
+[56.961s] [186/422] Building C object test/rclcpp/CMakeFiles/rclcpp_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/rclcpp/_rclcpp_s.ep.rosidl_typesupport_fastrtps_c.c.o
+[57.133s] [187/422] Building C object test/rclcpp/CMakeFiles/rclcpp_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/rclcpp/_rclcpp_s.ep.rosidl_typesupport_introspection_c.c.o
+[57.360s] [188/422] Building C object test/rclcpp/CMakeFiles/rclcpp_s__rosidl_typesupport_c.dir/rosidl_generator_py/rclcpp/_rclcpp_s.ep.rosidl_typesupport_c.c.o
+[57.688s] [189/422] Building CXX object test/rclcpp/CMakeFiles/test_allocator_common.dir/allocator/test_allocator_common.cpp.o
+[57.978s] [190/422] Building CXX object test/rclcpp/CMakeFiles/test_allocator_deleter.dir/allocator/test_allocator_deleter.cpp.o
+[58.443s] [191/422] Building CXX object test/rclcpp/CMakeFiles/test_exceptions.dir/exceptions/test_exceptions.cpp.o
+[58.978s] [192/422] Building CXX object test/rclcpp/CMakeFiles/test_allocator_memory_strategy.dir/strategies/test_allocator_memory_strategy.cpp.o
+[59.327s] [193/422] Building CXX object test/rclcpp/CMakeFiles/test_message_pool_memory_strategy.dir/strategies/test_message_pool_memory_strategy.cpp.o
+[59.672s] [194/422] Building CXX object test/rclcpp/CMakeFiles/test_any_service_callback.dir/test_any_service_callback.cpp.o
+[60.110s] [195/422] Building CXX object test/rclcpp/CMakeFiles/test_any_subscription_callback.dir/test_any_subscription_callback.cpp.o
+[60.896s] [196/422] Building CXX object test/rclcpp/CMakeFiles/test_client.dir/test_client.cpp.o
+[61.296s] [197/422] Building CXX object test/rclcpp/CMakeFiles/test_clock_conditional.dir/test_clock_conditional.cpp.o
+[61.782s] [198/422] Building CXX object test/rclcpp/CMakeFiles/test_copy_all_parameter_values.dir/test_copy_all_parameter_values.cpp.o
+[62.208s] [199/422] Building CXX object test/rclcpp/CMakeFiles/test_create_timer.dir/test_create_timer.cpp.o
+[62.765s] [200/422] Building CXX object test/rclcpp/CMakeFiles/test_generic_client.dir/test_generic_client.cpp.o
+[63.401s] [201/422] Building CXX object test/rclcpp/CMakeFiles/test_generic_service.dir/test_generic_service.cpp.o
+[64.141s] [202/422] Building CXX object test/rclcpp/CMakeFiles/test_client_common.dir/test_client_common.cpp.o
+[64.681s] [203/422] Building CXX object test/rclcpp/CMakeFiles/test_create_subscription.dir/test_create_subscription.cpp.o
+[65.289s] [204/422] Building CXX object test/rclcpp/CMakeFiles/test_expand_topic_or_service_name.dir/test_expand_topic_or_service_name.cpp.o
+[65.621s] [205/422] Building CXX object test/rclcpp/CMakeFiles/test_function_traits.dir/test_function_traits.cpp.o
+[66.030s] [206/422] Building CXX object test/rclcpp/CMakeFiles/test_future_return_code.dir/test_future_return_code.cpp.o
+[66.422s] [207/422] Building CXX object test/rclcpp/CMakeFiles/test_intra_process_manager.dir/test_intra_process_manager.cpp.o
+[66.949s] [208/422] Building CXX object test/rclcpp/CMakeFiles/test_intra_process_manager_with_allocators.dir/test_intra_process_manager_with_allocators.cpp.o
+[67.389s] [209/422] Building CXX object test/rclcpp/CMakeFiles/test_ring_buffer_implementation.dir/test_ring_buffer_implementation.cpp.o
+[67.820s] [210/422] Building CXX object test/rclcpp/CMakeFiles/test_intra_process_buffer.dir/test_intra_process_buffer.cpp.o
+[68.563s] [211/422] Building CXX object test/rclcpp/CMakeFiles/test_loaned_message.dir/test_loaned_message.cpp.o
+[69.275s] [212/422] Building CXX object test/rclcpp/CMakeFiles/test_memory_strategy.dir/test_memory_strategy.cpp.o
+[69.656s] [213/422] Building CXX object test/rclcpp/CMakeFiles/test_message_memory_strategy.dir/test_message_memory_strategy.cpp.o
+[70.487s] [214/422] Building CXX object test/rclcpp/CMakeFiles/test_node.dir/test_node.cpp.o
+[70.864s] [215/422] Building CXX object test/rclcpp/CMakeFiles/test_node_interfaces__get_node_interfaces.dir/node_interfaces/test_get_node_interfaces.cpp.o
+[71.556s] [216/422] Building CXX object test/rclcpp/CMakeFiles/test_node_interfaces__node_base.dir/node_interfaces/test_node_base.cpp.o
+[71.941s] [217/422] Building CXX object test/rclcpp/CMakeFiles/test_node_interfaces__node_clock.dir/node_interfaces/test_node_clock.cpp.o
+[72.629s] [218/422] Building CXX object test/rclcpp/CMakeFiles/test_node_interfaces__node_graph.dir/node_interfaces/test_node_graph.cpp.o
+[72.970s] [219/422] Building CXX object test/rclcpp/CMakeFiles/test_node_interfaces__node_interfaces.dir/node_interfaces/test_node_interfaces.cpp.o
+[73.690s] [220/422] Building CXX object test/rclcpp/CMakeFiles/test_node_interfaces__node_parameters.dir/node_interfaces/test_node_parameters.cpp.o
+[74.177s] [221/422] Building CXX object test/rclcpp/CMakeFiles/test_node_interfaces__node_services.dir/node_interfaces/test_node_services.cpp.o
+[74.722s] [222/422] Building CXX object test/rclcpp/CMakeFiles/test_node_interfaces__node_timers.dir/node_interfaces/test_node_timers.cpp.o
+[75.190s] [223/422] Building CXX object test/rclcpp/CMakeFiles/test_node_interfaces__node_topics.dir/node_interfaces/test_node_topics.cpp.o
+[75.549s] [224/422] Building CXX object test/rclcpp/CMakeFiles/test_node_interfaces__node_type_descriptions.dir/node_interfaces/test_node_type_descriptions.cpp.o
+[75.992s] [225/422] Building CXX object test/rclcpp/CMakeFiles/test_node_interfaces__node_waitables.dir/node_interfaces/test_node_waitables.cpp.o
+[76.286s] [226/422] Building CXX object test/rclcpp/CMakeFiles/test_node_interfaces__test_template_utils.dir/node_interfaces/detail/test_template_utils.cpp.o
+[76.687s] [227/422] Building CXX object test/rclcpp/CMakeFiles/test_node_global_args.dir/test_node_global_args.cpp.o
+[77.266s] [228/422] Building CXX object test/rclcpp/CMakeFiles/test_node_options.dir/test_node_options.cpp.o
+[77.777s] [229/422] Building CXX object test/rclcpp/CMakeFiles/test_init_options.dir/test_init_options.cpp.o
+[78.722s] [230/422] Building CXX object test/rclcpp/CMakeFiles/test_parameter_client.dir/test_parameter_client.cpp.o
+[79.209s] [231/422] Building CXX object test/rclcpp/CMakeFiles/test_parameter_service.dir/test_parameter_service.cpp.o
+[79.625s] [232/422] Building CXX object test/rclcpp/CMakeFiles/test_parameter_events_filter.dir/test_parameter_events_filter.cpp.o
+[80.320s] [233/422] Building CXX object test/rclcpp/CMakeFiles/test_parameter.dir/test_parameter.cpp.o
+[80.970s] [234/422] Building CXX object test/rclcpp/CMakeFiles/test_parameter_event_handler.dir/test_parameter_event_handler.cpp.o
+[81.360s] [235/422] Building CXX object test/rclcpp/CMakeFiles/test_parameter_map.dir/test_parameter_map.cpp.o
+[82.210s] [236/422] Building CXX object test/rclcpp/CMakeFiles/test_publisher.dir/test_publisher.cpp.o
+[82.882s] [237/422] Building CXX object test/rclcpp/CMakeFiles/test_publisher_with_type_adapter.dir/test_publisher_with_type_adapter.cpp.o
+[83.408s] [238/422] Building CXX object test/rclcpp/CMakeFiles/test_subscription_with_type_adapter.dir/test_subscription_with_type_adapter.cpp.o
+[84.151s] [239/422] Building CXX object test/rclcpp/CMakeFiles/test_subscription_publisher_with_same_type_adapter.dir/test_subscription_publisher_with_same_type_adapter.cpp.o
+[84.655s] [240/422] Building CXX object test/rclcpp/CMakeFiles/test_publisher_subscription_count_api.dir/test_publisher_subscription_count_api.cpp.o
+[85.036s] [241/422] Building CXX object test/rclcpp/CMakeFiles/test_qos.dir/test_qos.cpp.o
+[85.324s] [242/422] Building CXX object test/rclcpp/CMakeFiles/test_qos_overriding_options.dir/test_qos_overriding_options.cpp.o
+[85.652s] [243/422] Building CXX object test/rclcpp/CMakeFiles/test_qos_parameters.dir/test_qos_parameters.cpp.o
+[85.935s] [244/422] Building CXX object test/rclcpp/CMakeFiles/test_rate.dir/test_rate.cpp.o
+[86.514s] [245/422] Building CXX object test/rclcpp/CMakeFiles/test_serialized_message_allocator.dir/test_serialized_message_allocator.cpp.o
+[86.883s] [246/422] Building CXX object test/rclcpp/CMakeFiles/test_serialized_message.dir/test_serialized_message.cpp.o
+[87.547s] [247/422] Building CXX object test/rclcpp/CMakeFiles/test_service.dir/test_service.cpp.o
+[88.231s] [248/422] Building CXX object test/rclcpp/CMakeFiles/test_service_introspection.dir/test_service_introspection.cpp.o
+[88.997s] [249/422] Building CXX object test/rclcpp/CMakeFiles/test_subscription.dir/test_subscription.cpp.o
+[89.559s] [250/422] Building CXX object test/rclcpp/CMakeFiles/test_subscription_publisher_count_api.dir/test_subscription_publisher_count_api.cpp.o
+[90.068s] [251/422] Building CXX object test/rclcpp/CMakeFiles/test_subscription_traits.dir/test_subscription_traits.cpp.o
+[90.458s] [252/422] Building CXX object test/rclcpp/CMakeFiles/test_type_support.dir/test_type_support.cpp.o
+[90.741s] [253/422] Building CXX object test/rclcpp/CMakeFiles/test_typesupport_helpers.dir/test_typesupport_helpers.cpp.o
+[91.110s] [254/422] Building CXX object test/rclcpp/CMakeFiles/test_find_weak_nodes.dir/test_find_weak_nodes.cpp.o
+[91.472s] [255/422] Building CXX object test/rclcpp/CMakeFiles/test_externally_defined_services.dir/test_externally_defined_services.cpp.o
+[91.868s] [256/422] Building CXX object test/rclcpp/CMakeFiles/test_duration.dir/test_duration.cpp.o
+[92.342s] [257/422] Building CXX object test/rclcpp/CMakeFiles/test_logger.dir/test_logger.cpp.o
+[92.693s] [258/422] Building CXX object test/rclcpp/CMakeFiles/test_logging.dir/test_logging.cpp.o
+[93.176s] [259/422] Building CXX object test/rclcpp/CMakeFiles/test_context.dir/test_context.cpp.o
+[93.732s] [260/422] Building CXX object test/rclcpp/CMakeFiles/test_time.dir/test_time.cpp.o
+[94.335s] [261/422] Building CXX object test/rclcpp/CMakeFiles/test_timer.dir/test_timer.cpp.o
+[94.694s] [262/422] Building CXX object test/rclcpp/CMakeFiles/test_timers_manager.dir/test_timers_manager.cpp.o
+[95.271s] [263/422] Building CXX object test/rclcpp/CMakeFiles/test_time_source.dir/test_time_source.cpp.o
+[95.854s] [264/422] Building CXX object test/rclcpp/CMakeFiles/test_utilities.dir/test_utilities.cpp.o
+[96.410s] [265/422] Building CXX object test/rclcpp/CMakeFiles/test_wait_for_message.dir/test_wait_for_message.cpp.o
+[96.933s] [266/422] Building CXX object test/rclcpp/CMakeFiles/test_logger_service.dir/test_logger_service.cpp.o
+[97.296s] [267/422] Building CXX object test/rclcpp/CMakeFiles/test_interface_traits.dir/test_interface_traits.cpp.o
+[97.674s] [268/422] Building CXX object test/rclcpp/CMakeFiles/test_reinitialized_timers.dir/executors/test_reinitialized_timers.cpp.o
+[98.523s] [269/422] Building CXX object test/rclcpp/CMakeFiles/test_executors.dir/executors/test_executors.cpp.o
+[98.820s] [270/422] Building CXX object test/rclcpp/CMakeFiles/test_executors.dir/executors/test_waitable.cpp.o
+[99.368s] [271/422] Building CXX object test/rclcpp/CMakeFiles/test_executors_timer_cancel_behavior.dir/executors/test_executors_timer_cancel_behavior.cpp.o
+[99.803s] [272/422] Building CXX object test/rclcpp/CMakeFiles/test_executors_callback_group_behavior.dir/executors/test_executors_callback_group_behavior.cpp.o
+[100.325s] [273/422] Building CXX object test/rclcpp/CMakeFiles/test_executors_intraprocess.dir/executors/test_executors_intraprocess.cpp.o
+[100.747s] [274/422] Building CXX object test/rclcpp/CMakeFiles/test_executors_busy_waiting.dir/executors/test_executors_busy_waiting.cpp.o
+[101.098s] [275/422] Building CXX object test/rclcpp/CMakeFiles/test_executors_busy_waiting.dir/executors/test_waitable.cpp.o
+[101.884s] [276/422] Building CXX object test/rclcpp/CMakeFiles/test_executors_warmup.dir/executors/test_executors_warmup.cpp.o
+[102.270s] [277/422] Building CXX object test/rclcpp/CMakeFiles/test_executors_warmup.dir/executors/test_waitable.cpp.o
+[102.776s] [278/422] Building CXX object test/rclcpp/CMakeFiles/test_multi_threaded_executor.dir/executors/test_multi_threaded_executor.cpp.o
+[103.201s] [279/422] Building CXX object test/rclcpp/CMakeFiles/test_entities_collector.dir/executors/test_entities_collector.cpp.o
+[103.691s] [280/422] Building CXX object test/rclcpp/CMakeFiles/test_executor_notify_waitable.dir/executors/test_executor_notify_waitable.cpp.o
+[104.306s] [281/422] Building CXX object test/rclcpp/CMakeFiles/test_events_executor.dir/executors/test_events_executor.cpp.o
+[104.685s] [282/422] Building CXX object test/rclcpp/CMakeFiles/test_events_queue.dir/executors/test_events_queue.cpp.o
+[105.399s] [283/422] Building CXX object test/rclcpp/CMakeFiles/test_guard_condition.dir/test_guard_condition.cpp.o
+[106.321s] [284/422] Building CXX object test/rclcpp/CMakeFiles/test_wait_set.dir/test_wait_set.cpp.o
+[106.945s] [285/422] Building CXX object test/rclcpp/CMakeFiles/test_subscription_topic_statistics.dir/topic_statistics/test_subscription_topic_statistics.cpp.o
+[107.529s] [286/422] Building CXX object test/rclcpp/CMakeFiles/test_subscription_options.dir/test_subscription_options.cpp.o
+[108.139s] [287/422] Building CXX object test/rclcpp/CMakeFiles/test_dynamic_storage.dir/wait_set_policies/test_dynamic_storage.cpp.o
+[109.398s] [288/422] Building CXX object test/rclcpp/CMakeFiles/test_storage_policy_common.dir/wait_set_policies/test_storage_policy_common.cpp.o
+[110.133s] [289/422] Building CXX object test/rclcpp/CMakeFiles/test_static_storage.dir/wait_set_policies/test_static_storage.cpp.o
+[111.010s] [290/422] Building CXX object test/rclcpp/CMakeFiles/test_thread_safe_synchronization.dir/wait_set_policies/test_thread_safe_synchronization.cpp.o
+[111.667s] [291/422] Building CXX object test/rclcpp/CMakeFiles/test_intra_process_waitable.dir/waitables/test_intra_process_waitable.cpp.o
+[112.115s] [292/422] Building CXX object test/rclcpp/CMakeFiles/test_rosout_qos.dir/test_rosout_qos.cpp.o
+[112.701s] [293/422] Building CXX object test/rclcpp/CMakeFiles/test_rosout_subscription.dir/test_rosout_subscription.cpp.o
+[113.379s] [294/422] Building CXX object test/rclcpp/CMakeFiles/test_executor.dir/test_executor.cpp.o
+[114.079s] [295/422] Building CXX object test/rclcpp/CMakeFiles/test_graph_listener.dir/test_graph_listener.cpp.o
+[114.874s] [296/422] Building CXX object test/rclcpp/CMakeFiles/test_qos_event.dir/test_qos_event.cpp.o
+[115.669s] [297/422] Building CXX object test/rclcpp/CMakeFiles/test_generic_pubsub.dir/test_generic_pubsub.cpp.o
+[116.240s] [298/422] Building CXX object test/rclcpp/CMakeFiles/test_add_callback_groups_to_executor.dir/test_add_callback_groups_to_executor.cpp.o
+[117.117s] [299/422] Building CXX object test/rclcpp/CMakeFiles/test_subscription_content_filter.dir/test_subscription_content_filter.cpp.o
+[117.226s] [300/422] Linking CXX static library gtest/libgtest.a
+[117.311s] [301/422] Linking CXX static library gtest/libgtest_main.a
+[117.414s] [302/422] Linking CXX static library gmock/libgmock.a
+[117.500s] [303/422] Linking CXX static library gmock/libgmock_main.a
+[117.566s] [304/422] Linking CXX executable test/test_rclcpp_gtest_macros
+[117.634s] [305/422] Linking CXX executable test/benchmark/benchmark_client
+[117.705s] [306/422] Linking CXX executable test/benchmark/benchmark_executor
+[117.768s] [307/422] Linking CXX executable test/benchmark/benchmark_init_shutdown
+[117.832s] [308/422] Linking CXX executable test/benchmark/benchmark_node
+[117.891s] [309/422] Linking CXX executable test/benchmark/benchmark_node_parameters_interface
+[117.951s] [310/422] Linking CXX executable test/benchmark/benchmark_parameter_client
+[118.023s] [311/422] Linking CXX executable test/benchmark/benchmark_service
+[118.081s] [312/422] Linking C shared module test/rclcpp/rosidl_generator_py/rclcpp/rclcpp_s__rosidl_typesupport_fastrtps_c.so
+[118.139s] [313/422] Linking C shared module test/rclcpp/rosidl_generator_py/rclcpp/rclcpp_s__rosidl_typesupport_introspection_c.so
+[118.206s] [314/422] Linking C shared module test/rclcpp/rosidl_generator_py/rclcpp/rclcpp_s__rosidl_typesupport_c.so
+[118.270s] [315/422] Linking CXX executable test/rclcpp/test_allocator_common
+[118.335s] [316/422] Linking CXX executable test/rclcpp/test_allocator_deleter
+[118.403s] [317/422] Linking CXX executable test/rclcpp/test_exceptions
+[118.472s] [318/422] Linking CXX executable test/rclcpp/test_allocator_memory_strategy
+[118.540s] [319/422] Linking CXX executable test/rclcpp/test_message_pool_memory_strategy
+[118.603s] [320/422] Linking CXX executable test/rclcpp/test_any_service_callback
+[118.672s] [321/422] Linking CXX executable test/rclcpp/test_any_subscription_callback
+[118.749s] [322/422] Linking CXX executable test/rclcpp/test_client
+[118.817s] [323/422] Linking CXX executable test/rclcpp/test_clock_conditional
+[118.883s] [324/422] Linking CXX executable test/rclcpp/test_copy_all_parameter_values
+[118.943s] [325/422] Linking CXX executable test/rclcpp/test_create_timer
+[119.003s] [326/422] Linking CXX executable test/rclcpp/test_generic_client
+[119.089s] [327/422] Linking CXX executable test/rclcpp/test_generic_service
+[119.160s] [328/422] Linking CXX executable test/rclcpp/test_client_common
+[119.227s] [329/422] Linking CXX executable test/rclcpp/test_create_subscription
+[119.298s] [330/422] Linking CXX executable test/rclcpp/test_expand_topic_or_service_name
+[119.361s] [331/422] Linking CXX executable test/rclcpp/test_function_traits
+[119.424s] [332/422] Linking CXX executable test/rclcpp/test_future_return_code
+[119.489s] [333/422] Linking CXX executable test/rclcpp/test_intra_process_manager
+[119.560s] [334/422] Linking CXX executable test/rclcpp/test_intra_process_manager_with_allocators
+[119.633s] [335/422] Linking CXX executable test/rclcpp/test_ring_buffer_implementation
+[119.699s] [336/422] Linking CXX executable test/rclcpp/test_intra_process_buffer
+[119.774s] [337/422] Linking CXX executable test/rclcpp/test_loaned_message
+[119.844s] [338/422] Linking CXX executable test/rclcpp/test_memory_strategy
+[119.911s] [339/422] Linking CXX executable test/rclcpp/test_message_memory_strategy
+[119.991s] [340/422] Linking CXX executable test/rclcpp/test_node
+[120.065s] [341/422] Linking CXX executable test/rclcpp/test_node_interfaces__get_node_interfaces
+[120.138s] [342/422] Linking CXX executable test/rclcpp/test_node_interfaces__node_base
+[120.210s] [343/422] Linking CXX executable test/rclcpp/test_node_interfaces__node_clock
+[120.282s] [344/422] Linking CXX executable test/rclcpp/test_node_interfaces__node_graph
+[120.354s] [345/422] Linking CXX executable test/rclcpp/test_node_interfaces__node_interfaces
+[120.424s] [346/422] Linking CXX executable test/rclcpp/test_node_interfaces__node_parameters
+[120.491s] [347/422] Linking CXX executable test/rclcpp/test_node_interfaces__node_services
+[120.552s] [348/422] Linking CXX executable test/rclcpp/test_node_interfaces__node_timers
+[120.621s] [349/422] Linking CXX executable test/rclcpp/test_node_interfaces__node_topics
+[120.690s] [350/422] Linking CXX executable test/rclcpp/test_node_interfaces__node_type_descriptions
+[120.752s] [351/422] Linking CXX executable test/rclcpp/test_node_interfaces__node_waitables
+[120.816s] [352/422] Linking CXX executable test/rclcpp/test_node_interfaces__test_template_utils
+[120.879s] [353/422] Linking CXX executable test/rclcpp/test_node_global_args
+[120.944s] [354/422] Linking CXX executable test/rclcpp/test_node_options
+[121.009s] [355/422] Linking CXX executable test/rclcpp/test_init_options
+[121.096s] [356/422] Linking CXX executable test/rclcpp/test_parameter_client
+[121.170s] [357/422] Linking CXX executable test/rclcpp/test_parameter_service
+[121.244s] [358/422] Linking CXX executable test/rclcpp/test_parameter_events_filter
+[121.321s] [359/422] Linking CXX executable test/rclcpp/test_parameter
+[121.397s] [360/422] Linking CXX executable test/rclcpp/test_parameter_event_handler
+[121.475s] [361/422] Linking CXX executable test/rclcpp/test_parameter_map
+[121.555s] [362/422] Linking CXX executable test/rclcpp/test_publisher
+[121.647s] [363/422] Linking CXX executable test/rclcpp/test_publisher_with_type_adapter
+[121.730s] [364/422] Linking CXX executable test/rclcpp/test_subscription_with_type_adapter
+[121.812s] [365/422] Linking CXX executable test/rclcpp/test_subscription_publisher_with_same_type_adapter
+[121.901s] [366/422] Linking CXX executable test/rclcpp/test_publisher_subscription_count_api
+[121.974s] [367/422] Linking CXX executable test/rclcpp/test_qos
+[122.043s] [368/422] Linking CXX executable test/rclcpp/test_qos_overriding_options
+[122.114s] [369/422] Linking CXX executable test/rclcpp/test_qos_parameters
+[122.177s] [370/422] Linking CXX executable test/rclcpp/test_rate
+[122.249s] [371/422] Linking CXX executable test/rclcpp/test_serialized_message_allocator
+[122.323s] [372/422] Linking CXX executable test/rclcpp/test_serialized_message
+[122.396s] [373/422] Linking CXX executable test/rclcpp/test_service
+[122.470s] [374/422] Linking CXX executable test/rclcpp/test_service_introspection
+[122.542s] [375/422] Linking CXX executable test/rclcpp/test_subscription
+[122.626s] [376/422] Linking CXX executable test/rclcpp/test_subscription_publisher_count_api
+[122.694s] [377/422] Linking CXX executable test/rclcpp/test_subscription_traits
+[122.759s] [378/422] Linking CXX executable test/rclcpp/test_type_support
+[122.822s] [379/422] Linking CXX executable test/rclcpp/test_typesupport_helpers
+[122.900s] [380/422] Linking CXX executable test/rclcpp/test_find_weak_nodes
+[122.981s] [381/422] Linking CXX executable test/rclcpp/test_externally_defined_services
+[123.054s] [382/422] Linking CXX executable test/rclcpp/test_duration
+[123.121s] [383/422] Linking CXX executable test/rclcpp/test_logger
+[123.189s] [384/422] Linking CXX executable test/rclcpp/test_logging
+[123.257s] [385/422] Linking CXX executable test/rclcpp/test_context
+[123.322s] [386/422] Linking CXX executable test/rclcpp/test_time
+[123.402s] [387/422] Linking CXX executable test/rclcpp/test_timer
+[123.461s] [388/422] Linking CXX executable test/rclcpp/test_timers_manager
+[123.523s] [389/422] Linking CXX executable test/rclcpp/test_time_source
+[123.593s] [390/422] Linking CXX executable test/rclcpp/test_utilities
+[123.660s] [391/422] Linking CXX executable test/rclcpp/test_wait_for_message
+[123.724s] [392/422] Linking CXX executable test/rclcpp/test_logger_service
+[123.788s] [393/422] Linking CXX executable test/rclcpp/test_interface_traits
+[123.851s] [394/422] Linking CXX executable test/rclcpp/test_reinitialized_timers
+[123.933s] [395/422] Linking CXX executable test/rclcpp/test_executors
+[123.992s] [396/422] Linking CXX executable test/rclcpp/test_executors_timer_cancel_behavior
+[124.050s] [397/422] Linking CXX executable test/rclcpp/test_executors_callback_group_behavior
+[124.114s] [398/422] Linking CXX executable test/rclcpp/test_executors_intraprocess
+[124.182s] [399/422] Linking CXX executable test/rclcpp/test_executors_busy_waiting
+[124.250s] [400/422] Linking CXX executable test/rclcpp/test_executors_warmup
+[124.314s] [401/422] Linking CXX executable test/rclcpp/test_multi_threaded_executor
+[124.378s] [402/422] Linking CXX executable test/rclcpp/test_entities_collector
+[124.441s] [403/422] Linking CXX executable test/rclcpp/test_executor_notify_waitable
+[124.565s] [404/422] Linking CXX executable test/rclcpp/test_events_executor
+[124.659s] [405/422] Linking CXX executable test/rclcpp/test_events_queue
+[124.721s] [406/422] Linking CXX executable test/rclcpp/test_guard_condition
+[124.796s] [407/422] Linking CXX executable test/rclcpp/test_wait_set
+[124.873s] [408/422] Linking CXX executable test/rclcpp/test_subscription_topic_statistics
+[124.952s] [409/422] Linking CXX executable test/rclcpp/test_subscription_options
+[125.026s] [410/422] Linking CXX executable test/rclcpp/test_dynamic_storage
+[125.099s] [411/422] Linking CXX executable test/rclcpp/test_storage_policy_common
+[125.174s] [412/422] Linking CXX executable test/rclcpp/test_static_storage
+[125.245s] [413/422] Linking CXX executable test/rclcpp/test_thread_safe_synchronization
+[125.317s] [414/422] Linking CXX executable test/rclcpp/test_intra_process_waitable
+[125.382s] [415/422] Linking CXX executable test/rclcpp/test_rosout_qos
+[125.468s] [416/422] Linking CXX executable test/rclcpp/test_rosout_subscription
+[125.564s] [417/422] Linking CXX executable test/rclcpp/test_executor
+[125.640s] [418/422] Linking CXX executable test/rclcpp/test_graph_listener
+[125.727s] [419/422] Linking CXX executable test/rclcpp/test_qos_event
+[125.816s] [420/422] Linking CXX executable test/rclcpp/test_generic_pubsub
+[125.905s] [421/422] Linking CXX executable test/rclcpp/test_add_callback_groups_to_executor
+[125.986s] [422/422] Linking CXX executable test/rclcpp/test_subscription_content_filter
+[125.990s] Invoked command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rclcpp' returned '0': AMENT_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/mimick_vendor/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=60 ROS_PYTHON_VERSION=3 SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rclcpp -- -j3 -l3
+[126.021s] Invoking command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rclcpp': AMENT_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/mimick_vendor/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=60 ROS_PYTHON_VERSION=3 SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rclcpp
+[126.040s] -- Install configuration: "Release"
+[126.040s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/librclcpp.dylib
+[126.040s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclcpp/environment/library_path.sh
+[126.040s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclcpp/environment/library_path.dsv
+[126.044s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/package_run_dependencies/rclcpp
+[126.044s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/parent_prefix_path/rclcpp
+[126.044s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclcpp/environment/ament_prefix_path.sh
+[126.044s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclcpp/environment/ament_prefix_path.dsv
+[126.044s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclcpp/environment/path.sh
+[126.044s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclcpp/environment/path.dsv
+[126.044s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclcpp/local_setup.bash
+[126.045s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclcpp/local_setup.fish
+[126.045s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclcpp/local_setup.sh
+[126.045s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclcpp/local_setup.zsh
+[126.045s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclcpp/local_setup.dsv
+[126.045s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclcpp/package.dsv
+[126.045s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/packages/rclcpp
+[126.045s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclcpp/cmake/rclcppExport.cmake
+[126.045s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclcpp/cmake/rclcppExport-release.cmake
+[126.047s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclcpp/cmake/ament_cmake_export_include_directories-extras.cmake
+[126.047s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclcpp/cmake/ament_cmake_export_libraries-extras.cmake
+[126.047s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclcpp/cmake/ament_cmake_export_targets-extras.cmake
+[126.048s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclcpp/cmake/ament_cmake_export_dependencies-extras.cmake
+[126.048s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclcpp/cmake/rclcppConfig.cmake
+[126.048s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclcpp/cmake/rclcppConfig-version.cmake
+[126.048s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclcpp/package.xml
+[126.048s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp
+[126.048s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp
+[126.048s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/wait_for_message.hpp
+[126.048s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/generic_service.hpp
+[126.049s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/generic_client.hpp
+[126.049s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/callback_group.hpp
+[126.049s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/create_service.hpp
+[126.049s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/event.hpp
+[126.049s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/wait_set.hpp
+[126.049s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/logger.hpp
+[126.049s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/experimental
+[126.054s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/experimental/subscription_intra_process_buffer.hpp
+[126.056s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/experimental/create_intra_process_buffer.hpp
+[126.056s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/experimental/buffers
+[126.056s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/experimental/buffers/ring_buffer_implementation.hpp
+[126.056s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/experimental/buffers/buffer_implementation_base.hpp
+[126.056s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/experimental/buffers/intra_process_buffer.hpp
+[126.057s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/experimental/executable_list.hpp
+[126.057s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/experimental/ros_message_intra_process_buffer.hpp
+[126.057s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/experimental/timers_manager.hpp
+[126.057s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/experimental/README.md
+[126.057s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/experimental/executors
+[126.057s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/experimental/executors/events_executor
+[126.057s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/experimental/executors/events_executor/simple_events_queue.hpp
+[126.057s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/experimental/executors/events_executor/events_queue.hpp
+[126.057s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/experimental/executors/events_executor/events_executor.hpp
+[126.057s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/experimental/executors/events_executor/events_executor_event_types.hpp
+[126.057s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/experimental/subscription_intra_process.hpp
+[126.057s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/experimental/subscription_intra_process_base.hpp
+[126.057s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/experimental/intra_process_manager.hpp
+[126.057s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_impl.hpp
+[126.057s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/network_flow_endpoint.hpp
+[126.057s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/subscription.hpp
+[126.057s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/contexts
+[126.057s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/contexts/default_context.hpp
+[126.057s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/create_generic_service.hpp
+[126.057s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/intra_process_buffer_type.hpp
+[126.057s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_options.hpp
+[126.060s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/any_service_callback.hpp
+[126.062s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/memory_strategy.hpp
+[126.062s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/create_publisher.hpp
+[126.062s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/graph_listener.hpp
+[126.062s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/subscription_base.hpp
+[126.062s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/topic_statistics_state.hpp
+[126.063s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/rclcpp.hpp
+[126.063s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/parameter_client.hpp
+[126.063s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/time.hpp
+[126.063s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/topic_statistics
+[126.063s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp
+[126.063s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/executors.hpp
+[126.063s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/parameter_event_handler.hpp
+[126.063s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/time_source.hpp
+[126.063s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/init_options.hpp
+[126.063s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/macros.hpp
+[126.063s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/publisher_options.hpp
+[126.064s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/strategies
+[126.064s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/strategies/allocator_memory_strategy.hpp
+[126.064s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/strategies/message_pool_memory_strategy.hpp
+[126.064s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/create_generic_publisher.hpp
+[126.064s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/create_generic_subscription.hpp
+[126.065s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/parameter_events_filter.hpp
+[126.065s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/create_timer.hpp
+[126.065s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/subscription_traits.hpp
+[126.065s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/create_generic_client.hpp
+[126.065s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/service.hpp
+[126.065s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/serialized_message.hpp
+[126.067s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/serialization.hpp
+[126.067s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/qos_overriding_options.hpp
+[126.067s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/expand_topic_or_service_name.hpp
+[126.067s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/parameter_map.hpp
+[126.067s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/wait_set_template.hpp
+[126.067s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/waitable.hpp
+[126.069s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/subscription_factory.hpp
+[126.069s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/executor_options.hpp
+[126.069s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/event_handler.hpp
+[126.069s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/exceptions
+[126.070s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/exceptions/exceptions.hpp
+[126.070s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/loaned_message.hpp
+[126.070s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/type_adapter.hpp
+[126.070s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/is_ros_compatible_type.hpp
+[126.070s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/message_info.hpp
+[126.070s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/get_message_type_support_handle.hpp
+[126.070s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/visibility_control.hpp
+[126.070s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/context.hpp
+[126.070s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/publisher.hpp
+[126.070s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/any_executable.hpp
+[126.070s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/detail
+[126.070s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/detail/resolve_intra_process_buffer_type.hpp
+[126.070s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/detail/rmw_implementation_specific_payload.hpp
+[126.070s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/detail/add_guard_condition_to_rcl_wait_set.hpp
+[126.071s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/detail/subscription_callback_type_helper.hpp
+[126.071s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/detail/rmw_implementation_specific_subscription_payload.hpp
+[126.071s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/detail/cpp_callback_trampoline.hpp
+[126.071s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/detail/resolve_use_intra_process.hpp
+[126.071s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/detail/README.md
+[126.071s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/detail/qos_parameters.hpp
+[126.071s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/detail/template_contains.hpp
+[126.072s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/detail/rmw_implementation_specific_publisher_payload.hpp
+[126.072s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/detail/utilities.hpp
+[126.072s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/detail/template_unique.hpp
+[126.072s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/detail/resolve_enable_topic_statistics.hpp
+[126.072s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/parameter_value.hpp
+[126.073s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node.hpp
+[126.073s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/timer.hpp
+[126.073s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/wait_result.hpp
+[126.073s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/guard_condition.hpp
+[126.073s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/generic_publisher.hpp
+[126.074s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/executors
+[126.074s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/executors/executor_notify_waitable.hpp
+[126.074s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/executors/executor_entities_collection.hpp
+[126.074s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp
+[126.074s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp
+[126.075s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/executors/executor_entities_collector.hpp
+[126.075s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/clock.hpp
+[126.075s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/message_memory_strategy.hpp
+[126.075s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/allocator
+[126.075s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/allocator/allocator_deleter.hpp
+[126.076s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/allocator/allocator_common.hpp
+[126.076s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/publisher_base.hpp
+[126.076s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/future_return_code.hpp
+[126.076s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/intra_process_setting.hpp
+[126.077s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/type_support_decl.hpp
+[126.077s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/rate.hpp
+[126.077s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/utilities.hpp
+[126.080s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/exceptions.hpp
+[126.080s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/any_subscription_callback.hpp
+[126.080s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/memory_strategies.hpp
+[126.080s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/executor.hpp
+[126.081s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/parameter_descriptor_wrapper.hpp
+[126.081s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces
+[126.081s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface.hpp
+[126.081s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/node_base.hpp
+[126.081s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/node_time_source.hpp
+[126.081s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/node_timers_interface.hpp
+[126.081s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp
+[126.081s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/node_clock_interface.hpp
+[126.081s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/node_timers.hpp
+[126.081s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/node_topics.hpp
+[126.081s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/node_waitables.hpp
+[126.081s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/node_logging.hpp
+[126.082s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/node_type_descriptions_interface.hpp
+[126.082s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp
+[126.082s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/node_topics_interface.hpp
+[126.082s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/detail
+[126.082s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp
+[126.082s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp
+[126.083s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/node_clock.hpp
+[126.083s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp
+[126.083s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/node_graph.hpp
+[126.083s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/node_logging_interface.hpp
+[126.083s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/node_interfaces.hpp
+[126.084s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/node_parameters.hpp
+[126.084s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp
+[126.084s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/node_services.hpp
+[126.084s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/node_type_descriptions.hpp
+[126.085s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/subscription_wait_set_mask.hpp
+[126.085s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/subscription_options.hpp
+[126.085s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/wait_result_kind.hpp
+[126.085s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/parameter_service.hpp
+[126.085s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/function_traits.hpp
+[126.085s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/typesupport_helpers.hpp
+[126.086s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/duration.hpp
+[126.086s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/copy_all_parameter_values.hpp
+[126.087s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/client.hpp
+[126.087s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/qos.hpp
+[126.087s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/parameter.hpp
+[126.088s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/logging.hpp
+[126.088s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/generic_subscription.hpp
+[126.089s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/publisher_factory.hpp
+[126.089s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/subscription_content_filter_options.hpp
+[126.090s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/dynamic_typesupport
+[126.090s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/dynamic_typesupport/dynamic_message.hpp
+[126.090s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/dynamic_typesupport/dynamic_serialization_support.hpp
+[126.090s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/dynamic_typesupport/dynamic_message_type_builder.hpp
+[126.090s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/dynamic_typesupport/dynamic_message_type.hpp
+[126.091s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/dynamic_typesupport/dynamic_message_type_support.hpp
+[126.091s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/create_client.hpp
+[126.092s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/wait_set_policies
+[126.092s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp
+[126.093s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/wait_set_policies/sequential_synchronization.hpp
+[126.093s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/wait_set_policies/dynamic_storage.hpp
+[126.093s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/wait_set_policies/static_storage.hpp
+[126.094s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/wait_set_policies/detail
+[126.094s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp
+[126.094s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/wait_set_policies/detail/storage_policy_common.hpp
+[126.094s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/wait_set_policies/detail/synchronization_policy_common.hpp
+[126.095s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/create_subscription.hpp
+[126.095s] -- Up-to-date: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp
+[126.095s] -- Up-to-date: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp
+[126.095s] -- Up-to-date: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces
+[126.096s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/get_node_logging_interface.hpp
+[126.096s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/get_node_waitables_interface.hpp
+[126.096s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/node_services_interface_traits.hpp
+[126.096s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp
+[126.096s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface_traits.hpp
+[126.097s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/node_logging_interface_traits.hpp
+[126.097s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/node_clock_interface_traits.hpp
+[126.097s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/get_node_type_descriptions_interface.hpp
+[126.098s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/node_base_interface_traits.hpp
+[126.099s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/get_node_topics_interface.hpp
+[126.100s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/get_node_services_interface.hpp
+[126.100s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/get_node_clock_interface.hpp
+[126.100s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/get_node_time_source_interface.hpp
+[126.100s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/node_timers_interface_traits.hpp
+[126.100s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/get_node_timers_interface.hpp
+[126.100s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp
+[126.101s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/get_node_graph_interface.hpp
+[126.101s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface_traits.hpp
+[126.101s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/node_topics_interface_traits.hpp
+[126.101s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/node_type_descriptions_interface_traits.hpp
+[126.105s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface_traits.hpp
+[126.105s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/node_interfaces/node_graph_interface_traits.hpp
+[126.105s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rclcpp/rclcpp/version.h
+[126.106s] Invoked command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rclcpp' returned '0': AMENT_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/mimick_vendor/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=60 ROS_PYTHON_VERSION=3 SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rclcpp
