@@ -1,0 +1,589 @@
+[1.838s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/cyclonedds': CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/eclipse-cyclonedds/cyclonedds -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DTRACETOOLS_DISABLED=ON -DBUILD_IDLC=AUTO -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[1.966s] Not searching for unused variables given on the command line.
+[1.967s] -- The C compiler identification is GNU 14.3.0
+[1.998s] -- Detecting C compiler ABI info
+[2.592s] -- Detecting C compiler ABI info - done
+[2.648s] -- Check for working C compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
+[2.649s] -- Detecting C compile features
+[2.650s] -- Detecting C compile features - done
+[2.671s] -- Looking for getopt.h
+[2.894s] -- Looking for getopt.h - found
+[3.746s] -- Building with OpenSSL support
+[3.768s] -- Looking for stdint.h
+[3.887s] -- Looking for stdint.h - found
+[3.888s] -- Looking for inttypes.h
+[4.008s] -- Looking for inttypes.h - found
+[4.009s] -- Looking for sys/types.h
+[4.161s] -- Looking for sys/types.h - found
+[4.161s] -- Looking for stdint.h
+[4.361s] -- Looking for stdint.h - found
+[4.362s] -- Looking for stddef.h
+[4.513s] -- Looking for stddef.h - found
+[4.514s] -- Check size of intmax_t
+[4.696s] -- Check size of intmax_t - done
+[4.700s] -- Looking for stpcpy
+[4.891s] -- Looking for stpcpy - found
+[4.891s] -- Looking for strlcpy
+[5.167s] -- Looking for strlcpy - not found
+[5.167s] -- Looking for strlcat
+[5.389s] -- Looking for strlcat - not found
+[5.393s] -- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+[5.624s] -- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+[5.624s] -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+[5.822s] -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Failed
+[5.828s] -- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+[6.049s] -- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+[6.066s] -- Looking for gethostname
+[6.249s] -- Looking for gethostname - found
+[6.250s] -- Looking for inet_ntop
+[6.416s] -- Looking for inet_ntop - found
+[6.416s] -- Looking for inet_pton
+[6.585s] -- Looking for inet_pton - found
+[6.587s] -- Looking for getaddrinfo
+[6.776s] -- Looking for getaddrinfo - found
+[6.776s] -- Looking for gethostbyname_r
+[6.970s] -- Looking for gethostbyname_r - found
+[6.971s] -- Check size of struct sockaddr_in6
+[7.190s] -- Check size of struct sockaddr_in6 - done
+[7.195s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[7.385s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[7.385s] -- Looking for pthread_create in pthreads
+[7.539s] -- Looking for pthread_create in pthreads - not found
+[7.540s] -- Looking for pthread_create in pthread
+[7.796s] -- Looking for pthread_create in pthread - found
+[7.797s] -- Found Threads: TRUE
+[7.800s] -- Looking for clock_gettime in c
+[8.050s] -- Looking for clock_gettime in c - found
+[8.489s] -- Configuring done (6.6s)
+[8.757s] -- Generating done (0.3s)
+[8.801s] -- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/cyclonedds
+[8.823s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/cyclonedds' returned '0': CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=99 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/eclipse-cyclonedds/cyclonedds -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DTRACETOOLS_DISABLED=ON -DBUILD_IDLC=AUTO -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[8.824s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/cyclonedds': CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=99 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/cyclonedds -- -j4 -l4
+[8.885s] [1/264] Generating include/idl/misc.h
+[8.908s] [2/264] Generating include/idl/attributes.h
+[8.930s] [3/264] Generating include/idl/endian.h
+[8.960s] [4/264] Generating include/idl/md5.h
+[8.997s] [5/264] Generating src/md5.c
+[8.998s] [6/264] 
+[9.101s] [7/264] Building C object src/idl/CMakeFiles/idl.dir/src/symbol.c.o
+[9.378s] [8/264] Building C object src/idl/CMakeFiles/idl.dir/src/directive.c.o
+[9.506s] [9/264] Building C object src/idl/CMakeFiles/idl.dir/src/expression.c.o
+[9.695s] [10/264] Building C object src/idl/CMakeFiles/idl.dir/src/file.c.o
+[9.892s] [11/264] Building C object src/idl/CMakeFiles/idl.dir/src/processor.c.o
+[10.084s] [12/264] Building C object src/idl/CMakeFiles/idl.dir/src/scanner.c.o
+[10.251s] [13/264] Building C object src/idl/CMakeFiles/idl.dir/src/string.c.o
+[10.399s] [14/264] Building C object src/idl/CMakeFiles/idl.dir/src/annotation.c.o
+[10.534s] [15/264] Building C object src/idl/CMakeFiles/idl.dir/src/scope.c.o
+[10.732s] [16/264] Building C object src/idl/CMakeFiles/idl.dir/src/tree.c.o
+[10.894s] [17/264] Building C object src/idl/CMakeFiles/idl.dir/src/visit.c.o
+[11.048s] [18/264] Building C object src/idl/CMakeFiles/idl.dir/src/print.c.o
+[11.202s] [19/264] Building C object src/idl/CMakeFiles/idl.dir/src/keylist.c.o
+[11.324s] [20/264] Building C object src/idl/CMakeFiles/idl.dir/src/hashid.c.o
+[11.523s] [21/264] Building C object src/idl/CMakeFiles/idl.dir/src/parser.c.o
+[11.692s] [22/264] Building C object src/idl/CMakeFiles/idl.dir/src/md5.c.o
+[11.911s] [23/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_eth.c.o
+[12.339s] [24/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_ssl.c.o
+[12.777s] [25/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_tcp.c.o
+[13.047s] [26/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_tran.c.o
+[13.327s] [27/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_udp.c.o
+[13.549s] [28/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_raweth.c.o
+[13.770s] [29/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_vnet.c.o
+[14.014s] [30/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_ipaddr.c.o
+[14.267s] [31/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_mcgroup.c.o
+[14.435s] [32/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_security_util.c.o
+[14.671s] [33/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_security_omg.c.o
+[14.829s] [34/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_portmapping.c.o
+[15.170s] [35/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_handshake.c.o
+[15.373s] [36/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_serdata.c.o
+[15.544s] [37/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_serdata_default.c.o
+[15.768s] [38/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_serdata_pserop.c.o
+[15.965s] [39/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_serdata_plist.c.o
+[16.164s] [40/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_sertype.c.o
+[16.344s] [41/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_sertype_default.c.o
+[16.663s] [42/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_sertype_pserop.c.o
+[16.842s] [43/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_sertype_plist.c.o
+[17.032s] [44/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_sertopic.c.o
+[17.202s] [45/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_statistics.c.o
+[17.398s] [46/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_iid.c.o
+[17.544s] [47/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_tkmap.c.o
+[17.706s] [48/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_vendor.c.o
+[17.952s] [49/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_threadmon.c.o
+[18.097s] [50/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_rhc.c.o
+[18.384s] [51/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_pmd.c.o
+[18.595s] [52/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_entity_index.c.o
+[18.783s] [53/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_deadline.c.o
+[19.084s] [54/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_deliver_locally.c.o
+[19.367s] [55/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_plist.c.o
+[19.740s] [56/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_cdrstream.c.o
+[20.154s] [57/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_config.c.o
+[20.273s] [58/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_time.c.o
+[20.496s] [59/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_ownip.c.o
+[20.738s] [60/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_acknack.c.o
+[20.870s] [61/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_list_genptr.c.o
+[21.093s] [62/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_wraddrset.c.o
+[21.387s] [63/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_typelib.c.o
+[21.737s] [64/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_entity.c.o
+[22.000s] [65/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_entity_match.c.o
+[22.331s] [66/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_participant.c.o
+[22.638s] [67/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_proxy_participant.c.o
+[22.881s] [68/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_topic.c.o
+[23.207s] [69/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_endpoint.c.o
+[23.458s] [70/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_proxy_endpoint.c.o
+[23.727s] [71/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/q_addrset.c.o
+[23.889s] [72/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/q_bitset_inlines.c.o
+[24.057s] [73/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/q_bswap.c.o
+[24.356s] [74/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/q_ddsi_discovery.c.o
+[24.600s] [75/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/q_debmon.c.o
+[24.901s] [76/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/q_gc.c.o
+[25.121s] [77/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/q_init.c.o
+[25.305s] [78/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/q_lat_estim.c.o
+[25.673s] [79/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/q_lease.c.o
+[25.807s] [80/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/q_misc.c.o
+[26.054s] [81/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/q_pcap.c.o
+[26.243s] [82/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/q_qosmatch.c.o
+[26.453s] [83/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/q_radmin.c.o
+[26.718s] [84/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/q_receive.c.o
+[26.907s] [85/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/q_sockwaitset.c.o
+[27.160s] [86/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/q_thread.c.o
+[27.434s] [87/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/q_transmit.c.o
+[27.652s] [88/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/q_inverse_uint32_set.c.o
+[27.751s] [89/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/q_whc.c.o
+[28.098s] [90/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/q_xevent.c.o
+[28.427s] [91/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/q_xmsg.c.o
+[28.589s] [92/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/q_freelist.c.o
+[28.826s] [93/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/sysdeps.c.o
+[29.085s] [94/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_lifespan.c.o
+[29.295s] [95/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_xt_typeinfo.c.o
+[29.444s] [96/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_xt_typelookup.c.o
+[29.578s] [97/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_xt_typemap.c.o
+[29.806s] [98/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_typelookup.c.o
+[30.070s] [99/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_typewrap.c.o
+[30.327s] [100/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_typebuilder.c.o
+[30.509s] [101/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_security_msg.c.o
+[30.676s] [102/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_security_exchange.c.o
+[30.834s] [103/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/src/ddsi_shm_transport.c.o
+[30.950s] [104/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsi/defconfig.c.o
+[31.124s] [105/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsc/src/dds_alloc.c.o
+[31.306s] [106/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsc/src/dds_builtin.c.o
+[31.483s] [107/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsc/src/dds_coherent.c.o
+[31.650s] [108/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsc/src/dds_participant.c.o
+[31.847s] [109/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsc/src/dds_reader.c.o
+[32.055s] [110/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsc/src/dds_writer.c.o
+[32.243s] [111/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsc/src/dds_init.c.o
+[32.393s] [112/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsc/src/dds_publisher.c.o
+[32.500s] [113/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsc/src/dds_rhc.c.o
+[32.771s] [114/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsc/src/dds_rhc_default.c.o
+[32.941s] [115/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsc/src/dds_domain.c.o
+[33.112s] [116/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsc/src/dds_instance.c.o
+[33.311s] [117/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsc/src/dds_qos.c.o
+[33.512s] [118/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsc/src/dds_handles.c.o
+[33.692s] [119/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsc/src/dds_entity.c.o
+[33.846s] [120/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsc/src/dds_matched.c.o
+[34.003s] [121/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsc/src/dds_querycond.c.o
+[34.294s] [122/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsc/src/dds_topic.c.o
+[34.530s] [123/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsc/src/dds_listener.c.o
+[34.752s] [124/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsc/src/dds_read.c.o
+[34.998s] [125/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsc/src/dds_waitset.c.o
+[35.203s] [126/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsc/src/dds_readcond.c.o
+[35.392s] [127/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsc/src/dds_guardcond.c.o
+[35.830s] [128/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsc/src/dds_statistics.c.o
+[36.102s] [129/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsc/src/dds_subscriber.c.o
+[36.249s] [130/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsc/src/dds_write.c.o
+[36.457s] [131/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsc/src/dds_whc.c.o
+[36.648s] [132/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsc/src/dds_whc_builtintopic.c.o
+[36.908s] [133/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsc/src/dds_serdata_builtintopic.c.o
+[37.178s] [134/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsc/src/dds_sertype_builtintopic.c.o
+[37.384s] [135/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsc/src/dds_data_allocator.c.o
+[37.772s] [136/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsc/src/dds_loan.c.o
+[37.974s] [137/264] Building C object src/core/CMakeFiles/ddsc.dir/ddsc/src/shm_monitor.c.o
+[38.193s] [138/264] Building C object src/core/CMakeFiles/ddsc.dir/__/security/core/src/dds_security_serialize.c.o
+[38.457s] [139/264] Building C object src/core/CMakeFiles/ddsc.dir/__/security/core/src/dds_security_utils.c.o
+[38.696s] [140/264] Building C object src/core/CMakeFiles/ddsc.dir/__/security/core/src/dds_security_plugins.c.o
+[38.866s] [141/264] Building C object src/core/CMakeFiles/ddsc.dir/__/security/core/src/shared_secret.c.o
+[39.355s] [142/264] Building C object src/core/CMakeFiles/ddsc.dir/__/security/core/src/dds_security_fsm.c.o
+[39.544s] [143/264] Building C object src/core/CMakeFiles/ddsc.dir/__/security/core/src/dds_security_timed_cb.c.o
+[39.667s] [144/264] Building C object src/core/CMakeFiles/ddsc.dir/__/ddsrt/src/atomics.c.o
+[39.856s] [145/264] Building C object src/core/CMakeFiles/ddsc.dir/__/ddsrt/src/avl.c.o
+[39.982s] [146/264] Building C object src/core/CMakeFiles/ddsc.dir/__/ddsrt/src/bswap.c.o
+[40.104s] [147/264] Building C object src/core/CMakeFiles/ddsc.dir/__/ddsrt/src/io.c.o
+[40.243s] [148/264] Building C object src/core/CMakeFiles/ddsc.dir/__/ddsrt/src/log.c.o
+[40.361s] [149/264] Building C object src/core/CMakeFiles/ddsc.dir/__/ddsrt/src/retcode.c.o
+[40.672s] [150/264] Building C object src/core/CMakeFiles/ddsc.dir/__/ddsrt/src/strtod.c.o
+[40.793s] [151/264] Building C object src/core/CMakeFiles/ddsc.dir/__/ddsrt/src/strtol.c.o
+[40.925s] [152/264] Building C object src/core/CMakeFiles/ddsc.dir/__/ddsrt/src/mh3.c.o
+[41.154s] [153/264] Building C object src/core/CMakeFiles/ddsc.dir/__/ddsrt/src/environ.c.o
+[41.317s] [154/264] Building C object src/core/CMakeFiles/ddsc.dir/__/ddsrt/src/expand_vars.c.o
+[41.432s] [155/264] Building C object src/core/CMakeFiles/ddsc.dir/__/ddsrt/src/fibheap.c.o
+[41.595s] [156/264] Building C object src/core/CMakeFiles/ddsc.dir/__/ddsrt/src/hopscotch.c.o
+[41.746s] [157/264] Building C object src/core/CMakeFiles/ddsc.dir/__/ddsrt/src/circlist.c.o
+[41.854s] [158/264] Building C object src/core/CMakeFiles/ddsc.dir/__/ddsrt/src/threads.c.o
+[42.059s] [159/264] Building C object src/core/CMakeFiles/ddsc.dir/__/ddsrt/src/string.c.o
+[42.300s] [160/264] Building C object src/core/CMakeFiles/ddsc.dir/__/ddsrt/src/sockets.c.o
+[42.678s] [161/264] Building C object src/core/CMakeFiles/ddsc.dir/__/ddsrt/src/md5.c.o
+[42.918s] [162/264] Building C object src/core/CMakeFiles/ddsc.dir/__/ddsrt/src/xmlparser.c.o
+[43.116s] [163/264] Building C object src/core/CMakeFiles/ddsc.dir/__/ddsrt/src/ifaddrs.c.o
+[43.365s] [164/264] Building C object src/core/CMakeFiles/ddsc.dir/__/ddsrt/src/cdtors.c.o
+[43.557s] [165/264] Building C object src/core/CMakeFiles/ddsc.dir/__/ddsrt/src/random.c.o
+[43.693s] [166/264] Building C object src/core/CMakeFiles/ddsc.dir/__/ddsrt/src/time.c.o
+[43.879s] [167/264] Building C object src/core/CMakeFiles/ddsc.dir/__/ddsrt/src/ifaddrs/posix/ifaddrs.c.o
+[44.032s] [168/264] Building C object src/core/CMakeFiles/ddsc.dir/__/ddsrt/src/sockets/posix/socket.c.o
+[44.238s] [169/264] Building C object src/core/CMakeFiles/ddsc.dir/__/ddsrt/src/sockets/posix/gethostname.c.o
+[44.372s] [170/264] Building C object src/core/CMakeFiles/ddsc.dir/__/ddsrt/src/heap/posix/heap.c.o
+[44.499s] [171/264] Building C object src/core/CMakeFiles/ddsc.dir/__/ddsrt/src/dynlib/posix/dynlib.c.o
+[44.674s] [172/264] Building C object src/core/CMakeFiles/ddsc.dir/__/ddsrt/src/environ/posix/environ.c.o
+[44.769s] [173/264] Building C object src/core/CMakeFiles/ddsc.dir/__/ddsrt/src/filesystem/posix/filesystem.c.o
+[44.953s] [174/264] Building C object src/core/CMakeFiles/ddsc.dir/__/ddsrt/src/process/posix/process.c.o
+[45.170s] [175/264] Building C object src/core/CMakeFiles/ddsc.dir/__/ddsrt/src/random/posix/random.c.o
+[45.391s] [176/264] Building C object src/core/CMakeFiles/ddsc.dir/__/ddsrt/src/sync/posix/sync.c.o
+[45.598s] [177/264] Building C object src/core/CMakeFiles/ddsc.dir/__/ddsrt/src/threads/posix/threads.c.o
+[45.905s] [178/264] Building C object src/core/CMakeFiles/ddsc.dir/__/ddsrt/src/netstat/linux/netstat.c.o
+[46.125s] [179/264] Building C object src/core/CMakeFiles/ddsc.dir/__/ddsrt/src/time/posix/time.c.o
+[46.327s] [180/264] Building C object src/core/CMakeFiles/ddsc.dir/__/ddsrt/src/rusage/posix/rusage.c.o
+[46.562s] [181/264] Building C object src/tools/idlpp/CMakeFiles/idlpp.dir/src/directive.c.o
+[46.762s] [182/264] Building C object src/tools/idlpp/CMakeFiles/idlpp.dir/src/eval.c.o
+[46.935s] [183/264] Building C object src/tools/idlpp/CMakeFiles/idlpp.dir/src/expand.c.o
+[47.186s] [184/264] Building C object src/tools/idlpp/CMakeFiles/idlpp.dir/src/main.c.o
+[47.420s] [185/264] Building C object src/tools/idlpp/CMakeFiles/idlpp.dir/src/mbchar.c.o
+[47.653s] [186/264] Building C object src/tools/idlpp/CMakeFiles/idlpp.dir/src/support.c.o
+[47.920s] [187/264] Building C object src/tools/idlpp/CMakeFiles/idlpp.dir/src/system.c.o
+[48.009s] [188/264] Linking C shared library lib/libcycloneddsidl.so.0.10.5
+[68.226s] [189/264] Linking C shared library lib/libddsc.so.0.10.5
+[68.247s] [190/264] Linking C static library lib/libidlpp.a
+[68.502s] [191/264] Building C object src/tools/idlc/CMakeFiles/idlc.dir/src/idlc.c.o
+[68.622s] [192/264] Building C object src/tools/idlc/CMakeFiles/idlc.dir/src/plugin.c.o
+[68.785s] [193/264] Building C object src/tools/idlc/CMakeFiles/idlc.dir/src/options.c.o
+[68.909s] [194/264] Building C object src/tools/idlc/CMakeFiles/idlc.dir/src/generator.c.o
+[69.079s] [195/264] Building C object src/tools/idlc/CMakeFiles/idlc.dir/src/descriptor.c.o
+[69.286s] [196/264] Building C object src/tools/idlc/CMakeFiles/idlc.dir/src/types.c.o
+[69.535s] [197/264] Building C object src/tools/idlc/CMakeFiles/idlc.dir/src/descriptor_type_meta.c.o
+[69.549s] [198/264] Creating library symlink lib/libcycloneddsidl.so.0 lib/libcycloneddsidl.so
+[69.556s] [199/264] Creating library symlink lib/libddsc.so.0 lib/libddsc.so
+[69.814s] [200/264] Linking C executable bin/idlc
+[69.847s] [201/264] Generating ddsperf_types.c, ddsperf_types.h
+[70.141s] [202/264] Building C object src/tools/ddsperf/CMakeFiles/ddsperf.dir/ddsperf.c.o
+[70.394s] [203/264] Building C object src/tools/ddsperf/CMakeFiles/ddsperf.dir/cputime.c.o
+[70.601s] [204/264] Building C object src/tools/ddsperf/CMakeFiles/ddsperf.dir/netload.c.o
+[70.844s] [205/264] Building C object src/tools/ddsperf/CMakeFiles/ddsperf.dir/async_listener.c.o
+[71.100s] [206/264] Building C object src/tools/ddsperf/CMakeFiles/ddsperf.dir/ddsperf_types.c.o
+[71.229s] [207/264] Building C object src/ddsrt/CMakeFiles/ddsrt-internal.dir/src/atomics.c.o
+[71.366s] [208/264] Building C object src/ddsrt/CMakeFiles/ddsrt-internal.dir/src/avl.c.o
+[71.517s] [209/264] Building C object src/ddsrt/CMakeFiles/ddsrt-internal.dir/src/bswap.c.o
+[71.641s] [210/264] Building C object src/ddsrt/CMakeFiles/ddsrt-internal.dir/src/io.c.o
+[71.824s] [211/264] Building C object src/ddsrt/CMakeFiles/ddsrt-internal.dir/src/log.c.o
+[71.903s] [212/264] Building C object src/ddsrt/CMakeFiles/ddsrt-internal.dir/src/retcode.c.o
+[72.109s] [213/264] Building C object src/ddsrt/CMakeFiles/ddsrt-internal.dir/src/strtod.c.o
+[72.233s] [214/264] Building C object src/ddsrt/CMakeFiles/ddsrt-internal.dir/src/strtol.c.o
+[72.360s] [215/264] Building C object src/ddsrt/CMakeFiles/ddsrt-internal.dir/src/mh3.c.o
+[72.525s] [216/264] Building C object src/ddsrt/CMakeFiles/ddsrt-internal.dir/src/environ.c.o
+[72.670s] [217/264] Building C object src/ddsrt/CMakeFiles/ddsrt-internal.dir/src/expand_vars.c.o
+[72.811s] [218/264] Building C object src/ddsrt/CMakeFiles/ddsrt-internal.dir/src/fibheap.c.o
+[72.969s] [219/264] Building C object src/ddsrt/CMakeFiles/ddsrt-internal.dir/src/hopscotch.c.o
+[73.095s] [220/264] Building C object src/ddsrt/CMakeFiles/ddsrt-internal.dir/src/circlist.c.o
+[73.315s] [221/264] Building C object src/ddsrt/CMakeFiles/ddsrt-internal.dir/src/threads.c.o
+[73.492s] [222/264] Building C object src/ddsrt/CMakeFiles/ddsrt-internal.dir/src/string.c.o
+[73.646s] [223/264] Building C object src/ddsrt/CMakeFiles/ddsrt-internal.dir/src/sockets.c.o
+[73.734s] [224/264] Building C object src/ddsrt/CMakeFiles/ddsrt-internal.dir/src/md5.c.o
+[73.903s] [225/264] Building C object src/ddsrt/CMakeFiles/ddsrt-internal.dir/src/xmlparser.c.o
+[73.996s] [226/264] Building C object src/ddsrt/CMakeFiles/ddsrt-internal.dir/src/ifaddrs.c.o
+[74.165s] [227/264] Building C object src/ddsrt/CMakeFiles/ddsrt-internal.dir/src/cdtors.c.o
+[74.355s] [228/264] Building C object src/ddsrt/CMakeFiles/ddsrt-internal.dir/src/random.c.o
+[74.522s] [229/264] Building C object src/ddsrt/CMakeFiles/ddsrt-internal.dir/src/time.c.o
+[74.663s] [230/264] Building C object src/ddsrt/CMakeFiles/ddsrt-internal.dir/src/ifaddrs/posix/ifaddrs.c.o
+[74.808s] [231/264] Building C object src/ddsrt/CMakeFiles/ddsrt-internal.dir/src/sockets/posix/socket.c.o
+[75.031s] [232/264] Building C object src/ddsrt/CMakeFiles/ddsrt-internal.dir/src/sockets/posix/gethostname.c.o
+[75.136s] [233/264] Building C object src/ddsrt/CMakeFiles/ddsrt-internal.dir/src/heap/posix/heap.c.o
+[75.329s] [234/264] Building C object src/ddsrt/CMakeFiles/ddsrt-internal.dir/src/dynlib/posix/dynlib.c.o
+[75.479s] [235/264] Building C object src/ddsrt/CMakeFiles/ddsrt-internal.dir/src/environ/posix/environ.c.o
+[75.657s] [236/264] Building C object src/ddsrt/CMakeFiles/ddsrt-internal.dir/src/filesystem/posix/filesystem.c.o
+[75.805s] [237/264] Building C object src/ddsrt/CMakeFiles/ddsrt-internal.dir/src/process/posix/process.c.o
+[75.940s] [238/264] Building C object src/ddsrt/CMakeFiles/ddsrt-internal.dir/src/random/posix/random.c.o
+[76.104s] [239/264] Building C object src/ddsrt/CMakeFiles/ddsrt-internal.dir/src/sync/posix/sync.c.o
+[76.311s] [240/264] Building C object src/ddsrt/CMakeFiles/ddsrt-internal.dir/src/threads/posix/threads.c.o
+[76.469s] [241/264] Building C object src/ddsrt/CMakeFiles/ddsrt-internal.dir/src/netstat/linux/netstat.c.o
+[76.616s] [242/264] Building C object src/ddsrt/CMakeFiles/ddsrt-internal.dir/src/time/posix/time.c.o
+[76.797s] [243/264] Building C object src/ddsrt/CMakeFiles/ddsrt-internal.dir/src/rusage/posix/rusage.c.o
+[77.087s] [244/264] Building C object src/security/builtin_plugins/access_control/CMakeFiles/dds_security_ac.dir/src/access_control_objects.c.o
+[77.364s] [245/264] Building C object src/security/builtin_plugins/access_control/CMakeFiles/dds_security_ac.dir/src/access_control_parser.c.o
+[77.684s] [246/264] Building C object src/security/builtin_plugins/access_control/CMakeFiles/dds_security_ac.dir/src/access_control_utils.c.o
+[78.036s] [247/264] Building C object src/security/builtin_plugins/access_control/CMakeFiles/dds_security_ac.dir/src/access_control.c.o
+[78.433s] [248/264] Building C object src/security/builtin_plugins/access_control/CMakeFiles/dds_security_ac.dir/__/__/openssl/src/openssl_support.c.o
+[78.767s] [249/264] Building C object src/security/builtin_plugins/authentication/CMakeFiles/dds_security_auth.dir/src/authentication.c.o
+[79.190s] [250/264] Building C object src/security/builtin_plugins/authentication/CMakeFiles/dds_security_auth.dir/src/auth_utils.c.o
+[79.465s] [251/264] Building C object src/security/builtin_plugins/authentication/CMakeFiles/dds_security_auth.dir/__/__/openssl/src/openssl_support.c.o
+[79.868s] [252/264] Building C object src/security/builtin_plugins/cryptographic/CMakeFiles/dds_security_crypto.dir/src/crypto_cipher.c.o
+[80.116s] [253/264] Building C object src/security/builtin_plugins/cryptographic/CMakeFiles/dds_security_crypto.dir/src/crypto_key_exchange.c.o
+[80.514s] [254/264] Building C object src/security/builtin_plugins/cryptographic/CMakeFiles/dds_security_crypto.dir/src/crypto_key_factory.c.o
+[80.761s] [255/264] Building C object src/security/builtin_plugins/cryptographic/CMakeFiles/dds_security_crypto.dir/src/crypto_objects.c.o
+[81.002s] [256/264] Building C object src/security/builtin_plugins/cryptographic/CMakeFiles/dds_security_crypto.dir/src/crypto_transform.c.o
+[81.216s] [257/264] Building C object src/security/builtin_plugins/cryptographic/CMakeFiles/dds_security_crypto.dir/src/crypto_utils.c.o
+[81.469s] [258/264] Building C object src/security/builtin_plugins/cryptographic/CMakeFiles/dds_security_crypto.dir/src/cryptography.c.o
+[81.744s] [259/264] Building C object src/security/builtin_plugins/cryptographic/CMakeFiles/dds_security_crypto.dir/__/__/openssl/src/openssl_support.c.o
+[81.950s] [260/264] Linking C executable bin/ddsperf
+[81.989s] [261/264] Linking C static library lib/libddsrt-internal.a
+[82.104s] [262/264] Linking C shared library lib/libdds_security_ac.so
+[82.181s] [263/264] Linking C shared library lib/libdds_security_auth.so
+[82.242s] [264/264] Linking C shared library lib/libdds_security_crypto.so
+[82.253s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/cyclonedds' returned '0': CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=99 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/cyclonedds -- -j4 -l4
+[82.254s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/cyclonedds': CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=99 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/cyclonedds
+[82.276s] -- Install configuration: "Release"
+[82.276s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/cmake/CycloneDDS/CycloneDDSConfig.cmake
+[82.277s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/cmake/CycloneDDS/CycloneDDSConfigVersion.cmake
+[82.277s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/cmake/CycloneDDS/CycloneDDSTargets.cmake
+[82.277s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/cmake/CycloneDDS/CycloneDDSTargets-release.cmake
+[82.277s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig/CycloneDDS.pc
+[82.278s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/idlc
+[82.283s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/idlc/options.h
+[82.283s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/idlc/generator.h
+[82.283s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin/idlc
+[82.284s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/cmake/CycloneDDS/idlc/Generate.cmake
+[82.284s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin/ddsperf
+[82.284s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include
+[82.284s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds
+[82.284s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt
+[82.284s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/misc.h
+[82.290s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/sched.h
+[82.290s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/circlist.h
+[82.290s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/random.h
+[82.290s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/strtod.h
+[82.290s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/types
+[82.291s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/types/vxworks.h
+[82.291s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/types/windows.h
+[82.291s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/types/posix.h
+[82.291s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/countargs.h
+[82.291s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/io.h
+[82.291s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/process.h
+[82.291s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/bswap.h
+[82.291s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/netstat.h
+[82.291s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/mh3.h
+[82.291s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/time
+[82.291s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/time/freertos.h
+[82.292s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/strtol.h
+[82.294s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/sockets
+[82.294s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/sockets/windows.h
+[82.294s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/sockets/posix.h
+[82.295s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/filesystem.h
+[82.295s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/xmlparser.h
+[82.295s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/iovec.h
+[82.295s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/sync
+[82.295s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/sync/freertos.h
+[82.295s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/sync/windows.h
+[82.295s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/sync/posix.h
+[82.296s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/align.h
+[82.296s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/string.h
+[82.301s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/sync.h
+[82.301s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/heap.h
+[82.301s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/atomics.h
+[82.302s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/avl.h
+[82.302s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/ifaddrs.h
+[82.302s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/cdtors.h
+[82.302s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/endian.h
+[82.302s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/md5.h
+[82.302s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/retcode.h
+[82.302s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/rusage.h
+[82.302s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/log.h
+[82.302s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/atomics
+[82.302s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/atomics/msvc.h
+[82.303s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/atomics/gcc.h
+[82.303s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/atomics/arm.h
+[82.304s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/atomics/sun.h
+[82.304s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/sockets.h
+[82.305s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/hopscotch.h
+[82.305s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/threads.h
+[82.305s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/dynlib.h
+[82.308s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/threads
+[82.308s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/threads/freertos.h
+[82.308s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/threads/windows.h
+[82.308s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/threads/posix.h
+[82.309s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/filesystem
+[82.309s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/filesystem/windows.h
+[82.309s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/filesystem/posix.h
+[82.309s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/arch.h
+[82.309s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/attributes.h
+[82.310s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/fibheap.h
+[82.311s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/time.h
+[82.311s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/types.h
+[82.311s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/expand_vars.h
+[82.312s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/environ.h
+[82.312s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsrt/static_assert.h
+[82.312s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include
+[82.312s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds
+[82.313s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/config.h
+[82.313s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/version.h
+[82.316s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/features.h
+[82.316s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/idl
+[82.316s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/idl/tree.h
+[82.318s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/idl/string.h
+[82.318s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/idl/visit.h
+[82.319s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/idl/file.h
+[82.319s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/idl/print.h
+[82.319s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/idl/retcode.h
+[82.319s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/idl/symbol.h
+[82.319s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/idl/stream.h
+[82.319s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/idl/expression.h
+[82.319s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/idl/scope.h
+[82.319s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/idl/processor.h
+[82.320s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/idl
+[82.320s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/idl/misc.h
+[82.320s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/idl/endian.h
+[82.320s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/idl/version.h
+[82.320s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/idl/md5.h
+[82.320s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/idl/export.h
+[82.320s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/idl/attributes.h
+[82.322s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libcycloneddsidl.so.0.10.5
+[82.323s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libcycloneddsidl.so.0
+[82.323s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libcycloneddsidl.so
+[82.324s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include
+[82.324s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds
+[82.324s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/security
+[82.324s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/security/dds_security_api_access_control.h
+[82.330s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/security/dds_security_api_cryptography.h
+[82.330s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/security/dds_security_api_err.h
+[82.331s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/security/dds_security_api_types.h
+[82.331s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/security/dds_security_api_authentication.h
+[82.331s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/security/dds_security_api.h
+[82.331s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/security/dds_security_api_defs.h
+[82.331s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/security/core/
+[82.331s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/security/core//dds_security_utils.h
+[82.331s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/security/core//dds_security_fsm.h
+[82.331s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/security/core//shared_secret.h
+[82.331s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/security/core//dds_security_types.h
+[82.331s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/security/core//dds_security_serialize.h
+[82.332s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/security/core//dds_security_timed_cb.h
+[82.332s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/security/core//dds_security_plugins.h
+[82.334s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libdds_security_ac.so
+[82.335s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libdds_security_auth.so
+[82.335s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libdds_security_crypto.so
+[82.336s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include
+[82.336s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds
+[82.337s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi
+[82.337s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_pmd.h
+[82.337s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_list_genptr.h
+[82.338s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_deliver_locally.h
+[82.338s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_tcp.h
+[82.340s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_cfgunits.h
+[82.340s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_proxy_endpoint.h
+[82.340s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_lifespan.h
+[82.341s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_iid.h
+[82.341s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_handshake.h
+[82.341s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_list_tmpl.h
+[82.341s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_vendor.h
+[82.341s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_tkmap.h
+[82.341s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_xt_typemap.h
+[82.342s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/q_inverse_uint32_set.h
+[82.342s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/q_qosmatch.h
+[82.342s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_security_omg.h
+[82.342s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_typebuilder.h
+[82.342s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/q_rtps.h
+[82.342s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_xt_typelookup.idl
+[82.343s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_config_impl.h
+[82.343s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/q_feature_check.h
+[82.344s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_mcgroup.h
+[82.344s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/q_gc.h
+[82.345s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/q_whc.h
+[82.345s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/q_xmsg.h
+[82.346s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_raweth.h
+[82.346s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_typelookup.h
+[82.346s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_typelib.h
+[82.346s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_time.h
+[82.346s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_xt_impl.h
+[82.346s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/q_thread.h
+[82.349s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_entity.h
+[82.349s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_typewrap.h
+[82.349s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_xt_typeinfo.h
+[82.350s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_vnet.h
+[82.350s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_portmapping.h
+[82.350s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_acknack.h
+[82.350s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_udp.h
+[82.350s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/q_receive.h
+[82.350s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/q_debmon.h
+[82.351s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/q_log.h
+[82.351s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_entity_match.h
+[82.351s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_security_exchange.h
+[82.351s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_security_msg.h
+[82.351s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_plist.h
+[82.351s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/q_pcap.h
+[82.351s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/q_xevent.h
+[82.352s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_keyhash.h
+[82.352s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_config.h
+[82.352s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_tran.h
+[82.352s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/q_bswap.h
+[82.354s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/q_lease.h
+[82.354s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_cfgelems.h
+[82.354s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_domaingv.h
+[82.355s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_serdata_pserop.h
+[82.355s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/q_unused.h
+[82.355s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/q_protocol.h
+[82.355s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_topic.h
+[82.355s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_xt_typelookup.h
+[82.355s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/q_radmin.h
+[82.356s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_xqos.h
+[82.356s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_threadmon.h
+[82.356s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_xt_typeinfo.idl
+[82.356s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/q_transmit.h
+[82.358s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_endpoint.h
+[82.358s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_xt_typemap.idl
+[82.358s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_wraddrset.h
+[82.359s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/q_bitset.h
+[82.359s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_ssl.h
+[82.359s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/q_lat_estim.h
+[82.359s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_entity_index.h
+[82.359s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_deadline.h
+[82.359s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_builtin_topic_if.h
+[82.360s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_shm_transport.h
+[82.360s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_cdrstream.h
+[82.360s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/q_hbcontrol.h
+[82.362s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_ownip.h
+[82.362s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/q_freelist.h
+[82.362s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_statistics.h
+[82.362s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_locator.h
+[82.363s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/q_addrset.h
+[82.363s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_ipaddr.h
+[82.363s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_rhc.h
+[82.363s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_serdata_default.h
+[82.363s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_plist_generic.h
+[82.363s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_serdata.h
+[82.364s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_proxy_participant.h
+[82.364s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_sertype.h
+[82.364s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/q_init.h
+[82.364s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/q_ddsi_discovery.h
+[82.364s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_security_util.h
+[82.367s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_guid.h
+[82.367s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_sertopic.h
+[82.367s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/q_sockwaitset.h
+[82.368s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/sysdeps.h
+[82.368s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/q_misc.h
+[82.368s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_participant.h
+[82.368s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsi/ddsi_serdata_plist.h
+[82.368s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include
+[82.368s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/ddsc
+[82.368s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/ddsc/dds.h
+[82.368s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds
+[82.368s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsc
+[82.368s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsc/dds_public_alloc.h
+[82.369s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsc/dds_rhc.h
+[82.369s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsc/dds_public_listener.h
+[82.370s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsc/dds_public_status.h
+[82.371s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsc/dds_public_qosdefs.h
+[82.371s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsc/dds_loan_api.h
+[82.371s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsc/dds_public_impl.h
+[82.371s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsc/dds_public_qos.h
+[82.371s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsc/dds_opcodes.h
+[82.371s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsc/dds_basic_types.h
+[82.372s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsc/dds_statistics.h
+[82.372s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsc/dds_public_error.h
+[82.372s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsc/dds_internal_api.h
+[82.372s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/ddsc/dds_data_allocator.h
+[82.372s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/dds.h
+[82.372s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include
+[82.373s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds
+[82.373s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/dds/export.h
+[82.373s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libddsc.so.0.10.5
+[82.373s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libddsc.so.0
+[82.374s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libddsc.so
+[82.374s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/doc/CycloneDDS/CONTRIBUTING.md
+[82.375s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/doc/CycloneDDS/CYCLONEDDS_QUALITY_DECLARATION.md
+[82.376s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/doc/CycloneDDS/LICENSE
+[82.376s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/doc/CycloneDDS/NOTICE.md
+[82.376s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/doc/CycloneDDS/README.md
+[82.376s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/doc/CycloneDDS/CHANGELOG.rst
+[82.378s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/cyclonedds' returned '0': CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=99 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/cyclonedds
