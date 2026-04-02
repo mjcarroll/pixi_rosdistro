@@ -1,0 +1,103 @@
+Not searching for unused variables given on the command line.
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake_ros: 0.15.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_ros/cmake)
+-- Found rcutils: 7.0.7 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcutils/cmake)
+-- Found rmw: 7.10.0 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw/cmake)
+-- Found libyaml_vendor: 1.8.0 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/libyaml_vendor/cmake)
+-- Checking for module 'yaml-0.1'
+--   Found yaml-0.1, version 0.2.5
+-- Found yaml: 1
+-- Found ament_lint_auto: 0.20.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_lint_auto/cmake)
+-- Found gtest sources under '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+-- Check if compiler accepts -pthread
+-- Check if compiler accepts -pthread - yes
+-- Found Threads: TRUE
+-- Performance tests are disabled by default, so Google Benchmark tests will be skipped. To enable these tests, set the CMake variable 'AMENT_RUN_PERFORMANCE_TESTS'.
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include;$<BUILD_INTERFACE:/home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl_yaml_param_parser/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (2.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rcl_yaml_param_parser
+[1/32] Generating rcl_yaml_param_parser/version.h
+[2/32] Building C object CMakeFiles/rcl_yaml_param_parser.dir/src/add_to_arrays.c.o
+[3/32] Building C object CMakeFiles/rcl_yaml_param_parser.dir/src/namespace.c.o
+[4/32] Building C object CMakeFiles/rcl_yaml_param_parser.dir/src/node_params.c.o
+[5/32] Building C object CMakeFiles/rcl_yaml_param_parser.dir/src/parse.c.o
+[6/32] Building C object CMakeFiles/rcl_yaml_param_parser.dir/src/parser.c.o
+[7/32] Building C object CMakeFiles/rcl_yaml_param_parser.dir/src/yaml_variant.c.o
+[8/32] Building CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[9/32] Building CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[10/32] Linking C shared library librcl_yaml_param_parser.so
+[11/32] Building CXX object CMakeFiles/test_namespace.dir/test/test_namespace.cpp.o
+[12/32] Building CXX object CMakeFiles/test_node_params.dir/test/test_node_params.cpp.o
+[13/32] Building CXX object CMakeFiles/test_parse_yaml.dir/test/test_parse_yaml.cpp.o
+[14/32] Building CXX object CMakeFiles/test_parse.dir/test/test_parse.cpp.o
+[15/32] Building CXX object CMakeFiles/test_parser.dir/test/test_parser.cpp.o
+[16/32] Building CXX object CMakeFiles/test_parser_multiple_nodes.dir/test/test_parser_multiple_nodes.cpp.o
+[17/32] Building CXX object CMakeFiles/test_parser_multiple_params.dir/test/test_parser_multiple_params.cpp.o
+[18/32] Building CXX object CMakeFiles/test_yaml_variant.dir/test/test_yaml_variant.cpp.o
+[19/32] Building CXX object CMakeFiles/benchmark_parse_yaml.dir/test/benchmark/benchmark_parse_yaml.cpp.o
+[20/32] Building CXX object CMakeFiles/benchmark_variant.dir/test/benchmark/benchmark_variant.cpp.o
+[21/32] Linking CXX static library gtest/libgtest.a
+[22/32] Linking CXX static library gtest/libgtest_main.a
+[23/32] Linking CXX executable test_namespace
+[24/32] Linking CXX executable test_node_params
+[25/32] Linking CXX executable test_parse_yaml
+[26/32] Linking CXX executable test_parse
+[27/32] Linking CXX executable test_parser
+[28/32] Linking CXX executable test_parser_multiple_nodes
+[29/32] Linking CXX executable test_parser_multiple_params
+[30/32] Linking CXX executable test_yaml_variant
+[31/32] Linking CXX executable benchmark_parse_yaml
+[32/32] Linking CXX executable benchmark_variant
+-- Install configuration: "Release"
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/librcl_yaml_param_parser.so
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_yaml_param_parser/environment/library_path.sh
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_yaml_param_parser/environment/library_path.dsv
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl_yaml_param_parser/rcl_yaml_param_parser/version.h
+-- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl_yaml_param_parser
+-- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl_yaml_param_parser/rcl_yaml_param_parser
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl_yaml_param_parser/rcl_yaml_param_parser/visibility_control.h
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl_yaml_param_parser/rcl_yaml_param_parser/types.h
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/package_run_dependencies/rcl_yaml_param_parser
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/parent_prefix_path/rcl_yaml_param_parser
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_yaml_param_parser/environment/ament_prefix_path.sh
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_yaml_param_parser/environment/ament_prefix_path.dsv
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_yaml_param_parser/environment/path.sh
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_yaml_param_parser/environment/path.dsv
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_yaml_param_parser/local_setup.bash
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_yaml_param_parser/local_setup.fish
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_yaml_param_parser/local_setup.sh
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_yaml_param_parser/local_setup.zsh
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_yaml_param_parser/local_setup.dsv
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_yaml_param_parser/package.dsv
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/packages/rcl_yaml_param_parser
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_yaml_param_parser/cmake/rcl_yaml_param_parserExport.cmake
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_yaml_param_parser/cmake/rcl_yaml_param_parserExport-release.cmake
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_yaml_param_parser/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_yaml_param_parser/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_yaml_param_parser/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_yaml_param_parser/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_yaml_param_parser/cmake/rcl_yaml_param_parserConfig.cmake
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_yaml_param_parser/cmake/rcl_yaml_param_parserConfig-version.cmake
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_yaml_param_parser/package.xml

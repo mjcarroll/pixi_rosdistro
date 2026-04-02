@@ -1,0 +1,73 @@
+Not searching for unused variables given on the command line.
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake_ros: 0.15.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_ros/cmake)
+-- Found ament_index_cpp: 1.13.2 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index_cpp/cmake)
+-- Found class_loader: 2.9.2 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/cmake)
+-- Found composition_interfaces: 2.4.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/composition_interfaces/cmake)
+-- Found rosidl_generator_c: 5.1.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 5.1.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rclcpp: 31.0.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclcpp/cmake)
+-- Found rmw_implementation_cmake: 7.10.0 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 9.4.5 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found ament_lint_auto: 0.20.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_lint_auto/cmake)
+-- Found ament_cmake_google_benchmark: 2.8.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_google_benchmark/cmake)
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE
+-- Found gtest sources under '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+-- Check if compiler accepts -pthread
+-- Check if compiler accepts -pthread - yes
+-- Performance tests are disabled by default, so Google Benchmark tests will be skipped. To enable these tests, set the CMake variable 'AMENT_RUN_PERFORMANCE_TESTS'.
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include;$<BUILD_INTERFACE:/home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rclcpp/rclcpp_components/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (2.6s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rclcpp_components
+[1/22] Building CXX object CMakeFiles/component_manager.dir/src/component_manager.cpp.o
+[2/22] Building CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[3/22] Building CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[4/22] Linking CXX shared library libcomponent_manager.so
+[5/22] Building CXX object CMakeFiles/component_container.dir/src/component_container.cpp.o
+[6/22] Building CXX object CMakeFiles/component_container_event.dir/src/component_container_event.cpp.o
+[7/22] Building CXX object CMakeFiles/component_container_mt.dir/src/component_container_mt.cpp.o
+[8/22] Building CXX object CMakeFiles/component_container_isolated.dir/src/component_container_isolated.cpp.o
+[9/22] Building CXX object CMakeFiles/test_component.dir/test/components/test_component.cpp.o
+[10/22] Building CXX object CMakeFiles/test_component_manager.dir/test/test_component_manager.cpp.o
+[11/22] Building CXX object CMakeFiles/test_component_manager_api.dir/test/test_component_manager_api.cpp.o
+[12/22] Building CXX object CMakeFiles/benchmark_components.dir/test/benchmark/benchmark_components.cpp.o
+[13/22] Linking CXX static library gtest/libgtest.a
+[14/22] Linking CXX static library gtest/libgtest_main.a
+[15/22] Linking CXX executable component_container
+[16/22] Linking CXX executable component_container_event
+[17/22] Linking CXX executable component_container_mt
+[18/22] Linking CXX executable component_container_isolated
+[19/22] Linking CXX shared library libtest_component.so
+[20/22] Linking CXX executable test_component_manager
+[21/22] Linking CXX executable test_component_manager_api
+[22/22] Linking CXX executable benchmark_components

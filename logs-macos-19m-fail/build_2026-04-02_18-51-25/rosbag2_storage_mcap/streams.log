@@ -1,0 +1,124 @@
+[2.212s] Invoking command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_storage_mcap': AMENT_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/mimick_vendor/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_PYTHON_VERSION=3 SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rosbag2/rosbag2_storage_mcap -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DTRACETOOLS_DISABLED=ON -DCMAKE_INSTALL_PREFIX=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[2.470s] Not searching for unused variables given on the command line.
+[2.470s] -- The C compiler identification is AppleClang 17.0.0.17000013
+[2.624s] -- The CXX compiler identification is AppleClang 17.0.0.17000013
+[2.661s] -- Detecting C compiler ABI info
+[3.048s] -- Detecting C compiler ABI info - done
+[3.093s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.094s] -- Detecting C compile features
+[3.094s] -- Detecting C compile features - done
+[3.106s] -- Detecting CXX compiler ABI info
+[3.534s] -- Detecting CXX compiler ABI info - done
+[3.578s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.579s] -- Detecting CXX compile features
+[3.579s] -- Detecting CXX compile features - done
+[3.590s] -- Found ament_cmake: 2.8.6 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake/cmake)
+[4.138s] -- Found ament_index_cpp: 1.13.2 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index_cpp/cmake)
+[4.156s] -- Found mcap_vendor: 0.33.0 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/mcap_vendor/cmake)
+[5.250s] -- Found pluginlib: 5.8.4 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/pluginlib/cmake)
+[5.330s] -- Found rosbag2_storage: 0.33.0 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage/cmake)
+[5.466s] -- Found rosidl_generator_c: 5.1.3 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_c/cmake)
+[5.528s] -- Found rosidl_generator_cpp: 5.1.3 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_cpp/cmake)
+[5.576s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.603s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.810s] -- Found rmw_implementation_cmake: 7.10.0 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation_cmake/cmake)
+[5.824s] -- Found rmw_fastrtps_cpp: 9.4.5 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_fastrtps_cpp/cmake)
+[5.949s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.316s] -- Found ament_cmake_gmock: 2.8.6 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_gmock/cmake)
+[6.329s] -- Found ament_lint_auto: 0.20.3 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_lint_auto/cmake)
+[6.349s] -- Found rosbag2_test_common: 0.33.0 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_test_common/cmake)
+[6.555s] -- Found std_msgs: 5.9.1 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/std_msgs/cmake)
+[6.891s] -- Found gmock sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[6.923s] -- Found ament_cmake_gtest: 2.8.6 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_gtest/cmake)
+[6.931s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[6.951s] -- Added test 'clang_format' to check C / C++ code style
+[6.951s] -- Added test 'copyright' to check source files copyright and LICENSE
+[6.956s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[6.956s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rosbag2/rosbag2_storage_mcap/include>
+[6.957s] -- Configured cppcheck exclude dirs and/or files: 
+[6.966s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[6.966s] -- Configured cpplint exclude dirs and/or files: 
+[6.982s] -- Added test 'flake8' to check Python code syntax and style conventions
+[6.982s] -- Configured 'flake8' exclude dirs and/or files: 
+[6.987s] -- Added test 'lint_cmake' to check CMake code style
+[7.008s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[7.014s] -- Added test 'xmllint' to check XML markup files
+[7.055s] -- Configuring done (4.8s)
+[7.157s] -- Generating done (0.1s)
+[7.312s] -- Build files have been written to: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_storage_mcap
+[7.330s] Invoked command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_storage_mcap' returned '0': AMENT_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/mimick_vendor/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=155 ROS_PYTHON_VERSION=3 SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rosbag2/rosbag2_storage_mcap -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DTRACETOOLS_DISABLED=ON -DCMAKE_INSTALL_PREFIX=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[7.331s] Invoking command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_storage_mcap': AMENT_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/mimick_vendor/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=155 ROS_PYTHON_VERSION=3 SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_storage_mcap -- -j3 -l3
+[8.252s] [1/13] Building CXX object CMakeFiles/rosbag2_storage_mcap.dir/src/mcap_storage.cpp.o
+[8.252s] /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rosbag2/rosbag2_storage_mcap/src/mcap_storage.cpp:910:71: warning: format specifies type 'long' but the argument has type 'rcutils_time_point_value_t' (aka 'long long') [-Wformat]
+[8.253s]   910 |     RCUTILS_LOG_WARN_NAMED(LOG_NAME, "Invalid message timestamp %ld", msg->recv_timestamp);
+[8.253s]       |                                                                 ~~~   ^~~~~~~~~~~~~~~~~~~
+[8.253s]       |                                                                 %lld
+[8.253s] /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcutils/rcutils/logging_macros.h:585:54: note: expanded from macro 'RCUTILS_LOG_WARN_NAMED'
+[8.253s]   585 |   RCUTILS_LOG_NAMED(RCUTILS_LOG_SEVERITY_WARN, name, __VA_ARGS__)
+[8.253s]       |                                                      ^~~~~~~~~~~
+[8.254s] /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcutils/rcutils/logging_macros.h:56:73: note: expanded from macro 'RCUTILS_LOG_NAMED'
+[8.254s]    56 |       rcutils_log_internal(&__rcutils_logging_location, severity, name, __VA_ARGS__); \
+[8.254s]       |                                                                         ^~~~~~~~~~~
+[8.254s] 1 warning generated.
+[8.972s] [2/13] Building CXX object gmock/CMakeFiles/gmock.dir/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor/src/gtest-all.cc.o
+[9.602s] [3/13] Building CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
+[10.139s] [4/13] Building CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
+[10.269s] [5/13] Linking CXX shared library librosbag2_storage_mcap.dylib
+[11.025s] [6/13] Building CXX object CMakeFiles/test_mcap_storage.dir/test/rosbag2_storage_mcap/test_mcap_storage.cpp.o
+[11.777s] [7/13] Building CXX object CMakeFiles/test_mcap_topic_filter.dir/test/rosbag2_storage_mcap/test_mcap_topic_filter.cpp.o
+[11.902s] [8/13] cd /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_storage_mcap && /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake -E copy_directory /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rosbag2/rosbag2_storage_mcap/ros2bag_mcap_cli /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_storage_mcap/ament_cmake_python/ros2bag_mcap_cli/ros2bag_mcap_cli && /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake -E copy_if_different /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rosbag2/rosbag2_storage_mcap/setup.cfg /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_storage_mcap/ament_cmake_python/ros2bag_mcap_cli/setup.cfg
+[12.112s] [9/13] Linking CXX static library gmock/libgmock.a
+[12.267s] [10/13] Linking CXX static library gmock/libgmock_main.a
+[12.390s] [11/13] Linking CXX executable test_mcap_storage
+[12.499s] [12/13] Linking CXX executable test_mcap_topic_filter
+[12.888s] [13/13] cd /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_storage_mcap/ament_cmake_python/ros2bag_mcap_cli && /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/python3 setup.py egg_info
+[12.888s] running egg_info
+[12.889s] creating ros2bag_mcap_cli.egg-info
+[12.889s] writing ros2bag_mcap_cli.egg-info/PKG-INFO
+[12.889s] writing dependency_links to ros2bag_mcap_cli.egg-info/dependency_links.txt
+[12.889s] writing entry points to ros2bag_mcap_cli.egg-info/entry_points.txt
+[12.889s] writing top-level names to ros2bag_mcap_cli.egg-info/top_level.txt
+[12.889s] writing manifest file 'ros2bag_mcap_cli.egg-info/SOURCES.txt'
+[12.889s] reading manifest file 'ros2bag_mcap_cli.egg-info/SOURCES.txt'
+[12.889s] writing manifest file 'ros2bag_mcap_cli.egg-info/SOURCES.txt'
+[12.892s] Invoked command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_storage_mcap' returned '0': AMENT_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/mimick_vendor/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=155 ROS_PYTHON_VERSION=3 SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_storage_mcap -- -j3 -l3
+[12.901s] Invoking command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_storage_mcap': AMENT_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/mimick_vendor/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=155 ROS_PYTHON_VERSION=3 SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_storage_mcap
+[12.927s] -- Install configuration: "Release"
+[12.927s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_mcap/environment/pythonpath.sh
+[12.928s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_mcap/environment/pythonpath.dsv
+[12.928s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_mcap/plugin_description.xml
+[12.929s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/librosbag2_storage_mcap.dylib
+[12.930s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_mcap/environment/library_path.sh
+[12.930s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_mcap/environment/library_path.dsv
+[12.931s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/package_run_dependencies/rosbag2_storage_mcap
+[12.932s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/parent_prefix_path/rosbag2_storage_mcap
+[12.932s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_mcap/environment/ament_prefix_path.sh
+[12.932s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_mcap/environment/ament_prefix_path.dsv
+[12.932s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_mcap/environment/path.sh
+[12.932s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_mcap/environment/path.dsv
+[12.933s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_mcap/local_setup.bash
+[12.933s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_mcap/local_setup.fish
+[12.933s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_mcap/local_setup.sh
+[12.934s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_mcap/local_setup.zsh
+[12.934s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_mcap/local_setup.dsv
+[12.934s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_mcap/package.dsv
+[12.935s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/packages/rosbag2_storage_mcap
+[12.936s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/rosbag2_storage__pluginlib__plugin/rosbag2_storage_mcap
+[12.937s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/ros2bag_mcap_cli-0.33.0-py3.12.egg-info
+[12.939s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/ros2bag_mcap_cli-0.33.0-py3.12.egg-info/PKG-INFO
+[12.940s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/ros2bag_mcap_cli-0.33.0-py3.12.egg-info/SOURCES.txt
+[12.940s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/ros2bag_mcap_cli-0.33.0-py3.12.egg-info/entry_points.txt
+[12.941s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/ros2bag_mcap_cli-0.33.0-py3.12.egg-info/top_level.txt
+[12.942s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/ros2bag_mcap_cli-0.33.0-py3.12.egg-info/dependency_links.txt
+[12.944s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/ros2bag_mcap_cli
+[12.945s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/ros2bag_mcap_cli/__init__.py
+[13.000s] Listing '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/ros2bag_mcap_cli'...
+[13.000s] Compiling '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/ros2bag_mcap_cli/__init__.py'...
+[13.006s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_mcap/cmake/export_rosbag2_storage_mcapExport.cmake
+[13.008s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_mcap/cmake/export_rosbag2_storage_mcapExport-release.cmake
+[13.008s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_mcap/cmake/ament_cmake_export_libraries-extras.cmake
+[13.008s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_mcap/cmake/ament_cmake_export_targets-extras.cmake
+[13.008s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_mcap/cmake/rosbag2_storage_mcapConfig.cmake
+[13.008s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_mcap/cmake/rosbag2_storage_mcapConfig-version.cmake
+[13.008s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_storage_mcap/package.xml
+[13.011s] Invoked command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_storage_mcap' returned '0': AMENT_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/mimick_vendor/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=155 ROS_PYTHON_VERSION=3 SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_storage_mcap
