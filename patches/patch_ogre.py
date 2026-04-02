@@ -1,5 +1,6 @@
 import sys
 import os
+import re
 import subprocess
 
 def git_reset(path):
