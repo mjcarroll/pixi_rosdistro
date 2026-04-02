@@ -1,0 +1,758 @@
+[5.902s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_common': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[5.983s] Not searching for unused variables given on the command line.
+[5.983s] -- The C compiler identification is GNU 14.3.0
+[6.112s] -- The CXX compiler identification is GNU 14.3.0
+[6.123s] -- Detecting C compiler ABI info
+[6.298s] -- Detecting C compiler ABI info - done
+[6.298s] -- Check for working C compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
+[6.298s] -- Detecting C compile features
+[6.298s] -- Detecting C compile features - done
+[6.311s] -- Detecting CXX compiler ABI info
+[6.481s] -- Detecting CXX compiler ABI info - done
+[6.517s] -- Check for working CXX compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
+[6.518s] -- Detecting CXX compile features
+[6.520s] -- Detecting CXX compile features - done
+[6.535s] -- Found ament_cmake: 2.8.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake/cmake)
+[6.881s] -- Found rviz_ogre_vendor: 15.1.19 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_ogre_vendor/cmake)
+[6.881s] -- Setting OGRE_DIR to: '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[6.884s] -- Found OGRE
+[6.884s] --   static     : OFF
+[6.884s] --   components : MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[6.885s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI;Codec_FreeImage
+[6.885s] --   media      : /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/rviz_ogre_vendor/share/OGRE/Media
+[6.885s] -- OGRE_LIBRARIES: OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[6.885s] -- OGRE_LIBRARY_DIRS: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/rviz_ogre_vendor/lib
+[6.885s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI;Codec_FreeImage
+[6.885s] -- OGRE_PLUGIN_DIR: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/rviz_ogre_vendor/lib/OGRE
+[6.886s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[6.886s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[6.887s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[6.887s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[6.946s] -- Found ZLIB: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/libz.so (found version "1.3.2")
+[6.963s] -- Found OpenGL: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/libGL.so
+[7.080s] -- Found X11: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include
+[7.080s] -- Looking for XOpenDisplay in /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/libX11.so;/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/libXext.so
+[7.214s] -- Looking for XOpenDisplay in /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/libX11.so;/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/libXext.so - found
+[7.214s] -- Looking for gethostbyname
+[7.354s] -- Looking for gethostbyname - found
+[7.354s] -- Looking for connect
+[7.484s] -- Looking for connect - found
+[7.484s] -- Looking for remove
+[7.644s] -- Looking for remove - found
+[7.644s] -- Looking for shmat
+[7.747s] -- Looking for shmat - found
+[7.747s] -- Looking for IceConnectionNumber in ICE
+[7.882s] -- Looking for IceConnectionNumber in ICE - found
+[8.091s] -- Check if compiler accepts -pthread
+[8.235s] -- Check if compiler accepts -pthread - yes
+[8.259s] -- Performing Test HAVE_STDATOMIC
+[8.493s] -- Performing Test HAVE_STDATOMIC - Success
+[9.296s] -- Found geometry_msgs: 5.9.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/geometry_msgs/cmake)
+[9.411s] -- Found rosidl_generator_c: 5.1.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_c/cmake)
+[9.445s] -- Found rosidl_generator_cpp: 5.1.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_cpp/cmake)
+[9.473s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[9.503s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[9.616s] -- Found pluginlib: 5.8.4 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/pluginlib/cmake)
+[9.672s] -- Found rclcpp: 31.0.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclcpp/cmake)
+[9.859s] -- Found rmw_implementation_cmake: 7.9.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation_cmake/cmake)
+[9.866s] -- Found rmw_fastrtps_cpp: 9.4.5 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_fastrtps_cpp/cmake)
+[9.989s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[10.156s] -- Found resource_retriever: 3.9.2 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/resource_retriever/cmake)
+[10.160s] -- Found rviz_rendering: 15.1.19 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/cmake)
+[10.199s] -- Found sensor_msgs: 5.9.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/sensor_msgs/cmake)
+[10.292s] -- Found std_srvs: 5.9.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/std_srvs/cmake)
+[10.336s] -- Found tf2: 0.45.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2/cmake)
+[10.348s] -- Found tf2_ros: 0.45.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2_ros/cmake)
+[10.618s] -- Found urdf: 2.13.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/urdf/cmake)
+[10.649s] -- Found yaml_cpp_vendor: 9.2.0 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/yaml_cpp_vendor/cmake)
+[10.653s] -- Found yaml-cpp: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/cmake/yaml-cpp/yaml-cpp-config.cmake (found version "0.8.0")
+[10.920s] -- Found ament_lint_auto: 0.20.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_lint_auto/cmake)
+[11.011s] -- Found gmock sources under '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[11.024s] -- Found gtest sources under '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[11.039s] -- Added test 'copyright' to check source files copyright and LICENSE
+[11.063s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[11.066s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/include>;/home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/include;/home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/test
+[11.066s] -- Configured cppcheck exclude dirs and/or files: 
+[11.086s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[11.086s] -- Configured cpplint exclude dirs and/or files: 
+[11.093s] -- Added test 'lint_cmake' to check CMake code style
+[11.117s] -- Added test 'uncrustify' to check C / C++ code style
+[11.117s] -- Configured uncrustify additional arguments: 
+[11.121s] -- Added test 'xmllint' to check XML markup files
+[11.128s] -- Configuring done (5.2s)
+[11.322s] -- Generating done (0.2s)
+[11.451s] -- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_common
+[11.479s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_common' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=57 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[11.481s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_common': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=57 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_common -- -j4 -l4
+[11.517s] [1/253] Generating src/rviz_common/moc_add_display_dialog.cpp
+[11.521s] [2/253] Generating src/rviz_common/moc_help_panel.cpp
+[11.526s] [3/253] Generating include/rviz_common/properties/moc_enum_property.cpp
+[11.532s] [4/253] Generating include/rviz_common/properties/moc_property_tree_widget.cpp
+[11.535s] [5/253] Generating include/rviz_common/properties/moc_splitter_handle.cpp
+[11.540s] [6/253] Generating include/rviz_common/moc_display_group.cpp
+[11.550s] [7/253] Generating include/rviz_common/moc_frame_position_tracking_view_controller.cpp
+[11.561s] [8/253] Generating include/rviz_common/properties/moc_quaternion_property.cpp
+[11.571s] [9/253] Generating include/rviz_common/moc_visualizer_app.cpp
+[11.577s] [10/253] Generating include/rviz_common/moc_display.cpp
+[11.581s] [11/253] Generating include/rviz_common/moc_display_context.cpp
+[11.586s] [12/253] Generating src/rviz_common/moc_displays_panel.cpp
+[11.590s] [13/253] Generating src/rviz_common/moc_failed_panel.cpp
+[11.594s] [14/253] Generating src/rviz_common/moc_frame_manager.cpp
+[11.598s] [15/253] Generating include/rviz_common/moc_frame_manager_iface.cpp
+[11.602s] [16/253] Generating src/rviz_common/moc_loading_dialog.cpp
+[11.606s] [17/253] Generating src/rviz_common/moc_new_object_dialog.cpp
+[11.609s] [18/253] Generating include/rviz_common/moc_panel.cpp
+[11.614s] [19/253] Generating include/rviz_common/moc_panel_dock_widget.cpp
+[11.617s] [20/253] Generating include/rviz_common/properties/moc_bool_property.cpp
+[11.621s] [21/253] Generating include/rviz_common/properties/moc_color_editor.cpp
+[11.624s] [22/253] Generating include/rviz_common/properties/moc_color_property.cpp
+[11.628s] [23/253] Generating include/rviz_common/properties/moc_covariance_property.cpp
+[11.633s] [24/253] Generating include/rviz_common/properties/moc_combo_box.cpp
+[11.637s] [25/253] Generating include/rviz_common/properties/moc_display_group_visibility_property.cpp
+[11.641s] [26/253] Generating include/rviz_common/properties/moc_display_visibility_property.cpp
+[11.647s] [27/253] Generating include/rviz_common/properties/moc_editable_combo_box.cpp
+[11.649s] [28/253] Generating include/rviz_common/properties/moc_editable_enum_property.cpp
+[11.653s] [29/253] Generating include/rviz_common/properties/moc_float_edit.cpp
+[11.661s] [30/253] Generating include/rviz_common/properties/moc_float_property.cpp
+[11.666s] [31/253] Generating include/rviz_common/properties/moc_int_property.cpp
+[11.669s] [32/253] Generating include/rviz_common/properties/moc_line_edit_with_button.cpp
+[11.673s] [33/253] Generating include/rviz_common/properties/moc_property.cpp
+[11.676s] [34/253] Generating include/rviz_common/properties/moc_property_tree_delegate.cpp
+[11.680s] [35/253] Generating include/rviz_common/properties/moc_property_tree_model.cpp
+[11.685s] [36/253] Generating include/rviz_common/properties/moc_property_tree_with_help.cpp
+[11.689s] [37/253] Generating include/rviz_common/properties/moc_qos_profile_property.cpp
+[11.693s] [38/253] Generating include/rviz_common/properties/moc_ros_action_property.cpp
+[11.697s] [39/253] Generating include/rviz_common/properties/moc_ros_service_property.cpp
+[11.703s] [40/253] Generating include/rviz_common/properties/moc_ros_topic_property.cpp
+[11.710s] [41/253] Generating include/rviz_common/properties/moc_status_list.cpp
+[11.711s] [42/253] Generating include/rviz_common/properties/moc_status_property.cpp
+[11.716s] [43/253] Generating include/rviz_common/properties/moc_string_property.cpp
+[11.722s] [44/253] Generating include/rviz_common/properties/moc_tf_frame_property.cpp
+[11.726s] [45/253] Generating include/rviz_common/properties/moc_vector_property.cpp
+[11.731s] [46/253] Generating include/rviz_common/moc_render_panel.cpp
+[11.736s] [47/253] Generating include/rviz_common/moc_visualization_manager.cpp
+[11.740s] [48/253] Generating src/rviz_common/moc_scaled_image_widget.cpp
+[11.745s] [49/253] Generating src/rviz_common/moc_screenshot_dialog.cpp
+[11.750s] [50/253] Generating include/rviz_common/interaction/moc_selection_manager.cpp
+[11.754s] [51/253] Generating include/rviz_common/interaction/moc_selection_manager_iface.cpp
+[11.762s] [52/253] Generating src/rviz_common/moc_splash_screen.cpp
+[11.764s] [53/253] Generating src/rviz_common/moc_time_panel.cpp
+[11.768s] [54/253] Generating include/rviz_common/moc_tool.cpp
+[11.772s] [55/253] Generating include/rviz_common/moc_tool_manager.cpp
+[11.776s] [56/253] Generating src/rviz_common/moc_tool_properties_panel.cpp
+[11.786s] [57/253] Generating include/rviz_common/transformation/moc_transformation_manager.cpp
+[11.788s] [58/253] Generating src/rviz_common/moc_transformation_panel.cpp
+[11.793s] [59/253] Generating include/rviz_common/moc_view_controller.cpp
+[11.798s] [60/253] Generating include/rviz_common/moc_view_manager.cpp
+[11.805s] [61/253] Generating src/rviz_common/moc_views_panel.cpp
+[11.807s] [62/253] Generating include/rviz_common/moc_visualization_frame.cpp
+[11.812s] [63/253] Generating src/rviz_common/moc_widget_geometry_change_detector.cpp
+[11.817s] [64/253] Generating include/rviz_common/moc_ros_topic_display.cpp
+[11.822s] [65/253] Generating include/rviz_common/moc_ros_adapter_display.cpp
+[11.825s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/include/rviz_common/ros_adapter_display.hpp: note: No relevant classes found. No output generated.
+[13.323s] [66/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/moc_add_display_dialog.cpp.o
+[14.266s] [67/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/moc_help_panel.cpp.o
+[15.166s] [68/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/properties/moc_enum_property.cpp.o
+[16.097s] [69/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/properties/moc_property_tree_widget.cpp.o
+[17.027s] [70/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/properties/moc_splitter_handle.cpp.o
+[17.949s] [71/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/moc_display_group.cpp.o
+[19.251s] [72/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/moc_frame_position_tracking_view_controller.cpp.o
+[20.288s] [73/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/properties/moc_quaternion_property.cpp.o
+[21.636s] [74/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/moc_visualizer_app.cpp.o
+[22.684s] [75/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/moc_display.cpp.o
+[24.082s] [76/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/moc_display_context.cpp.o
+[25.474s] [77/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/moc_displays_panel.cpp.o
+[26.294s] [78/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/moc_failed_panel.cpp.o
+[28.007s] [79/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/moc_frame_manager.cpp.o
+[29.648s] [80/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/moc_frame_manager_iface.cpp.o
+[30.581s] [81/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/moc_loading_dialog.cpp.o
+[31.360s] [82/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/moc_new_object_dialog.cpp.o
+[32.257s] [83/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/moc_panel.cpp.o
+[33.151s] [84/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/moc_panel_dock_widget.cpp.o
+[34.029s] [85/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/properties/moc_bool_property.cpp.o
+[34.787s] [86/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/properties/moc_color_editor.cpp.o
+[35.717s] [87/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/properties/moc_color_property.cpp.o
+[36.686s] [88/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/properties/moc_covariance_property.cpp.o
+[37.552s] [89/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/properties/moc_combo_box.cpp.o
+[38.441s] [90/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/properties/moc_display_group_visibility_property.cpp.o
+[39.345s] [91/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/properties/moc_display_visibility_property.cpp.o
+[40.300s] [92/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/properties/moc_editable_combo_box.cpp.o
+[41.251s] [93/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/properties/moc_editable_enum_property.cpp.o
+[42.253s] [94/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/properties/moc_float_edit.cpp.o
+[43.165s] [95/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/properties/moc_float_property.cpp.o
+[44.012s] [96/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/properties/moc_int_property.cpp.o
+[44.890s] [97/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/properties/moc_line_edit_with_button.cpp.o
+[45.633s] [98/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/properties/moc_property.cpp.o
+[46.419s] [99/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/properties/moc_property_tree_delegate.cpp.o
+[47.163s] [100/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/properties/moc_property_tree_model.cpp.o
+[47.985s] [101/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/properties/moc_property_tree_with_help.cpp.o
+[48.870s] [102/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/properties/moc_qos_profile_property.cpp.o
+[50.137s] [103/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/properties/moc_ros_action_property.cpp.o
+[51.361s] [104/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/properties/moc_ros_service_property.cpp.o
+[52.636s] [105/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/properties/moc_ros_topic_property.cpp.o
+[53.511s] [106/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/properties/moc_status_list.cpp.o
+[54.373s] [107/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/properties/moc_status_property.cpp.o
+[55.285s] [108/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/properties/moc_string_property.cpp.o
+[56.843s] [109/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/properties/moc_tf_frame_property.cpp.o
+[57.925s] [110/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/properties/moc_vector_property.cpp.o
+[58.973s] [111/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/moc_render_panel.cpp.o
+[60.601s] [112/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/moc_visualization_manager.cpp.o
+[61.528s] [113/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/moc_scaled_image_widget.cpp.o
+[62.660s] [114/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/moc_screenshot_dialog.cpp.o
+[63.755s] [115/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/interaction/moc_selection_manager.cpp.o
+[64.973s] [116/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/interaction/moc_selection_manager_iface.cpp.o
+[65.912s] [117/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/moc_splash_screen.cpp.o
+[67.370s] [118/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/moc_time_panel.cpp.o
+[68.210s] [119/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/moc_tool.cpp.o
+[69.259s] [120/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/moc_tool_manager.cpp.o
+[70.154s] [121/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/moc_tool_properties_panel.cpp.o
+[71.586s] [122/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/transformation/moc_transformation_manager.cpp.o
+[72.948s] [123/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/moc_transformation_panel.cpp.o
+[74.121s] [124/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/moc_view_controller.cpp.o
+[75.283s] [125/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/moc_view_manager.cpp.o
+[76.117s] [126/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/moc_views_panel.cpp.o
+[77.524s] [127/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/moc_visualization_frame.cpp.o
+[78.307s] [128/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/moc_widget_geometry_change_detector.cpp.o
+[79.921s] [129/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/moc_ros_topic_display.cpp.o
+[80.047s] [130/253] Building CXX object CMakeFiles/rviz_common.dir/include/rviz_common/moc_ros_adapter_display.cpp.o
+[80.337s] [131/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/env_config.cpp.o
+[82.008s] [132/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/add_display_dialog.cpp.o
+[82.113s] [133/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/bit_allocator.cpp.o
+[82.922s] [134/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/config.cpp.o
+[82.924s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/config.cpp: In member function 'bool rviz_common::Config::mapGetInt(const QString&, int*) const':
+[82.924s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/config.cpp:227:38: warning: 'QVariant::Type QVariant::type() const' is deprecated: Use typeId() or metaType(). [-Wdeprecated-declarations]
+[82.924s]   227 |   if (mapGetValue(key, &v) && (v.type() == QVariant::Int || v.type() == QVariant::String)) {
+[82.924s]       |                                ~~~~~~^~
+[82.924s] In file included from /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtCore/QVariant:1,
+[82.925s]                  from /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/include/rviz_common/config.hpp:42,
+[82.925s]                  from /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/config.cpp:32:
+[82.925s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtCore/qvariant.h:432:10: note: declared here
+[82.925s]   432 |     Type type() const
+[82.925s]       |          ^~~~
+[82.925s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/config.cpp:227:67: warning: 'QVariant::Type QVariant::type() const' is deprecated: Use typeId() or metaType(). [-Wdeprecated-declarations]
+[82.925s]   227 |   if (mapGetValue(key, &v) && (v.type() == QVariant::Int || v.type() == QVariant::String)) {
+[82.925s]       |                                                             ~~~~~~^~
+[82.925s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtCore/qvariant.h:432:10: note: declared here
+[82.925s]   432 |     Type type() const
+[82.925s]       |          ^~~~
+[82.926s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/config.cpp: In member function 'bool rviz_common::Config::mapGetFloat(const QString&, float*) const':
+[82.926s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/config.cpp:243:29: warning: 'QVariant::Type QVariant::type() const' is deprecated: Use typeId() or metaType(). [-Wdeprecated-declarations]
+[82.926s]   243 |     (static_cast<int>(v.type()) == static_cast<int>(QMetaType::Float) ||
+[82.926s]       |                       ~~~~~~^~
+[82.926s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtCore/qvariant.h:432:10: note: declared here
+[82.926s]   432 |     Type type() const
+[82.926s]       |          ^~~~
+[82.926s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/config.cpp:244:11: warning: 'QVariant::Type QVariant::type() const' is deprecated: Use typeId() or metaType(). [-Wdeprecated-declarations]
+[82.926s]   244 |     v.type() == QVariant::Double ||
+[82.926s]       |     ~~~~~~^~
+[82.926s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtCore/qvariant.h:432:10: note: declared here
+[82.926s]   432 |     Type type() const
+[82.927s]       |          ^~~~
+[82.927s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/config.cpp:245:11: warning: 'QVariant::Type QVariant::type() const' is deprecated: Use typeId() or metaType(). [-Wdeprecated-declarations]
+[82.927s]   245 |     v.type() == QVariant::String))
+[82.927s]       |     ~~~~~~^~
+[82.927s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtCore/qvariant.h:432:10: note: declared here
+[82.927s]   432 |     Type type() const
+[82.927s]       |          ^~~~
+[82.927s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/config.cpp: In member function 'bool rviz_common::Config::mapGetBool(const QString&, bool*) const':
+[82.927s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/config.cpp:272:38: warning: 'QVariant::Type QVariant::type() const' is deprecated: Use typeId() or metaType(). [-Wdeprecated-declarations]
+[82.927s]   272 |   if (mapGetValue(key, &v) && (v.type() == QVariant::Bool || v.type() == QVariant::String)) {
+[82.927s]       |                                ~~~~~~^~
+[82.928s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtCore/qvariant.h:432:10: note: declared here
+[82.928s]   432 |     Type type() const
+[82.928s]       |          ^~~~
+[82.928s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/config.cpp:272:68: warning: 'QVariant::Type QVariant::type() const' is deprecated: Use typeId() or metaType(). [-Wdeprecated-declarations]
+[82.928s]   272 |   if (mapGetValue(key, &v) && (v.type() == QVariant::Bool || v.type() == QVariant::String)) {
+[82.928s]       |                                                              ~~~~~~^~
+[82.928s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtCore/qvariant.h:432:10: note: declared here
+[82.928s]   432 |     Type type() const
+[82.928s]       |          ^~~~
+[82.928s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/config.cpp: In member function 'bool rviz_common::Config::mapGetString(const QString&, QString*) const':
+[82.928s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/config.cpp:282:37: warning: 'QVariant::Type QVariant::type() const' is deprecated: Use typeId() or metaType(). [-Wdeprecated-declarations]
+[82.928s]   282 |   if (mapGetValue(key, &v) && v.type() == QVariant::String) {
+[82.929s]       |                               ~~~~~~^~
+[82.929s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtCore/qvariant.h:432:10: note: declared here
+[82.929s]   432 |     Type type() const
+[82.929s]       |          ^~~~
+[84.061s] [135/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/depth_cloud_mld.cpp.o
+[85.050s] [136/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/display_factory.cpp.o
+[86.719s] [137/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/display_group.cpp.o
+[88.361s] [138/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/display.cpp.o
+[89.842s] [139/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/displays_panel.cpp.o
+[90.719s] [140/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/failed_display.cpp.o
+[91.597s] [141/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/failed_panel.cpp.o
+[93.099s] [142/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/failed_tool.cpp.o
+[94.439s] [143/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/failed_view_controller.cpp.o
+[95.980s] [144/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/frame_manager.cpp.o
+[97.462s] [145/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/frame_position_tracking_view_controller.cpp.o
+[98.914s] [146/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/help_panel.cpp.o
+[99.805s] [147/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/load_resource.cpp.o
+[100.825s] [148/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/loading_dialog.cpp.o
+[101.308s] [149/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/logging.cpp.o
+[102.300s] [150/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/new_object_dialog.cpp.o
+[103.250s] [151/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/panel_dock_widget.cpp.o
+[104.754s] [152/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/panel_factory.cpp.o
+[106.137s] [153/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/panel.cpp.o
+[106.908s] [154/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/properties/bool_property.cpp.o
+[107.859s] [155/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/properties/color_editor.cpp.o
+[108.921s] [156/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/properties/color_property.cpp.o
+[108.921s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/properties/color_property.cpp: In member function 'virtual bool rviz_common::properties::ColorProperty::setValue(const QVariant&)':
+[108.921s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/properties/color_property.cpp:73:21: warning: 'QVariant::Type QVariant::type() const' is deprecated: Use typeId() or metaType(). [-Wdeprecated-declarations]
+[108.921s]    73 |   if (new_value.type() == QVariant::Color) {
+[108.921s]       |       ~~~~~~~~~~~~~~^~
+[108.922s] In file included from /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtCore/qlocale.h:7,
+[108.922s]                  from /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtWidgets/qstyleoption.h:8,
+[108.922s]                  from /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtWidgets/QStyleOptionViewItem:1,
+[108.922s]                  from /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/properties/color_property.cpp:35:
+[108.922s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtCore/qvariant.h:432:10: note: declared here
+[108.922s]   432 |     Type type() const
+[108.922s]       |          ^~~~
+[109.806s] [157/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/properties/combo_box.cpp.o
+[117.502s] [158/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/properties/covariance_property.cpp.o
+[119.033s] [159/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/properties/display_group_visibility_property.cpp.o
+[120.981s] [160/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/properties/display_visibility_property.cpp.o
+[122.078s] [161/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/properties/editable_combo_box.cpp.o
+[123.118s] [162/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/properties/editable_enum_property.cpp.o
+[124.125s] [163/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/properties/enum_property.cpp.o
+[125.098s] [164/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/properties/file_picker.cpp.o
+[126.283s] [165/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/properties/file_picker_property.cpp.o
+[127.435s] [166/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/properties/float_edit.cpp.o
+[128.429s] [167/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/properties/float_property.cpp.o
+[129.327s] [168/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/properties/grouped_checkbox_property.cpp.o
+[130.216s] [169/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/properties/grouped_checkbox_property_group.cpp.o
+[131.108s] [170/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/properties/int_property.cpp.o
+[132.084s] [171/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/properties/line_edit_with_button.cpp.o
+[133.024s] [172/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/properties/parse_color.cpp.o
+[133.024s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/properties/parse_color.cpp: In function 'QColor rviz_common::properties::parseColor(const QString&)':
+[133.024s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/properties/parse_color.cpp:73:28: warning: 'void QColor::setNamedColor(const QString&)' is deprecated: Use fromString() instead. [-Wdeprecated-declarations]
+[133.024s]    73 |     new_color.setNamedColor(color_string.toLower() );
+[133.024s]       |     ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[133.024s] In file included from /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtGui/QColor:1,
+[133.025s]                  from /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/include/rviz_common/properties/parse_color.hpp:33,
+[133.025s]                  from /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/properties/parse_color.cpp:31:
+[133.025s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtGui/qcolor.h:66:10: note: declared here
+[133.025s]    66 |     void setNamedColor(const QString& name);
+[133.025s]       |          ^~~~~~~~~~~~~
+[134.094s] [173/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/properties/property_tree_delegate.cpp.o
+[135.214s] [174/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/properties/property_tree_model.cpp.o
+[135.214s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/properties/property_tree_model.cpp: In member function 'virtual bool rviz_common::properties::PropertyTreeModel::setData(const QModelIndex&, const QVariant&, int)':
+[135.215s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/properties/property_tree_model.cpp:155:32: warning: 'QVariant::Type QVariant::type() const' is deprecated: Use typeId() or metaType(). [-Wdeprecated-declarations]
+[135.215s]   155 |   if (property->getValue().type() == QVariant::Bool && role == Qt::CheckStateRole) {
+[135.215s]       |       ~~~~~~~~~~~~~~~~~~~~~~~~~^~
+[135.215s] In file included from /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtCore/qabstractitemmodel.h:12,
+[135.215s]                  from /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtCore/QAbstractItemModel:1,
+[135.215s]                  from /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/include/rviz_common/properties/property_tree_model.hpp:35,
+[135.215s]                  from /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/properties/property_tree_model.cpp:32:
+[135.215s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtCore/qvariant.h:432:10: note: declared here
+[135.215s]   432 |     Type type() const
+[135.215s]       |          ^~~~
+[136.309s] [175/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/properties/property_tree_widget.cpp.o
+[137.350s] [176/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/properties/property_tree_with_help.cpp.o
+[138.304s] [177/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/properties/property.cpp.o
+[138.305s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/properties/property.cpp: In member function 'virtual QVariant rviz_common::properties::Property::getViewData(int, int) const':
+[138.305s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/properties/property.cpp:275:46: warning: 'QVariant::Type QVariant::type() const' is deprecated: Use typeId() or metaType(). [-Wdeprecated-declarations]
+[138.305s]   275 |         case Qt::EditRole: return value_.type() == QVariant::Bool ? QVariant() : getValue();
+[138.305s]       |                                   ~~~~~~~~~~~^~
+[138.305s] In file included from /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtCore/QVariant:1,
+[138.305s]                  from /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/include/rviz_common/properties/property.hpp:40,
+[138.305s]                  from /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/properties/property.cpp:32:
+[138.305s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtCore/qvariant.h:432:10: note: declared here
+[138.305s]   432 |     Type type() const
+[138.305s]       |          ^~~~
+[138.305s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/properties/property.cpp:277:26: warning: 'QVariant::Type QVariant::type() const' is deprecated: Use typeId() or metaType(). [-Wdeprecated-declarations]
+[138.306s]   277 |           if (value_.type() == QVariant::Bool) {
+[138.306s]       |               ~~~~~~~~~~~^~
+[138.306s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtCore/qvariant.h:432:10: note: declared here
+[138.306s]   432 |     Type type() const
+[138.306s]       |          ^~~~
+[138.309s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/properties/property.cpp: In member function 'virtual Qt::ItemFlags rviz_common::properties::Property::getViewFlags(int) const':
+[138.309s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/properties/property.cpp:309:20: warning: 'QVariant::Type QVariant::type() const' is deprecated: Use typeId() or metaType(). [-Wdeprecated-declarations]
+[138.309s]   309 |     if (value_.type() == QVariant::Bool) {
+[138.309s]       |         ~~~~~~~~~~~^~
+[138.310s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtCore/qvariant.h:432:10: note: declared here
+[138.310s]   432 |     Type type() const
+[138.310s]       |          ^~~~
+[138.310s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/properties/property.cpp: In member function 'void rviz_common::properties::Property::loadValue(const rviz_common::Config&)':
+[138.310s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/properties/property.cpp:463:41: warning: 'QVariant::Type QVariant::type() const' is deprecated: Use typeId() or metaType(). [-Wdeprecated-declarations]
+[138.310s]   463 |     switch (static_cast<int>(value_.type() )) {
+[138.310s]       |                              ~~~~~~~~~~~^~
+[138.310s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtCore/qvariant.h:432:10: note: declared here
+[138.311s]   432 |     Type type() const
+[138.311s]       |          ^~~~
+[138.311s] In file included from /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/properties/property.cpp:47:
+[138.311s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/properties/property.cpp:472:41: warning: 'QVariant::Type QVariant::type() const' is deprecated: Use typeId() or metaType(). [-Wdeprecated-declarations]
+[138.311s]   472 |             static_cast<int>(value_.type()));
+[138.311s]       |                              ~~~~~~~~~~~^~
+[138.311s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/include/rviz_common/logging.hpp:91:11: note: in definition of macro 'RVIZ_COMMON_LOG_WARNING_STREAM'
+[138.311s]    91 |   __ss << args; \
+[138.311s]       |           ^~~~
+[138.311s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtCore/qvariant.h:432:10: note: declared here
+[138.311s]   432 |     Type type() const
+[138.312s]       |          ^~~~
+[138.312s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/properties/property.cpp: In member function 'virtual QWidget* rviz_common::properties::Property::createEditor(QWidget*, const QStyleOptionViewItem&)':
+[138.312s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/properties/property.cpp:530:39: warning: 'QVariant::Type QVariant::type() const' is deprecated: Use typeId() or metaType(). [-Wdeprecated-declarations]
+[138.312s]   530 |   switch (static_cast<int>(value_.type() )) {
+[138.312s]       |                            ~~~~~~~~~~~^~
+[138.312s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtCore/qvariant.h:432:10: note: declared here
+[138.314s]   432 |     Type type() const
+[138.314s]       |          ^~~~
+[139.918s] [178/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/properties/ros_action_property.cpp.o
+[141.605s] [179/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/properties/ros_service_property.cpp.o
+[143.609s] [180/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/properties/ros_topic_property.cpp.o
+[145.589s] [181/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/properties/quaternion_property.cpp.o
+[146.806s] [182/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/properties/qos_profile_property.cpp.o
+[148.508s] [183/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/properties/regex_filter_property.cpp.o
+[149.953s] [184/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/properties/splitter_handle.cpp.o
+[149.953s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/properties/splitter_handle.cpp: In member function 'virtual void rviz_common::properties::SplitterHandle::mousePressEvent(QMouseEvent*)':
+[149.953s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/properties/splitter_handle.cpp:96:31: warning: 'int QMouseEvent::x() const' is deprecated: Use position() [-Wdeprecated-declarations]
+[149.953s]    96 |     x_press_offset_ = event->x();
+[149.953s]       |                       ~~~~~~~~^~
+[149.953s] In file included from /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtGui/QMouseEvent:1,
+[149.953s]                  from /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/properties/splitter_handle.cpp:35:
+[149.953s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtGui/qevent.h:227:16: note: declared here
+[149.954s]   227 |     inline int x() const { return qRound(position().x()); }
+[149.954s]       |                ^
+[149.954s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/properties/splitter_handle.cpp: In member function 'virtual void rviz_common::properties::SplitterHandle::mouseMoveEvent(QMouseEvent*)':
+[149.954s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/properties/splitter_handle.cpp:105:68: warning: 'QPoint QMouseEvent::globalPos() const' is deprecated: Use globalPosition() [-Wdeprecated-declarations]
+[149.954s]   105 |     QPoint pos_rel_parent = parent_->mapFromGlobal(event->globalPos() );
+[149.954s]       |                                                    ~~~~~~~~~~~~~~~~^~
+[149.954s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtGui/qevent.h:225:19: note: declared here
+[149.954s]   225 |     inline QPoint globalPos() const { return globalPosition().toPoint(); }
+[149.954s]       |                   ^~~~~~~~~
+[151.219s] [185/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/properties/status_list.cpp.o
+[152.904s] [186/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/properties/status_property.cpp.o
+[154.720s] [187/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/properties/string_property.cpp.o
+[157.332s] [188/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/properties/tf_frame_property.cpp.o
+[158.496s] [189/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/properties/vector_property.cpp.o
+[161.102s] [190/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/render_panel.cpp.o
+[161.103s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/render_panel.cpp: In member function 'void rviz_common::RenderPanel::onRenderWindowMouseEvents(QMouseEvent*)':
+[161.103s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/render_panel.cpp:163:22: warning: 'int QMouseEvent::x() const' is deprecated: Use position() [-Wdeprecated-declarations]
+[161.104s]   163 |   mouse_x_ = event->x();
+[161.104s]       |              ~~~~~~~~^~
+[161.104s] In file included from /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtGui/QMouseEvent:1,
+[161.104s]                  from /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/render_panel.cpp:43:
+[161.104s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtGui/qevent.h:227:16: note: declared here
+[161.104s]   227 |     inline int x() const { return qRound(position().x()); }
+[161.104s]       |                ^
+[161.104s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/render_panel.cpp:164:22: warning: 'int QMouseEvent::y() const' is deprecated: Use position() [-Wdeprecated-declarations]
+[161.104s]   164 |   mouse_y_ = event->y();
+[161.105s]       |              ~~~~~~~~^~
+[161.105s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtGui/qevent.h:229:16: note: declared here
+[161.105s]   229 |     inline int y() const { return qRound(position().y()); }
+[161.105s]       |                ^
+[161.105s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/render_panel.cpp: In member function 'void rviz_common::RenderPanel::showContextMenu(std::shared_ptr<QMenu>)':
+[161.105s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/render_panel.cpp:282:89: warning: 'QContextMenuEvent::QContextMenuEvent(Reason, const QPoint&)' is deprecated: Use the other constructor [-Wdeprecated-declarations]
+[161.105s]   282 |   QApplication::postEvent(this, new QContextMenuEvent(QContextMenuEvent::Mouse, QPoint()));
+[161.105s]       |                                                                                         ^
+[161.105s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtGui/qevent.h:604:5: note: declared here
+[161.106s]   604 |     QContextMenuEvent(Reason reason, const QPoint &pos);
+[161.106s]       |     ^~~~~~~~~~~~~~~~~
+[163.233s] [191/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/ros_integration/ros_client_abstraction.cpp.o
+[165.278s] [192/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/ros_integration/ros_node_abstraction.cpp.o
+[166.595s] [193/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/scaled_image_widget.cpp.o
+[167.880s] [194/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/screenshot_dialog.cpp.o
+[170.757s] [195/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/selection_panel.cpp.o
+[172.664s] [196/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/interaction/handler_manager.cpp.o
+[175.175s] [197/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/interaction/selection_handler.cpp.o
+[177.766s] [198/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/interaction/selection_manager.cpp.o
+[180.121s] [199/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/interaction/selection_renderer.cpp.o
+[182.336s] [200/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/interaction/view_picker.cpp.o
+[184.105s] [201/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/splash_screen.cpp.o
+[186.374s] [202/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/time_panel.cpp.o
+[187.881s] [203/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/transformation/identity_frame_transformer.cpp.o
+[190.043s] [204/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/tool_manager.cpp.o
+[190.043s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/tool_manager.cpp: In member function 'bool rviz_common::ToolManager::toKey(const QString&, uint&)':
+[190.043s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/tool_manager.cpp:141:16: warning: 'constexpr QKeyCombination::operator int() const' is deprecated: Use QKeyCombination instead of int [-Wdeprecated-declarations]
+[190.043s]   141 |     key = seq[0];
+[190.043s]       |           ~~~~~^
+[190.043s] In file included from /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtCore/qarraydataops.h:10,
+[190.043s]                  from /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtCore/qarraydatapointer.h:7,
+[190.043s]                  from /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtCore/qlist.h:8,
+[190.043s]                  from /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtCore/QList:1,
+[190.043s]                  from /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/include/rviz_common/tool_manager.hpp:38,
+[190.043s]                  from /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/tool_manager.cpp:32:
+[190.044s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtCore/qnamespace.h:1912:26: note: declared here
+[190.044s]  1912 |     constexpr Q_IMPLICIT operator int() const noexcept
+[190.044s]       |                          ^~~~~~~~
+[191.874s] [205/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/tool_properties_panel.cpp.o
+[193.412s] [206/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/tool.cpp.o
+[196.464s] [207/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/transformation_panel.cpp.o
+[197.983s] [208/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/transformation/transformation_manager.cpp.o
+[198.407s] [209/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/uniform_string_stream.cpp.o
+[200.076s] [210/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/view_controller.cpp.o
+[201.463s] [211/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/view_manager.cpp.o
+[203.511s] [212/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/views_panel.cpp.o
+[204.856s] [213/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/viewport_mouse_event.cpp.o
+[204.856s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/viewport_mouse_event.cpp: In constructor 'rviz_common::ViewportMouseEvent::ViewportMouseEvent(rviz_common::RenderPanel*, QMouseEvent*, int, int)':
+[204.856s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/viewport_mouse_event.cpp:46:9: warning: 'int QMouseEvent::x() const' is deprecated: Use position() [-Wdeprecated-declarations]
+[204.856s]    46 |   x(e->x() * device_pixel_ratio),
+[204.857s]       |     ~~~~^~
+[204.857s] In file included from /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtGui/QMouseEvent:1,
+[204.857s]                  from /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/viewport_mouse_event.cpp:33:
+[204.857s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtGui/qevent.h:227:16: note: declared here
+[204.857s]   227 |     inline int x() const { return qRound(position().x()); }
+[204.857s]       |                ^
+[204.857s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/viewport_mouse_event.cpp:47:9: warning: 'int QMouseEvent::y() const' is deprecated: Use position() [-Wdeprecated-declarations]
+[204.857s]    47 |   y(e->y() * device_pixel_ratio),
+[204.857s]       |     ~~~~^~
+[204.857s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtGui/qevent.h:229:16: note: declared here
+[204.857s]   229 |     inline int y() const { return qRound(position().y()); }
+[204.857s]       |                ^
+[206.822s] [214/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/visualization_frame.cpp.o
+[206.822s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/visualization_frame.cpp: In member function 'void rviz_common::VisualizationFrame::initMenus()':
+[206.822s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/visualization_frame.cpp:459:58: warning: 'QAction* QMenu::addAction(const QString&, const QObject*, const char*, const QKeySequence&)' is deprecated: Use addAction(text, shortcut, receiver, member) instead. [-Wdeprecated-declarations]
+[206.822s]   459 |   QAction * file_menu_open_action = file_menu_->addAction(
+[206.822s]       |                                     ~~~~~~~~~~~~~~~~~~~~~^
+[206.822s]   460 |     "&Open Config", this, SLOT(
+[206.822s]       |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~                           
+[206.823s]   461 |       onOpen()), QKeySequence("Ctrl+O"));
+[206.823s]       |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                  
+[206.823s] In file included from /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtWidgets/QMenu:1,
+[206.823s]                  from /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/visualization_frame.cpp:53:
+[206.823s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtWidgets/qmenu.h:56:14: note: declared here
+[206.823s]    56 |     QAction *addAction(const QString &text, const QObject *receiver, const char* member,
+[206.823s]       |              ^~~~~~~~~
+[206.823s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/visualization_frame.cpp:463:58: warning: 'QAction* QMenu::addAction(const QString&, const QObject*, const char*, const QKeySequence&)' is deprecated: Use addAction(text, shortcut, receiver, member) instead. [-Wdeprecated-declarations]
+[206.824s]   463 |   QAction * file_menu_save_action = file_menu_->addAction(
+[206.824s]       |                                     ~~~~~~~~~~~~~~~~~~~~~^
+[206.824s]   464 |     "&Save Config", this, SLOT(
+[206.824s]       |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~                           
+[206.824s]   465 |       onSave()), QKeySequence("Ctrl+S"));
+[206.824s]       |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                  
+[206.824s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtWidgets/qmenu.h:56:14: note: declared here
+[206.824s]    56 |     QAction *addAction(const QString &text, const QObject *receiver, const char* member,
+[206.825s]       |              ^~~~~~~~~
+[206.825s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/visualization_frame.cpp:468:26: warning: 'QAction* QMenu::addAction(const QString&, const QObject*, const char*, const QKeySequence&)' is deprecated: Use addAction(text, shortcut, receiver, member) instead. [-Wdeprecated-declarations]
+[206.825s]   468 |     file_menu_->addAction(
+[206.825s]       |     ~~~~~~~~~~~~~~~~~~~~~^
+[206.825s]   469 |     "Save Config &As", this, SLOT(onSaveAs()),
+[206.825s]       |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[206.825s]   470 |     QKeySequence("Ctrl+Shift+S"));
+[206.825s]       |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[206.825s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtWidgets/qmenu.h:56:14: note: declared here
+[206.826s]    56 |     QAction *addAction(const QString &text, const QObject *receiver, const char* member,
+[206.826s]       |              ^~~~~~~~~
+[206.826s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/visualization_frame.cpp:481:58: warning: 'QAction* QMenu::addAction(const QString&, const QObject*, const char*, const QKeySequence&)' is deprecated: Use addAction(text, shortcut, receiver, member) instead. [-Wdeprecated-declarations]
+[206.826s]   481 |   QAction * file_menu_quit_action = file_menu_->addAction(
+[206.826s]       |                                     ~~~~~~~~~~~~~~~~~~~~~^
+[206.826s]   482 |     "&Quit", this, SLOT(
+[206.827s]       |     ~~~~~~~~~~~~~~~~~~~~                                  
+[206.827s]   483 |       close()), QKeySequence("Ctrl+Q"));
+[206.827s]       |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                   
+[206.827s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtWidgets/qmenu.h:56:14: note: declared here
+[206.827s]    56 |     QAction *addAction(const QString &text, const QObject *receiver, const char* member,
+[206.827s]       |              ^~~~~~~~~
+[206.827s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_common/src/rviz_common/visualization_frame.cpp:491:54: warning: 'QAction* QMenu::addAction(const QString&, const QObject*, const char*, const QKeySequence&)' is deprecated: Use addAction(text, shortcut, receiver, member) instead. [-Wdeprecated-declarations]
+[206.827s]   491 |   QAction * fullscreen_action = view_menu_->addAction(
+[206.827s]       |                                 ~~~~~~~~~~~~~~~~~~~~~^
+[206.827s]   492 |     "&Fullscreen", this, SLOT(
+[206.828s]       |     ~~~~~~~~~~~~~~~~~~~~~~~~~~                        
+[206.828s]   493 |       setFullScreen(bool)), Qt::Key_F11);
+[206.828s]       |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~              
+[206.828s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/qt6/QtWidgets/qmenu.h:56:14: note: declared here
+[206.828s]    56 |     QAction *addAction(const QString &text, const QObject *receiver, const char* member,
+[206.828s]       |              ^~~~~~~~~
+[208.521s] [215/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/visualization_manager.cpp.o
+[210.200s] [216/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/visualizer_app.cpp.o
+[210.997s] [217/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/widget_geometry_change_detector.cpp.o
+[212.013s] [218/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/yaml_config_reader.cpp.o
+[212.930s] [219/253] Building CXX object CMakeFiles/rviz_common.dir/src/rviz_common/yaml_config_writer.cpp.o
+[213.627s] [220/253] Linking CXX shared library librviz_common.so
+[213.628s] [221/253] Generating test/moc_mock_display.cpp
+[213.632s] [222/253] Generating test/moc_mock_property_change_receiver.cpp
+[214.115s] [223/253] Building CXX object gmock/CMakeFiles/gmock.dir/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor/src/gtest-all.cc.o
+[214.529s] [224/253] Building CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
+[214.941s] [225/253] Building CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
+[215.964s] [226/253] Building CXX object CMakeFiles/test_support_objects.dir/test/mock_display.cpp.o
+[216.699s] [227/253] Building CXX object CMakeFiles/test_support_objects.dir/test/mock_property_change_receiver.cpp.o
+[218.309s] [228/253] Building CXX object CMakeFiles/test_support_objects.dir/test/display_context_fixture.cpp.o
+[219.469s] [229/253] Building CXX object CMakeFiles/test_support_objects.dir/test/ogre_testing_environment.cpp.o
+[220.526s] [230/253] Building CXX object CMakeFiles/test_support_objects.dir/test/moc_mock_display.cpp.o
+[221.307s] [231/253] Building CXX object CMakeFiles/test_support_objects.dir/test/moc_mock_property_change_receiver.cpp.o
+[222.326s] [232/253] Building CXX object CMakeFiles/rviz_common_core_tests.dir/test/config_test.cpp.o
+[222.968s] [233/253] Building CXX object CMakeFiles/rviz_common_core_tests.dir/test/uniform_string_stream_test.cpp.o
+[224.119s] [234/253] Building CXX object CMakeFiles/rviz_common_core_tests.dir/test/property_test.cpp.o
+[225.594s] [235/253] Building CXX object CMakeFiles/rviz_common_core_tests.dir/test/display_test.cpp.o
+[226.721s] [236/253] Building CXX object CMakeFiles/rviz_common_core_tests.dir/test/mock_display_group.cpp.o
+[227.904s] [237/253] Building CXX object CMakeFiles/rviz_common_core_tests.dir/test/properties/qos_profile_property_test.cpp.o
+[229.910s] [238/253] Building CXX object CMakeFiles/rviz_common_core_tests.dir/test/visualizer_app_test.cpp.o
+[231.284s] [239/253] Building CXX object CMakeFiles/rviz_common_core_tests.dir/test/ros_node_abstraction_test.cpp.o
+[232.533s] [240/253] Building CXX object CMakeFiles/rviz_common_core_tests.dir/test/transformation/identity_frame_transformer_test.cpp.o
+[234.330s] [241/253] Building CXX object CMakeFiles/rviz_common_interaction_tests.dir/test/interaction/selection_manager_test.cpp.o
+[236.175s] [242/253] Building CXX object CMakeFiles/rviz_common_interaction_tests.dir/test/interaction/selection_handler_test.cpp.o
+[237.371s] [243/253] Building CXX object CMakeFiles/display_factory_test.dir/test/display_factory_test.cpp.o
+[238.288s] [244/253] Building CXX object CMakeFiles/display_factory_test.dir/src/rviz_common/display_factory.cpp.o
+[239.630s] [245/253] Building CXX object CMakeFiles/frame_manager_test.dir/test/frame_manager_test.cpp.o
+[241.052s] [246/253] Building CXX object CMakeFiles/frame_manager_test.dir/src/rviz_common/frame_manager.cpp.o
+[242.445s] [247/253] Building CXX object CMakeFiles/frame_manager_test.dir/src/rviz_common/moc_frame_manager.cpp.o
+[242.476s] [248/253] Linking CXX static library gmock/libgmock.a
+[242.490s] [249/253] Linking CXX static library gmock/libgmock_main.a
+[243.400s] [250/253] Linking CXX executable rviz_common_core_tests
+[244.345s] [251/253] Linking CXX executable rviz_common_interaction_tests
+[245.426s] [252/253] Linking CXX executable display_factory_test
+[246.311s] [253/253] Linking CXX executable frame_manager_test
+[246.314s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_common' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=57 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_common -- -j4 -l4
+[246.317s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_common': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=57 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_common
+[246.329s] -- Install configuration: "Release"
+[246.329s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/environment/library_path.sh
+[246.329s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/environment/library_path.dsv
+[246.330s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/librviz_common.so
+[246.331s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common
+[246.331s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common
+[246.332s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/view_manager.hpp
+[246.332s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/visualizer_app.hpp
+[246.333s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/ros_topic_display.hpp
+[246.333s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/interaction
+[246.336s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/interaction/selection_handler.hpp
+[246.336s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/interaction/handler_manager_iface.hpp
+[246.336s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/interaction/handler_manager_listener.hpp
+[246.337s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/interaction/selection_renderer.hpp
+[246.337s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/interaction/selection_manager_iface.hpp
+[246.337s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/interaction/view_picker_iface.hpp
+[246.337s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/interaction/selection_manager.hpp
+[246.337s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/interaction/forwards.hpp
+[246.337s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/interaction/handler_manager.hpp
+[246.337s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/interaction/view_picker.hpp
+[246.337s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/bit_allocator.hpp
+[246.337s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/display_context.hpp
+[246.337s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/window_manager_interface.hpp
+[246.338s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/render_panel.hpp
+[246.338s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/visibility_control.hpp
+[246.338s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/interactive_object.hpp
+[246.339s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/viewport_mouse_event.hpp
+[246.339s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/message_filter_display.hpp
+[246.339s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/adapter_filter_display.hpp
+[246.340s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/msg_conversions.hpp
+[246.340s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/tool.hpp
+[246.341s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/visualization_manager.hpp
+[246.341s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/config.hpp
+[246.342s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/logging.hpp
+[246.342s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/tool_manager.hpp
+[246.342s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/ros_adapter_display.hpp
+[246.343s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/display_group.hpp
+[246.343s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/yaml_config_reader.hpp
+[246.346s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/panel.hpp
+[246.346s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/transformation
+[246.346s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/transformation/transformation_manager.hpp
+[246.347s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/transformation/frame_transformer.hpp
+[246.347s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/transformation/tf2_helpers
+[246.347s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/transformation/tf2_helpers/tf2_conversion_helpers.hpp
+[246.347s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/frame_position_tracking_view_controller.hpp
+[246.347s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/factory
+[246.347s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/factory/factory.hpp
+[246.347s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/factory/class_id_recording_factory.hpp
+[246.347s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/factory/pluginlib_factory.hpp
+[246.347s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/panel_dock_widget.hpp
+[246.347s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/display.hpp
+[246.347s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/depth_cloud_mld.hpp
+[246.347s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/view_controller.hpp
+[246.348s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/ros_integration
+[246.348s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/ros_integration/ros_client_abstraction.hpp
+[246.348s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/ros_integration/ros_node_abstraction.hpp
+[246.349s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/ros_integration/ros_node_abstraction_iface.hpp
+[246.349s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/ros_integration/ros_client_abstraction_iface.hpp
+[246.349s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/validate_floats.hpp
+[246.350s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/visualization_frame.hpp
+[246.350s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties
+[246.351s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/int_property.hpp
+[246.351s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/display_visibility_property.hpp
+[246.352s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/color_property.hpp
+[246.352s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/line_edit_with_button.hpp
+[246.353s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/property.hpp
+[246.353s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/vector_property.hpp
+[246.354s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/grouped_checkbox_property_group.hpp
+[246.354s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/property_tree_model.hpp
+[246.355s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/float_edit.hpp
+[246.355s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/ros_action_property.hpp
+[246.357s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/ros_topic_property.hpp
+[246.357s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/file_picker_property.hpp
+[246.357s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/tf_frame_property.hpp
+[246.357s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/qos_profile_property.hpp
+[246.358s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/property_tree_widget.hpp
+[246.358s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/status_list.hpp
+[246.358s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/regex_filter_property.hpp
+[246.358s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/bool_property.hpp
+[246.358s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/enum_property.hpp
+[246.358s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/float_property.hpp
+[246.358s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/status_property.hpp
+[246.359s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/string_property.hpp
+[246.359s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/covariance_property.hpp
+[246.360s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/quaternion_property.hpp
+[246.360s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/editable_combo_box.hpp
+[246.360s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/property_tree_delegate.hpp
+[246.361s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/property_tree_with_help.hpp
+[246.361s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/ros_service_property.hpp
+[246.362s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/color_editor.hpp
+[246.363s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/parse_color.hpp
+[246.363s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/combo_box.hpp
+[246.363s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/editable_enum_property.hpp
+[246.363s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/display_group_visibility_property.hpp
+[246.364s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/splitter_handle.hpp
+[246.364s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/grouped_checkbox_property.hpp
+[246.364s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/yaml_config_writer.hpp
+[246.364s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/load_resource.hpp
+[246.365s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/frame_manager_iface.hpp
+[246.365s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/uniform_string_stream.hpp
+[246.366s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/default.rviz
+[246.366s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons
+[246.367s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/rotate_cam.svg
+[246.367s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/zoom.svg
+[246.367s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/error.png
+[246.368s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/move1d.svg
+[246.368s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/right_dock.svg
+[246.369s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/cursor.svg
+[246.370s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/menu.svg
+[246.370s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/classes
+[246.371s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/classes/Group.png
+[246.371s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/classes/Views.svg
+[246.372s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/classes/Selection.png
+[246.372s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/classes/Time.png
+[246.372s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/classes/Help.svg
+[246.373s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/classes/Transformation.png
+[246.373s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/classes/Displays.svg
+[246.373s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/classes/Tool Properties.png
+[246.373s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/default_class_icon.png
+[246.373s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/plus.png
+[246.373s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/rotate.svg
+[246.376s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/left_dock.svg
+[246.376s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/move_z.svg
+[246.377s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/move2d.svg
+[246.377s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/package.png
+[246.377s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/forbidden.svg
+[246.377s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/warning.png
+[246.377s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/default_package_icon.png
+[246.377s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/moverotate.svg
+[246.378s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/crosshair.svg
+[246.378s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/minus.png
+[246.378s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/ok.png
+[246.378s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/options.png
+[246.378s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/close.png
+[246.378s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/images
+[246.378s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/images/splash_overlay.png
+[246.381s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/images/splash.png
+[246.381s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/help
+[246.381s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/help/help.html
+[246.381s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/package_run_dependencies/rviz_common
+[246.382s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/parent_prefix_path/rviz_common
+[246.382s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/environment/ament_prefix_path.sh
+[246.382s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/environment/ament_prefix_path.dsv
+[246.382s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/environment/path.sh
+[246.382s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/environment/path.dsv
+[246.382s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/local_setup.bash
+[246.383s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/local_setup.fish
+[246.383s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/local_setup.sh
+[246.383s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/local_setup.zsh
+[246.383s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/local_setup.dsv
+[246.383s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/package.dsv
+[246.383s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/packages/rviz_common
+[246.383s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/cmake/rviz_commonExport.cmake
+[246.386s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/cmake/rviz_commonExport-release.cmake
+[246.386s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/cmake/rviz_common-extras.cmake
+[246.387s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/cmake/ament_cmake_export_dependencies-extras.cmake
+[246.387s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/cmake/ament_cmake_export_include_directories-extras.cmake
+[246.387s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/cmake/ament_cmake_export_libraries-extras.cmake
+[246.387s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/cmake/ament_cmake_export_targets-extras.cmake
+[246.389s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/cmake/rviz_commonConfig.cmake
+[246.389s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/cmake/rviz_commonConfig-version.cmake
+[246.389s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/package.xml
+[246.390s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_common' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=57 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_common

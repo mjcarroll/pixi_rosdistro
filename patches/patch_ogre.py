@@ -2,11 +2,26 @@ import sys
 import os
 import re
 
+def git_reset(path):
+    pkg_dir = path if os.path.isdir(path) else os.path.dirname(path)
+    while pkg_dir and not os.path.exists(os.path.join(pkg_dir, '.git')):
+        next_dir = os.path.dirname(pkg_dir)
+        if next_dir == pkg_dir:
+            pkg_dir = None
+            break
+        pkg_dir = next_dir
+    
+    if pkg_dir:
+        rel_path = os.path.relpath(path, pkg_dir)
+        os.system(f"cd {pkg_dir} && git checkout {rel_path}")
+
 def patch_file(path):
     if not os.path.exists(path):
         print(f"File not found: {path}")
         return False
     
+    git_reset(path)
+
     with open(path, 'r', encoding='utf-8', newline='') as f:
         content = f.read()
     
@@ -15,10 +30,14 @@ def patch_file(path):
         content = content.replace('project(rviz_ogre_vendor)', 'project(rviz_ogre_vendor)\n\nset(CMAKE_POLICY_VERSION_MINIMUM 3.5)')
         print(f"Added CMAKE_POLICY_VERSION_MINIMUM to {path}")
 
-    # 2. Add CONFIG_EXTRAS if missing (it should be there, but to be sure)
-    if 'CONFIG_EXTRAS "rviz_ogre_vendor-extras.cmake.in"' not in content:
-        content = content.replace('ament_package()', 'ament_package(\n  CONFIG_EXTRAS "rviz_ogre_vendor-extras.cmake.in"\n)')
-        print(f"Added CONFIG_EXTRAS to {path}")
+    # 2. Fix macOS sysroot issue
+    # We want to force CMAKE_OSX_SYSROOT to empty to avoid "macosx" being used.
+    if 'DCMAKE_OSX_SYSROOT=""' not in content:
+        content = content.replace(
+            'list(APPEND OGRE_CMAKE_ARGS -DCMAKE_OSX_ARCHITECTURES=arm64;x86_64)',
+            'list(APPEND OGRE_CMAKE_ARGS -DCMAKE_OSX_ARCHITECTURES=arm64;x86_64)\n  list(APPEND OGRE_CMAKE_ARGS -DCMAKE_OSX_SYSROOT="")'
+        )
+        print(f"Fixed macOS sysroot in {path}")
 
     with open(path, 'wb') as f:
         f.write(content.encode('utf-8').replace(b'\r\n', b'\n'))
@@ -29,6 +48,8 @@ def patch_extras(path):
         print(f"File not found: {path}")
         return False
     
+    git_reset(path)
+
     with open(path, 'r', encoding='utf-8', newline='') as f:
         content = f.read()
     

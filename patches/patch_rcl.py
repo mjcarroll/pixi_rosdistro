@@ -10,7 +10,6 @@ def patch_rcl_yaml_param_parser(file_path):
         content = f.read()
 
     # 1. Update include block
-    # We find the specific pattern and replace it
     old_include = '#ifdef _WIN32\n#include <windows.h>\n#else\n#include <threads.h>\n#endif'
     new_include = '#ifdef _WIN32\n#include <windows.h>\n#elif defined(__APPLE__)\n#include <pthread.h>\n#else\n#include <threads.h>\n#endif'
     if old_include in content:
@@ -18,7 +17,6 @@ def patch_rcl_yaml_param_parser(file_path):
         print(f"Patched include in {file_path}")
 
     # 2. Update locale init block
-    # Replace the #else part of the locale init
     old_init = """#else
 static locale_t c_locale = 0;
 static once_flag c_locale_once_flag = ONCE_FLAG_INIT;
@@ -51,8 +49,8 @@ static void init_c_locale()
         print(f"Patched init block in {file_path}")
 
     # 3. Update call site in strtod_locale_independent
-    # Replace the #else part of the call site
-    old_call_block = """#else
+    # We find the specific body of the function
+    old_body = """#else
   call_once(&c_locale_once_flag, init_c_locale);
 
   if (0 == c_locale) {
@@ -68,7 +66,7 @@ static void init_c_locale()
   return result;
 #endif"""
 
-    new_call_block = """#elif defined(__APPLE__)
+    new_body = """#elif defined(__APPLE__)
   pthread_once(&c_locale_once_flag, init_c_locale);
 
   if (0 == c_locale) {
@@ -98,9 +96,9 @@ static void init_c_locale()
   return result;
 #endif"""
 
-    if old_call_block in content:
-        content = content.replace(old_call_block, new_call_block)
-        print(f"Patched call block in {file_path}")
+    if old_body in content:
+        content = content.replace(old_body, new_body)
+        print(f"Patched call body in {file_path}")
 
     with open(file_path, 'wb') as f:
         f.write(content.encode('utf-8').replace(b'\r\n', b'\n'))
@@ -110,6 +108,8 @@ static void init_c_locale()
 if __name__ == "__main__":
     target = 'src/ros2/rcl/rcl_yaml_param_parser/src/parse.c'
     if os.path.exists(target):
+        # Always start from clean state
+        os.system(f"git checkout {target}")
         patch_rcl_yaml_param_parser(target)
     else:
         print(f"Target not found: {target}")

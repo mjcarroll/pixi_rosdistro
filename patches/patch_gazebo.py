@@ -1,6 +1,19 @@
 import os
 import re
 
+def git_reset(path):
+    pkg_dir = path if os.path.isdir(path) else os.path.dirname(path)
+    while pkg_dir and not os.path.exists(os.path.join(pkg_dir, '.git')):
+        next_dir = os.path.dirname(pkg_dir)
+        if next_dir == pkg_dir:
+            pkg_dir = None
+            break
+        pkg_dir = next_dir
+    
+    if pkg_dir:
+        rel_path = os.path.relpath(path, pkg_dir)
+        os.system(f"cd {pkg_dir} && git checkout {rel_path}")
+
 def get_major_version(cmakelists_path):
     if not os.path.exists(cmakelists_path):
         return None
@@ -16,6 +29,9 @@ def patch_gz_vendor(package_path):
     if not os.path.exists(cmakelists_path):
         print(f"Skipping {package_path}, no CMakeLists.txt found.")
         return
+
+    # Reset first
+    git_reset(cmakelists_path)
 
     major_version = get_major_version(cmakelists_path)
     pkg_name = os.path.basename(package_path)
@@ -46,10 +62,6 @@ def patch_gz_vendor(package_path):
         content = content.replace("ament_package()", f"ament_package(\n  CONFIG_EXTRAS \"{extras_file}\"\n)")
 
     # 3. Windows fix: Use Embedded PDBs and /FS for vendored builds
-    # Remove any existing unconditional fixes first to clean up
-    content = content.replace('      -DCMAKE_MSVC_DEBUG_INFORMATION_FORMAT=Embedded\n', '')
-    content = content.replace('      -DCMAKE_MSVC_DEBUG_INFORMATION_FORMAT=Embedded', '')
-    
     if "if(WIN32)\n  list(APPEND EXTRA_GZ_CMAKE_ARGS" not in content:
         win_fix = """
 if(WIN32)
@@ -60,21 +72,15 @@ if(WIN32)
   )
 endif()
 """
-        # Find a good place to insert: before ament_vendor or ament_cmake_vendor_package
-        inserted = False
         for macro in ["ament_vendor(", "ament_cmake_vendor_package("]:
             if macro in content:
                 content = content.replace(macro, win_fix + "\n" + macro)
-                # Add the variable to CMAKE_ARGS
                 if "CMAKE_ARGS" in content:
-                    if "${EXTRA_GZ_CMAKE_ARGS}" not in content:
-                        content = content.replace("CMAKE_ARGS", "CMAKE_ARGS\n      ${EXTRA_GZ_CMAKE_ARGS}")
+                    content = content.replace("CMAKE_ARGS", "CMAKE_ARGS\n      ${EXTRA_GZ_CMAKE_ARGS}")
                 else:
                     content = content.replace(macro, macro + "\n  CMAKE_ARGS ${EXTRA_GZ_CMAKE_ARGS}")
-                inserted = True
                 break
-        if inserted:
-            print(f"Added conditional Windows fixes to {cmakelists_path}")
+        print(f"Added conditional Windows fixes to {cmakelists_path}")
 
     with open(cmakelists_path, "wb") as f:
         f.write(content.encode('utf-8').replace(b'\r\n', b'\n'))
@@ -99,6 +105,9 @@ endif()
 # Create relay files to help find_package find the nested Gazebo config files
 set(_relay_dir "${{@PROJECT_NAME@_DIR}}")
 set(_gz_config_dir "${{@PROJECT_NAME@_PREFIX}}/share/cmake/{pkg_basename}")
+
+# Add the relay directory itself to the prefix path so it can find the relay files
+list(APPEND CMAKE_PREFIX_PATH "${{_relay_dir}}")
 
 macro(create_relay_file _name _target_dir)
   if(NOT EXISTS "${{_relay_dir}}/${{_name}}Config.cmake")

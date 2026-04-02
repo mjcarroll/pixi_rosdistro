@@ -1,0 +1,422 @@
+[0.030s] Invoking command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/iceoryx_posh': CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/eclipse-iceoryx/iceoryx/iceoryx_posh -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[0.262s] Not searching for unused variables given on the command line.
+[0.263s] -- The C compiler identification is AppleClang 17.0.0.17000013
+[0.426s] -- The CXX compiler identification is AppleClang 17.0.0.17000013
+[0.469s] -- Detecting C compiler ABI info
+[0.921s] -- Detecting C compiler ABI info - done
+[0.971s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.972s] -- Detecting C compile features
+[0.972s] -- Detecting C compile features - done
+[0.980s] -- Detecting CXX compiler ABI info
+[1.393s] -- Detecting CXX compiler ABI info - done
+[1.441s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.441s] -- Detecting CXX compile features
+[1.442s] -- Detecting CXX compile features - done
+[1.447s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.898s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.899s] -- Found Threads: TRUE
+[2.262s] -- Configuring done (0.3s)
+[2.284s] -- Generating done (0.0s)
+[2.285s] -- Build files have been written to: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/iceoryx_posh/dependencies/cpptoml/download
+[2.387s] [1/9] Creating directories for 'ext_cpptoml'
+[4.413s] [2/9] Performing download step (git clone) for 'ext_cpptoml'
+[4.413s] Cloning into 'src'...
+[4.413s] HEAD is now at fededad one-char typo
+[4.413s] Submodule 'deps/meta-cmake' (https://github.com/meta-toolkit/meta-cmake.git) registered for path 'deps/meta-cmake'
+[4.413s] Cloning into '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/iceoryx_posh/dependencies/cpptoml/src/deps/meta-cmake'...
+[4.413s] Submodule path 'deps/meta-cmake': checked out 'db7ff976c430a6cb6cbd03ae691be04cfaac0a07'
+[4.487s] [3/9] Performing update step for 'ext_cpptoml'
+[4.488s] -- Already at requested tag: v0.1.1
+[4.535s] [4/9] No patch step for 'ext_cpptoml'
+[4.584s] [5/9] No configure step for 'ext_cpptoml'
+[4.625s] [6/9] No build step for 'ext_cpptoml'
+[4.672s] [7/9] No install step for 'ext_cpptoml'
+[4.729s] [8/9] No test step for 'ext_cpptoml'
+[4.823s] [9/9] Completed 'ext_cpptoml'
+[4.839s] -- Applying patch for minimal cmake version to cpptoml
+[5.116s] -- The C compiler identification is AppleClang 17.0.0.17000013
+[5.261s] -- The CXX compiler identification is AppleClang 17.0.0.17000013
+[5.312s] -- Detecting C compiler ABI info
+[5.739s] -- Detecting C compiler ABI info - done
+[5.791s] -- Check for working C compiler: /usr/bin/cc - skipped
+[5.791s] -- Detecting C compile features
+[5.791s] -- Detecting C compile features - done
+[5.792s] -- Detecting CXX compiler ABI info
+[6.218s] -- Detecting CXX compiler ABI info - done
+[6.272s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[6.273s] -- Detecting CXX compile features
+[6.274s] -- Detecting CXX compile features - done
+[6.286s] -- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+[6.287s] -- Configuring done (1.4s)
+[6.308s] -- Generating done (0.0s)
+[6.308s] -- Build files have been written to: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/iceoryx_posh/dependencies/cpptoml/build
+[6.341s] [0/1] Install the project...
+[6.379s] -- Install configuration: ""
+[6.379s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/iceoryx_posh/dependencies/install/include/cpptoml.h
+[6.380s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/iceoryx_posh/dependencies/install/lib/cmake/cpptoml/cpptomlTargets.cmake
+[6.380s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/iceoryx_posh/dependencies/install/lib/cmake/cpptoml/cpptomlConfigVersion.cmake
+[6.381s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/iceoryx_posh/dependencies/install/lib/cmake/cpptoml/cpptomlConfig.cmake
+[6.428s] -- [i] <<<<<<<<<<<<< Start iceoryx_posh configuration: >>>>>>>>>>>>>
+[6.428s] -- [i] Using m:n communication!
+[6.428s] -- [i] IOX_MAX_PUBLISHERS:512
+[6.428s] -- [i] IOX_MAX_SUBSCRIBERS:1024
+[6.429s] -- [i] IOX_MAX_INTERFACE_NUMBER:4
+[6.429s] -- [i] IOX_MAX_SUBSCRIBERS_PER_PUBLISHER:256
+[6.429s] -- [i] IOX_MAX_CHUNKS_ALLOCATED_PER_PUBLISHER_SIMULTANEOUSLY:8
+[6.429s] -- [i] IOX_MAX_PUBLISHER_HISTORY:16
+[6.429s] -- [i] IOX_MAX_CHUNKS_HELD_PER_SUBSCRIBER_SIMULTANEOUSLY:256
+[6.429s] -- [i] <<<<<<<<<<<<<< End iceoryx_posh configuration: >>>>>>>>>>>>>>
+[6.461s] -- Configuring done (6.4s)
+[6.543s] -- Generating done (0.1s)
+[6.554s] -- Build files have been written to: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/iceoryx_posh
+[6.558s] Invoked command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/iceoryx_posh' returned '0': CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=20 SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/eclipse-iceoryx/iceoryx/iceoryx_posh -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[6.559s] Invoking command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/iceoryx_posh': CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=20 SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/iceoryx_posh -- -j3 -l3
+[6.985s] [1/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/log/posh_logging.cpp.o
+[7.390s] [2/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/capro/capro_message.cpp.o
+[7.781s] [3/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/capro/service_description.cpp.o
+[8.304s] [4/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/mepoo/chunk_header.cpp.o
+[8.722s] [5/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/mepoo/chunk_management.cpp.o
+[9.141s] [6/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/mepoo/chunk_settings.cpp.o
+[9.523s] [7/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/mepoo/mepoo_config.cpp.o
+[9.896s] [8/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/mepoo/segment_config.cpp.o
+[10.377s] [9/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/mepoo/memory_manager.cpp.o
+[10.831s] [10/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/mepoo/mem_pool.cpp.o
+[11.175s] [11/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/mepoo/shared_chunk.cpp.o
+[11.545s] [12/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/mepoo/shm_safe_unmanaged_chunk.cpp.o
+[11.923s] [13/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/mepoo/segment_manager.cpp.o
+[12.338s] [14/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/mepoo/mepoo_segment.cpp.o
+[12.539s] [15/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/mepoo/memory_info.cpp.o
+[12.942s] [16/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/popo/ports/interface_port.cpp.o
+[13.320s] [17/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/popo/ports/interface_port_data.cpp.o
+[13.778s] [18/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/popo/ports/base_port_data.cpp.o
+[14.223s] [19/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/popo/ports/base_port.cpp.o
+[14.698s] [20/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/popo/ports/publisher_port_data.cpp.o
+[15.161s] [21/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/popo/ports/publisher_port_user.cpp.o
+[15.663s] [22/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/popo/ports/publisher_port_roudi.cpp.o
+[16.090s] [23/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/popo/ports/subscriber_port_user.cpp.o
+[16.490s] [24/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/popo/ports/subscriber_port_roudi.cpp.o
+[16.892s] [25/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/popo/ports/subscriber_port_single_producer.cpp.o
+[17.241s] [26/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/popo/ports/subscriber_port_multi_producer.cpp.o
+[17.637s] [27/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/popo/ports/subscriber_port_data.cpp.o
+[17.998s] [28/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/popo/ports/client_port_data.cpp.o
+[18.496s] [29/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/popo/ports/client_port_roudi.cpp.o
+[18.942s] [30/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/popo/ports/client_port_user.cpp.o
+[19.327s] [31/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/popo/ports/server_port_data.cpp.o
+[19.741s] [32/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/popo/ports/server_port_roudi.cpp.o
+[20.168s] [33/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/popo/ports/server_port_user.cpp.o
+[20.546s] [34/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/popo/building_blocks/condition_listener.cpp.o
+[20.935s] [35/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/popo/building_blocks/condition_notifier.cpp.o
+[21.348s] [36/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/popo/building_blocks/condition_variable_data.cpp.o
+[21.757s] [37/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/popo/building_blocks/locking_policy.cpp.o
+[22.263s] [38/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/popo/building_blocks/unique_port_id.cpp.o
+[22.740s] [39/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/popo/client_options.cpp.o
+[23.444s] [40/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/popo/listener.cpp.o
+[23.925s] [41/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/popo/notification_info.cpp.o
+[24.366s] [42/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/popo/rpc_header.cpp.o
+[24.744s] [43/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/popo/publisher_options.cpp.o
+[25.191s] [44/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/popo/server_options.cpp.o
+[25.736s] [45/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/popo/subscriber_options.cpp.o
+[26.133s] [46/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/popo/trigger.cpp.o
+[26.530s] [47/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/popo/trigger_handle.cpp.o
+[26.921s] [48/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/popo/user_trigger.cpp.o
+[28.384s] [49/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/version/version_info.cpp.o
+[28.755s] [50/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/runtime/ipc_interface_base.cpp.o
+[29.091s] [51/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/runtime/ipc_interface_user.cpp.o
+[29.471s] [52/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/runtime/ipc_interface_creator.cpp.o
+[30.680s] [53/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/runtime/ipc_runtime_interface.cpp.o
+[31.022s] [54/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/runtime/ipc_message.cpp.o
+[31.380s] [55/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/runtime/port_config_info.cpp.o
+[31.726s] [56/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/runtime/posh_runtime.cpp.o
+[32.184s] [57/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/runtime/posh_runtime_impl.cpp.o
+[32.624s] [58/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/runtime/posh_runtime_single_process.cpp.o
+[33.028s] [59/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/runtime/service_discovery.cpp.o
+[33.394s] [60/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/runtime/node.cpp.o
+[33.763s] [61/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/runtime/node_data.cpp.o
+[34.148s] [62/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/runtime/node_property.cpp.o
+[34.493s] [63/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/runtime/shared_memory_user.cpp.o
+[34.805s] [64/95] Building CXX object CMakeFiles/iceoryx_posh.dir/source/roudi/service_registry.cpp.o
+[34.879s] [65/95] Linking CXX shared library libiceoryx_posh.dylib
+[36.724s] [66/95] Building CXX object CMakeFiles/iceoryx_posh_roudi.dir/source/roudi/application/iceoryx_roudi_app.cpp.o
+[38.316s] [67/95] Building CXX object CMakeFiles/iceoryx_posh_roudi.dir/source/roudi/application/roudi_app.cpp.o
+[38.719s] [68/95] Building CXX object CMakeFiles/iceoryx_posh_roudi.dir/source/roudi/memory/memory_block.cpp.o
+[39.057s] [69/95] Building CXX object CMakeFiles/iceoryx_posh_roudi.dir/source/roudi/memory/memory_provider.cpp.o
+[39.429s] [70/95] Building CXX object CMakeFiles/iceoryx_posh_roudi.dir/source/roudi/memory/mempool_collection_memory_block.cpp.o
+[39.747s] [71/95] Building CXX object CMakeFiles/iceoryx_posh_roudi.dir/source/roudi/memory/mempool_segment_manager_memory_block.cpp.o
+[40.119s] [72/95] Building CXX object CMakeFiles/iceoryx_posh_roudi.dir/source/roudi/memory/port_pool_memory_block.cpp.o
+[40.482s] [73/95] Building CXX object CMakeFiles/iceoryx_posh_roudi.dir/source/roudi/memory/posix_shm_memory_provider.cpp.o
+[40.832s] [74/95] Building CXX object CMakeFiles/iceoryx_posh_roudi.dir/source/roudi/memory/default_roudi_memory.cpp.o
+[41.184s] [75/95] Building CXX object CMakeFiles/iceoryx_posh_roudi.dir/source/roudi/memory/roudi_memory_manager.cpp.o
+[41.552s] [76/95] Building CXX object CMakeFiles/iceoryx_posh_roudi.dir/source/roudi/memory/iceoryx_roudi_memory_manager.cpp.o
+[42.004s] [77/95] Building CXX object CMakeFiles/iceoryx_posh_roudi.dir/source/roudi/port_manager.cpp.o
+[42.396s] [78/95] Building CXX object CMakeFiles/iceoryx_posh_roudi.dir/source/roudi/port_pool.cpp.o
+[44.205s] [79/95] Building CXX object CMakeFiles/iceoryx_posh_roudi.dir/source/roudi/roudi.cpp.o
+[45.557s] [80/95] Building CXX object CMakeFiles/iceoryx_posh_roudi.dir/source/roudi/process.cpp.o
+[47.556s] [81/95] Building CXX object CMakeFiles/iceoryx_posh_roudi.dir/source/roudi/process_manager.cpp.o
+[47.982s] [82/95] Building CXX object CMakeFiles/iceoryx_posh_roudi.dir/source/roudi/iceoryx_roudi_components.cpp.o
+[49.131s] [83/95] Building CXX object CMakeFiles/iceoryx_posh_roudi.dir/source/roudi/roudi_cmd_line_parser.cpp.o
+[49.463s] [84/95] Building CXX object CMakeFiles/iceoryx_posh_roudi.dir/source/roudi/roudi_cmd_line_parser_config_file_option.cpp.o
+[49.809s] [85/95] Building CXX object CMakeFiles/iceoryx_posh_roudi.dir/source/roudi/roudi_config.cpp.o
+[49.866s] [86/95] Linking CXX shared library libiceoryx_posh_roudi.dylib
+[50.177s] [87/95] Building CXX object CMakeFiles/iceoryx_posh_config.dir/source/log/posh_config_logging.cpp.o
+[50.472s] [88/95] Building CXX object CMakeFiles/iceoryx_posh_config.dir/source/gateway/gateway_config.cpp.o
+[50.907s] [89/95] Building CXX object CMakeFiles/iceoryx_posh_config.dir/source/gateway/toml_gateway_config_parser.cpp.o
+[51.339s] [90/95] Building CXX object CMakeFiles/iceoryx_posh_config.dir/source/roudi/roudi_config_toml_file_provider.cpp.o
+[51.696s] [91/95] Building CXX object CMakeFiles/iceoryx_posh_gateway.dir/source/gateway/gateway_base.cpp.o
+[51.751s] [92/95] Linking CXX shared library libiceoryx_posh_config.dylib
+[52.102s] [93/95] Building CXX object CMakeFiles/iox-roudi.dir/source/roudi/application/roudi_main.cpp.o
+[52.159s] [94/95] Linking CXX shared library libiceoryx_posh_gateway.dylib
+[52.213s] [95/95] Linking CXX executable iox-roudi
+[52.237s] Invoked command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/iceoryx_posh' returned '0': CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=20 SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/iceoryx_posh -- -j3 -l3
+[52.238s] Invoking command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/iceoryx_posh': CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=20 SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/iceoryx_posh
+[52.242s] -- Install configuration: "Release"
+[52.242s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_versions.hpp
+[52.243s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/doc/iceoryx_posh/LICENSE
+[52.243s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/doc/iceoryx_posh/3rd_party_licenses
+[52.243s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/doc/iceoryx_posh/3rd_party_licenses/cpptoml
+[52.243s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/doc/iceoryx_posh/3rd_party_licenses/cpptoml/LICENSE
+[52.243s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/etc/roudi_config_example.toml
+[52.244s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libiceoryx_posh.dylib
+[52.244s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libiceoryx_posh_roudi.dylib
+[52.244s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libiceoryx_posh_gateway.dylib
+[52.244s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libiceoryx_posh_config.dylib
+[52.245s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin/iox-roudi
+[52.245s] -- Up-to-date: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6
+[52.245s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh
+[52.245s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/popo
+[52.245s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/popo/notification_attorney.hpp
+[52.245s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/popo/wait_set.hpp
+[52.245s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/popo/untyped_client.hpp
+[52.245s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/popo/client_options.hpp
+[52.246s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/popo/server.hpp
+[52.246s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/popo/trigger_handle.hpp
+[52.246s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/popo/publisher_options.hpp
+[52.246s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/popo/response.hpp
+[52.246s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/popo/untyped_subscriber.hpp
+[52.246s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/popo/trigger.hpp
+[52.247s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/popo/listener.hpp
+[52.247s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/popo/server_options.hpp
+[52.247s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/popo/publisher.hpp
+[52.247s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/popo/enum_trigger_type.hpp
+[52.248s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/popo/request.hpp
+[52.248s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/popo/notification_info.hpp
+[52.248s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/popo/untyped_publisher.hpp
+[52.248s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/popo/subscriber.hpp
+[52.248s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/popo/rpc_header.hpp
+[52.248s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/popo/sample.hpp
+[52.248s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/popo/untyped_server.hpp
+[52.249s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/popo/user_trigger.hpp
+[52.249s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/popo/port_queue_policies.hpp
+[52.249s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/popo/client.hpp
+[52.249s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/popo/subscriber_options.hpp
+[52.249s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/popo/notification_callback.hpp
+[52.250s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/runtime
+[52.250s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/runtime/posh_runtime.hpp
+[52.250s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/runtime/posh_runtime_single_process.hpp
+[52.250s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/runtime/node.hpp
+[52.250s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/runtime/port_config_info.hpp
+[52.251s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/runtime/service_discovery.hpp
+[52.251s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal
+[52.251s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo
+[52.251s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/trigger.inl
+[52.251s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/listener.inl
+[52.252s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/smart_chunk.inl
+[52.252s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/base_client.inl
+[52.252s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/untyped_server_impl.inl
+[52.252s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/request_deleter.hpp
+[52.253s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/base_publisher.inl
+[52.253s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/sample_deleter.hpp
+[52.253s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/response_deleter.inl
+[52.253s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/used_chunk_list.inl
+[52.253s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/rpc_interface.hpp
+[52.253s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/response.inl
+[52.254s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/client_impl.hpp
+[52.254s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/response_deleter.hpp
+[52.254s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/used_chunk_list.hpp
+[52.254s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/building_blocks
+[52.254s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/building_blocks/condition_listener.hpp
+[52.255s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/building_blocks/condition_variable_data.hpp
+[52.255s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/building_blocks/chunk_distributor.hpp
+[52.255s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/building_blocks/chunk_sender.inl
+[52.255s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/building_blocks/chunk_queue_data.hpp
+[52.255s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/building_blocks/chunk_sender.hpp
+[52.255s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/building_blocks/unique_port_id.hpp
+[52.255s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/building_blocks/chunk_queue_data.inl
+[52.256s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/building_blocks/chunk_distributor.inl
+[52.256s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/building_blocks/chunk_receiver.hpp
+[52.256s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/building_blocks/chunk_queue_popper.inl
+[52.256s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/building_blocks/locking_policy.hpp
+[52.256s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/building_blocks/chunk_sender_data.inl
+[52.256s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/building_blocks/chunk_distributor_data.inl
+[52.259s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/building_blocks/chunk_queue_pusher.hpp
+[52.260s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/building_blocks/typed_unique_id.hpp
+[52.260s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/building_blocks/chunk_receiver_data.hpp
+[52.260s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/building_blocks/chunk_queue_pusher.inl
+[52.260s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/building_blocks/chunk_distributor_data.hpp
+[52.260s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/building_blocks/chunk_receiver_data.inl
+[52.260s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/building_blocks/chunk_receiver.inl
+[52.260s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/building_blocks/chunk_sender_data.hpp
+[52.260s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/building_blocks/chunk_queue_popper.hpp
+[52.260s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/building_blocks/condition_notifier.hpp
+[52.260s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/base_publisher.hpp
+[52.260s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/sample_deleter.inl
+[52.260s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/untyped_server_impl.hpp
+[52.261s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/request_deleter.inl
+[52.261s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/client_impl.inl
+[52.261s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/wait_set.inl
+[52.261s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/smart_chunk.hpp
+[52.261s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/notification_attorney.inl
+[52.261s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/base_client.hpp
+[52.261s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/untyped_subscriber_impl.inl
+[52.262s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/subscriber_impl.hpp
+[52.262s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/base_subscriber.hpp
+[52.262s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/notification_callback.inl
+[52.262s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/publisher_interface.hpp
+[52.262s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/untyped_publisher_impl.inl
+[52.263s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/publisher_impl.hpp
+[52.263s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/base_server.hpp
+[52.263s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/untyped_client_impl.inl
+[52.263s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/server_impl.hpp
+[52.263s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/base_server.inl
+[52.264s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/sample.inl
+[52.264s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/untyped_client_impl.hpp
+[52.264s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/typed_port_api_trait.hpp
+[52.264s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/publisher_impl.inl
+[52.264s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/server_impl.inl
+[52.264s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/ports
+[52.265s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/ports/subscriber_port_multi_producer.hpp
+[52.265s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/ports/interface_port_data.hpp
+[52.265s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/ports/server_port_data.hpp
+[52.266s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/ports/server_port_roudi.hpp
+[52.266s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/ports/publisher_port_roudi.hpp
+[52.266s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/ports/subscriber_port_data.hpp
+[52.266s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/ports/client_server_port_types.hpp
+[52.267s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/ports/client_port_user.inl
+[52.267s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/ports/publisher_port_data.hpp
+[52.267s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/ports/client_port_user.hpp
+[52.267s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/ports/base_port_data.hpp
+[52.267s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/ports/publisher_port_user.hpp
+[52.267s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/ports/interface_port.hpp
+[52.267s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/ports/base_port.inl
+[52.268s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/ports/client_port_data.hpp
+[52.268s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/ports/pub_sub_port_types.hpp
+[52.268s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/ports/server_port_user.inl
+[52.268s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/ports/subscriber_port_roudi.hpp
+[52.268s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/ports/subscriber_port_single_producer.hpp
+[52.269s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/ports/server_port_user.hpp
+[52.269s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/ports/base_port.hpp
+[52.269s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/ports/client_port_roudi.hpp
+[52.269s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/ports/subscriber_port_user.hpp
+[52.269s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/untyped_subscriber_impl.hpp
+[52.269s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/untyped_publisher_impl.hpp
+[52.270s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/notification_info.inl
+[52.270s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/request.inl
+[52.271s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/base_subscriber.inl
+[52.271s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/popo/subscriber_impl.inl
+[52.271s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/runtime
+[52.271s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/runtime/node_data.hpp
+[52.271s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/runtime/ipc_interface_user.hpp
+[52.271s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/runtime/node_property.hpp
+[52.272s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/runtime/ipc_runtime_interface.hpp
+[52.272s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/runtime/posh_runtime_impl.hpp
+[52.272s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/runtime/ipc_interface_creator.hpp
+[52.272s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/runtime/ipc_message.inl
+[52.272s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/runtime/shared_memory_user.hpp
+[52.272s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/runtime/ipc_message.hpp
+[52.273s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/runtime/ipc_interface_base.hpp
+[52.273s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/roudi
+[52.273s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/roudi/port_pool_data.hpp
+[52.273s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/roudi/memory
+[52.273s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/roudi/memory/generic_memory_block.inl
+[52.276s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/roudi/memory/mempool_segment_manager_memory_block.hpp
+[52.277s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/roudi/memory/mempool_collection_memory_block.hpp
+[52.277s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/roudi/memory/port_pool_memory_block.hpp
+[52.277s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/roudi/port_pool_data.inl
+[52.277s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/roudi/introspection
+[52.277s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/roudi/introspection/port_introspection.inl
+[52.277s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/roudi/introspection/port_introspection.hpp
+[52.277s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/roudi/introspection/process_introspection.hpp
+[52.277s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/roudi/introspection/mempool_introspection.inl
+[52.278s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/roudi/introspection/fixed_size_container.hpp
+[52.278s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/roudi/introspection/mempool_introspection.hpp
+[52.278s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/roudi/introspection/process_introspection.inl
+[52.278s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/roudi/service_registry.hpp
+[52.278s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/roudi/port_manager.inl
+[52.278s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/roudi/roudi.hpp
+[52.278s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/roudi/process.hpp
+[52.278s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/roudi/process_manager.hpp
+[52.278s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/roudi/port_manager.hpp
+[52.278s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/capro
+[52.279s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/capro/capro_message.hpp
+[52.279s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/capro/capro_message.inl
+[52.279s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/log
+[52.279s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/log/posh_config_logging.hpp
+[52.279s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/log/posh_logging.hpp
+[52.279s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/mepoo
+[52.280s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/mepoo/memory_manager.inl
+[52.280s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/mepoo/mepoo_segment.hpp
+[52.280s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/mepoo/segment_manager.inl
+[52.280s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/mepoo/mepoo_segment.inl
+[52.280s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/mepoo/segment_manager.hpp
+[52.280s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/mepoo/memory_manager.hpp
+[52.280s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/mepoo/mem_pool.hpp
+[52.281s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/mepoo/chunk_management.hpp
+[52.281s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/mepoo/shared_pointer.hpp
+[52.281s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/mepoo/typed_mem_pool.hpp
+[52.281s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/mepoo/shared_chunk.hpp
+[52.281s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/mepoo/mepoo.hpp
+[52.281s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/mepoo/shm_safe_unmanaged_chunk.hpp
+[52.282s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/mepoo/typed_mem_pool.inl
+[52.282s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/mepoo/shared_pointer.inl
+[52.282s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/gateway
+[52.282s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/gateway/channel.inl
+[52.283s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/internal/gateway/gateway_generic.inl
+[52.283s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/roudi
+[52.283s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/roudi/roudi_app.hpp
+[52.283s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/roudi/introspection_types.hpp
+[52.283s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/roudi/iceoryx_roudi_app.hpp
+[52.283s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/roudi/memory
+[52.283s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/roudi/memory/generic_memory_block.hpp
+[52.284s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/roudi/memory/roudi_memory_manager.hpp
+[52.284s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/roudi/memory/posix_shm_memory_provider.hpp
+[52.284s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/roudi/memory/iceoryx_roudi_memory_manager.hpp
+[52.284s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/roudi/memory/memory_block.hpp
+[52.285s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/roudi/memory/memory_provider.hpp
+[52.285s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/roudi/memory/roudi_memory_interface.hpp
+[52.285s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/roudi/memory/default_roudi_memory.hpp
+[52.285s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/roudi/port_pool.inl
+[52.285s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/roudi/cmd_line_args.hpp
+[52.285s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/roudi/roudi_cmd_line_parser_config_file_option.hpp
+[52.286s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/roudi/port_pool.hpp
+[52.288s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/roudi/roudi_config.hpp
+[52.289s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/roudi/roudi_cmd_line_parser.hpp
+[52.290s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/roudi/iceoryx_roudi_components.hpp
+[52.290s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/roudi/roudi_config_file_provider.hpp
+[52.291s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/roudi/roudi_config_toml_file_provider.hpp
+[52.291s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/capro
+[52.291s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/capro/service_description.hpp
+[52.291s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/version
+[52.291s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/version/version_info.hpp
+[52.291s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/version/compatibility_check_level.hpp
+[52.291s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/iceoryx_posh_types.inl
+[52.291s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/iceoryx_posh_config.hpp
+[52.291s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/mepoo
+[52.291s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/mepoo/chunk_header.hpp
+[52.291s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/mepoo/mepoo_config.hpp
+[52.291s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/mepoo/memory_info.hpp
+[52.291s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/mepoo/segment_config.hpp
+[52.291s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/mepoo/chunk_settings.hpp
+[52.294s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/iceoryx_posh_types.hpp
+[52.294s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/gateway
+[52.294s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/gateway/gateway_config.hpp
+[52.294s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/gateway/gateway_discovery.hpp
+[52.294s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/gateway/channel.hpp
+[52.294s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/gateway/gateway_generic.hpp
+[52.294s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/gateway/toml_gateway_config_parser.hpp
+[52.294s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/gateway/gateway_base.hpp
+[52.294s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/cmake/iceoryx_posh/iceoryx_poshConfigVersion.cmake
+[52.294s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/cmake/iceoryx_posh/iceoryx_poshConfig.cmake
+[52.294s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/cmake/iceoryx_posh/iceoryx_poshTargets.cmake
+[52.294s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/cmake/iceoryx_posh/iceoryx_poshTargets-release.cmake
+[52.294s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/iceoryx/v2.0.6/iceoryx_posh/iceoryx_posh_deployment.hpp
+[52.295s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/cmake/iceoryx_posh/IceoryxPoshDeployment.cmake
+[52.302s] Invoked command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/iceoryx_posh' returned '0': CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=20 SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/iceoryx_posh

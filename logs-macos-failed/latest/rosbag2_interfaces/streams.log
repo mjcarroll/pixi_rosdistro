@@ -1,0 +1,934 @@
+[1.564s] Invoking command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_interfaces': AMENT_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/mimick_vendor/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_PYTHON_VERSION=3 SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rosbag2/rosbag2_interfaces -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[2.021s] Not searching for unused variables given on the command line.
+[2.021s] -- The C compiler identification is AppleClang 17.0.0.17000013
+[2.228s] -- The CXX compiler identification is AppleClang 17.0.0.17000013
+[2.282s] -- Detecting C compiler ABI info
+[2.765s] -- Detecting C compiler ABI info - done
+[2.820s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.820s] -- Detecting C compile features
+[2.820s] -- Detecting C compile features - done
+[2.822s] -- Detecting CXX compiler ABI info
+[3.256s] -- Detecting CXX compiler ABI info - done
+[3.315s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.315s] -- Detecting CXX compile features
+[3.315s] -- Detecting CXX compile features - done
+[3.328s] -- Found ament_cmake: 2.8.6 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake/cmake)
+[3.739s] -- Found builtin_interfaces: 2.4.3 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/builtin_interfaces/cmake)
+[3.811s] -- Found rosidl_generator_c: 5.1.3 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_c/cmake)
+[3.852s] -- Found rosidl_generator_cpp: 5.1.3 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_cpp/cmake)
+[3.898s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.927s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.976s] -- Found rosidl_default_generators: 1.8.1 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_default_generators/cmake)
+[4.043s] -- Found rosidl_adapter: 5.1.3 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_adapter/cmake)
+[4.252s] -- Found Python3: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/python3 (found version "3.12.13") found components: Interpreter
+[5.322s] -- Found ament_cmake_cppcheck: 0.20.3 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_cppcheck/cmake)
+[5.331s] -- Found ament_cmake_cpplint: 0.20.3 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_cpplint/cmake)
+[5.339s] -- Found ament_cmake_uncrustify: 0.20.3 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_uncrustify/cmake)
+[5.348s] -- Found ament_cmake_ros_core: 0.15.6 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_ros_core/cmake)
+[6.516s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.966s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.536s] -- Found Python3: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/python3 (found version "3.12.13") found components: Interpreter Development NumPy Development.Module Development.Embed
+[7.623s] -- Found ament_cmake_flake8: 0.20.3 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_flake8/cmake)
+[7.630s] -- Found ament_cmake_pep257: 0.20.3 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_pep257/cmake)
+[7.646s] -- Found ament_cmake_mypy: 0.20.3 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_mypy/cmake)
+[7.705s] -- Found Python3: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/python3 (found version "3.12.13") found components: Interpreter
+[7.722s] -- Found ament_lint_auto: 0.20.3 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_lint_auto/cmake)
+[7.773s] -- Added test 'copyright' to check source files copyright and LICENSE
+[7.774s] -- Added test 'lint_cmake' to check CMake code style
+[7.776s] -- Added test 'xmllint' to check XML markup files
+[7.787s] -- Configuring done (6.2s)
+[7.901s] -- Generating done (0.1s)
+[7.940s] -- Build files have been written to: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_interfaces
+[7.952s] Invoked command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_interfaces' returned '0': AMENT_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/mimick_vendor/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_PYTHON_VERSION=3 SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rosbag2/rosbag2_interfaces -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[7.955s] Invoking command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_interfaces': AMENT_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/mimick_vendor/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_PYTHON_VERSION=3 SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_interfaces -- -j3 -l3
+[9.137s] [1/237] Generating type hashes for ROS interfaces
+[11.767s] [2/237] Generating C code for ROS interfaces
+[12.062s] [3/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/msg/detail/read_split_event__description.c.o
+[12.437s] [4/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/msg/detail/read_split_event__functions.c.o
+[12.752s] [5/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/msg/detail/read_split_event__type_support.c.o
+[13.049s] [6/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/msg/detail/write_split_event__description.c.o
+[13.309s] [7/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/msg/detail/write_split_event__functions.c.o
+[13.620s] [8/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/msg/detail/write_split_event__type_support.c.o
+[13.916s] [9/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/msg/detail/messages_lost_event_topic_stat__description.c.o
+[14.265s] [10/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/msg/detail/messages_lost_event_topic_stat__functions.c.o
+[14.574s] [11/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/msg/detail/messages_lost_event_topic_stat__type_support.c.o
+[14.861s] [12/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/msg/detail/messages_lost_event__description.c.o
+[15.120s] [13/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/msg/detail/messages_lost_event__functions.c.o
+[15.382s] [14/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/msg/detail/messages_lost_event__type_support.c.o
+[15.661s] [15/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/burst__description.c.o
+[15.986s] [16/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/burst__functions.c.o
+[16.259s] [17/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/burst__type_support.c.o
+[16.550s] [18/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/get_rate__description.c.o
+[16.836s] [19/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/get_rate__functions.c.o
+[17.157s] [20/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/get_rate__type_support.c.o
+[17.427s] [21/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/is_discovery_running__description.c.o
+[17.760s] [22/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/is_discovery_running__functions.c.o
+[18.048s] [23/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/is_discovery_running__type_support.c.o
+[18.319s] [24/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/is_paused__description.c.o
+[18.583s] [25/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/is_paused__functions.c.o
+[18.822s] [26/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/is_paused__type_support.c.o
+[19.063s] [27/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/pause__description.c.o
+[19.301s] [28/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/pause__functions.c.o
+[19.545s] [29/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/pause__type_support.c.o
+[19.790s] [30/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/play__description.c.o
+[20.250s] [31/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/play__functions.c.o
+[20.546s] [32/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/play__type_support.c.o
+[20.829s] [33/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/play_next__description.c.o
+[21.105s] [34/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/play_next__functions.c.o
+[21.353s] [35/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/play_next__type_support.c.o
+[21.708s] [36/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/record__description.c.o
+[22.001s] [37/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/record__functions.c.o
+[22.488s] [38/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/record__type_support.c.o
+[22.800s] [39/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/resume__description.c.o
+[23.053s] [40/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/resume__functions.c.o
+[23.349s] [41/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/resume__type_support.c.o
+[23.695s] [42/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/seek__description.c.o
+[23.968s] [43/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/seek__functions.c.o
+[24.339s] [44/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/seek__type_support.c.o
+[24.610s] [45/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/set_rate__description.c.o
+[24.971s] [46/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/set_rate__functions.c.o
+[25.226s] [47/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/set_rate__type_support.c.o
+[25.496s] [48/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/snapshot__description.c.o
+[25.757s] [49/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/snapshot__functions.c.o
+[25.987s] [50/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/snapshot__type_support.c.o
+[26.259s] [51/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/split_bagfile__description.c.o
+[26.537s] [52/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/split_bagfile__functions.c.o
+[26.835s] [53/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/split_bagfile__type_support.c.o
+[27.117s] [54/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/start_discovery__description.c.o
+[27.432s] [55/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/start_discovery__functions.c.o
+[27.676s] [56/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/start_discovery__type_support.c.o
+[28.036s] [57/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/stop__description.c.o
+[28.332s] [58/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/stop__functions.c.o
+[28.617s] [59/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/stop__type_support.c.o
+[28.918s] [60/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/stop_discovery__description.c.o
+[29.264s] [61/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/stop_discovery__functions.c.o
+[29.523s] [62/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/stop_discovery__type_support.c.o
+[29.785s] [63/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/toggle_paused__description.c.o
+[30.075s] [64/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/toggle_paused__functions.c.o
+[30.377s] [65/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rosbag2_interfaces/srv/detail/toggle_paused__type_support.c.o
+[33.807s] [66/237] Generating C type support for eProsima Fast-RTPS
+[35.939s] [67/237] Generating C++ code for ROS interfaces
+[38.326s] [68/237] Generating C++ type support for eProsima Fast-RTPS
+[40.201s] [69/237] Generating C introspection for ROS interfaces
+[41.433s] [70/237] Generating C type support dispatch for ROS interfaces
+[43.240s] [71/237] Generating C++ introspection for ROS interfaces
+[44.453s] [72/237] Generating C++ type support dispatch for ROS interfaces
+[44.534s] [73/237] Linking C shared library librosbag2_interfaces__rosidl_generator_c.dylib
+[44.534s] ld: warning: -undefined error is deprecated
+[45.116s] [74/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rosbag2_interfaces/msg/detail/read_split_event__type_support_c.cpp.o
+[45.518s] [75/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rosbag2_interfaces/msg/detail/write_split_event__type_support_c.cpp.o
+[45.919s] [76/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rosbag2_interfaces/msg/detail/messages_lost_event_topic_stat__type_support_c.cpp.o
+[46.323s] [77/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rosbag2_interfaces/msg/detail/messages_lost_event__type_support_c.cpp.o
+[46.716s] [78/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rosbag2_interfaces/srv/detail/burst__type_support_c.cpp.o
+[47.118s] [79/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rosbag2_interfaces/srv/detail/get_rate__type_support_c.cpp.o
+[47.523s] [80/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rosbag2_interfaces/srv/detail/is_discovery_running__type_support_c.cpp.o
+[48.021s] [81/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rosbag2_interfaces/srv/detail/is_paused__type_support_c.cpp.o
+[48.475s] [82/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rosbag2_interfaces/srv/detail/pause__type_support_c.cpp.o
+[48.922s] [83/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rosbag2_interfaces/srv/detail/play__type_support_c.cpp.o
+[49.344s] [84/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rosbag2_interfaces/srv/detail/play_next__type_support_c.cpp.o
+[49.778s] [85/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rosbag2_interfaces/srv/detail/record__type_support_c.cpp.o
+[50.320s] [86/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rosbag2_interfaces/srv/detail/resume__type_support_c.cpp.o
+[50.789s] [87/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rosbag2_interfaces/srv/detail/seek__type_support_c.cpp.o
+[51.267s] [88/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rosbag2_interfaces/srv/detail/set_rate__type_support_c.cpp.o
+[51.711s] [89/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rosbag2_interfaces/srv/detail/snapshot__type_support_c.cpp.o
+[52.138s] [90/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rosbag2_interfaces/srv/detail/split_bagfile__type_support_c.cpp.o
+[52.562s] [91/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rosbag2_interfaces/srv/detail/start_discovery__type_support_c.cpp.o
+[52.983s] [92/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rosbag2_interfaces/srv/detail/stop__type_support_c.cpp.o
+[53.371s] [93/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rosbag2_interfaces/srv/detail/stop_discovery__type_support_c.cpp.o
+[53.788s] [94/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rosbag2_interfaces/srv/detail/toggle_paused__type_support_c.cpp.o
+[54.058s] [95/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rosbag2_interfaces/msg/detail/read_split_event__type_support.c.o
+[54.300s] [96/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rosbag2_interfaces/msg/detail/write_split_event__type_support.c.o
+[54.540s] [97/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rosbag2_interfaces/msg/detail/messages_lost_event_topic_stat__type_support.c.o
+[54.811s] [98/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rosbag2_interfaces/msg/detail/messages_lost_event__type_support.c.o
+[55.057s] [99/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rosbag2_interfaces/srv/detail/burst__type_support.c.o
+[55.309s] [100/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rosbag2_interfaces/srv/detail/get_rate__type_support.c.o
+[55.586s] [101/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rosbag2_interfaces/srv/detail/is_discovery_running__type_support.c.o
+[55.829s] [102/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rosbag2_interfaces/srv/detail/is_paused__type_support.c.o
+[56.078s] [103/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rosbag2_interfaces/srv/detail/pause__type_support.c.o
+[56.377s] [104/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rosbag2_interfaces/srv/detail/play__type_support.c.o
+[56.620s] [105/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rosbag2_interfaces/srv/detail/play_next__type_support.c.o
+[56.859s] [106/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rosbag2_interfaces/srv/detail/record__type_support.c.o
+[57.181s] [107/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rosbag2_interfaces/srv/detail/resume__type_support.c.o
+[57.462s] [108/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rosbag2_interfaces/srv/detail/seek__type_support.c.o
+[57.708s] [109/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rosbag2_interfaces/srv/detail/set_rate__type_support.c.o
+[57.984s] [110/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rosbag2_interfaces/srv/detail/snapshot__type_support.c.o
+[58.242s] [111/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rosbag2_interfaces/srv/detail/split_bagfile__type_support.c.o
+[58.512s] [112/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rosbag2_interfaces/srv/detail/start_discovery__type_support.c.o
+[58.763s] [113/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rosbag2_interfaces/srv/detail/stop__type_support.c.o
+[59.000s] [114/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rosbag2_interfaces/srv/detail/stop_discovery__type_support.c.o
+[59.272s] [115/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rosbag2_interfaces/srv/detail/toggle_paused__type_support.c.o
+[59.521s] [116/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/rosbag2_interfaces/msg/read_split_event__type_support.cpp.o
+[59.797s] [117/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/rosbag2_interfaces/msg/write_split_event__type_support.cpp.o
+[60.047s] [118/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/rosbag2_interfaces/msg/messages_lost_event_topic_stat__type_support.cpp.o
+[60.323s] [119/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/rosbag2_interfaces/msg/messages_lost_event__type_support.cpp.o
+[60.628s] [120/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/rosbag2_interfaces/srv/burst__type_support.cpp.o
+[60.951s] [121/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/rosbag2_interfaces/srv/get_rate__type_support.cpp.o
+[61.261s] [122/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/rosbag2_interfaces/srv/is_discovery_running__type_support.cpp.o
+[61.554s] [123/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/rosbag2_interfaces/srv/is_paused__type_support.cpp.o
+[61.826s] [124/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/rosbag2_interfaces/srv/pause__type_support.cpp.o
+[62.141s] [125/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/rosbag2_interfaces/srv/play__type_support.cpp.o
+[62.442s] [126/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/rosbag2_interfaces/srv/play_next__type_support.cpp.o
+[62.722s] [127/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/rosbag2_interfaces/srv/record__type_support.cpp.o
+[62.996s] [128/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/rosbag2_interfaces/srv/resume__type_support.cpp.o
+[63.269s] [129/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/rosbag2_interfaces/srv/seek__type_support.cpp.o
+[63.554s] [130/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/rosbag2_interfaces/srv/set_rate__type_support.cpp.o
+[63.853s] [131/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/rosbag2_interfaces/srv/snapshot__type_support.cpp.o
+[64.111s] [132/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/rosbag2_interfaces/srv/split_bagfile__type_support.cpp.o
+[64.410s] [133/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/rosbag2_interfaces/srv/start_discovery__type_support.cpp.o
+[64.716s] [134/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/rosbag2_interfaces/srv/stop__type_support.cpp.o
+[65.009s] [135/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/rosbag2_interfaces/srv/stop_discovery__type_support.cpp.o
+[65.297s] [136/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/rosbag2_interfaces/srv/toggle_paused__type_support.cpp.o
+[65.763s] [137/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rosbag2_interfaces/msg/detail/dds_fastrtps/read_split_event__type_support.cpp.o
+[66.228s] [138/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rosbag2_interfaces/msg/detail/dds_fastrtps/write_split_event__type_support.cpp.o
+[66.780s] [139/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rosbag2_interfaces/msg/detail/dds_fastrtps/messages_lost_event_topic_stat__type_support.cpp.o
+[67.166s] [140/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rosbag2_interfaces/msg/detail/dds_fastrtps/messages_lost_event__type_support.cpp.o
+[67.677s] [141/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rosbag2_interfaces/srv/detail/dds_fastrtps/burst__type_support.cpp.o
+[68.228s] [142/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rosbag2_interfaces/srv/detail/dds_fastrtps/get_rate__type_support.cpp.o
+[68.710s] [143/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rosbag2_interfaces/srv/detail/dds_fastrtps/is_discovery_running__type_support.cpp.o
+[69.195s] [144/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rosbag2_interfaces/srv/detail/dds_fastrtps/is_paused__type_support.cpp.o
+[69.650s] [145/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rosbag2_interfaces/srv/detail/dds_fastrtps/pause__type_support.cpp.o
+[70.108s] [146/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rosbag2_interfaces/srv/detail/dds_fastrtps/play__type_support.cpp.o
+[70.482s] [147/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rosbag2_interfaces/srv/detail/dds_fastrtps/play_next__type_support.cpp.o
+[70.919s] [148/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rosbag2_interfaces/srv/detail/dds_fastrtps/record__type_support.cpp.o
+[71.284s] [149/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rosbag2_interfaces/srv/detail/dds_fastrtps/resume__type_support.cpp.o
+[71.749s] [150/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rosbag2_interfaces/srv/detail/dds_fastrtps/seek__type_support.cpp.o
+[72.121s] [151/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rosbag2_interfaces/srv/detail/dds_fastrtps/set_rate__type_support.cpp.o
+[72.532s] [152/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rosbag2_interfaces/srv/detail/dds_fastrtps/snapshot__type_support.cpp.o
+[72.966s] [153/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rosbag2_interfaces/srv/detail/dds_fastrtps/split_bagfile__type_support.cpp.o
+[73.371s] [154/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rosbag2_interfaces/srv/detail/dds_fastrtps/start_discovery__type_support.cpp.o
+[73.781s] [155/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rosbag2_interfaces/srv/detail/dds_fastrtps/stop__type_support.cpp.o
+[74.188s] [156/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rosbag2_interfaces/srv/detail/dds_fastrtps/stop_discovery__type_support.cpp.o
+[74.584s] [157/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rosbag2_interfaces/srv/detail/dds_fastrtps/toggle_paused__type_support.cpp.o
+[75.003s] [158/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rosbag2_interfaces/msg/detail/read_split_event__type_support.cpp.o
+[75.397s] [159/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rosbag2_interfaces/msg/detail/write_split_event__type_support.cpp.o
+[75.883s] [160/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rosbag2_interfaces/msg/detail/messages_lost_event_topic_stat__type_support.cpp.o
+[76.321s] [161/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rosbag2_interfaces/msg/detail/messages_lost_event__type_support.cpp.o
+[76.715s] [162/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rosbag2_interfaces/srv/detail/burst__type_support.cpp.o
+[77.115s] [163/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rosbag2_interfaces/srv/detail/get_rate__type_support.cpp.o
+[77.600s] [164/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rosbag2_interfaces/srv/detail/is_discovery_running__type_support.cpp.o
+[78.027s] [165/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rosbag2_interfaces/srv/detail/is_paused__type_support.cpp.o
+[78.426s] [166/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rosbag2_interfaces/srv/detail/pause__type_support.cpp.o
+[78.865s] [167/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rosbag2_interfaces/srv/detail/play__type_support.cpp.o
+[79.214s] [168/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rosbag2_interfaces/srv/detail/play_next__type_support.cpp.o
+[79.652s] [169/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rosbag2_interfaces/srv/detail/record__type_support.cpp.o
+[80.081s] [170/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rosbag2_interfaces/srv/detail/resume__type_support.cpp.o
+[80.474s] [171/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rosbag2_interfaces/srv/detail/seek__type_support.cpp.o
+[80.933s] [172/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rosbag2_interfaces/srv/detail/set_rate__type_support.cpp.o
+[81.400s] [173/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rosbag2_interfaces/srv/detail/snapshot__type_support.cpp.o
+[81.801s] [174/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rosbag2_interfaces/srv/detail/split_bagfile__type_support.cpp.o
+[82.164s] [175/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rosbag2_interfaces/srv/detail/start_discovery__type_support.cpp.o
+[82.539s] [176/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rosbag2_interfaces/srv/detail/stop__type_support.cpp.o
+[82.949s] [177/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rosbag2_interfaces/srv/detail/stop_discovery__type_support.cpp.o
+[83.337s] [178/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rosbag2_interfaces/srv/detail/toggle_paused__type_support.cpp.o
+[83.745s] [179/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rosbag2_interfaces/msg/read_split_event__type_support.cpp.o
+[84.249s] [180/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rosbag2_interfaces/msg/write_split_event__type_support.cpp.o
+[84.689s] [181/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rosbag2_interfaces/msg/messages_lost_event_topic_stat__type_support.cpp.o
+[85.117s] [182/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rosbag2_interfaces/msg/messages_lost_event__type_support.cpp.o
+[85.516s] [183/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rosbag2_interfaces/srv/burst__type_support.cpp.o
+[85.888s] [184/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rosbag2_interfaces/srv/get_rate__type_support.cpp.o
+[86.318s] [185/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rosbag2_interfaces/srv/is_discovery_running__type_support.cpp.o
+[86.684s] [186/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rosbag2_interfaces/srv/is_paused__type_support.cpp.o
+[87.097s] [187/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rosbag2_interfaces/srv/pause__type_support.cpp.o
+[87.500s] [188/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rosbag2_interfaces/srv/play__type_support.cpp.o
+[87.955s] [189/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rosbag2_interfaces/srv/play_next__type_support.cpp.o
+[88.344s] [190/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rosbag2_interfaces/srv/record__type_support.cpp.o
+[88.783s] [191/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rosbag2_interfaces/srv/resume__type_support.cpp.o
+[89.142s] [192/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rosbag2_interfaces/srv/seek__type_support.cpp.o
+[89.547s] [193/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rosbag2_interfaces/srv/set_rate__type_support.cpp.o
+[89.938s] [194/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rosbag2_interfaces/srv/snapshot__type_support.cpp.o
+[90.394s] [195/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rosbag2_interfaces/srv/split_bagfile__type_support.cpp.o
+[90.796s] [196/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rosbag2_interfaces/srv/start_discovery__type_support.cpp.o
+[91.255s] [197/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rosbag2_interfaces/srv/stop__type_support.cpp.o
+[91.656s] [198/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rosbag2_interfaces/srv/stop_discovery__type_support.cpp.o
+[92.139s] [199/237] Building CXX object CMakeFiles/rosbag2_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rosbag2_interfaces/srv/toggle_paused__type_support.cpp.o
+[92.259s] [200/237] Linking CXX shared library librosbag2_interfaces__rosidl_typesupport_fastrtps_c.dylib
+[92.259s] ld: warning: -undefined error is deprecated
+[92.356s] [201/237] Linking CXX shared library librosbag2_interfaces__rosidl_typesupport_fastrtps_cpp.dylib
+[92.357s] ld: warning: -undefined error is deprecated
+[92.449s] [202/237] Linking C shared library librosbag2_interfaces__rosidl_typesupport_introspection_c.dylib
+[92.449s] ld: warning: -undefined error is deprecated
+[92.566s] [203/237] Linking CXX shared library librosbag2_interfaces__rosidl_typesupport_c.dylib
+[92.567s] ld: warning: -undefined error is deprecated
+[92.683s] [204/237] Linking CXX shared library librosbag2_interfaces__rosidl_typesupport_introspection_cpp.dylib
+[92.683s] ld: warning: -undefined error is deprecated
+[92.770s] [205/237] Linking CXX shared library librosbag2_interfaces__rosidl_typesupport_cpp.dylib
+[92.770s] ld: warning: -undefined error is deprecated
+[97.783s] [206/237] Generating Python code for ROS interfaces
+[98.768s] [207/237] Generating Rust code for ROS interfaces
+[99.029s] [208/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_py.dir/rosidl_generator_py/rosbag2_interfaces/msg/_read_split_event_s.c.o
+[99.268s] [209/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_py.dir/rosidl_generator_py/rosbag2_interfaces/msg/_write_split_event_s.c.o
+[99.545s] [210/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_py.dir/rosidl_generator_py/rosbag2_interfaces/msg/_messages_lost_event_topic_stat_s.c.o
+[99.843s] [211/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_py.dir/rosidl_generator_py/rosbag2_interfaces/msg/_messages_lost_event_s.c.o
+[100.150s] [212/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_py.dir/rosidl_generator_py/rosbag2_interfaces/srv/_burst_s.c.o
+[100.438s] [213/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_py.dir/rosidl_generator_py/rosbag2_interfaces/srv/_get_rate_s.c.o
+[100.744s] [214/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_py.dir/rosidl_generator_py/rosbag2_interfaces/srv/_is_discovery_running_s.c.o
+[101.053s] [215/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_py.dir/rosidl_generator_py/rosbag2_interfaces/srv/_is_paused_s.c.o
+[101.352s] [216/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_py.dir/rosidl_generator_py/rosbag2_interfaces/srv/_pause_s.c.o
+[101.692s] [217/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_py.dir/rosidl_generator_py/rosbag2_interfaces/srv/_play_s.c.o
+[102.011s] [218/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_py.dir/rosidl_generator_py/rosbag2_interfaces/srv/_play_next_s.c.o
+[102.340s] [219/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_py.dir/rosidl_generator_py/rosbag2_interfaces/srv/_record_s.c.o
+[102.654s] [220/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_py.dir/rosidl_generator_py/rosbag2_interfaces/srv/_resume_s.c.o
+[103.014s] [221/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_py.dir/rosidl_generator_py/rosbag2_interfaces/srv/_seek_s.c.o
+[103.282s] [222/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_py.dir/rosidl_generator_py/rosbag2_interfaces/srv/_set_rate_s.c.o
+[103.612s] [223/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_py.dir/rosidl_generator_py/rosbag2_interfaces/srv/_snapshot_s.c.o
+[103.897s] [224/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_py.dir/rosidl_generator_py/rosbag2_interfaces/srv/_split_bagfile_s.c.o
+[104.171s] [225/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_py.dir/rosidl_generator_py/rosbag2_interfaces/srv/_start_discovery_s.c.o
+[104.471s] [226/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_py.dir/rosidl_generator_py/rosbag2_interfaces/srv/_stop_s.c.o
+[104.743s] [227/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_py.dir/rosidl_generator_py/rosbag2_interfaces/srv/_stop_discovery_s.c.o
+[105.068s] [228/237] Building C object CMakeFiles/rosbag2_interfaces__rosidl_generator_py.dir/rosidl_generator_py/rosbag2_interfaces/srv/_toggle_paused_s.c.o
+[105.154s] [229/237] Linking C shared library librosbag2_interfaces__rosidl_generator_py.dylib
+[105.154s] ld: warning: -undefined error is deprecated
+[105.435s] [230/237] Building C object CMakeFiles/rosbag2_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/rosbag2_interfaces/_rosbag2_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o
+[105.814s] [231/237] Building C object CMakeFiles/rosbag2_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/rosbag2_interfaces/_rosbag2_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o
+[106.071s] [232/237] Building C object CMakeFiles/rosbag2_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/rosbag2_interfaces/_rosbag2_interfaces_s.ep.rosidl_typesupport_c.c.o
+[106.125s] [233/237] cd /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_interfaces && /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake -E copy_directory /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_interfaces/rosidl_generator_py/rosbag2_interfaces /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_interfaces/ament_cmake_python/rosbag2_interfaces/rosbag2_interfaces
+[106.221s] [234/237] Linking C shared module rosidl_generator_py/rosbag2_interfaces/rosbag2_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[106.333s] [235/237] Linking C shared module rosidl_generator_py/rosbag2_interfaces/rosbag2_interfaces_s__rosidl_typesupport_introspection_c.so
+[106.421s] [236/237] Linking C shared module rosidl_generator_py/rosbag2_interfaces/rosbag2_interfaces_s__rosidl_typesupport_c.so
+[106.752s] [237/237] cd /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_interfaces/ament_cmake_python/rosbag2_interfaces && /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/python3 setup.py egg_info
+[106.752s] running egg_info
+[106.752s] creating rosbag2_interfaces.egg-info
+[106.752s] writing rosbag2_interfaces.egg-info/PKG-INFO
+[106.752s] writing dependency_links to rosbag2_interfaces.egg-info/dependency_links.txt
+[106.752s] writing top-level names to rosbag2_interfaces.egg-info/top_level.txt
+[106.753s] writing manifest file 'rosbag2_interfaces.egg-info/SOURCES.txt'
+[106.753s] reading manifest file 'rosbag2_interfaces.egg-info/SOURCES.txt'
+[106.753s] writing manifest file 'rosbag2_interfaces.egg-info/SOURCES.txt'
+[106.760s] Invoked command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_interfaces' returned '0': AMENT_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/mimick_vendor/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=114 ROS_PYTHON_VERSION=3 SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_interfaces -- -j3 -l3
+[106.767s] Invoking command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_interfaces': AMENT_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/mimick_vendor/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=114 ROS_PYTHON_VERSION=3 SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_interfaces
+[106.800s] -- Install configuration: "Release"
+[106.800s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/rosidl_interfaces/rosbag2_interfaces
+[106.801s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/msg/ReadSplitEvent.json
+[106.801s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/msg/WriteSplitEvent.json
+[106.801s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/msg/MessagesLostEventTopicStat.json
+[106.805s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/msg/MessagesLostEvent.json
+[106.805s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/Burst.json
+[106.806s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/GetRate.json
+[106.806s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/IsDiscoveryRunning.json
+[106.806s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/IsPaused.json
+[106.806s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/Pause.json
+[106.806s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/Play.json
+[106.810s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/PlayNext.json
+[106.810s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/Record.json
+[106.810s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/Resume.json
+[106.810s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/Seek.json
+[106.810s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/SetRate.json
+[106.811s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/Snapshot.json
+[106.816s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/SplitBagfile.json
+[106.817s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/StartDiscovery.json
+[106.818s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/Stop.json
+[106.818s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/StopDiscovery.json
+[106.818s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/TogglePaused.json
+[106.818s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces
+[106.818s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg
+[106.818s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/messages_lost_event.h
+[106.818s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/rosidl_generator_c__visibility_control.h
+[106.818s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/read_split_event.h
+[106.818s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail
+[106.818s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/read_split_event__type_support.h
+[106.823s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/messages_lost_event_topic_stat__type_support.h
+[106.823s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/messages_lost_event__type_support.h
+[106.823s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/messages_lost_event_topic_stat__functions.c
+[106.823s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/read_split_event__functions.h
+[106.823s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/messages_lost_event_topic_stat__description.c
+[106.823s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/messages_lost_event__struct.h
+[106.823s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/write_split_event__functions.h
+[106.824s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/write_split_event__type_support.c
+[106.824s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/messages_lost_event__functions.h
+[106.824s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/messages_lost_event_topic_stat__functions.h
+[106.824s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/messages_lost_event__type_support.c
+[106.830s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/messages_lost_event_topic_stat__type_support.c
+[106.830s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/read_split_event__struct.h
+[106.830s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/read_split_event__type_support.c
+[106.830s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/write_split_event__struct.h
+[106.830s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/write_split_event__description.c
+[106.830s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/messages_lost_event__description.c
+[106.830s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/read_split_event__description.c
+[106.830s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/read_split_event__functions.c
+[106.830s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/write_split_event__type_support.h
+[106.831s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/messages_lost_event_topic_stat__struct.h
+[106.831s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/messages_lost_event__functions.c
+[106.831s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/write_split_event__functions.c
+[106.831s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/messages_lost_event_topic_stat.h
+[106.831s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/write_split_event.h
+[106.831s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv
+[106.831s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/stop_discovery.h
+[106.833s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/stop.h
+[106.833s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/seek.h
+[106.833s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/play.h
+[106.833s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/resume.h
+[106.833s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/split_bagfile.h
+[106.833s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/start_discovery.h
+[106.833s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/toggle_paused.h
+[106.834s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/is_discovery_running.h
+[106.834s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/record.h
+[106.834s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/pause.h
+[106.834s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/play_next.h
+[106.834s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail
+[106.834s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/pause__description.c
+[106.834s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/split_bagfile__struct.h
+[106.834s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/burst__functions.c
+[106.834s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/stop__functions.h
+[106.834s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/pause__type_support.c
+[106.834s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/stop_discovery__struct.h
+[106.834s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/play_next__type_support.h
+[106.834s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/is_paused__struct.h
+[106.834s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/play_next__struct.h
+[106.834s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/toggle_paused__functions.c
+[106.834s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/is_paused__functions.c
+[106.834s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/is_paused__description.c
+[106.834s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/resume__type_support.h
+[106.834s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/stop_discovery__type_support.c
+[106.834s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/is_discovery_running__struct.h
+[106.834s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/snapshot__description.c
+[106.834s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/start_discovery__type_support.h
+[106.835s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/start_discovery__functions.h
+[106.835s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/is_discovery_running__type_support.c
+[106.836s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/seek__functions.h
+[106.836s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/resume__functions.h
+[106.839s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/play__type_support.c
+[106.839s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/is_paused__type_support.h
+[106.839s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/stop__description.c
+[106.839s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/snapshot__struct.h
+[106.841s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/record__description.c
+[106.841s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/burst__struct.h
+[106.841s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/seek__description.c
+[106.841s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/snapshot__type_support.c
+[106.841s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/resume__description.c
+[106.842s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/record__functions.h
+[106.842s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/is_discovery_running__functions.c
+[106.842s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/play__functions.c
+[106.842s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/snapshot__functions.h
+[106.842s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/get_rate__functions.c
+[106.845s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/stop__type_support.c
+[106.845s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/record__type_support.c
+[106.845s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/get_rate__type_support.c
+[106.845s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/seek__type_support.h
+[106.845s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/set_rate__description.c
+[106.845s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/split_bagfile__type_support.c
+[106.845s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/toggle_paused__type_support.c
+[106.845s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/stop_discovery__functions.h
+[106.845s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/split_bagfile__functions.h
+[106.845s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/play_next__description.c
+[106.846s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/stop_discovery__description.c
+[106.850s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/pause__struct.h
+[106.850s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/set_rate__type_support.h
+[106.850s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/pause__functions.c
+[106.851s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/burst__type_support.h
+[106.851s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/play_next__functions.c
+[106.852s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/set_rate__functions.c
+[106.853s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/stop_discovery__type_support.h
+[106.853s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/start_discovery__type_support.c
+[106.853s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/resume__type_support.c
+[106.853s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/resume__struct.h
+[106.853s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/is_paused__functions.h
+[106.853s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/toggle_paused__functions.h
+[106.854s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/pause__type_support.h
+[106.854s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/stop__functions.c
+[106.854s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/burst__functions.h
+[106.854s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/stop__struct.h
+[106.854s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/play_next__type_support.c
+[106.854s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/split_bagfile__description.c
+[106.855s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/is_paused__type_support.c
+[106.855s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/play__type_support.h
+[106.855s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/start_discovery__struct.h
+[106.855s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/get_rate__description.c
+[106.855s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/burst__description.c
+[106.855s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/resume__functions.c
+[106.855s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/seek__functions.c
+[106.856s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/toggle_paused__struct.h
+[106.856s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/is_discovery_running__type_support.h
+[106.856s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/start_discovery__functions.c
+[106.856s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/record__type_support.h
+[106.860s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/stop__type_support.h
+[106.860s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/get_rate__type_support.h
+[106.860s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/is_discovery_running__functions.h
+[106.860s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/play__functions.h
+[106.861s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/snapshot__functions.c
+[106.861s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/record__functions.c
+[106.861s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/set_rate__struct.h
+[106.861s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/get_rate__struct.h
+[106.861s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/seek__struct.h
+[106.861s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/get_rate__functions.h
+[106.861s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/snapshot__type_support.h
+[106.861s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/record__struct.h
+[106.861s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/toggle_paused__description.c
+[106.861s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/burst__type_support.c
+[106.861s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/is_discovery_running__description.c
+[106.861s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/set_rate__type_support.c
+[106.861s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/pause__functions.h
+[106.861s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/set_rate__functions.h
+[106.862s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/play_next__functions.h
+[106.862s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/play__struct.h
+[106.862s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/play__description.c
+[106.862s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/split_bagfile__functions.c
+[106.862s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/start_discovery__description.c
+[106.862s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/split_bagfile__type_support.h
+[106.864s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/stop_discovery__functions.c
+[106.868s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/toggle_paused__type_support.h
+[106.868s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/seek__type_support.c
+[106.868s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/burst.h
+[106.868s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/is_paused.h
+[106.868s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/set_rate.h
+[106.869s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/snapshot.h
+[106.869s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/get_rate.h
+[106.873s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/environment/library_path.sh
+[106.874s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/environment/library_path.dsv
+[106.875s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/librosbag2_interfaces__rosidl_generator_c.dylib
+[106.875s] -- Up-to-date: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces
+[106.875s] -- Up-to-date: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg
+[106.875s] -- Up-to-date: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail
+[106.876s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/messages_lost_event__rosidl_typesupport_fastrtps_c.h
+[106.876s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/messages_lost_event_topic_stat__rosidl_typesupport_fastrtps_c.h
+[106.877s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/write_split_event__rosidl_typesupport_fastrtps_c.h
+[106.878s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/read_split_event__rosidl_typesupport_fastrtps_c.h
+[106.878s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[106.879s] -- Up-to-date: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv
+[106.879s] -- Up-to-date: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail
+[106.880s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/toggle_paused__rosidl_typesupport_fastrtps_c.h
+[106.881s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/stop__rosidl_typesupport_fastrtps_c.h
+[106.881s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/set_rate__rosidl_typesupport_fastrtps_c.h
+[106.881s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/play__rosidl_typesupport_fastrtps_c.h
+[106.882s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/play_next__rosidl_typesupport_fastrtps_c.h
+[106.882s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/split_bagfile__rosidl_typesupport_fastrtps_c.h
+[106.882s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/start_discovery__rosidl_typesupport_fastrtps_c.h
+[106.883s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/is_paused__rosidl_typesupport_fastrtps_c.h
+[106.883s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/get_rate__rosidl_typesupport_fastrtps_c.h
+[106.883s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/burst__rosidl_typesupport_fastrtps_c.h
+[106.883s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/resume__rosidl_typesupport_fastrtps_c.h
+[106.884s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/pause__rosidl_typesupport_fastrtps_c.h
+[106.884s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/stop_discovery__rosidl_typesupport_fastrtps_c.h
+[106.884s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/snapshot__rosidl_typesupport_fastrtps_c.h
+[106.884s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/seek__rosidl_typesupport_fastrtps_c.h
+[106.885s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/is_discovery_running__rosidl_typesupport_fastrtps_c.h
+[106.885s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/record__rosidl_typesupport_fastrtps_c.h
+[106.885s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/librosbag2_interfaces__rosidl_typesupport_fastrtps_c.dylib
+[106.885s] -- Up-to-date: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces
+[106.886s] -- Up-to-date: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg
+[106.886s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/messages_lost_event.hpp
+[106.886s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/messages_lost_event_topic_stat.hpp
+[106.886s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/write_split_event.hpp
+[106.886s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/read_split_event.hpp
+[106.886s] -- Up-to-date: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail
+[106.887s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/read_split_event__traits.hpp
+[106.887s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/messages_lost_event_topic_stat__type_support.hpp
+[106.887s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/messages_lost_event_topic_stat__traits.hpp
+[106.887s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/read_split_event__type_support.hpp
+[106.888s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/messages_lost_event__struct.hpp
+[106.888s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/write_split_event__struct.hpp
+[106.888s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/messages_lost_event_topic_stat__builder.hpp
+[106.889s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/read_split_event__struct.hpp
+[106.889s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/messages_lost_event__builder.hpp
+[106.889s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/write_split_event__builder.hpp
+[106.890s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/messages_lost_event__traits.hpp
+[106.890s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/write_split_event__type_support.hpp
+[106.890s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/messages_lost_event_topic_stat__struct.hpp
+[106.891s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/read_split_event__builder.hpp
+[106.891s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/messages_lost_event__type_support.hpp
+[106.891s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/write_split_event__traits.hpp
+[106.892s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[106.892s] -- Up-to-date: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv
+[106.892s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/stop.hpp
+[106.892s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/record.hpp
+[106.892s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/split_bagfile.hpp
+[106.893s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/play_next.hpp
+[106.894s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/burst.hpp
+[106.894s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/snapshot.hpp
+[106.894s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/resume.hpp
+[106.895s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/seek.hpp
+[106.896s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/pause.hpp
+[106.896s] -- Up-to-date: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail
+[106.896s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/toggle_paused__struct.hpp
+[106.897s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/is_paused__type_support.hpp
+[106.897s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/stop_discovery__type_support.hpp
+[106.897s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/pause__type_support.hpp
+[106.898s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/set_rate__traits.hpp
+[106.898s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/set_rate__builder.hpp
+[106.898s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/play_next__builder.hpp
+[106.898s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/pause__builder.hpp
+[106.899s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/start_discovery__traits.hpp
+[106.899s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/seek__struct.hpp
+[106.900s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/record__type_support.hpp
+[106.900s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/is_paused__struct.hpp
+[106.901s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/get_rate__traits.hpp
+[106.901s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/burst__type_support.hpp
+[106.902s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/is_discovery_running__type_support.hpp
+[106.902s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/toggle_paused__type_support.hpp
+[106.902s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/get_rate__builder.hpp
+[106.902s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/stop_discovery__struct.hpp
+[106.903s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/is_discovery_running__builder.hpp
+[106.903s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/play__builder.hpp
+[106.904s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/is_discovery_running__traits.hpp
+[106.904s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/seek__type_support.hpp
+[106.905s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/pause__traits.hpp
+[106.905s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/stop__traits.hpp
+[106.905s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/burst__traits.hpp
+[106.906s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/burst__builder.hpp
+[106.907s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/is_paused__builder.hpp
+[106.907s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/record__traits.hpp
+[106.907s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/toggle_paused__builder.hpp
+[106.908s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/split_bagfile__struct.hpp
+[106.908s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/play_next__traits.hpp
+[106.908s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/snapshot__struct.hpp
+[106.908s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/play__struct.hpp
+[106.908s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/resume__struct.hpp
+[106.909s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/resume__type_support.hpp
+[106.909s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/split_bagfile__builder.hpp
+[106.909s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/set_rate__struct.hpp
+[106.909s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/start_discovery__type_support.hpp
+[106.909s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/stop_discovery__builder.hpp
+[106.909s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/toggle_paused__traits.hpp
+[106.909s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/is_discovery_running__struct.hpp
+[106.910s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/play__type_support.hpp
+[106.910s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/snapshot__type_support.hpp
+[106.910s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/stop_discovery__traits.hpp
+[106.910s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/record__builder.hpp
+[106.911s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/snapshot__builder.hpp
+[106.911s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/seek__traits.hpp
+[106.915s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/is_paused__traits.hpp
+[106.915s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/get_rate__struct.hpp
+[106.917s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/start_discovery__struct.hpp
+[106.917s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/stop__struct.hpp
+[106.920s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/split_bagfile__type_support.hpp
+[106.920s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/burst__struct.hpp
+[106.921s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/seek__builder.hpp
+[106.921s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/resume__builder.hpp
+[106.921s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/stop__type_support.hpp
+[106.922s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/get_rate__type_support.hpp
+[106.923s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/pause__struct.hpp
+[106.923s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/start_discovery__builder.hpp
+[106.926s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/play_next__type_support.hpp
+[106.926s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/set_rate__type_support.hpp
+[106.927s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/play__traits.hpp
+[106.927s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/resume__traits.hpp
+[106.927s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/record__struct.hpp
+[106.928s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/split_bagfile__traits.hpp
+[106.928s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/play_next__struct.hpp
+[106.929s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/snapshot__traits.hpp
+[106.930s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/stop__builder.hpp
+[106.930s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/get_rate.hpp
+[106.930s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/is_discovery_running.hpp
+[106.931s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/stop_discovery.hpp
+[106.931s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/is_paused.hpp
+[106.931s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/start_discovery.hpp
+[106.932s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/play.hpp
+[106.933s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/toggle_paused.hpp
+[106.933s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/set_rate.hpp
+[106.933s] -- Up-to-date: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces
+[106.934s] -- Up-to-date: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg
+[106.934s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[106.934s] -- Up-to-date: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail
+[106.934s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/read_split_event__rosidl_typesupport_fastrtps_cpp.hpp
+[106.934s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/messages_lost_event__rosidl_typesupport_fastrtps_cpp.hpp
+[106.935s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/dds_fastrtps
+[106.935s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/write_split_event__rosidl_typesupport_fastrtps_cpp.hpp
+[106.940s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/messages_lost_event_topic_stat__rosidl_typesupport_fastrtps_cpp.hpp
+[106.940s] -- Up-to-date: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv
+[106.941s] -- Up-to-date: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail
+[106.941s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/pause__rosidl_typesupport_fastrtps_cpp.hpp
+[106.941s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/resume__rosidl_typesupport_fastrtps_cpp.hpp
+[106.942s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/seek__rosidl_typesupport_fastrtps_cpp.hpp
+[106.943s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/is_discovery_running__rosidl_typesupport_fastrtps_cpp.hpp
+[106.943s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/play_next__rosidl_typesupport_fastrtps_cpp.hpp
+[106.943s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/stop_discovery__rosidl_typesupport_fastrtps_cpp.hpp
+[106.943s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/toggle_paused__rosidl_typesupport_fastrtps_cpp.hpp
+[106.944s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/play__rosidl_typesupport_fastrtps_cpp.hpp
+[106.944s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/burst__rosidl_typesupport_fastrtps_cpp.hpp
+[106.946s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/snapshot__rosidl_typesupport_fastrtps_cpp.hpp
+[106.946s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/record__rosidl_typesupport_fastrtps_cpp.hpp
+[106.946s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/set_rate__rosidl_typesupport_fastrtps_cpp.hpp
+[106.947s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/split_bagfile__rosidl_typesupport_fastrtps_cpp.hpp
+[106.947s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/get_rate__rosidl_typesupport_fastrtps_cpp.hpp
+[106.947s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/dds_fastrtps
+[106.948s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/is_paused__rosidl_typesupport_fastrtps_cpp.hpp
+[106.948s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/start_discovery__rosidl_typesupport_fastrtps_cpp.hpp
+[106.948s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/stop__rosidl_typesupport_fastrtps_cpp.hpp
+[106.948s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/librosbag2_interfaces__rosidl_typesupport_fastrtps_cpp.dylib
+[106.949s] -- Up-to-date: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces
+[106.949s] -- Up-to-date: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg
+[106.949s] -- Up-to-date: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail
+[106.949s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/messages_lost_event_topic_stat__rosidl_typesupport_introspection_c.h
+[106.950s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/write_split_event__rosidl_typesupport_introspection_c.h
+[106.950s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/messages_lost_event__rosidl_typesupport_introspection_c.h
+[106.950s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/write_split_event__type_support.c
+[106.951s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/read_split_event__rosidl_typesupport_introspection_c.h
+[106.953s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/messages_lost_event__type_support.c
+[106.953s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/messages_lost_event_topic_stat__type_support.c
+[106.954s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/read_split_event__type_support.c
+[106.954s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[106.954s] -- Up-to-date: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv
+[106.955s] -- Up-to-date: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail
+[106.955s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/pause__type_support.c
+[106.955s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/stop_discovery__type_support.c
+[106.956s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/resume__rosidl_typesupport_introspection_c.h
+[106.956s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/is_discovery_running__type_support.c
+[106.956s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/snapshot__rosidl_typesupport_introspection_c.h
+[106.957s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/seek__rosidl_typesupport_introspection_c.h
+[106.957s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/play__type_support.c
+[106.957s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/record__rosidl_typesupport_introspection_c.h
+[106.958s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/snapshot__type_support.c
+[106.958s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/play__rosidl_typesupport_introspection_c.h
+[106.958s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/stop__rosidl_typesupport_introspection_c.h
+[106.959s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/stop_discovery__rosidl_typesupport_introspection_c.h
+[106.959s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/stop__type_support.c
+[106.959s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/record__type_support.c
+[106.960s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/set_rate__rosidl_typesupport_introspection_c.h
+[106.960s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/get_rate__type_support.c
+[106.960s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/split_bagfile__type_support.c
+[106.962s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/toggle_paused__type_support.c
+[106.964s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/start_discovery__rosidl_typesupport_introspection_c.h
+[106.964s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/toggle_paused__rosidl_typesupport_introspection_c.h
+[106.964s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/start_discovery__type_support.c
+[106.965s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/is_paused__rosidl_typesupport_introspection_c.h
+[106.965s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/resume__type_support.c
+[106.966s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/play_next__type_support.c
+[106.967s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/is_paused__type_support.c
+[106.967s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/play_next__rosidl_typesupport_introspection_c.h
+[106.967s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/pause__rosidl_typesupport_introspection_c.h
+[106.968s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/get_rate__rosidl_typesupport_introspection_c.h
+[106.971s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/burst__type_support.c
+[106.971s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/set_rate__type_support.c
+[106.971s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/split_bagfile__rosidl_typesupport_introspection_c.h
+[106.971s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/seek__type_support.c
+[106.976s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/burst__rosidl_typesupport_introspection_c.h
+[106.977s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/is_discovery_running__rosidl_typesupport_introspection_c.h
+[106.982s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/librosbag2_interfaces__rosidl_typesupport_introspection_c.dylib
+[106.982s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/librosbag2_interfaces__rosidl_typesupport_c.dylib
+[106.983s] -- Up-to-date: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces
+[106.983s] -- Up-to-date: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg
+[106.983s] -- Up-to-date: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail
+[106.983s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/messages_lost_event__type_support.cpp
+[106.983s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/write_split_event__rosidl_typesupport_introspection_cpp.hpp
+[106.985s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/write_split_event__type_support.cpp
+[106.985s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/read_split_event__rosidl_typesupport_introspection_cpp.hpp
+[106.986s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/messages_lost_event__rosidl_typesupport_introspection_cpp.hpp
+[106.986s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/messages_lost_event_topic_stat__type_support.cpp
+[106.986s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/messages_lost_event_topic_stat__rosidl_typesupport_introspection_cpp.hpp
+[106.986s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/msg/detail/read_split_event__type_support.cpp
+[106.990s] -- Up-to-date: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv
+[106.990s] -- Up-to-date: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail
+[106.991s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/record__rosidl_typesupport_introspection_cpp.hpp
+[106.991s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/split_bagfile__type_support.cpp
+[106.991s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/stop__type_support.cpp
+[106.991s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/get_rate__type_support.cpp
+[106.991s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/is_discovery_running__rosidl_typesupport_introspection_cpp.hpp
+[106.992s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/play_next__type_support.cpp
+[106.992s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/set_rate__type_support.cpp
+[106.992s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/start_discovery__type_support.cpp
+[106.992s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/is_paused__rosidl_typesupport_introspection_cpp.hpp
+[106.993s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/play__type_support.cpp
+[106.993s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/snapshot__type_support.cpp
+[106.993s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/get_rate__rosidl_typesupport_introspection_cpp.hpp
+[106.993s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/play_next__rosidl_typesupport_introspection_cpp.hpp
+[106.993s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/seek__type_support.cpp
+[106.994s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/split_bagfile__rosidl_typesupport_introspection_cpp.hpp
+[106.994s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/set_rate__rosidl_typesupport_introspection_cpp.hpp
+[106.994s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/stop_discovery__rosidl_typesupport_introspection_cpp.hpp
+[106.994s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/pause__rosidl_typesupport_introspection_cpp.hpp
+[106.994s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/stop__rosidl_typesupport_introspection_cpp.hpp
+[106.994s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/resume__rosidl_typesupport_introspection_cpp.hpp
+[106.996s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/toggle_paused__rosidl_typesupport_introspection_cpp.hpp
+[106.996s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/start_discovery__rosidl_typesupport_introspection_cpp.hpp
+[106.996s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/play__rosidl_typesupport_introspection_cpp.hpp
+[107.002s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/resume__type_support.cpp
+[107.006s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/is_paused__type_support.cpp
+[107.006s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/pause__type_support.cpp
+[107.007s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/burst__rosidl_typesupport_introspection_cpp.hpp
+[107.008s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/stop_discovery__type_support.cpp
+[107.008s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/snapshot__rosidl_typesupport_introspection_cpp.hpp
+[107.008s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/record__type_support.cpp
+[107.009s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/toggle_paused__type_support.cpp
+[107.009s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/is_discovery_running__type_support.cpp
+[107.010s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/burst__type_support.cpp
+[107.013s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_interfaces/rosbag2_interfaces/srv/detail/seek__rosidl_typesupport_introspection_cpp.hpp
+[107.013s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/librosbag2_interfaces__rosidl_typesupport_introspection_cpp.dylib
+[107.014s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/librosbag2_interfaces__rosidl_typesupport_cpp.dylib
+[107.014s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/environment/pythonpath.sh
+[107.014s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/environment/pythonpath.dsv
+[107.015s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/rosbag2_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[107.015s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/rosbag2_interfaces_s__rosidl_typesupport_introspection_c.so
+[107.016s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/rosbag2_interfaces_s__rosidl_typesupport_c.so
+[107.016s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/librosbag2_interfaces__rosidl_generator_py.dylib
+[107.017s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/rust_packages/rosbag2_interfaces
+[107.018s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/rust
+[107.019s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/rust/Cargo.toml
+[107.019s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/rust/build.rs
+[107.019s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/rust/src
+[107.019s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/rust/src/msg
+[107.019s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/rust/src/msg/rmw.rs
+[107.019s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/rust/src/lib.rs
+[107.019s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/rust/src/srv.rs
+[107.019s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/rust/src/msg.rs
+[107.020s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/rust/src/srv
+[107.020s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/rust/src/srv/rmw.rs
+[107.020s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/msg/ReadSplitEvent.idl
+[107.020s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/msg/WriteSplitEvent.idl
+[107.020s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/msg/MessagesLostEventTopicStat.idl
+[107.020s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/msg/MessagesLostEvent.idl
+[107.021s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/Burst.idl
+[107.021s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/GetRate.idl
+[107.021s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/IsDiscoveryRunning.idl
+[107.021s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/IsPaused.idl
+[107.021s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/Pause.idl
+[107.022s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/Play.idl
+[107.022s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/PlayNext.idl
+[107.022s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/Record.idl
+[107.025s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/Resume.idl
+[107.027s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/Seek.idl
+[107.027s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/SetRate.idl
+[107.027s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/Snapshot.idl
+[107.027s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/SplitBagfile.idl
+[107.028s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/StartDiscovery.idl
+[107.028s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/Stop.idl
+[107.028s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/StopDiscovery.idl
+[107.028s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/TogglePaused.idl
+[107.028s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/msg/ReadSplitEvent.msg
+[107.028s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/msg/WriteSplitEvent.msg
+[107.028s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/msg/MessagesLostEventTopicStat.msg
+[107.028s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/msg/MessagesLostEvent.msg
+[107.028s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/Burst.srv
+[107.028s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/GetRate.srv
+[107.029s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/IsDiscoveryRunning.srv
+[107.029s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/IsPaused.srv
+[107.029s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/Pause.srv
+[107.029s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/Play.srv
+[107.035s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/PlayNext.srv
+[107.036s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/Record.srv
+[107.036s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/Resume.srv
+[107.037s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/Seek.srv
+[107.041s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/SetRate.srv
+[107.042s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/Snapshot.srv
+[107.045s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/SplitBagfile.srv
+[107.046s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/StartDiscovery.srv
+[107.047s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/Stop.srv
+[107.048s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/StopDiscovery.srv
+[107.049s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/srv/TogglePaused.srv
+[107.052s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/package_run_dependencies/rosbag2_interfaces
+[107.056s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/parent_prefix_path/rosbag2_interfaces
+[107.058s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/environment/ament_prefix_path.sh
+[107.059s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/environment/ament_prefix_path.dsv
+[107.060s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/environment/path.sh
+[107.063s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/environment/path.dsv
+[107.065s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/local_setup.bash
+[107.066s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/local_setup.fish
+[107.067s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/local_setup.sh
+[107.068s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/local_setup.zsh
+[107.069s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/local_setup.dsv
+[107.074s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/package.dsv
+[107.074s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/packages/rosbag2_interfaces
+[107.075s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/cmake/export_rosbag2_interfaces__rosidl_generator_cExport.cmake
+[107.075s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/cmake/export_rosbag2_interfaces__rosidl_generator_cExport-release.cmake
+[107.075s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/cmake/export_rosbag2_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[107.076s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/cmake/export_rosbag2_interfaces__rosidl_typesupport_fastrtps_cExport-release.cmake
+[107.077s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/cmake/export_rosbag2_interfaces__rosidl_generator_cppExport.cmake
+[107.078s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/cmake/export_rosbag2_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[107.079s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/cmake/export_rosbag2_interfaces__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[107.080s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/cmake/rosbag2_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[107.080s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/cmake/rosbag2_interfaces__rosidl_typesupport_introspection_cExport-release.cmake
+[107.082s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/cmake/rosbag2_interfaces__rosidl_typesupport_cExport.cmake
+[107.083s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/cmake/rosbag2_interfaces__rosidl_typesupport_cExport-release.cmake
+[107.085s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/cmake/rosbag2_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[107.085s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/cmake/rosbag2_interfaces__rosidl_typesupport_introspection_cppExport-release.cmake
+[107.087s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/cmake/rosbag2_interfaces__rosidl_typesupport_cppExport.cmake
+[107.087s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/cmake/rosbag2_interfaces__rosidl_typesupport_cppExport-release.cmake
+[107.088s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/cmake/export_rosbag2_interfaces__rosidl_generator_pyExport.cmake
+[107.091s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/cmake/export_rosbag2_interfaces__rosidl_generator_pyExport-release.cmake
+[107.093s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces-0.33.0-py3.12.egg-info
+[107.093s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces-0.33.0-py3.12.egg-info/PKG-INFO
+[107.101s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces-0.33.0-py3.12.egg-info/SOURCES.txt
+[107.101s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces-0.33.0-py3.12.egg-info/top_level.txt
+[107.101s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces-0.33.0-py3.12.egg-info/dependency_links.txt
+[107.101s] -- Up-to-date: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces
+[107.101s] -- Up-to-date: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/rosbag2_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[107.101s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/msg
+[107.101s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/msg/_messages_lost_event_topic_stat.py
+[107.101s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/msg/_messages_lost_event_s.c
+[107.101s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/msg/_write_split_event.py
+[107.101s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/msg/__init__.py
+[107.105s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/msg/_read_split_event_s.c
+[107.107s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/msg/_read_split_event.py
+[107.108s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/msg/_messages_lost_event_topic_stat_s.c
+[107.108s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/msg/_write_split_event_s.c
+[107.109s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/msg/_messages_lost_event.py
+[107.110s] -- Up-to-date: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/rosbag2_interfaces_s__rosidl_typesupport_c.so
+[107.110s] -- Up-to-date: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/rosbag2_interfaces_s__rosidl_typesupport_introspection_c.so
+[107.110s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/_rosbag2_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[107.111s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/__init__.py
+[107.111s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/_rosbag2_interfaces_s.ep.rosidl_typesupport_c.c
+[107.111s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/py.typed
+[107.113s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv
+[107.113s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_split_bagfile.py
+[107.115s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_play_next_s.c
+[107.116s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_seek.py
+[107.116s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_record_s.c
+[107.116s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_snapshot_s.c
+[107.118s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_seek_s.c
+[107.118s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_play_next.py
+[107.120s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_split_bagfile_s.c
+[107.120s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_start_discovery.py
+[107.121s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_stop_s.c
+[107.121s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_record.py
+[107.121s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_resume_s.c
+[107.122s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_is_discovery_running.py
+[107.122s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_pause_s.c
+[107.122s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/__init__.py
+[107.123s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_is_discovery_running_s.c
+[107.124s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_set_rate_s.c
+[107.124s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_is_paused_s.c
+[107.124s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_stop_discovery.py
+[107.125s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_start_discovery_s.c
+[107.125s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_burst_s.c
+[107.125s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_play.py
+[107.126s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_set_rate.py
+[107.126s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_play_s.c
+[107.126s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_stop.py
+[107.127s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_pause.py
+[107.128s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_snapshot.py
+[107.128s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_toggle_paused.py
+[107.129s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_resume.py
+[107.131s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_is_paused.py
+[107.132s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_toggle_paused_s.c
+[107.132s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_burst.py
+[107.136s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_get_rate_s.c
+[107.136s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_stop_discovery_s.c
+[107.137s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_get_rate.py
+[107.137s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/_rosbag2_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[107.266s] Listing '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces'...
+[107.266s] Compiling '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/__init__.py'...
+[107.267s] Listing '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/msg'...
+[107.267s] Compiling '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/msg/__init__.py'...
+[107.267s] Compiling '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/msg/_messages_lost_event.py'...
+[107.267s] Compiling '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/msg/_messages_lost_event_topic_stat.py'...
+[107.267s] Compiling '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/msg/_read_split_event.py'...
+[107.267s] Compiling '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/msg/_write_split_event.py'...
+[107.267s] Listing '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv'...
+[107.267s] Compiling '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/__init__.py'...
+[107.268s] Compiling '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_burst.py'...
+[107.268s] Compiling '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_get_rate.py'...
+[107.268s] Compiling '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_is_discovery_running.py'...
+[107.268s] Compiling '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_is_paused.py'...
+[107.268s] Compiling '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_pause.py'...
+[107.268s] Compiling '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_play.py'...
+[107.269s] Compiling '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_play_next.py'...
+[107.269s] Compiling '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_record.py'...
+[107.269s] Compiling '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_resume.py'...
+[107.269s] Compiling '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_seek.py'...
+[107.269s] Compiling '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_set_rate.py'...
+[107.269s] Compiling '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_snapshot.py'...
+[107.270s] Compiling '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_split_bagfile.py'...
+[107.270s] Compiling '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_start_discovery.py'...
+[107.270s] Compiling '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_stop.py'...
+[107.271s] Compiling '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_stop_discovery.py'...
+[107.271s] Compiling '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rosbag2_interfaces/srv/_toggle_paused.py'...
+[107.275s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/cmake/rosidl_cmake-extras.cmake
+[107.276s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[107.276s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[107.276s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[107.276s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[107.277s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[107.277s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[107.278s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[107.279s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/cmake/rosbag2_interfacesConfig.cmake
+[107.280s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/cmake/rosbag2_interfacesConfig-version.cmake
+[107.280s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/package.xml
+[107.290s] Invoked command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_interfaces' returned '0': AMENT_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/mimick_vendor/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=114 ROS_PYTHON_VERSION=3 SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_interfaces

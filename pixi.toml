@@ -75,7 +75,7 @@ Qt6_DIR                   = "$CONDA_PREFIX/lib/cmake/Qt6"
 [tasks]
 graph = "colcon graph"
 list  = "colcon list"
-patch = { cmd = "python patches/patch_ogre.py && python patches/patch_gazebo.py && python patches/patch_rcl.py && python patches/patch_class_loader.py && python patches/patch_qt.py && python patches/patch_rqt.py", depends-on = ["fetch"] }
+patch = { cmd = "python patches/patch_ogre.py && python patches/patch_gazebo.py && python patches/patch_rcl.py && python patches/patch_class_loader.py && python patches/patch_qt.py && python patches/patch_rqt.py && python patches/patch_cyclonedds.py", depends-on = ["fetch"] }
 build = { cmd = "colcon build", depends-on = ["patch"] }
 test  = "colcon test"
 fetch = "mkdir -p src && vcs import --recursive src < ros2.repos"

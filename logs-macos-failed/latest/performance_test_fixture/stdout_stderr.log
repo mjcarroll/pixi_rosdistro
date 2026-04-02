@@ -1,0 +1,96 @@
+Not searching for unused variables given on the command line.
+-- The CXX compiler identification is AppleClang 17.0.0.17000013
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake_core: 2.8.6 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_core/cmake)
+-- Found Python3: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/python3 (found version "3.12.13") found components: Interpreter
+-- Found ament_cmake_export_dependencies: 2.8.6 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_export_dependencies/cmake)
+-- Found ament_cmake_export_targets: 2.8.6 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_export_targets/cmake)
+-- Found ament_cmake_test: 2.8.6 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_test/cmake)
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Found ament_lint_auto: 0.20.3 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_lint_auto/cmake)
+-- Performance tests are disabled by default, so Google Benchmark tests will be skipped. To enable these tests, set the CMake variable 'AMENT_RUN_PERFORMANCE_TESTS'.
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/performance_test_fixture/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (2.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/performance_test_fixture
+[1/8] Building CXX object CMakeFiles/performance_test_fixture.dir/src/performance_test_fixture.cpp.o
+[2/8] Linking CXX shared library libperformance_test_fixture.dylib
+[3/8] Building CXX object CMakeFiles/benchmark_malloc_realloc.dir/test/benchmark/benchmark_malloc_realloc.cpp.o
+/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/performance_test_fixture/test/benchmark/benchmark_malloc_realloc.cpp:123:45: warning: 'Benchmark' is deprecated: Use ::benchmark::Benchmark instead [-Wdeprecated-declarations]
+  123 | static void alloc_args(benchmark::internal::Benchmark * b)
+      |                                             ^
+/Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/benchmark/benchmark.h:1385:9: note: 'Benchmark' has been explicitly marked deprecated here
+ 1385 | typedef BENCHMARK_DEPRECATED_MSG("Use ::benchmark::Benchmark instead")
+      |         ^
+/Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/benchmark/benchmark.h:229:54: note: expanded from macro 'BENCHMARK_DEPRECATED_MSG'
+  229 | #define BENCHMARK_DEPRECATED_MSG(msg) __attribute__((deprecated(msg)))
+      |                                                      ^
+/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/performance_test_fixture/test/benchmark/benchmark_malloc_realloc.cpp:140:47: warning: 'Benchmark' is deprecated: Use ::benchmark::Benchmark instead [-Wdeprecated-declarations]
+  140 | static void realloc_args(benchmark::internal::Benchmark * b)
+      |                                               ^
+/Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/benchmark/benchmark.h:1385:9: note: 'Benchmark' has been explicitly marked deprecated here
+ 1385 | typedef BENCHMARK_DEPRECATED_MSG("Use ::benchmark::Benchmark instead")
+      |         ^
+/Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/benchmark/benchmark.h:229:54: note: expanded from macro 'BENCHMARK_DEPRECATED_MSG'
+  229 | #define BENCHMARK_DEPRECATED_MSG(msg) __attribute__((deprecated(msg)))
+      |                                                      ^
+2 warnings generated.
+[4/8] Building CXX object CMakeFiles/benchmark_malloc_realloc_no_memory_tools.dir/test/benchmark/benchmark_malloc_realloc_no_memory_tools.cpp.o
+/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/performance_test_fixture/test/benchmark/benchmark_malloc_realloc_no_memory_tools.cpp:92:47: warning: 'Benchmark' is deprecated: Use ::benchmark::Benchmark instead [-Wdeprecated-declarations]
+   92 | static void realloc_args(benchmark::internal::Benchmark * b)
+      |                                               ^
+/Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/benchmark/benchmark.h:1385:9: note: 'Benchmark' has been explicitly marked deprecated here
+ 1385 | typedef BENCHMARK_DEPRECATED_MSG("Use ::benchmark::Benchmark instead")
+      |         ^
+/Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/benchmark/benchmark.h:229:54: note: expanded from macro 'BENCHMARK_DEPRECATED_MSG'
+  229 | #define BENCHMARK_DEPRECATED_MSG(msg) __attribute__((deprecated(msg)))
+      |                                                      ^
+1 warning generated.
+[5/8] Building CXX object CMakeFiles/benchmark_pause_resume.dir/test/benchmark/benchmark_pause_resume.cpp.o
+[6/8] Linking CXX executable benchmark_malloc_realloc
+[7/8] Linking CXX executable benchmark_malloc_realloc_no_memory_tools
+[8/8] Linking CXX executable benchmark_pause_resume
+-- Install configuration: "Release"
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libperformance_test_fixture.dylib
+-- Up-to-date: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/performance_test_fixture
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/performance_test_fixture/visibility_control.hpp
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/performance_test_fixture/performance_test_fixture.hpp
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/cmake
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/cmake/add_performance_test.cmake
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/package_run_dependencies/performance_test_fixture
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/parent_prefix_path/performance_test_fixture
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/environment/ament_prefix_path.sh
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/environment/ament_prefix_path.dsv
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/environment/path.sh
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/environment/path.dsv
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/local_setup.bash
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/local_setup.fish
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/local_setup.sh
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/local_setup.zsh
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/local_setup.dsv
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/package.dsv
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/packages/performance_test_fixture
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/cmake/performance_test_fixtureExport.cmake
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/cmake/performance_test_fixtureExport-release.cmake
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/cmake/performance_test_fixture-extras.cmake
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/cmake/performance_test_fixtureConfig.cmake
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/cmake/performance_test_fixtureConfig-version.cmake
+-- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/package.xml
