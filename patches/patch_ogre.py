@@ -30,16 +30,18 @@ def patch_file(path):
         content = content.replace('project(rviz_ogre_vendor)', 'project(rviz_ogre_vendor)\n\nset(CMAKE_POLICY_VERSION_MINIMUM 3.5)')
         print(f"Added CMAKE_POLICY_VERSION_MINIMUM to {path}")
 
-    # 2. Fix macOS sysroot issue
+    # 2. Fix macOS sysroot and architectures quoting
     # We'll use a more robust way to find the SDK path on macOS
+    # And ensure architectures are quoted properly
     apple_block = """if(APPLE)
   list(APPEND OGRE_CMAKE_ARGS -DOGRE_ENABLE_PRECOMPILED_HEADERS:BOOL=OFF)
   list(APPEND OGRE_CMAKE_ARGS -DCMAKE_OSX_ARCHITECTURES=arm64;x86_64)
+  list(APPEND OGRE_CMAKE_ARGS -DCMAKE_OSX_SYSROOT="")
 endif()"""
 
     new_apple_block = """if(APPLE)
   list(APPEND OGRE_CMAKE_ARGS -DOGRE_ENABLE_PRECOMPILED_HEADERS:BOOL=OFF)
-  list(APPEND OGRE_CMAKE_ARGS -DCMAKE_OSX_ARCHITECTURES=arm64;x86_64)
+  list(APPEND OGRE_CMAKE_ARGS "-DCMAKE_OSX_ARCHITECTURES=arm64;x86_64")
   # Find actual SDK path to avoid "macosx" broken default
   execute_process(COMMAND xcrun --show-sdk-path OUTPUT_VARIABLE SDK_PATH OUTPUT_STRIP_TRAILING_WHITESPACE)
   list(APPEND OGRE_CMAKE_ARGS "-DCMAKE_OSX_SYSROOT=${SDK_PATH}")
@@ -47,7 +49,16 @@ endif()"""
 
     if apple_block in content:
         content = content.replace(apple_block, new_apple_block)
-        print(f"Fixed macOS sysroot in {path}")
+        print(f"Fixed macOS sysroot and architecture quoting in {path}")
+    else:
+        # Try a different block if previous patches were applied
+        fallback_apple = """if(APPLE)
+  list(APPEND OGRE_CMAKE_ARGS -DOGRE_ENABLE_PRECOMPILED_HEADERS:BOOL=OFF)
+  list(APPEND OGRE_CMAKE_ARGS -DCMAKE_OSX_ARCHITECTURES=arm64;x86_64)
+endif()"""
+        if fallback_apple in content:
+             content = content.replace(fallback_apple, new_apple_block)
+             print(f"Fixed macOS sysroot (fallback) in {path}")
 
     with open(path, 'wb') as f:
         f.write(content.encode('utf-8').replace(b'\r\n', b'\n'))

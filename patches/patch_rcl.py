@@ -2,13 +2,8 @@ import os
 import re
 import sys
 
-def patch_rcl_yaml_param_parser(file_path):
-    if not os.path.exists(file_path):
-        print(f"File not found: {file_path}")
-        return False
-
-    # Reset first
-    pkg_dir = file_path
+def git_reset(path):
+    pkg_dir = os.path.dirname(path)
     while pkg_dir and not os.path.exists(os.path.join(pkg_dir, '.git')):
         next_dir = os.path.dirname(pkg_dir)
         if next_dir == pkg_dir:
@@ -16,8 +11,15 @@ def patch_rcl_yaml_param_parser(file_path):
             break
         pkg_dir = next_dir
     if pkg_dir:
-        rel_path = os.path.relpath(file_path, pkg_dir)
-        os.system(f"cd {pkg_dir} && git checkout {rel_path}")
+        rel_path = os.path.relpath(path, pkg_dir)
+        os.system(f"cd {pkg_dir} && git checkout -- {rel_path} 2>/dev/null")
+
+def patch_rcl_yaml_param_parser(file_path):
+    if not os.path.exists(file_path):
+        print(f"File not found: {file_path}")
+        return False
+
+    git_reset(file_path)
 
     with open(file_path, 'r', encoding='utf-8') as f:
         content = f.read()
@@ -62,7 +64,6 @@ static void init_c_locale()
         print(f"Patched init block in {file_path}")
 
     # 3. Call site in strtod_locale_independent
-    # We'll use a very specific string to avoid matching the wrong place
     old_call = """#else
   call_once(&c_locale_once_flag, init_c_locale);
 
