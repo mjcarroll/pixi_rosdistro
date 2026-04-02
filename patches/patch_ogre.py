@@ -31,13 +31,29 @@ def patch_file(path):
         print(f"Added CMAKE_POLICY_VERSION_MINIMUM to {path}")
 
     # 2. Fix macOS sysroot issue
-    # We want to force CMAKE_OSX_SYSROOT to empty to avoid "macosx" being used.
-    if 'DCMAKE_OSX_SYSROOT=""' not in content:
+    # Force CMAKE_OSX_SYSROOT to empty to avoid "macosx" being used.
+    # We'll replace the whole APPLE block to be sure
+    apple_block = """if(APPLE)
+  list(APPEND OGRE_CMAKE_ARGS -DOGRE_ENABLE_PRECOMPILED_HEADERS:BOOL=OFF)
+  list(APPEND OGRE_CMAKE_ARGS -DCMAKE_OSX_ARCHITECTURES=arm64;x86_64)
+endif()"""
+
+    new_apple_block = """if(APPLE)
+  list(APPEND OGRE_CMAKE_ARGS -DOGRE_ENABLE_PRECOMPILED_HEADERS:BOOL=OFF)
+  list(APPEND OGRE_CMAKE_ARGS -DCMAKE_OSX_ARCHITECTURES=arm64;x86_64)
+  list(APPEND OGRE_CMAKE_ARGS -DCMAKE_OSX_SYSROOT="")
+endif()"""
+
+    if apple_block in content:
+        content = content.replace(apple_block, new_apple_block)
+        print(f"Fixed macOS sysroot in {path}")
+    elif 'DCMAKE_OSX_SYSROOT=""' not in content:
+        # Fallback
         content = content.replace(
             'list(APPEND OGRE_CMAKE_ARGS -DCMAKE_OSX_ARCHITECTURES=arm64;x86_64)',
             'list(APPEND OGRE_CMAKE_ARGS -DCMAKE_OSX_ARCHITECTURES=arm64;x86_64)\n  list(APPEND OGRE_CMAKE_ARGS -DCMAKE_OSX_SYSROOT="")'
         )
-        print(f"Fixed macOS sysroot in {path}")
+        print(f"Fixed macOS sysroot (fallback) in {path}")
 
     with open(path, 'wb') as f:
         f.write(content.encode('utf-8').replace(b'\r\n', b'\n'))

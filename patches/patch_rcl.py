@@ -1,4 +1,5 @@
 import os
+import re
 import sys
 
 def patch_rcl_yaml_param_parser(file_path):
@@ -6,17 +7,29 @@ def patch_rcl_yaml_param_parser(file_path):
         print(f"File not found: {file_path}")
         return False
 
+    # Reset first
+    pkg_dir = file_path
+    while pkg_dir and not os.path.exists(os.path.join(pkg_dir, '.git')):
+        next_dir = os.path.dirname(pkg_dir)
+        if next_dir == pkg_dir:
+            pkg_dir = None
+            break
+        pkg_dir = next_dir
+    if pkg_dir:
+        rel_path = os.path.relpath(file_path, pkg_dir)
+        os.system(f"cd {pkg_dir} && git checkout {rel_path}")
+
     with open(file_path, 'r', encoding='utf-8') as f:
         content = f.read()
 
-    # 1. Update include block
+    # 1. Include block
     old_include = '#ifdef _WIN32\n#include <windows.h>\n#else\n#include <threads.h>\n#endif'
     new_include = '#ifdef _WIN32\n#include <windows.h>\n#elif defined(__APPLE__)\n#include <pthread.h>\n#else\n#include <threads.h>\n#endif'
     if old_include in content:
         content = content.replace(old_include, new_include)
         print(f"Patched include in {file_path}")
 
-    # 2. Update locale init block
+    # 2. Locale init block
     old_init = """#else
 static locale_t c_locale = 0;
 static once_flag c_locale_once_flag = ONCE_FLAG_INIT;
@@ -48,9 +61,9 @@ static void init_c_locale()
         content = content.replace(old_init, new_init)
         print(f"Patched init block in {file_path}")
 
-    # 3. Update call site in strtod_locale_independent
-    # We find the specific body of the function
-    old_body = """#else
+    # 3. Call site in strtod_locale_independent
+    # We'll use a very specific string to avoid matching the wrong place
+    old_call = """#else
   call_once(&c_locale_once_flag, init_c_locale);
 
   if (0 == c_locale) {
@@ -66,7 +79,7 @@ static void init_c_locale()
   return result;
 #endif"""
 
-    new_body = """#elif defined(__APPLE__)
+    new_call = """#elif defined(__APPLE__)
   pthread_once(&c_locale_once_flag, init_c_locale);
 
   if (0 == c_locale) {
@@ -96,9 +109,9 @@ static void init_c_locale()
   return result;
 #endif"""
 
-    if old_body in content:
-        content = content.replace(old_body, new_body)
-        print(f"Patched call body in {file_path}")
+    if old_call in content:
+        content = content.replace(old_call, new_call)
+        print(f"Patched call block in {file_path}")
 
     with open(file_path, 'wb') as f:
         f.write(content.encode('utf-8').replace(b'\r\n', b'\n'))
@@ -108,8 +121,6 @@ static void init_c_locale()
 if __name__ == "__main__":
     target = 'src/ros2/rcl/rcl_yaml_param_parser/src/parse.c'
     if os.path.exists(target):
-        # Always start from clean state
-        os.system(f"git checkout {target}")
         patch_rcl_yaml_param_parser(target)
     else:
         print(f"Target not found: {target}")
