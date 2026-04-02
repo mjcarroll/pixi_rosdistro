@@ -53,7 +53,6 @@ def patch_gz_vendor(package_path):
         export_dep = f"\nament_export_dependencies({versioned_name} {unversioned_name})\n"
         content = content.replace("ament_package()", export_dep + "ament_package()")
     elif versioned_name not in content:
-        # Match the macro even if it has complex content
         pattern = r"(ament_export_dependencies\()(.+?)(\))"
         replacement = rf"\1\2 {versioned_name} {unversioned_name}\3"
         content = re.sub(pattern, replacement, content, flags=re.DOTALL)
@@ -62,7 +61,6 @@ def patch_gz_vendor(package_path):
     extras_file = f"{pkg_name}-extras.cmake.in"
     if "CONFIG_EXTRAS" in content:
         if extras_file not in content:
-            # Append to existing extras
             content = content.replace("CONFIG_EXTRAS", f"CONFIG_EXTRAS \"{extras_file}\"")
     else:
         content = content.replace("ament_package()", f"ament_package(\n  CONFIG_EXTRAS \"{extras_file}\"\n)")
@@ -116,6 +114,7 @@ macro(create_relay_file _name _target_dir)
       "set(${{_name}}_DIR \\"${{_cmake_target_dir}}\\")\\n"
       "find_package(${{_name}} REQUIRED NO_DEFAULT_PATH)\\n"
       "if(${{_name}}_FOUND)\\n"
+      "  # Create aliases to bridge between unversioned and versioned targets\\n"
       "  if(NOT TARGET ${{_name}}::core AND TARGET {versioned_name}::{versioned_name})\\n"
       "    add_library(${{_name}}::core ALIAS {versioned_name}::{versioned_name})\\n"
       "  endif()\\n"
@@ -131,14 +130,12 @@ macro(create_relay_file _name _target_dir)
       "  if(TARGET {versioned_name}::eigen3 AND NOT TARGET ${{_name}}::eigen3)\\n"
       "    add_library(${{_name}}::eigen3 ALIAS {versioned_name}::eigen3)\\n"
       "  endif()\\n"
-      "  if(NOT TARGET {pkg_basename}::core AND TARGET {pkg_basename}::{pkg_basename})\\n"
-      "    add_library({pkg_basename}::core ALIAS {pkg_basename}::{pkg_basename})\\n"
-      "  endif()\\n"
       "endif()\\n"
     )
   endif()
 endmacro()
 
+# Only create relay for the unversioned name to avoid loops
 set(_gz_config_dirs
   "${{@PROJECT_NAME@_PREFIX}}/lib/cmake/{pkg_basename}"
   "${{@PROJECT_NAME@_PREFIX}}/share/cmake/{pkg_basename}"
@@ -148,12 +145,12 @@ set(_gz_config_dirs
 
 foreach(_dir IN LISTS _gz_config_dirs)
   if(EXISTS "${{_dir}}")
-    create_relay_file("{versioned_name}" "${{_dir}}")
     create_relay_file("{unversioned_name}" "${{_dir}}")
     break()
   endif()
 endforeach()
 
+# Fallback aliasing
 if(NOT {versioned_name}_FOUND)
     find_package({unversioned_name} QUIET)
     if({unversioned_name}_FOUND)

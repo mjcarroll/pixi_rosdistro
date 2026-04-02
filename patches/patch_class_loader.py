@@ -26,6 +26,7 @@ def patch_file(file_path):
     with open(file_path, 'r', encoding='utf-8') as f:
         content = f.read()
 
+    # 1. Fix the library path comparison logic
     old_code = """    for (auto& it : classes_available_map) {
       if (it.second == library_path) {
         classes.push_back(it.first);
@@ -45,13 +46,20 @@ def patch_file(file_path):
 
     if old_code in content:
         content = content.replace(old_code, new_code)
-        with open(file_path, 'wb') as f:
-            f.write(content.encode('utf-8').replace(b'\r\n', b'\n'))
-        print(f"Patched {file_path}")
-        return True
+
+    # 2. Fix the const-correctness issue causing macOS failure
+    # Error: cannot initialize a variable of type 'ClassLoader *' with an rvalue of type 'const ClassLoader *'
+    old_loader = "ClassLoader * loader = getClassLoaderForLibrary(library_path);"
+    new_loader = "const ClassLoader * loader = getClassLoaderForLibrary(library_path);"
     
-    print(f"Already patched or code not found in {file_path}")
-    return False
+    if old_loader in content:
+        content = content.replace(old_loader, new_loader)
+        print(f"Fixed const-correctness in {file_path}")
+
+    with open(file_path, 'wb') as f:
+        f.write(content.encode('utf-8').replace(b'\r\n', b'\n'))
+    print(f"Patched {file_path}")
+    return True
 
 if __name__ == "__main__":
     target = 'src/ros/class_loader/include/class_loader/multi_library_class_loader.hpp'
