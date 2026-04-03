@@ -29,12 +29,12 @@ Not searching for unused variables given on the command line.
 -- Added test 'uncrustify' to check C / C++ code style
 -- Configured uncrustify additional arguments: 
 -- Added test 'xmllint' to check XML markup files
--- Configuring done (1.3s)
+-- Configuring done (1.5s)
 -- Generating done (0.0s)
 -- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/performance_test_fixture
-[1/8] Building CXX object CMakeFiles/performance_test_fixture.dir/Unity/unity_0_cxx.cxx.o
+[1/8] Building CXX object CMakeFiles/performance_test_fixture.dir/src/performance_test_fixture.cpp.o
 [2/8] Linking CXX shared library libperformance_test_fixture.so
-[3/8] Building CXX object CMakeFiles/benchmark_malloc_realloc.dir/Unity/unity_0_cxx.cxx.o
+[3/8] Building CXX object CMakeFiles/benchmark_malloc_realloc.dir/test/benchmark/benchmark_malloc_realloc.cpp.o
 /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/performance_test_fixture/test/benchmark/benchmark_malloc_realloc.cpp:123:58: warning: 'benchmark::internal::Benchmark' is deprecated: Use ::benchmark::Benchmark instead [-Wdeprecated-declarations]
   123 | static void alloc_args(benchmark::internal::Benchmark * b)
       |                                                          ^
@@ -49,7 +49,7 @@ In file included from /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/p
 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/benchmark/benchmark.h:1386:28: note: declared here
  1386 |     ::benchmark::Benchmark Benchmark;
       |                            ^~~~~~~~~
-[4/8] Building CXX object CMakeFiles/benchmark_malloc_realloc_no_memory_tools.dir/Unity/unity_0_cxx.cxx.o
+[4/8] Building CXX object CMakeFiles/benchmark_malloc_realloc_no_memory_tools.dir/test/benchmark/benchmark_malloc_realloc_no_memory_tools.cpp.o
 /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/performance_test_fixture/test/benchmark/benchmark_malloc_realloc_no_memory_tools.cpp:92:60: warning: 'benchmark::internal::Benchmark' is deprecated: Use ::benchmark::Benchmark instead [-Wdeprecated-declarations]
    92 | static void realloc_args(benchmark::internal::Benchmark * b)
       |                                                            ^
@@ -57,7 +57,7 @@ In file included from /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/p
 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/benchmark/benchmark.h:1386:28: note: declared here
  1386 |     ::benchmark::Benchmark Benchmark;
       |                            ^~~~~~~~~
-[5/8] Building CXX object CMakeFiles/benchmark_pause_resume.dir/Unity/unity_0_cxx.cxx.o
+[5/8] Building CXX object CMakeFiles/benchmark_pause_resume.dir/test/benchmark/benchmark_pause_resume.cpp.o
 [6/8] Linking CXX executable benchmark_malloc_realloc
 [7/8] Linking CXX executable benchmark_malloc_realloc_no_memory_tools
 [8/8] Linking CXX executable benchmark_pause_resume
