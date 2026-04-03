@@ -1,7 +1,6 @@
-import sys
 import os
-import re
 import subprocess
+import sys
 
 def git_reset(path):
     pkg_dir = os.path.dirname(path)
@@ -16,75 +15,37 @@ def git_reset(path):
         rel_path = os.path.relpath(path, pkg_dir)
         subprocess.run(["git", "checkout", "--", rel_path], cwd=pkg_dir, capture_output=True)
 
-def get_sdk_path():
+def patch_ogre_vendor(cmakelists_path):
+    if not os.path.exists(cmakelists_path):
+        return
+
+    git_reset(cmakelists_path)
+
+    # Resolve SDK path on macOS
+    sdk_path = "macosx" # default fallback
     try:
-        result = subprocess.run(["xcrun", "--show-sdk-path"], capture_output=True, text=True, check=True)
-        return result.stdout.strip()
-    except Exception:
-        return ""
+        result = subprocess.run(["xcrun", "--show-sdk-path"], capture_output=True, text=True)
+        if result.returncode == 0:
+            sdk_path = result.stdout.strip()
+            print(f"Resolved macOS SDK path: {sdk_path}")
+    except Exception as e:
+        print(f"Failed to run xcrun: {e}")
 
-def patch_file(path):
-    if not os.path.exists(path):
-        print(f"File not found: {path}")
-        return False
-    
-    git_reset(path)
-
-    with open(path, 'r', encoding='utf-8', newline='') as f:
+    with open(cmakelists_path, "r") as f:
         content = f.read()
+
+    # Force the sysroot if on macOS (or just always if we resolved it)
+    if sdk_path and sdk_path != "macosx":
+        patch_logic = f'\nif(APPLE)\n  set(CMAKE_OSX_SYSROOT "{sdk_path}" CACHE PATH "" FORCE)\nendif()\n'
+        if "CMAKE_OSX_SYSROOT" not in content:
+            content = content.replace("project(rviz_ogre_vendor)", "project(rviz_ogre_vendor)" + patch_logic)
+
+    with open(cmakelists_path, "w") as f:
+        f.write(content)
     
-    # 1. Minimum policy
-    if 'set(CMAKE_POLICY_VERSION_MINIMUM 3.5)' not in content:
-        content = content.replace('project(rviz_ogre_vendor)', 'project(rviz_ogre_vendor)\n\nset(CMAKE_POLICY_VERSION_MINIMUM 3.5)')
-
-    # 2. Fix macOS sysroot aggressively
-    sdk_path = get_sdk_path()
-    if not sdk_path:
-        # Fallback to a common path if xcrun fails
-        sdk_path = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk"
-
-    # Define the new block with the correct SDK path and quoted architectures
-    new_apple_block = f"""if(APPLE)
-  list(APPEND OGRE_CMAKE_ARGS -DOGRE_ENABLE_PRECOMPILED_HEADERS:BOOL=OFF)
-  list(APPEND OGRE_CMAKE_ARGS "-DCMAKE_OSX_ARCHITECTURES=arm64;x86_64")
-  list(APPEND OGRE_CMAKE_ARGS "-DCMAKE_OSX_SYSROOT={sdk_path}")
-endif()"""
-
-    # Replace variations of the apple block
-    pattern = r"if\(APPLE\).*?endif\(\)"
-    content = re.sub(pattern, new_apple_block, content, flags=re.DOTALL)
-    
-    # Also ensure we don't have -isysroot macosx anywhere
-    content = content.replace("-isysroot macosx", f"-isysroot {sdk_path}")
-
-    with open(path, 'wb') as f:
-        f.write(content.encode('utf-8').replace(b'\r\n', b'\n'))
-    print(f"Patched {path} for macOS with SDK: {sdk_path}")
-    return True
-
-def patch_extras(path):
-    if not os.path.exists(path):
-        return False
-    git_reset(path)
-    with open(path, 'r', encoding='utf-8', newline='') as f:
-        content = f.read()
-    conda_fix = """
-# Add Conda prefix to search paths for dependencies
-if(NOT "$ENV{CONDA_PREFIX}" STREQUAL "")
-  list(APPEND CMAKE_PREFIX_PATH "$ENV{CONDA_PREFIX}")
-endif()
-"""
-    if 'CONDA_PREFIX' not in content:
-        content = conda_fix + content
-    with open(path, 'wb') as f:
-        f.write(content.encode('utf-8').replace(b'\r\n', b'\n'))
-    return True
+    print(f"Patched {cmakelists_path}")
 
 if __name__ == "__main__":
-    target_cmake = 'src/ros2/rviz/rviz_ogre_vendor/CMakeLists.txt'
-    target_extras = 'src/ros2/rviz/rviz_ogre_vendor/rviz_ogre_vendor-extras.cmake.in'
-    p1 = patch_file(target_cmake)
-    p2 = patch_extras(target_extras)
-    if p1 or p2:
-        print("Successfully patched rviz_ogre_vendor")
-    sys.exit(0)
+    target = "src/ros2/rviz/rviz_ogre_vendor/CMakeLists.txt"
+    if os.path.exists(target):
+        patch_ogre_vendor(target)
