@@ -1,388 +1,388 @@
-[1.597s] Invoking command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rcl': AMENT_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/mimick_vendor/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_PYTHON_VERSION=3 SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install
-[1.922s] Not searching for unused variables given on the command line.
-[1.922s] -- The C compiler identification is AppleClang 17.0.0.17000013
-[2.124s] -- The CXX compiler identification is AppleClang 17.0.0.17000013
-[2.165s] -- Detecting C compiler ABI info
-[2.556s] -- Detecting C compiler ABI info - done
-[2.595s] -- Check for working C compiler: /usr/bin/cc - skipped
-[2.595s] -- Detecting C compile features
-[2.595s] -- Detecting C compile features - done
-[2.600s] -- Detecting CXX compiler ABI info
-[2.949s] -- Detecting CXX compiler ABI info - done
-[2.985s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
-[2.985s] -- Detecting CXX compile features
-[2.986s] -- Detecting CXX compile features - done
-[2.994s] -- Found ament_cmake_ros: 0.15.6 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_ros/cmake)
-[3.377s] -- Found libyaml_vendor: 1.8.0 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/libyaml_vendor/cmake)
-[3.385s] -- Found rcl_interfaces: 2.4.3 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_interfaces/cmake)
-[3.458s] -- Found rosidl_generator_c: 5.1.3 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_c/cmake)
-[3.485s] -- Found rosidl_generator_cpp: 5.1.3 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_cpp/cmake)
-[3.527s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
-[3.568s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
-[3.680s] -- Found rcl_logging_interface: 3.4.1 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_logging_interface/cmake)
-[3.690s] -- Found rcl_yaml_param_parser: 10.4.1 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_yaml_param_parser/cmake)
-[3.703s] -- Found rmw_implementation: 3.1.4 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation/cmake)
-[3.711s] -- Found rmw_implementation_cmake: 7.9.1 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation_cmake/cmake)
-[3.719s] -- Found rmw_fastrtps_cpp: 9.4.5 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_fastrtps_cpp/cmake)
-[3.791s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
-[3.819s] -- Found tracetools: 8.10.1 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tracetools/cmake)
-[3.878s] -- Found type_description_interfaces: 2.4.3 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/type_description_interfaces/cmake)
-[4.012s] -- Checking for module 'yaml-0.1'
-[4.058s] --   Found yaml-0.1, version 0.2.5
-[4.193s] -- Found yaml: 1
-[4.196s] -- Building rcl with dynamic logging implementation support
-[4.215s] -- Found rcl_logging_implementation: 3.4.1 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_logging_implementation/cmake)
-[4.232s] -- RCL_LOGGING_IMPLEMENTATION: rcl_logging_implementation
-[4.395s] -- Found ament_lint_auto: 0.20.3 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_lint_auto/cmake)
-[4.846s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
-[4.851s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
-[5.312s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
-[5.312s] -- Found Threads: TRUE
-[5.448s] -- Creating tests for 'rmw_cyclonedds_cpp'
-[5.454s] -- Enabling message timestamp test for rmw_cyclonedds_cpp
-[5.459s] -- Creating tests for 'rmw_fastrtps_cpp'
-[5.474s] -- Enabling message timestamp test for rmw_fastrtps_cpp
-[5.495s] -- Creating tests for 'rmw_fastrtps_dynamic_cpp'
-[5.501s] -- Enabling message timestamp test for rmw_fastrtps_dynamic_cpp
-[5.520s] -- Creating tests for 'rmw_zenoh_cpp'
-[5.532s] -- Enabling message timestamp test for rmw_zenoh_cpp
-[5.572s] -- Added test 'copyright' to check source files copyright and LICENSE
-[5.583s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
-[5.584s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include>;$<BUILD_INTERFACE:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/src>
-[5.584s] -- Configured cppcheck exclude dirs and/or files: 
-[5.601s] -- Added test 'cpplint' to check C / C++ code against the Google style
-[5.601s] -- Configured cpplint exclude dirs and/or files: 
-[5.601s] -- Added test 'lint_cmake' to check CMake code style
-[5.611s] -- Added test 'uncrustify' to check C / C++ code style
-[5.612s] -- Configured uncrustify additional arguments: 
-[5.615s] -- Added test 'xmllint' to check XML markup files
-[5.624s] -- Configuring done (4.0s)
-[5.934s] -- Generating done (0.3s)
-[6.090s] -- Build files have been written to: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rcl
-[6.101s] Invoked command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rcl' returned '0': AMENT_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/mimick_vendor/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=121 ROS_PYTHON_VERSION=3 SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install
-[6.103s] Invoking command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rcl': AMENT_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/mimick_vendor/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=121 ROS_PYTHON_VERSION=3 SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rcl -- -j3 -l3
-[6.197s] [1/153] Generating rcl/version.h
-[6.487s] [2/153] Building C object CMakeFiles/rcl.dir/src/rcl/arguments.c.o
-[6.760s] [3/153] Building C object CMakeFiles/rcl.dir/src/rcl/client.c.o
-[6.760s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/src/rcl/client.c:20:
-[6.760s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/client.h:28:
-[6.760s] /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/event_callback.h:38:50: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
-[6.760s]    38 | rcl_get_zero_initialized_event_callback_with_data();
-[6.761s]       |                                                  ^
-[6.761s]       |                                                   void
-[6.761s] 1 warning generated.
-[7.030s] [4/153] Building C object CMakeFiles/rcl.dir/src/rcl/common.c.o
-[7.295s] [5/153] Building C object CMakeFiles/rcl.dir/src/rcl/context.c.o
-[7.556s] [6/153] Building C object CMakeFiles/rcl.dir/src/rcl/discovery_options.c.o
-[7.882s] [7/153] Building C object CMakeFiles/rcl.dir/src/rcl/domain_id.c.o
-[8.133s] [8/153] Building C object CMakeFiles/rcl.dir/src/rcl/dynamic_message_type_support.c.o
-[8.442s] [9/153] Building C object CMakeFiles/rcl.dir/src/rcl/event.c.o
-[8.442s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/src/rcl/event.c:20:
-[8.443s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/event.h:27:
-[8.443s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/client.h:28:
-[8.443s] /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/event_callback.h:38:50: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
-[8.443s]    38 | rcl_get_zero_initialized_event_callback_with_data();
-[8.443s]       |                                                  ^
-[8.443s]       |                                                   void
-[8.443s] 1 warning generated.
-[8.695s] [10/153] Building C object CMakeFiles/rcl.dir/src/rcl/event_callback.c.o
-[8.696s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/src/rcl/event_callback.c:15:
-[8.696s] /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/event_callback.h:38:50: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
-[8.696s]    38 | rcl_get_zero_initialized_event_callback_with_data();
-[8.696s]       |                                                  ^
-[8.696s]       |                                                   void
-[8.696s] /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/src/rcl/event_callback.c:24:50: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
-[8.696s]    24 | rcl_get_zero_initialized_event_callback_with_data()
-[8.696s]       |                                                  ^
-[8.696s]       |                                                   void
-[8.696s] 2 warnings generated.
-[8.957s] [11/153] Building C object CMakeFiles/rcl.dir/src/rcl/expand_topic_name.c.o
-[9.257s] [12/153] Building C object CMakeFiles/rcl.dir/src/rcl/graph.c.o
-[9.257s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/src/rcl/graph.c:22:
-[9.257s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/graph.h:38:
-[9.257s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/client.h:28:
-[9.257s] /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/event_callback.h:38:50: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
-[9.257s]    38 | rcl_get_zero_initialized_event_callback_with_data();
-[9.257s]       |                                                  ^
-[9.257s]       |                                                   void
-[9.257s] 1 warning generated.
-[9.530s] [13/153] Building C object CMakeFiles/rcl.dir/src/rcl/guard_condition.c.o
-[9.530s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/src/rcl/guard_condition.c:23:
-[9.530s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/rcl.h:79:
-[9.530s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/subscription.h:27:
-[9.530s] /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/event_callback.h:38:50: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
-[9.530s]    38 | rcl_get_zero_initialized_event_callback_with_data();
-[9.530s]       |                                                  ^
-[9.530s]       |                                                   void
-[9.530s] 1 warning generated.
-[9.771s] [14/153] Building C object CMakeFiles/rcl.dir/src/rcl/init.c.o
-[10.194s] [15/153] Building C object CMakeFiles/rcl.dir/src/rcl/init_options.c.o
-[10.453s] [16/153] Building C object CMakeFiles/rcl.dir/src/rcl/lexer.c.o
-[10.752s] [17/153] Building C object CMakeFiles/rcl.dir/src/rcl/lexer_lookahead.c.o
-[10.947s] [18/153] Building C object CMakeFiles/rcl.dir/src/rcl/logging_rosout.c.o
-[11.208s] [19/153] Building C object CMakeFiles/rcl.dir/src/rcl/logging.c.o
-[11.571s] [20/153] Building C object CMakeFiles/rcl.dir/src/rcl/log_level.c.o
-[11.798s] [21/153] Building C object CMakeFiles/rcl.dir/src/rcl/network_flow_endpoints.c.o
-[11.798s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/src/rcl/network_flow_endpoints.c:16:
-[11.798s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/graph.h:38:
-[11.798s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/client.h:28:
-[11.798s] /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/event_callback.h:38:50: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
-[11.798s]    38 | rcl_get_zero_initialized_event_callback_with_data();
-[11.798s]       |                                                  ^
-[11.798s]       |                                                   void
-[11.798s] 1 warning generated.
-[12.077s] [22/153] Building C object CMakeFiles/rcl.dir/src/rcl/node.c.o
-[12.077s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/src/rcl/node.c:28:
-[12.077s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/rcl.h:79:
-[12.077s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/subscription.h:27:
-[12.077s] /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/event_callback.h:38:50: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
-[12.078s]    38 | rcl_get_zero_initialized_event_callback_with_data();
-[12.078s]       |                                                  ^
-[12.078s]       |                                                   void
-[12.078s] 1 warning generated.
-[12.286s] [23/153] Building C object CMakeFiles/rcl.dir/src/rcl/node_options.c.o
-[12.657s] [24/153] Building C object CMakeFiles/rcl.dir/src/rcl/node_type_cache.c.o
-[12.657s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/src/rcl/node_type_cache.c:23:
-[12.657s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/src/rcl/./node_impl.h:21:
-[12.657s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/service.h:28:
-[12.657s] /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/event_callback.h:38:50: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
-[12.657s]    38 | rcl_get_zero_initialized_event_callback_with_data();
-[12.657s]       |                                                  ^
-[12.657s]       |                                                   void
-[12.657s] 1 warning generated.
-[12.911s] [25/153] Building C object CMakeFiles/rcl.dir/src/rcl/publisher.c.o
-[13.141s] [26/153] Building C object CMakeFiles/rcl.dir/src/rcl/remap.c.o
-[13.388s] [27/153] Building C object CMakeFiles/rcl.dir/src/rcl/node_resolve_name.c.o
-[13.641s] [28/153] Building C object CMakeFiles/rcl.dir/src/rcl/rmw_implementation_identifier_check.c.o
-[13.907s] [29/153] Building C object CMakeFiles/rcl.dir/src/rcl/security.c.o
-[14.125s] [30/153] Building C object CMakeFiles/rcl.dir/src/rcl/service.c.o
-[14.125s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/src/rcl/service.c:20:
-[14.125s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/service.h:28:
-[14.125s] /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/event_callback.h:38:50: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
-[14.125s]    38 | rcl_get_zero_initialized_event_callback_with_data();
-[14.126s]       |                                                  ^
-[14.126s]       |                                                   void
-[14.126s] 1 warning generated.
-[14.358s] [31/153] Building C object CMakeFiles/rcl.dir/src/rcl/service_event_publisher.c.o
-[14.643s] [32/153] Building C object CMakeFiles/rcl.dir/src/rcl/subscription.c.o
-[14.643s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/src/rcl/subscription.c:20:
-[14.643s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/subscription.h:27:
-[14.643s] /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/event_callback.h:38:50: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
-[14.643s]    38 | rcl_get_zero_initialized_event_callback_with_data();
-[14.643s]       |                                                  ^
-[14.643s]       |                                                   void
-[14.643s] 1 warning generated.
-[14.838s] [33/153] Building C object CMakeFiles/rcl.dir/src/rcl/time.c.o
-[15.094s] [34/153] Building C object CMakeFiles/rcl.dir/src/rcl/timer.c.o
-[15.094s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/src/rcl/timer.c:20:
-[15.094s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/timer.h:29:
-[15.094s] /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/event_callback.h:38:50: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
-[15.094s]    38 | rcl_get_zero_initialized_event_callback_with_data();
-[15.094s]       |                                                  ^
-[15.094s]       |                                                   void
-[15.094s] 1 warning generated.
-[15.477s] [35/153] Building C object CMakeFiles/rcl.dir/src/rcl/type_hash.c.o
-[15.737s] [36/153] Building C object CMakeFiles/rcl.dir/src/rcl/type_description_conversions.c.o
-[15.992s] [37/153] Building C object CMakeFiles/rcl.dir/src/rcl/validate_enclave_name.c.o
-[16.325s] [38/153] Building C object CMakeFiles/rcl.dir/src/rcl/validate_topic_name.c.o
-[16.654s] [39/153] Building C object CMakeFiles/rcl.dir/src/rcl/wait.c.o
-[16.654s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/src/rcl/wait.c:20:
-[16.654s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/wait.h:28:
-[16.654s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/client.h:28:
-[16.655s] /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/event_callback.h:38:50: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
-[16.655s]    38 | rcl_get_zero_initialized_event_callback_with_data();
-[16.655s]       |                                                  ^
-[16.655s]       |                                                   void
-[16.655s] 1 warning generated.
-[16.743s] [40/153] Linking C shared library librcl.dylib
-[17.324s] [41/153] Building CXX object test/CMakeFiles/wait_for_entity_helpers.dir/rcl/wait_for_entity_helpers.cpp.o
-[18.093s] [42/153] Building CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
-[18.556s] [43/153] Building CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
-[19.099s] [44/153] Building CXX object test/CMakeFiles/test_client.dir/rcl/test_client.cpp.o
-[19.757s] [45/153] Building CXX object test/CMakeFiles/test_timer.dir/rcl/test_timer.cpp.o
-[20.444s] [46/153] Building CXX object test/CMakeFiles/test_context.dir/rcl/test_context.cpp.o
-[20.966s] [47/153] Building CXX object test/CMakeFiles/test_get_node_names.dir/rcl/test_get_node_names.cpp.o
-[21.652s] [48/153] Building CXX object test/CMakeFiles/test_graph.dir/rcl/test_graph.cpp.o
-[22.183s] [49/153] Building CXX object test/CMakeFiles/test_info_by_topic.dir/rcl/test_info_by_topic.cpp.o
-[22.705s] [50/153] Building CXX object test/CMakeFiles/test_info_by_service.dir/rcl/test_info_by_service.cpp.o
-[23.102s] [51/153] Building CXX object test/CMakeFiles/test_count_matched.dir/rcl/test_count_matched.cpp.o
-[23.594s] [52/153] Building CXX object test/CMakeFiles/test_get_actual_qos.dir/rcl/test_get_actual_qos.cpp.o
-[24.168s] [53/153] Building CXX object test/CMakeFiles/test_init.dir/rcl/test_init.cpp.o
-[24.799s] [54/153] Building CXX object test/CMakeFiles/test_node.dir/rcl/test_node.cpp.o
-[25.264s] [55/153] Building CXX object test/CMakeFiles/test_remap.dir/rcl/test_remap.cpp.o
-[25.740s] [56/153] Building CXX object test/CMakeFiles/test_remap_integration.dir/rcl/test_remap_integration.cpp.o
-[26.363s] [57/153] Building CXX object test/CMakeFiles/test_guard_condition.dir/rcl/test_guard_condition.cpp.o
-[27.571s] [58/153] Building CXX object test/CMakeFiles/test_publisher.dir/rcl/test_publisher.cpp.o
-[28.098s] [59/153] Building CXX object test/CMakeFiles/test_publisher_wait_all_ack.dir/rcl/test_publisher_wait_all_ack.cpp.o
-[28.687s] [60/153] Building CXX object test/CMakeFiles/test_events.dir/rcl/test_events.cpp.o
-[29.317s] [61/153] Building CXX object test/CMakeFiles/test_wait.dir/rcl/test_wait.cpp.o
-[29.748s] [62/153] Building CXX object test/CMakeFiles/test_logging_rosout.dir/rcl/test_logging_rosout.cpp.o
-[30.165s] [63/153] Building CXX object test/CMakeFiles/test_namespace.dir/rcl/test_namespace.cpp.o
-[30.911s] [64/153] Building CXX object test/CMakeFiles/test_rmw_impl_id_check_func.dir/rcl/test_rmw_impl_id_check_func.cpp.o
-[31.338s] [65/153] Building CXX object test/CMakeFiles/test_network_flow_endpoints.dir/rcl/test_network_flow_endpoints.cpp.o
-[31.905s] [66/153] Building CXX object test/CMakeFiles/test_service_event_publisher.dir/rcl/test_service_event_publisher.cpp.o
-[32.281s] [67/153] Building CXX object test/CMakeFiles/test_type_description_conversions.dir/rcl/test_type_description_conversions.cpp.o
-[32.781s] [68/153] Building CXX object test/CMakeFiles/test_node_type_cache.dir/rcl/test_node_type_cache.cpp.o
-[33.310s] [69/153] Building CXX object test/CMakeFiles/test_get_type_description_service.dir/rcl/test_get_type_description_service.cpp.o
-[33.595s] [70/153] Building CXX object test/CMakeFiles/test_rmw_impl_id_check_exe.dir/rcl/test_rmw_impl_id_check_exe.cpp.o
-[33.759s] [71/153] Linking CXX static library test/libwait_for_entity_helpers.a
-[34.163s] [72/153] Building CXX object test/CMakeFiles/service_fixture.dir/rcl/service_fixture.cpp.o
-[34.762s] [73/153] Building CXX object test/CMakeFiles/client_fixture.dir/rcl/client_fixture.cpp.o
-[35.380s] [74/153] Building CXX object test/CMakeFiles/test_service__rmw_cyclonedds_cpp.dir/rcl/test_service.cpp.o
-[36.245s] [75/153] Building CXX object test/CMakeFiles/test_subscription__rmw_cyclonedds_cpp.dir/rcl/test_subscription.cpp.o
-[37.020s] [76/153] Building CXX object test/CMakeFiles/test_service__rmw_fastrtps_cpp.dir/rcl/test_service.cpp.o
-[37.951s] [77/153] Building CXX object test/CMakeFiles/test_subscription__rmw_fastrtps_cpp.dir/rcl/test_subscription.cpp.o
-[38.610s] [78/153] Building CXX object test/CMakeFiles/test_service__rmw_fastrtps_dynamic_cpp.dir/rcl/test_service.cpp.o
-[39.356s] [79/153] Building CXX object test/CMakeFiles/test_subscription__rmw_fastrtps_dynamic_cpp.dir/rcl/test_subscription.cpp.o
-[40.043s] [80/153] Building CXX object test/CMakeFiles/test_service__rmw_zenoh_cpp.dir/rcl/test_service.cpp.o
-[40.886s] [81/153] Building CXX object test/CMakeFiles/test_subscription__rmw_zenoh_cpp.dir/rcl/test_subscription.cpp.o
-[41.582s] [82/153] Building CXX object test/CMakeFiles/test_arguments.dir/rcl/test_arguments.cpp.o
-[42.074s] [83/153] Building CXX object test/CMakeFiles/test_time.dir/rcl/test_time.cpp.o
-[42.831s] [84/153] Building CXX object test/CMakeFiles/test_lexer.dir/rcl/test_lexer.cpp.o
-[43.474s] [85/153] Building CXX object test/CMakeFiles/test_lexer_lookahead.dir/rcl/test_lexer_lookahead.cpp.o
-[43.992s] [86/153] Building CXX object test/CMakeFiles/test_validate_enclave_name.dir/rcl/test_validate_enclave_name.cpp.o
-[44.497s] [87/153] Building CXX object test/CMakeFiles/test_discovery_options.dir/rcl/test_discovery_options.cpp.o
-[44.989s] [88/153] Building CXX object test/CMakeFiles/test_domain_id.dir/rcl/test_domain_id.cpp.o
-[45.649s] [89/153] Building CXX object test/CMakeFiles/test_logging.dir/rcl/test_logging.cpp.o
-[46.141s] [90/153] Building CXX object test/CMakeFiles/test_validate_topic_name.dir/rcl/test_validate_topic_name.cpp.o
-[46.709s] [91/153] Building CXX object test/CMakeFiles/test_expand_topic_name.dir/rcl/test_expand_topic_name.cpp.o
-[47.360s] [92/153] Building CXX object test/CMakeFiles/test_security.dir/rcl/test_security.cpp.o
-[47.972s] [93/153] Building CXX object test/CMakeFiles/test_common.dir/rcl/test_common.cpp.o
-[48.233s] [94/153] Building C object test/CMakeFiles/test_common.dir/__/src/rcl/common.c.o
-[48.885s] [95/153] Building CXX object test/CMakeFiles/test_log_level.dir/rcl/test_log_level.cpp.o
-[49.467s] [96/153] Building CXX object test/CMakeFiles/test_subscription_content_filter_options.dir/rcl/test_subscription_content_filter_options.cpp.o
-[49.931s] [97/153] Building CXX object test/CMakeFiles/test_subscription_buffer_backend_options.dir/rcl/test_subscription_buffer_backend_options.cpp.o
-[50.396s] [98/153] Building CXX object test/CMakeFiles/test_type_hash.dir/rcl/test_type_hash.cpp.o
-[50.536s] [99/153] Linking CXX static library gtest/libgtest.a
-[50.648s] [100/153] Linking CXX static library gtest/libgtest_main.a
-[50.745s] [101/153] Linking CXX executable test/test_client
-[50.846s] [102/153] Linking CXX executable test/test_timer
-[50.964s] [103/153] Linking CXX executable test/test_context
-[51.124s] [104/153] Linking CXX executable test/test_get_node_names
-[51.240s] [105/153] Linking CXX executable test/test_graph
-[51.352s] [106/153] Linking CXX executable test/test_info_by_topic
-[51.498s] [107/153] Linking CXX executable test/test_info_by_service
-[51.607s] [108/153] Linking CXX executable test/test_count_matched
-[51.712s] [109/153] Linking CXX executable test/test_get_actual_qos
-[51.815s] [110/153] Linking CXX executable test/test_init
-[51.919s] [111/153] Linking CXX executable test/test_node
-[52.023s] [112/153] Linking CXX executable test/test_remap
-[52.117s] [113/153] Linking CXX executable test/test_remap_integration
-[52.198s] [114/153] Linking CXX executable test/test_guard_condition
-[52.274s] [115/153] Linking CXX executable test/test_publisher
-[52.359s] [116/153] Linking CXX executable test/test_publisher_wait_all_ack
-[52.435s] [117/153] Linking CXX executable test/test_events
-[52.515s] [118/153] Linking CXX executable test/test_wait
-[52.589s] [119/153] Linking CXX executable test/test_logging_rosout
-[52.669s] [120/153] Linking CXX executable test/test_namespace
-[52.740s] [121/153] Linking CXX executable test/test_rmw_impl_id_check_func
-[52.842s] [122/153] Linking CXX executable test/test_network_flow_endpoints
-[52.926s] [123/153] Linking CXX executable test/test_service_event_publisher
-[53.036s] [124/153] Linking CXX executable test/test_type_description_conversions
-[53.133s] [125/153] Linking CXX executable test/test_node_type_cache
-[53.210s] [126/153] Linking CXX executable test/test_get_type_description_service
-[53.301s] [127/153] Linking CXX executable test/test_rmw_impl_id_check_exe
-[53.385s] [128/153] Linking CXX executable test/service_fixture
-[53.468s] [129/153] Linking CXX executable test/client_fixture
-[53.571s] [130/153] Linking CXX executable test/test_service__rmw_cyclonedds_cpp
-[53.677s] [131/153] Linking CXX executable test/test_subscription__rmw_cyclonedds_cpp
-[53.770s] [132/153] Linking CXX executable test/test_service__rmw_fastrtps_cpp
-[53.879s] [133/153] Linking CXX executable test/test_subscription__rmw_fastrtps_cpp
-[54.027s] [134/153] Linking CXX executable test/test_service__rmw_fastrtps_dynamic_cpp
-[54.081s] [135/153] Linking CXX executable test/test_subscription__rmw_fastrtps_dynamic_cpp
-[54.196s] [136/153] Linking CXX executable test/test_service__rmw_zenoh_cpp
-[54.311s] [137/153] Linking CXX executable test/test_subscription__rmw_zenoh_cpp
-[54.399s] [138/153] Linking CXX executable test/test_arguments
-[54.492s] [139/153] Linking CXX executable test/test_time
-[54.600s] [140/153] Linking CXX executable test/test_lexer
-[54.711s] [141/153] Linking CXX executable test/test_lexer_lookahead
-[54.812s] [142/153] Linking CXX executable test/test_validate_enclave_name
-[54.941s] [143/153] Linking CXX executable test/test_discovery_options
-[55.067s] [144/153] Linking CXX executable test/test_domain_id
-[55.175s] [145/153] Linking CXX executable test/test_logging
-[55.293s] [146/153] Linking CXX executable test/test_validate_topic_name
-[55.388s] [147/153] Linking CXX executable test/test_expand_topic_name
-[55.500s] [148/153] Linking CXX executable test/test_security
-[55.592s] [149/153] Linking CXX executable test/test_common
-[55.677s] [150/153] Linking CXX executable test/test_log_level
-[55.778s] [151/153] Linking CXX executable test/test_subscription_content_filter_options
-[55.894s] [152/153] Linking CXX executable test/test_subscription_buffer_backend_options
-[55.989s] [153/153] Linking CXX executable test/test_type_hash
-[55.994s] Invoked command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rcl' returned '0': AMENT_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/mimick_vendor/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=121 ROS_PYTHON_VERSION=3 SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rcl -- -j3 -l3
-[56.005s] Invoking command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rcl': AMENT_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/mimick_vendor/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=121 ROS_PYTHON_VERSION=3 SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rcl
-[56.023s] -- Install configuration: "Release"
-[56.023s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/librcl.dylib
-[56.023s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/environment/library_path.sh
-[56.023s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/environment/library_path.dsv
-[56.024s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/version.h
-[56.025s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/package_run_dependencies/rcl
-[56.025s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/parent_prefix_path/rcl
-[56.025s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/environment/ament_prefix_path.sh
-[56.026s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/environment/ament_prefix_path.dsv
-[56.026s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/environment/path.sh
-[56.026s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/environment/path.dsv
-[56.026s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/local_setup.bash
-[56.027s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/local_setup.fish
-[56.027s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/local_setup.sh
-[56.028s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/local_setup.zsh
-[56.028s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/local_setup.dsv
-[56.028s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/package.dsv
-[56.029s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/packages/rcl
-[56.029s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/cmake/rclExport.cmake
-[56.029s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/cmake/rclExport-release.cmake
-[56.029s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/cmake/rcl-extras.cmake
-[56.030s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/cmake/ament_cmake_export_include_directories-extras.cmake
-[56.030s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/cmake/ament_cmake_export_libraries-extras.cmake
-[56.030s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/cmake/ament_cmake_export_targets-extras.cmake
-[56.031s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/cmake/ament_cmake_export_dependencies-extras.cmake
-[56.031s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/cmake/rclConfig.cmake
-[56.032s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/cmake/rclConfig-version.cmake
-[56.032s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/package.xml
-[56.033s] -- Up-to-date: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/cmake
-[56.034s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/cmake/rcl_set_symbol_visibility_hidden.cmake
-[56.034s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/cmake/get_default_rcl_logging_implementation.cmake
-[56.034s] -- Up-to-date: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl
-[56.035s] -- Up-to-date: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl
-[56.035s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/time.h
-[56.036s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/dynamic_message_type_support.h
-[56.036s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/discovery_options.h
-[56.037s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/node_type_cache.h
-[56.037s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/logging_rosout.h
-[56.037s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/rcl.h
-[56.037s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/client.h
-[56.037s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/remap.h
-[56.037s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/event.h
-[56.037s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/types.h
-[56.037s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/service.h
-[56.038s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/validate_topic_name.h
-[56.038s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/arguments.h
-[56.038s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/security.h
-[56.038s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/init_options.h
-[56.038s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/wait.h
-[56.038s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/node_options.h
-[56.038s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/type_description_conversions.h
-[56.038s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/network_flow_endpoints.h
-[56.038s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/visibility_control.h
-[56.039s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/context.h
-[56.039s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/node.h
-[56.039s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/publisher.h
-[56.039s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/guard_condition.h
-[56.040s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/logging.h
-[56.040s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/graph.h
-[56.040s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/domain_id.h
-[56.041s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/timer.h
-[56.041s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/type_hash.h
-[56.042s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/service_introspection.h
-[56.042s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/log_level.h
-[56.042s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/allocator.h
-[56.043s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/macros.h
-[56.043s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/expand_topic_name.h
-[56.043s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/subscription.h
-[56.043s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/rmw_implementation_identifier_check.h
-[56.043s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/lexer_lookahead.h
-[56.043s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/lexer.h
-[56.044s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/error_handling.h
-[56.044s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/init.h
-[56.044s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/event_callback.h
-[56.044s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/validate_enclave_name.h
-[56.047s] Invoked command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rcl' returned '0': AMENT_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/mimick_vendor/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=121 ROS_PYTHON_VERSION=3 SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rcl
+[2.212s] Invoking command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rcl': AMENT_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/mimick_vendor/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_PYTHON_VERSION=3 SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DTRACETOOLS_DISABLED=ON -DCMAKE_INSTALL_PREFIX=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[2.568s] Not searching for unused variables given on the command line.
+[2.568s] -- The C compiler identification is AppleClang 17.0.0.17000013
+[2.795s] -- The CXX compiler identification is AppleClang 17.0.0.17000013
+[2.836s] -- Detecting C compiler ABI info
+[3.356s] -- Detecting C compiler ABI info - done
+[3.409s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.409s] -- Detecting C compile features
+[3.409s] -- Detecting C compile features - done
+[3.418s] -- Detecting CXX compiler ABI info
+[4.025s] -- Detecting CXX compiler ABI info - done
+[4.072s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[4.072s] -- Detecting CXX compile features
+[4.073s] -- Detecting CXX compile features - done
+[4.088s] -- Found ament_cmake_ros: 0.15.6 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_ros/cmake)
+[4.595s] -- Found libyaml_vendor: 1.8.0 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/libyaml_vendor/cmake)
+[4.611s] -- Found rcl_interfaces: 2.4.3 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_interfaces/cmake)
+[4.689s] -- Found rosidl_generator_c: 5.1.3 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_c/cmake)
+[4.716s] -- Found rosidl_generator_cpp: 5.1.3 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_cpp/cmake)
+[4.749s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.801s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.908s] -- Found rcl_logging_interface: 3.4.1 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_logging_interface/cmake)
+[4.923s] -- Found rcl_yaml_param_parser: 10.4.1 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_yaml_param_parser/cmake)
+[4.935s] -- Found rmw_implementation: 3.1.4 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation/cmake)
+[4.943s] -- Found rmw_implementation_cmake: 7.10.0 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation_cmake/cmake)
+[4.952s] -- Found rmw_fastrtps_cpp: 9.4.5 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_fastrtps_cpp/cmake)
+[5.020s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.043s] -- Found tracetools: 8.10.1 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tracetools/cmake)
+[5.059s] -- Found type_description_interfaces: 2.4.3 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/type_description_interfaces/cmake)
+[5.136s] -- Checking for module 'yaml-0.1'
+[5.188s] --   Found yaml-0.1, version 0.2.5
+[5.265s] -- Found yaml: 1
+[5.266s] -- Building rcl with dynamic logging implementation support
+[5.273s] -- Found rcl_logging_implementation: 3.4.1 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl_logging_implementation/cmake)
+[5.276s] -- RCL_LOGGING_IMPLEMENTATION: rcl_logging_implementation
+[5.398s] -- Found ament_lint_auto: 0.20.3 (/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_lint_auto/cmake)
+[5.908s] -- Found gtest sources under '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.909s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[6.536s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[6.538s] -- Found Threads: TRUE
+[6.673s] -- Creating tests for 'rmw_cyclonedds_cpp'
+[6.689s] -- Enabling message timestamp test for rmw_cyclonedds_cpp
+[6.696s] -- Creating tests for 'rmw_fastrtps_cpp'
+[6.709s] -- Enabling message timestamp test for rmw_fastrtps_cpp
+[6.760s] -- Creating tests for 'rmw_fastrtps_dynamic_cpp'
+[6.774s] -- Enabling message timestamp test for rmw_fastrtps_dynamic_cpp
+[6.792s] -- Creating tests for 'rmw_zenoh_cpp'
+[6.798s] -- Enabling message timestamp test for rmw_zenoh_cpp
+[6.845s] -- Added test 'copyright' to check source files copyright and LICENSE
+[6.884s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[6.884s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include>;$<BUILD_INTERFACE:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/src>
+[6.884s] -- Configured cppcheck exclude dirs and/or files: 
+[6.897s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[6.897s] -- Configured cpplint exclude dirs and/or files: 
+[6.912s] -- Added test 'lint_cmake' to check CMake code style
+[6.917s] -- Added test 'uncrustify' to check C / C++ code style
+[6.917s] -- Configured uncrustify additional arguments: 
+[6.919s] -- Added test 'xmllint' to check XML markup files
+[6.949s] -- Configuring done (4.7s)
+[7.292s] -- Generating done (0.3s)
+[7.525s] -- Build files have been written to: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rcl
+[7.534s] Invoked command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rcl' returned '0': AMENT_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/mimick_vendor/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_PYTHON_VERSION=3 SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DTRACETOOLS_DISABLED=ON -DCMAKE_INSTALL_PREFIX=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[7.542s] Invoking command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rcl': AMENT_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/mimick_vendor/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_PYTHON_VERSION=3 SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rcl -- -j3 -l3
+[7.646s] [1/153] Generating rcl/version.h
+[7.910s] [2/153] Building C object CMakeFiles/rcl.dir/src/rcl/arguments.c.o
+[8.288s] [3/153] Building C object CMakeFiles/rcl.dir/src/rcl/client.c.o
+[8.289s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/src/rcl/client.c:20:
+[8.289s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/client.h:28:
+[8.289s] /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/event_callback.h:38:50: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+[8.289s]    38 | rcl_get_zero_initialized_event_callback_with_data();
+[8.290s]       |                                                  ^
+[8.290s]       |                                                   void
+[8.290s] 1 warning generated.
+[8.507s] [4/153] Building C object CMakeFiles/rcl.dir/src/rcl/common.c.o
+[8.733s] [5/153] Building C object CMakeFiles/rcl.dir/src/rcl/context.c.o
+[8.986s] [6/153] Building C object CMakeFiles/rcl.dir/src/rcl/discovery_options.c.o
+[9.271s] [7/153] Building C object CMakeFiles/rcl.dir/src/rcl/domain_id.c.o
+[9.567s] [8/153] Building C object CMakeFiles/rcl.dir/src/rcl/dynamic_message_type_support.c.o
+[9.791s] [9/153] Building C object CMakeFiles/rcl.dir/src/rcl/event.c.o
+[9.791s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/src/rcl/event.c:20:
+[9.791s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/event.h:27:
+[9.791s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/client.h:28:
+[9.791s] /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/event_callback.h:38:50: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+[9.791s]    38 | rcl_get_zero_initialized_event_callback_with_data();
+[9.791s]       |                                                  ^
+[9.791s]       |                                                   void
+[9.791s] 1 warning generated.
+[10.084s] [10/153] Building C object CMakeFiles/rcl.dir/src/rcl/event_callback.c.o
+[10.084s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/src/rcl/event_callback.c:15:
+[10.084s] /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/event_callback.h:38:50: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+[10.084s]    38 | rcl_get_zero_initialized_event_callback_with_data();
+[10.084s]       |                                                  ^
+[10.084s]       |                                                   void
+[10.084s] /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/src/rcl/event_callback.c:24:50: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+[10.084s]    24 | rcl_get_zero_initialized_event_callback_with_data()
+[10.084s]       |                                                  ^
+[10.084s]       |                                                   void
+[10.084s] 2 warnings generated.
+[10.309s] [11/153] Building C object CMakeFiles/rcl.dir/src/rcl/expand_topic_name.c.o
+[10.539s] [12/153] Building C object CMakeFiles/rcl.dir/src/rcl/graph.c.o
+[10.539s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/src/rcl/graph.c:22:
+[10.539s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/graph.h:38:
+[10.539s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/client.h:28:
+[10.539s] /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/event_callback.h:38:50: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+[10.539s]    38 | rcl_get_zero_initialized_event_callback_with_data();
+[10.539s]       |                                                  ^
+[10.539s]       |                                                   void
+[10.539s] 1 warning generated.
+[10.749s] [13/153] Building C object CMakeFiles/rcl.dir/src/rcl/guard_condition.c.o
+[10.749s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/src/rcl/guard_condition.c:23:
+[10.749s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/rcl.h:79:
+[10.749s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/subscription.h:27:
+[10.749s] /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/event_callback.h:38:50: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+[10.749s]    38 | rcl_get_zero_initialized_event_callback_with_data();
+[10.749s]       |                                                  ^
+[10.749s]       |                                                   void
+[10.749s] 1 warning generated.
+[10.982s] [14/153] Building C object CMakeFiles/rcl.dir/src/rcl/init.c.o
+[11.197s] [15/153] Building C object CMakeFiles/rcl.dir/src/rcl/init_options.c.o
+[11.432s] [16/153] Building C object CMakeFiles/rcl.dir/src/rcl/lexer.c.o
+[11.669s] [17/153] Building C object CMakeFiles/rcl.dir/src/rcl/lexer_lookahead.c.o
+[11.880s] [18/153] Building C object CMakeFiles/rcl.dir/src/rcl/logging_rosout.c.o
+[12.158s] [19/153] Building C object CMakeFiles/rcl.dir/src/rcl/logging.c.o
+[12.387s] [20/153] Building C object CMakeFiles/rcl.dir/src/rcl/log_level.c.o
+[12.600s] [21/153] Building C object CMakeFiles/rcl.dir/src/rcl/network_flow_endpoints.c.o
+[12.600s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/src/rcl/network_flow_endpoints.c:16:
+[12.600s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/graph.h:38:
+[12.600s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/client.h:28:
+[12.601s] /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/event_callback.h:38:50: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+[12.601s]    38 | rcl_get_zero_initialized_event_callback_with_data();
+[12.601s]       |                                                  ^
+[12.601s]       |                                                   void
+[12.601s] 1 warning generated.
+[12.846s] [22/153] Building C object CMakeFiles/rcl.dir/src/rcl/node.c.o
+[12.846s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/src/rcl/node.c:28:
+[12.846s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/rcl.h:79:
+[12.846s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/subscription.h:27:
+[12.847s] /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/event_callback.h:38:50: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+[12.847s]    38 | rcl_get_zero_initialized_event_callback_with_data();
+[12.847s]       |                                                  ^
+[12.847s]       |                                                   void
+[12.847s] 1 warning generated.
+[13.065s] [23/153] Building C object CMakeFiles/rcl.dir/src/rcl/node_options.c.o
+[13.277s] [24/153] Building C object CMakeFiles/rcl.dir/src/rcl/node_type_cache.c.o
+[13.277s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/src/rcl/node_type_cache.c:23:
+[13.277s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/src/rcl/./node_impl.h:21:
+[13.277s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/service.h:28:
+[13.277s] /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/event_callback.h:38:50: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+[13.278s]    38 | rcl_get_zero_initialized_event_callback_with_data();
+[13.278s]       |                                                  ^
+[13.278s]       |                                                   void
+[13.278s] 1 warning generated.
+[13.519s] [25/153] Building C object CMakeFiles/rcl.dir/src/rcl/publisher.c.o
+[13.720s] [26/153] Building C object CMakeFiles/rcl.dir/src/rcl/remap.c.o
+[13.948s] [27/153] Building C object CMakeFiles/rcl.dir/src/rcl/node_resolve_name.c.o
+[14.194s] [28/153] Building C object CMakeFiles/rcl.dir/src/rcl/rmw_implementation_identifier_check.c.o
+[14.431s] [29/153] Building C object CMakeFiles/rcl.dir/src/rcl/security.c.o
+[14.680s] [30/153] Building C object CMakeFiles/rcl.dir/src/rcl/service.c.o
+[14.681s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/src/rcl/service.c:20:
+[14.681s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/service.h:28:
+[14.681s] /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/event_callback.h:38:50: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+[14.681s]    38 | rcl_get_zero_initialized_event_callback_with_data();
+[14.681s]       |                                                  ^
+[14.681s]       |                                                   void
+[14.681s] 1 warning generated.
+[14.922s] [31/153] Building C object CMakeFiles/rcl.dir/src/rcl/service_event_publisher.c.o
+[15.169s] [32/153] Building C object CMakeFiles/rcl.dir/src/rcl/subscription.c.o
+[15.169s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/src/rcl/subscription.c:20:
+[15.169s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/subscription.h:27:
+[15.169s] /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/event_callback.h:38:50: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+[15.169s]    38 | rcl_get_zero_initialized_event_callback_with_data();
+[15.169s]       |                                                  ^
+[15.169s]       |                                                   void
+[15.169s] 1 warning generated.
+[15.388s] [33/153] Building C object CMakeFiles/rcl.dir/src/rcl/time.c.o
+[15.645s] [34/153] Building C object CMakeFiles/rcl.dir/src/rcl/timer.c.o
+[15.645s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/src/rcl/timer.c:20:
+[15.645s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/timer.h:29:
+[15.645s] /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/event_callback.h:38:50: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+[15.645s]    38 | rcl_get_zero_initialized_event_callback_with_data();
+[15.646s]       |                                                  ^
+[15.646s]       |                                                   void
+[15.646s] 1 warning generated.
+[15.880s] [35/153] Building C object CMakeFiles/rcl.dir/src/rcl/type_hash.c.o
+[16.109s] [36/153] Building C object CMakeFiles/rcl.dir/src/rcl/type_description_conversions.c.o
+[16.341s] [37/153] Building C object CMakeFiles/rcl.dir/src/rcl/validate_enclave_name.c.o
+[16.598s] [38/153] Building C object CMakeFiles/rcl.dir/src/rcl/validate_topic_name.c.o
+[16.971s] [39/153] Building C object CMakeFiles/rcl.dir/src/rcl/wait.c.o
+[16.971s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/src/rcl/wait.c:20:
+[16.971s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/wait.h:28:
+[16.972s] In file included from /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/client.h:28:
+[16.972s] /Users/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rcl/rcl/include/rcl/event_callback.h:38:50: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+[16.972s]    38 | rcl_get_zero_initialized_event_callback_with_data();
+[16.972s]       |                                                  ^
+[16.972s]       |                                                   void
+[16.972s] 1 warning generated.
+[17.096s] [40/153] Linking C shared library librcl.dylib
+[17.553s] [41/153] Building CXX object test/CMakeFiles/wait_for_entity_helpers.dir/rcl/wait_for_entity_helpers.cpp.o
+[18.064s] [42/153] Building CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[18.472s] [43/153] Building CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[18.945s] [44/153] Building CXX object test/CMakeFiles/test_client.dir/rcl/test_client.cpp.o
+[19.438s] [45/153] Building CXX object test/CMakeFiles/test_timer.dir/rcl/test_timer.cpp.o
+[19.899s] [46/153] Building CXX object test/CMakeFiles/test_context.dir/rcl/test_context.cpp.o
+[20.379s] [47/153] Building CXX object test/CMakeFiles/test_get_node_names.dir/rcl/test_get_node_names.cpp.o
+[20.920s] [48/153] Building CXX object test/CMakeFiles/test_graph.dir/rcl/test_graph.cpp.o
+[21.335s] [49/153] Building CXX object test/CMakeFiles/test_info_by_topic.dir/rcl/test_info_by_topic.cpp.o
+[21.860s] [50/153] Building CXX object test/CMakeFiles/test_info_by_service.dir/rcl/test_info_by_service.cpp.o
+[22.350s] [51/153] Building CXX object test/CMakeFiles/test_count_matched.dir/rcl/test_count_matched.cpp.o
+[22.787s] [52/153] Building CXX object test/CMakeFiles/test_get_actual_qos.dir/rcl/test_get_actual_qos.cpp.o
+[23.273s] [53/153] Building CXX object test/CMakeFiles/test_init.dir/rcl/test_init.cpp.o
+[23.843s] [54/153] Building CXX object test/CMakeFiles/test_node.dir/rcl/test_node.cpp.o
+[24.290s] [55/153] Building CXX object test/CMakeFiles/test_remap.dir/rcl/test_remap.cpp.o
+[24.707s] [56/153] Building CXX object test/CMakeFiles/test_remap_integration.dir/rcl/test_remap_integration.cpp.o
+[25.229s] [57/153] Building CXX object test/CMakeFiles/test_guard_condition.dir/rcl/test_guard_condition.cpp.o
+[25.743s] [58/153] Building CXX object test/CMakeFiles/test_publisher.dir/rcl/test_publisher.cpp.o
+[26.237s] [59/153] Building CXX object test/CMakeFiles/test_publisher_wait_all_ack.dir/rcl/test_publisher_wait_all_ack.cpp.o
+[26.681s] [60/153] Building CXX object test/CMakeFiles/test_events.dir/rcl/test_events.cpp.o
+[27.225s] [61/153] Building CXX object test/CMakeFiles/test_wait.dir/rcl/test_wait.cpp.o
+[27.651s] [62/153] Building CXX object test/CMakeFiles/test_logging_rosout.dir/rcl/test_logging_rosout.cpp.o
+[28.069s] [63/153] Building CXX object test/CMakeFiles/test_namespace.dir/rcl/test_namespace.cpp.o
+[28.767s] [64/153] Building CXX object test/CMakeFiles/test_rmw_impl_id_check_func.dir/rcl/test_rmw_impl_id_check_func.cpp.o
+[29.374s] [65/153] Building CXX object test/CMakeFiles/test_network_flow_endpoints.dir/rcl/test_network_flow_endpoints.cpp.o
+[29.979s] [66/153] Building CXX object test/CMakeFiles/test_service_event_publisher.dir/rcl/test_service_event_publisher.cpp.o
+[30.453s] [67/153] Building CXX object test/CMakeFiles/test_type_description_conversions.dir/rcl/test_type_description_conversions.cpp.o
+[30.865s] [68/153] Building CXX object test/CMakeFiles/test_node_type_cache.dir/rcl/test_node_type_cache.cpp.o
+[31.452s] [69/153] Building CXX object test/CMakeFiles/test_get_type_description_service.dir/rcl/test_get_type_description_service.cpp.o
+[31.732s] [70/153] Building CXX object test/CMakeFiles/test_rmw_impl_id_check_exe.dir/rcl/test_rmw_impl_id_check_exe.cpp.o
+[31.946s] [71/153] Linking CXX static library test/libwait_for_entity_helpers.a
+[32.363s] [72/153] Building CXX object test/CMakeFiles/service_fixture.dir/rcl/service_fixture.cpp.o
+[32.853s] [73/153] Building CXX object test/CMakeFiles/client_fixture.dir/rcl/client_fixture.cpp.o
+[33.510s] [74/153] Building CXX object test/CMakeFiles/test_service__rmw_cyclonedds_cpp.dir/rcl/test_service.cpp.o
+[34.181s] [75/153] Building CXX object test/CMakeFiles/test_subscription__rmw_cyclonedds_cpp.dir/rcl/test_subscription.cpp.o
+[34.799s] [76/153] Building CXX object test/CMakeFiles/test_service__rmw_fastrtps_cpp.dir/rcl/test_service.cpp.o
+[35.426s] [77/153] Building CXX object test/CMakeFiles/test_subscription__rmw_fastrtps_cpp.dir/rcl/test_subscription.cpp.o
+[35.996s] [78/153] Building CXX object test/CMakeFiles/test_service__rmw_fastrtps_dynamic_cpp.dir/rcl/test_service.cpp.o
+[36.654s] [79/153] Building CXX object test/CMakeFiles/test_subscription__rmw_fastrtps_dynamic_cpp.dir/rcl/test_subscription.cpp.o
+[37.294s] [80/153] Building CXX object test/CMakeFiles/test_service__rmw_zenoh_cpp.dir/rcl/test_service.cpp.o
+[37.875s] [81/153] Building CXX object test/CMakeFiles/test_subscription__rmw_zenoh_cpp.dir/rcl/test_subscription.cpp.o
+[38.414s] [82/153] Building CXX object test/CMakeFiles/test_arguments.dir/rcl/test_arguments.cpp.o
+[38.882s] [83/153] Building CXX object test/CMakeFiles/test_time.dir/rcl/test_time.cpp.o
+[39.405s] [84/153] Building CXX object test/CMakeFiles/test_lexer.dir/rcl/test_lexer.cpp.o
+[40.092s] [85/153] Building CXX object test/CMakeFiles/test_lexer_lookahead.dir/rcl/test_lexer_lookahead.cpp.o
+[40.682s] [86/153] Building CXX object test/CMakeFiles/test_validate_enclave_name.dir/rcl/test_validate_enclave_name.cpp.o
+[41.105s] [87/153] Building CXX object test/CMakeFiles/test_discovery_options.dir/rcl/test_discovery_options.cpp.o
+[41.676s] [88/153] Building CXX object test/CMakeFiles/test_domain_id.dir/rcl/test_domain_id.cpp.o
+[42.143s] [89/153] Building CXX object test/CMakeFiles/test_logging.dir/rcl/test_logging.cpp.o
+[42.620s] [90/153] Building CXX object test/CMakeFiles/test_validate_topic_name.dir/rcl/test_validate_topic_name.cpp.o
+[43.147s] [91/153] Building CXX object test/CMakeFiles/test_expand_topic_name.dir/rcl/test_expand_topic_name.cpp.o
+[43.765s] [92/153] Building CXX object test/CMakeFiles/test_security.dir/rcl/test_security.cpp.o
+[44.307s] [93/153] Building CXX object test/CMakeFiles/test_common.dir/rcl/test_common.cpp.o
+[44.578s] [94/153] Building C object test/CMakeFiles/test_common.dir/__/src/rcl/common.c.o
+[45.104s] [95/153] Building CXX object test/CMakeFiles/test_log_level.dir/rcl/test_log_level.cpp.o
+[45.657s] [96/153] Building CXX object test/CMakeFiles/test_subscription_content_filter_options.dir/rcl/test_subscription_content_filter_options.cpp.o
+[46.230s] [97/153] Building CXX object test/CMakeFiles/test_subscription_buffer_backend_options.dir/rcl/test_subscription_buffer_backend_options.cpp.o
+[46.724s] [98/153] Building CXX object test/CMakeFiles/test_type_hash.dir/rcl/test_type_hash.cpp.o
+[46.929s] [99/153] Linking CXX static library gtest/libgtest.a
+[47.110s] [100/153] Linking CXX static library gtest/libgtest_main.a
+[47.277s] [101/153] Linking CXX executable test/test_client
+[47.445s] [102/153] Linking CXX executable test/test_timer
+[47.602s] [103/153] Linking CXX executable test/test_context
+[47.765s] [104/153] Linking CXX executable test/test_get_node_names
+[47.892s] [105/153] Linking CXX executable test/test_graph
+[48.103s] [106/153] Linking CXX executable test/test_info_by_topic
+[48.245s] [107/153] Linking CXX executable test/test_info_by_service
+[48.388s] [108/153] Linking CXX executable test/test_count_matched
+[48.567s] [109/153] Linking CXX executable test/test_get_actual_qos
+[48.805s] [110/153] Linking CXX executable test/test_init
+[48.988s] [111/153] Linking CXX executable test/test_node
+[49.149s] [112/153] Linking CXX executable test/test_remap
+[49.410s] [113/153] Linking CXX executable test/test_remap_integration
+[49.535s] [114/153] Linking CXX executable test/test_guard_condition
+[49.712s] [115/153] Linking CXX executable test/test_publisher
+[49.967s] [116/153] Linking CXX executable test/test_publisher_wait_all_ack
+[50.125s] [117/153] Linking CXX executable test/test_events
+[50.441s] [118/153] Linking CXX executable test/test_wait
+[50.610s] [119/153] Linking CXX executable test/test_logging_rosout
+[50.749s] [120/153] Linking CXX executable test/test_namespace
+[50.893s] [121/153] Linking CXX executable test/test_rmw_impl_id_check_func
+[51.035s] [122/153] Linking CXX executable test/test_network_flow_endpoints
+[51.204s] [123/153] Linking CXX executable test/test_service_event_publisher
+[51.365s] [124/153] Linking CXX executable test/test_type_description_conversions
+[51.503s] [125/153] Linking CXX executable test/test_node_type_cache
+[51.633s] [126/153] Linking CXX executable test/test_get_type_description_service
+[51.749s] [127/153] Linking CXX executable test/test_rmw_impl_id_check_exe
+[51.905s] [128/153] Linking CXX executable test/service_fixture
+[52.063s] [129/153] Linking CXX executable test/client_fixture
+[52.429s] [130/153] Linking CXX executable test/test_service__rmw_cyclonedds_cpp
+[52.448s] [131/153] Linking CXX executable test/test_subscription__rmw_cyclonedds_cpp
+[52.603s] [132/153] Linking CXX executable test/test_service__rmw_fastrtps_cpp
+[52.737s] [133/153] Linking CXX executable test/test_subscription__rmw_fastrtps_cpp
+[52.898s] [134/153] Linking CXX executable test/test_service__rmw_fastrtps_dynamic_cpp
+[53.031s] [135/153] Linking CXX executable test/test_subscription__rmw_fastrtps_dynamic_cpp
+[53.155s] [136/153] Linking CXX executable test/test_service__rmw_zenoh_cpp
+[53.283s] [137/153] Linking CXX executable test/test_subscription__rmw_zenoh_cpp
+[53.407s] [138/153] Linking CXX executable test/test_arguments
+[53.558s] [139/153] Linking CXX executable test/test_time
+[53.712s] [140/153] Linking CXX executable test/test_lexer
+[53.854s] [141/153] Linking CXX executable test/test_lexer_lookahead
+[53.980s] [142/153] Linking CXX executable test/test_validate_enclave_name
+[54.097s] [143/153] Linking CXX executable test/test_discovery_options
+[54.200s] [144/153] Linking CXX executable test/test_domain_id
+[54.301s] [145/153] Linking CXX executable test/test_logging
+[54.408s] [146/153] Linking CXX executable test/test_validate_topic_name
+[54.519s] [147/153] Linking CXX executable test/test_expand_topic_name
+[54.616s] [148/153] Linking CXX executable test/test_security
+[54.732s] [149/153] Linking CXX executable test/test_common
+[54.854s] [150/153] Linking CXX executable test/test_log_level
+[54.973s] [151/153] Linking CXX executable test/test_subscription_content_filter_options
+[55.088s] [152/153] Linking CXX executable test/test_subscription_buffer_backend_options
+[55.206s] [153/153] Linking CXX executable test/test_type_hash
+[55.213s] Invoked command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rcl' returned '0': AMENT_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/mimick_vendor/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=81 ROS_PYTHON_VERSION=3 SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rcl -- -j3 -l3
+[55.228s] Invoking command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rcl': AMENT_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/mimick_vendor/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=81 ROS_PYTHON_VERSION=3 SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rcl
+[55.277s] -- Install configuration: "Release"
+[55.278s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/librcl.dylib
+[55.278s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/environment/library_path.sh
+[55.279s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/environment/library_path.dsv
+[55.279s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/version.h
+[55.280s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/package_run_dependencies/rcl
+[55.280s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/parent_prefix_path/rcl
+[55.280s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/environment/ament_prefix_path.sh
+[55.281s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/environment/ament_prefix_path.dsv
+[55.281s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/environment/path.sh
+[55.281s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/environment/path.dsv
+[55.281s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/local_setup.bash
+[55.281s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/local_setup.fish
+[55.282s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/local_setup.sh
+[55.282s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/local_setup.zsh
+[55.282s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/local_setup.dsv
+[55.282s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/package.dsv
+[55.283s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/packages/rcl
+[55.283s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/cmake/rclExport.cmake
+[55.283s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/cmake/rclExport-release.cmake
+[55.284s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/cmake/rcl-extras.cmake
+[55.284s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/cmake/ament_cmake_export_include_directories-extras.cmake
+[55.284s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/cmake/ament_cmake_export_libraries-extras.cmake
+[55.284s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/cmake/ament_cmake_export_targets-extras.cmake
+[55.285s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/cmake/ament_cmake_export_dependencies-extras.cmake
+[55.285s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/cmake/rclConfig.cmake
+[55.285s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/cmake/rclConfig-version.cmake
+[55.286s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/package.xml
+[55.286s] -- Up-to-date: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/cmake
+[55.286s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/cmake/rcl_set_symbol_visibility_hidden.cmake
+[55.286s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/cmake/get_default_rcl_logging_implementation.cmake
+[55.287s] -- Up-to-date: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl
+[55.287s] -- Up-to-date: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl
+[55.287s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/time.h
+[55.287s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/dynamic_message_type_support.h
+[55.288s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/discovery_options.h
+[55.288s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/node_type_cache.h
+[55.288s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/logging_rosout.h
+[55.288s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/rcl.h
+[55.288s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/client.h
+[55.288s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/remap.h
+[55.288s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/event.h
+[55.288s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/types.h
+[55.288s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/service.h
+[55.289s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/validate_topic_name.h
+[55.289s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/arguments.h
+[55.289s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/security.h
+[55.289s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/init_options.h
+[55.289s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/wait.h
+[55.289s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/node_options.h
+[55.290s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/type_description_conversions.h
+[55.290s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/network_flow_endpoints.h
+[55.290s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/visibility_control.h
+[55.292s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/context.h
+[55.295s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/node.h
+[55.295s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/publisher.h
+[55.297s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/guard_condition.h
+[55.298s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/logging.h
+[55.298s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/graph.h
+[55.298s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/domain_id.h
+[55.298s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/timer.h
+[55.298s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/type_hash.h
+[55.298s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/service_introspection.h
+[55.298s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/log_level.h
+[55.298s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/allocator.h
+[55.299s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/macros.h
+[55.299s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/expand_topic_name.h
+[55.301s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/subscription.h
+[55.301s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/rmw_implementation_identifier_check.h
+[55.301s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/lexer_lookahead.h
+[55.301s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/lexer.h
+[55.302s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/error_handling.h
+[55.303s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/init.h
+[55.304s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/event_callback.h
+[55.304s] -- Installing: /Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rcl/rcl/validate_enclave_name.h
+[55.339s] Invoked command in '/Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rcl' returned '0': AMENT_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install DYLD_LIBRARY_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/mimick_vendor/lib:/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PYTHONPATH=/Users/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=81 ROS_PYTHON_VERSION=3 SHLVL=3 _=/usr/bin/env /Users/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /Users/runner/work/pixi_rosdistro/pixi_rosdistro/build/rcl
