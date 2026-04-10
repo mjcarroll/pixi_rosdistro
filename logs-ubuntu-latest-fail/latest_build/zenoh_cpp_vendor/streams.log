@@ -1,1227 +1,1233 @@
-[1.855s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rmw_zenoh/zenoh_cpp_vendor -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
-[1.934s] Not searching for unused variables given on the command line.
-[1.935s] -- The C compiler identification is GNU 14.3.0
-[2.062s] -- The CXX compiler identification is GNU 14.3.0
-[2.076s] -- Detecting C compiler ABI info
-[2.175s] -- Detecting C compiler ABI info - done
-[2.201s] -- Check for working C compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
-[2.201s] -- Detecting C compile features
-[2.201s] -- Detecting C compile features - done
-[2.225s] -- Detecting CXX compiler ABI info
-[2.363s] -- Detecting CXX compiler ABI info - done
-[2.398s] -- Check for working CXX compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
-[2.398s] -- Detecting CXX compile features
-[2.400s] -- Detecting CXX compile features - done
-[2.413s] -- Found ament_cmake: 2.8.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake/cmake)
-[2.662s] -- Found ament_cmake_vendor_package: 2.8.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_vendor_package/cmake)
-[2.846s] -- Configuring done (1.0s)
-[2.857s] -- Generating done (0.0s)
-[2.860s] -- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor
-[2.868s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rmw_zenoh/zenoh_cpp_vendor -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
-[2.869s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor -- -j4 -l4
-[2.892s] [1/16] Creating directories for 'zenoh_c_vendor'
-[3.700s] [2/16] Performing download step for 'zenoh_c_vendor'
-[3.700s] === ./zenoh_c_vendor (git) ===
-[3.700s] hint: Using 'master' as the name for the initial branch. This default branch name
-[3.701s] hint: will change to "main" in Git 3.0. To configure the initial branch name
-[3.701s] hint: to use in all of your new repositories, which will suppress this warning,
-[3.701s] hint: call:
-[3.701s] hint:
-[3.701s] hint: 	git config --global init.defaultBranch <name>
-[3.701s] hint:
-[3.701s] hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
-[3.701s] hint: 'development'. The just-created branch can be renamed via this command:
-[3.701s] hint:
-[3.702s] hint: 	git branch -m <name>
-[3.702s] hint:
-[3.702s] hint: Disable this message with "git config set advice.defaultBranchName false"
-[3.702s] Initialized empty Git repository in /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/src/zenoh_c_vendor/.git/
-[3.702s] 
-[3.702s] From https://github.com/eclipse-zenoh/zenoh-c
-[3.702s]  * branch            c1a477d3f5efc3abc0f0cf95e0773225d00dea3b -> FETCH_HEAD
-[3.702s] Note: switching to 'c1a477d3f5efc3abc0f0cf95e0773225d00dea3b'.
-[3.702s] 
-[3.703s] You are in 'detached HEAD' state. You can look around, make experimental
-[3.703s] changes and commit them, and you can discard any commits you make in this
-[3.703s] state without impacting any branches by switching back to a branch.
-[3.703s] 
-[3.703s] If you want to create a new branch to retain commits you create, you may
-[3.703s] do so (now or later) by using -c with the switch command. Example:
-[3.703s] 
-[3.703s]   git switch -c <new-branch-name>
-[3.703s] 
-[3.703s] Or undo this operation with:
-[3.704s] 
-[3.704s]   git switch -
-[3.704s] 
-[3.704s] Turn off this advice by setting config variable advice.detachedHead to false
-[3.704s] 
-[3.704s] HEAD is now at c1a477d build: Sync  with eclipse-zenoh/zenoh@f9af463 from 2026-03-22 (#1239)
-[3.704s] 
-[3.712s] [3/16] No update_disconnected step for 'zenoh_c_vendor'
-[3.728s] [4/16] No patch_disconnected step for 'zenoh_c_vendor'
-[4.782s] [5/16] Performing configure step for 'zenoh_c_vendor'
-[4.782s] loading initial cache file /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-config.cmake
-[4.782s] -- The C compiler identification is GNU 14.3.0
-[4.782s] -- The CXX compiler identification is GNU 14.3.0
-[4.783s] -- Detecting C compiler ABI info
-[4.783s] -- Detecting C compiler ABI info - done
-[4.783s] -- Check for working C compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
-[4.783s] -- Detecting C compile features
-[4.783s] -- Detecting C compile features - done
-[4.783s] -- Detecting CXX compiler ABI info
-[4.783s] -- Detecting CXX compiler ABI info - done
-[4.783s] -- Check for working CXX compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
-[4.785s] -- Detecting CXX compile features
-[4.785s] -- Detecting CXX compile features - done
-[4.785s] -- CMAKE_BUILD_TYPE = Release
-[4.785s] -- ZENOHC_BUILD_WITH_SHARED_MEMORY = FALSE
-[4.785s] -- ZENOHC_BUILD_WITH_UNSTABLE_API = TRUE
-[4.785s] -- ZENOHC_BUILD_TESTS_WITH_CXX = FALSE
-[4.788s] -- ZENOHC_CUSTOM_TARGET = 
-[4.788s] -- ENV{CARGO_BUILD_TARGET} = 
-[4.788s] -- ZENOHC_CARGO_CHANNEL = 
-[4.788s] -- ZENOHC_MSRV_1_75 = TRUE
-[4.788s] -- Due to ZENOHC_MSRV_1_75 setting the ZENOHC_COPY_SOURCE_CARGO_LOCK and ZENOHC_BUILD_IN_SOURCE_TREE cache variables are forcibly set to FALSE to avoid build failures due to incompatible source Cargo.lock file
-[4.788s] -- ZENOHC_COPY_SOURCE_CARGO_LOCK = FALSE
-[4.788s] -- ZENOHC_BUILD_IN_SOURCE_TREE = FALSE
-[4.788s] -- ZENOHC_CARGO_FLAGS = --features=shared-memory zenoh/transport_serial
-[4.789s] -- BUILD_SHARED_LIBS = ON
-[4.789s] -- ZENOHC_TREAT_WARNING_AS_ERROR = OFF
-[4.789s] -- project_version = 1.8.0
-[4.789s] -- Mode: Non-IDE
-[4.789s] -- Configuring Cargo.toml in /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/src/zenoh_c_vendor-build/debug for zenohc
-[4.789s] -- Configuring Cargo.toml in /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/src/zenoh_c_vendor-build/release for zenohc
-[4.789s] -- Due to ZENOHC_CARGO_FLAGS setting ZENOHC_BUILD_WITH_SHARED_MEMORY = TRUE
-[4.789s] -- cargo_flags = --release;--manifest-path=/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/src/zenoh_c_vendor-build/release/Cargo.toml;--features=shared-memory zenoh/transport_serial;--features=unstable
-[4.789s] -- libs = /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/src/zenoh_c_vendor-build/release/target/release/libzenohc.so;/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/src/zenoh_c_vendor-build/release/target/release/libzenohc.a
-[4.790s] -- NATIVE_STATIC_LIBS = rt;pthread;m;dl
-[4.790s] -- zenoh-c install
-[4.790s] -- CMAKE_INSTALL_PREFIX = /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor
-[4.790s] -- zenoh-c tests
-[4.790s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
-[4.790s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
-[4.790s] -- Looking for pthread_create in pthreads
-[4.794s] -- Looking for pthread_create in pthreads - not found
-[4.794s] -- Looking for pthread_create in pthread
-[4.794s] -- Looking for pthread_create in pthread - found
-[4.794s] -- Found Threads: TRUE
-[4.794s] -- zenoh-c examples
-[4.794s] -- Configuring done (0.9s)
-[4.794s] -- Generating done (0.1s)
-[4.794s] -- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/src/zenoh_c_vendor-build
-[542.818s] [6/16] Performing build step for 'zenoh_c_vendor'
-[542.818s] [0/1] Generating release/target/release/libzenohc.so, release/target/release/libzenohc.a
-[542.818s] "RUSTFLAGS = $$RUSTFLAGS"
-[542.819s] "cargo build --release --manifest-path=/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/src/zenoh_c_vendor-build/release/Cargo.toml --features=shared-memory zenoh/transport_serial --features=unstable"
-[542.819s]     Updating crates.io index
-[542.819s]     Updating git repository `https://github.com/eclipse-zenoh/zenoh.git`
-[542.819s] From https://github.com/eclipse-zenoh/zenoh
-[542.819s]  * [new branch]        main       -> origin/main
-[542.819s]      Locking 487 packages to latest compatible versions
-[542.819s]       Adding async-lock v3.4.1 (available: v3.4.2)
-[542.819s]       Adding base64ct v1.6.0 (available: v1.8.3)
-[542.819s]       Adding clap v4.5.60 (available: v4.6.0)
-[542.819s]       Adding clap_builder v4.5.60 (available: v4.6.0)
-[542.820s]       Adding clap_lex v1.0.0 (available: v1.1.0)
-[542.820s]       Adding ctor v0.4.3 (available: v0.8.0)
-[542.820s]       Adding derive_more v2.0.1 (available: v2.1.1)
-[542.820s]       Adding derive_more-impl v2.0.1 (available: v2.1.1)
-[542.820s]       Adding evalexpr v11.3.1 (available: v13.1.0)
-[542.820s]       Adding generic-array v0.14.7 (available: v0.14.9)
-[542.820s]       Adding home v0.5.9 (available: v0.5.12)
-[542.820s]       Adding idna_adapter v1.2.0 (available: v1.2.1)
-[542.820s]       Adding indexmap v2.11.4 (available: v2.13.0)
-[542.820s]       Adding json5 v0.4.1 (available: v1.3.1)
-[542.821s]       Adding litemap v0.7.4 (available: v0.7.5)
-[542.821s]       Adding pest v2.8.0 (available: v2.8.6)
-[542.821s]       Adding pest_derive v2.8.0 (available: v2.8.6)
-[542.821s]       Adding pest_generator v2.8.0 (available: v2.8.6)
-[542.821s]       Adding pest_meta v2.8.0 (available: v2.8.6)
-[542.821s]       Adding phf v0.11.3 (available: v0.13.1)
-[542.821s]       Adding potential_utf v0.1.0 (available: v0.1.5)
-[542.821s]       Adding proc-macro-crate v3.4.0 (available: v3.5.0)
-[542.821s]       Adding prost v0.14.1 (available: v0.14.3)
-[542.822s]       Adding prost-derive v0.14.1 (available: v0.14.3)
-[542.822s]       Adding rand v0.9.2 (available: v0.10.0)
-[542.822s]       Adding rustc-hash v2.1.1 (available: v2.1.2)
-[542.822s]       Adding security-framework v3.6.0 (available: v3.7.0)
-[542.822s]       Adding serde_spanned v1.0.1 (available: v1.1.1)
-[542.822s]       Adding serde_with v3.14.1 (available: v3.18.0)
-[542.822s]       Adding serde_with_macros v3.14.1 (available: v3.18.0)
-[542.822s]       Adding spin v0.9.8 (available: v0.10.0)
-[542.822s]       Adding static_init v1.0.3 (available: v1.0.4)
-[542.822s]       Adding tempfile v3.24.0 (available: v3.27.0)
-[542.822s]       Adding time v0.3.41 (available: v0.3.47)
-[542.823s]       Adding time-core v0.1.4 (available: v0.1.8)
-[542.823s]       Adding time-macros v0.2.22 (available: v0.2.27)
-[542.823s]       Adding tinystr v0.8.0 (available: v0.8.3)
-[542.823s]       Adding tls-listener v0.11.0 (available: v0.11.2)
-[542.823s]       Adding toml v0.9.6 (available: v0.9.12+spec-1.1.0)
-[542.823s]       Adding toml_datetime v0.7.1 (available: v0.7.5+spec-1.1.0)
-[542.823s]       Adding toml_edit v0.23.5 (available: v0.23.10+spec-1.0.0)
-[542.823s]       Adding toml_parser v1.0.2 (available: v1.1.2+spec-1.1.0)
-[542.823s]       Adding toml_writer v1.0.2 (available: v1.1.1+spec-1.1.0)
-[542.823s]       Adding unwrap-infallible v0.1.5 (available: v1.0.0)
-[542.823s]       Adding unzip-n v0.1.2 (available: v0.1.4)
-[542.824s]       Adding uuid v1.20.0 (available: v1.23.0)
-[542.824s]       Adding zerofrom v0.1.5 (available: v0.1.7)
-[542.824s]  Downloading crates ...
-[542.824s]   Downloaded ahash v0.8.12
-[542.824s]   Downloaded advisory-lock v0.3.0
-[542.824s]   Downloaded adler2 v2.0.1
-[542.824s]   Downloaded anstyle v1.0.14
-[542.824s]   Downloaded anstream v0.6.21
-[542.824s]   Downloaded anstyle-parse v0.2.7
-[542.824s]   Downloaded allocator-api2 v0.2.21
-[542.824s]   Downloaded git-version-macro v0.3.9
-[542.824s]   Downloaded generic-array v0.14.7
-[542.825s]   Downloaded git-version v0.3.9
-[542.825s]   Downloaded is_terminal_polyfill v1.70.2
-[542.825s]   Downloaded inout v0.1.4
-[542.825s]   Downloaded dirs-sys v0.5.0
-[542.825s]   Downloaded aes v0.8.4
-[542.825s]   Downloaded crypto-common v0.1.7
-[542.825s]   Downloaded derive_more v2.0.1
-[542.825s]   Downloaded darling_macro v0.21.3
-[542.826s]   Downloaded bitflags v1.3.2
-[542.826s]   Downloaded async-trait v0.1.89
-[542.826s]   Downloaded parking v2.2.1
-[542.826s]   Downloaded home v0.5.9
-[542.826s]   Downloaded clap_lex v1.0.0
-[542.826s]   Downloaded proc-macro-crate v3.4.0
-[542.826s]   Downloaded getrandom v0.3.4
-[542.826s]   Downloaded phf_shared v0.11.3
-[542.826s]   Downloaded ref-cast-impl v1.0.25
-[542.826s]   Downloaded rand_core v0.6.4
-[542.826s]   Downloaded rand_core v0.9.5
-[542.827s]   Downloaded rustc_version v0.4.1
-[542.827s]   Downloaded rustc-hash v2.1.1
-[542.827s]   Downloaded phf v0.13.1
-[542.827s]   Downloaded scopeguard v1.2.0
-[542.827s]   Downloaded regex v1.12.3
-[542.827s]   Downloaded siphasher v1.0.2
-[542.827s]   Downloaded tokio-serial v5.4.5
-[542.827s]   Downloaded rusticata-macros v4.1.0
-[542.827s]   Downloaded utf-8 v0.7.6
-[542.827s]   Downloaded shlex v1.3.0
-[542.827s]   Downloaded serde_derive_internals v0.29.1
-[542.828s]   Downloaded sharded-slab v0.1.7
-[542.828s]   Downloaded tracing-subscriber v0.3.23
-[542.828s]   Downloaded zerofrom v0.1.5
-[542.828s]   Downloaded validated_struct v2.2.0
-[542.828s]   Downloaded zerovec-derive v0.10.3
-[542.828s]   Downloaded zeroize v1.8.2
-[542.828s]   Downloaded z-serial v0.3.1
-[542.828s]   Downloaded zmij v1.0.21
-[542.828s]   Downloaded zerofrom-derive v0.1.7
-[542.828s]   Downloaded quinn-proto v0.11.14
-[542.828s]   Downloaded yoke-derive v0.7.5
-[542.828s]   Downloaded nix v0.29.0
-[542.829s]   Downloaded static_init v1.0.3
-[542.829s]   Downloaded nix v0.26.4
-[542.829s]   Downloaded stabby-abi v72.1.1
-[542.829s]   Downloaded syn v1.0.109
-[542.829s]   Downloaded unescaper v0.1.8
-[542.829s]   Downloaded syn v2.0.117
-[542.829s]   Downloaded talc v4.4.3
-[542.829s]   Downloaded twox-hash v1.6.3
-[542.829s]   Downloaded tungstenite v0.24.0
-[542.829s]   Downloaded tracing-log v0.2.0
-[542.829s]   Downloaded toml_parser v1.0.2
-[542.830s]   Downloaded icu_properties_data v1.5.1
-[542.830s]   Downloaded writeable v0.5.5
-[542.830s]   Downloaded typenum v1.19.0
-[542.830s]   Downloaded toml_edit v0.23.5
-[542.830s]   Downloaded x509-parser v0.18.1
-[542.830s]   Downloaded time v0.3.41
-[542.830s]   Downloaded tokio-util v0.7.18
-[542.830s]   Downloaded winnow v0.7.15
-[542.830s]   Downloaded tokio v1.50.0
-[542.831s]   Downloaded sha2-const-stable v0.1.0
-[542.831s]   Downloaded url v2.5.8
-[542.831s]   Downloaded petgraph v0.8.3
-[542.831s]   Downloaded libc v0.2.184
-[542.831s]   Downloaded uhlc v0.8.2
-[542.831s]   Downloaded typeid v1.0.3
-[542.831s]   Downloaded tokio-tungstenite v0.24.0
-[542.831s]   Downloaded token-cell v2.1.1
-[542.831s]   Downloaded tempfile v3.24.0
-[542.831s]   Downloaded tracing v0.1.44
-[542.831s]   Downloaded yoke v0.7.5
-[542.831s]   Downloaded unicode-xid v0.2.6
-[542.832s]   Downloaded unicode-ident v1.0.24
-[542.832s]   Downloaded tracing-serde v0.2.0
-[542.832s]   Downloaded tokio-macros v2.6.1
-[542.832s]   Downloaded tls-listener v0.11.0
-[542.832s]   Downloaded tinyvec v1.11.0
-[542.832s]   Downloaded thiserror-impl v2.0.18
-[542.832s]   Downloaded thiserror-impl v1.0.69
-[542.832s]   Downloaded itertools v0.14.0
-[542.832s]   Downloaded write16 v1.0.0
-[542.832s]   Downloaded zerocopy v0.8.48
-[542.832s]   Downloaded untrusted v0.9.0
-[542.833s]   Downloaded unsafe-libyaml v0.2.11
-[542.833s]   Downloaded ucd-trie v0.1.7
-[542.833s]   Downloaded tracing-attributes v0.1.31
-[542.833s]   Downloaded webpki-roots v1.0.6
-[542.833s]   Downloaded tokio-rustls v0.26.4
-[542.833s]   Downloaded tinyvec_macros v0.1.1
-[542.833s]   Downloaded time-macros v0.2.22
-[542.833s]   Downloaded time-core v0.1.4
-[542.833s]   Downloaded thread_local v1.1.9
-[542.833s]   Downloaded thread-priority v1.2.0
-[542.833s]   Downloaded thiserror v2.0.18
-[542.834s]   Downloaded thiserror v1.0.69
-[542.834s]   Downloaded subtle v2.6.1
-[542.834s]   Downloaded strsim v0.11.1
-[542.834s]   Downloaded static_assertions v1.1.0
-[542.834s]   Downloaded stable_deref_trait v1.2.1
-[542.834s]   Downloaded stabby-macros v72.1.1
-[542.834s]   Downloaded stabby v72.1.1
-[542.834s]   Downloaded linux-raw-sys v0.12.1
-[542.834s]   Downloaded spki v0.7.3
-[542.834s]   Downloaded zerovec v0.10.4
-[542.835s]   Downloaded idna v1.1.0
-[542.835s]   Downloaded vec_map v0.8.2
-[542.835s]   Downloaded uuid v1.20.0
-[542.835s]   Downloaded tracing-core v0.1.36
-[542.835s]   Downloaded static_init_macro v1.0.4
-[542.835s]   Downloaded sha3 v0.10.8
-[542.835s]   Downloaded pest v2.8.0
-[542.835s]   Downloaded num-bigint-dig v0.8.6
-[542.835s]   Downloaded libm v0.2.16
-[542.835s]   Downloaded utf8_iter v1.0.4
-[542.835s]   Downloaded toml v0.9.6
-[542.836s]   Downloaded socket2 v0.5.10
-[542.836s]   Downloaded smallvec v1.15.1
-[542.836s]   Downloaded quinn v0.11.9
-[542.836s]   Downloaded num-bigint v0.4.6
-[542.836s]   Downloaded nom v7.1.3
-[542.836s]   Downloaded icu_collections v1.5.0
-[542.836s]   Downloaded http v1.4.0
-[542.836s]   Downloaded hashbrown v0.16.1
-[542.836s]   Downloaded version_check v0.9.5
-[542.836s]   Downloaded validated_struct_macros v2.2.0
-[542.836s]   Downloaded utf8parse v0.2.2
-[542.837s]   Downloaded utf16_iter v1.0.5
-[542.837s]   Downloaded unzip-n v0.1.2
-[542.837s]   Downloaded unwrap-infallible v0.1.5
-[542.837s]   Downloaded toml_datetime v0.7.1
-[542.837s]   Downloaded spin v0.10.0
-[542.837s]   Downloaded spin v0.9.8
-[542.837s]   Downloaded socket2 v0.6.3
-[542.837s]   Downloaded slab v0.4.12
-[542.837s]   Downloaded simd-adler32 v0.3.9
-[542.837s]   Downloaded signature v2.2.0
-[542.837s]   Downloaded serialport v4.9.0
-[542.837s]   Downloaded serde_yaml v0.9.34+deprecated
-[542.838s]   Downloaded serde_with v3.14.1
-[542.838s]   Downloaded serde_json v1.0.149
-[542.838s]   Downloaded serde v1.0.228
-[542.838s]   Downloaded schemars v1.2.1
-[542.838s]   Downloaded schemars v0.9.0
-[542.838s]   Downloaded rustls-webpki v0.103.10
-[542.838s]   Downloaded rustls v0.23.37
-[542.838s]   Downloaded rustix v1.1.4
-[542.838s]   Downloaded mio v1.2.0
-[542.838s]   Downloaded minimal-lexical v0.2.1
-[542.839s]   Downloaded memchr v2.8.0
-[542.839s]   Downloaded indexmap v2.11.4
-[542.839s]   Downloaded icu_provider v1.5.0
-[542.839s]   Downloaded icu_properties v1.5.1
-[542.839s]   Downloaded icu_normalizer_data v1.5.1
-[542.839s]   Downloaded icu_normalizer v1.5.0
-[542.839s]   Downloaded icu_locid_transform_data v1.5.1
-[542.839s]   Downloaded icu_locid v1.5.0
-[542.839s]   Downloaded hashbrown v0.15.5
-[542.839s]   Downloaded hashbrown v0.14.5
-[542.839s]   Downloaded tinystr v0.8.0
-[542.839s]   Downloaded tinystr v0.7.6
-[542.840s]   Downloaded synstructure v0.13.2
-[542.840s]   Downloaded sha2 v0.10.9
-[542.840s]   Downloaded sha1 v0.10.6
-[542.840s]   Downloaded serde_with_macros v3.14.1
-[542.840s]   Downloaded prost v0.14.1
-[542.840s]   Downloaded pest_derive v2.8.0
-[542.840s]   Downloaded num-traits v0.2.19
-[542.840s]   Downloaded log v0.4.29
-[542.840s]   Downloaded indexmap v1.9.3
-[542.840s]   Downloaded hashbrown v0.12.3
-[542.840s]   Downloaded shellexpand v3.1.2
-[542.840s]   Downloaded serde_spanned v1.0.1
-[542.841s]   Downloaded serde_derive v1.0.228
-[542.841s]   Downloaded serde_core v1.0.228
-[542.841s]   Downloaded semver v1.0.27
-[542.841s]   Downloaded secrecy v0.8.0
-[542.841s]   Downloaded schemars_derive v1.2.1
-[542.841s]   Downloaded ryu v1.0.23
-[542.841s]   Downloaded rustversion v1.0.22
-[542.841s]   Downloaded rustls-platform-verifier v0.6.2
-[542.841s]   Downloaded rustls-pki-types v1.14.0
-[542.841s]   Downloaded rustls-pemfile v2.2.0
-[542.841s]   Downloaded rustls-native-certs v0.8.3
-[542.841s]   Downloaded ring v0.17.14
-[542.841s]   Downloaded prost-derive v0.14.1
-[542.841s]   Downloaded pkcs8 v0.10.2
-[542.841s]   Downloaded pkcs1 v0.7.5
-[542.841s]   Downloaded pest_meta v2.8.0
-[542.841s]   Downloaded pest_generator v2.8.0
-[542.841s]   Downloaded paste v1.0.15
-[542.842s]   Downloaded parking_lot_core v0.9.12
-[542.842s]   Downloaded parking_lot v0.12.5
-[542.842s]   Downloaded once_cell v1.21.4
-[542.842s]   Downloaded mio-serial v5.0.6
-[542.842s]   Downloaded miniz_oxide v0.8.9
-[542.842s]   Downloaded lz4_flex v0.10.0
-[542.842s]   Downloaded itoa v1.0.18
-[542.842s]   Downloaded iana-time-zone v0.1.65
-[542.842s]   Downloaded httparse v1.10.1
-[542.842s]   Downloaded hmac v0.12.1
-[542.842s]   Downloaded toml_writer v1.0.2
-[542.842s]   Downloaded rsa v0.9.10
-[542.842s]   Downloaded ron v0.12.1
-[542.842s]   Downloaded regex-syntax v0.8.10
-[542.842s]   Downloaded regex-automata v0.4.14
-[542.842s]   Downloaded pnet_sys v0.35.0
-[542.842s]   Downloaded pnet_datalink v0.35.0
-[542.842s]   Downloaded pin-project-lite v0.2.17
-[542.842s]   Downloaded phf_macros v0.11.3
-[542.843s]   Downloaded phf_generator v0.13.1
-[542.843s]   Downloaded phf v0.11.3
-[542.843s]   Downloaded oid-registry v0.8.1
-[542.843s]   Downloaded nonempty-collections v0.3.1
-[542.843s]   Downloaded icu_locid_transform v1.5.0
-[542.843s]   Downloaded humantime v2.3.0
-[542.843s]   Downloaded pnet_base v0.35.0
-[542.843s]   Downloaded pem-rfc7468 v0.7.0
-[542.843s]   Downloaded num-integer v0.1.46
-[542.843s]   Downloaded nu-ansi-term v0.50.3
-[542.843s]   Downloaded nanorand v0.7.0
-[542.843s]   Downloaded lock_api v0.4.14
-[542.843s]   Downloaded litemap v0.7.4
-[542.843s]   Downloaded heck v0.5.0
-[542.843s]   Downloaded prometheus-client-derive-encode v0.5.0
-[542.843s]   Downloaded phf_shared v0.13.1
-[542.843s]   Downloaded phf_generator v0.11.3
-[542.843s]   Downloaded rand v0.9.2
-[542.843s]   Downloaded rand v0.8.5
-[542.844s]   Downloaded portable-atomic v1.13.1
-[542.844s]   Downloaded no-std-net v0.6.0
-[542.844s]   Downloaded futures-util v0.3.32
-[542.844s]   Downloaded clap_builder v4.5.60
-[542.844s]   Downloaded chrono v0.4.44
-[542.844s]   Downloaded cbindgen v0.29.2
-[542.844s]   Downloaded num_cpus v1.17.0
-[542.844s]   Downloaded matchers v0.2.0
-[542.844s]   Downloaded lru-slab v0.1.2
-[542.844s]   Downloaded lazy_static v1.5.0
-[542.844s]   Downloaded keyed-set v1.1.0
-[542.844s]   Downloaded json5 v0.4.1
-[542.844s]   Downloaded idna_adapter v1.2.0
-[542.844s]   Downloaded icu_provider_macros v1.5.0
-[542.844s]   Downloaded der v0.7.10
-[542.844s]   Downloaded prometheus-client v0.24.1
-[542.844s]   Downloaded option-ext v0.2.0
-[542.844s]   Downloaded ident_case v1.0.1
-[542.844s]   Downloaded hex v0.4.3
-[542.844s]   Downloaded flume v0.12.0
-[542.845s]   Downloaded flume v0.11.1
-[542.845s]   Downloaded flate2 v1.1.9
-[542.845s]   Downloaded derive_more-impl v2.0.1
-[542.845s]   Downloaded der-parser v10.0.0
-[542.845s]   Downloaded darling_core v0.21.3
-[542.845s]   Downloaded darling v0.21.3
-[542.845s]   Downloaded crossbeam-channel v0.5.15
-[542.845s]   Downloaded const_format v0.2.35
-[542.845s]   Downloaded cc v1.2.58
-[542.845s]   Downloaded base64 v0.22.1
-[542.845s]   Downloaded asn1-rs v0.7.1
-[542.845s]   Downloaded ringbuffer-spsc v0.1.15
-[542.846s]   Downloaded proc-macro2 v1.0.106
-[542.846s]   Downloaded phf_macros v0.13.1
-[542.846s]   Downloaded event-listener v5.4.1
-[542.846s]   Downloaded evalexpr v11.3.1
-[542.846s]   Downloaded quinn-udp v0.5.14
-[542.846s]   Downloaded num-iter v0.1.45
-[542.846s]   Downloaded keccak v0.1.6
-[542.846s]   Downloaded arc-swap v1.9.0
-[542.846s]   Downloaded rand_chacha v0.9.0
-[542.846s]   Downloaded futures-channel v0.3.32
-[542.847s]   Downloaded dtoa v1.0.11
-[542.847s]   Downloaded crc32fast v1.5.0
-[542.847s]   Downloaded clap v4.5.60
-[542.847s]   Downloaded async-lock v3.4.1
-[542.847s]   Downloaded ref-cast v1.0.25
-[542.847s]   Downloaded rand_chacha v0.3.1
-[542.847s]   Downloaded quote v1.0.45
-[542.847s]   Downloaded ppv-lite86 v0.2.21
-[542.847s]   Downloaded percent-encoding v2.3.2
-[542.847s]   Downloaded leb128 v0.2.5
-[542.847s]   Downloaded futures-executor v0.3.32
-[542.847s]   Downloaded futures v0.3.32
-[542.847s]   Downloaded foldhash v0.2.0
-[542.847s]   Downloaded displaydoc v0.2.5
-[542.847s]   Downloaded data-encoding v2.10.0
-[542.847s]   Downloaded const-oid v0.9.6
-[542.847s]   Downloaded openssl-probe v0.2.1
-[542.847s]   Downloaded num-conv v0.1.0
-[542.847s]   Downloaded foldhash v0.1.5
-[542.847s]   Downloaded fixedbitset v0.5.7
-[542.848s]   Downloaded either v1.15.0
-[542.848s]   Downloaded digest v0.10.7
-[542.848s]   Downloaded const_format_proc_macros v0.2.34
-[542.848s]   Downloaded colorchoice v1.0.5
-[542.848s]   Downloaded byteorder v1.5.0
-[542.848s]   Downloaded bitflags v2.11.0
-[542.848s]   Downloaded autocfg v1.5.0
-[542.848s]   Downloaded anyhow v1.0.102
-[542.848s]   Downloaded futures-core v0.3.32
-[542.848s]   Downloaded fs_extra v1.3.0
-[542.848s]   Downloaded find-msvc-tools v0.1.9
-[542.848s]   Downloaded fastbloom v0.14.1
-[542.848s]   Downloaded deranged v0.4.0
-[542.848s]   Downloaded crossbeam-utils v0.8.21
-[542.848s]   Downloaded crossbeam-epoch v0.9.18
-[542.848s]   Downloaded concurrent-queue v2.5.0
-[542.848s]   Downloaded powerfmt v0.2.0
-[542.848s]   Downloaded potential_utf v0.1.0
-[542.848s]   Downloaded libloading v0.8.9
-[542.849s]   Downloaded ipnetwork v0.20.0
-[542.849s]   Downloaded futures-macro v0.3.32
-[542.849s]   Downloaded form_urlencoded v1.2.2
-[542.849s]   Downloaded getrandom v0.2.17
-[542.849s]   Downloaded futures-task v0.3.32
-[542.849s]   Downloaded futures-sink v0.3.32
-[542.849s]   Downloaded futures-io v0.3.32
-[542.849s]   Downloaded fs2 v0.4.3
-[542.849s]   Downloaded fnv v1.0.7
-[542.849s]   Downloaded equivalent v1.0.2
-[542.849s]   Downloaded dtor-proc-macro v0.0.5
-[542.849s]   Downloaded dtor v0.0.6
-[542.849s]   Downloaded dirs v6.0.0
-[542.849s]   Downloaded crossbeam v0.8.4
-[542.849s]   Downloaded cpufeatures v0.2.17
-[542.849s]   Downloaded base64ct v1.6.0
-[542.849s]   Downloaded fastrand v2.3.0
-[542.850s]   Downloaded event-listener-strategy v0.5.4
-[542.850s]   Downloaded errno v0.3.14
-[542.850s]   Downloaded dyn-clone v1.0.20
-[542.850s]   Downloaded ctor-proc-macro v0.0.6
-[542.850s]   Downloaded crossbeam-deque v0.8.6
-[542.850s]   Downloaded cipher v0.4.4
-[542.850s]   Downloaded cfg_aliases v0.1.1
-[542.850s]   Downloaded cfg-if v1.0.4
-[542.850s]   Downloaded buddy_system_allocator v0.10.0
-[542.850s]   Downloaded ctor v0.4.3
-[542.850s]   Downloaded crossbeam-queue v0.3.12
-[542.850s]   Downloaded cfg_aliases v0.2.1
-[542.850s]   Downloaded bytes v1.11.1
-[542.850s]   Downloaded block-buffer v0.10.4
-[542.850s]   Downloaded bincode v1.3.3
-[542.850s]   Downloaded asn1-rs-derive v0.6.0
-[542.850s]   Downloaded array-init v2.1.0
-[542.850s]   Downloaded anstyle-query v1.1.5
-[542.850s]   Downloaded aho-corasick v1.1.4
-[542.851s]   Downloaded asn1-rs-impl v0.2.0
-[542.851s]   Downloaded cobs v0.2.3
-[542.851s]    Compiling proc-macro2 v1.0.106
-[542.851s]    Compiling quote v1.0.45
-[542.851s]    Compiling unicode-ident v1.0.24
-[542.851s]    Compiling libc v0.2.184
-[542.851s]    Compiling serde_core v1.0.228
-[542.851s]    Compiling cfg-if v1.0.4
-[542.851s]    Compiling zerocopy v0.8.48
-[542.851s]    Compiling version_check v0.9.5
-[542.851s]    Compiling memchr v2.8.0
-[542.852s]    Compiling serde v1.0.228
-[542.852s]    Compiling getrandom v0.3.4
-[542.852s]    Compiling syn v2.0.117
-[542.852s]    Compiling getrandom v0.2.17
-[542.852s]    Compiling once_cell v1.21.4
-[542.852s]    Compiling serde_derive v1.0.228
-[542.852s]    Compiling thiserror v2.0.18
-[542.852s]    Compiling thiserror-impl v2.0.18
-[542.852s]    Compiling rand_core v0.6.4
-[542.852s]    Compiling synstructure v0.13.2
-[542.853s]    Compiling ppv-lite86 v0.2.21
-[542.853s]    Compiling rand_chacha v0.3.1
-[542.853s]    Compiling rustversion v1.0.22
-[542.853s]    Compiling itoa v1.0.18
-[542.853s]    Compiling rand v0.8.5
-[542.853s]    Compiling allocator-api2 v0.2.21
-[542.853s]    Compiling tokio-macros v2.6.1
-[542.853s]    Compiling zmij v1.0.21
-[542.853s]    Compiling ahash v0.8.12
-[542.853s]    Compiling libm v0.2.16
-[542.853s]    Compiling foldhash v0.2.0
-[542.854s]    Compiling equivalent v1.0.2
-[542.854s]    Compiling serde_json v1.0.149
-[542.854s]    Compiling displaydoc v0.2.5
-[542.854s]    Compiling hashbrown v0.16.1
-[542.854s]    Compiling crossbeam-utils v0.8.21
-[542.854s]    Compiling anyhow v1.0.102
-[542.854s]    Compiling ref-cast v1.0.25
-[542.854s]    Compiling either v1.15.0
-[542.854s]    Compiling portable-atomic v1.13.1
-[542.854s]    Compiling tracing-attributes v0.1.31
-[542.855s]    Compiling autocfg v1.5.0
-[542.855s]    Compiling cfg_aliases v0.2.1
-[542.855s]    Compiling num-traits v0.2.19
-[542.855s]    Compiling ref-cast-impl v1.0.25
-[542.855s]    Compiling paste v1.0.15
-[542.855s]    Compiling serde_derive_internals v0.29.1
-[542.855s]    Compiling schemars_derive v1.2.1
-[542.855s]    Compiling shlex v1.3.0
-[542.855s]    Compiling typeid v1.0.3
-[542.855s]    Compiling find-msvc-tools v0.1.9
-[542.856s]    Compiling syn v1.0.109
-[542.856s]    Compiling cc v1.2.58
-[542.856s]    Compiling hashbrown v0.14.5
-[542.856s]    Compiling zenoh-result v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#9e34109f)
-[542.856s]    Compiling dyn-clone v1.0.20
-[542.856s]    Compiling keyed-set v1.1.0
-[542.856s]    Compiling token-cell v2.1.1
-[542.856s]    Compiling ring v0.17.14
-[542.856s]    Compiling futures-macro v0.3.32
-[542.856s]    Compiling schemars v1.2.1
-[542.856s]    Compiling typenum v1.19.0
-[542.857s]    Compiling zenoh-macros v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#9e34109f)
-[542.857s]    Compiling zenoh-keyexpr v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#9e34109f)
-[542.857s]    Compiling generic-array v0.14.7
-[542.857s]    Compiling log v0.4.29
-[542.857s]    Compiling indexmap v2.11.4
-[542.857s]    Compiling winnow v0.7.15
-[542.857s]    Compiling toml_datetime v0.7.1
-[542.857s]    Compiling semver v1.0.27
-[542.857s]    Compiling toml_parser v1.0.2
-[542.858s]    Compiling rustc_version v0.4.1
-[542.858s]    Compiling rustls v0.23.37
-[542.858s]    Compiling pin-project-lite v0.2.17
-[542.858s]    Compiling strsim v0.11.1
-[542.858s]    Compiling nix v0.29.0
-[542.858s]    Compiling zerofrom-derive v0.1.7
-[542.858s]    Compiling cfg_aliases v0.1.1
-[542.858s]    Compiling ucd-trie v0.1.7
-[542.859s]    Compiling pest v2.8.0
-[542.859s]    Compiling scopeguard v1.2.0
-[542.859s]    Compiling num-conv v0.1.0
-[542.859s]    Compiling time-core v0.1.4
-[542.859s]    Compiling unicode-xid v0.2.6
-[542.859s]    Compiling time-macros v0.2.22
-[542.859s]    Compiling pest_meta v2.8.0
-[542.859s]    Compiling stabby-abi v72.1.1
-[542.859s]    Compiling const_format_proc_macros v0.2.34
-[542.859s]    Compiling toml_edit v0.23.5
-[542.859s]    Compiling yoke-derive v0.7.5
-[542.859s]    Compiling stabby-macros v72.1.1
-[542.860s]    Compiling ident_case v1.0.1
-[542.860s]    Compiling fnv v1.0.7
-[542.860s]    Compiling proc-macro-crate v3.4.0
-[542.860s]    Compiling pest_generator v2.8.0
-[542.860s]    Compiling static_init v1.0.3
-[542.860s]    Compiling darling_core v0.21.3
-[542.860s]    Compiling static_init_macro v1.0.4
-[542.860s]    Compiling pest_derive v2.8.0
-[542.860s]    Compiling zerovec-derive v0.10.3
-[542.860s]    Compiling darling_macro v0.21.3
-[542.860s]    Compiling async-trait v0.1.89
-[542.860s]    Compiling stabby v72.1.1
-[542.860s]    Compiling bytes v1.11.1
-[542.860s]    Compiling darling v0.21.3
-[542.861s]    Compiling unzip-n v0.1.2
-[542.861s]    Compiling zeroize v1.8.2
-[542.861s]    Compiling serde_with_macros v3.14.1
-[542.861s]    Compiling lock_api v0.4.14
-[542.861s]    Compiling asn1-rs-derive v0.6.0
-[542.861s]    Compiling asn1-rs-impl v0.2.0
-[542.861s]    Compiling bitflags v2.11.0
-[542.861s]    Compiling spin v0.9.8
-[542.861s]    Compiling mio v1.2.0
-[542.861s]    Compiling socket2 v0.6.3
-[542.861s]    Compiling validated_struct_macros v2.2.0
-[542.861s]    Compiling quinn-udp v0.5.14
-[542.861s]    Compiling zenoh-shm v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#9e34109f)
-[542.861s]    Compiling oid-registry v0.8.1
-[542.861s]    Compiling tokio v1.50.0
-[542.862s]    Compiling lazy_static v1.5.0
-[542.862s]    Compiling quinn v0.11.9
-[542.862s]    Compiling tracing-core v0.1.36
-[542.862s]    Compiling subtle v2.6.1
-[542.862s]    Compiling futures-core v0.3.32
-[542.862s]    Compiling futures-sink v0.3.32
-[542.862s]    Compiling icu_locid_transform_data v1.5.1
-[542.862s]    Compiling icu_provider_macros v1.5.0
-[542.862s]    Compiling icu_properties_data v1.5.1
-[542.862s]    Compiling siphasher v1.0.2
-[542.862s]    Compiling tracing v0.1.44
-[542.862s]    Compiling slab v0.4.12
-[542.862s]    Compiling icu_normalizer_data v1.5.1
-[542.862s]    Compiling futures-channel v0.3.32
-[542.863s]    Compiling rustls-pki-types v1.14.0
-[542.863s]    Compiling smallvec v1.15.1
-[542.863s]    Compiling futures-io v0.3.32
-[542.863s]    Compiling futures-task v0.3.32
-[542.863s]    Compiling futures-util v0.3.32
-[542.863s]    Compiling ron v0.12.1
-[542.863s]    Compiling untrusted v0.9.0
-[542.863s]    Compiling bitflags v1.3.2
-[542.863s]    Compiling zenoh-runtime v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#9e34109f)
-[542.863s]    Compiling zenoh-core v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#9e34109f)
-[542.863s]    Compiling zenoh-collections v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#9e34109f)
-[542.863s]    Compiling rustls-webpki v0.103.10
-[542.863s]    Compiling aho-corasick v1.1.4
-[542.863s]    Compiling powerfmt v0.2.0
-[542.863s]    Compiling regex-syntax v0.8.10
-[542.864s]    Compiling deranged v0.4.0
-[542.864s]    Compiling regex-automata v0.4.14
-[542.864s]    Compiling zenoh-buffers v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#9e34109f)
-[542.864s]    Compiling num-integer v0.1.46
-[542.864s]    Compiling zerofrom v0.1.5
-[542.864s]    Compiling humantime v2.3.0
-[542.864s]    Compiling option-ext v0.2.0
-[542.864s]    Compiling minimal-lexical v0.2.1
-[542.864s]    Compiling stable_deref_trait v1.2.1
-[542.864s]    Compiling thiserror v1.0.69
-[542.864s]    Compiling const-oid v0.9.6
-[542.864s]    Compiling httparse v1.10.1
-[542.864s]    Compiling nom v7.1.3
-[542.864s]    Compiling yoke v0.7.5
-[542.865s]    Compiling dirs-sys v0.5.0
-[542.865s]    Compiling time v0.3.41
-[542.865s]    Compiling futures-executor v0.3.32
-[542.865s]    Compiling const_format v0.2.35
-[542.865s]    Compiling rand_core v0.9.5
-[542.865s]    Compiling serde_spanned v1.0.1
-[542.865s]    Compiling sha2-const-stable v0.1.0
-[542.865s]    Compiling toml_writer v1.0.2
-[542.865s]    Compiling spin v0.10.0
-[542.865s]    Compiling no-std-net v0.6.0
-[542.865s]    Compiling static_assertions v1.1.0
-[542.865s]    Compiling pnet_base v0.35.0
-[542.865s]    Compiling uhlc v0.8.2
-[542.865s]    Compiling toml v0.9.6
-[542.866s]    Compiling rand_chacha v0.9.0
-[542.866s]    Compiling futures v0.3.32
-[542.866s]    Compiling dirs v6.0.0
-[542.866s]    Compiling rusticata-macros v4.1.0
-[542.866s]    Compiling zerovec v0.10.4
-[542.866s]    Compiling matchers v0.2.0
-[542.866s]    Compiling crypto-common v0.1.7
-[542.866s]    Compiling crossbeam-channel v0.5.15
-[542.866s]    Compiling crossbeam-queue v0.3.12
-[542.866s]    Compiling tracing-serde v0.2.0
-[542.866s]    Compiling tracing-log v0.2.0
-[542.866s]    Compiling sharded-slab v0.1.7
-[542.866s]    Compiling ipnetwork v0.20.0
-[542.867s]    Compiling thiserror-impl v1.0.69
-[542.867s]    Compiling nanorand v0.7.0
-[542.867s]    Compiling pnet_sys v0.35.0
-[542.867s]    Compiling libloading v0.8.9
-[542.867s]    Compiling thread_local v1.1.9
-[542.867s]    Compiling openssl-probe v0.2.1
-[542.867s]    Compiling home v0.5.9
-[542.867s]    Compiling nu-ansi-term v0.50.3
-[542.867s]    Compiling tracing-subscriber v0.3.23
-[542.867s]    Compiling rustls-native-certs v0.8.3
-[542.867s]    Compiling pnet_datalink v0.35.0
-[542.867s]    Compiling flume v0.11.1
-[542.867s]    Compiling asn1-rs v0.7.1
-[542.867s]    Compiling shellexpand v3.1.2
-[542.868s]    Compiling rand v0.9.2
-[542.868s]    Compiling zenoh-protocol v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#9e34109f)
-[542.868s]    Compiling thread-priority v1.2.0
-[542.868s]    Compiling serde_with v3.14.1
-[542.868s]    Compiling json5 v0.4.1
-[542.868s]    Compiling nonempty-collections v0.3.1
-[542.868s]    Compiling tinyvec_macros v0.1.1
-[542.868s]    Compiling ryu v1.0.23
-[542.868s]    Compiling unsafe-libyaml v0.2.11
-[542.868s]    Compiling rustc-hash v2.1.1
-[542.868s]    Compiling data-encoding v2.10.0
-[542.868s]    Compiling serde_yaml v0.9.34+deprecated
-[542.868s]    Compiling tinyvec v1.11.0
-[542.868s]    Compiling validated_struct v2.2.0
-[542.868s]    Compiling fastbloom v0.14.1
-[542.869s]    Compiling zenoh-util v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#9e34109f)
-[542.869s]    Compiling rustls-platform-verifier v0.6.2
-[542.869s]    Compiling tinystr v0.7.6
-[542.869s]    Compiling num-bigint v0.4.6
-[542.869s]    Compiling block-buffer v0.10.4
-[542.869s]    Compiling buddy_system_allocator v0.10.0
-[542.869s]    Compiling secrecy v0.8.0
-[542.869s]    Compiling num_cpus v1.17.0
-[542.869s]    Compiling advisory-lock v0.3.0
-[542.869s]    Compiling talc v4.4.3
-[542.869s]    Compiling lru-slab v0.1.2
-[542.869s]    Compiling litemap v0.7.4
-[542.869s]    Compiling writeable v0.5.5
-[542.869s]    Compiling quinn-proto v0.11.14
-[542.870s]    Compiling icu_locid v1.5.0
-[542.870s]    Compiling zenoh-config v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#9e34109f)
-[542.870s]    Compiling digest v0.10.7
-[542.870s]    Compiling der-parser v10.0.0
-[542.870s]    Compiling tokio-util v0.7.18
-[542.870s]    Compiling zenoh-codec v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#9e34109f)
-[542.870s]    Compiling x509-parser v0.18.1
-[542.870s]    Compiling icu_provider v1.5.0
-[542.870s]    Compiling webpki-roots v1.0.6
-[542.870s]    Compiling rustls-pemfile v2.2.0
-[542.870s]    Compiling socket2 v0.5.10
-[542.870s]    Compiling base64 v0.22.1
-[542.870s]    Compiling num-bigint-dig v0.8.6
-[542.870s]    Compiling zenoh-link-commons v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#9e34109f)
-[542.871s]    Compiling icu_locid_transform v1.5.0
-[542.871s]    Compiling icu_collections v1.5.0
-[542.871s]    Compiling fastrand v2.3.0
-[542.871s]    Compiling icu_properties v1.5.1
-[542.871s]    Compiling concurrent-queue v2.5.0
-[542.871s]    Compiling utf8_iter v1.0.4
-[542.871s]    Compiling parking v2.2.1
-[542.871s]    Compiling utf16_iter v1.0.5
-[542.871s]    Compiling cpufeatures v0.2.17
-[542.871s]    Compiling write16 v1.0.0
-[542.871s]    Compiling crc32fast v1.5.0
-[542.871s]    Compiling rustix v1.1.4
-[542.871s]    Compiling base64ct v1.6.0
-[542.871s]    Compiling icu_normalizer v1.5.0
-[542.871s]    Compiling event-listener v5.4.1
-[542.872s]    Compiling nix v0.26.4
-[542.872s]    Compiling unescaper v0.1.8
-[542.872s]    Compiling serialport v4.9.0
-[542.872s]    Compiling pem-rfc7468 v0.7.0
-[542.872s]    Compiling phf_shared v0.13.1
-[542.872s]    Compiling git-version-macro v0.3.9
-[542.872s]    Compiling phf_generator v0.13.1
-[542.872s]    Compiling der v0.7.10
-[542.872s]    Compiling mio-serial v5.0.6
-[542.872s]    Compiling idna_adapter v1.2.0
-[542.872s]    Compiling sha1 v0.10.6
-[542.872s]    Compiling tokio-rustls v0.26.4
-[542.872s]    Compiling http v1.4.0
-[542.872s]    Compiling itertools v0.14.0
-[542.873s]    Compiling uuid v1.20.0
-[542.873s]    Compiling byteorder v1.5.0
-[542.873s]    Compiling utf-8 v0.7.6
-[542.873s]    Compiling percent-encoding v2.3.2
-[542.873s]    Compiling utf8parse v0.2.2
-[542.873s]    Compiling form_urlencoded v1.2.2
-[542.873s]    Compiling tungstenite v0.24.0
-[542.873s]    Compiling anstyle-parse v0.2.7
-[542.873s]    Compiling tls-listener v0.11.0
-[542.873s]    Compiling idna v1.1.0
-[542.873s]    Compiling spki v0.7.3
-[542.873s]    Compiling tokio-serial v5.4.5
-[542.873s]    Compiling phf_macros v0.13.1
-[542.873s]    Compiling inout v0.1.4
-[542.873s]    Compiling crossbeam-epoch v0.9.18
-[542.874s]    Compiling zenoh v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#9e34109f)
-[542.874s]    Compiling arc-swap v1.9.0
-[542.874s]    Compiling colorchoice v1.0.5
-[542.874s]    Compiling anstyle v1.0.14
-[542.874s]    Compiling anstyle-query v1.1.5
-[542.874s]    Compiling is_terminal_polyfill v1.70.2
-[542.874s]    Compiling cobs v0.2.3
-[542.874s]    Compiling z-serial v0.3.1
-[542.874s]    Compiling anstream v0.6.21
-[542.874s]    Compiling zenoh-sync v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#9e34109f)
-[542.874s]    Compiling crossbeam-deque v0.8.6
-[542.874s]    Compiling cipher v0.4.4
-[542.874s]    Compiling pkcs8 v0.10.2
-[542.874s]    Compiling url v2.5.8
-[542.874s]    Compiling tokio-tungstenite v0.24.0
-[542.875s]    Compiling prost-derive v0.14.1
-[542.875s]    Compiling twox-hash v1.6.3
-[542.875s]    Compiling num-iter v0.1.45
-[542.875s]    Compiling derive_more-impl v2.0.1
-[542.875s]    Compiling clap_lex v1.0.0
-[542.875s]    Compiling linux-raw-sys v0.12.1
-[542.875s]    Compiling keccak v0.1.6
-[542.875s]    Compiling sha3 v0.10.8
-[542.875s]    Compiling clap_builder v4.5.60
-[542.875s]    Compiling lz4_flex v0.10.0
-[542.875s]    Compiling zenoh-link-ws v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#9e34109f)
-[542.875s]    Compiling pkcs1 v0.7.5
-[542.875s]    Compiling crossbeam v0.8.4
-[542.875s]    Compiling aes v0.8.4
-[542.876s]    Compiling zenoh-link-udp v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#9e34109f)
-[542.876s]    Compiling zenoh-link-serial v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#9e34109f)
-[542.876s]    Compiling zenoh-link-tls v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#9e34109f)
-[542.876s]    Compiling zenoh-link-unixsock_stream v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#9e34109f)
-[542.876s]    Compiling zenoh-link-quic v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#9e34109f)
-[542.876s]    Compiling zenoh-link-tcp v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#9e34109f)
-[542.876s]    Compiling signature v2.2.0
-[542.876s]    Compiling hmac v0.12.1
-[542.876s]    Compiling phf_shared v0.11.3
-[542.876s]    Compiling adler2 v2.0.1
-[542.876s]    Compiling foldhash v0.1.5
-[542.876s]    Compiling simd-adler32 v0.3.9
-[542.876s]    Compiling array-init v2.1.0
-[542.876s]    Compiling miniz_oxide v0.8.9
-[542.876s]    Compiling ringbuffer-spsc v0.1.15
-[542.877s]    Compiling hashbrown v0.15.5
-[542.877s]    Compiling phf_generator v0.11.3
-[542.877s]    Compiling zenoh-link v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#9e34109f)
-[542.877s]    Compiling zenoh-crypto v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#9e34109f)
-[542.877s]    Compiling rsa v0.9.10
-[542.877s]    Compiling tempfile v3.24.0
-[542.877s]    Compiling git-version v0.3.9
-[542.877s]    Compiling event-listener-strategy v0.5.4
-[542.877s]    Compiling zenoh-task v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#9e34109f)
-[542.877s]    Compiling cbindgen v0.29.2
-[542.877s]    Compiling fixedbitset v0.5.7
-[542.877s]    Compiling petgraph v0.8.3
-[542.877s]    Compiling zenoh-transport v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#9e34109f)
-[542.877s]    Compiling async-lock v3.4.1
-[542.878s]    Compiling zenoh-plugin-trait v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#9e34109f)
-[542.878s]    Compiling flate2 v1.1.9
-[542.878s]    Compiling phf_macros v0.11.3
-[542.878s]    Compiling clap v4.5.60
-[542.878s]    Compiling derive_more v2.0.1
-[542.878s]    Compiling prost v0.14.1
-[542.878s]    Compiling phf v0.13.1
-[542.878s]    Compiling tinystr v0.8.0
-[542.878s]    Compiling vec_map v0.8.2
-[542.878s]    Compiling heck v0.5.0
-[542.878s]    Compiling potential_utf v0.1.0
-[542.878s]    Compiling zenoh-pinned-deps-1-75 v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#9e34109f)
-[542.878s]    Compiling phf v0.11.3
-[542.878s]    Compiling regex v1.12.3
-[542.878s]    Compiling fs2 v0.4.3
-[542.879s]    Compiling fs_extra v1.3.0
-[542.879s]    Compiling dtor-proc-macro v0.0.5
-[542.879s]    Compiling evalexpr v11.3.1
-[542.879s]    Compiling dtor v0.0.6
-[542.879s]    Compiling bincode v1.3.3
-[542.879s]    Compiling ctor-proc-macro v0.0.6
-[542.879s]    Compiling iana-time-zone v0.1.65
-[542.879s]    Compiling leb128 v0.2.5
-[542.879s]    Compiling ctor v0.4.3
-[542.879s]    Compiling chrono v0.4.44
-[542.879s]    Compiling flume v0.12.0
-[542.880s]    Compiling unwrap-infallible v0.1.5
-[542.880s]    Compiling zenoh-c v1.8.0 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/src/zenoh_c_vendor-build/release)
-[542.880s]    Compiling zenoh-ext v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#9e34109f)
-[542.880s] warning: zenoh-c@1.8.0: Copying Cargo.lock from /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/src/zenoh_c_vendor-build/release/Cargo.lock to /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/src/zenoh_c_vendor/build-resources/opaque-types/Cargo.lock
-[542.880s] warning: zenoh-c@1.8.0: Successfully copied Cargo.lock
-[542.880s] warning: zenoh-c@1.8.0: OPAQUE_TYPES_BUILD_DIR = /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/src/zenoh_c_vendor-build/opaque-types
-[542.880s]     Finished `release` profile [optimized] target(s) in 8m 57s
-[542.909s] [7/16] Performing install step for 'zenoh_c_vendor'
-[542.909s] [0/1] Install the project...
-[542.910s] -- Install configuration: "Release"
-[542.910s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/install/include
-[542.910s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/install/include/zenoh.h
-[542.910s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/install/include/zenoh_commons.h
-[542.910s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/install/include/zenoh_concrete.h
-[542.910s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/install/include/zenoh_memory.h
-[542.910s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/install/include/zenoh_constants.h
-[542.910s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/install/include/zenoh_configure.h
-[542.910s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/install/include/zenoh_opaque.h
-[542.910s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/install/include/zenoh_macros.h
-[542.911s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/install/lib/libzenohc.so
-[542.911s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/install/lib/pkgconfig/zenohc.pc
-[542.911s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/install/lib/libzenohc.a
-[542.911s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/install/lib/cmake/zenohc/zenohcConfig.cmake
-[542.911s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/install/lib/cmake/zenohc/zenohcConfigVersion.cmake
-[542.930s] [8/16] Completed 'zenoh_c_vendor'
-[542.946s] [9/16] Creating directories for 'zenoh_cpp_vendor'
-[547.936s] [10/16] Performing download step for 'zenoh_cpp_vendor'
-[547.936s] === ./zenoh_cpp_vendor (git) ===
-[547.936s] hint: Using 'master' as the name for the initial branch. This default branch name
-[547.936s] hint: will change to "main" in Git 3.0. To configure the initial branch name
-[547.936s] hint: to use in all of your new repositories, which will suppress this warning,
-[547.936s] hint: call:
-[547.936s] hint:
-[547.936s] hint: 	git config --global init.defaultBranch <name>
-[547.938s] hint:
-[547.939s] hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
-[547.939s] hint: 'development'. The just-created branch can be renamed via this command:
-[547.939s] hint:
-[547.939s] hint: 	git branch -m <name>
-[547.939s] hint:
-[547.939s] hint: Disable this message with "git config set advice.defaultBranchName false"
-[547.939s] Initialized empty Git repository in /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/src/zenoh_cpp_vendor/.git/
-[547.939s] 
-[547.939s] From https://github.com/eclipse-zenoh/zenoh-cpp
-[547.939s]  * branch            776c59651a61dc53689dd68beace147e67a83a27 -> FETCH_HEAD
-[547.940s] Note: switching to '776c59651a61dc53689dd68beace147e67a83a27'.
-[547.940s] 
-[547.940s] You are in 'detached HEAD' state. You can look around, make experimental
-[547.940s] changes and commit them, and you can discard any commits you make in this
-[547.940s] state without impacting any branches by switching back to a branch.
-[547.940s] 
-[547.940s] If you want to create a new branch to retain commits you create, you may
-[547.940s] do so (now or later) by using -c with the switch command. Example:
-[547.940s] 
-[547.940s]   git switch -c <new-branch-name>
-[547.940s] 
-[547.940s] Or undo this operation with:
-[547.944s] 
-[547.944s]   git switch -
-[547.944s] 
-[547.944s] Turn off this advice by setting config variable advice.detachedHead to false
-[547.944s] 
-[547.944s] HEAD is now at 776c596 chore: Merge release/1.8.0 into main (#756)
-[547.944s] Submodule 'zenoh-c' (https://github.com/eclipse-zenoh/zenoh-c.git) registered for path 'zenoh-c'
-[547.944s] Submodule 'zenoh-pico' (https://github.com/eclipse-zenoh/zenoh-pico.git) registered for path 'zenoh-pico'
-[547.944s] Cloning into '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/src/zenoh_cpp_vendor/zenoh-c'...
-[547.944s] Cloning into '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/src/zenoh_cpp_vendor/zenoh-pico'...
-[547.944s] Submodule path 'zenoh-c': checked out '3b4924ae21eabb8c31de91c3128edc0f99122164'
-[547.945s] Submodule path 'zenoh-pico': checked out '7e6e0320e3466a67a43f4bffa7ba8bc9788e7de0'
-[547.953s] [11/16] No update_disconnected step for 'zenoh_cpp_vendor'
-[547.965s] [12/16] No patch_disconnected step for 'zenoh_cpp_vendor'
-[548.534s] [13/16] Performing configure step for 'zenoh_cpp_vendor'
-[548.534s] loading initial cache file /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-config.cmake
-[548.534s] -- The C compiler identification is GNU 14.3.0
-[548.534s] -- The CXX compiler identification is GNU 14.3.0
-[548.534s] -- Detecting C compiler ABI info
-[548.534s] -- Detecting C compiler ABI info - done
-[548.534s] -- Check for working C compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
-[548.534s] -- Detecting C compile features
-[548.534s] -- Detecting C compile features - done
-[548.534s] -- Detecting CXX compiler ABI info
-[548.535s] -- Detecting CXX compiler ABI info - done
-[548.535s] -- Check for working CXX compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
-[548.535s] -- Detecting CXX compile features
-[548.535s] -- Detecting CXX compile features - done
-[548.535s] -- project_version = 1.8.0
-[548.535s] -- ZENOHCXX_ZENOHC = OFF
-[548.535s] -- ZENOHCXX_ZENOHPICO = OFF
-[548.535s] -- ZENOHCXX_EXAMPLES_PROTOBUF = ON
-[548.535s] -- ZENOHCXX_ENABLE_TESTS = ON
-[548.535s] -- ZENOHCXX_ENABLE_EXAMPLES = ON
-[548.535s] -- CMAKE_BUILD_TYPE = Release
-[548.536s] -- CMAKE_INSTALL_PREFIX = /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor
-[548.536s] -- zenoh-cxx tests
-[548.536s] -- zenoh-cxx docs
-[548.536s] -- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
-[548.536s] -- Doxygen not found, skipping docs
-[548.536s] -- Configuring done (0.5s)
-[548.536s] -- Generating done (0.0s)
-[548.536s] -- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/src/zenoh_cpp_vendor-build
-[548.554s] [14/16] Performing build step for 'zenoh_cpp_vendor'
-[548.554s] ninja: no work to do.
-[548.601s] [15/16] Performing install step for 'zenoh_cpp_vendor'
-[548.601s] [0/1] Install the project...
-[548.601s] -- Install configuration: "Release"
-[548.601s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include
-[548.602s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh.hxx
-[548.602s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh
-[548.602s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api.hxx
-[548.602s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/zenohc.hxx
-[548.602s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api
-[548.602s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/encoding.hxx
-[548.602s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/cancellation.hxx
-[548.602s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/config.hxx
-[548.602s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/source_info.hxx
-[548.606s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/queryable.hxx
-[548.606s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/id.hxx
-[548.606s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/timestamp.hxx
-[548.606s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/sample.hxx
-[548.606s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/channels.hxx
-[548.606s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/transport_event.hxx
-[548.606s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/logging.hxx
-[548.606s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/base.hxx
-[548.606s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/ext
-[548.607s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/ext/advanced_publisher.hxx
-[548.607s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/ext/miss.hxx
-[548.607s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/ext/querying_subscriber.hxx
-[548.607s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/ext/advanced_subscriber.hxx
-[548.607s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/ext/session_ext.hxx
-[548.607s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/ext/publication_cache.hxx
-[548.607s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/ext/serialization.hxx
-[548.608s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/query.hxx
-[548.608s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/transport.hxx
-[548.608s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/querier.hxx
-[548.608s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/enums.hxx
-[548.608s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/publisher.hxx
-[548.608s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/subscriber.hxx
-[548.608s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/bytes.hxx
-[548.608s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/query_consolidation.hxx
-[548.608s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/liveliness.hxx
-[548.608s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/transport_events_listener.hxx
-[548.608s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/scout.hxx
-[548.609s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/link_events_listener.hxx
-[548.609s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/link_event.hxx
-[548.609s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/hello.hxx
-[548.609s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/reply.hxx
-[548.609s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/closures.hxx
-[548.609s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/link.hxx
-[548.609s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/matching.hxx
-[548.609s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm
-[548.609s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/common
-[548.612s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/common/types.hxx
-[548.613s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/common/common.hxx
-[548.613s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/buffer
-[548.613s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/buffer/buffer.hxx
-[548.613s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/buffer/zshm.hxx
-[548.613s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/buffer/zshmmut.hxx
-[548.613s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/cleanup.hxx
-[548.613s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/client_storage
-[548.613s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/client_storage/client_storage.hxx
-[548.613s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/shm.hxx
-[548.614s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/protocol_implementations
-[548.614s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/protocol_implementations/protocol_implementations.hxx
-[548.614s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/protocol_implementations/posix
-[548.614s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/protocol_implementations/posix/posix_shm_client.hxx
-[548.614s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/protocol_implementations/posix/posix_shm_provider.hxx
-[548.614s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/protocol_implementations/posix/posix.hxx
-[548.614s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/provider
-[548.614s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/provider/types_impl.hxx
-[548.614s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/provider/provider.hxx
-[548.617s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/provider/types.hxx
-[548.617s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/provider/precomputed_layout.hxx
-[548.617s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/provider/shm_provider.hxx
-[548.617s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/provider/chunk.hxx
-[548.617s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/provider/shm_provider_backend.hxx
-[548.617s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/client
-[548.618s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/client/shm_client.hxx
-[548.618s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/client/shm_segment.hxx
-[548.618s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/client/client.hxx
-[548.618s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/interop.hxx
-[548.618s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/session.hxx
-[548.618s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/keyexpr.hxx
-[548.618s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/detail
-[548.619s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/detail/availability_checks.hxx
-[548.619s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/detail/commons.hxx
-[548.619s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/detail/closures_concrete.hxx
-[548.619s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/detail/closures.hxx
-[548.619s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/lib/pkgconfig/zenohcxx.pc
-[548.619s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/lib/cmake/zenohcxx/zenohcxxConfig.cmake
-[548.619s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/lib/cmake/zenohcxx/zenohcxxConfigVersion.cmake
-[548.633s] [16/16] Completed 'zenoh_cpp_vendor'
-[548.639s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=92 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor -- -j4 -l4
-[548.640s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=92 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor
-[548.646s] -- Install configuration: "Release"
-[548.647s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor
-[548.647s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include
-[548.647s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh.h
-[548.647s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh_commons.h
-[548.647s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh_concrete.h
-[548.648s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh_memory.h
-[548.648s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh_constants.h
-[548.648s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh_configure.h
-[548.648s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh_opaque.h
-[548.649s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh_macros.h
-[548.649s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib
-[548.649s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib/libzenohc.so
-[548.668s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib/cmake
-[548.668s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib/cmake/zenohc
-[548.668s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib/cmake/zenohc/zenohcConfigVersion.cmake
-[548.669s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib/cmake/zenohc/zenohcConfig.cmake
-[548.669s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib/pkgconfig
-[548.669s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib/pkgconfig/zenohc.pc
-[548.669s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib/libzenohc.a
-[548.710s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/zenoh_cpp_vendor/environment/vendor_package.bat
-[548.710s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/zenoh_cpp_vendor/environment/vendor_package.dsv
-[548.710s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/zenoh_cpp_vendor/environment/vendor_package.sh
-[548.711s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/vendor_packages/zenoh_cpp_vendor
-[548.711s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor
-[548.712s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include
-[548.712s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh.hxx
-[548.712s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh
-[548.712s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api.hxx
-[548.712s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/zenohc.hxx
-[548.712s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api
-[548.713s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/encoding.hxx
-[548.713s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/cancellation.hxx
-[548.713s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/config.hxx
-[548.713s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/source_info.hxx
-[548.713s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/queryable.hxx
-[548.714s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/id.hxx
-[548.714s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/timestamp.hxx
-[548.714s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/sample.hxx
-[548.714s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/channels.hxx
-[548.714s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/transport_event.hxx
-[548.715s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/logging.hxx
-[548.715s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/base.hxx
-[548.715s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/ext
-[548.715s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/ext/advanced_publisher.hxx
-[548.715s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/ext/miss.hxx
-[548.715s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/ext/querying_subscriber.hxx
-[548.716s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/ext/advanced_subscriber.hxx
-[548.716s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/ext/session_ext.hxx
-[548.716s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/ext/publication_cache.hxx
-[548.716s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/ext/serialization.hxx
-[548.716s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/query.hxx
-[548.716s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/transport.hxx
-[548.717s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/querier.hxx
-[548.717s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/enums.hxx
-[548.717s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/publisher.hxx
-[548.717s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/subscriber.hxx
-[548.718s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/bytes.hxx
-[548.718s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/query_consolidation.hxx
-[548.718s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/liveliness.hxx
-[548.718s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/transport_events_listener.hxx
-[548.718s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/scout.hxx
-[548.719s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/link_events_listener.hxx
-[548.719s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/link_event.hxx
-[548.719s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/hello.hxx
-[548.719s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/reply.hxx
-[548.719s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/closures.hxx
-[548.720s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/link.hxx
-[548.720s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/matching.hxx
-[548.720s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm
-[548.720s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/common
-[548.721s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/common/types.hxx
-[548.721s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/common/common.hxx
-[548.721s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/buffer
-[548.721s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/buffer/buffer.hxx
-[548.721s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/buffer/zshm.hxx
-[548.722s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/buffer/zshmmut.hxx
-[548.722s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/cleanup.hxx
-[548.722s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/client_storage
-[548.723s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/client_storage/client_storage.hxx
-[548.723s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/shm.hxx
-[548.723s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/protocol_implementations
-[548.723s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/protocol_implementations/protocol_implementations.hxx
-[548.723s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/protocol_implementations/posix
-[548.723s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/protocol_implementations/posix/posix_shm_client.hxx
-[548.724s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/protocol_implementations/posix/posix_shm_provider.hxx
-[548.724s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/protocol_implementations/posix/posix.hxx
-[548.724s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/provider
-[548.724s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/provider/types_impl.hxx
-[548.724s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/provider/provider.hxx
-[548.725s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/provider/types.hxx
-[548.725s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/provider/precomputed_layout.hxx
-[548.725s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/provider/shm_provider.hxx
-[548.725s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/provider/chunk.hxx
-[548.725s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/provider/shm_provider_backend.hxx
-[548.726s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/client
-[548.726s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/client/shm_client.hxx
-[548.726s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/client/shm_segment.hxx
-[548.726s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/client/client.hxx
-[548.726s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/interop.hxx
-[548.726s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/session.hxx
-[548.727s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/keyexpr.hxx
-[548.727s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/detail
-[548.727s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/detail/availability_checks.hxx
-[548.727s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/detail/commons.hxx
-[548.727s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/detail/closures_concrete.hxx
-[548.728s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/detail/closures.hxx
-[548.728s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib
-[548.728s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib/cmake
-[548.728s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib/cmake/zenohcxx
-[548.728s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib/cmake/zenohcxx/zenohcxxConfig.cmake
-[548.729s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib/cmake/zenohcxx/zenohcxxConfigVersion.cmake
-[548.729s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib/pkgconfig
-[548.729s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib/pkgconfig/zenohcxx.pc
-[548.729s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/package_run_dependencies/zenoh_cpp_vendor
-[548.729s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/parent_prefix_path/zenoh_cpp_vendor
-[548.729s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/zenoh_cpp_vendor/environment/ament_prefix_path.sh
-[548.730s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/zenoh_cpp_vendor/environment/ament_prefix_path.dsv
-[548.730s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/zenoh_cpp_vendor/environment/path.sh
-[548.730s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/zenoh_cpp_vendor/environment/path.dsv
-[548.730s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/zenoh_cpp_vendor/local_setup.bash
-[548.731s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/zenoh_cpp_vendor/local_setup.fish
-[548.731s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/zenoh_cpp_vendor/local_setup.sh
-[548.731s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/zenoh_cpp_vendor/local_setup.zsh
-[548.731s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/zenoh_cpp_vendor/local_setup.dsv
-[548.732s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/zenoh_cpp_vendor/package.dsv
-[548.732s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/packages/zenoh_cpp_vendor
-[548.732s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/zenoh_cpp_vendor/cmake/vendor_package_cmake_prefix.cmake
-[548.732s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/zenoh_cpp_vendor/cmake/ament_cmake_export_dependencies-extras.cmake
-[548.733s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/zenoh_cpp_vendor/cmake/zenoh_cpp_vendorConfig.cmake
-[548.733s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/zenoh_cpp_vendor/cmake/zenoh_cpp_vendorConfig-version.cmake
-[548.733s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/zenoh_cpp_vendor/package.xml
-[548.735s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=92 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor
+[1.944s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rmw_zenoh/zenoh_cpp_vendor -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DTRACETOOLS_DISABLED=ON -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[1.997s] Not searching for unused variables given on the command line.
+[1.997s] -- The C compiler identification is GNU 14.3.0
+[2.097s] -- The CXX compiler identification is GNU 14.3.0
+[2.110s] -- Detecting C compiler ABI info
+[2.221s] -- Detecting C compiler ABI info - done
+[2.255s] -- Check for working C compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
+[2.255s] -- Detecting C compile features
+[2.255s] -- Detecting C compile features - done
+[2.272s] -- Detecting CXX compiler ABI info
+[2.412s] -- Detecting CXX compiler ABI info - done
+[2.446s] -- Check for working CXX compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
+[2.447s] -- Detecting CXX compile features
+[2.448s] -- Detecting CXX compile features - done
+[2.463s] -- Found ament_cmake: 2.8.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake/cmake)
+[2.695s] -- Found ament_cmake_vendor_package: 2.8.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_vendor_package/cmake)
+[2.866s] -- Configuring done (0.9s)
+[2.880s] -- Generating done (0.0s)
+[2.883s] -- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor
+[2.892s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rmw_zenoh/zenoh_cpp_vendor -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DTRACETOOLS_DISABLED=ON -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[2.893s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor -- -j4 -l4
+[2.912s] [1/16] Creating directories for 'zenoh_c_vendor'
+[3.811s] [2/16] Performing download step for 'zenoh_c_vendor'
+[3.811s] === ./zenoh_c_vendor (git) ===
+[3.811s] hint: Using 'master' as the name for the initial branch. This default branch name
+[3.811s] hint: will change to "main" in Git 3.0. To configure the initial branch name
+[3.811s] hint: to use in all of your new repositories, which will suppress this warning,
+[3.811s] hint: call:
+[3.811s] hint:
+[3.811s] hint: 	git config --global init.defaultBranch <name>
+[3.811s] hint:
+[3.811s] hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+[3.811s] hint: 'development'. The just-created branch can be renamed via this command:
+[3.812s] hint:
+[3.812s] hint: 	git branch -m <name>
+[3.812s] hint:
+[3.812s] hint: Disable this message with "git config set advice.defaultBranchName false"
+[3.812s] Initialized empty Git repository in /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/src/zenoh_c_vendor/.git/
+[3.812s] 
+[3.812s] From https://github.com/eclipse-zenoh/zenoh-c
+[3.812s]  * branch            c1a477d3f5efc3abc0f0cf95e0773225d00dea3b -> FETCH_HEAD
+[3.812s] Note: switching to 'c1a477d3f5efc3abc0f0cf95e0773225d00dea3b'.
+[3.812s] 
+[3.812s] You are in 'detached HEAD' state. You can look around, make experimental
+[3.812s] changes and commit them, and you can discard any commits you make in this
+[3.812s] state without impacting any branches by switching back to a branch.
+[3.812s] 
+[3.812s] If you want to create a new branch to retain commits you create, you may
+[3.812s] do so (now or later) by using -c with the switch command. Example:
+[3.812s] 
+[3.813s]   git switch -c <new-branch-name>
+[3.813s] 
+[3.813s] Or undo this operation with:
+[3.813s] 
+[3.813s]   git switch -
+[3.813s] 
+[3.813s] Turn off this advice by setting config variable advice.detachedHead to false
+[3.813s] 
+[3.813s] HEAD is now at c1a477d build: Sync  with eclipse-zenoh/zenoh@f9af463 from 2026-03-22 (#1239)
+[3.813s] 
+[3.821s] [3/16] No update_disconnected step for 'zenoh_c_vendor'
+[3.832s] [4/16] No patch_disconnected step for 'zenoh_c_vendor'
+[4.830s] [5/16] Performing configure step for 'zenoh_c_vendor'
+[4.830s] loading initial cache file /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-config.cmake
+[4.831s] -- The C compiler identification is GNU 14.3.0
+[4.831s] -- The CXX compiler identification is GNU 14.3.0
+[4.831s] -- Detecting C compiler ABI info
+[4.831s] -- Detecting C compiler ABI info - done
+[4.831s] -- Check for working C compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
+[4.831s] -- Detecting C compile features
+[4.831s] -- Detecting C compile features - done
+[4.831s] -- Detecting CXX compiler ABI info
+[4.831s] -- Detecting CXX compiler ABI info - done
+[4.831s] -- Check for working CXX compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
+[4.831s] -- Detecting CXX compile features
+[4.832s] -- Detecting CXX compile features - done
+[4.832s] -- CMAKE_BUILD_TYPE = Release
+[4.832s] -- ZENOHC_BUILD_WITH_SHARED_MEMORY = FALSE
+[4.832s] -- ZENOHC_BUILD_WITH_UNSTABLE_API = TRUE
+[4.832s] -- ZENOHC_BUILD_TESTS_WITH_CXX = FALSE
+[4.832s] -- ZENOHC_CUSTOM_TARGET = 
+[4.832s] -- ENV{CARGO_BUILD_TARGET} = 
+[4.832s] -- ZENOHC_CARGO_CHANNEL = 
+[4.832s] -- ZENOHC_MSRV_1_75 = TRUE
+[4.832s] -- Due to ZENOHC_MSRV_1_75 setting the ZENOHC_COPY_SOURCE_CARGO_LOCK and ZENOHC_BUILD_IN_SOURCE_TREE cache variables are forcibly set to FALSE to avoid build failures due to incompatible source Cargo.lock file
+[4.833s] -- ZENOHC_COPY_SOURCE_CARGO_LOCK = FALSE
+[4.833s] -- ZENOHC_BUILD_IN_SOURCE_TREE = FALSE
+[4.833s] -- ZENOHC_CARGO_FLAGS = --features=shared-memory zenoh/transport_serial
+[4.833s] -- BUILD_SHARED_LIBS = ON
+[4.833s] -- ZENOHC_TREAT_WARNING_AS_ERROR = OFF
+[4.833s] -- project_version = 1.8.0
+[4.833s] -- Mode: Non-IDE
+[4.833s] -- Configuring Cargo.toml in /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/src/zenoh_c_vendor-build/debug for zenohc
+[4.833s] -- Configuring Cargo.toml in /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/src/zenoh_c_vendor-build/release for zenohc
+[4.833s] -- Due to ZENOHC_CARGO_FLAGS setting ZENOHC_BUILD_WITH_SHARED_MEMORY = TRUE
+[4.834s] -- cargo_flags = --release;--manifest-path=/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/src/zenoh_c_vendor-build/release/Cargo.toml;--features=shared-memory zenoh/transport_serial;--features=unstable
+[4.834s] -- libs = /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/src/zenoh_c_vendor-build/release/target/release/libzenohc.so;/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/src/zenoh_c_vendor-build/release/target/release/libzenohc.a
+[4.834s] -- NATIVE_STATIC_LIBS = rt;pthread;m;dl
+[4.834s] -- zenoh-c install
+[4.834s] -- CMAKE_INSTALL_PREFIX = /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor
+[4.834s] -- zenoh-c tests
+[4.834s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.834s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[4.834s] -- Looking for pthread_create in pthreads
+[4.834s] -- Looking for pthread_create in pthreads - not found
+[4.834s] -- Looking for pthread_create in pthread
+[4.834s] -- Looking for pthread_create in pthread - found
+[4.835s] -- Found Threads: TRUE
+[4.835s] -- zenoh-c examples
+[4.835s] -- Configuring done (0.9s)
+[4.835s] -- Generating done (0.1s)
+[4.835s] -- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/src/zenoh_c_vendor-build
+[429.798s] [6/16] Performing build step for 'zenoh_c_vendor'
+[429.798s] [0/1] Generating release/target/release/libzenohc.so, release/target/release/libzenohc.a
+[429.798s] "RUSTFLAGS = $$RUSTFLAGS"
+[429.799s] "cargo build --release --manifest-path=/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/src/zenoh_c_vendor-build/release/Cargo.toml --features=shared-memory zenoh/transport_serial --features=unstable"
+[429.799s]     Updating crates.io index
+[429.799s]     Updating git repository `https://github.com/eclipse-zenoh/zenoh.git`
+[429.799s] From https://github.com/eclipse-zenoh/zenoh
+[429.799s]  * [new branch]        main       -> origin/main
+[429.799s]      Locking 490 packages to latest compatible versions
+[429.799s]       Adding async-lock v3.4.1 (available: v3.4.2)
+[429.799s]       Adding base64ct v1.6.0 (available: v1.8.3)
+[429.799s]       Adding clap v4.5.60 (available: v4.6.0)
+[429.800s]       Adding clap_builder v4.5.60 (available: v4.6.0)
+[429.800s]       Adding clap_lex v1.0.0 (available: v1.1.0)
+[429.800s]       Adding ctor v0.4.3 (available: v0.8.0)
+[429.800s]       Adding derive_more v2.0.1 (available: v2.1.1)
+[429.800s]       Adding derive_more-impl v2.0.1 (available: v2.1.1)
+[429.800s]       Adding evalexpr v11.3.1 (available: v13.1.0)
+[429.800s]       Adding generic-array v0.14.7 (available: v0.14.9)
+[429.800s]       Adding home v0.5.9 (available: v0.5.12)
+[429.800s]       Adding idna_adapter v1.2.0 (available: v1.2.1)
+[429.801s]       Adding indexmap v2.11.4 (available: v2.13.1)
+[429.801s]       Adding json5 v0.4.1 (available: v1.3.1)
+[429.801s]       Adding litemap v0.7.4 (available: v0.7.5)
+[429.801s]       Adding pest v2.8.0 (available: v2.8.6)
+[429.804s]       Adding pest_derive v2.8.0 (available: v2.8.6)
+[429.804s]       Adding pest_generator v2.8.0 (available: v2.8.6)
+[429.804s]       Adding pest_meta v2.8.0 (available: v2.8.6)
+[429.804s]       Adding phf v0.11.3 (available: v0.13.1)
+[429.804s]       Adding potential_utf v0.1.0 (available: v0.1.5)
+[429.804s]       Adding proc-macro-crate v3.4.0 (available: v3.5.0)
+[429.805s]       Adding prost v0.14.1 (available: v0.14.3)
+[429.805s]       Adding prost-derive v0.14.1 (available: v0.14.3)
+[429.805s]       Adding rand v0.9.2 (available: v0.10.0)
+[429.805s]       Adding rustc-hash v2.1.1 (available: v2.1.2)
+[429.805s]       Adding security-framework v3.6.0 (available: v3.7.0)
+[429.805s]       Adding serde_spanned v1.0.1 (available: v1.1.1)
+[429.805s]       Adding serde_with v3.14.1 (available: v3.18.0)
+[429.805s]       Adding serde_with_macros v3.14.1 (available: v3.18.0)
+[429.805s]       Adding spin v0.9.8 (available: v0.10.0)
+[429.805s]       Adding static_init v1.0.3 (available: v1.0.4)
+[429.805s]       Adding tempfile v3.24.0 (available: v3.27.0)
+[429.806s]       Adding time v0.3.41 (available: v0.3.47)
+[429.806s]       Adding time-core v0.1.4 (available: v0.1.8)
+[429.806s]       Adding time-macros v0.2.22 (available: v0.2.27)
+[429.809s]       Adding tinystr v0.8.0 (available: v0.8.3)
+[429.809s]       Adding tls-listener v0.11.0 (available: v0.11.2)
+[429.809s]       Adding toml v0.9.6 (available: v0.9.12+spec-1.1.0)
+[429.809s]       Adding toml_datetime v0.7.1 (available: v0.7.5+spec-1.1.0)
+[429.809s]       Adding toml_edit v0.23.5 (available: v0.23.10+spec-1.0.0)
+[429.809s]       Adding toml_parser v1.0.2 (available: v1.1.2+spec-1.1.0)
+[429.809s]       Adding toml_writer v1.0.2 (available: v1.1.1+spec-1.1.0)
+[429.810s]       Adding unwrap-infallible v0.1.5 (available: v1.0.0)
+[429.810s]       Adding unzip-n v0.1.2 (available: v0.1.4)
+[429.810s]       Adding uuid v1.20.0 (available: v1.23.0)
+[429.810s]       Adding zerofrom v0.1.5 (available: v0.1.7)
+[429.810s]  Downloading crates ...
+[429.810s]   Downloaded adler2 v2.0.1
+[429.810s]   Downloaded clap_lex v1.0.0
+[429.810s]   Downloaded ctor-proc-macro v0.0.6
+[429.810s]   Downloaded futures-sink v0.3.32
+[429.810s]   Downloaded ident_case v1.0.1
+[429.811s]   Downloaded generic-array v0.14.7
+[429.811s]   Downloaded ipnetwork v0.20.0
+[429.811s]   Downloaded pnet_sys v0.35.0
+[429.811s]   Downloaded option-ext v0.2.0
+[429.814s]   Downloaded potential_utf v0.1.0
+[429.814s]   Downloaded pkcs1 v0.7.5
+[429.814s]   Downloaded powerfmt v0.2.0
+[429.814s]   Downloaded rusticata-macros v4.1.0
+[429.814s]   Downloaded scopeguard v1.2.0
+[429.814s]   Downloaded rustls-native-certs v0.8.3
+[429.814s]   Downloaded static_init_macro v1.0.4
+[429.814s]   Downloaded tinyvec_macros v0.1.1
+[429.814s]   Downloaded unwrap-infallible v0.1.5
+[429.815s]   Downloaded version_check v0.9.5
+[429.815s]   Downloaded vec_map v0.8.2
+[429.815s]   Downloaded unzip-n v0.1.2
+[429.816s]   Downloaded validated_struct v2.2.0
+[429.816s]   Downloaded validated_struct_macros v2.2.0
+[429.816s]   Downloaded zmij v1.0.21
+[429.816s]   Downloaded zerofrom v0.1.5
+[429.816s]   Downloaded yoke v0.7.5
+[429.817s]   Downloaded tracing-subscriber v0.3.23
+[429.817s]   Downloaded yasna v0.5.2
+[429.817s]   Downloaded syn v1.0.109
+[429.817s]   Downloaded winnow v0.7.15
+[429.817s]   Downloaded syn v2.0.117
+[429.817s]   Downloaded rustls v0.23.37
+[429.817s]   Downloaded webpki-roots v1.0.6
+[429.817s]   Downloaded tracing v0.1.44
+[429.817s]   Downloaded regex-syntax v0.8.10
+[429.817s]   Downloaded rustix v1.1.4
+[429.817s]   Downloaded url v2.5.8
+[429.818s]   Downloaded yoke-derive v0.7.5
+[429.818s]   Downloaded writeable v0.5.5
+[429.818s]   Downloaded talc v4.4.3
+[429.818s]   Downloaded zerovec-derive v0.10.3
+[429.818s]   Downloaded zeroize v1.8.2
+[429.818s]   Downloaded zerofrom-derive v0.1.7
+[429.818s]   Downloaded petgraph v0.8.3
+[429.818s]   Downloaded sha3 v0.10.8
+[429.818s]   Downloaded regex-automata v0.4.14
+[429.818s]   Downloaded libc v0.2.184
+[429.818s]   Downloaded z-serial v0.3.1
+[429.819s]   Downloaded write16 v1.0.0
+[429.819s]   Downloaded uuid v1.20.0
+[429.819s]   Downloaded quinn-proto v0.11.14
+[429.819s]   Downloaded nix v0.29.0
+[429.819s]   Downloaded nix v0.26.4
+[429.819s]   Downloaded tungstenite v0.24.0
+[429.819s]   Downloaded toml_writer v1.0.2
+[429.819s]   Downloaded tokio-util v0.7.18
+[429.819s]   Downloaded zerovec v0.10.4
+[429.819s]   Downloaded icu_properties_data v1.5.1
+[429.819s]   Downloaded zerocopy v0.8.48
+[429.820s]   Downloaded unsafe-libyaml v0.2.11
+[429.820s]   Downloaded ring v0.17.14
+[429.820s]   Downloaded time v0.3.41
+[429.820s]   Downloaded serde_with v3.14.1
+[429.820s]   Downloaded cbindgen v0.29.2
+[429.820s]   Downloaded static_init v1.0.3
+[429.820s]   Downloaded tokio v1.51.0
+[429.820s]   Downloaded serde_json v1.0.149
+[429.820s]   Downloaded regex v1.12.3
+[429.820s]   Downloaded portable-atomic v1.13.1
+[429.820s]   Downloaded idna v1.1.0
+[429.820s]   Downloaded chrono v0.4.44
+[429.821s]   Downloaded utf8parse v0.2.2
+[429.821s]   Downloaded x509-parser v0.18.1
+[429.821s]   Downloaded utf8_iter v1.0.4
+[429.821s]   Downloaded utf16_iter v1.0.5
+[429.821s]   Downloaded utf-8 v0.7.6
+[429.821s]   Downloaded unicode-ident v1.0.24
+[429.821s]   Downloaded typenum v1.19.0
+[429.821s]   Downloaded twox-hash v1.6.3
+[429.821s]   Downloaded tracing-core v0.1.36
+[429.821s]   Downloaded tracing-attributes v0.1.31
+[429.821s]   Downloaded toml_edit v0.23.5
+[429.822s]   Downloaded toml v0.9.6
+[429.822s]   Downloaded tinyvec v1.11.0
+[429.822s]   Downloaded stabby-abi v72.1.1
+[429.822s]   Downloaded serialport v4.9.0
+[429.822s]   Downloaded ron v0.12.1
+[429.822s]   Downloaded rand v0.9.2
+[429.822s]   Downloaded pest v2.8.0
+[429.822s]   Downloaded minimal-lexical v0.2.1
+[429.822s]   Downloaded itertools v0.14.0
+[429.822s]   Downloaded hashbrown v0.16.1
+[429.822s]   Downloaded clap_builder v4.5.60
+[429.822s]   Downloaded untrusted v0.9.0
+[429.823s]   Downloaded unescaper v0.1.8
+[429.823s]   Downloaded uhlc v0.8.2
+[429.823s]   Downloaded ucd-trie v0.1.7
+[429.823s]   Downloaded typeid v1.0.3
+[429.823s]   Downloaded tracing-log v0.2.0
+[429.823s]   Downloaded toml_parser v1.0.2
+[429.823s]   Downloaded toml_datetime v0.7.1
+[429.823s]   Downloaded tokio-tungstenite v0.24.0
+[429.823s]   Downloaded tokio-rustls v0.26.4
+[429.823s]   Downloaded tokio-macros v2.7.0
+[429.823s]   Downloaded token-cell v2.1.1
+[429.824s]   Downloaded tinystr v0.8.0
+[429.824s]   Downloaded tinystr v0.7.6
+[429.824s]   Downloaded thread_local v1.1.9
+[429.824s]   Downloaded tempfile v3.24.0
+[429.824s]   Downloaded stabby-macros v72.1.1
+[429.824s]   Downloaded stabby v72.1.1
+[429.824s]   Downloaded serde v1.0.228
+[429.824s]   Downloaded rustls-webpki v0.103.10
+[429.824s]   Downloaded rsa v0.9.10
+[429.824s]   Downloaded rand v0.8.5
+[429.824s]   Downloaded num-bigint v0.4.6
+[429.824s]   Downloaded nom v7.1.3
+[429.825s]   Downloaded mio v1.2.0
+[429.825s]   Downloaded libm v0.2.16
+[429.825s]   Downloaded indexmap v2.11.4
+[429.825s]   Downloaded http v1.4.0
+[429.825s]   Downloaded futures-util v0.3.32
+[429.825s]   Downloaded aho-corasick v1.1.4
+[429.825s]   Downloaded unicode-xid v0.2.6
+[429.825s]   Downloaded tracing-serde v0.2.0
+[429.825s]   Downloaded tokio-serial v5.4.5
+[429.825s]   Downloaded tls-listener v0.11.0
+[429.825s]   Downloaded time-macros v0.2.22
+[429.825s]   Downloaded time-core v0.1.4
+[429.826s]   Downloaded thread-priority v1.2.0
+[429.826s]   Downloaded thiserror-impl v2.0.18
+[429.826s]   Downloaded thiserror v1.0.69
+[429.826s]   Downloaded synstructure v0.13.2
+[429.826s]   Downloaded static_assertions v1.1.0
+[429.826s]   Downloaded spin v0.10.0
+[429.826s]   Downloaded socket2 v0.6.3
+[429.826s]   Downloaded socket2 v0.5.10
+[429.826s]   Downloaded smallvec v1.15.1
+[429.826s]   Downloaded sharded-slab v0.1.7
+[429.826s]   Downloaded serde_yaml v0.9.34+deprecated
+[429.827s]   Downloaded schemars v1.2.1
+[429.827s]   Downloaded ryu v1.0.23
+[429.827s]   Downloaded rustls-platform-verifier v0.6.2
+[429.827s]   Downloaded rcgen v0.14.7
+[429.827s]   Downloaded quinn v0.11.9
+[429.827s]   Downloaded pin-project-lite v0.2.17
+[429.827s]   Downloaded linux-raw-sys v0.12.1
+[429.827s]   Downloaded parking_lot v0.12.5
+[429.827s]   Downloaded num-bigint-dig v0.8.6
+[429.827s]   Downloaded miniz_oxide v0.8.9
+[429.827s]   Downloaded indexmap v1.9.3
+[429.828s]   Downloaded icu_provider v1.5.0
+[429.828s]   Downloaded icu_properties v1.5.1
+[429.828s]   Downloaded icu_normalizer_data v1.5.1
+[429.828s]   Downloaded icu_locid v1.5.0
+[429.828s]   Downloaded hmac v0.12.1
+[429.828s]   Downloaded hashbrown v0.15.5
+[429.828s]   Downloaded hashbrown v0.14.5
+[429.828s]   Downloaded derive_more-impl v2.0.1
+[429.828s]   Downloaded thiserror-impl v1.0.69
+[429.828s]   Downloaded thiserror v2.0.18
+[429.828s]   Downloaded subtle v2.6.1
+[429.828s]   Downloaded strsim v0.11.1
+[429.829s]   Downloaded stable_deref_trait v1.2.1
+[429.829s]   Downloaded spki v0.7.3
+[429.829s]   Downloaded spin v0.9.8
+[429.829s]   Downloaded slab v0.4.12
+[429.829s]   Downloaded siphasher v1.0.2
+[429.829s]   Downloaded shlex v1.3.0
+[429.829s]   Downloaded shellexpand v3.1.2
+[429.829s]   Downloaded serde_with_macros v3.14.1
+[429.829s]   Downloaded serde_spanned v1.0.1
+[429.829s]   Downloaded serde_derive v1.0.228
+[429.829s]   Downloaded serde_core v1.0.228
+[429.829s]   Downloaded schemars_derive v1.2.1
+[429.830s]   Downloaded schemars v0.9.0
+[429.830s]   Downloaded rustversion v1.0.22
+[429.830s]   Downloaded rustls-pki-types v1.14.0
+[429.830s]   Downloaded rand_chacha v0.3.1
+[429.830s]   Downloaded quinn-udp v0.5.14
+[429.830s]   Downloaded prometheus-client v0.24.1
+[429.830s]   Downloaded proc-macro2 v1.0.106
+[429.830s]   Downloaded pkcs8 v0.10.2
+[429.830s]   Downloaded phf_shared v0.11.3
+[429.830s]   Downloaded phf_macros v0.13.1
+[429.830s]   Downloaded phf v0.13.1
+[429.831s]   Downloaded phf v0.11.3
+[429.831s]   Downloaded percent-encoding v2.3.2
+[429.831s]   Downloaded pem-rfc7468 v0.7.0
+[429.831s]   Downloaded pem v3.0.6
+[429.831s]   Downloaded paste v1.0.15
+[429.831s]   Downloaded parking_lot_core v0.9.12
+[429.831s]   Downloaded once_cell v1.21.4
+[429.831s]   Downloaded num-traits v0.2.19
+[429.831s]   Downloaded num-integer v0.1.46
+[429.831s]   Downloaded nonempty-collections v0.3.1
+[429.831s]   Downloaded memchr v2.8.0
+[429.832s]   Downloaded lz4_flex v0.10.0
+[429.832s]   Downloaded log v0.4.29
+[429.832s]   Downloaded litemap v0.7.4
+[429.832s]   Downloaded icu_normalizer v1.5.0
+[429.832s]   Downloaded icu_locid_transform_data v1.5.1
+[429.832s]   Downloaded icu_locid_transform v1.5.0
+[429.832s]   Downloaded humantime v2.3.0
+[429.832s]   Downloaded httparse v1.10.1
+[429.832s]   Downloaded hashbrown v0.12.3
+[429.832s]   Downloaded flume v0.11.1
+[429.832s]   Downloaded flate2 v1.1.9
+[429.833s]   Downloaded evalexpr v11.3.1
+[429.833s]   Downloaded der v0.7.10
+[429.833s]   Downloaded darling_core v0.21.3
+[429.833s]   Downloaded bytes v1.11.1
+[429.833s]   Downloaded base64 v0.22.1
+[429.833s]   Downloaded asn1-rs v0.7.1
+[429.833s]   Downloaded arc-swap v1.9.0
+[429.833s]   Downloaded simd-adler32 v0.3.9
+[429.833s]   Downloaded signature v2.2.0
+[429.833s]   Downloaded sha2 v0.10.9
+[429.833s]   Downloaded sha1 v0.10.6
+[429.833s]   Downloaded serde_derive_internals v0.29.1
+[429.834s]   Downloaded semver v1.0.27
+[429.834s]   Downloaded secrecy v0.8.0
+[429.834s]   Downloaded rustls-pemfile v2.2.0
+[429.834s]   Downloaded ringbuffer-spsc v0.1.15
+[429.834s]   Downloaded quote v1.0.45
+[429.834s]   Downloaded prost v0.14.1
+[429.834s]   Downloaded ppv-lite86 v0.2.21
+[429.834s]   Downloaded pnet_datalink v0.35.0
+[429.834s]   Downloaded phf_macros v0.11.3
+[429.834s]   Downloaded phf_generator v0.13.1
+[429.834s]   Downloaded phf_generator v0.11.3
+[429.835s]   Downloaded pest_generator v2.8.0
+[429.835s]   Downloaded oid-registry v0.8.1
+[429.835s]   Downloaded no-std-net v0.6.0
+[429.835s]   Downloaded nanorand v0.7.0
+[429.835s]   Downloaded mio-serial v5.0.6
+[429.835s]   Downloaded lock_api v0.4.14
+[429.835s]   Downloaded keyed-set v1.1.0
+[429.835s]   Downloaded icu_provider_macros v1.5.0
+[429.835s]   Downloaded home v0.5.9
+[429.835s]   Downloaded anyhow v1.0.102
+[429.835s]   Downloaded aes v0.8.4
+[429.835s]   Downloaded rustc-hash v2.1.1
+[429.836s]   Downloaded ref-cast-impl v1.0.25
+[429.836s]   Downloaded rand_core v0.6.4
+[429.836s]   Downloaded rand_chacha v0.9.0
+[429.836s]   Downloaded prost-derive v0.14.1
+[429.836s]   Downloaded heck v0.5.0
+[429.836s]   Downloaded futures v0.3.32
+[429.836s]   Downloaded flume v0.12.0
+[429.836s]   Downloaded crossbeam-utils v0.8.21
+[429.836s]   Downloaded crossbeam-epoch v0.9.18
+[429.836s]   Downloaded crossbeam-deque v0.8.6
+[429.836s]   Downloaded const-oid v0.9.6
+[429.836s]   Downloaded base64ct v1.6.0
+[429.837s]   Downloaded rustc_version v0.4.1
+[429.837s]   Downloaded ref-cast v1.0.25
+[429.837s]   Downloaded rand_core v0.9.5
+[429.837s]   Downloaded pnet_base v0.35.0
+[429.837s]   Downloaded phf_shared v0.13.1
+[429.837s]   Downloaded parking v2.2.1
+[429.837s]   Downloaded openssl-probe v0.2.1
+[429.837s]   Downloaded num-conv v0.1.0
+[429.837s]   Downloaded lazy_static v1.5.0
+[429.837s]   Downloaded sha2-const-stable v0.1.0
+[429.837s]   Downloaded json5 v0.4.1
+[429.837s]   Downloaded is_terminal_polyfill v1.70.2
+[429.838s]   Downloaded inout v0.1.4
+[429.838s]   Downloaded icu_collections v1.5.0
+[429.838s]   Downloaded fs_extra v1.3.0
+[429.838s]   Downloaded darling v0.21.3
+[429.838s]   Downloaded crossbeam-channel v0.5.15
+[429.838s]   Downloaded const_format v0.2.35
+[429.838s]   Downloaded cc v1.2.59
+[429.838s]   Downloaded bincode v1.3.3
+[429.838s]   Downloaded async-trait v0.1.89
+[429.838s]   Downloaded prometheus-client-derive-encode v0.5.0
+[429.838s]   Downloaded proc-macro-crate v3.4.0
+[429.839s]   Downloaded pest_derive v2.8.0
+[429.839s]   Downloaded num_cpus v1.17.0
+[429.839s]   Downloaded matchers v0.2.0
+[429.839s]   Downloaded lru-slab v0.1.2
+[429.839s]   Downloaded leb128 v0.2.5
+[429.839s]   Downloaded keccak v0.1.6
+[429.839s]   Downloaded itoa v1.0.18
+[429.839s]   Downloaded idna_adapter v1.2.0
+[429.839s]   Downloaded getrandom v0.3.4
+[429.839s]   Downloaded fnv v1.0.7
+[429.839s]   Downloaded find-msvc-tools v0.1.9
+[429.839s]   Downloaded digest v0.10.7
+[429.840s]   Downloaded deranged v0.4.0
+[429.840s]   Downloaded der-parser v10.0.0
+[429.840s]   Downloaded cpufeatures v0.2.17
+[429.840s]   Downloaded cipher v0.4.4
+[429.840s]   Downloaded byteorder v1.5.0
+[429.840s]   Downloaded buddy_system_allocator v0.10.0
+[429.840s]   Downloaded bitflags v2.11.0
+[429.840s]   Downloaded pest_meta v2.8.0
+[429.840s]   Downloaded fs2 v0.4.3
+[429.840s]   Downloaded foldhash v0.1.5
+[429.840s]   Downloaded fastbloom v0.14.1
+[429.840s]   Downloaded dyn-clone v1.0.20
+[429.841s]   Downloaded dtoa v1.0.11
+[429.841s]   Downloaded derive_more v2.0.1
+[429.841s]   Downloaded crypto-common v0.1.7
+[429.841s]   Downloaded crossbeam-queue v0.3.12
+[429.841s]   Downloaded bitflags v1.3.2
+[429.841s]   Downloaded anstyle-parse v0.2.7
+[429.841s]   Downloaded getrandom v0.2.17
+[429.841s]   Downloaded form_urlencoded v1.2.2
+[429.841s]   Downloaded event-listener v5.4.1
+[429.841s]   Downloaded ctor v0.4.3
+[429.841s]   Downloaded colorchoice v1.0.5
+[429.841s]   Downloaded cobs v0.2.3
+[429.842s]   Downloaded allocator-api2 v0.2.21
+[429.842s]   Downloaded nu-ansi-term v0.50.3
+[429.842s]   Downloaded libloading v0.8.9
+[429.842s]   Downloaded iana-time-zone v0.1.65
+[429.842s]   Downloaded futures-macro v0.3.32
+[429.842s]   Downloaded futures-executor v0.3.32
+[429.842s]   Downloaded fixedbitset v0.5.7
+[429.842s]   Downloaded fastrand v2.3.0
+[429.842s]   Downloaded data-encoding v2.10.0
+[429.842s]   Downloaded darling_macro v0.21.3
+[429.842s]   Downloaded const_format_proc_macros v0.2.34
+[429.842s]   Downloaded clap v4.5.60
+[429.843s]   Downloaded cfg_aliases v0.2.1
+[429.843s]   Downloaded cfg-if v1.0.4
+[429.843s]   Downloaded array-init v2.1.0
+[429.843s]   Downloaded futures-task v0.3.32
+[429.843s]   Downloaded futures-channel v0.3.32
+[429.843s]   Downloaded equivalent v1.0.2
+[429.843s]   Downloaded dirs-sys v0.5.0
+[429.843s]   Downloaded asn1-rs-derive v0.6.0
+[429.843s]   Downloaded num-iter v0.1.45
+[429.843s]   Downloaded crc32fast v1.5.0
+[429.843s]   Downloaded concurrent-queue v2.5.0
+[429.844s]   Downloaded cfg_aliases v0.1.1
+[429.844s]   Downloaded async-lock v3.4.1
+[429.844s]   Downloaded hex v0.4.3
+[429.844s]   Downloaded event-listener-strategy v0.5.4
+[429.844s]   Downloaded dtor-proc-macro v0.0.5
+[429.844s]   Downloaded crossbeam v0.8.4
+[429.844s]   Downloaded ahash v0.8.12
+[429.844s]   Downloaded foldhash v0.2.0
+[429.844s]   Downloaded either v1.15.0
+[429.844s]   Downloaded displaydoc v0.2.5
+[429.844s]   Downloaded autocfg v1.5.0
+[429.844s]   Downloaded git-version-macro v0.3.9
+[429.845s]   Downloaded git-version v0.3.9
+[429.845s]   Downloaded anstyle v1.0.14
+[429.845s]   Downloaded anstream v0.6.21
+[429.845s]   Downloaded futures-io v0.3.32
+[429.845s]   Downloaded futures-core v0.3.32
+[429.845s]   Downloaded errno v0.3.14
+[429.845s]   Downloaded dtor v0.0.6
+[429.845s]   Downloaded dirs v6.0.0
+[429.845s]   Downloaded block-buffer v0.10.4
+[429.845s]   Downloaded asn1-rs-impl v0.2.0
+[429.845s]   Downloaded anstyle-query v1.1.5
+[429.845s]   Downloaded advisory-lock v0.3.0
+[429.846s]    Compiling proc-macro2 v1.0.106
+[429.846s]    Compiling quote v1.0.45
+[429.846s]    Compiling unicode-ident v1.0.24
+[429.846s]    Compiling libc v0.2.184
+[429.846s]    Compiling serde_core v1.0.228
+[429.846s]    Compiling cfg-if v1.0.4
+[429.846s]    Compiling zerocopy v0.8.48
+[429.846s]    Compiling version_check v0.9.5
+[429.846s]    Compiling memchr v2.8.0
+[429.846s]    Compiling serde v1.0.228
+[429.846s]    Compiling getrandom v0.3.4
+[429.847s]    Compiling getrandom v0.2.17
+[429.847s]    Compiling syn v2.0.117
+[429.847s]    Compiling once_cell v1.21.4
+[429.847s]    Compiling thiserror v2.0.18
+[429.847s]    Compiling rand_core v0.6.4
+[429.847s]    Compiling itoa v1.0.18
+[429.847s]    Compiling serde_derive v1.0.228
+[429.847s]    Compiling thiserror-impl v2.0.18
+[429.847s]    Compiling synstructure v0.13.2
+[429.847s]    Compiling ppv-lite86 v0.2.21
+[429.847s]    Compiling rustversion v1.0.22
+[429.847s]    Compiling allocator-api2 v0.2.21
+[429.847s]    Compiling rand_chacha v0.3.1
+[429.848s]    Compiling tokio-macros v2.7.0
+[429.848s]    Compiling zmij v1.0.21
+[429.848s]    Compiling rand v0.8.5
+[429.848s]    Compiling ahash v0.8.12
+[429.848s]    Compiling foldhash v0.2.0
+[429.848s]    Compiling libm v0.2.16
+[429.848s]    Compiling equivalent v1.0.2
+[429.848s]    Compiling serde_json v1.0.149
+[429.848s]    Compiling displaydoc v0.2.5
+[429.848s]    Compiling hashbrown v0.16.1
+[429.848s]    Compiling crossbeam-utils v0.8.21
+[429.848s]    Compiling anyhow v1.0.102
+[429.849s]    Compiling either v1.15.0
+[429.849s]    Compiling ref-cast v1.0.25
+[429.849s]    Compiling portable-atomic v1.13.1
+[429.849s]    Compiling tracing-attributes v0.1.31
+[429.849s]    Compiling cfg_aliases v0.2.1
+[429.849s]    Compiling autocfg v1.5.0
+[429.849s]    Compiling num-traits v0.2.19
+[429.849s]    Compiling ref-cast-impl v1.0.25
+[429.849s]    Compiling paste v1.0.15
+[429.849s]    Compiling serde_derive_internals v0.29.1
+[429.849s]    Compiling find-msvc-tools v0.1.9
+[429.849s]    Compiling shlex v1.3.0
+[429.850s]    Compiling schemars_derive v1.2.1
+[429.850s]    Compiling typeid v1.0.3
+[429.850s]    Compiling cc v1.2.59
+[429.850s]    Compiling syn v1.0.109
+[429.850s]    Compiling hashbrown v0.14.5
+[429.850s]    Compiling ring v0.17.14
+[429.850s]    Compiling zenoh-result v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#57858175)
+[429.850s]    Compiling dyn-clone v1.0.20
+[429.850s]    Compiling keyed-set v1.1.0
+[429.850s]    Compiling token-cell v2.1.1
+[429.850s]    Compiling futures-macro v0.3.32
+[429.851s]    Compiling schemars v1.2.1
+[429.851s]    Compiling zenoh-macros v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#57858175)
+[429.851s]    Compiling typenum v1.19.0
+[429.851s]    Compiling zenoh-keyexpr v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#57858175)
+[429.851s]    Compiling generic-array v0.14.7
+[429.851s]    Compiling log v0.4.29
+[429.851s]    Compiling indexmap v2.11.4
+[429.851s]    Compiling winnow v0.7.15
+[429.851s]    Compiling toml_datetime v0.7.1
+[429.851s]    Compiling time-core v0.1.4
+[429.851s]    Compiling semver v1.0.27
+[429.851s]    Compiling num-conv v0.1.0
+[429.851s]    Compiling toml_parser v1.0.2
+[429.852s]    Compiling time-macros v0.2.22
+[429.852s]    Compiling rustc_version v0.4.1
+[429.852s]    Compiling pin-project-lite v0.2.17
+[429.852s]    Compiling rustls v0.23.37
+[429.852s]    Compiling strsim v0.11.1
+[429.852s]    Compiling nix v0.29.0
+[429.852s]    Compiling zerofrom-derive v0.1.7
+[429.852s]    Compiling cfg_aliases v0.1.1
+[429.852s]    Compiling ucd-trie v0.1.7
+[429.852s]    Compiling scopeguard v1.2.0
+[429.852s]    Compiling pest v2.8.0
+[429.852s]    Compiling unicode-xid v0.2.6
+[429.853s]    Compiling const_format_proc_macros v0.2.34
+[429.853s]    Compiling stabby-abi v72.1.1
+[429.853s]    Compiling toml_edit v0.23.5
+[429.853s]    Compiling yoke-derive v0.7.5
+[429.853s]    Compiling pest_meta v2.8.0
+[429.853s]    Compiling fnv v1.0.7
+[429.853s]    Compiling ident_case v1.0.1
+[429.853s]    Compiling stabby-macros v72.1.1
+[429.853s]    Compiling darling_core v0.21.3
+[429.853s]    Compiling pest_generator v2.8.0
+[429.853s]    Compiling proc-macro-crate v3.4.0
+[429.853s]    Compiling static_init_macro v1.0.4
+[429.853s]    Compiling static_init v1.0.3
+[429.854s]    Compiling pest_derive v2.8.0
+[429.854s]    Compiling async-trait v0.1.89
+[429.854s]    Compiling darling_macro v0.21.3
+[429.854s]    Compiling zerovec-derive v0.10.3
+[429.854s]    Compiling stabby v72.1.1
+[429.854s]    Compiling zeroize v1.8.2
+[429.854s]    Compiling bytes v1.11.1
+[429.854s]    Compiling darling v0.21.3
+[429.854s]    Compiling unzip-n v0.1.2
+[429.854s]    Compiling serde_with_macros v3.14.1
+[429.854s]    Compiling lock_api v0.4.14
+[429.854s]    Compiling asn1-rs-derive v0.6.0
+[429.855s]    Compiling asn1-rs-impl v0.2.0
+[429.855s]    Compiling bitflags v2.11.0
+[429.855s]    Compiling spin v0.9.8
+[429.855s]    Compiling mio v1.2.0
+[429.855s]    Compiling socket2 v0.6.3
+[429.855s]    Compiling validated_struct_macros v2.2.0
+[429.855s]    Compiling quinn-udp v0.5.14
+[429.855s]    Compiling zenoh-shm v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#57858175)
+[429.855s]    Compiling oid-registry v0.8.1
+[429.855s]    Compiling tokio v1.51.0
+[429.855s]    Compiling lazy_static v1.5.0
+[429.856s]    Compiling quinn v0.11.9
+[429.856s]    Compiling tracing-core v0.1.36
+[429.856s]    Compiling futures-sink v0.3.32
+[429.856s]    Compiling icu_locid_transform_data v1.5.1
+[429.856s]    Compiling futures-core v0.3.32
+[429.856s]    Compiling subtle v2.6.1
+[429.856s]    Compiling icu_provider_macros v1.5.0
+[429.856s]    Compiling icu_properties_data v1.5.1
+[429.856s]    Compiling siphasher v1.0.2
+[429.856s]    Compiling tracing v0.1.44
+[429.856s]    Compiling slab v0.4.12
+[429.857s]    Compiling rustls-pki-types v1.14.0
+[429.857s]    Compiling icu_normalizer_data v1.5.1
+[429.857s]    Compiling futures-channel v0.3.32
+[429.857s]    Compiling futures-task v0.3.32
+[429.857s]    Compiling smallvec v1.15.1
+[429.857s]    Compiling futures-io v0.3.32
+[429.857s]    Compiling futures-util v0.3.32
+[429.857s]    Compiling untrusted v0.9.0
+[429.857s]    Compiling ron v0.12.1
+[429.857s]    Compiling bitflags v1.3.2
+[429.857s]    Compiling powerfmt v0.2.0
+[429.857s]    Compiling deranged v0.4.0
+[429.858s]    Compiling zenoh-runtime v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#57858175)
+[429.858s]    Compiling rustls-webpki v0.103.10
+[429.858s]    Compiling zenoh-core v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#57858175)
+[429.858s]    Compiling time v0.3.41
+[429.858s]    Compiling zenoh-collections v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#57858175)
+[429.858s]    Compiling aho-corasick v1.1.4
+[429.858s]    Compiling regex-syntax v0.8.10
+[429.858s]    Compiling zenoh-buffers v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#57858175)
+[429.858s]    Compiling regex-automata v0.4.14
+[429.858s]    Compiling num-integer v0.1.46
+[429.858s]    Compiling zerofrom v0.1.5
+[429.858s]    Compiling humantime v2.3.0
+[429.859s]    Compiling stable_deref_trait v1.2.1
+[429.859s]    Compiling option-ext v0.2.0
+[429.859s]    Compiling thiserror v1.0.69
+[429.859s]    Compiling const-oid v0.9.6
+[429.859s]    Compiling httparse v1.10.1
+[429.859s]    Compiling minimal-lexical v0.2.1
+[429.859s]    Compiling dirs-sys v0.5.0
+[429.859s]    Compiling yoke v0.7.5
+[429.859s]    Compiling nom v7.1.3
+[429.859s]    Compiling futures-executor v0.3.32
+[429.859s]    Compiling const_format v0.2.35
+[429.860s]    Compiling rand_core v0.9.5
+[429.860s]    Compiling serde_spanned v1.0.1
+[429.860s]    Compiling toml_writer v1.0.2
+[429.860s]    Compiling static_assertions v1.1.0
+[429.860s]    Compiling sha2-const-stable v0.1.0
+[429.860s]    Compiling spin v0.10.0
+[429.860s]    Compiling no-std-net v0.6.0
+[429.860s]    Compiling uhlc v0.8.2
+[429.860s]    Compiling pnet_base v0.35.0
+[429.860s]    Compiling toml v0.9.6
+[429.860s]    Compiling rand_chacha v0.9.0
+[429.860s]    Compiling futures v0.3.32
+[429.861s]    Compiling rusticata-macros v4.1.0
+[429.861s]    Compiling zerovec v0.10.4
+[429.861s]    Compiling dirs v6.0.0
+[429.861s]    Compiling matchers v0.2.0
+[429.861s]    Compiling crypto-common v0.1.7
+[429.861s]    Compiling crossbeam-channel v0.5.15
+[429.861s]    Compiling crossbeam-queue v0.3.12
+[429.861s]    Compiling tracing-log v0.2.0
+[429.861s]    Compiling tracing-serde v0.2.0
+[429.861s]    Compiling sharded-slab v0.1.7
+[429.861s]    Compiling ipnetwork v0.20.0
+[429.862s]    Compiling thiserror-impl v1.0.69
+[429.862s]    Compiling nanorand v0.7.0
+[429.862s]    Compiling pnet_sys v0.35.0
+[429.862s]    Compiling libloading v0.8.9
+[429.862s]    Compiling thread_local v1.1.9
+[429.862s]    Compiling home v0.5.9
+[429.862s]    Compiling openssl-probe v0.2.1
+[429.862s]    Compiling nu-ansi-term v0.50.3
+[429.862s]    Compiling tracing-subscriber v0.3.23
+[429.862s]    Compiling rustls-native-certs v0.8.3
+[429.862s]    Compiling pnet_datalink v0.35.0
+[429.862s]    Compiling flume v0.11.1
+[429.862s]    Compiling shellexpand v3.1.2
+[429.863s]    Compiling asn1-rs v0.7.1
+[429.863s]    Compiling rand v0.9.2
+[429.863s]    Compiling zenoh-protocol v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#57858175)
+[429.863s]    Compiling thread-priority v1.2.0
+[429.863s]    Compiling serde_with v3.14.1
+[429.863s]    Compiling json5 v0.4.1
+[429.863s]    Compiling nonempty-collections v0.3.1
+[429.863s]    Compiling unsafe-libyaml v0.2.11
+[429.863s]    Compiling data-encoding v2.10.0
+[429.863s]    Compiling ryu v1.0.23
+[429.863s]    Compiling tinyvec_macros v0.1.1
+[429.864s]    Compiling rustc-hash v2.1.1
+[429.864s]    Compiling tinyvec v1.11.0
+[429.864s]    Compiling serde_yaml v0.9.34+deprecated
+[429.864s]    Compiling validated_struct v2.2.0
+[429.864s]    Compiling fastbloom v0.14.1
+[429.864s]    Compiling zenoh-util v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#57858175)
+[429.864s]    Compiling rustls-platform-verifier v0.6.2
+[429.864s]    Compiling tinystr v0.7.6
+[429.864s]    Compiling num-bigint v0.4.6
+[429.864s]    Compiling block-buffer v0.10.4
+[429.864s]    Compiling buddy_system_allocator v0.10.0
+[429.864s]    Compiling secrecy v0.8.0
+[429.864s]    Compiling advisory-lock v0.3.0
+[429.865s]    Compiling num_cpus v1.17.0
+[429.865s]    Compiling talc v4.4.3
+[429.865s]    Compiling base64 v0.22.1
+[429.865s]    Compiling lru-slab v0.1.2
+[429.865s]    Compiling litemap v0.7.4
+[429.865s]    Compiling writeable v0.5.5
+[429.865s]    Compiling icu_locid v1.5.0
+[429.865s]    Compiling quinn-proto v0.11.14
+[429.865s]    Compiling pem v3.0.6
+[429.865s]    Compiling zenoh-config v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#57858175)
+[429.865s]    Compiling der-parser v10.0.0
+[429.866s]    Compiling digest v0.10.7
+[429.866s]    Compiling yasna v0.5.2
+[429.866s]    Compiling tokio-util v0.7.18
+[429.866s]    Compiling rcgen v0.14.7
+[429.866s]    Compiling x509-parser v0.18.1
+[429.866s]    Compiling zenoh-codec v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#57858175)
+[429.866s]    Compiling icu_provider v1.5.0
+[429.866s]    Compiling webpki-roots v1.0.6
+[429.866s]    Compiling rustls-pemfile v2.2.0
+[429.866s]    Compiling socket2 v0.5.10
+[429.866s]    Compiling num-bigint-dig v0.8.6
+[429.866s]    Compiling zenoh-link-commons v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#57858175)
+[429.866s]    Compiling icu_locid_transform v1.5.0
+[429.867s]    Compiling icu_collections v1.5.0
+[429.867s]    Compiling fastrand v2.3.0
+[429.867s]    Compiling icu_properties v1.5.1
+[429.867s]    Compiling concurrent-queue v2.5.0
+[429.867s]    Compiling utf16_iter v1.0.5
+[429.867s]    Compiling base64ct v1.6.0
+[429.867s]    Compiling crc32fast v1.5.0
+[429.867s]    Compiling write16 v1.0.0
+[429.867s]    Compiling utf8_iter v1.0.4
+[429.867s]    Compiling parking v2.2.1
+[429.867s]    Compiling rustix v1.1.4
+[429.868s]    Compiling cpufeatures v0.2.17
+[429.868s]    Compiling icu_normalizer v1.5.0
+[429.868s]    Compiling event-listener v5.4.1
+[429.868s]    Compiling nix v0.26.4
+[429.868s]    Compiling unescaper v0.1.8
+[429.868s]    Compiling serialport v4.9.0
+[429.868s]    Compiling pem-rfc7468 v0.7.0
+[429.868s]    Compiling phf_shared v0.13.1
+[429.868s]    Compiling git-version-macro v0.3.9
+[429.868s]    Compiling phf_generator v0.13.1
+[429.868s]    Compiling der v0.7.10
+[429.868s]    Compiling mio-serial v5.0.6
+[429.869s]    Compiling idna_adapter v1.2.0
+[429.869s]    Compiling sha1 v0.10.6
+[429.869s]    Compiling tokio-rustls v0.26.4
+[429.869s]    Compiling http v1.4.0
+[429.869s]    Compiling itertools v0.14.0
+[429.869s]    Compiling uuid v1.20.0
+[429.869s]    Compiling utf8parse v0.2.2
+[429.869s]    Compiling utf-8 v0.7.6
+[429.869s]    Compiling byteorder v1.5.0
+[429.869s]    Compiling percent-encoding v2.3.2
+[429.869s]    Compiling anstyle-parse v0.2.7
+[429.869s]    Compiling tls-listener v0.11.0
+[429.870s]    Compiling form_urlencoded v1.2.2
+[429.870s]    Compiling tungstenite v0.24.0
+[429.870s]    Compiling idna v1.1.0
+[429.870s]    Compiling spki v0.7.3
+[429.870s]    Compiling tokio-serial v5.4.5
+[429.870s]    Compiling phf_macros v0.13.1
+[429.870s]    Compiling inout v0.1.4
+[429.870s]    Compiling crossbeam-epoch v0.9.18
+[429.870s]    Compiling zenoh v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#57858175)
+[429.870s]    Compiling arc-swap v1.9.0
+[429.870s]    Compiling anstyle-query v1.1.5
+[429.871s]    Compiling anstyle v1.0.14
+[429.871s]    Compiling cobs v0.2.3
+[429.871s]    Compiling is_terminal_polyfill v1.70.2
+[429.871s]    Compiling colorchoice v1.0.5
+[429.871s]    Compiling z-serial v0.3.1
+[429.871s]    Compiling anstream v0.6.21
+[429.871s]    Compiling zenoh-sync v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#57858175)
+[429.871s]    Compiling crossbeam-deque v0.8.6
+[429.871s]    Compiling cipher v0.4.4
+[429.871s]    Compiling pkcs8 v0.10.2
+[429.871s]    Compiling url v2.5.8
+[429.871s]    Compiling tokio-tungstenite v0.24.0
+[429.872s]    Compiling prost-derive v0.14.1
+[429.872s]    Compiling twox-hash v1.6.3
+[429.872s]    Compiling num-iter v0.1.45
+[429.872s]    Compiling derive_more-impl v2.0.1
+[429.872s]    Compiling clap_lex v1.0.0
+[429.872s]    Compiling linux-raw-sys v0.12.1
+[429.872s]    Compiling keccak v0.1.6
+[429.872s]    Compiling clap_builder v4.5.60
+[429.872s]    Compiling sha3 v0.10.8
+[429.872s]    Compiling lz4_flex v0.10.0
+[429.872s]    Compiling zenoh-link-ws v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#57858175)
+[429.872s]    Compiling pkcs1 v0.7.5
+[429.873s]    Compiling aes v0.8.4
+[429.873s]    Compiling crossbeam v0.8.4
+[429.873s]    Compiling zenoh-link-udp v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#57858175)
+[429.873s]    Compiling zenoh-link-serial v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#57858175)
+[429.873s]    Compiling zenoh-link-tls v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#57858175)
+[429.873s]    Compiling zenoh-link-unixsock_stream v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#57858175)
+[429.873s]    Compiling zenoh-link-quic v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#57858175)
+[429.873s]    Compiling zenoh-link-tcp v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#57858175)
+[429.873s]    Compiling signature v2.2.0
+[429.873s]    Compiling hmac v0.12.1
+[429.873s]    Compiling phf_shared v0.11.3
+[429.873s]    Compiling simd-adler32 v0.3.9
+[429.874s]    Compiling adler2 v2.0.1
+[429.874s]    Compiling array-init v2.1.0
+[429.874s]    Compiling foldhash v0.1.5
+[429.874s]    Compiling miniz_oxide v0.8.9
+[429.874s]    Compiling hashbrown v0.15.5
+[429.874s]    Compiling ringbuffer-spsc v0.1.15
+[429.874s]    Compiling phf_generator v0.11.3
+[429.874s]    Compiling zenoh-crypto v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#57858175)
+[429.874s]    Compiling zenoh-link v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#57858175)
+[429.874s]    Compiling rsa v0.9.10
+[429.874s]    Compiling tempfile v3.24.0
+[429.875s]    Compiling git-version v0.3.9
+[429.875s]    Compiling event-listener-strategy v0.5.4
+[429.875s]    Compiling zenoh-task v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#57858175)
+[429.875s]    Compiling cbindgen v0.29.2
+[429.875s]    Compiling fixedbitset v0.5.7
+[429.875s]    Compiling petgraph v0.8.3
+[429.875s]    Compiling zenoh-transport v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#57858175)
+[429.875s]    Compiling async-lock v3.4.1
+[429.875s]    Compiling zenoh-plugin-trait v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#57858175)
+[429.875s]    Compiling flate2 v1.1.9
+[429.875s]    Compiling phf_macros v0.11.3
+[429.876s]    Compiling clap v4.5.60
+[429.876s]    Compiling derive_more v2.0.1
+[429.876s]    Compiling prost v0.14.1
+[429.876s]    Compiling phf v0.13.1
+[429.876s]    Compiling tinystr v0.8.0
+[429.876s]    Compiling heck v0.5.0
+[429.876s]    Compiling potential_utf v0.1.0
+[429.876s]    Compiling vec_map v0.8.2
+[429.876s]    Compiling zenoh-pinned-deps-1-75 v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#57858175)
+[429.876s]    Compiling phf v0.11.3
+[429.876s]    Compiling regex v1.12.3
+[429.876s]    Compiling fs2 v0.4.3
+[429.877s]    Compiling dtor-proc-macro v0.0.5
+[429.877s]    Compiling fs_extra v1.3.0
+[429.877s]    Compiling evalexpr v11.3.1
+[429.877s]    Compiling dtor v0.0.6
+[429.877s]    Compiling bincode v1.3.3
+[429.877s]    Compiling ctor-proc-macro v0.0.6
+[429.877s]    Compiling leb128 v0.2.5
+[429.877s]    Compiling iana-time-zone v0.1.65
+[429.877s]    Compiling ctor v0.4.3
+[429.877s]    Compiling chrono v0.4.44
+[429.877s]    Compiling flume v0.12.0
+[429.877s]    Compiling unwrap-infallible v0.1.5
+[429.878s]    Compiling zenoh-c v1.8.0 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/src/zenoh_c_vendor-build/release)
+[429.878s]    Compiling zenoh-ext v1.8.0 (https://github.com/eclipse-zenoh/zenoh.git?branch=main#57858175)
+[429.878s] warning: zenoh-c@1.8.0: Copying Cargo.lock from /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/src/zenoh_c_vendor-build/release/Cargo.lock to /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/src/zenoh_c_vendor/build-resources/opaque-types/Cargo.lock
+[429.878s] warning: zenoh-c@1.8.0: Successfully copied Cargo.lock
+[429.878s] warning: zenoh-c@1.8.0: OPAQUE_TYPES_BUILD_DIR = /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/src/zenoh_c_vendor-build/opaque-types
+[429.878s]     Finished `release` profile [optimized] target(s) in 7m 04s
+[429.901s] [7/16] Performing install step for 'zenoh_c_vendor'
+[429.901s] [0/1] Install the project...
+[429.902s] -- Install configuration: "Release"
+[429.902s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/install/include
+[429.902s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/install/include/zenoh.h
+[429.902s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/install/include/zenoh_commons.h
+[429.902s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/install/include/zenoh_concrete.h
+[429.902s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/install/include/zenoh_memory.h
+[429.902s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/install/include/zenoh_constants.h
+[429.902s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/install/include/zenoh_configure.h
+[429.902s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/install/include/zenoh_opaque.h
+[429.902s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/install/include/zenoh_macros.h
+[429.902s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/install/lib/libzenohc.so
+[429.903s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/install/lib/pkgconfig/zenohc.pc
+[429.903s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/install/lib/libzenohc.a
+[429.903s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/install/lib/cmake/zenohc/zenohcConfig.cmake
+[429.903s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_c_vendor-prefix/install/lib/cmake/zenohc/zenohcConfigVersion.cmake
+[429.921s] [8/16] Completed 'zenoh_c_vendor'
+[429.935s] [9/16] Creating directories for 'zenoh_cpp_vendor'
+[434.160s] [10/16] Performing download step for 'zenoh_cpp_vendor'
+[434.160s] === ./zenoh_cpp_vendor (git) ===
+[434.160s] hint: Using 'master' as the name for the initial branch. This default branch name
+[434.160s] hint: will change to "main" in Git 3.0. To configure the initial branch name
+[434.161s] hint: to use in all of your new repositories, which will suppress this warning,
+[434.161s] hint: call:
+[434.161s] hint:
+[434.161s] hint: 	git config --global init.defaultBranch <name>
+[434.161s] hint:
+[434.161s] hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+[434.161s] hint: 'development'. The just-created branch can be renamed via this command:
+[434.161s] hint:
+[434.161s] hint: 	git branch -m <name>
+[434.161s] hint:
+[434.162s] hint: Disable this message with "git config set advice.defaultBranchName false"
+[434.162s] Initialized empty Git repository in /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/src/zenoh_cpp_vendor/.git/
+[434.162s] 
+[434.162s] From https://github.com/eclipse-zenoh/zenoh-cpp
+[434.162s]  * branch            776c59651a61dc53689dd68beace147e67a83a27 -> FETCH_HEAD
+[434.162s] Note: switching to '776c59651a61dc53689dd68beace147e67a83a27'.
+[434.162s] 
+[434.162s] You are in 'detached HEAD' state. You can look around, make experimental
+[434.162s] changes and commit them, and you can discard any commits you make in this
+[434.162s] state without impacting any branches by switching back to a branch.
+[434.162s] 
+[434.162s] If you want to create a new branch to retain commits you create, you may
+[434.163s] do so (now or later) by using -c with the switch command. Example:
+[434.163s] 
+[434.163s]   git switch -c <new-branch-name>
+[434.163s] 
+[434.163s] Or undo this operation with:
+[434.163s] 
+[434.163s]   git switch -
+[434.163s] 
+[434.163s] Turn off this advice by setting config variable advice.detachedHead to false
+[434.163s] 
+[434.163s] HEAD is now at 776c596 chore: Merge release/1.8.0 into main (#756)
+[434.163s] Submodule 'zenoh-c' (https://github.com/eclipse-zenoh/zenoh-c.git) registered for path 'zenoh-c'
+[434.164s] Submodule 'zenoh-pico' (https://github.com/eclipse-zenoh/zenoh-pico.git) registered for path 'zenoh-pico'
+[434.164s] Cloning into '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/src/zenoh_cpp_vendor/zenoh-c'...
+[434.164s] Cloning into '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/src/zenoh_cpp_vendor/zenoh-pico'...
+[434.164s] Submodule path 'zenoh-c': checked out '3b4924ae21eabb8c31de91c3128edc0f99122164'
+[434.164s] Submodule path 'zenoh-pico': checked out '7e6e0320e3466a67a43f4bffa7ba8bc9788e7de0'
+[434.172s] [11/16] No update_disconnected step for 'zenoh_cpp_vendor'
+[434.184s] [12/16] No patch_disconnected step for 'zenoh_cpp_vendor'
+[434.776s] [13/16] Performing configure step for 'zenoh_cpp_vendor'
+[434.776s] loading initial cache file /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-config.cmake
+[434.776s] -- The C compiler identification is GNU 14.3.0
+[434.776s] -- The CXX compiler identification is GNU 14.3.0
+[434.776s] -- Detecting C compiler ABI info
+[434.776s] -- Detecting C compiler ABI info - done
+[434.776s] -- Check for working C compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
+[434.776s] -- Detecting C compile features
+[434.776s] -- Detecting C compile features - done
+[434.777s] -- Detecting CXX compiler ABI info
+[434.777s] -- Detecting CXX compiler ABI info - done
+[434.777s] -- Check for working CXX compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
+[434.777s] -- Detecting CXX compile features
+[434.777s] -- Detecting CXX compile features - done
+[434.777s] -- project_version = 1.8.0
+[434.777s] -- ZENOHCXX_ZENOHC = OFF
+[434.777s] -- ZENOHCXX_ZENOHPICO = OFF
+[434.777s] -- ZENOHCXX_EXAMPLES_PROTOBUF = ON
+[434.777s] -- ZENOHCXX_ENABLE_TESTS = ON
+[434.777s] -- ZENOHCXX_ENABLE_EXAMPLES = ON
+[434.777s] -- CMAKE_BUILD_TYPE = Release
+[434.777s] -- CMAKE_INSTALL_PREFIX = /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor
+[434.777s] -- zenoh-cxx tests
+[434.777s] -- zenoh-cxx docs
+[434.777s] -- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+[434.777s] -- Doxygen not found, skipping docs
+[434.778s] -- Configuring done (0.6s)
+[434.778s] -- Generating done (0.0s)
+[434.778s] -- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/src/zenoh_cpp_vendor-build
+[434.790s] [14/16] Performing build step for 'zenoh_cpp_vendor'
+[434.790s] ninja: no work to do.
+[434.820s] [15/16] Performing install step for 'zenoh_cpp_vendor'
+[434.820s] [0/1] Install the project...
+[434.820s] -- Install configuration: "Release"
+[434.820s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include
+[434.820s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh.hxx
+[434.820s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh
+[434.821s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api.hxx
+[434.821s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/zenohc.hxx
+[434.821s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api
+[434.821s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/encoding.hxx
+[434.821s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/cancellation.hxx
+[434.821s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/config.hxx
+[434.821s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/source_info.hxx
+[434.821s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/queryable.hxx
+[434.821s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/id.hxx
+[434.821s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/timestamp.hxx
+[434.821s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/sample.hxx
+[434.821s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/channels.hxx
+[434.821s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/transport_event.hxx
+[434.821s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/logging.hxx
+[434.821s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/base.hxx
+[434.821s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/ext
+[434.821s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/ext/advanced_publisher.hxx
+[434.822s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/ext/miss.hxx
+[434.822s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/ext/querying_subscriber.hxx
+[434.822s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/ext/advanced_subscriber.hxx
+[434.822s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/ext/session_ext.hxx
+[434.822s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/ext/publication_cache.hxx
+[434.822s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/ext/serialization.hxx
+[434.822s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/query.hxx
+[434.822s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/transport.hxx
+[434.822s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/querier.hxx
+[434.822s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/enums.hxx
+[434.822s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/publisher.hxx
+[434.822s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/subscriber.hxx
+[434.822s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/bytes.hxx
+[434.822s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/query_consolidation.hxx
+[434.822s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/liveliness.hxx
+[434.822s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/transport_events_listener.hxx
+[434.822s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/scout.hxx
+[434.822s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/link_events_listener.hxx
+[434.823s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/link_event.hxx
+[434.823s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/hello.hxx
+[434.823s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/reply.hxx
+[434.823s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/closures.hxx
+[434.823s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/link.hxx
+[434.823s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/matching.hxx
+[434.823s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm
+[434.823s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/common
+[434.823s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/common/types.hxx
+[434.823s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/common/common.hxx
+[434.823s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/buffer
+[434.823s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/buffer/buffer.hxx
+[434.823s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/buffer/zshm.hxx
+[434.823s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/buffer/zshmmut.hxx
+[434.823s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/cleanup.hxx
+[434.823s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/client_storage
+[434.823s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/client_storage/client_storage.hxx
+[434.823s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/shm.hxx
+[434.824s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/protocol_implementations
+[434.824s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/protocol_implementations/protocol_implementations.hxx
+[434.824s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/protocol_implementations/posix
+[434.824s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/protocol_implementations/posix/posix_shm_client.hxx
+[434.824s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/protocol_implementations/posix/posix_shm_provider.hxx
+[434.824s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/protocol_implementations/posix/posix.hxx
+[434.824s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/provider
+[434.824s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/provider/types_impl.hxx
+[434.824s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/provider/provider.hxx
+[434.824s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/provider/types.hxx
+[434.824s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/provider/precomputed_layout.hxx
+[434.824s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/provider/shm_provider.hxx
+[434.824s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/provider/chunk.hxx
+[434.824s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/provider/shm_provider_backend.hxx
+[434.824s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/client
+[434.824s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/client/shm_client.hxx
+[434.824s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/client/shm_segment.hxx
+[434.824s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/shm/client/client.hxx
+[434.825s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/interop.hxx
+[434.825s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/session.hxx
+[434.825s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/api/keyexpr.hxx
+[434.825s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/detail
+[434.825s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/detail/availability_checks.hxx
+[434.825s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/detail/commons.hxx
+[434.825s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/detail/closures_concrete.hxx
+[434.825s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/include/zenoh/detail/closures.hxx
+[434.825s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/lib/pkgconfig/zenohcxx.pc
+[434.825s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/lib/cmake/zenohcxx/zenohcxxConfig.cmake
+[434.825s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor/zenoh_cpp_vendor-prefix/install/lib/cmake/zenohcxx/zenohcxxConfigVersion.cmake
+[434.833s] [16/16] Completed 'zenoh_cpp_vendor'
+[434.834s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=44 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor -- -j4 -l4
+[434.836s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=44 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor
+[434.840s] -- Install configuration: "Release"
+[434.840s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor
+[434.840s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include
+[434.840s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh.h
+[434.840s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh_commons.h
+[434.840s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh_concrete.h
+[434.841s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh_memory.h
+[434.841s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh_constants.h
+[434.841s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh_configure.h
+[434.841s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh_opaque.h
+[434.841s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh_macros.h
+[434.842s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib
+[434.842s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib/libzenohc.so
+[434.855s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib/cmake
+[434.855s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib/cmake/zenohc
+[434.856s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib/cmake/zenohc/zenohcConfigVersion.cmake
+[434.856s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib/cmake/zenohc/zenohcConfig.cmake
+[434.856s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib/pkgconfig
+[434.856s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib/pkgconfig/zenohc.pc
+[434.856s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib/libzenohc.a
+[434.889s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/zenoh_cpp_vendor/environment/vendor_package.bat
+[434.889s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/zenoh_cpp_vendor/environment/vendor_package.dsv
+[434.890s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/zenoh_cpp_vendor/environment/vendor_package.sh
+[434.890s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/vendor_packages/zenoh_cpp_vendor
+[434.892s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor
+[434.892s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include
+[434.892s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh.hxx
+[434.892s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh
+[434.892s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api.hxx
+[434.892s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/zenohc.hxx
+[434.892s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api
+[434.893s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/encoding.hxx
+[434.893s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/cancellation.hxx
+[434.893s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/config.hxx
+[434.893s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/source_info.hxx
+[434.894s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/queryable.hxx
+[434.894s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/id.hxx
+[434.895s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/timestamp.hxx
+[434.895s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/sample.hxx
+[434.895s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/channels.hxx
+[434.895s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/transport_event.hxx
+[434.895s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/logging.hxx
+[434.895s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/base.hxx
+[434.896s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/ext
+[434.896s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/ext/advanced_publisher.hxx
+[434.896s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/ext/miss.hxx
+[434.897s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/ext/querying_subscriber.hxx
+[434.897s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/ext/advanced_subscriber.hxx
+[434.897s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/ext/session_ext.hxx
+[434.897s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/ext/publication_cache.hxx
+[434.897s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/ext/serialization.hxx
+[434.898s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/query.hxx
+[434.900s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/transport.hxx
+[434.900s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/querier.hxx
+[434.900s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/enums.hxx
+[434.900s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/publisher.hxx
+[434.900s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/subscriber.hxx
+[434.901s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/bytes.hxx
+[434.901s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/query_consolidation.hxx
+[434.901s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/liveliness.hxx
+[434.901s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/transport_events_listener.hxx
+[434.901s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/scout.hxx
+[434.901s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/link_events_listener.hxx
+[434.901s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/link_event.hxx
+[434.901s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/hello.hxx
+[434.901s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/reply.hxx
+[434.901s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/closures.hxx
+[434.902s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/link.hxx
+[434.902s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/matching.hxx
+[434.902s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm
+[434.902s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/common
+[434.902s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/common/types.hxx
+[434.903s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/common/common.hxx
+[434.903s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/buffer
+[434.903s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/buffer/buffer.hxx
+[434.903s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/buffer/zshm.hxx
+[434.903s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/buffer/zshmmut.hxx
+[434.904s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/cleanup.hxx
+[434.904s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/client_storage
+[434.905s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/client_storage/client_storage.hxx
+[434.905s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/shm.hxx
+[434.906s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/protocol_implementations
+[434.906s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/protocol_implementations/protocol_implementations.hxx
+[434.906s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/protocol_implementations/posix
+[434.906s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/protocol_implementations/posix/posix_shm_client.hxx
+[434.906s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/protocol_implementations/posix/posix_shm_provider.hxx
+[434.906s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/protocol_implementations/posix/posix.hxx
+[434.906s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/provider
+[434.906s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/provider/types_impl.hxx
+[434.906s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/provider/provider.hxx
+[434.906s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/provider/types.hxx
+[434.907s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/provider/precomputed_layout.hxx
+[434.907s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/provider/shm_provider.hxx
+[434.908s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/provider/chunk.hxx
+[434.908s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/provider/shm_provider_backend.hxx
+[434.908s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/client
+[434.908s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/client/shm_client.hxx
+[434.909s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/client/shm_segment.hxx
+[434.909s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/shm/client/client.hxx
+[434.909s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/interop.hxx
+[434.909s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/session.hxx
+[434.909s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/api/keyexpr.hxx
+[434.909s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/detail
+[434.910s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/detail/availability_checks.hxx
+[434.910s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/detail/commons.hxx
+[434.910s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/detail/closures_concrete.hxx
+[434.910s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/include/zenoh/detail/closures.hxx
+[434.910s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib
+[434.910s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib/cmake
+[434.910s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib/cmake/zenohcxx
+[434.911s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib/cmake/zenohcxx/zenohcxxConfig.cmake
+[434.911s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib/cmake/zenohcxx/zenohcxxConfigVersion.cmake
+[434.911s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib/pkgconfig
+[434.911s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/zenoh_cpp_vendor/lib/pkgconfig/zenohcxx.pc
+[434.911s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/package_run_dependencies/zenoh_cpp_vendor
+[434.911s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/parent_prefix_path/zenoh_cpp_vendor
+[434.911s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/zenoh_cpp_vendor/environment/ament_prefix_path.sh
+[434.911s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/zenoh_cpp_vendor/environment/ament_prefix_path.dsv
+[434.912s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/zenoh_cpp_vendor/environment/path.sh
+[434.912s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/zenoh_cpp_vendor/environment/path.dsv
+[434.912s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/zenoh_cpp_vendor/local_setup.bash
+[434.912s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/zenoh_cpp_vendor/local_setup.fish
+[434.912s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/zenoh_cpp_vendor/local_setup.sh
+[434.912s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/zenoh_cpp_vendor/local_setup.zsh
+[434.912s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/zenoh_cpp_vendor/local_setup.dsv
+[434.912s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/zenoh_cpp_vendor/package.dsv
+[434.913s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/packages/zenoh_cpp_vendor
+[434.913s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/zenoh_cpp_vendor/cmake/vendor_package_cmake_prefix.cmake
+[434.913s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/zenoh_cpp_vendor/cmake/ament_cmake_export_dependencies-extras.cmake
+[434.913s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/zenoh_cpp_vendor/cmake/zenoh_cpp_vendorConfig.cmake
+[434.913s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/zenoh_cpp_vendor/cmake/zenoh_cpp_vendorConfig-version.cmake
+[434.914s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/zenoh_cpp_vendor/package.xml
+[434.918s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=44 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/zenoh_cpp_vendor

@@ -1,107 +1,107 @@
-[4.243s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/class_loader': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros/class_loader -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
-[4.373s] Not searching for unused variables given on the command line.
-[4.373s] -- The C compiler identification is GNU 14.3.0
-[4.608s] -- The CXX compiler identification is GNU 14.3.0
-[4.626s] -- Detecting C compiler ABI info
-[4.798s] -- Detecting C compiler ABI info - done
-[4.837s] -- Check for working C compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
-[4.837s] -- Detecting C compile features
-[4.838s] -- Detecting C compile features - done
-[4.878s] -- Detecting CXX compiler ABI info
-[5.156s] -- Detecting CXX compiler ABI info - done
-[5.230s] -- Check for working CXX compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
-[5.235s] -- Detecting CXX compile features
-[5.238s] -- Detecting CXX compile features - done
-[5.262s] -- Found ament_cmake: 2.8.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake/cmake)
-[5.805s] -- Found console_bridge_vendor: 1.9.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/console_bridge_vendor/cmake)
-[5.823s] -- Found rcpputils: 2.14.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcpputils/cmake)
-[6.115s] -- Checking to see if CXX compiler accepts flag -Wl,--version-script,"/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/class_loader/test/class_loader_hide_library_symbols__class_loader_TestPlugins1.script"
-[6.451s] -- Checking to see if CXX compiler accepts flag -Wl,--version-script,"/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/class_loader/test/class_loader_hide_library_symbols__class_loader_TestPlugins1.script" - yes
-[6.454s] -- Found gtest sources under '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
-[6.458s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
-[6.697s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
-[6.697s] -- Check if compiler accepts -pthread
-[7.055s] -- Check if compiler accepts -pthread - yes
-[7.055s] -- Found Threads: TRUE
-[7.106s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
-[7.115s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros/class_loader/include>
-[7.115s] -- Configured cppcheck exclude dirs and/or files: 
-[7.144s] -- Added test 'cpplint' to check C / C++ code against the Google style
-[7.144s] -- Configured cpplint exclude dirs and/or files: 
-[7.157s] -- Added test 'lint_cmake' to check CMake code style
-[7.196s] -- Added test 'uncrustify' to check C / C++ code style
-[7.196s] -- Configured uncrustify additional arguments: 
-[7.208s] -- Added test 'xmllint' to check XML markup files
-[7.216s] -- Configuring done (3.0s)
-[7.326s] -- Generating done (0.1s)
-[7.361s] -- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/class_loader
-[7.380s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/class_loader' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=27 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros/class_loader -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
-[7.381s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/class_loader': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=27 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/class_loader -- -j4 -l4
-[7.831s] [1/29] Building CXX object CMakeFiles/class_loader.dir/src/class_loader.cpp.o
-[8.250s] [2/29] Building CXX object CMakeFiles/class_loader.dir/src/class_loader_core.cpp.o
-[8.767s] [3/29] Building CXX object CMakeFiles/class_loader.dir/src/meta_object.cpp.o
-[11.530s] [4/29] Building CXX object CMakeFiles/class_loader.dir/src/multi_library_class_loader.cpp.o
-[11.826s] [5/29] Building CXX object test/fviz_case_study/CMakeFiles/class_loader_Test_Fviz.dir/fviz.cpp.o
-[11.935s] [6/29] Linking CXX shared library libclass_loader.so
-[12.095s] [7/29] Linking CXX shared library test/fviz_case_study/libclass_loader_Test_Fviz.so
-[12.360s] [8/29] Building CXX object test/fviz_case_study/CMakeFiles/class_loader_Test_Fviz_Main.dir/fviz_main.cpp.o
-[12.758s] [9/29] Building CXX object test/CMakeFiles/class_loader_TestPlugins1.dir/plugins1.cpp.o
-[13.169s] [10/29] Building CXX object test/CMakeFiles/class_loader_TestPlugins2.dir/plugins2.cpp.o
-[13.480s] [11/29] Building CXX object test/CMakeFiles/class_loader_TestPlugins3.dir/plugins3.cpp.o
-[14.110s] [12/29] Building CXX object test/CMakeFiles/class_loader_TestGlobalPlugins.dir/global_plugins.cpp.o
-[14.787s] [13/29] Building CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
-[15.113s] [14/29] Building CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
-[15.179s] [15/29] Linking CXX executable test/fviz_case_study/class_loader_Test_Fviz_Main
-[15.450s] [16/29] Building CXX object test/fviz_case_study/CMakeFiles/class_loader_Test_FvizDefaultPlugin.dir/fviz_default_plugin.cpp.o
-[15.524s] [17/29] Linking CXX shared library test/libclass_loader_TestPlugins1.so
-[15.584s] [18/29] Linking CXX shared library test/libclass_loader_TestPlugins2.so
-[15.645s] [19/29] Linking CXX shared library test/libclass_loader_TestPlugins3.so
-[15.708s] [20/29] Linking CXX shared library test/libclass_loader_TestGlobalPlugins.so
-[24.179s] [21/29] Building CXX object test/CMakeFiles/class_loader_utest.dir/utest.cpp.o
-[30.504s] [22/29] Building CXX object test/CMakeFiles/class_loader_unique_ptr_test.dir/unique_ptr_test.cpp.o
-[30.523s] [23/29] Linking CXX static library gtest/libgtest.a
-[30.543s] [24/29] Linking CXX static library gtest/libgtest_main.a
-[30.660s] [25/29] Linking CXX shared library test/fviz_case_study/libclass_loader_Test_FvizDefaultPlugin.so
-[31.090s] [26/29] Building CXX object test/fviz_case_study/CMakeFiles/class_loader_fviz_test.dir/fviz_test.cpp.o
-[31.219s] [27/29] Linking CXX executable test/class_loader_utest
-[31.332s] [28/29] Linking CXX executable test/class_loader_unique_ptr_test
-[31.435s] [29/29] Linking CXX executable test/fviz_case_study/class_loader_fviz_test
-[31.438s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/class_loader' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=27 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/class_loader -- -j4 -l4
-[31.440s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/class_loader': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=27 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/class_loader
-[31.449s] -- Install configuration: "Release"
-[31.450s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/package_run_dependencies/class_loader
-[31.450s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/parent_prefix_path/class_loader
-[31.452s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/environment/ament_prefix_path.sh
-[31.452s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/environment/ament_prefix_path.dsv
-[31.452s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/environment/path.sh
-[31.452s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/environment/path.dsv
-[31.452s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/local_setup.bash
-[31.453s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/local_setup.fish
-[31.453s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/local_setup.sh
-[31.454s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/local_setup.zsh
-[31.454s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/local_setup.dsv
-[31.456s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/package.dsv
-[31.456s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/packages/class_loader
-[31.456s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/cmake/class_loaderExport.cmake
-[31.456s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/cmake/class_loaderExport-release.cmake
-[31.456s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/cmake/class_loader-extras.cmake
-[31.456s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/cmake/ament_cmake_export_dependencies-extras.cmake
-[31.456s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/cmake/ament_cmake_export_targets-extras.cmake
-[31.457s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/cmake/class_loaderConfig.cmake
-[31.457s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/cmake/class_loaderConfig-version.cmake
-[31.457s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/package.xml
-[31.458s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libclass_loader.so
-[31.458s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/cmake
-[31.458s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/cmake/sanitizers.cmake
-[31.459s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/cmake/class_loader_hide_library_symbols.cmake
-[31.459s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/class_loader
-[31.461s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/class_loader/class_loader
-[31.461s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/class_loader/class_loader/multi_library_class_loader.hpp
-[31.461s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/class_loader/class_loader/interface_traits.hpp
-[31.461s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/class_loader/class_loader/class_loader_core.hpp
-[31.461s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/class_loader/class_loader/visibility_control.hpp
-[31.461s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/class_loader/class_loader/class_loader.hpp
-[31.461s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/class_loader/class_loader/exceptions.hpp
-[31.462s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/class_loader/class_loader/meta_object.hpp
-[31.462s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/class_loader/class_loader/register_macro.hpp
-[31.466s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/class_loader' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=27 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/class_loader
+[2.796s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/class_loader': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=217 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros/class_loader -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DTRACETOOLS_DISABLED=ON -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[2.882s] Not searching for unused variables given on the command line.
+[2.882s] -- The C compiler identification is GNU 14.3.0
+[3.012s] -- The CXX compiler identification is GNU 14.3.0
+[3.025s] -- Detecting C compiler ABI info
+[3.147s] -- Detecting C compiler ABI info - done
+[3.181s] -- Check for working C compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
+[3.181s] -- Detecting C compile features
+[3.182s] -- Detecting C compile features - done
+[3.202s] -- Detecting CXX compiler ABI info
+[3.373s] -- Detecting CXX compiler ABI info - done
+[3.414s] -- Check for working CXX compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
+[3.414s] -- Detecting CXX compile features
+[3.415s] -- Detecting CXX compile features - done
+[3.430s] -- Found ament_cmake: 2.8.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake/cmake)
+[3.693s] -- Found console_bridge_vendor: 1.9.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/console_bridge_vendor/cmake)
+[3.699s] -- Found rcpputils: 2.14.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcpputils/cmake)
+[3.851s] -- Checking to see if CXX compiler accepts flag -Wl,--version-script,"/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/class_loader/test/class_loader_hide_library_symbols__class_loader_TestPlugins1.script"
+[4.027s] -- Checking to see if CXX compiler accepts flag -Wl,--version-script,"/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/class_loader/test/class_loader_hide_library_symbols__class_loader_TestPlugins1.script" - yes
+[4.031s] -- Found gtest sources under '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[4.034s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.178s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[4.178s] -- Check if compiler accepts -pthread
+[4.322s] -- Check if compiler accepts -pthread - yes
+[4.324s] -- Found Threads: TRUE
+[4.347s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.347s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros/class_loader/include>
+[4.347s] -- Configured cppcheck exclude dirs and/or files: 
+[4.356s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[4.357s] -- Configured cpplint exclude dirs and/or files: 
+[4.364s] -- Added test 'lint_cmake' to check CMake code style
+[4.372s] -- Added test 'uncrustify' to check C / C++ code style
+[4.372s] -- Configured uncrustify additional arguments: 
+[4.374s] -- Added test 'xmllint' to check XML markup files
+[4.379s] -- Configuring done (1.6s)
+[4.421s] -- Generating done (0.0s)
+[4.478s] -- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/class_loader
+[4.480s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/class_loader' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=217 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros/class_loader -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DTRACETOOLS_DISABLED=ON -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[4.481s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/class_loader': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=217 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/class_loader -- -j4 -l4
+[4.868s] [1/29] Building CXX object CMakeFiles/class_loader.dir/src/class_loader.cpp.o
+[5.171s] [2/29] Building CXX object CMakeFiles/class_loader.dir/src/class_loader_core.cpp.o
+[5.519s] [3/29] Building CXX object CMakeFiles/class_loader.dir/src/meta_object.cpp.o
+[5.817s] [4/29] Building CXX object CMakeFiles/class_loader.dir/src/multi_library_class_loader.cpp.o
+[6.013s] [5/29] Building CXX object test/fviz_case_study/CMakeFiles/class_loader_Test_Fviz.dir/fviz.cpp.o
+[6.080s] [6/29] Linking CXX shared library libclass_loader.so
+[6.143s] [7/29] Linking CXX shared library test/fviz_case_study/libclass_loader_Test_Fviz.so
+[6.442s] [8/29] Building CXX object test/fviz_case_study/CMakeFiles/class_loader_Test_Fviz_Main.dir/fviz_main.cpp.o
+[6.844s] [9/29] Building CXX object test/CMakeFiles/class_loader_TestPlugins1.dir/plugins1.cpp.o
+[7.195s] [10/29] Building CXX object test/CMakeFiles/class_loader_TestPlugins2.dir/plugins2.cpp.o
+[7.510s] [11/29] Building CXX object test/CMakeFiles/class_loader_TestPlugins3.dir/plugins3.cpp.o
+[7.855s] [12/29] Building CXX object test/CMakeFiles/class_loader_TestGlobalPlugins.dir/global_plugins.cpp.o
+[8.523s] [13/29] Building CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[9.566s] [14/29] Building CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[9.645s] [15/29] Linking CXX executable test/fviz_case_study/class_loader_Test_Fviz_Main
+[10.147s] [16/29] Building CXX object test/fviz_case_study/CMakeFiles/class_loader_Test_FvizDefaultPlugin.dir/fviz_default_plugin.cpp.o
+[10.269s] [17/29] Linking CXX shared library test/libclass_loader_TestPlugins1.so
+[10.396s] [18/29] Linking CXX shared library test/libclass_loader_TestPlugins2.so
+[10.517s] [19/29] Linking CXX shared library test/libclass_loader_TestPlugins3.so
+[10.654s] [20/29] Linking CXX shared library test/libclass_loader_TestGlobalPlugins.so
+[11.664s] [21/29] Building CXX object test/CMakeFiles/class_loader_utest.dir/utest.cpp.o
+[12.288s] [22/29] Building CXX object test/CMakeFiles/class_loader_unique_ptr_test.dir/unique_ptr_test.cpp.o
+[12.342s] [23/29] Linking CXX static library gtest/libgtest.a
+[12.374s] [24/29] Linking CXX static library gtest/libgtest_main.a
+[12.505s] [25/29] Linking CXX shared library test/fviz_case_study/libclass_loader_Test_FvizDefaultPlugin.so
+[13.069s] [26/29] Building CXX object test/fviz_case_study/CMakeFiles/class_loader_fviz_test.dir/fviz_test.cpp.o
+[13.255s] [27/29] Linking CXX executable test/class_loader_utest
+[13.499s] [28/29] Linking CXX executable test/class_loader_unique_ptr_test
+[13.638s] [29/29] Linking CXX executable test/fviz_case_study/class_loader_fviz_test
+[13.644s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/class_loader' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=217 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/class_loader -- -j4 -l4
+[13.645s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/class_loader': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=217 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/class_loader
+[13.660s] -- Install configuration: "Release"
+[13.665s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/package_run_dependencies/class_loader
+[13.665s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/parent_prefix_path/class_loader
+[13.665s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/environment/ament_prefix_path.sh
+[13.666s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/environment/ament_prefix_path.dsv
+[13.667s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/environment/path.sh
+[13.667s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/environment/path.dsv
+[13.668s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/local_setup.bash
+[13.668s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/local_setup.fish
+[13.668s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/local_setup.sh
+[13.669s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/local_setup.zsh
+[13.669s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/local_setup.dsv
+[13.670s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/package.dsv
+[13.670s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/packages/class_loader
+[13.671s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/cmake/class_loaderExport.cmake
+[13.672s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/cmake/class_loaderExport-release.cmake
+[13.672s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/cmake/class_loader-extras.cmake
+[13.673s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/cmake/ament_cmake_export_dependencies-extras.cmake
+[13.673s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/cmake/ament_cmake_export_targets-extras.cmake
+[13.677s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/cmake/class_loaderConfig.cmake
+[13.677s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/cmake/class_loaderConfig-version.cmake
+[13.677s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/package.xml
+[13.677s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libclass_loader.so
+[13.677s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/cmake
+[13.677s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/cmake/sanitizers.cmake
+[13.677s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/class_loader/cmake/class_loader_hide_library_symbols.cmake
+[13.677s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/class_loader
+[13.678s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/class_loader/class_loader
+[13.678s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/class_loader/class_loader/multi_library_class_loader.hpp
+[13.679s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/class_loader/class_loader/interface_traits.hpp
+[13.679s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/class_loader/class_loader/class_loader_core.hpp
+[13.679s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/class_loader/class_loader/visibility_control.hpp
+[13.680s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/class_loader/class_loader/class_loader.hpp
+[13.680s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/class_loader/class_loader/exceptions.hpp
+[13.680s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/class_loader/class_loader/meta_object.hpp
+[13.681s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/class_loader/class_loader/register_macro.hpp
+[13.689s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/class_loader' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=217 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/class_loader

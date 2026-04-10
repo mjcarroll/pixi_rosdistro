@@ -1,144 +1,144 @@
-[5.235s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/point_cloud_transport': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros-perception/point_cloud_transport/point_cloud_transport -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
-[5.314s] Not searching for unused variables given on the command line.
-[5.314s] -- The C compiler identification is GNU 14.3.0
-[5.434s] -- The CXX compiler identification is GNU 14.3.0
-[5.449s] -- Detecting C compiler ABI info
-[5.582s] -- Detecting C compiler ABI info - done
-[5.621s] -- Check for working C compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
-[5.621s] -- Detecting C compile features
-[5.621s] -- Detecting C compile features - done
-[5.642s] -- Detecting CXX compiler ABI info
-[5.845s] -- Detecting CXX compiler ABI info - done
-[5.845s] -- Check for working CXX compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
-[5.845s] -- Detecting CXX compile features
-[5.845s] -- Detecting CXX compile features - done
-[5.854s] -- Found ament_cmake_ros: 0.15.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_ros/cmake)
-[6.184s] -- Found message_filters: 7.3.7 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/message_filters/cmake)
-[6.229s] -- Found rosidl_generator_c: 5.1.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_c/cmake)
-[6.238s] -- Found rosidl_generator_cpp: 5.1.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_cpp/cmake)
-[6.258s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
-[6.280s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
-[6.419s] -- Found rmw_implementation_cmake: 7.9.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation_cmake/cmake)
-[6.423s] -- Found rmw_fastrtps_cpp: 9.4.5 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_fastrtps_cpp/cmake)
-[6.482s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
-[6.665s] -- Found pluginlib: 5.8.4 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/pluginlib/cmake)
-[6.687s] -- Found rclcpp_components: 31.0.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclcpp_components/cmake)
-[6.746s] -- Found sensor_msgs: 5.9.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/sensor_msgs/cmake)
-[6.837s] -- Found ament_lint_auto: 0.20.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_lint_auto/cmake)
-[7.004s] -- Found gtest sources under '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
-[7.009s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
-[7.159s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
-[7.159s] -- Check if compiler accepts -pthread
-[7.303s] -- Check if compiler accepts -pthread - yes
-[7.306s] -- Found Threads: TRUE
-[7.337s] -- Added test 'copyright' to check source files copyright and LICENSE
-[7.342s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
-[7.342s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros-perception/point_cloud_transport/point_cloud_transport/include>
-[7.343s] -- Configured cppcheck exclude dirs and/or files: 
-[7.348s] -- Added test 'cpplint' to check C / C++ code against the Google style
-[7.348s] -- Configured cpplint exclude dirs and/or files: 
-[7.349s] -- Added test 'flake8' to check Python code syntax and style conventions
-[7.349s] -- Configured 'flake8' exclude dirs and/or files: 
-[7.351s] -- Added test 'lint_cmake' to check CMake code style
-[7.356s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
-[7.361s] -- Added test 'uncrustify' to check C / C++ code style
-[7.361s] -- Configured uncrustify additional arguments: 
-[7.361s] -- Added test 'xmllint' to check XML markup files
-[7.364s] -- Configuring done (2.1s)
-[7.495s] -- Generating done (0.1s)
-[7.594s] -- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/point_cloud_transport
-[7.612s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/point_cloud_transport' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=48 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros-perception/point_cloud_transport/point_cloud_transport -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
-[7.614s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/point_cloud_transport': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=48 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/point_cloud_transport -- -j4 -l4
-[20.701s] [1/40] Building CXX object CMakeFiles/point_cloud_transport.dir/src/point_cloud_codec.cpp.o
-[20.980s] [2/40] Building CXX object CMakeFiles/point_cloud_transport.dir/src/point_cloud_common.cpp.o
-[30.641s] [3/40] Building CXX object CMakeFiles/point_cloud_transport.dir/src/point_cloud_transport.cpp.o
-[37.559s] [4/40] Building CXX object CMakeFiles/point_cloud_transport.dir/src/publisher.cpp.o
-[38.208s] [5/40] Building CXX object CMakeFiles/point_cloud_transport.dir/src/publisher_plugin.cpp.o
-[39.006s] [6/40] Building CXX object CMakeFiles/point_cloud_transport.dir/src/raw_subscriber.cpp.o
-[44.099s] [7/40] Building CXX object CMakeFiles/point_cloud_transport.dir/src/single_subscriber_publisher.cpp.o
-[51.655s] [8/40] Building CXX object CMakeFiles/point_cloud_transport.dir/src/subscriber_filter.cpp.o
-[58.150s] [9/40] Building CXX object CMakeFiles/point_cloud_transport.dir/src/subscriber.cpp.o
-[58.303s] [10/40] Linking CXX shared library libpoint_cloud_transport.so
-[68.356s] [11/40] Building CXX object CMakeFiles/pc_republish_node.dir/src/republish.cpp.o
-[68.805s] [12/40] Building CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
-[69.114s] [13/40] Building CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
-[69.956s] [14/40] Building CXX object CMakeFiles/point_cloud_transport_plugins.dir/src/manifest.cpp.o
-[70.071s] [15/40] Linking CXX shared library libpc_republish_node.so
-[70.841s] [16/40] Building CXX object CMakeFiles/republish.dir/rclcpp_components/node_main_republish.cpp.o
-[79.598s] [17/40] Building CXX object CMakeFiles/list_transports.dir/src/list_transports.cpp.o
-[80.084s] [18/40] Building CXX object CMakeFiles/point_cloud_transport-point_cloud_common.dir/test/test_point_cloud_common.cpp.o
-[88.664s] [19/40] Building CXX object CMakeFiles/point_cloud_transport-publisher.dir/test/test_publisher.cpp.o
-[96.843s] [20/40] Building CXX object CMakeFiles/point_cloud_transport-codec.dir/test/test_point_cloud_codec.cpp.o
-[105.051s] [21/40] Building CXX object CMakeFiles/point_cloud_transport-subscriber.dir/test/test_subscriber.cpp.o
-[113.811s] [22/40] Building CXX object CMakeFiles/point_cloud_transport-message_passing.dir/test/test_message_passing.cpp.o
-[124.174s] [23/40] Building CXX object CMakeFiles/point_cloud_transport-qos_override.dir/test/test_qos_override.cpp.o
-[133.303s] [24/40] Building CXX object CMakeFiles/point_cloud_transport-remapping.dir/test/test_remapping.cpp.o
-[144.407s] [25/40] Building CXX object CMakeFiles/point_cloud_transport-message-filter.dir/test/test_message_filter.cpp.o
-[145.243s] [26/40] Building CXX object CMakeFiles/point_cloud_transport-single_subscriber_publisher.dir/test/test_single_subscriber_publisher.cpp.o
-[145.266s] [27/40] Linking CXX static library gtest/libgtest.a
-[145.279s] [28/40] Linking CXX static library gtest/libgtest_main.a
-[145.402s] [29/40] Linking CXX shared library libpoint_cloud_transport_plugins.so
-[145.500s] [30/40] Linking CXX executable republish
-[145.627s] [31/40] Linking CXX executable list_transports
-[145.769s] [32/40] Linking CXX executable point_cloud_transport-point_cloud_common
-[145.921s] [33/40] Linking CXX executable point_cloud_transport-publisher
-[146.076s] [34/40] Linking CXX executable point_cloud_transport-codec
-[146.235s] [35/40] Linking CXX executable point_cloud_transport-subscriber
-[146.387s] [36/40] Linking CXX executable point_cloud_transport-message_passing
-[146.534s] [37/40] Linking CXX executable point_cloud_transport-qos_override
-[146.675s] [38/40] Linking CXX executable point_cloud_transport-remapping
-[146.826s] [39/40] Linking CXX executable point_cloud_transport-message-filter
-[146.961s] [40/40] Linking CXX executable point_cloud_transport-single_subscriber_publisher
-[146.963s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/point_cloud_transport' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=48 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/point_cloud_transport -- -j4 -l4
-[146.965s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/point_cloud_transport': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=48 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/point_cloud_transport
-[146.971s] -- Install configuration: "Release"
-[146.971s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/point_cloud_transport/republish
-[146.972s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/point_cloud_transport/default_plugins.xml
-[146.972s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libpoint_cloud_transport.so
-[146.973s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libpoint_cloud_transport_plugins.so
-[146.974s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libpc_republish_node.so
-[146.975s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libpoint_cloud_transport.so
-[146.975s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/point_cloud_transport/list_transports
-[146.975s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/point_cloud_transport
-[146.975s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/point_cloud_transport/point_cloud_transport
-[146.976s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/point_cloud_transport/point_cloud_transport/simple_publisher_plugin.hpp
-[146.976s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/point_cloud_transport/point_cloud_transport/point_cloud_common.hpp
-[146.976s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/point_cloud_transport/point_cloud_transport/raw_subscriber.hpp
-[146.976s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/point_cloud_transport/point_cloud_transport/visibility_control.hpp
-[146.976s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/point_cloud_transport/point_cloud_transport/exception.hpp
-[146.977s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/point_cloud_transport/point_cloud_transport/point_cloud_transport.hpp
-[146.977s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/point_cloud_transport/point_cloud_transport/subscriber_filter.hpp
-[146.977s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/point_cloud_transport/point_cloud_transport/single_subscriber_publisher.hpp
-[146.977s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/point_cloud_transport/point_cloud_transport/loader_fwds.hpp
-[146.977s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/point_cloud_transport/point_cloud_transport/subscriber_plugin.hpp
-[146.978s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/point_cloud_transport/point_cloud_transport/simple_subscriber_plugin.hpp
-[146.978s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/point_cloud_transport/point_cloud_transport/publisher.hpp
-[146.978s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/point_cloud_transport/point_cloud_transport/transport_hints.hpp
-[146.978s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/point_cloud_transport/point_cloud_transport/point_cloud_codec.hpp
-[146.979s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/point_cloud_transport/point_cloud_transport/publisher_plugin.hpp
-[146.979s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/point_cloud_transport/point_cloud_transport/raw_publisher.hpp
-[146.979s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/point_cloud_transport/point_cloud_transport/subscriber.hpp
-[146.979s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/package_run_dependencies/point_cloud_transport
-[146.980s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/parent_prefix_path/point_cloud_transport
-[146.980s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/point_cloud_transport/environment/ament_prefix_path.sh
-[146.980s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/point_cloud_transport/environment/ament_prefix_path.dsv
-[146.980s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/point_cloud_transport/environment/path.sh
-[146.981s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/point_cloud_transport/environment/path.dsv
-[146.981s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/point_cloud_transport/local_setup.bash
-[146.981s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/point_cloud_transport/local_setup.fish
-[146.981s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/point_cloud_transport/local_setup.sh
-[146.982s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/point_cloud_transport/local_setup.zsh
-[146.982s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/point_cloud_transport/local_setup.dsv
-[146.982s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/point_cloud_transport/package.dsv
-[146.982s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/packages/point_cloud_transport
-[146.983s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/point_cloud_transport__pluginlib__plugin/point_cloud_transport
-[146.983s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/rclcpp_components/point_cloud_transport
-[146.983s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/point_cloud_transport/cmake/export_point_cloud_transportExport.cmake
-[146.983s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/point_cloud_transport/cmake/export_point_cloud_transportExport-release.cmake
-[146.984s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/point_cloud_transport/cmake/ament_cmake_export_include_directories-extras.cmake
-[146.984s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/point_cloud_transport/cmake/ament_cmake_export_targets-extras.cmake
-[146.984s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/point_cloud_transport/cmake/ament_cmake_export_dependencies-extras.cmake
-[146.984s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/point_cloud_transport/cmake/point_cloud_transportConfig.cmake
-[146.985s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/point_cloud_transport/cmake/point_cloud_transportConfig-version.cmake
-[146.985s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/point_cloud_transport/package.xml
-[146.987s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/point_cloud_transport' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=48 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/point_cloud_transport
+[5.827s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/point_cloud_transport': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=215 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros-perception/point_cloud_transport/point_cloud_transport -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DTRACETOOLS_DISABLED=ON -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[5.908s] Not searching for unused variables given on the command line.
+[5.908s] -- The C compiler identification is GNU 14.3.0
+[6.013s] -- The CXX compiler identification is GNU 14.3.0
+[6.022s] -- Detecting C compiler ABI info
+[6.143s] -- Detecting C compiler ABI info - done
+[6.179s] -- Check for working C compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
+[6.179s] -- Detecting C compile features
+[6.180s] -- Detecting C compile features - done
+[6.202s] -- Detecting CXX compiler ABI info
+[6.371s] -- Detecting CXX compiler ABI info - done
+[6.407s] -- Check for working CXX compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
+[6.408s] -- Detecting CXX compile features
+[6.410s] -- Detecting CXX compile features - done
+[6.423s] -- Found ament_cmake_ros: 0.15.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_ros/cmake)
+[6.719s] -- Found message_filters: 7.3.7 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/message_filters/cmake)
+[6.762s] -- Found rosidl_generator_c: 5.1.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_c/cmake)
+[6.773s] -- Found rosidl_generator_cpp: 5.1.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_cpp/cmake)
+[6.792s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.813s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.930s] -- Found rmw_implementation_cmake: 7.10.0 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation_cmake/cmake)
+[6.934s] -- Found rmw_fastrtps_cpp: 9.4.5 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_fastrtps_cpp/cmake)
+[6.985s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[7.148s] -- Found pluginlib: 5.8.4 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/pluginlib/cmake)
+[7.166s] -- Found rclcpp_components: 31.0.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclcpp_components/cmake)
+[7.231s] -- Found sensor_msgs: 5.9.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/sensor_msgs/cmake)
+[7.315s] -- Found ament_lint_auto: 0.20.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_lint_auto/cmake)
+[7.537s] -- Found gtest sources under '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[7.551s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[7.711s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[7.711s] -- Check if compiler accepts -pthread
+[7.867s] -- Check if compiler accepts -pthread - yes
+[7.867s] -- Found Threads: TRUE
+[7.881s] -- Added test 'copyright' to check source files copyright and LICENSE
+[7.888s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[7.888s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros-perception/point_cloud_transport/point_cloud_transport/include>
+[7.888s] -- Configured cppcheck exclude dirs and/or files: 
+[7.892s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[7.892s] -- Configured cpplint exclude dirs and/or files: 
+[7.894s] -- Added test 'flake8' to check Python code syntax and style conventions
+[7.894s] -- Configured 'flake8' exclude dirs and/or files: 
+[7.895s] -- Added test 'lint_cmake' to check CMake code style
+[7.897s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[7.902s] -- Added test 'uncrustify' to check C / C++ code style
+[7.904s] -- Configured uncrustify additional arguments: 
+[7.904s] -- Added test 'xmllint' to check XML markup files
+[7.907s] -- Configuring done (2.1s)
+[8.056s] -- Generating done (0.1s)
+[8.152s] -- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/point_cloud_transport
+[8.172s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/point_cloud_transport' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=215 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros-perception/point_cloud_transport/point_cloud_transport -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DTRACETOOLS_DISABLED=ON -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[8.173s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/point_cloud_transport': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=215 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/point_cloud_transport -- -j4 -l4
+[9.212s] [1/40] Building CXX object CMakeFiles/point_cloud_transport.dir/src/point_cloud_codec.cpp.o
+[9.502s] [2/40] Building CXX object CMakeFiles/point_cloud_transport.dir/src/point_cloud_common.cpp.o
+[10.427s] [3/40] Building CXX object CMakeFiles/point_cloud_transport.dir/src/point_cloud_transport.cpp.o
+[11.230s] [4/40] Building CXX object CMakeFiles/point_cloud_transport.dir/src/publisher.cpp.o
+[11.911s] [5/40] Building CXX object CMakeFiles/point_cloud_transport.dir/src/publisher_plugin.cpp.o
+[12.711s] [6/40] Building CXX object CMakeFiles/point_cloud_transport.dir/src/raw_subscriber.cpp.o
+[13.510s] [7/40] Building CXX object CMakeFiles/point_cloud_transport.dir/src/single_subscriber_publisher.cpp.o
+[14.307s] [8/40] Building CXX object CMakeFiles/point_cloud_transport.dir/src/subscriber_filter.cpp.o
+[15.040s] [9/40] Building CXX object CMakeFiles/point_cloud_transport.dir/src/subscriber.cpp.o
+[15.176s] [10/40] Linking CXX shared library libpoint_cloud_transport.so
+[15.996s] [11/40] Building CXX object CMakeFiles/pc_republish_node.dir/src/republish.cpp.o
+[16.563s] [12/40] Building CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[16.891s] [13/40] Building CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[17.689s] [14/40] Building CXX object CMakeFiles/point_cloud_transport_plugins.dir/src/manifest.cpp.o
+[17.792s] [15/40] Linking CXX shared library libpc_republish_node.so
+[18.483s] [16/40] Building CXX object CMakeFiles/republish.dir/rclcpp_components/node_main_republish.cpp.o
+[19.283s] [17/40] Building CXX object CMakeFiles/list_transports.dir/src/list_transports.cpp.o
+[19.806s] [18/40] Building CXX object CMakeFiles/point_cloud_transport-point_cloud_common.dir/test/test_point_cloud_common.cpp.o
+[20.686s] [19/40] Building CXX object CMakeFiles/point_cloud_transport-publisher.dir/test/test_publisher.cpp.o
+[21.635s] [20/40] Building CXX object CMakeFiles/point_cloud_transport-codec.dir/test/test_point_cloud_codec.cpp.o
+[22.661s] [21/40] Building CXX object CMakeFiles/point_cloud_transport-subscriber.dir/test/test_subscriber.cpp.o
+[23.604s] [22/40] Building CXX object CMakeFiles/point_cloud_transport-message_passing.dir/test/test_message_passing.cpp.o
+[24.636s] [23/40] Building CXX object CMakeFiles/point_cloud_transport-qos_override.dir/test/test_qos_override.cpp.o
+[25.643s] [24/40] Building CXX object CMakeFiles/point_cloud_transport-remapping.dir/test/test_remapping.cpp.o
+[26.696s] [25/40] Building CXX object CMakeFiles/point_cloud_transport-message-filter.dir/test/test_message_filter.cpp.o
+[27.497s] [26/40] Building CXX object CMakeFiles/point_cloud_transport-single_subscriber_publisher.dir/test/test_single_subscriber_publisher.cpp.o
+[27.521s] [27/40] Linking CXX static library gtest/libgtest.a
+[27.532s] [28/40] Linking CXX static library gtest/libgtest_main.a
+[27.645s] [29/40] Linking CXX shared library libpoint_cloud_transport_plugins.so
+[27.735s] [30/40] Linking CXX executable republish
+[27.852s] [31/40] Linking CXX executable list_transports
+[27.979s] [32/40] Linking CXX executable point_cloud_transport-point_cloud_common
+[28.115s] [33/40] Linking CXX executable point_cloud_transport-publisher
+[28.227s] [34/40] Linking CXX executable point_cloud_transport-codec
+[28.367s] [35/40] Linking CXX executable point_cloud_transport-subscriber
+[28.504s] [36/40] Linking CXX executable point_cloud_transport-message_passing
+[28.642s] [37/40] Linking CXX executable point_cloud_transport-qos_override
+[28.782s] [38/40] Linking CXX executable point_cloud_transport-remapping
+[28.925s] [39/40] Linking CXX executable point_cloud_transport-message-filter
+[29.062s] [40/40] Linking CXX executable point_cloud_transport-single_subscriber_publisher
+[29.065s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/point_cloud_transport' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=215 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/point_cloud_transport -- -j4 -l4
+[29.067s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/point_cloud_transport': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=215 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/point_cloud_transport
+[29.079s] -- Install configuration: "Release"
+[29.079s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/point_cloud_transport/republish
+[29.079s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/point_cloud_transport/default_plugins.xml
+[29.079s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libpoint_cloud_transport.so
+[29.080s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libpoint_cloud_transport_plugins.so
+[29.080s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libpc_republish_node.so
+[29.080s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libpoint_cloud_transport.so
+[29.080s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/point_cloud_transport/list_transports
+[29.081s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/point_cloud_transport
+[29.081s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/point_cloud_transport/point_cloud_transport
+[29.082s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/point_cloud_transport/point_cloud_transport/simple_publisher_plugin.hpp
+[29.082s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/point_cloud_transport/point_cloud_transport/point_cloud_common.hpp
+[29.083s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/point_cloud_transport/point_cloud_transport/raw_subscriber.hpp
+[29.083s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/point_cloud_transport/point_cloud_transport/visibility_control.hpp
+[29.084s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/point_cloud_transport/point_cloud_transport/exception.hpp
+[29.084s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/point_cloud_transport/point_cloud_transport/point_cloud_transport.hpp
+[29.084s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/point_cloud_transport/point_cloud_transport/subscriber_filter.hpp
+[29.085s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/point_cloud_transport/point_cloud_transport/single_subscriber_publisher.hpp
+[29.085s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/point_cloud_transport/point_cloud_transport/loader_fwds.hpp
+[29.086s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/point_cloud_transport/point_cloud_transport/subscriber_plugin.hpp
+[29.086s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/point_cloud_transport/point_cloud_transport/simple_subscriber_plugin.hpp
+[29.086s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/point_cloud_transport/point_cloud_transport/publisher.hpp
+[29.088s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/point_cloud_transport/point_cloud_transport/transport_hints.hpp
+[29.088s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/point_cloud_transport/point_cloud_transport/point_cloud_codec.hpp
+[29.088s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/point_cloud_transport/point_cloud_transport/publisher_plugin.hpp
+[29.088s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/point_cloud_transport/point_cloud_transport/raw_publisher.hpp
+[29.089s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/point_cloud_transport/point_cloud_transport/subscriber.hpp
+[29.089s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/package_run_dependencies/point_cloud_transport
+[29.089s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/parent_prefix_path/point_cloud_transport
+[29.089s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/point_cloud_transport/environment/ament_prefix_path.sh
+[29.090s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/point_cloud_transport/environment/ament_prefix_path.dsv
+[29.090s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/point_cloud_transport/environment/path.sh
+[29.090s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/point_cloud_transport/environment/path.dsv
+[29.091s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/point_cloud_transport/local_setup.bash
+[29.091s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/point_cloud_transport/local_setup.fish
+[29.092s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/point_cloud_transport/local_setup.sh
+[29.092s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/point_cloud_transport/local_setup.zsh
+[29.093s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/point_cloud_transport/local_setup.dsv
+[29.093s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/point_cloud_transport/package.dsv
+[29.093s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/packages/point_cloud_transport
+[29.094s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/point_cloud_transport__pluginlib__plugin/point_cloud_transport
+[29.094s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/rclcpp_components/point_cloud_transport
+[29.095s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/point_cloud_transport/cmake/export_point_cloud_transportExport.cmake
+[29.095s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/point_cloud_transport/cmake/export_point_cloud_transportExport-release.cmake
+[29.097s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/point_cloud_transport/cmake/ament_cmake_export_include_directories-extras.cmake
+[29.097s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/point_cloud_transport/cmake/ament_cmake_export_targets-extras.cmake
+[29.097s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/point_cloud_transport/cmake/ament_cmake_export_dependencies-extras.cmake
+[29.097s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/point_cloud_transport/cmake/point_cloud_transportConfig.cmake
+[29.098s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/point_cloud_transport/cmake/point_cloud_transportConfig-version.cmake
+[29.098s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/point_cloud_transport/package.xml
+[29.100s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/point_cloud_transport' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=215 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/point_cloud_transport

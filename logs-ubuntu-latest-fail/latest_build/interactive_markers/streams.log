@@ -1,128 +1,128 @@
-[5.894s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/interactive_markers': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=15 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros-visualization/interactive_markers -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
-[6.004s] Not searching for unused variables given on the command line.
-[6.004s] -- The C compiler identification is GNU 14.3.0
-[6.242s] -- The CXX compiler identification is GNU 14.3.0
-[6.268s] -- Detecting C compiler ABI info
-[6.404s] -- Detecting C compiler ABI info - done
-[6.431s] -- Check for working C compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
-[6.431s] -- Detecting C compile features
-[6.432s] -- Detecting C compile features - done
-[6.449s] -- Detecting CXX compiler ABI info
-[6.683s] -- Detecting CXX compiler ABI info - done
-[6.733s] -- Check for working CXX compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
-[6.733s] -- Detecting CXX compile features
-[6.735s] -- Detecting CXX compile features - done
-[6.750s] -- Found ament_cmake: 2.8.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake/cmake)
-[7.040s] -- Found geometry_msgs: 5.9.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/geometry_msgs/cmake)
-[7.082s] -- Found rosidl_generator_c: 5.1.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_c/cmake)
-[7.093s] -- Found rosidl_generator_cpp: 5.1.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_cpp/cmake)
-[7.109s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
-[7.125s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
-[7.193s] -- Found rclcpp: 31.0.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclcpp/cmake)
-[7.298s] -- Found rmw_implementation_cmake: 7.9.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation_cmake/cmake)
-[7.301s] -- Found rmw_fastrtps_cpp: 9.4.5 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_fastrtps_cpp/cmake)
-[7.347s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
-[7.481s] -- Found tf2: 0.45.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2/cmake)
-[7.488s] -- Found tf2_geometry_msgs: 0.45.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2_geometry_msgs/cmake)
-[7.754s] -- Found visualization_msgs: 5.9.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/cmake)
-[8.034s] -- Found ament_cmake_gtest: 2.8.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_gtest/cmake)
-[8.037s] -- Found ament_lint_auto: 0.20.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_lint_auto/cmake)
-[8.187s] -- Found gtest sources under '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
-[8.192s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
-[8.323s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
-[8.323s] -- Check if compiler accepts -pthread
-[8.450s] -- Check if compiler accepts -pthread - yes
-[8.450s] -- Found Threads: TRUE
-[8.460s] -- Added test 'copyright' to check source files copyright and LICENSE
-[8.469s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
-[8.469s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros-visualization/interactive_markers/include>
-[8.469s] -- Configured cppcheck exclude dirs and/or files: 
-[8.479s] -- Added test 'cpplint' to check C / C++ code against the Google style
-[8.479s] -- Configured cpplint exclude dirs and/or files: 
-[8.482s] -- Added test 'flake8' to check Python code syntax and style conventions
-[8.482s] -- Configured 'flake8' exclude dirs and/or files: 
-[8.482s] -- Added test 'lint_cmake' to check CMake code style
-[8.484s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
-[8.492s] -- Added test 'uncrustify' to check C / C++ code style
-[8.492s] -- Configured uncrustify additional arguments: 
-[8.497s] -- Added test 'xmllint' to check XML markup files
-[8.497s] -- Configuring done (2.6s)
-[8.563s] -- Generating done (0.1s)
-[8.640s] -- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/interactive_markers
-[8.654s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/interactive_markers' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=15 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros-visualization/interactive_markers -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
-[8.656s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/interactive_markers': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=15 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/interactive_markers -- -j4 -l4
-[9.746s] [1/18] Building CXX object CMakeFiles/interactive_markers.dir/src/interactive_marker_server.cpp.o
-[10.312s] [2/18] Building CXX object CMakeFiles/interactive_markers.dir/src/tools.cpp.o
-[11.301s] [3/18] Building CXX object CMakeFiles/interactive_markers.dir/src/menu_handler.cpp.o
-[12.288s] [4/18] Building CXX object CMakeFiles/interactive_markers.dir/src/interactive_marker_client.cpp.o
-[13.201s] [5/18] Building CXX object CMakeFiles/interactive_markers.dir/src/message_context.cpp.o
-[13.505s] [6/18] Building CXX object CMakeFiles/interactive_marker_fixtures.dir/test/interactive_markers/interactive_marker_fixtures.cpp.o
-[13.910s] [7/18] Building CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
-[14.210s] [8/18] Building CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
-[14.408s] [9/18] Linking CXX shared library libinteractive_markers.so
-[14.420s] [10/18] Linking CXX static library libinteractive_marker_fixtures.a
-[15.348s] [11/18] Building CXX object CMakeFiles/test_interactive_marker_server.dir/test/interactive_markers/test_interactive_marker_server.cpp.o
-[16.349s] [12/18] Building CXX object CMakeFiles/test_interactive_marker_client.dir/test/interactive_markers/test_interactive_marker_client.cpp.o
-[16.359s] [13/18] cd /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/interactive_markers && /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake -E copy_directory /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros-visualization/interactive_markers/interactive_markers /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/interactive_markers/ament_cmake_python/interactive_markers/interactive_markers
-[16.386s] [14/18] Linking CXX static library gtest/libgtest.a
-[16.401s] [15/18] Linking CXX static library gtest/libgtest_main.a
-[16.653s] [16/18] Linking CXX executable test_interactive_marker_server
-[16.899s] [17/18] Linking CXX executable test_interactive_marker_client
-[17.276s] [18/18] cd /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/interactive_markers/ament_cmake_python/interactive_markers && /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/python3 setup.py egg_info
-[17.276s] running egg_info
-[17.276s] creating interactive_markers.egg-info
-[17.276s] writing interactive_markers.egg-info/PKG-INFO
-[17.276s] writing dependency_links to interactive_markers.egg-info/dependency_links.txt
-[17.276s] writing top-level names to interactive_markers.egg-info/top_level.txt
-[17.277s] writing manifest file 'interactive_markers.egg-info/SOURCES.txt'
-[17.277s] reading manifest file 'interactive_markers.egg-info/SOURCES.txt'
-[17.277s] writing manifest file 'interactive_markers.egg-info/SOURCES.txt'
-[17.280s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/interactive_markers' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=15 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/interactive_markers -- -j4 -l4
-[17.282s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/interactive_markers': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=15 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/interactive_markers
-[17.295s] -- Install configuration: "Release"
-[17.295s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/interactive_markers/environment/pythonpath.sh
-[17.295s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/interactive_markers/environment/pythonpath.dsv
-[17.295s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libinteractive_markers.so
-[17.296s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/interactive_markers
-[17.296s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/interactive_markers/interactive_markers
-[17.296s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/interactive_markers/interactive_markers/interactive_marker_server.hpp
-[17.297s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/interactive_markers/interactive_markers/visibility_control.hpp
-[17.297s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/interactive_markers/interactive_markers/interactive_marker_client.hpp
-[17.300s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/interactive_markers/interactive_markers/menu_handler.hpp
-[17.300s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/interactive_markers/interactive_markers/message_context.hpp
-[17.300s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/interactive_markers/interactive_markers/exceptions.hpp
-[17.300s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/interactive_markers/interactive_markers/tools.hpp
-[17.300s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/package_run_dependencies/interactive_markers
-[17.300s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/parent_prefix_path/interactive_markers
-[17.300s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/interactive_markers/environment/ament_prefix_path.sh
-[17.301s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/interactive_markers/environment/ament_prefix_path.dsv
-[17.301s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/interactive_markers/environment/path.sh
-[17.301s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/interactive_markers/environment/path.dsv
-[17.302s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/interactive_markers/local_setup.bash
-[17.303s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/interactive_markers/local_setup.fish
-[17.303s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/interactive_markers/local_setup.sh
-[17.305s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/interactive_markers/local_setup.zsh
-[17.305s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/interactive_markers/local_setup.dsv
-[17.305s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/interactive_markers/package.dsv
-[17.305s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/packages/interactive_markers
-[17.305s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/interactive_markers-2.8.2-py3.12.egg-info
-[17.305s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/interactive_markers-2.8.2-py3.12.egg-info/dependency_links.txt
-[17.306s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/interactive_markers-2.8.2-py3.12.egg-info/top_level.txt
-[17.306s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/interactive_markers-2.8.2-py3.12.egg-info/PKG-INFO
-[17.307s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/interactive_markers-2.8.2-py3.12.egg-info/SOURCES.txt
-[17.307s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/interactive_markers
-[17.309s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/interactive_markers/__init__.py
-[17.309s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/interactive_markers/interactive_marker_server.py
-[17.309s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/interactive_markers/menu_handler.py
-[17.363s] Listing '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/interactive_markers'...
-[17.364s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/interactive_markers/__init__.py'...
-[17.364s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/interactive_markers/interactive_marker_server.py'...
-[17.364s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/interactive_markers/menu_handler.py'...
-[17.372s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/interactive_markers/cmake/export_interactive_markersExport.cmake
-[17.373s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/interactive_markers/cmake/export_interactive_markersExport-release.cmake
-[17.373s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/interactive_markers/cmake/ament_cmake_export_dependencies-extras.cmake
-[17.374s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/interactive_markers/cmake/ament_cmake_export_targets-extras.cmake
-[17.374s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/interactive_markers/cmake/interactive_markersConfig.cmake
-[17.376s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/interactive_markers/cmake/interactive_markersConfig-version.cmake
-[17.376s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/interactive_markers/package.xml
-[17.378s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/interactive_markers' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=15 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/interactive_markers
+[4.979s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/interactive_markers': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros-visualization/interactive_markers -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DTRACETOOLS_DISABLED=ON -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[5.043s] Not searching for unused variables given on the command line.
+[5.043s] -- The C compiler identification is GNU 14.3.0
+[5.126s] -- The CXX compiler identification is GNU 14.3.0
+[5.135s] -- Detecting C compiler ABI info
+[5.262s] -- Detecting C compiler ABI info - done
+[5.295s] -- Check for working C compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
+[5.295s] -- Detecting C compile features
+[5.295s] -- Detecting C compile features - done
+[5.313s] -- Detecting CXX compiler ABI info
+[5.480s] -- Detecting CXX compiler ABI info - done
+[5.515s] -- Check for working CXX compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
+[5.517s] -- Detecting CXX compile features
+[5.517s] -- Detecting CXX compile features - done
+[5.532s] -- Found ament_cmake: 2.8.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake/cmake)
+[5.751s] -- Found geometry_msgs: 5.9.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/geometry_msgs/cmake)
+[5.783s] -- Found rosidl_generator_c: 5.1.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_c/cmake)
+[5.792s] -- Found rosidl_generator_cpp: 5.1.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_cpp/cmake)
+[5.813s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.832s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.914s] -- Found rclcpp: 31.0.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclcpp/cmake)
+[5.996s] -- Found rmw_implementation_cmake: 7.10.0 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation_cmake/cmake)
+[5.999s] -- Found rmw_fastrtps_cpp: 9.4.5 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_fastrtps_cpp/cmake)
+[6.035s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.159s] -- Found tf2: 0.45.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2/cmake)
+[6.165s] -- Found tf2_geometry_msgs: 0.45.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2_geometry_msgs/cmake)
+[6.423s] -- Found visualization_msgs: 5.9.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/visualization_msgs/cmake)
+[6.674s] -- Found ament_cmake_gtest: 2.8.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_gtest/cmake)
+[6.676s] -- Found ament_lint_auto: 0.20.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_lint_auto/cmake)
+[6.823s] -- Found gtest sources under '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[6.829s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[6.957s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[6.957s] -- Check if compiler accepts -pthread
+[7.066s] -- Check if compiler accepts -pthread - yes
+[7.067s] -- Found Threads: TRUE
+[7.077s] -- Added test 'copyright' to check source files copyright and LICENSE
+[7.084s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[7.084s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros-visualization/interactive_markers/include>
+[7.085s] -- Configured cppcheck exclude dirs and/or files: 
+[7.091s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[7.091s] -- Configured cpplint exclude dirs and/or files: 
+[7.092s] -- Added test 'flake8' to check Python code syntax and style conventions
+[7.092s] -- Configured 'flake8' exclude dirs and/or files: 
+[7.095s] -- Added test 'lint_cmake' to check CMake code style
+[7.096s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[7.102s] -- Added test 'uncrustify' to check C / C++ code style
+[7.102s] -- Configured uncrustify additional arguments: 
+[7.104s] -- Added test 'xmllint' to check XML markup files
+[7.107s] -- Configuring done (2.1s)
+[7.168s] -- Generating done (0.1s)
+[7.244s] -- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/interactive_markers
+[7.258s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/interactive_markers' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros-visualization/interactive_markers -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DTRACETOOLS_DISABLED=ON -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[7.259s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/interactive_markers': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/interactive_markers -- -j4 -l4
+[8.195s] [1/18] Building CXX object CMakeFiles/interactive_markers.dir/src/interactive_marker_server.cpp.o
+[8.702s] [2/18] Building CXX object CMakeFiles/interactive_markers.dir/src/tools.cpp.o
+[9.607s] [3/18] Building CXX object CMakeFiles/interactive_markers.dir/src/menu_handler.cpp.o
+[10.560s] [4/18] Building CXX object CMakeFiles/interactive_markers.dir/src/interactive_marker_client.cpp.o
+[11.424s] [5/18] Building CXX object CMakeFiles/interactive_markers.dir/src/message_context.cpp.o
+[11.750s] [6/18] Building CXX object CMakeFiles/interactive_marker_fixtures.dir/test/interactive_markers/interactive_marker_fixtures.cpp.o
+[12.275s] [7/18] Building CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[12.541s] [8/18] Building CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[12.698s] [9/18] Linking CXX shared library libinteractive_markers.so
+[12.708s] [10/18] Linking CXX static library libinteractive_marker_fixtures.a
+[13.691s] [11/18] Building CXX object CMakeFiles/test_interactive_marker_server.dir/test/interactive_markers/test_interactive_marker_server.cpp.o
+[14.648s] [12/18] Building CXX object CMakeFiles/test_interactive_marker_client.dir/test/interactive_markers/test_interactive_marker_client.cpp.o
+[14.652s] [13/18] cd /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/interactive_markers && /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake -E copy_directory /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros-visualization/interactive_markers/interactive_markers /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/interactive_markers/ament_cmake_python/interactive_markers/interactive_markers
+[14.675s] [14/18] Linking CXX static library gtest/libgtest.a
+[14.686s] [15/18] Linking CXX static library gtest/libgtest_main.a
+[14.851s] [16/18] Linking CXX executable test_interactive_marker_server
+[15.032s] [17/18] Linking CXX executable test_interactive_marker_client
+[15.315s] [18/18] cd /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/interactive_markers/ament_cmake_python/interactive_markers && /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/python3 setup.py egg_info
+[15.315s] running egg_info
+[15.315s] creating interactive_markers.egg-info
+[15.315s] writing interactive_markers.egg-info/PKG-INFO
+[15.316s] writing dependency_links to interactive_markers.egg-info/dependency_links.txt
+[15.316s] writing top-level names to interactive_markers.egg-info/top_level.txt
+[15.316s] writing manifest file 'interactive_markers.egg-info/SOURCES.txt'
+[15.316s] reading manifest file 'interactive_markers.egg-info/SOURCES.txt'
+[15.316s] writing manifest file 'interactive_markers.egg-info/SOURCES.txt'
+[15.321s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/interactive_markers' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/interactive_markers -- -j4 -l4
+[15.322s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/interactive_markers': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/interactive_markers
+[15.329s] -- Install configuration: "Release"
+[15.329s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/interactive_markers/environment/pythonpath.sh
+[15.330s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/interactive_markers/environment/pythonpath.dsv
+[15.330s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libinteractive_markers.so
+[15.332s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/interactive_markers
+[15.332s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/interactive_markers/interactive_markers
+[15.335s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/interactive_markers/interactive_markers/interactive_marker_server.hpp
+[15.335s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/interactive_markers/interactive_markers/visibility_control.hpp
+[15.335s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/interactive_markers/interactive_markers/interactive_marker_client.hpp
+[15.335s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/interactive_markers/interactive_markers/menu_handler.hpp
+[15.335s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/interactive_markers/interactive_markers/message_context.hpp
+[15.336s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/interactive_markers/interactive_markers/exceptions.hpp
+[15.336s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/interactive_markers/interactive_markers/tools.hpp
+[15.336s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/package_run_dependencies/interactive_markers
+[15.336s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/parent_prefix_path/interactive_markers
+[15.336s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/interactive_markers/environment/ament_prefix_path.sh
+[15.336s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/interactive_markers/environment/ament_prefix_path.dsv
+[15.336s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/interactive_markers/environment/path.sh
+[15.336s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/interactive_markers/environment/path.dsv
+[15.337s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/interactive_markers/local_setup.bash
+[15.337s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/interactive_markers/local_setup.fish
+[15.338s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/interactive_markers/local_setup.sh
+[15.338s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/interactive_markers/local_setup.zsh
+[15.339s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/interactive_markers/local_setup.dsv
+[15.339s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/interactive_markers/package.dsv
+[15.339s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/packages/interactive_markers
+[15.340s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/interactive_markers-2.8.2-py3.12.egg-info
+[15.340s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/interactive_markers-2.8.2-py3.12.egg-info/dependency_links.txt
+[15.341s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/interactive_markers-2.8.2-py3.12.egg-info/top_level.txt
+[15.342s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/interactive_markers-2.8.2-py3.12.egg-info/PKG-INFO
+[15.343s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/interactive_markers-2.8.2-py3.12.egg-info/SOURCES.txt
+[15.343s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/interactive_markers
+[15.343s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/interactive_markers/__init__.py
+[15.343s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/interactive_markers/interactive_marker_server.py
+[15.343s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/interactive_markers/menu_handler.py
+[15.387s] Listing '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/interactive_markers'...
+[15.387s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/interactive_markers/__init__.py'...
+[15.387s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/interactive_markers/interactive_marker_server.py'...
+[15.387s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/interactive_markers/menu_handler.py'...
+[15.391s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/interactive_markers/cmake/export_interactive_markersExport.cmake
+[15.391s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/interactive_markers/cmake/export_interactive_markersExport-release.cmake
+[15.392s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/interactive_markers/cmake/ament_cmake_export_dependencies-extras.cmake
+[15.392s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/interactive_markers/cmake/ament_cmake_export_targets-extras.cmake
+[15.392s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/interactive_markers/cmake/interactive_markersConfig.cmake
+[15.392s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/interactive_markers/cmake/interactive_markersConfig-version.cmake
+[15.393s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/interactive_markers/package.xml
+[15.394s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/interactive_markers' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/interactive_markers

@@ -1,98 +1,80 @@
-[2.855s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tracetools': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=41 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/ros2_tracing/tracetools -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
-[2.941s] Not searching for unused variables given on the command line.
-[2.941s] -- The C compiler identification is GNU 14.3.0
-[3.098s] -- The CXX compiler identification is GNU 14.3.0
-[3.123s] -- Detecting C compiler ABI info
-[3.274s] -- Detecting C compiler ABI info - done
-[3.304s] -- Check for working C compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
-[3.304s] -- Detecting C compile features
-[3.305s] -- Detecting C compile features - done
-[3.356s] -- Detecting CXX compiler ABI info
-[3.476s] -- Detecting CXX compiler ABI info - done
-[3.510s] -- Check for working CXX compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
-[3.511s] -- Detecting CXX compile features
-[3.512s] -- Detecting CXX compile features - done
-[3.533s] -- Found ament_cmake: 2.8.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake/cmake)
-[3.875s] -- Found ament_cmake_ros_core: 0.15.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_ros_core/cmake)
-[3.905s] -- Found PkgConfig: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/pkg-config (found version "0.29.2")
-[3.907s] -- Checking for module 'lttng-ust'
-[4.044s] --   Found lttng-ust, version 2.13.9
-[4.612s] -- Found ament_lint_auto: 0.20.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_lint_auto/cmake)
-[4.780s] -- Found gtest sources under '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
-[4.783s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
-[4.904s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
-[4.904s] -- Check if compiler accepts -pthread
-[5.033s] -- Check if compiler accepts -pthread - yes
-[5.035s] -- Found Threads: TRUE
-[5.041s] -- Added test 'copyright' to check source files copyright and LICENSE
-[5.045s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
-[5.046s] -- Configured cppcheck include dirs: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include;$<BUILD_INTERFACE:/home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/ros2_tracing/tracetools/include>
-[5.048s] -- Configured cppcheck exclude dirs and/or files: 
-[5.049s] -- Added test 'cpplint' to check C / C++ code against the Google style
-[5.049s] -- Configured cpplint exclude dirs and/or files: 
-[5.051s] -- Added test 'lint_cmake' to check CMake code style
-[5.054s] -- Added test 'uncrustify' to check C / C++ code style
-[5.055s] -- Configured uncrustify additional arguments: 
-[5.056s] -- Added test 'xmllint' to check XML markup files
-[5.060s] -- Configuring done (2.2s)
-[5.106s] -- Generating done (0.0s)
-[5.120s] -- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tracetools
-[5.127s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tracetools' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=41 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/ros2_tracing/tracetools -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
-[5.128s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tracetools': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=41 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tracetools -- -j4 -l4
-[5.172s] [1/17] Generating tracetools/version.h
-[5.328s] [2/17] Building C object CMakeFiles/tracetools.dir/src/tracetools.c.o
-[5.514s] [3/17] Building CXX object CMakeFiles/tracetools.dir/src/utils.cpp.o
-[5.874s] [4/17] Building C object CMakeFiles/tracetools.dir/src/tp_define.c.o
-[5.876s] [5/17] Linking CXX shared library libtracetools.so
-[5.876s] [6/17] Building C object CMakeFiles/tracetools_status.dir/src/status.c.o
-[6.427s] [7/17] Building CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
-[6.740s] [8/17] Building CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
-[6.985s] [9/17] Building C object CMakeFiles/tracetools_provider.dir/src/tp.c.o
-[7.010s] [10/17] Linking C shared library libtracetools_status.so
-[7.096s] [11/17] Building C object CMakeFiles/status.dir/src/status_tool.c.o
-[7.512s] [12/17] Building CXX object CMakeFiles/test_status.dir/test/test_status.cpp.o
-[7.542s] [13/17] Linking CXX static library gtest/libgtest.a
-[7.557s] [14/17] Linking CXX static library gtest/libgtest_main.a
-[7.584s] [15/17] Linking C shared library libtracetools_provider.so
-[7.656s] [16/17] Linking C executable status
-[7.755s] [17/17] Linking CXX executable test_status
-[7.759s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tracetools' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=41 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tracetools -- -j4 -l4
-[7.760s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tracetools': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=41 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tracetools
-[7.769s] -- Install configuration: "Release"
-[7.769s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tracetools/environment/library_path.sh
-[7.770s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tracetools/environment/library_path.dsv
-[7.770s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/tracetools/tracetools/version.h
-[7.770s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libtracetools_status.so
-[7.770s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/tracetools/status
-[7.771s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/tracetools
-[7.771s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/tracetools/tracetools
-[7.772s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/tracetools/tracetools/status.h
-[7.772s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/tracetools/tracetools/config.h
-[7.772s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/tracetools/tracetools/utils.hpp
-[7.772s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/tracetools/tracetools/visibility_control.h
-[7.772s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/tracetools/tracetools/tracetools.h
-[7.772s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libtracetools.so
-[7.772s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libtracetools_provider.so
-[7.775s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/package_run_dependencies/tracetools
-[7.775s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/parent_prefix_path/tracetools
-[7.775s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tracetools/environment/ament_prefix_path.sh
-[7.775s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tracetools/environment/ament_prefix_path.dsv
-[7.776s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tracetools/environment/path.sh
-[7.776s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tracetools/environment/path.dsv
-[7.776s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tracetools/local_setup.bash
-[7.776s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tracetools/local_setup.fish
-[7.776s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tracetools/local_setup.sh
-[7.776s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tracetools/local_setup.zsh
-[7.776s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tracetools/local_setup.dsv
-[7.777s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tracetools/package.dsv
-[7.777s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/packages/tracetools
-[7.777s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tracetools/cmake/tracetools_exportExport.cmake
-[7.777s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tracetools/cmake/tracetools_exportExport-release.cmake
-[7.777s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tracetools/cmake/ament_cmake_export_targets-extras.cmake
-[7.779s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tracetools/cmake/ament_cmake_export_include_directories-extras.cmake
-[7.779s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tracetools/cmake/ament_cmake_export_link_flags-extras.cmake
-[7.779s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tracetools/cmake/ament_cmake_export_libraries-extras.cmake
-[7.779s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tracetools/cmake/tracetoolsConfig.cmake
-[7.780s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tracetools/cmake/tracetoolsConfig-version.cmake
-[7.780s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tracetools/package.xml
-[7.781s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tracetools' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=41 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tracetools
+[2.670s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tracetools': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=221 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/ros2_tracing/tracetools -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DTRACETOOLS_DISABLED=ON -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[2.786s] Not searching for unused variables given on the command line.
+[2.786s] -- The C compiler identification is GNU 14.3.0
+[2.912s] -- The CXX compiler identification is GNU 14.3.0
+[2.924s] -- Detecting C compiler ABI info
+[3.062s] -- Detecting C compiler ABI info - done
+[3.113s] -- Check for working C compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
+[3.114s] -- Detecting C compile features
+[3.115s] -- Detecting C compile features - done
+[3.146s] -- Detecting CXX compiler ABI info
+[3.328s] -- Detecting CXX compiler ABI info - done
+[3.367s] -- Check for working CXX compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
+[3.367s] -- Detecting CXX compile features
+[3.370s] -- Detecting CXX compile features - done
+[3.590s] -- Found ament_cmake: 2.8.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake/cmake)
+[3.665s] -- Found ament_cmake_ros_core: 0.15.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_ros_core/cmake)
+[3.669s] -- Found ament_lint_auto: 0.20.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_lint_auto/cmake)
+[3.847s] -- Found gtest sources under '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[3.850s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.989s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[3.989s] -- Check if compiler accepts -pthread
+[4.190s] -- Check if compiler accepts -pthread - yes
+[4.191s] -- Found Threads: TRUE
+[4.200s] -- Added test 'copyright' to check source files copyright and LICENSE
+[4.200s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.200s] -- Configured cppcheck include dirs: 
+[4.201s] -- Configured cppcheck exclude dirs and/or files: 
+[4.204s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[4.204s] -- Configured cpplint exclude dirs and/or files: 
+[4.205s] -- Added test 'lint_cmake' to check CMake code style
+[4.209s] -- Added test 'uncrustify' to check C / C++ code style
+[4.209s] -- Configured uncrustify additional arguments: 
+[4.210s] -- Added test 'xmllint' to check XML markup files
+[4.213s] -- Configuring done (1.5s)
+[4.237s] -- Generating done (0.0s)
+[4.242s] -- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tracetools
+[4.248s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tracetools' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=221 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/ros2_tracing/tracetools -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DTRACETOOLS_DISABLED=ON -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[4.251s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tracetools': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=221 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tracetools -- -j4 -l4
+[4.422s] [1/10] Building C object CMakeFiles/tracetools_status.dir/src/status.c.o
+[5.043s] [2/10] Building CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[5.346s] [3/10] Building CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[5.364s] [4/10] Linking C shared library libtracetools_status.so
+[5.490s] [5/10] Building C object CMakeFiles/status.dir/src/status_tool.c.o
+[5.904s] [6/10] Building CXX object CMakeFiles/test_status.dir/test/test_status.cpp.o
+[5.929s] [7/10] Linking CXX static library gtest/libgtest.a
+[5.943s] [8/10] Linking CXX static library gtest/libgtest_main.a
+[5.965s] [9/10] Linking C executable status
+[6.046s] [10/10] Linking CXX executable test_status
+[6.048s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tracetools' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=221 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tracetools -- -j4 -l4
+[6.050s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tracetools': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=221 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tracetools
+[6.055s] -- Install configuration: "Release"
+[6.055s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libtracetools_status.so
+[6.056s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/tracetools/status
+[6.056s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/tracetools
+[6.056s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/tracetools/tracetools
+[6.057s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/tracetools/tracetools/status.h
+[6.057s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/tracetools/tracetools/config.h
+[6.059s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/tracetools/tracetools/utils.hpp
+[6.059s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/tracetools/tracetools/visibility_control.h
+[6.059s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/tracetools/tracetools/tracetools.h
+[6.059s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/package_run_dependencies/tracetools
+[6.059s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/parent_prefix_path/tracetools
+[6.059s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tracetools/environment/ament_prefix_path.sh
+[6.059s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tracetools/environment/ament_prefix_path.dsv
+[6.060s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tracetools/environment/path.sh
+[6.060s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tracetools/environment/path.dsv
+[6.060s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tracetools/local_setup.bash
+[6.060s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tracetools/local_setup.fish
+[6.060s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tracetools/local_setup.sh
+[6.061s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tracetools/local_setup.zsh
+[6.061s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tracetools/local_setup.dsv
+[6.061s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tracetools/package.dsv
+[6.061s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/packages/tracetools
+[6.061s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tracetools/cmake/tracetools_exportExport.cmake
+[6.061s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tracetools/cmake/ament_cmake_export_targets-extras.cmake
+[6.061s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tracetools/cmake/ament_cmake_export_include_directories-extras.cmake
+[6.062s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tracetools/cmake/tracetoolsConfig.cmake
+[6.062s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tracetools/cmake/tracetoolsConfig-version.cmake
+[6.062s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tracetools/package.xml
+[6.063s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tracetools' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=221 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tracetools

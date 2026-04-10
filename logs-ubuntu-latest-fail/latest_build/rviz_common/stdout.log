@@ -53,7 +53,7 @@ Not searching for unused variables given on the command line.
 -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
 -- Found pluginlib: 5.8.4 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/pluginlib/cmake)
 -- Found rclcpp: 31.0.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclcpp/cmake)
--- Found rmw_implementation_cmake: 7.9.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation_cmake/cmake)
+-- Found rmw_implementation_cmake: 7.10.0 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation_cmake/cmake)
 -- Found rmw_fastrtps_cpp: 9.4.5 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_fastrtps_cpp/cmake)
 -- Using RMW implementation 'rmw_fastrtps_cpp' as default
 -- Found resource_retriever: 3.9.2 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/resource_retriever/cmake)
@@ -78,8 +78,8 @@ Not searching for unused variables given on the command line.
 -- Added test 'uncrustify' to check C / C++ code style
 -- Configured uncrustify additional arguments: 
 -- Added test 'xmllint' to check XML markup files
--- Configuring done (4.5s)
--- Generating done (0.2s)
+-- Configuring done (4.1s)
+-- Generating done (0.1s)
 -- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_common
 [1/253] Generating src/rviz_common/moc_add_display_dialog.cpp
 [2/253] Generating src/rviz_common/moc_help_panel.cpp
@@ -578,13 +578,175 @@ In file included from /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs
 [241/253] Building CXX object CMakeFiles/rviz_common_interaction_tests.dir/test/interaction/selection_manager_test.cpp.o
 [242/253] Building CXX object CMakeFiles/rviz_common_interaction_tests.dir/test/interaction/selection_handler_test.cpp.o
 [243/253] Building CXX object CMakeFiles/display_factory_test.dir/test/display_factory_test.cpp.o
-[244/253] Building CXX object CMakeFiles/frame_manager_test.dir/test/frame_manager_test.cpp.o
-[245/253] Building CXX object CMakeFiles/frame_manager_test.dir/src/rviz_common/moc_frame_manager.cpp.o
-[246/253] Linking CXX static library gmock/libgmock_main.a
-[247/253] Linking CXX static library gmock/libgmock.a
-[248/253] Building CXX object CMakeFiles/frame_manager_test.dir/src/rviz_common/frame_manager.cpp.o
-[249/253] Linking CXX executable rviz_common_interaction_tests
+[244/253] Building CXX object CMakeFiles/display_factory_test.dir/src/rviz_common/display_factory.cpp.o
+[245/253] Building CXX object CMakeFiles/frame_manager_test.dir/test/frame_manager_test.cpp.o
+[246/253] Building CXX object CMakeFiles/frame_manager_test.dir/src/rviz_common/frame_manager.cpp.o
+[247/253] Building CXX object CMakeFiles/frame_manager_test.dir/src/rviz_common/moc_frame_manager.cpp.o
+[248/253] Linking CXX static library gmock/libgmock.a
+[249/253] Linking CXX static library gmock/libgmock_main.a
 [250/253] Linking CXX executable rviz_common_core_tests
-[251/253] Linking CXX executable frame_manager_test
-[252/253] Building CXX object CMakeFiles/display_factory_test.dir/src/rviz_common/display_factory.cpp.o
-[253/253] Linking CXX executable display_factory_test
+[251/253] Linking CXX executable rviz_common_interaction_tests
+[252/253] Linking CXX executable display_factory_test
+[253/253] Linking CXX executable frame_manager_test
+-- Install configuration: "Release"
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/environment/library_path.sh
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/environment/library_path.dsv
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/librviz_common.so
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/view_manager.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/visualizer_app.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/ros_topic_display.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/interaction
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/interaction/selection_handler.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/interaction/handler_manager_iface.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/interaction/handler_manager_listener.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/interaction/selection_renderer.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/interaction/selection_manager_iface.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/interaction/view_picker_iface.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/interaction/selection_manager.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/interaction/forwards.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/interaction/handler_manager.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/interaction/view_picker.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/bit_allocator.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/display_context.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/window_manager_interface.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/render_panel.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/visibility_control.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/interactive_object.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/viewport_mouse_event.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/message_filter_display.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/adapter_filter_display.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/msg_conversions.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/tool.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/visualization_manager.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/config.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/logging.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/tool_manager.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/ros_adapter_display.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/display_group.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/yaml_config_reader.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/panel.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/transformation
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/transformation/transformation_manager.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/transformation/frame_transformer.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/transformation/tf2_helpers
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/transformation/tf2_helpers/tf2_conversion_helpers.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/frame_position_tracking_view_controller.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/factory
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/factory/factory.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/factory/class_id_recording_factory.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/factory/pluginlib_factory.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/panel_dock_widget.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/display.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/depth_cloud_mld.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/view_controller.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/ros_integration
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/ros_integration/ros_client_abstraction.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/ros_integration/ros_node_abstraction.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/ros_integration/ros_node_abstraction_iface.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/ros_integration/ros_client_abstraction_iface.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/validate_floats.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/visualization_frame.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/int_property.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/display_visibility_property.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/color_property.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/line_edit_with_button.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/property.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/vector_property.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/grouped_checkbox_property_group.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/property_tree_model.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/float_edit.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/ros_action_property.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/ros_topic_property.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/file_picker_property.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/tf_frame_property.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/qos_profile_property.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/property_tree_widget.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/status_list.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/regex_filter_property.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/bool_property.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/enum_property.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/float_property.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/status_property.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/string_property.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/covariance_property.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/quaternion_property.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/editable_combo_box.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/property_tree_delegate.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/property_tree_with_help.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/ros_service_property.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/color_editor.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/parse_color.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/combo_box.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/editable_enum_property.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/display_group_visibility_property.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/splitter_handle.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/properties/grouped_checkbox_property.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/yaml_config_writer.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/load_resource.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/frame_manager_iface.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rviz_common/rviz_common/uniform_string_stream.hpp
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/default.rviz
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/rotate_cam.svg
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/zoom.svg
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/error.png
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/move1d.svg
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/right_dock.svg
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/cursor.svg
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/menu.svg
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/classes
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/classes/Group.png
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/classes/Views.svg
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/classes/Selection.png
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/classes/Time.png
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/classes/Help.svg
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/classes/Transformation.png
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/classes/Displays.svg
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/classes/Tool Properties.png
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/default_class_icon.png
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/plus.png
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/rotate.svg
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/left_dock.svg
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/move_z.svg
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/move2d.svg
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/package.png
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/forbidden.svg
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/warning.png
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/default_package_icon.png
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/moverotate.svg
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/crosshair.svg
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/minus.png
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/ok.png
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/options.png
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/icons/close.png
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/images
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/images/splash_overlay.png
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/images/splash.png
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/help
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/help/help.html
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/package_run_dependencies/rviz_common
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/parent_prefix_path/rviz_common
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/environment/ament_prefix_path.sh
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/environment/ament_prefix_path.dsv
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/environment/path.sh
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/environment/path.dsv
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/local_setup.bash
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/local_setup.fish
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/local_setup.sh
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/local_setup.zsh
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/local_setup.dsv
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/package.dsv
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/packages/rviz_common
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/cmake/rviz_commonExport.cmake
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/cmake/rviz_commonExport-release.cmake
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/cmake/rviz_common-extras.cmake
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/cmake/rviz_commonConfig.cmake
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/cmake/rviz_commonConfig-version.cmake
+-- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_common/package.xml

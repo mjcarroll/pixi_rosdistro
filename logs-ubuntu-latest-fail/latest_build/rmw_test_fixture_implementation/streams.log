@@ -1,114 +1,114 @@
-[5.037s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rmw_test_fixture_implementation': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/ament_cmake_ros/rmw_test_fixture_implementation -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
-[5.122s] Not searching for unused variables given on the command line.
-[5.122s] -- The C compiler identification is GNU 14.3.0
-[5.252s] -- The CXX compiler identification is GNU 14.3.0
-[5.266s] -- Detecting C compiler ABI info
-[5.393s] -- Detecting C compiler ABI info - done
-[5.429s] -- Check for working C compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
-[5.429s] -- Detecting C compile features
-[5.429s] -- Detecting C compile features - done
-[5.448s] -- Detecting CXX compiler ABI info
-[5.619s] -- Detecting CXX compiler ABI info - done
-[5.660s] -- Check for working CXX compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
-[5.660s] -- Detecting CXX compile features
-[5.660s] -- Detecting CXX compile features - done
-[5.981s] -- Found Python3: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/python3 (found version "3.12.13") found components: Interpreter Development Development.Module Development.Embed
-[5.985s] -- Found ament_cmake: 2.8.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake/cmake)
-[6.124s] -- Found ament_cmake_ros_core: 0.15.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_ros_core/cmake)
-[6.125s] -- Found rcpputils: 2.14.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcpputils/cmake)
-[6.137s] -- Found rmw: 7.9.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw/cmake)
-[6.154s] -- Found rmw_implementation_cmake: 7.9.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation_cmake/cmake)
-[6.157s] -- Found rmw_test_fixture: 0.15.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_test_fixture/cmake)
-[6.161s] -- Found rmw_fastrtps_cpp: 9.4.5 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_fastrtps_cpp/cmake)
-[6.190s] -- Found rosidl_generator_c: 5.1.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_c/cmake)
-[6.204s] -- Found rosidl_generator_cpp: 5.1.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_cpp/cmake)
-[6.210s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
-[6.226s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
-[6.433s] -- Found ament_lint_auto: 0.20.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_lint_auto/cmake)
-[6.597s] -- Found gtest sources under '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
-[6.600s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
-[6.736s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
-[6.736s] -- Check if compiler accepts -pthread
-[6.879s] -- Check if compiler accepts -pthread - yes
-[6.880s] -- Found Threads: TRUE
-[7.086s] -- Added test 'copyright' to check source files copyright and LICENSE
-[7.093s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
-[7.093s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/ament_cmake_ros/rmw_test_fixture_implementation/src>
-[7.093s] -- Configured cppcheck exclude dirs and/or files: 
-[7.093s] -- Added test 'cpplint' to check C / C++ code against the Google style
-[7.094s] -- Configured cpplint exclude dirs and/or files: 
-[7.095s] -- Added test 'flake8' to check Python code syntax and style conventions
-[7.095s] -- Configured 'flake8' exclude dirs and/or files: 
-[7.097s] -- Added test 'lint_cmake' to check CMake code style
-[7.098s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
-[7.101s] -- Added test 'uncrustify' to check C / C++ code style
-[7.101s] -- Configured uncrustify additional arguments: 
-[7.103s] -- Added test 'xmllint' to check XML markup files
-[7.107s] -- Configuring done (2.1s)
-[7.143s] -- Generating done (0.0s)
-[7.163s] -- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rmw_test_fixture_implementation
-[7.175s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rmw_test_fixture_implementation' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/ament_cmake_ros/rmw_test_fixture_implementation -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
-[7.182s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rmw_test_fixture_implementation': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rmw_test_fixture_implementation -- -j4 -l4
-[7.350s] [1/17] Building C object CMakeFiles/rmw_test_fixture_implementation.dir/src/rmw_test_fixture_default/rmw_test_fixture_default.c.o
-[7.633s] [2/17] Building CXX object CMakeFiles/rmw_test_fixture_implementation.dir/src/rmw_test_fixture_implementation.cpp.o
-[8.098s] [3/17] Building CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
-[8.416s] [4/17] Building CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
-[8.481s] [5/17] Linking CXX shared library librmw_test_fixture_implementation.so
-[8.636s] [6/17] Building C object CMakeFiles/run_rmw_isolated.dir/src/run_rmw_isolated.c.o
-[8.862s] [7/17] Building C object CMakeFiles/_rmw_test_fixture_implementation.dir/src/rmw_test_fixture_implementation_py.c.o
-[8.872s] [8/17] cd /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rmw_test_fixture_implementation && /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake -E copy_directory /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/ament_cmake_ros/rmw_test_fixture_implementation/rmw_test_fixture_implementation /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rmw_test_fixture_implementation/ament_cmake_python/rmw_test_fixture_implementation/rmw_test_fixture_implementation
-[9.003s] [9/17] Building C object test/CMakeFiles/rmw_mockmock_test_fixture.dir/rmw_mockmock_test_fixture.c.o
-[9.376s] [10/17] Building CXX object test/CMakeFiles/test_fixture_start_stop.dir/test_fixture_start_stop.cpp.o
-[9.403s] [11/17] Linking CXX static library gtest/libgtest.a
-[9.416s] [12/17] Linking CXX static library gtest/libgtest_main.a
-[9.473s] [13/17] Linking C executable run_rmw_isolated
-[9.502s] [14/17] Linking C shared module _rmw_test_fixture_implementation.so
-[9.825s] [15/17] cd /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rmw_test_fixture_implementation/ament_cmake_python/rmw_test_fixture_implementation && /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/python3 setup.py egg_info
-[9.825s] running egg_info
-[9.825s] creating rmw_test_fixture_implementation.egg-info
-[9.826s] writing rmw_test_fixture_implementation.egg-info/PKG-INFO
-[9.826s] writing dependency_links to rmw_test_fixture_implementation.egg-info/dependency_links.txt
-[9.826s] writing top-level names to rmw_test_fixture_implementation.egg-info/top_level.txt
-[9.826s] writing manifest file 'rmw_test_fixture_implementation.egg-info/SOURCES.txt'
-[9.826s] reading manifest file 'rmw_test_fixture_implementation.egg-info/SOURCES.txt'
-[9.826s] writing manifest file 'rmw_test_fixture_implementation.egg-info/SOURCES.txt'
-[9.852s] [16/17] Linking C shared library test/librmw_mockmock_test_fixture.so
-[9.956s] [17/17] Linking CXX executable test/test_fixture_start_stop
-[9.958s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rmw_test_fixture_implementation' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rmw_test_fixture_implementation -- -j4 -l4
-[9.961s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rmw_test_fixture_implementation': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rmw_test_fixture_implementation
-[9.969s] -- Install configuration: "Release"
-[9.971s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/librmw_test_fixture_implementation.so
-[9.971s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/rmw_test_fixture_implementation/run_rmw_isolated
-[9.971s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_test_fixture_implementation/environment/pythonpath.sh
-[9.971s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_test_fixture_implementation/environment/pythonpath.dsv
-[9.972s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rmw_test_fixture_implementation/_rmw_test_fixture_implementation.so
-[9.973s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/package_run_dependencies/rmw_test_fixture_implementation
-[9.973s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/parent_prefix_path/rmw_test_fixture_implementation
-[9.973s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_test_fixture_implementation/environment/ament_prefix_path.sh
-[9.973s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_test_fixture_implementation/environment/ament_prefix_path.dsv
-[9.973s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_test_fixture_implementation/environment/path.sh
-[9.974s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_test_fixture_implementation/environment/path.dsv
-[9.974s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_test_fixture_implementation/local_setup.bash
-[9.977s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_test_fixture_implementation/local_setup.fish
-[9.977s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_test_fixture_implementation/local_setup.sh
-[9.977s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_test_fixture_implementation/local_setup.zsh
-[9.977s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_test_fixture_implementation/local_setup.dsv
-[9.977s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_test_fixture_implementation/package.dsv
-[9.978s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/packages/rmw_test_fixture_implementation
-[9.978s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rmw_test_fixture_implementation-0.15.6-py3.12.egg-info
-[9.978s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rmw_test_fixture_implementation-0.15.6-py3.12.egg-info/dependency_links.txt
-[9.978s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rmw_test_fixture_implementation-0.15.6-py3.12.egg-info/top_level.txt
-[9.978s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rmw_test_fixture_implementation-0.15.6-py3.12.egg-info/PKG-INFO
-[9.978s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rmw_test_fixture_implementation-0.15.6-py3.12.egg-info/SOURCES.txt
-[9.978s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rmw_test_fixture_implementation
-[9.978s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rmw_test_fixture_implementation/__init__.py
-[10.026s] Listing '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rmw_test_fixture_implementation'...
-[10.026s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rmw_test_fixture_implementation/__init__.py'...
-[10.034s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_test_fixture_implementation/cmake/rmw_test_fixture_implementationExport.cmake
-[10.037s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_test_fixture_implementation/cmake/rmw_test_fixture_implementationExport-release.cmake
-[10.037s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_test_fixture_implementation/cmake/ament_cmake_export_targets-extras.cmake
-[10.037s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_test_fixture_implementation/cmake/ament_cmake_export_dependencies-extras.cmake
-[10.037s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_test_fixture_implementation/cmake/rmw_test_fixture_implementationConfig.cmake
-[10.037s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_test_fixture_implementation/cmake/rmw_test_fixture_implementationConfig-version.cmake
-[10.037s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_test_fixture_implementation/package.xml
-[10.040s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rmw_test_fixture_implementation' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rmw_test_fixture_implementation
+[4.248s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rmw_test_fixture_implementation': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=77 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/ament_cmake_ros/rmw_test_fixture_implementation -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DTRACETOOLS_DISABLED=ON -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[4.329s] Not searching for unused variables given on the command line.
+[4.329s] -- The C compiler identification is GNU 14.3.0
+[4.435s] -- The CXX compiler identification is GNU 14.3.0
+[4.445s] -- Detecting C compiler ABI info
+[4.594s] -- Detecting C compiler ABI info - done
+[4.628s] -- Check for working C compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
+[4.629s] -- Detecting C compile features
+[4.630s] -- Detecting C compile features - done
+[4.649s] -- Detecting CXX compiler ABI info
+[4.824s] -- Detecting CXX compiler ABI info - done
+[4.858s] -- Check for working CXX compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
+[4.858s] -- Detecting CXX compile features
+[4.860s] -- Detecting CXX compile features - done
+[5.172s] -- Found Python3: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/python3 (found version "3.12.13") found components: Interpreter Development Development.Module Development.Embed
+[5.176s] -- Found ament_cmake: 2.8.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake/cmake)
+[5.391s] -- Found ament_cmake_ros_core: 0.15.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_ros_core/cmake)
+[5.394s] -- Found rcpputils: 2.14.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcpputils/cmake)
+[5.418s] -- Found rmw: 7.10.0 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw/cmake)
+[5.443s] -- Found rmw_implementation_cmake: 7.10.0 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation_cmake/cmake)
+[5.446s] -- Found rmw_test_fixture: 0.15.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_test_fixture/cmake)
+[5.450s] -- Found rmw_fastrtps_cpp: 9.4.5 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_fastrtps_cpp/cmake)
+[5.479s] -- Found rosidl_generator_c: 5.1.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_c/cmake)
+[5.497s] -- Found rosidl_generator_cpp: 5.1.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_cpp/cmake)
+[5.515s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.543s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.779s] -- Found ament_lint_auto: 0.20.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_lint_auto/cmake)
+[5.961s] -- Found gtest sources under '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.963s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[6.093s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[6.093s] -- Check if compiler accepts -pthread
+[6.234s] -- Check if compiler accepts -pthread - yes
+[6.235s] -- Found Threads: TRUE
+[6.399s] -- Added test 'copyright' to check source files copyright and LICENSE
+[6.403s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[6.404s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/ament_cmake_ros/rmw_test_fixture_implementation/src>
+[6.404s] -- Configured cppcheck exclude dirs and/or files: 
+[6.406s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[6.407s] -- Configured cpplint exclude dirs and/or files: 
+[6.408s] -- Added test 'flake8' to check Python code syntax and style conventions
+[6.408s] -- Configured 'flake8' exclude dirs and/or files: 
+[6.410s] -- Added test 'lint_cmake' to check CMake code style
+[6.411s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[6.414s] -- Added test 'uncrustify' to check C / C++ code style
+[6.415s] -- Configured uncrustify additional arguments: 
+[6.416s] -- Added test 'xmllint' to check XML markup files
+[6.421s] -- Configuring done (2.2s)
+[6.455s] -- Generating done (0.0s)
+[6.476s] -- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rmw_test_fixture_implementation
+[6.485s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rmw_test_fixture_implementation' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=77 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/ament_cmake_ros/rmw_test_fixture_implementation -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DTRACETOOLS_DISABLED=ON -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[6.486s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rmw_test_fixture_implementation': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=77 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rmw_test_fixture_implementation -- -j4 -l4
+[6.651s] [1/17] Building C object CMakeFiles/rmw_test_fixture_implementation.dir/src/rmw_test_fixture_default/rmw_test_fixture_default.c.o
+[7.025s] [2/17] Building CXX object CMakeFiles/rmw_test_fixture_implementation.dir/src/rmw_test_fixture_implementation.cpp.o
+[7.444s] [3/17] Building CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[7.710s] [4/17] Building CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[7.757s] [5/17] Linking CXX shared library librmw_test_fixture_implementation.so
+[7.890s] [6/17] Building C object CMakeFiles/run_rmw_isolated.dir/src/run_rmw_isolated.c.o
+[8.090s] [7/17] Building C object CMakeFiles/_rmw_test_fixture_implementation.dir/src/rmw_test_fixture_implementation_py.c.o
+[8.098s] [8/17] cd /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rmw_test_fixture_implementation && /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake -E copy_directory /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/ament_cmake_ros/rmw_test_fixture_implementation/rmw_test_fixture_implementation /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rmw_test_fixture_implementation/ament_cmake_python/rmw_test_fixture_implementation/rmw_test_fixture_implementation
+[8.237s] [9/17] Building C object test/CMakeFiles/rmw_mockmock_test_fixture.dir/rmw_mockmock_test_fixture.c.o
+[8.592s] [10/17] Building CXX object test/CMakeFiles/test_fixture_start_stop.dir/test_fixture_start_stop.cpp.o
+[8.615s] [11/17] Linking CXX static library gtest/libgtest.a
+[8.626s] [12/17] Linking CXX static library gtest/libgtest_main.a
+[8.683s] [13/17] Linking C executable run_rmw_isolated
+[8.710s] [14/17] Linking C shared module _rmw_test_fixture_implementation.so
+[9.036s] [15/17] cd /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rmw_test_fixture_implementation/ament_cmake_python/rmw_test_fixture_implementation && /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/python3 setup.py egg_info
+[9.039s] running egg_info
+[9.040s] creating rmw_test_fixture_implementation.egg-info
+[9.040s] writing rmw_test_fixture_implementation.egg-info/PKG-INFO
+[9.040s] writing dependency_links to rmw_test_fixture_implementation.egg-info/dependency_links.txt
+[9.040s] writing top-level names to rmw_test_fixture_implementation.egg-info/top_level.txt
+[9.040s] writing manifest file 'rmw_test_fixture_implementation.egg-info/SOURCES.txt'
+[9.040s] reading manifest file 'rmw_test_fixture_implementation.egg-info/SOURCES.txt'
+[9.040s] writing manifest file 'rmw_test_fixture_implementation.egg-info/SOURCES.txt'
+[9.062s] [16/17] Linking C shared library test/librmw_mockmock_test_fixture.so
+[9.195s] [17/17] Linking CXX executable test/test_fixture_start_stop
+[9.197s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rmw_test_fixture_implementation' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=77 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rmw_test_fixture_implementation -- -j4 -l4
+[9.199s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rmw_test_fixture_implementation': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=77 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rmw_test_fixture_implementation
+[9.207s] -- Install configuration: "Release"
+[9.208s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/librmw_test_fixture_implementation.so
+[9.208s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/rmw_test_fixture_implementation/run_rmw_isolated
+[9.209s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_test_fixture_implementation/environment/pythonpath.sh
+[9.209s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_test_fixture_implementation/environment/pythonpath.dsv
+[9.210s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rmw_test_fixture_implementation/_rmw_test_fixture_implementation.so
+[9.211s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/package_run_dependencies/rmw_test_fixture_implementation
+[9.212s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/parent_prefix_path/rmw_test_fixture_implementation
+[9.212s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_test_fixture_implementation/environment/ament_prefix_path.sh
+[9.212s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_test_fixture_implementation/environment/ament_prefix_path.dsv
+[9.212s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_test_fixture_implementation/environment/path.sh
+[9.213s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_test_fixture_implementation/environment/path.dsv
+[9.213s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_test_fixture_implementation/local_setup.bash
+[9.213s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_test_fixture_implementation/local_setup.fish
+[9.214s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_test_fixture_implementation/local_setup.sh
+[9.214s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_test_fixture_implementation/local_setup.zsh
+[9.214s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_test_fixture_implementation/local_setup.dsv
+[9.214s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_test_fixture_implementation/package.dsv
+[9.215s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/packages/rmw_test_fixture_implementation
+[9.215s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rmw_test_fixture_implementation-0.15.6-py3.12.egg-info
+[9.215s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rmw_test_fixture_implementation-0.15.6-py3.12.egg-info/dependency_links.txt
+[9.215s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rmw_test_fixture_implementation-0.15.6-py3.12.egg-info/top_level.txt
+[9.216s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rmw_test_fixture_implementation-0.15.6-py3.12.egg-info/PKG-INFO
+[9.216s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rmw_test_fixture_implementation-0.15.6-py3.12.egg-info/SOURCES.txt
+[9.216s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rmw_test_fixture_implementation
+[9.216s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rmw_test_fixture_implementation/__init__.py
+[9.261s] Listing '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rmw_test_fixture_implementation'...
+[9.261s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/rmw_test_fixture_implementation/__init__.py'...
+[9.266s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_test_fixture_implementation/cmake/rmw_test_fixture_implementationExport.cmake
+[9.267s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_test_fixture_implementation/cmake/rmw_test_fixture_implementationExport-release.cmake
+[9.267s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_test_fixture_implementation/cmake/ament_cmake_export_targets-extras.cmake
+[9.267s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_test_fixture_implementation/cmake/ament_cmake_export_dependencies-extras.cmake
+[9.267s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_test_fixture_implementation/cmake/rmw_test_fixture_implementationConfig.cmake
+[9.267s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_test_fixture_implementation/cmake/rmw_test_fixture_implementationConfig-version.cmake
+[9.268s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_test_fixture_implementation/package.xml
+[9.269s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rmw_test_fixture_implementation' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=77 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rmw_test_fixture_implementation

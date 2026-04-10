@@ -1,98 +1,98 @@
-[2.674s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/performance_test_fixture': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=30 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/performance_test_fixture -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
-[2.824s] Not searching for unused variables given on the command line.
-[2.824s] -- The CXX compiler identification is GNU 14.3.0
-[2.843s] -- Detecting CXX compiler ABI info
-[2.982s] -- Detecting CXX compiler ABI info - done
-[3.027s] -- Check for working CXX compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
-[3.027s] -- Detecting CXX compile features
-[3.029s] -- Detecting CXX compile features - done
-[3.049s] -- Found ament_cmake_core: 2.8.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_core/cmake)
-[3.201s] -- Found Python3: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/python3 (found version "3.12.13") found components: Interpreter
-[3.314s] -- Found ament_cmake_export_dependencies: 2.8.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_export_dependencies/cmake)
-[3.314s] -- Found ament_cmake_export_targets: 2.8.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_export_targets/cmake)
-[3.314s] -- Found ament_cmake_test: 2.8.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_test/cmake)
-[3.326s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
-[3.480s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
-[3.480s] -- Looking for pthread_create in pthreads
-[3.590s] -- Looking for pthread_create in pthreads - not found
-[3.590s] -- Looking for pthread_create in pthread
-[3.716s] -- Looking for pthread_create in pthread - found
-[3.718s] -- Found Threads: TRUE
-[3.725s] -- Found ament_lint_auto: 0.20.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_lint_auto/cmake)
-[3.858s] -- Performance tests are disabled by default, so Google Benchmark tests will be skipped. To enable these tests, set the CMake variable 'AMENT_RUN_PERFORMANCE_TESTS'.
-[3.867s] -- Added test 'copyright' to check source files copyright and LICENSE
-[3.874s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
-[3.876s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/performance_test_fixture/include>
-[3.876s] -- Configured cppcheck exclude dirs and/or files: 
-[3.881s] -- Added test 'cpplint' to check C / C++ code against the Google style
-[3.881s] -- Configured cpplint exclude dirs and/or files: 
-[3.885s] -- Added test 'lint_cmake' to check CMake code style
-[3.894s] -- Added test 'uncrustify' to check C / C++ code style
-[3.894s] -- Configured uncrustify additional arguments: 
-[3.899s] -- Added test 'xmllint' to check XML markup files
-[3.899s] -- Configuring done (1.2s)
-[3.920s] -- Generating done (0.0s)
-[3.926s] -- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/performance_test_fixture
-[3.932s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/performance_test_fixture' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=30 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/performance_test_fixture -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
-[3.935s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/performance_test_fixture': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=30 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/performance_test_fixture -- -j4 -l4
-[4.223s] [1/8] Building CXX object CMakeFiles/performance_test_fixture.dir/src/performance_test_fixture.cpp.o
-[4.280s] [2/8] Linking CXX shared library libperformance_test_fixture.so
-[4.636s] [3/8] Building CXX object CMakeFiles/benchmark_malloc_realloc.dir/test/benchmark/benchmark_malloc_realloc.cpp.o
-[4.636s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/performance_test_fixture/test/benchmark/benchmark_malloc_realloc.cpp:123:58: warning: 'benchmark::internal::Benchmark' is deprecated: Use ::benchmark::Benchmark instead [-Wdeprecated-declarations]
-[4.637s]   123 | static void alloc_args(benchmark::internal::Benchmark * b)
-[4.637s]       |                                                          ^
-[4.637s] In file included from /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/performance_test_fixture/include/performance_test_fixture/performance_test_fixture.hpp:18,
-[4.637s]                  from /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/performance_test_fixture/test/benchmark/benchmark_malloc_realloc.cpp:19:
-[4.637s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/benchmark/benchmark.h:1386:28: note: declared here
-[4.637s]  1386 |     ::benchmark::Benchmark Benchmark;
-[4.637s]       |                            ^~~~~~~~~
-[4.637s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/performance_test_fixture/test/benchmark/benchmark_malloc_realloc.cpp:140:60: warning: 'benchmark::internal::Benchmark' is deprecated: Use ::benchmark::Benchmark instead [-Wdeprecated-declarations]
-[4.638s]   140 | static void realloc_args(benchmark::internal::Benchmark * b)
-[4.638s]       |                                                            ^
-[4.638s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/benchmark/benchmark.h:1386:28: note: declared here
-[4.638s]  1386 |     ::benchmark::Benchmark Benchmark;
-[4.638s]       |                            ^~~~~~~~~
-[4.724s] [4/8] Building CXX object CMakeFiles/benchmark_malloc_realloc_no_memory_tools.dir/test/benchmark/benchmark_malloc_realloc_no_memory_tools.cpp.o
-[4.724s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/performance_test_fixture/test/benchmark/benchmark_malloc_realloc_no_memory_tools.cpp:92:60: warning: 'benchmark::internal::Benchmark' is deprecated: Use ::benchmark::Benchmark instead [-Wdeprecated-declarations]
-[4.724s]    92 | static void realloc_args(benchmark::internal::Benchmark * b)
-[4.724s]       |                                                            ^
-[4.724s] In file included from /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/performance_test_fixture/test/benchmark/benchmark_malloc_realloc_no_memory_tools.cpp:15:
-[4.725s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/benchmark/benchmark.h:1386:28: note: declared here
-[4.725s]  1386 |     ::benchmark::Benchmark Benchmark;
-[4.725s]       |                            ^~~~~~~~~
-[5.049s] [5/8] Building CXX object CMakeFiles/benchmark_pause_resume.dir/test/benchmark/benchmark_pause_resume.cpp.o
-[5.114s] [6/8] Linking CXX executable benchmark_malloc_realloc
-[5.212s] [7/8] Linking CXX executable benchmark_malloc_realloc_no_memory_tools
-[5.229s] [8/8] Linking CXX executable benchmark_pause_resume
-[5.231s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/performance_test_fixture' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=30 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/performance_test_fixture -- -j4 -l4
-[5.232s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/performance_test_fixture': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=30 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/performance_test_fixture
-[5.241s] -- Install configuration: "Release"
-[5.241s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libperformance_test_fixture.so
-[5.242s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include
-[5.242s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/performance_test_fixture
-[5.244s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/performance_test_fixture/performance_test_fixture.hpp
-[5.244s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/performance_test_fixture/visibility_control.hpp
-[5.244s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/cmake
-[5.244s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/cmake/add_performance_test.cmake
-[5.244s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/package_run_dependencies/performance_test_fixture
-[5.244s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/parent_prefix_path/performance_test_fixture
-[5.244s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/environment/ament_prefix_path.sh
-[5.244s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/environment/ament_prefix_path.dsv
-[5.245s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/environment/path.sh
-[5.245s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/environment/path.dsv
-[5.246s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/local_setup.bash
-[5.248s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/local_setup.fish
-[5.248s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/local_setup.sh
-[5.248s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/local_setup.zsh
-[5.248s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/local_setup.dsv
-[5.248s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/package.dsv
-[5.248s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/packages/performance_test_fixture
-[5.248s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/cmake/performance_test_fixtureExport.cmake
-[5.248s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/cmake/performance_test_fixtureExport-release.cmake
-[5.248s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/cmake/ament_cmake_export_targets-extras.cmake
-[5.249s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/cmake/ament_cmake_export_dependencies-extras.cmake
-[5.249s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/cmake/performance_test_fixture-extras.cmake
-[5.250s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/cmake/performance_test_fixtureConfig.cmake
-[5.250s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/cmake/performance_test_fixtureConfig-version.cmake
-[5.251s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/package.xml
-[5.252s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/performance_test_fixture' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=30 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/performance_test_fixture
+[2.566s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/performance_test_fixture': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=232 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/performance_test_fixture -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DTRACETOOLS_DISABLED=ON -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[2.710s] Not searching for unused variables given on the command line.
+[2.710s] -- The CXX compiler identification is GNU 14.3.0
+[2.722s] -- Detecting CXX compiler ABI info
+[2.863s] -- Detecting CXX compiler ABI info - done
+[2.900s] -- Check for working CXX compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
+[2.900s] -- Detecting CXX compile features
+[2.902s] -- Detecting CXX compile features - done
+[2.917s] -- Found ament_cmake_core: 2.8.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_core/cmake)
+[3.058s] -- Found Python3: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/python3 (found version "3.12.13") found components: Interpreter
+[3.136s] -- Found ament_cmake_export_dependencies: 2.8.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_export_dependencies/cmake)
+[3.137s] -- Found ament_cmake_export_targets: 2.8.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_export_targets/cmake)
+[3.140s] -- Found ament_cmake_test: 2.8.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_test/cmake)
+[3.146s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.308s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[3.308s] -- Looking for pthread_create in pthreads
+[3.465s] -- Looking for pthread_create in pthreads - not found
+[3.465s] -- Looking for pthread_create in pthread
+[3.637s] -- Looking for pthread_create in pthread - found
+[3.637s] -- Found Threads: TRUE
+[3.648s] -- Found ament_lint_auto: 0.20.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_lint_auto/cmake)
+[3.918s] -- Performance tests are disabled by default, so Google Benchmark tests will be skipped. To enable these tests, set the CMake variable 'AMENT_RUN_PERFORMANCE_TESTS'.
+[3.918s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.918s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.919s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/performance_test_fixture/include>
+[3.919s] -- Configured cppcheck exclude dirs and/or files: 
+[3.919s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[3.919s] -- Configured cpplint exclude dirs and/or files: 
+[3.919s] -- Added test 'lint_cmake' to check CMake code style
+[3.919s] -- Added test 'uncrustify' to check C / C++ code style
+[3.919s] -- Configured uncrustify additional arguments: 
+[3.919s] -- Added test 'xmllint' to check XML markup files
+[3.919s] -- Configuring done (1.3s)
+[3.919s] -- Generating done (0.0s)
+[3.920s] -- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/performance_test_fixture
+[3.920s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/performance_test_fixture' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=232 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/performance_test_fixture -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DTRACETOOLS_DISABLED=ON -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[3.922s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/performance_test_fixture': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=232 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/performance_test_fixture -- -j4 -l4
+[4.289s] [1/8] Building CXX object CMakeFiles/performance_test_fixture.dir/src/performance_test_fixture.cpp.o
+[4.345s] [2/8] Linking CXX shared library libperformance_test_fixture.so
+[4.711s] [3/8] Building CXX object CMakeFiles/benchmark_malloc_realloc.dir/test/benchmark/benchmark_malloc_realloc.cpp.o
+[4.712s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/performance_test_fixture/test/benchmark/benchmark_malloc_realloc.cpp:123:58: warning: 'benchmark::internal::Benchmark' is deprecated: Use ::benchmark::Benchmark instead [-Wdeprecated-declarations]
+[4.712s]   123 | static void alloc_args(benchmark::internal::Benchmark * b)
+[4.712s]       |                                                          ^
+[4.712s] In file included from /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/performance_test_fixture/include/performance_test_fixture/performance_test_fixture.hpp:18,
+[4.712s]                  from /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/performance_test_fixture/test/benchmark/benchmark_malloc_realloc.cpp:19:
+[4.712s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/benchmark/benchmark.h:1386:28: note: declared here
+[4.712s]  1386 |     ::benchmark::Benchmark Benchmark;
+[4.712s]       |                            ^~~~~~~~~
+[4.712s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/performance_test_fixture/test/benchmark/benchmark_malloc_realloc.cpp:140:60: warning: 'benchmark::internal::Benchmark' is deprecated: Use ::benchmark::Benchmark instead [-Wdeprecated-declarations]
+[4.713s]   140 | static void realloc_args(benchmark::internal::Benchmark * b)
+[4.713s]       |                                                            ^
+[4.713s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/benchmark/benchmark.h:1386:28: note: declared here
+[4.713s]  1386 |     ::benchmark::Benchmark Benchmark;
+[4.713s]       |                            ^~~~~~~~~
+[5.003s] [4/8] Building CXX object CMakeFiles/benchmark_malloc_realloc_no_memory_tools.dir/test/benchmark/benchmark_malloc_realloc_no_memory_tools.cpp.o
+[5.003s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/performance_test_fixture/test/benchmark/benchmark_malloc_realloc_no_memory_tools.cpp:92:60: warning: 'benchmark::internal::Benchmark' is deprecated: Use ::benchmark::Benchmark instead [-Wdeprecated-declarations]
+[5.003s]    92 | static void realloc_args(benchmark::internal::Benchmark * b)
+[5.003s]       |                                                            ^
+[5.004s] In file included from /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/performance_test_fixture/test/benchmark/benchmark_malloc_realloc_no_memory_tools.cpp:15:
+[5.004s] /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/benchmark/benchmark.h:1386:28: note: declared here
+[5.004s]  1386 |     ::benchmark::Benchmark Benchmark;
+[5.004s]       |                            ^~~~~~~~~
+[5.339s] [5/8] Building CXX object CMakeFiles/benchmark_pause_resume.dir/test/benchmark/benchmark_pause_resume.cpp.o
+[5.393s] [6/8] Linking CXX executable benchmark_malloc_realloc
+[5.454s] [7/8] Linking CXX executable benchmark_malloc_realloc_no_memory_tools
+[5.511s] [8/8] Linking CXX executable benchmark_pause_resume
+[5.515s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/performance_test_fixture' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=232 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/performance_test_fixture -- -j4 -l4
+[5.516s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/performance_test_fixture': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=232 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/performance_test_fixture
+[5.525s] -- Install configuration: "Release"
+[5.525s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/libperformance_test_fixture.so
+[5.525s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include
+[5.525s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/performance_test_fixture
+[5.525s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/performance_test_fixture/performance_test_fixture.hpp
+[5.528s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/performance_test_fixture/visibility_control.hpp
+[5.528s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/cmake
+[5.528s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/cmake/add_performance_test.cmake
+[5.528s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/package_run_dependencies/performance_test_fixture
+[5.528s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/parent_prefix_path/performance_test_fixture
+[5.529s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/environment/ament_prefix_path.sh
+[5.529s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/environment/ament_prefix_path.dsv
+[5.529s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/environment/path.sh
+[5.529s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/environment/path.dsv
+[5.529s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/local_setup.bash
+[5.529s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/local_setup.fish
+[5.529s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/local_setup.sh
+[5.530s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/local_setup.zsh
+[5.530s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/local_setup.dsv
+[5.533s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/package.dsv
+[5.533s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/packages/performance_test_fixture
+[5.533s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/cmake/performance_test_fixtureExport.cmake
+[5.533s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/cmake/performance_test_fixtureExport-release.cmake
+[5.533s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/cmake/ament_cmake_export_targets-extras.cmake
+[5.533s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.533s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/cmake/performance_test_fixture-extras.cmake
+[5.533s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/cmake/performance_test_fixtureConfig.cmake
+[5.533s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/cmake/performance_test_fixtureConfig-version.cmake
+[5.534s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/performance_test_fixture/package.xml
+[5.534s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/performance_test_fixture' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=232 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/performance_test_fixture

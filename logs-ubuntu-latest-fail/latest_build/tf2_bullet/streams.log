@@ -1,81 +1,81 @@
-[5.830s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tf2_bullet': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=100 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/geometry2/tf2_bullet -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
-[5.925s] Not searching for unused variables given on the command line.
-[5.925s] -- The C compiler identification is GNU 14.3.0
-[6.055s] -- The CXX compiler identification is GNU 14.3.0
-[6.069s] -- Detecting C compiler ABI info
-[6.203s] -- Detecting C compiler ABI info - done
-[6.243s] -- Check for working C compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
-[6.243s] -- Detecting C compile features
-[6.244s] -- Detecting C compile features - done
-[6.281s] -- Detecting CXX compiler ABI info
-[6.530s] -- Detecting CXX compiler ABI info - done
-[6.571s] -- Check for working CXX compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
-[6.572s] -- Detecting CXX compile features
-[6.574s] -- Detecting CXX compile features - done
-[6.599s] -- Found ament_cmake: 2.8.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake/cmake)
-[6.986s] -- Found geometry_msgs: 5.9.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/geometry_msgs/cmake)
-[7.037s] -- Found rosidl_generator_c: 5.1.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_c/cmake)
-[7.051s] -- Found rosidl_generator_cpp: 5.1.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_cpp/cmake)
-[7.076s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
-[7.100s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
-[7.189s] -- Found tf2: 0.45.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2/cmake)
-[7.199s] -- Found tf2_ros: 0.45.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2_ros/cmake)
-[7.417s] -- Found rmw_implementation_cmake: 7.9.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation_cmake/cmake)
-[7.420s] -- Found rmw_fastrtps_cpp: 9.4.5 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_fastrtps_cpp/cmake)
-[7.480s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
-[7.865s] -- Found Bullet: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/libBulletDynamics.so
-[7.867s] -- Found ament_lint_auto: 0.20.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_lint_auto/cmake)
-[7.870s] -- Found ament_cmake_cppcheck: 0.20.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_cppcheck/cmake)
-[8.042s] -- Found gtest sources under '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
-[8.047s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
-[8.188s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
-[8.188s] -- Check if compiler accepts -pthread
-[8.333s] -- Check if compiler accepts -pthread - yes
-[8.334s] -- Found Threads: TRUE
-[8.339s] -- Added test 'copyright' to check source files copyright and LICENSE
-[8.341s] -- Added test 'cpplint' to check C / C++ code against the Google style
-[8.341s] -- Configured cpplint exclude dirs and/or files: 
-[8.342s] -- Added test 'flake8' to check Python code syntax and style conventions
-[8.342s] -- Configured 'flake8' exclude dirs and/or files: 
-[8.343s] -- Added test 'lint_cmake' to check CMake code style
-[8.344s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
-[8.345s] -- Added test 'uncrustify' to check C / C++ code style
-[8.345s] -- Configured uncrustify additional arguments: 
-[8.346s] -- Added test 'xmllint' to check XML markup files
-[8.349s] -- Configuring done (2.5s)
-[8.380s] -- Generating done (0.0s)
-[8.445s] -- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tf2_bullet
-[8.463s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tf2_bullet' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=100 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/geometry2/tf2_bullet -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
-[8.464s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tf2_bullet': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=100 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tf2_bullet -- -j4 -l4
-[8.908s] [1/6] Building CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
-[9.236s] [2/6] Building CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
-[10.224s] [3/6] Building CXX object CMakeFiles/test_bullet.dir/test/test_tf2_bullet.cpp.o
-[10.255s] [4/6] Linking CXX static library gtest/libgtest.a
-[10.267s] [5/6] Linking CXX static library gtest/libgtest_main.a
-[10.472s] [6/6] Linking CXX executable test_bullet
-[10.475s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tf2_bullet' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=100 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tf2_bullet -- -j4 -l4
-[10.477s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tf2_bullet': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=100 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tf2_bullet
-[10.488s] -- Install configuration: "Release"
-[10.488s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/tf2_bullet
-[10.489s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/tf2_bullet/tf2_bullet
-[10.489s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/tf2_bullet/tf2_bullet/tf2_bullet.hpp
-[10.490s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/package_run_dependencies/tf2_bullet
-[10.493s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/parent_prefix_path/tf2_bullet
-[10.493s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2_bullet/environment/ament_prefix_path.sh
-[10.494s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2_bullet/environment/ament_prefix_path.dsv
-[10.494s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2_bullet/environment/path.sh
-[10.494s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2_bullet/environment/path.dsv
-[10.494s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2_bullet/local_setup.bash
-[10.494s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2_bullet/local_setup.fish
-[10.494s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2_bullet/local_setup.sh
-[10.494s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2_bullet/local_setup.zsh
-[10.494s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2_bullet/local_setup.dsv
-[10.495s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2_bullet/package.dsv
-[10.495s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/packages/tf2_bullet
-[10.495s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2_bullet/cmake/export_tf2_bulletExport.cmake
-[10.496s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2_bullet/cmake/bullet-extras.cmake
-[10.497s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2_bullet/cmake/ament_cmake_export_targets-extras.cmake
-[10.497s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2_bullet/cmake/tf2_bulletConfig.cmake
-[10.498s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2_bullet/cmake/tf2_bulletConfig-version.cmake
-[10.498s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2_bullet/package.xml
-[10.500s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tf2_bullet' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=100 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tf2_bullet
+[5.757s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tf2_bullet': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=92 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/geometry2/tf2_bullet -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DTRACETOOLS_DISABLED=ON -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[5.836s] Not searching for unused variables given on the command line.
+[5.836s] -- The C compiler identification is GNU 14.3.0
+[5.971s] -- The CXX compiler identification is GNU 14.3.0
+[5.984s] -- Detecting C compiler ABI info
+[6.125s] -- Detecting C compiler ABI info - done
+[6.155s] -- Check for working C compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
+[6.155s] -- Detecting C compile features
+[6.156s] -- Detecting C compile features - done
+[6.174s] -- Detecting CXX compiler ABI info
+[6.358s] -- Detecting CXX compiler ABI info - done
+[6.398s] -- Check for working CXX compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
+[6.398s] -- Detecting CXX compile features
+[6.398s] -- Detecting CXX compile features - done
+[6.411s] -- Found ament_cmake: 2.8.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake/cmake)
+[6.698s] -- Found geometry_msgs: 5.9.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/geometry_msgs/cmake)
+[6.738s] -- Found rosidl_generator_c: 5.1.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_c/cmake)
+[6.751s] -- Found rosidl_generator_cpp: 5.1.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_cpp/cmake)
+[6.769s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.793s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.873s] -- Found tf2: 0.45.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2/cmake)
+[6.879s] -- Found tf2_ros: 0.45.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2_ros/cmake)
+[7.060s] -- Found rmw_implementation_cmake: 7.10.0 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation_cmake/cmake)
+[7.064s] -- Found rmw_fastrtps_cpp: 9.4.5 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_fastrtps_cpp/cmake)
+[7.111s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[7.414s] -- Found Bullet: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/libBulletDynamics.so
+[7.416s] -- Found ament_lint_auto: 0.20.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_lint_auto/cmake)
+[7.420s] -- Found ament_cmake_cppcheck: 0.20.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_cppcheck/cmake)
+[7.568s] -- Found gtest sources under '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[7.573s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[7.716s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[7.717s] -- Check if compiler accepts -pthread
+[7.883s] -- Check if compiler accepts -pthread - yes
+[7.886s] -- Found Threads: TRUE
+[7.896s] -- Added test 'copyright' to check source files copyright and LICENSE
+[7.902s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[7.902s] -- Configured cpplint exclude dirs and/or files: 
+[7.909s] -- Added test 'flake8' to check Python code syntax and style conventions
+[7.909s] -- Configured 'flake8' exclude dirs and/or files: 
+[7.909s] -- Added test 'lint_cmake' to check CMake code style
+[7.909s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[7.914s] -- Added test 'uncrustify' to check C / C++ code style
+[7.917s] -- Configured uncrustify additional arguments: 
+[7.917s] -- Added test 'xmllint' to check XML markup files
+[7.924s] -- Configuring done (2.2s)
+[7.968s] -- Generating done (0.0s)
+[8.040s] -- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tf2_bullet
+[8.057s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tf2_bullet' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=92 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/geometry2/tf2_bullet -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DTRACETOOLS_DISABLED=ON -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[8.058s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tf2_bullet': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=92 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tf2_bullet -- -j4 -l4
+[8.639s] [1/6] Building CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[9.033s] [2/6] Building CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[10.290s] [3/6] Building CXX object CMakeFiles/test_bullet.dir/test/test_tf2_bullet.cpp.o
+[10.326s] [4/6] Linking CXX static library gtest/libgtest.a
+[10.355s] [5/6] Linking CXX static library gtest/libgtest_main.a
+[10.544s] [6/6] Linking CXX executable test_bullet
+[10.547s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tf2_bullet' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=92 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tf2_bullet -- -j4 -l4
+[10.550s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tf2_bullet': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=92 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tf2_bullet
+[10.559s] -- Install configuration: "Release"
+[10.560s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/tf2_bullet
+[10.560s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/tf2_bullet/tf2_bullet
+[10.560s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/tf2_bullet/tf2_bullet/tf2_bullet.hpp
+[10.563s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/package_run_dependencies/tf2_bullet
+[10.563s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/parent_prefix_path/tf2_bullet
+[10.563s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2_bullet/environment/ament_prefix_path.sh
+[10.563s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2_bullet/environment/ament_prefix_path.dsv
+[10.563s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2_bullet/environment/path.sh
+[10.564s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2_bullet/environment/path.dsv
+[10.564s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2_bullet/local_setup.bash
+[10.565s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2_bullet/local_setup.fish
+[10.565s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2_bullet/local_setup.sh
+[10.566s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2_bullet/local_setup.zsh
+[10.566s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2_bullet/local_setup.dsv
+[10.567s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2_bullet/package.dsv
+[10.567s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/packages/tf2_bullet
+[10.571s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2_bullet/cmake/export_tf2_bulletExport.cmake
+[10.571s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2_bullet/cmake/bullet-extras.cmake
+[10.571s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2_bullet/cmake/ament_cmake_export_targets-extras.cmake
+[10.571s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2_bullet/cmake/tf2_bulletConfig.cmake
+[10.571s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2_bullet/cmake/tf2_bulletConfig-version.cmake
+[10.572s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/tf2_bullet/package.xml
+[10.576s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tf2_bullet' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=92 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/tf2_bullet

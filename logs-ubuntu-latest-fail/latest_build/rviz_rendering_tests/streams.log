@@ -1,130 +1,130 @@
-[4.066s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_rendering_tests': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_rendering_tests -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
-[4.146s] Not searching for unused variables given on the command line.
-[4.146s] -- The C compiler identification is GNU 14.3.0
-[4.265s] -- The CXX compiler identification is GNU 14.3.0
-[4.277s] -- Detecting C compiler ABI info
-[4.386s] -- Detecting C compiler ABI info - done
-[4.407s] -- Check for working C compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
-[4.408s] -- Detecting C compile features
-[4.408s] -- Detecting C compile features - done
-[4.425s] -- Detecting CXX compiler ABI info
-[4.584s] -- Detecting CXX compiler ABI info - done
-[4.617s] -- Check for working CXX compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
-[4.618s] -- Detecting CXX compile features
-[4.620s] -- Detecting CXX compile features - done
-[4.634s] -- Found ament_cmake: 2.8.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake/cmake)
-[4.898s] -- Found rviz_ogre_vendor: 15.1.19 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_ogre_vendor/cmake)
-[4.898s] -- Setting OGRE_DIR to: '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
-[4.900s] -- Found OGRE
-[4.900s] --   static     : OFF
-[4.900s] --   components : MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
-[4.900s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI;Codec_FreeImage
-[4.900s] --   media      : /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/rviz_ogre_vendor/share/OGRE/Media
-[4.900s] -- OGRE_LIBRARIES: OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
-[4.900s] -- OGRE_LIBRARY_DIRS: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/rviz_ogre_vendor/lib
-[4.901s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI;Codec_FreeImage
-[4.901s] -- OGRE_PLUGIN_DIR: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/rviz_ogre_vendor/lib/OGRE
-[4.903s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
-[4.903s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
-[4.903s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/rviz_ogre_vendor/lib/libOgreMain.so
-[4.903s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/rviz_ogre_vendor/lib/libOgreMain.so
-[4.958s] -- Found ZLIB: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/libz.so (found version "1.3.2")
-[4.974s] -- Found OpenGL: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/libGL.so
-[5.087s] -- Found X11: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include
-[5.087s] -- Looking for XOpenDisplay in /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/libX11.so;/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/libXext.so
-[5.217s] -- Looking for XOpenDisplay in /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/libX11.so;/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/libXext.so - found
-[5.218s] -- Looking for gethostbyname
-[5.334s] -- Looking for gethostbyname - found
-[5.335s] -- Looking for connect
-[5.458s] -- Looking for connect - found
-[5.458s] -- Looking for remove
-[5.580s] -- Looking for remove - found
-[5.580s] -- Looking for shmat
-[5.704s] -- Looking for shmat - found
-[5.704s] -- Looking for IceConnectionNumber in ICE
-[5.830s] -- Looking for IceConnectionNumber in ICE - found
-[5.994s] -- Check if compiler accepts -pthread
-[6.127s] -- Check if compiler accepts -pthread - yes
-[6.151s] -- Performing Test HAVE_STDATOMIC
-[6.322s] -- Performing Test HAVE_STDATOMIC - Success
-[6.972s] -- Found rviz_rendering: 15.1.19 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/cmake)
-[7.012s] -- Found resource_retriever: 3.9.2 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/resource_retriever/cmake)
+[4.199s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_rendering_tests': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_rendering_tests -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DTRACETOOLS_DISABLED=ON -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[4.259s] Not searching for unused variables given on the command line.
+[4.259s] -- The C compiler identification is GNU 14.3.0
+[4.363s] -- The CXX compiler identification is GNU 14.3.0
+[4.376s] -- Detecting C compiler ABI info
+[4.497s] -- Detecting C compiler ABI info - done
+[4.529s] -- Check for working C compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
+[4.529s] -- Detecting C compile features
+[4.530s] -- Detecting C compile features - done
+[4.549s] -- Detecting CXX compiler ABI info
+[4.721s] -- Detecting CXX compiler ABI info - done
+[4.759s] -- Check for working CXX compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
+[4.759s] -- Detecting CXX compile features
+[4.759s] -- Detecting CXX compile features - done
+[4.773s] -- Found ament_cmake: 2.8.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake/cmake)
+[5.049s] -- Found rviz_ogre_vendor: 15.1.19 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_ogre_vendor/cmake)
+[5.049s] -- Setting OGRE_DIR to: '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[5.051s] -- Found OGRE
+[5.051s] --   static     : OFF
+[5.051s] --   components : MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[5.052s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI;Codec_FreeImage
+[5.052s] --   media      : /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/rviz_ogre_vendor/share/OGRE/Media
+[5.052s] -- OGRE_LIBRARIES: OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[5.052s] -- OGRE_LIBRARY_DIRS: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/rviz_ogre_vendor/lib
+[5.052s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI;Codec_FreeImage
+[5.052s] -- OGRE_PLUGIN_DIR: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/rviz_ogre_vendor/lib/OGRE
+[5.052s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[5.052s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[5.052s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[5.053s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[5.102s] -- Found ZLIB: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/libz.so (found version "1.3.2")
+[5.113s] -- Found OpenGL: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/libGL.so
+[5.190s] -- Found X11: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include
+[5.190s] -- Looking for XOpenDisplay in /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/libX11.so;/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/libXext.so
+[5.331s] -- Looking for XOpenDisplay in /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/libX11.so;/home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/libXext.so - found
+[5.331s] -- Looking for gethostbyname
+[5.464s] -- Looking for gethostbyname - found
+[5.464s] -- Looking for connect
+[5.590s] -- Looking for connect - found
+[5.591s] -- Looking for remove
+[5.711s] -- Looking for remove - found
+[5.712s] -- Looking for shmat
+[5.842s] -- Looking for shmat - found
+[5.842s] -- Looking for IceConnectionNumber in ICE
+[5.954s] -- Looking for IceConnectionNumber in ICE - found
+[6.109s] -- Check if compiler accepts -pthread
+[6.247s] -- Check if compiler accepts -pthread - yes
+[6.271s] -- Performing Test HAVE_STDATOMIC
+[6.437s] -- Performing Test HAVE_STDATOMIC - Success
+[6.983s] -- Found rviz_rendering: 15.1.19 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering/cmake)
+[7.016s] -- Found resource_retriever: 3.9.2 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/resource_retriever/cmake)
 [7.020s] -- Found ament_lint_auto: 0.20.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_lint_auto/cmake)
-[7.247s] -- Found gmock sources under '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gmock_vendor': C++ tests using 'Google Mock' will be built
-[7.256s] -- Found gtest sources under '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
-[7.261s] -- Found Threads: TRUE
-[7.264s] -- Deploy OGRE media
-[7.265s] -- Added test 'copyright' to check source files copyright and LICENSE
-[7.268s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
-[7.269s] -- Configured cppcheck include dirs: /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_rendering_tests/src/rviz_rendering_tests
-[7.269s] -- Configured cppcheck exclude dirs and/or files: 
-[7.272s] -- Added test 'cpplint' to check C / C++ code against the Google style
-[7.272s] -- Configured cpplint exclude dirs and/or files: 
-[7.274s] -- Added test 'lint_cmake' to check CMake code style
-[7.278s] -- Added test 'uncrustify' to check C / C++ code style
-[7.278s] -- Configured uncrustify additional arguments: 
-[7.279s] -- Added test 'xmllint' to check XML markup files
-[7.286s] -- Configuring done (3.2s)
-[7.318s] -- Generating done (0.0s)
-[7.363s] -- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_rendering_tests
-[7.379s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_rendering_tests' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=50 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_rendering_tests -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
-[7.380s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_rendering_tests': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=50 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_rendering_tests -- -j4 -l4
-[7.837s] [1/14] Building CXX object gmock/CMakeFiles/gmock.dir/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor/src/gtest-all.cc.o
-[8.217s] [2/14] Building CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
-[8.646s] [3/14] Building CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
-[9.155s] [4/14] Building CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
-[9.542s] [5/14] Building CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
-[10.138s] [6/14] Building CXX object CMakeFiles/mesh_loader_test_target.dir/test/mesh_loader_test.cpp.o
-[10.951s] [7/14] Building CXX object CMakeFiles/mesh_loader_test_target.dir/test/ogre_testing_environment.cpp.o
-[11.283s] [8/14] Building CXX object CMakeFiles/test_rviz_rendering_tests.dir/test/test_rviz_ogre_media_exports.cpp.o
-[11.330s] [9/14] Linking CXX static library gmock/libgmock.a
-[11.350s] [10/14] Linking CXX static library gmock/libgmock_main.a
-[11.380s] [11/14] Linking CXX static library gtest/libgtest.a
-[11.392s] [12/14] Linking CXX static library gtest/libgtest_main.a
-[11.880s] [13/14] Linking CXX executable mesh_loader_test_target
-[11.958s] [14/14] Linking CXX executable test_rviz_rendering_tests
-[11.962s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_rendering_tests' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=50 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_rendering_tests -- -j4 -l4
-[11.963s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_rendering_tests': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=50 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_rendering_tests
-[11.973s] -- Install configuration: "Release"
-[11.973s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/test_meshes
-[11.973s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/test_meshes/test.urdf
-[11.973s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/test_meshes/base_normals.png
-[11.974s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/test_meshes/F10.stl
-[11.975s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/test_meshes/base_color.png
-[11.978s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/test_meshes/ax12_box.stl
-[11.978s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/test_meshes/pr2-base.dae
-[11.978s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/test_meshes/F2.stl
-[11.978s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/test_meshes/16bit_vs_32bit_should_fail.stl
-[11.979s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/test_meshes/invalid.stl
-[11.979s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/test_meshes/invalid_ascii.stl
-[11.980s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/test_meshes/solidworks.stl
-[11.981s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/test_meshes/F4.stl
-[11.982s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/test_meshes/finger.stl
-[11.982s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/test_meshes/pr2-base_large.dae
-[11.983s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/test_meshes/invalid_short.stl
-[11.983s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/test_meshes/invalid_extra.stl
-[11.984s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/test_meshes/valid.stl
-[11.986s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/test_meshes/F3.stl
-[11.986s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/test_meshes/README
-[11.986s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/package_run_dependencies/rviz_rendering_tests
-[11.986s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/parent_prefix_path/rviz_rendering_tests
-[11.986s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/environment/ament_prefix_path.sh
-[11.986s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/environment/ament_prefix_path.dsv
-[11.987s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/environment/path.sh
-[11.987s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/environment/path.dsv
-[11.987s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/local_setup.bash
-[11.988s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/local_setup.fish
-[11.990s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/local_setup.sh
-[11.990s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/local_setup.zsh
-[11.990s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/local_setup.dsv
-[11.990s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/package.dsv
-[11.990s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/packages/rviz_rendering_tests
-[11.990s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/ogre_media_resources/scripts
-[11.990s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/ogre_media_resources/scripts/test
-[11.991s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/ogre_media_resources/meshes
-[11.991s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/ogre_media_resources/meshes/test
-[11.992s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/rviz_ogre_media_exports/rviz_rendering_tests
-[11.992s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/cmake/rviz_rendering_testsConfig.cmake
-[11.994s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/cmake/rviz_rendering_testsConfig-version.cmake
-[11.994s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/package.xml
-[11.998s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_rendering_tests' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=50 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_rendering_tests
+[7.181s] -- Found gmock sources under '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[7.186s] -- Found gtest sources under '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[7.191s] -- Found Threads: TRUE
+[7.196s] -- Deploy OGRE media
+[7.196s] -- Added test 'copyright' to check source files copyright and LICENSE
+[7.200s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[7.202s] -- Configured cppcheck include dirs: /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_rendering_tests/src/rviz_rendering_tests
+[7.202s] -- Configured cppcheck exclude dirs and/or files: 
+[7.204s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[7.204s] -- Configured cpplint exclude dirs and/or files: 
+[7.208s] -- Added test 'lint_cmake' to check CMake code style
+[7.211s] -- Added test 'uncrustify' to check C / C++ code style
+[7.211s] -- Configured uncrustify additional arguments: 
+[7.213s] -- Added test 'xmllint' to check XML markup files
+[7.216s] -- Configuring done (3.0s)
+[7.252s] -- Generating done (0.0s)
+[7.296s] -- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_rendering_tests
+[7.310s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_rendering_tests' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rviz/rviz_rendering_tests -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DTRACETOOLS_DISABLED=ON -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[7.314s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_rendering_tests': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_rendering_tests -- -j4 -l4
+[7.861s] [1/14] Building CXX object gmock/CMakeFiles/gmock.dir/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor/src/gtest-all.cc.o
+[8.313s] [2/14] Building CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
+[8.708s] [3/14] Building CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
+[9.230s] [4/14] Building CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[9.532s] [5/14] Building CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[10.081s] [6/14] Building CXX object CMakeFiles/mesh_loader_test_target.dir/test/mesh_loader_test.cpp.o
+[10.749s] [7/14] Building CXX object CMakeFiles/mesh_loader_test_target.dir/test/ogre_testing_environment.cpp.o
+[11.117s] [8/14] Building CXX object CMakeFiles/test_rviz_rendering_tests.dir/test/test_rviz_ogre_media_exports.cpp.o
+[11.143s] [9/14] Linking CXX static library gmock/libgmock.a
+[11.155s] [10/14] Linking CXX static library gmock/libgmock_main.a
+[11.172s] [11/14] Linking CXX static library gtest/libgtest.a
+[11.180s] [12/14] Linking CXX static library gtest/libgtest_main.a
+[11.625s] [13/14] Linking CXX executable mesh_loader_test_target
+[11.711s] [14/14] Linking CXX executable test_rviz_rendering_tests
+[11.715s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_rendering_tests' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_rendering_tests -- -j4 -l4
+[11.715s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_rendering_tests': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_rendering_tests
+[11.724s] -- Install configuration: "Release"
+[11.727s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/test_meshes
+[11.727s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/test_meshes/test.urdf
+[11.727s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/test_meshes/base_normals.png
+[11.727s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/test_meshes/F10.stl
+[11.727s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/test_meshes/base_color.png
+[11.728s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/test_meshes/ax12_box.stl
+[11.729s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/test_meshes/pr2-base.dae
+[11.729s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/test_meshes/F2.stl
+[11.730s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/test_meshes/16bit_vs_32bit_should_fail.stl
+[11.733s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/test_meshes/invalid.stl
+[11.733s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/test_meshes/invalid_ascii.stl
+[11.733s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/test_meshes/solidworks.stl
+[11.733s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/test_meshes/F4.stl
+[11.734s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/test_meshes/finger.stl
+[11.734s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/test_meshes/pr2-base_large.dae
+[11.734s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/test_meshes/invalid_short.stl
+[11.735s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/test_meshes/invalid_extra.stl
+[11.735s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/test_meshes/valid.stl
+[11.735s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/test_meshes/F3.stl
+[11.736s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/test_meshes/README
+[11.736s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/package_run_dependencies/rviz_rendering_tests
+[11.737s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/parent_prefix_path/rviz_rendering_tests
+[11.737s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/environment/ament_prefix_path.sh
+[11.738s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/environment/ament_prefix_path.dsv
+[11.738s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/environment/path.sh
+[11.741s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/environment/path.dsv
+[11.741s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/local_setup.bash
+[11.741s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/local_setup.fish
+[11.741s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/local_setup.sh
+[11.742s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/local_setup.zsh
+[11.742s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/local_setup.dsv
+[11.742s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/package.dsv
+[11.742s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/packages/rviz_rendering_tests
+[11.742s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/ogre_media_resources/scripts
+[11.742s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/ogre_media_resources/scripts/test
+[11.742s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/ogre_media_resources/meshes
+[11.742s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/ogre_media_resources/meshes/test
+[11.742s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/rviz_ogre_media_exports/rviz_rendering_tests
+[11.743s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/cmake/rviz_rendering_testsConfig.cmake
+[11.743s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/cmake/rviz_rendering_testsConfig-version.cmake
+[11.744s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rviz_rendering_tests/package.xml
+[11.746s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_rendering_tests' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rviz_rendering_tests

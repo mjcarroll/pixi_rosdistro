@@ -1,158 +1,158 @@
-[3.052s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/qt_gui_cpp': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros-visualization/qt_gui_core/qt_gui_cpp -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
-[3.131s] Not searching for unused variables given on the command line.
-[3.131s] -- The C compiler identification is GNU 14.3.0
-[3.257s] -- The CXX compiler identification is GNU 14.3.0
-[3.269s] -- Detecting C compiler ABI info
-[3.415s] -- Detecting C compiler ABI info - done
-[3.452s] -- Check for working C compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
-[3.452s] -- Detecting C compile features
-[3.452s] -- Detecting C compile features - done
-[3.470s] -- Detecting CXX compiler ABI info
-[3.622s] -- Detecting CXX compiler ABI info - done
-[3.658s] -- Check for working CXX compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
-[3.658s] -- Detecting CXX compile features
-[3.659s] -- Detecting CXX compile features - done
-[3.671s] -- Found ament_cmake: 2.8.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake/cmake)
-[3.934s] -- Found pluginlib: 5.8.4 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/pluginlib/cmake)
-[3.987s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
-[4.112s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
-[4.112s] -- Check if compiler accepts -pthread
-[4.223s] -- Check if compiler accepts -pthread - yes
-[4.224s] -- Found Threads: TRUE
-[4.246s] -- Performing Test HAVE_STDATOMIC
-[4.410s] -- Performing Test HAVE_STDATOMIC - Success
-[4.411s] -- Found WrapAtomic: TRUE
-[4.447s] -- Found OpenGL: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/libGL.so
-[4.448s] -- Found WrapOpenGL: TRUE
-[4.909s] -- Found XKB: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/libxkbcommon.so (found suitable version "1.13.1", minimum required is "0.5.0")
-[4.916s] -- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
-[5.319s] -- Found Python3: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/python3.12 (found version "3.12.13") found components: Development Development.Module Development.Embed
-[5.511s] -- Found Python3: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/python3 (found suitable version "3.12.13", minimum required is "3.12.13") found components: Interpreter Development Development.Module Development.Embed
-[5.715s] -- Modern SIP binding generator (sip-build) is available.
-[5.753s] -- Found PyQt6 SIP bindings at: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/python3.12/site-packages/PyQt6/bindings
-[5.753s] -- Detected SIP ABI version: 13.8
-[5.753s] -- Python binding generators: sip
-[5.757s] -- Found ament_lint_auto: 0.20.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_lint_auto/cmake)
-[5.925s] -- Added test 'copyright' to check source files copyright and LICENSE
-[5.931s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
-[5.931s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros-visualization/qt_gui_core/qt_gui_cpp/include>
-[5.931s] -- Configured cppcheck exclude dirs and/or files: 
-[5.937s] -- Added test 'cpplint' to check C / C++ code against the Google style
-[5.937s] -- Configured cpplint exclude dirs and/or files: 
-[5.940s] -- Added test 'flake8' to check Python code syntax and style conventions
-[5.940s] -- Configured 'flake8' exclude dirs and/or files: 
-[5.940s] -- Added test 'lint_cmake' to check CMake code style
-[5.942s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
-[5.949s] -- Added test 'uncrustify' to check C / C++ code style
-[5.949s] -- Configured uncrustify additional arguments: 
-[5.949s] -- Added test 'xmllint' to check XML markup files
-[5.953s] -- Configuring done (2.9s)
-[6.029s] -- Generating done (0.1s)
-[6.083s] -- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/qt_gui_cpp
-[6.098s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/qt_gui_cpp' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros-visualization/qt_gui_core/qt_gui_cpp -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
-[6.099s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/qt_gui_cpp': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/qt_gui_cpp -- -j4 -l4
-[6.244s] [1/24] Automatic MOC and UIC for target qt_gui_cpp
-[6.252s] [2/24] Generating include/qt_gui_cpp/moc_plugin.cpp
-[6.257s] [3/24] Generating include/qt_gui_cpp/moc_plugin_bridge.cpp
-[6.261s] [4/24] Generating include/qt_gui_cpp/moc_plugin_context.cpp
-[6.530s] [5/24] Building CXX object CMakeFiles/qt_gui_cpp.dir/qt_gui_cpp_autogen/mocs_compilation.cpp.o
-[7.453s] [6/24] Building CXX object CMakeFiles/qt_gui_cpp.dir/src/qt_gui_cpp/composite_plugin_provider.cpp.o
-[8.211s] [7/24] Building CXX object CMakeFiles/qt_gui_cpp.dir/src/qt_gui_cpp/generic_proxy.cpp.o
-[9.440s] [8/24] Building CXX object CMakeFiles/qt_gui_cpp.dir/src/qt_gui_cpp/plugin_bridge.cpp.o
-[10.470s] [9/24] Building CXX object CMakeFiles/qt_gui_cpp.dir/src/qt_gui_cpp/plugin_context.cpp.o
-[11.471s] [10/24] Building CXX object CMakeFiles/qt_gui_cpp.dir/src/qt_gui_cpp/plugin_descriptor.cpp.o
-[12.660s] [11/24] Building CXX object CMakeFiles/qt_gui_cpp.dir/src/qt_gui_cpp/plugin_provider.cpp.o
-[23.448s] [12/24] Building CXX object CMakeFiles/qt_gui_cpp.dir/src/qt_gui_cpp/recursive_plugin_provider.cpp.o
-[23.970s] [13/24] Building CXX object CMakeFiles/qt_gui_cpp.dir/src/qt_gui_cpp/settings.cpp.o
-[24.452s] [14/24] Building CXX object CMakeFiles/qt_gui_cpp.dir/include/qt_gui_cpp/moc_plugin.cpp.o
-[25.021s] [15/24] Building CXX object CMakeFiles/qt_gui_cpp.dir/include/qt_gui_cpp/moc_plugin_bridge.cpp.o
-[25.895s] [16/24] Building CXX object CMakeFiles/qt_gui_cpp.dir/include/qt_gui_cpp/moc_plugin_context.cpp.o
-[26.690s] [17/24] Linking CXX shared library qt_gui_cpp.so
-[83.416s] [18/24] Generating C++ code for qt_gui_cpp_sip Python bindings using sip-build...
-[83.416s] Querying qmake about your Qt installation...
-[83.416s] These bindings will be built: qt_gui_cpp_sip.
-[83.416s] Generating the qt_gui_cpp_sip bindings...
-[83.416s] The project has been built.
-[83.474s] [19/24] Automatic MOC and UIC for target libqt_gui_cpp_sip
-[83.486s] [20/24] cd /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/qt_gui_cpp && /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake -E copy_directory /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros-visualization/qt_gui_core/qt_gui_cpp/src/qt_gui_cpp /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/qt_gui_cpp/ament_cmake_python/qt_gui_cpp/qt_gui_cpp
-[83.560s] [21/24] Building CXX object src/qt_gui_cpp_sip/CMakeFiles/libqt_gui_cpp_sip.dir/libqt_gui_cpp_sip_autogen/mocs_compilation.cpp.o
-[98.563s] [22/24] Building CXX object src/qt_gui_cpp_sip/CMakeFiles/libqt_gui_cpp_sip.dir/__/__/sip/qt_gui_cpp_sip/libqt_gui_cpp_sip/siplibqt_gui_cpp_sippart0.cpp.o
-[98.855s] [23/24] cd /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/qt_gui_cpp/ament_cmake_python/qt_gui_cpp && /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/python3 setup.py egg_info
-[98.855s] running egg_info
-[98.855s] creating qt_gui_cpp.egg-info
-[98.855s] writing qt_gui_cpp.egg-info/PKG-INFO
-[98.855s] writing dependency_links to qt_gui_cpp.egg-info/dependency_links.txt
-[98.855s] writing top-level names to qt_gui_cpp.egg-info/top_level.txt
-[98.856s] writing manifest file 'qt_gui_cpp.egg-info/SOURCES.txt'
-[98.856s] reading manifest file 'qt_gui_cpp.egg-info/SOURCES.txt'
-[98.856s] writing manifest file 'qt_gui_cpp.egg-info/SOURCES.txt'
-[99.131s] [24/24] Linking CXX shared module src/qt_gui_cpp_sip/libqt_gui_cpp_sip.so
-[99.132s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/qt_gui_cpp' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=80 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/qt_gui_cpp -- -j4 -l4
-[99.133s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/qt_gui_cpp': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=80 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/qt_gui_cpp
-[99.141s] -- Install configuration: "Release"
-[99.144s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/environment/pythonpath.sh
-[99.144s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/environment/pythonpath.dsv
-[99.144s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp/libqt_gui_cpp_sip.so
-[99.144s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/plugin.xml
-[99.144s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/qt_gui_cpp
-[99.145s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/qt_gui_cpp/qt_gui_cpp
-[99.145s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/qt_gui_cpp/qt_gui_cpp/ros_pluginlib_plugin_provider.hpp
-[99.145s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/qt_gui_cpp/qt_gui_cpp/recursive_plugin_provider.hpp
-[99.146s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/qt_gui_cpp/qt_gui_cpp/ros_pluginlib_plugin_provider_for_plugins.hpp
-[99.148s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/qt_gui_cpp/qt_gui_cpp/plugin_descriptor.hpp
-[99.148s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/qt_gui_cpp/qt_gui_cpp/settings.hpp
-[99.148s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/qt_gui_cpp/qt_gui_cpp/plugin_bridge.hpp
-[99.148s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/qt_gui_cpp/qt_gui_cpp/plugin_context.hpp
-[99.148s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/qt_gui_cpp/qt_gui_cpp/generic_proxy.hpp
-[99.148s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/qt_gui_cpp/qt_gui_cpp/composite_plugin_provider.hpp
-[99.149s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/qt_gui_cpp/qt_gui_cpp/plugin.hpp
-[99.149s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/qt_gui_cpp/qt_gui_cpp/plugin_provider.hpp
-[99.149s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/qt_gui_cpp/qt_gui_cpp/ros_pluginlib_plugin_provider_for_plugin_providers.hpp
-[99.149s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/environment/library_path.sh
-[99.149s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/environment/library_path.dsv
-[99.150s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/qt_gui_cpp.so
-[99.150s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/package_run_dependencies/qt_gui_cpp
-[99.151s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/parent_prefix_path/qt_gui_cpp
-[99.153s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/environment/ament_prefix_path.sh
-[99.153s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/environment/ament_prefix_path.dsv
-[99.153s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/environment/path.sh
-[99.153s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/environment/path.dsv
-[99.153s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/local_setup.bash
-[99.153s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/local_setup.fish
-[99.154s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/local_setup.sh
-[99.154s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/local_setup.zsh
-[99.154s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/local_setup.dsv
-[99.154s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/package.dsv
-[99.155s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/packages/qt_gui_cpp
-[99.155s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp-2.10.3-py3.12.egg-info
-[99.157s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp-2.10.3-py3.12.egg-info/dependency_links.txt
-[99.157s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp-2.10.3-py3.12.egg-info/top_level.txt
-[99.157s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp-2.10.3-py3.12.egg-info/PKG-INFO
-[99.157s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp-2.10.3-py3.12.egg-info/SOURCES.txt
-[99.157s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp
-[99.157s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp/__init__.py
-[99.157s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp/plugin_bridge.cpp
-[99.158s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp/plugin_provider.cpp
-[99.158s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp/settings.cpp
-[99.158s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp/plugin_context.cpp
-[99.158s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp/composite_plugin_provider.cpp
-[99.159s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp/recursive_plugin_provider.cpp
-[99.159s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp/generic_proxy.cpp
-[99.161s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp/ros_pluginlib_plugin_provider.py
-[99.161s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp/plugin_descriptor.cpp
-[99.161s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp/cpp_plugin_provider.py
-[99.161s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp/cpp_binding_helper.py
-[99.207s] Listing '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp'...
-[99.207s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp/__init__.py'...
-[99.207s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp/cpp_binding_helper.py'...
-[99.207s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp/cpp_plugin_provider.py'...
-[99.207s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp/ros_pluginlib_plugin_provider.py'...
-[99.213s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/cmake/export_qt_gui_cppExport.cmake
-[99.214s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/cmake/export_qt_gui_cppExport-release.cmake
-[99.214s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/cmake/qt_gui_cpp-extras.cmake
-[99.215s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/cmake/ament_cmake_export_dependencies-extras.cmake
-[99.216s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/cmake/ament_cmake_export_targets-extras.cmake
-[99.216s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/cmake/qt_gui_cppConfig.cmake
-[99.217s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/cmake/qt_gui_cppConfig-version.cmake
-[99.217s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/package.xml
-[99.219s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/qt_gui_cpp' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=80 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/qt_gui_cpp
+[2.999s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/qt_gui_cpp': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros-visualization/qt_gui_core/qt_gui_cpp -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DTRACETOOLS_DISABLED=ON -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[3.077s] Not searching for unused variables given on the command line.
+[3.077s] -- The C compiler identification is GNU 14.3.0
+[3.178s] -- The CXX compiler identification is GNU 14.3.0
+[3.187s] -- Detecting C compiler ABI info
+[3.306s] -- Detecting C compiler ABI info - done
+[3.326s] -- Check for working C compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
+[3.326s] -- Detecting C compile features
+[3.327s] -- Detecting C compile features - done
+[3.340s] -- Detecting CXX compiler ABI info
+[3.491s] -- Detecting CXX compiler ABI info - done
+[3.527s] -- Check for working CXX compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
+[3.527s] -- Detecting CXX compile features
+[3.529s] -- Detecting CXX compile features - done
+[3.542s] -- Found ament_cmake: 2.8.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake/cmake)
+[3.801s] -- Found pluginlib: 5.8.4 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/pluginlib/cmake)
+[3.853s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.986s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[3.986s] -- Check if compiler accepts -pthread
+[4.110s] -- Check if compiler accepts -pthread - yes
+[4.111s] -- Found Threads: TRUE
+[4.136s] -- Performing Test HAVE_STDATOMIC
+[4.325s] -- Performing Test HAVE_STDATOMIC - Success
+[4.327s] -- Found WrapAtomic: TRUE
+[4.372s] -- Found OpenGL: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/libGL.so
+[4.374s] -- Found WrapOpenGL: TRUE
+[4.824s] -- Found XKB: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/libxkbcommon.so (found suitable version "1.13.1", minimum required is "0.5.0")
+[4.830s] -- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+[5.222s] -- Found Python3: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/include/python3.12 (found version "3.12.13") found components: Development Development.Module Development.Embed
+[5.433s] -- Found Python3: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/python3 (found suitable version "3.12.13", minimum required is "3.12.13") found components: Interpreter Development Development.Module Development.Embed
+[5.676s] -- Modern SIP binding generator (sip-build) is available.
+[5.709s] -- Found PyQt6 SIP bindings at: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/lib/python3.12/site-packages/PyQt6/bindings
+[5.710s] -- Detected SIP ABI version: 13.8
+[5.715s] -- Python binding generators: sip
+[5.716s] -- Found ament_lint_auto: 0.20.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_lint_auto/cmake)
+[5.867s] -- Added test 'copyright' to check source files copyright and LICENSE
+[5.872s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.875s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros-visualization/qt_gui_core/qt_gui_cpp/include>
+[5.875s] -- Configured cppcheck exclude dirs and/or files: 
+[5.878s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[5.879s] -- Configured cpplint exclude dirs and/or files: 
+[5.880s] -- Added test 'flake8' to check Python code syntax and style conventions
+[5.881s] -- Configured 'flake8' exclude dirs and/or files: 
+[5.883s] -- Added test 'lint_cmake' to check CMake code style
+[5.884s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[5.890s] -- Added test 'uncrustify' to check C / C++ code style
+[5.892s] -- Configured uncrustify additional arguments: 
+[5.892s] -- Added test 'xmllint' to check XML markup files
+[5.895s] -- Configuring done (2.9s)
+[5.946s] -- Generating done (0.1s)
+[5.979s] -- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/qt_gui_cpp
+[5.993s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/qt_gui_cpp' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros-visualization/qt_gui_core/qt_gui_cpp -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DTRACETOOLS_DISABLED=ON -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[5.994s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/qt_gui_cpp': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/qt_gui_cpp -- -j4 -l4
+[6.051s] [1/24] Automatic MOC and UIC for target qt_gui_cpp
+[6.056s] [2/24] Generating include/qt_gui_cpp/moc_plugin.cpp
+[6.059s] [3/24] Generating include/qt_gui_cpp/moc_plugin_bridge.cpp
+[6.062s] [4/24] Generating include/qt_gui_cpp/moc_plugin_context.cpp
+[6.204s] [5/24] Building CXX object CMakeFiles/qt_gui_cpp.dir/qt_gui_cpp_autogen/mocs_compilation.cpp.o
+[6.732s] [6/24] Building CXX object CMakeFiles/qt_gui_cpp.dir/src/qt_gui_cpp/composite_plugin_provider.cpp.o
+[7.159s] [7/24] Building CXX object CMakeFiles/qt_gui_cpp.dir/src/qt_gui_cpp/generic_proxy.cpp.o
+[7.696s] [8/24] Building CXX object CMakeFiles/qt_gui_cpp.dir/src/qt_gui_cpp/plugin_bridge.cpp.o
+[8.200s] [9/24] Building CXX object CMakeFiles/qt_gui_cpp.dir/src/qt_gui_cpp/plugin_context.cpp.o
+[8.643s] [10/24] Building CXX object CMakeFiles/qt_gui_cpp.dir/src/qt_gui_cpp/plugin_descriptor.cpp.o
+[9.197s] [11/24] Building CXX object CMakeFiles/qt_gui_cpp.dir/src/qt_gui_cpp/plugin_provider.cpp.o
+[9.845s] [12/24] Building CXX object CMakeFiles/qt_gui_cpp.dir/src/qt_gui_cpp/recursive_plugin_provider.cpp.o
+[10.375s] [13/24] Building CXX object CMakeFiles/qt_gui_cpp.dir/src/qt_gui_cpp/settings.cpp.o
+[10.909s] [14/24] Building CXX object CMakeFiles/qt_gui_cpp.dir/include/qt_gui_cpp/moc_plugin.cpp.o
+[11.354s] [15/24] Building CXX object CMakeFiles/qt_gui_cpp.dir/include/qt_gui_cpp/moc_plugin_bridge.cpp.o
+[11.891s] [16/24] Building CXX object CMakeFiles/qt_gui_cpp.dir/include/qt_gui_cpp/moc_plugin_context.cpp.o
+[12.207s] [17/24] Linking CXX shared library qt_gui_cpp.so
+[45.417s] [18/24] Generating C++ code for qt_gui_cpp_sip Python bindings using sip-build...
+[45.417s] Querying qmake about your Qt installation...
+[45.418s] These bindings will be built: qt_gui_cpp_sip.
+[45.418s] Generating the qt_gui_cpp_sip bindings...
+[45.418s] The project has been built.
+[45.472s] [19/24] Automatic MOC and UIC for target libqt_gui_cpp_sip
+[45.481s] [20/24] cd /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/qt_gui_cpp && /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake -E copy_directory /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros-visualization/qt_gui_core/qt_gui_cpp/src/qt_gui_cpp /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/qt_gui_cpp/ament_cmake_python/qt_gui_cpp/qt_gui_cpp
+[45.610s] [21/24] Building CXX object src/qt_gui_cpp_sip/CMakeFiles/libqt_gui_cpp_sip.dir/libqt_gui_cpp_sip_autogen/mocs_compilation.cpp.o
+[46.485s] [22/24] Building CXX object src/qt_gui_cpp_sip/CMakeFiles/libqt_gui_cpp_sip.dir/__/__/sip/qt_gui_cpp_sip/libqt_gui_cpp_sip/siplibqt_gui_cpp_sippart0.cpp.o
+[46.825s] [23/24] cd /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/qt_gui_cpp/ament_cmake_python/qt_gui_cpp && /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/python3 setup.py egg_info
+[46.825s] running egg_info
+[46.825s] creating qt_gui_cpp.egg-info
+[46.825s] writing qt_gui_cpp.egg-info/PKG-INFO
+[46.825s] writing dependency_links to qt_gui_cpp.egg-info/dependency_links.txt
+[46.825s] writing top-level names to qt_gui_cpp.egg-info/top_level.txt
+[46.825s] writing manifest file 'qt_gui_cpp.egg-info/SOURCES.txt'
+[46.826s] reading manifest file 'qt_gui_cpp.egg-info/SOURCES.txt'
+[46.826s] writing manifest file 'qt_gui_cpp.egg-info/SOURCES.txt'
+[47.107s] [24/24] Linking CXX shared module src/qt_gui_cpp_sip/libqt_gui_cpp_sip.so
+[47.108s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/qt_gui_cpp' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=24 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/qt_gui_cpp -- -j4 -l4
+[47.109s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/qt_gui_cpp': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=24 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/qt_gui_cpp
+[47.119s] -- Install configuration: "Release"
+[47.119s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/environment/pythonpath.sh
+[47.121s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/environment/pythonpath.dsv
+[47.121s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp/libqt_gui_cpp_sip.so
+[47.121s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/plugin.xml
+[47.122s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/qt_gui_cpp
+[47.122s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/qt_gui_cpp/qt_gui_cpp
+[47.122s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/qt_gui_cpp/qt_gui_cpp/ros_pluginlib_plugin_provider.hpp
+[47.125s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/qt_gui_cpp/qt_gui_cpp/recursive_plugin_provider.hpp
+[47.125s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/qt_gui_cpp/qt_gui_cpp/ros_pluginlib_plugin_provider_for_plugins.hpp
+[47.125s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/qt_gui_cpp/qt_gui_cpp/plugin_descriptor.hpp
+[47.125s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/qt_gui_cpp/qt_gui_cpp/settings.hpp
+[47.126s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/qt_gui_cpp/qt_gui_cpp/plugin_bridge.hpp
+[47.126s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/qt_gui_cpp/qt_gui_cpp/plugin_context.hpp
+[47.126s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/qt_gui_cpp/qt_gui_cpp/generic_proxy.hpp
+[47.126s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/qt_gui_cpp/qt_gui_cpp/composite_plugin_provider.hpp
+[47.126s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/qt_gui_cpp/qt_gui_cpp/plugin.hpp
+[47.126s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/qt_gui_cpp/qt_gui_cpp/plugin_provider.hpp
+[47.126s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/qt_gui_cpp/qt_gui_cpp/ros_pluginlib_plugin_provider_for_plugin_providers.hpp
+[47.126s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/environment/library_path.sh
+[47.126s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/environment/library_path.dsv
+[47.127s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/qt_gui_cpp.so
+[47.128s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/package_run_dependencies/qt_gui_cpp
+[47.128s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/parent_prefix_path/qt_gui_cpp
+[47.129s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/environment/ament_prefix_path.sh
+[47.129s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/environment/ament_prefix_path.dsv
+[47.129s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/environment/path.sh
+[47.130s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/environment/path.dsv
+[47.133s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/local_setup.bash
+[47.133s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/local_setup.fish
+[47.133s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/local_setup.sh
+[47.133s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/local_setup.zsh
+[47.134s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/local_setup.dsv
+[47.134s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/package.dsv
+[47.134s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/packages/qt_gui_cpp
+[47.134s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp-2.10.3-py3.12.egg-info
+[47.134s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp-2.10.3-py3.12.egg-info/dependency_links.txt
+[47.134s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp-2.10.3-py3.12.egg-info/top_level.txt
+[47.134s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp-2.10.3-py3.12.egg-info/PKG-INFO
+[47.134s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp-2.10.3-py3.12.egg-info/SOURCES.txt
+[47.134s] -- Up-to-date: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp
+[47.134s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp/__init__.py
+[47.135s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp/plugin_bridge.cpp
+[47.135s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp/plugin_provider.cpp
+[47.135s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp/settings.cpp
+[47.136s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp/plugin_context.cpp
+[47.136s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp/composite_plugin_provider.cpp
+[47.136s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp/recursive_plugin_provider.cpp
+[47.137s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp/generic_proxy.cpp
+[47.137s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp/ros_pluginlib_plugin_provider.py
+[47.138s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp/plugin_descriptor.cpp
+[47.138s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp/cpp_plugin_provider.py
+[47.138s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp/cpp_binding_helper.py
+[47.185s] Listing '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp'...
+[47.185s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp/__init__.py'...
+[47.185s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp/cpp_binding_helper.py'...
+[47.185s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp/cpp_plugin_provider.py'...
+[47.185s] Compiling '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages/qt_gui_cpp/ros_pluginlib_plugin_provider.py'...
+[47.190s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/cmake/export_qt_gui_cppExport.cmake
+[47.191s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/cmake/export_qt_gui_cppExport-release.cmake
+[47.191s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/cmake/qt_gui_cpp-extras.cmake
+[47.192s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/cmake/ament_cmake_export_dependencies-extras.cmake
+[47.192s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/cmake/ament_cmake_export_targets-extras.cmake
+[47.192s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/cmake/qt_gui_cppConfig.cmake
+[47.193s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/cmake/qt_gui_cppConfig-version.cmake
+[47.193s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/qt_gui_cpp/package.xml
+[47.195s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/qt_gui_cpp' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=24 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/qt_gui_cpp

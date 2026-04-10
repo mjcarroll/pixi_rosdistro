@@ -1,188 +1,188 @@
-[6.504s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_transport': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rosbag2/rosbag2_transport -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
-[6.589s] Not searching for unused variables given on the command line.
-[6.589s] -- The C compiler identification is GNU 14.3.0
-[6.721s] -- The CXX compiler identification is GNU 14.3.0
-[6.736s] -- Detecting C compiler ABI info
-[6.873s] -- Detecting C compiler ABI info - done
-[6.905s] -- Check for working C compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
-[6.905s] -- Detecting C compile features
-[6.906s] -- Detecting C compile features - done
-[6.925s] -- Detecting CXX compiler ABI info
-[7.082s] -- Detecting CXX compiler ABI info - done
-[7.117s] -- Check for working CXX compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
-[7.118s] -- Detecting CXX compile features
-[7.119s] -- Detecting CXX compile features - done
-[7.132s] -- Found ament_cmake_ros: 0.15.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_ros/cmake)
-[7.433s] -- Found keyboard_handler: 0.5.0 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/keyboard_handler/cmake)
-[7.436s] -- Found rcl: 10.4.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/cmake)
-[7.476s] -- Found rosidl_generator_c: 5.1.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_c/cmake)
-[7.488s] -- Found rosidl_generator_cpp: 5.1.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_cpp/cmake)
-[7.508s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
-[7.526s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
-[7.641s] -- Found rmw_implementation_cmake: 7.9.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation_cmake/cmake)
-[7.645s] -- Found rmw_fastrtps_cpp: 9.4.5 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_fastrtps_cpp/cmake)
-[7.702s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
-[7.743s] -- Found rclcpp: 31.0.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclcpp/cmake)
-[7.848s] -- Found rclcpp_action: 31.0.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclcpp_action/cmake)
-[7.930s] -- Found rclcpp_components: 31.0.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclcpp_components/cmake)
-[7.983s] -- Found rosbag2_compression: 0.33.0 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_compression/cmake)
-[8.010s] -- Found rosbag2_interfaces: 0.33.0 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/cmake)
-[8.080s] -- Found ament_lint_auto: 0.20.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_lint_auto/cmake)
-[8.082s] -- Found rosbag2_test_common: 0.33.0 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_test_common/cmake)
-[8.296s] -- Found gmock sources under '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gmock_vendor': C++ tests using 'Google Mock' will be built
-[8.303s] -- Found gtest sources under '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
-[8.453s] -- Added test 'copyright' to check source files copyright and LICENSE
-[8.464s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
-[8.466s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rosbag2/rosbag2_transport/include>;$<BUILD_INTERFACE:/home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rosbag2/rosbag2_transport/src/rosbag2_transport>
-[8.467s] -- Configured cppcheck exclude dirs and/or files: 
-[8.478s] -- Added test 'cpplint' to check C / C++ code against the Google style
-[8.478s] -- Configured cpplint exclude dirs and/or files: 
-[8.482s] -- Added test 'lint_cmake' to check CMake code style
-[8.494s] -- Added test 'uncrustify' to check C / C++ code style
-[8.494s] -- Configured uncrustify additional arguments: 
-[8.496s] -- Added test 'xmllint' to check XML markup files
-[8.500s] -- Configuring done (2.0s)
-[8.811s] -- Generating done (0.3s)
-[8.995s] -- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_transport
-[9.024s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_transport' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rosbag2/rosbag2_transport -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
-[9.027s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_transport': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_transport -- -j4 -l4
-[10.047s] [1/90] Building CXX object CMakeFiles/rosbag2_transport.dir/src/rosbag2_transport/bag_rewrite.cpp.o
-[11.174s] [2/90] Building CXX object CMakeFiles/rosbag2_transport.dir/src/rosbag2_transport/recorder_event_notifier.cpp.o
-[12.148s] [3/90] Building CXX object CMakeFiles/rosbag2_transport.dir/src/rosbag2_transport/delayed_action_task_runner.cpp.o
-[13.353s] [4/90] Building CXX object CMakeFiles/rosbag2_transport.dir/src/rosbag2_transport/player.cpp.o
-[14.248s] [5/90] Building CXX object CMakeFiles/rosbag2_transport.dir/src/rosbag2_transport/play_options.cpp.o
-[14.737s] [6/90] Building CXX object CMakeFiles/rosbag2_transport.dir/src/rosbag2_transport/player_progress_bar.cpp.o
-[15.581s] [7/90] Building CXX object CMakeFiles/rosbag2_transport.dir/src/rosbag2_transport/player_service_client.cpp.o
-[16.417s] [8/90] Building CXX object CMakeFiles/rosbag2_transport.dir/src/rosbag2_transport/player_action_client.cpp.o
-[17.378s] [9/90] Building CXX object CMakeFiles/rosbag2_transport.dir/src/rosbag2_transport/reader_writer_factory.cpp.o
-[18.071s] [10/90] Building CXX object CMakeFiles/rosbag2_transport.dir/src/rosbag2_transport/readers_manager.cpp.o
-[19.410s] [11/90] Building CXX object CMakeFiles/rosbag2_transport.dir/src/rosbag2_transport/recorder.cpp.o
-[20.402s] [12/90] Building CXX object CMakeFiles/rosbag2_transport.dir/src/rosbag2_transport/record_options.cpp.o
-[21.683s] [13/90] Building CXX object CMakeFiles/rosbag2_transport.dir/src/rosbag2_transport/topic_filter.cpp.o
-[22.763s] [14/90] Building CXX object CMakeFiles/rosbag2_transport.dir/src/rosbag2_transport/config_options_from_node_params.cpp.o
-[23.219s] [15/90] Building CXX object gmock/CMakeFiles/gmock.dir/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor/src/gtest-all.cc.o
-[23.640s] [16/90] Building CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
-[24.033s] [17/90] Building CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
-[24.272s] [18/90] Linking CXX shared library librosbag2_transport.so
-[25.138s] [19/90] Building CXX object CMakeFiles/player.dir/rclcpp_components/node_main_player.cpp.o
-[26.032s] [20/90] Building CXX object CMakeFiles/recorder.dir/rclcpp_components/node_main_recorder.cpp.o
-[27.726s] [21/90] Building CXX object CMakeFiles/test_play.dir/test/rosbag2_transport/test_play.cpp.o
-[29.212s] [22/90] Building CXX object CMakeFiles/test_composable_player.dir/test/rosbag2_transport/test_composable_player.cpp.o
-[30.708s] [23/90] Building CXX object CMakeFiles/test_play_loop.dir/test/rosbag2_transport/test_play_loop.cpp.o
-[32.347s] [24/90] Building CXX object CMakeFiles/test_play_publish_clock.dir/test/rosbag2_transport/test_play_publish_clock.cpp.o
-[33.691s] [25/90] Building CXX object CMakeFiles/test_play_timing.dir/test/rosbag2_transport/test_play_timing.cpp.o
-[35.146s] [26/90] Building CXX object CMakeFiles/test_play_callbacks.dir/test/rosbag2_transport/test_play_callbacks.cpp.o
-[36.594s] [27/90] Building CXX object CMakeFiles/test_player_stop.dir/test/rosbag2_transport/test_player_stop.cpp.o
-[38.151s] [28/90] Building CXX object CMakeFiles/test_play_seek.dir/test/rosbag2_transport/test_play_seek.cpp.o
-[39.657s] [29/90] Building CXX object CMakeFiles/test_play_services.dir/test/rosbag2_transport/test_play_services.cpp.o
-[41.222s] [30/90] Building CXX object CMakeFiles/test_play_topic_remap.dir/test/rosbag2_transport/test_play_topic_remap.cpp.o
-[42.735s] [31/90] Building CXX object CMakeFiles/test_play_duration.dir/test/rosbag2_transport/test_play_duration.cpp.o
-[44.206s] [32/90] Building CXX object CMakeFiles/test_play_next.dir/test/rosbag2_transport/test_play_next.cpp.o
-[45.677s] [33/90] Building CXX object CMakeFiles/test_play_until.dir/test/rosbag2_transport/test_play_until.cpp.o
-[47.309s] [34/90] Building CXX object CMakeFiles/test_burst.dir/test/rosbag2_transport/test_burst.cpp.o
-[48.736s] [35/90] Building CXX object CMakeFiles/test_record.dir/test/rosbag2_transport/test_record.cpp.o
-[50.081s] [36/90] Building CXX object CMakeFiles/test_record_all.dir/test/rosbag2_transport/test_record_all.cpp.o
-[51.442s] [37/90] Building CXX object CMakeFiles/test_record_all_ignore_leaf_topics.dir/test/rosbag2_transport/test_record_all_ignore_leaf_topics.cpp.o
-[52.809s] [38/90] Building CXX object CMakeFiles/test_record_all_include_unpublished_topics.dir/test/rosbag2_transport/test_record_all_include_unpublished_topics.cpp.o
-[54.063s] [39/90] Building CXX object CMakeFiles/test_record_all_no_discovery.dir/test/rosbag2_transport/test_record_all_no_discovery.cpp.o
-[55.338s] [40/90] Building CXX object CMakeFiles/test_record_all_use_sim_time.dir/test/rosbag2_transport/test_record_all_use_sim_time.cpp.o
-[56.756s] [41/90] Building CXX object CMakeFiles/test_keyboard_controls.dir/test/rosbag2_transport/test_keyboard_controls.cpp.o
-[58.378s] [42/90] Building CXX object CMakeFiles/test_record_regex.dir/test/rosbag2_transport/test_record_regex.cpp.o
-[59.878s] [43/90] Building CXX object CMakeFiles/test_record_services.dir/test/rosbag2_transport/test_record_services.cpp.o
-[61.183s] [44/90] Building CXX object CMakeFiles/test_composable_recorder.dir/test/rosbag2_transport/test_composable_recorder.cpp.o
-[62.148s] [45/90] Building CXX object CMakeFiles/test_load_composable_components.dir/test/rosbag2_transport/test_load_composable_components.cpp.o
-[63.135s] [46/90] Building CXX object CMakeFiles/test_record_options.dir/test/rosbag2_transport/test_record_options.cpp.o
-[64.311s] [47/90] Building CXX object CMakeFiles/test_type_description_hash.dir/test/rosbag2_transport/test_type_description_hash.cpp.o
-[65.430s] [48/90] Building CXX object CMakeFiles/test_topic_filter.dir/test/rosbag2_transport/test_topic_filter.cpp.o
-[66.710s] [49/90] Building CXX object CMakeFiles/test_rewrite.dir/test/rosbag2_transport/test_rewrite.cpp.o
-[67.503s] [50/90] Building CXX object CMakeFiles/test_player_progress_bar.dir/test/rosbag2_transport/test_player_progress_bar.cpp.o
-[68.711s] [51/90] Building CXX object CMakeFiles/test_recorder_event_notifier.dir/test/rosbag2_transport/test_recorder_event_notifier.cpp.o
-[69.841s] [52/90] Building CXX object CMakeFiles/test_readers_manager.dir/test/rosbag2_transport/test_readers_manager.cpp.o
-[71.122s] [53/90] Building CXX object CMakeFiles/test_record_static_topics.dir/test/rosbag2_transport/test_record_static_topics.cpp.o
-[71.149s] [54/90] Linking CXX static library gmock/libgmock.a
-[71.161s] [55/90] Linking CXX static library gmock/libgmock_main.a
-[71.250s] [56/90] Linking CXX executable player
-[71.354s] [57/90] Linking CXX executable recorder
-[71.783s] [58/90] Linking CXX executable test_play
-[72.035s] [59/90] Linking CXX executable test_composable_player
-[72.277s] [60/90] Linking CXX executable test_play_loop
-[72.518s] [61/90] Linking CXX executable test_play_publish_clock
-[72.756s] [62/90] Linking CXX executable test_play_timing
-[72.996s] [63/90] Linking CXX executable test_play_callbacks
-[73.209s] [64/90] Linking CXX executable test_player_stop
-[73.511s] [65/90] Linking CXX executable test_play_seek
-[73.771s] [66/90] Linking CXX executable test_play_services
-[74.036s] [67/90] Linking CXX executable test_play_topic_remap
-[74.308s] [68/90] Linking CXX executable test_play_duration
-[74.573s] [69/90] Linking CXX executable test_play_next
-[74.856s] [70/90] Linking CXX executable test_play_until
-[75.129s] [71/90] Linking CXX executable test_burst
-[75.448s] [72/90] Linking CXX executable test_record
-[75.702s] [73/90] Linking CXX executable test_record_all
-[75.931s] [74/90] Linking CXX executable test_record_all_ignore_leaf_topics
-[76.162s] [75/90] Linking CXX executable test_record_all_include_unpublished_topics
-[76.378s] [76/90] Linking CXX executable test_record_all_no_discovery
-[76.592s] [77/90] Linking CXX executable test_record_all_use_sim_time
-[76.791s] [78/90] Linking CXX executable test_keyboard_controls
-[77.029s] [79/90] Linking CXX executable test_record_regex
-[77.278s] [80/90] Linking CXX executable test_record_services
-[77.508s] [81/90] Linking CXX executable test_composable_recorder
-[77.701s] [82/90] Linking CXX executable test_load_composable_components
-[77.907s] [83/90] Linking CXX executable test_record_options
-[78.085s] [84/90] Linking CXX executable test_type_description_hash
-[78.289s] [85/90] Linking CXX executable test_topic_filter
-[78.527s] [86/90] Linking CXX executable test_rewrite
-[78.765s] [87/90] Linking CXX executable test_player_progress_bar
-[79.083s] [88/90] Linking CXX executable test_recorder_event_notifier
-[79.337s] [89/90] Linking CXX executable test_readers_manager
-[79.621s] [90/90] Linking CXX executable test_record_static_topics
-[79.624s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_transport' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=84 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_transport -- -j4 -l4
-[79.626s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_transport': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=84 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_transport
-[79.635s] -- Install configuration: "Release"
-[79.635s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/rosbag2_transport/player
-[79.638s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/rosbag2_transport/recorder
-[79.638s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_transport
-[79.638s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_transport/rosbag2_transport
-[79.638s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_transport/rosbag2_transport/readers_manager.hpp
-[79.638s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_transport/rosbag2_transport/recorder_event_notifier.hpp
-[79.638s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_transport/rosbag2_transport/recorder.hpp
-[79.639s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_transport/rosbag2_transport/record_options.hpp
-[79.639s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_transport/rosbag2_transport/visibility_control.hpp
-[79.639s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_transport/rosbag2_transport/bag_rewrite.hpp
-[79.639s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_transport/rosbag2_transport/rclcpp_publisher_wrapper.hpp
-[79.639s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_transport/rosbag2_transport/player_action_client.hpp
-[79.639s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_transport/rosbag2_transport/config_options_from_node_params.hpp
-[79.640s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_transport/rosbag2_transport/player.hpp
-[79.640s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_transport/rosbag2_transport/player_progress_bar.hpp
-[79.641s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_transport/rosbag2_transport/delayed_action_task_runner.hpp
-[79.641s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_transport/rosbag2_transport/reader_writer_factory.hpp
-[79.642s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_transport/rosbag2_transport/player_service_client.hpp
-[79.642s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_transport/rosbag2_transport/play_options.hpp
-[79.642s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_transport/rosbag2_transport/topic_filter.hpp
-[79.643s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/librosbag2_transport.so
-[79.647s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/environment/library_path.sh
-[79.647s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/environment/library_path.dsv
-[79.648s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/package_run_dependencies/rosbag2_transport
-[79.649s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/parent_prefix_path/rosbag2_transport
-[79.651s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/environment/ament_prefix_path.sh
-[79.651s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/environment/ament_prefix_path.dsv
-[79.652s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/environment/path.sh
-[79.652s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/environment/path.dsv
-[79.656s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/local_setup.bash
-[79.656s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/local_setup.fish
-[79.656s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/local_setup.sh
-[79.656s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/local_setup.zsh
-[79.656s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/local_setup.dsv
-[79.656s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/package.dsv
-[79.656s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/packages/rosbag2_transport
-[79.657s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/rclcpp_components/rosbag2_transport
-[79.657s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/cmake/export_rosbag2_transportExport.cmake
-[79.657s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/cmake/export_rosbag2_transportExport-release.cmake
-[79.657s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/cmake/ament_cmake_export_include_directories-extras.cmake
-[79.657s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/cmake/ament_cmake_export_libraries-extras.cmake
-[79.657s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/cmake/ament_cmake_export_targets-extras.cmake
-[79.668s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/cmake/ament_cmake_export_dependencies-extras.cmake
-[79.668s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/cmake/rosbag2_transportConfig.cmake
-[79.668s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/cmake/rosbag2_transportConfig-version.cmake
-[79.668s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/package.xml
-[79.669s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_transport' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=84 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_transport
+[5.694s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_transport': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rosbag2/rosbag2_transport -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DTRACETOOLS_DISABLED=ON -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[5.771s] Not searching for unused variables given on the command line.
+[5.772s] -- The C compiler identification is GNU 14.3.0
+[5.886s] -- The CXX compiler identification is GNU 14.3.0
+[5.895s] -- Detecting C compiler ABI info
+[6.025s] -- Detecting C compiler ABI info - done
+[6.058s] -- Check for working C compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
+[6.058s] -- Detecting C compile features
+[6.058s] -- Detecting C compile features - done
+[6.074s] -- Detecting CXX compiler ABI info
+[6.238s] -- Detecting CXX compiler ABI info - done
+[6.272s] -- Check for working CXX compiler: /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
+[6.272s] -- Detecting CXX compile features
+[6.274s] -- Detecting CXX compile features - done
+[6.287s] -- Found ament_cmake_ros: 0.15.6 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_cmake_ros/cmake)
+[6.575s] -- Found keyboard_handler: 0.5.0 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/keyboard_handler/cmake)
+[6.579s] -- Found rcl: 10.4.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rcl/cmake)
+[6.622s] -- Found rosidl_generator_c: 5.1.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_c/cmake)
+[6.636s] -- Found rosidl_generator_cpp: 5.1.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosidl_generator_cpp/cmake)
+[6.656s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.677s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.794s] -- Found rmw_implementation_cmake: 7.10.0 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_implementation_cmake/cmake)
+[6.798s] -- Found rmw_fastrtps_cpp: 9.4.5 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rmw_fastrtps_cpp/cmake)
+[6.848s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.890s] -- Found rclcpp: 31.0.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclcpp/cmake)
+[7.041s] -- Found rclcpp_action: 31.0.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclcpp_action/cmake)
+[7.144s] -- Found rclcpp_components: 31.0.1 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rclcpp_components/cmake)
+[7.204s] -- Found rosbag2_compression: 0.33.0 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_compression/cmake)
+[7.228s] -- Found rosbag2_interfaces: 0.33.0 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_interfaces/cmake)
+[7.278s] -- Found ament_lint_auto: 0.20.3 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_lint_auto/cmake)
+[7.280s] -- Found rosbag2_test_common: 0.33.0 (/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_test_common/cmake)
+[7.527s] -- Found gmock sources under '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[7.531s] -- Found gtest sources under '/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[7.683s] -- Added test 'copyright' to check source files copyright and LICENSE
+[7.693s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[7.696s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rosbag2/rosbag2_transport/include>;$<BUILD_INTERFACE:/home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rosbag2/rosbag2_transport/src/rosbag2_transport>
+[7.696s] -- Configured cppcheck exclude dirs and/or files: 
+[7.705s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[7.706s] -- Configured cpplint exclude dirs and/or files: 
+[7.710s] -- Added test 'lint_cmake' to check CMake code style
+[7.721s] -- Added test 'uncrustify' to check C / C++ code style
+[7.721s] -- Configured uncrustify additional arguments: 
+[7.724s] -- Added test 'xmllint' to check XML markup files
+[7.730s] -- Configuring done (2.0s)
+[8.008s] -- Generating done (0.3s)
+[8.182s] -- Build files have been written to: /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_transport
+[8.208s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_transport' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=14 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake /home/runner/work/pixi_rosdistro/pixi_rosdistro/src/ros2/rosbag2/rosbag2_transport -GNinja --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_WITH_INSTALL_RPATH:bool=TRUE -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -Wno-deprecated -DSTACK_DETAILS_AUTO_DETECT:bool=FALSE -DSTACK_DETAILS_BFD:bool=FALSE -DTRACETOOLS_DISABLED=ON -DCMAKE_INSTALL_PREFIX=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install
+[8.211s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_transport': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=14 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_transport -- -j4 -l4
+[9.241s] [1/90] Building CXX object CMakeFiles/rosbag2_transport.dir/src/rosbag2_transport/bag_rewrite.cpp.o
+[10.199s] [2/90] Building CXX object CMakeFiles/rosbag2_transport.dir/src/rosbag2_transport/recorder_event_notifier.cpp.o
+[11.096s] [3/90] Building CXX object CMakeFiles/rosbag2_transport.dir/src/rosbag2_transport/delayed_action_task_runner.cpp.o
+[12.384s] [4/90] Building CXX object CMakeFiles/rosbag2_transport.dir/src/rosbag2_transport/player.cpp.o
+[13.348s] [5/90] Building CXX object CMakeFiles/rosbag2_transport.dir/src/rosbag2_transport/play_options.cpp.o
+[13.816s] [6/90] Building CXX object CMakeFiles/rosbag2_transport.dir/src/rosbag2_transport/player_progress_bar.cpp.o
+[14.659s] [7/90] Building CXX object CMakeFiles/rosbag2_transport.dir/src/rosbag2_transport/player_service_client.cpp.o
+[15.593s] [8/90] Building CXX object CMakeFiles/rosbag2_transport.dir/src/rosbag2_transport/player_action_client.cpp.o
+[16.567s] [9/90] Building CXX object CMakeFiles/rosbag2_transport.dir/src/rosbag2_transport/reader_writer_factory.cpp.o
+[17.325s] [10/90] Building CXX object CMakeFiles/rosbag2_transport.dir/src/rosbag2_transport/readers_manager.cpp.o
+[18.516s] [11/90] Building CXX object CMakeFiles/rosbag2_transport.dir/src/rosbag2_transport/recorder.cpp.o
+[19.366s] [12/90] Building CXX object CMakeFiles/rosbag2_transport.dir/src/rosbag2_transport/record_options.cpp.o
+[20.430s] [13/90] Building CXX object CMakeFiles/rosbag2_transport.dir/src/rosbag2_transport/topic_filter.cpp.o
+[21.446s] [14/90] Building CXX object CMakeFiles/rosbag2_transport.dir/src/rosbag2_transport/config_options_from_node_params.cpp.o
+[21.954s] [15/90] Building CXX object gmock/CMakeFiles/gmock.dir/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/src/gtest_vendor/src/gtest-all.cc.o
+[22.388s] [16/90] Building CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
+[22.867s] [17/90] Building CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
+[23.094s] [18/90] Linking CXX shared library librosbag2_transport.so
+[24.052s] [19/90] Building CXX object CMakeFiles/player.dir/rclcpp_components/node_main_player.cpp.o
+[24.845s] [20/90] Building CXX object CMakeFiles/recorder.dir/rclcpp_components/node_main_recorder.cpp.o
+[26.187s] [21/90] Building CXX object CMakeFiles/test_play.dir/test/rosbag2_transport/test_play.cpp.o
+[27.408s] [22/90] Building CXX object CMakeFiles/test_composable_player.dir/test/rosbag2_transport/test_composable_player.cpp.o
+[28.759s] [23/90] Building CXX object CMakeFiles/test_play_loop.dir/test/rosbag2_transport/test_play_loop.cpp.o
+[30.086s] [24/90] Building CXX object CMakeFiles/test_play_publish_clock.dir/test/rosbag2_transport/test_play_publish_clock.cpp.o
+[31.283s] [25/90] Building CXX object CMakeFiles/test_play_timing.dir/test/rosbag2_transport/test_play_timing.cpp.o
+[32.725s] [26/90] Building CXX object CMakeFiles/test_play_callbacks.dir/test/rosbag2_transport/test_play_callbacks.cpp.o
+[34.069s] [27/90] Building CXX object CMakeFiles/test_player_stop.dir/test/rosbag2_transport/test_player_stop.cpp.o
+[35.483s] [28/90] Building CXX object CMakeFiles/test_play_seek.dir/test/rosbag2_transport/test_play_seek.cpp.o
+[36.811s] [29/90] Building CXX object CMakeFiles/test_play_services.dir/test/rosbag2_transport/test_play_services.cpp.o
+[38.151s] [30/90] Building CXX object CMakeFiles/test_play_topic_remap.dir/test/rosbag2_transport/test_play_topic_remap.cpp.o
+[39.635s] [31/90] Building CXX object CMakeFiles/test_play_duration.dir/test/rosbag2_transport/test_play_duration.cpp.o
+[40.997s] [32/90] Building CXX object CMakeFiles/test_play_next.dir/test/rosbag2_transport/test_play_next.cpp.o
+[42.322s] [33/90] Building CXX object CMakeFiles/test_play_until.dir/test/rosbag2_transport/test_play_until.cpp.o
+[43.675s] [34/90] Building CXX object CMakeFiles/test_burst.dir/test/rosbag2_transport/test_burst.cpp.o
+[44.964s] [35/90] Building CXX object CMakeFiles/test_record.dir/test/rosbag2_transport/test_record.cpp.o
+[46.542s] [36/90] Building CXX object CMakeFiles/test_record_all.dir/test/rosbag2_transport/test_record_all.cpp.o
+[47.990s] [37/90] Building CXX object CMakeFiles/test_record_all_ignore_leaf_topics.dir/test/rosbag2_transport/test_record_all_ignore_leaf_topics.cpp.o
+[49.413s] [38/90] Building CXX object CMakeFiles/test_record_all_include_unpublished_topics.dir/test/rosbag2_transport/test_record_all_include_unpublished_topics.cpp.o
+[50.865s] [39/90] Building CXX object CMakeFiles/test_record_all_no_discovery.dir/test/rosbag2_transport/test_record_all_no_discovery.cpp.o
+[52.262s] [40/90] Building CXX object CMakeFiles/test_record_all_use_sim_time.dir/test/rosbag2_transport/test_record_all_use_sim_time.cpp.o
+[53.907s] [41/90] Building CXX object CMakeFiles/test_keyboard_controls.dir/test/rosbag2_transport/test_keyboard_controls.cpp.o
+[55.555s] [42/90] Building CXX object CMakeFiles/test_record_regex.dir/test/rosbag2_transport/test_record_regex.cpp.o
+[57.171s] [43/90] Building CXX object CMakeFiles/test_record_services.dir/test/rosbag2_transport/test_record_services.cpp.o
+[58.847s] [44/90] Building CXX object CMakeFiles/test_composable_recorder.dir/test/rosbag2_transport/test_composable_recorder.cpp.o
+[60.034s] [45/90] Building CXX object CMakeFiles/test_load_composable_components.dir/test/rosbag2_transport/test_load_composable_components.cpp.o
+[61.181s] [46/90] Building CXX object CMakeFiles/test_record_options.dir/test/rosbag2_transport/test_record_options.cpp.o
+[62.335s] [47/90] Building CXX object CMakeFiles/test_type_description_hash.dir/test/rosbag2_transport/test_type_description_hash.cpp.o
+[63.458s] [48/90] Building CXX object CMakeFiles/test_topic_filter.dir/test/rosbag2_transport/test_topic_filter.cpp.o
+[64.539s] [49/90] Building CXX object CMakeFiles/test_rewrite.dir/test/rosbag2_transport/test_rewrite.cpp.o
+[65.125s] [50/90] Building CXX object CMakeFiles/test_player_progress_bar.dir/test/rosbag2_transport/test_player_progress_bar.cpp.o
+[66.170s] [51/90] Building CXX object CMakeFiles/test_recorder_event_notifier.dir/test/rosbag2_transport/test_recorder_event_notifier.cpp.o
+[67.428s] [52/90] Building CXX object CMakeFiles/test_readers_manager.dir/test/rosbag2_transport/test_readers_manager.cpp.o
+[68.920s] [53/90] Building CXX object CMakeFiles/test_record_static_topics.dir/test/rosbag2_transport/test_record_static_topics.cpp.o
+[68.980s] [54/90] Linking CXX static library gmock/libgmock.a
+[69.006s] [55/90] Linking CXX static library gmock/libgmock_main.a
+[69.183s] [56/90] Linking CXX executable player
+[69.294s] [57/90] Linking CXX executable recorder
+[69.661s] [58/90] Linking CXX executable test_play
+[69.866s] [59/90] Linking CXX executable test_composable_player
+[70.046s] [60/90] Linking CXX executable test_play_loop
+[70.229s] [61/90] Linking CXX executable test_play_publish_clock
+[70.414s] [62/90] Linking CXX executable test_play_timing
+[70.589s] [63/90] Linking CXX executable test_play_callbacks
+[70.757s] [64/90] Linking CXX executable test_player_stop
+[70.952s] [65/90] Linking CXX executable test_play_seek
+[71.121s] [66/90] Linking CXX executable test_play_services
+[71.294s] [67/90] Linking CXX executable test_play_topic_remap
+[71.489s] [68/90] Linking CXX executable test_play_duration
+[71.699s] [69/90] Linking CXX executable test_play_next
+[71.909s] [70/90] Linking CXX executable test_play_until
+[72.103s] [71/90] Linking CXX executable test_burst
+[72.304s] [72/90] Linking CXX executable test_record
+[72.504s] [73/90] Linking CXX executable test_record_all
+[72.714s] [74/90] Linking CXX executable test_record_all_ignore_leaf_topics
+[72.907s] [75/90] Linking CXX executable test_record_all_include_unpublished_topics
+[73.082s] [76/90] Linking CXX executable test_record_all_no_discovery
+[73.268s] [77/90] Linking CXX executable test_record_all_use_sim_time
+[73.441s] [78/90] Linking CXX executable test_keyboard_controls
+[73.636s] [79/90] Linking CXX executable test_record_regex
+[73.847s] [80/90] Linking CXX executable test_record_services
+[74.040s] [81/90] Linking CXX executable test_composable_recorder
+[74.175s] [82/90] Linking CXX executable test_load_composable_components
+[74.329s] [83/90] Linking CXX executable test_record_options
+[74.455s] [84/90] Linking CXX executable test_type_description_hash
+[74.595s] [85/90] Linking CXX executable test_topic_filter
+[74.763s] [86/90] Linking CXX executable test_rewrite
+[74.913s] [87/90] Linking CXX executable test_player_progress_bar
+[75.109s] [88/90] Linking CXX executable test_recorder_event_notifier
+[75.237s] [89/90] Linking CXX executable test_readers_manager
+[75.382s] [90/90] Linking CXX executable test_record_static_topics
+[75.384s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_transport' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=14 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --build /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_transport -- -j4 -l4
+[75.385s] Invoking command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_transport': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=14 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_transport
+[75.393s] -- Install configuration: "Release"
+[75.393s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/rosbag2_transport/player
+[75.393s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/rosbag2_transport/recorder
+[75.393s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_transport
+[75.393s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_transport/rosbag2_transport
+[75.393s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_transport/rosbag2_transport/readers_manager.hpp
+[75.393s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_transport/rosbag2_transport/recorder_event_notifier.hpp
+[75.394s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_transport/rosbag2_transport/recorder.hpp
+[75.394s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_transport/rosbag2_transport/record_options.hpp
+[75.394s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_transport/rosbag2_transport/visibility_control.hpp
+[75.394s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_transport/rosbag2_transport/bag_rewrite.hpp
+[75.394s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_transport/rosbag2_transport/rclcpp_publisher_wrapper.hpp
+[75.395s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_transport/rosbag2_transport/player_action_client.hpp
+[75.395s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_transport/rosbag2_transport/config_options_from_node_params.hpp
+[75.395s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_transport/rosbag2_transport/player.hpp
+[75.395s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_transport/rosbag2_transport/player_progress_bar.hpp
+[75.395s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_transport/rosbag2_transport/delayed_action_task_runner.hpp
+[75.396s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_transport/rosbag2_transport/reader_writer_factory.hpp
+[75.396s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_transport/rosbag2_transport/player_service_client.hpp
+[75.396s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_transport/rosbag2_transport/play_options.hpp
+[75.396s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/include/rosbag2_transport/rosbag2_transport/topic_filter.hpp
+[75.397s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/librosbag2_transport.so
+[75.399s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/environment/library_path.sh
+[75.399s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/environment/library_path.dsv
+[75.400s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/package_run_dependencies/rosbag2_transport
+[75.400s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/parent_prefix_path/rosbag2_transport
+[75.400s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/environment/ament_prefix_path.sh
+[75.401s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/environment/ament_prefix_path.dsv
+[75.401s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/environment/path.sh
+[75.401s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/environment/path.dsv
+[75.401s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/local_setup.bash
+[75.402s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/local_setup.fish
+[75.402s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/local_setup.sh
+[75.402s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/local_setup.zsh
+[75.402s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/local_setup.dsv
+[75.403s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/package.dsv
+[75.403s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/packages/rosbag2_transport
+[75.403s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/ament_index/resource_index/rclcpp_components/rosbag2_transport
+[75.403s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/cmake/export_rosbag2_transportExport.cmake
+[75.404s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/cmake/export_rosbag2_transportExport-release.cmake
+[75.404s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/cmake/ament_cmake_export_include_directories-extras.cmake
+[75.404s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/cmake/ament_cmake_export_libraries-extras.cmake
+[75.404s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/cmake/ament_cmake_export_targets-extras.cmake
+[75.405s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/cmake/ament_cmake_export_dependencies-extras.cmake
+[75.405s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/cmake/rosbag2_transportConfig.cmake
+[75.405s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/cmake/rosbag2_transportConfig-version.cmake
+[75.405s] -- Installing: /home/runner/work/pixi_rosdistro/pixi_rosdistro/install/share/rosbag2_transport/package.xml
+[75.407s] Invoked command in '/home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_transport' returned '0': AMENT_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install CMAKE_PREFIX_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/bin:/opt/microsoft/powershell/7:${PATH} PIXI_PROMPT=(ros2_rolling) PKG_CONFIG_PATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/pkgconfig PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} PYTHONPATH=/home/runner/work/pixi_rosdistro/pixi_rosdistro/install/lib/python3.12/site-packages ROS_DOMAIN_ID=14 /home/runner/work/pixi_rosdistro/pixi_rosdistro/.pixi/envs/default/bin/cmake --install /home/runner/work/pixi_rosdistro/pixi_rosdistro/build/rosbag2_transport
